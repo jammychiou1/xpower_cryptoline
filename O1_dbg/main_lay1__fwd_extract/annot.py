@@ -47,7 +47,7 @@ assert_id = 0
 # TODO: patch 0x5555550f38 adds
 # TODO: patch 0x5555550f44 subc
 
-def annot_ntt5_4x_nof14(ntt5_4x_nof14, j, k0):
+def annot_ntt5_4x_nof14(ntt5_4x_nof14, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id):
     global cut_id
 
     seg0_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550e80')
@@ -84,7 +84,7 @@ def annot_ntt5_4x_nof14(ntt5_4x_nof14, j, k0):
     print(f'    %fb2_{j}{k0} = %fa2_{j}{k0} /\\')
     print(f'    %fb3_{j}{k0} = %fa8_{j}{k0}')
     print()
-    print(f'    prove with [cuts[0]] # TODO')
+    print(f'    prove with [cuts[{k0_iter_load_cut_id}]]')
     print(f'  &&')
     print(f'    %fb0_{j}{k0} = %v1 /\\')
     print(f'    %fb2_{j}{k0} = %v2 /\\')
@@ -94,7 +94,7 @@ def annot_ntt5_4x_nof14(ntt5_4x_nof14, j, k0):
     print(f'    %fb2_{j}{k0} = %fa2_{j}{k0} /\\')
     print(f'    %fb3_{j}{k0} = %fa8_{j}{k0}')
     print()
-    print(f'    prove with [cuts[0]]; # TODO')
+    print(f'    prove with [cuts[{k0_iter_load_cut_id}]];')
     print()
     cut_id += 1
     print(''.join(seg0), end='')
@@ -258,7 +258,7 @@ cut (* {cut_id} *)
         [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fb2_{j}{k0} +
         [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fb3_{j}{k0}
     )
-    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
   &&
     %v7  <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\\
     %v18 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\\
@@ -272,11 +272,11 @@ cut (* {cut_id} *)
     %v6  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\\
     %v5  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16]
 
-    prove with [precondition, cuts[0, 1, 2, 3]];
+    prove with [precondition, cuts[{prologue_cut_id}, {j_iter_prologue_cut_id}, {k0_iter_load_cut_id}]];
 ''')
     cut_id += 1
 
-def annot_ntt10_4x_nof3546(ntt10_4x_nof3546, j, k0):
+def annot_ntt10_4x_nof3546(ntt10_4x_nof3546, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id):
     global cut_id
 
     ntt5_4x_nof14_end = find_first_line(ntt10_4x_nof3546, 'PC = 0x5555550edc')
@@ -290,7 +290,7 @@ def annot_ntt10_4x_nof3546(ntt10_4x_nof3546, j, k0):
     print('#### ntt10_4x_nof3546')
     print()
 
-    annot_ntt5_4x_nof14(ntt5_4x_nof14, j, k0)
+    annot_ntt5_4x_nof14(ntt5_4x_nof14, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id)
 
     print()
     print('##### ntt5_4x_nof03')
@@ -334,7 +334,7 @@ def annot_ntt10_4x_nof35467(ntt10_4x_nof35467):
     print(''.join(addsub), end='')
     print()
 
-def annot_jle2_k0_iter(k0_iter, j, k0):
+def annot_jle2_k0_iter(k0_iter, j, k0, prologue_cut_id, j_iter_prologue_cut_id):
     global cut_id
 
     load_end = find_first_line(k0_iter, 'PC = 0x5555550e6c')
@@ -385,7 +385,7 @@ def annot_jle2_k0_iter(k0_iter, j, k0):
     print(f'    %fa8_{j}{k0} = %fa8_{j}[:8] /\\')
     print(f'    %fa9_{j}{k0} = %fa9_{j}[:8]')
     print()
-    print(f'    prove with [cuts[0]] # TODO')
+    print(f'    prove with [cuts[{j_iter_prologue_cut_id}]]')
     print(f'  &&')
     print(f'    %fa0_{j}{k0} = %v1  /\\')
     print(f'    %fa1_{j}{k0} = %v16 /\\')
@@ -401,11 +401,12 @@ def annot_jle2_k0_iter(k0_iter, j, k0):
     print(f'    %fa8_{j}{k0} = %fa8_{j}[:8] /\\')
     print(f'    %fa9_{j}{k0} = %fa9_{j}[:8]')
     print()
-    print(f'    prove with [cuts[0]]; # TODO')
+    print(f'    prove with [cuts[{j_iter_prologue_cut_id}]];')
     print()
+    k0_iter_load_cut_id = cut_id
     cut_id += 1
 
-    annot_ntt10_4x_nof3546(ntt10_4x_nof3546, j, k0)
+    annot_ntt10_4x_nof3546(ntt10_4x_nof3546, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id)
 
     print()
     print('#### twist_his')
@@ -454,7 +455,7 @@ def annot_jgt2_k0_iter(k0_iter, j, k0):
     print()
 
 
-def annot_j_iter(j_iter, j):
+def annot_j_iter(j_iter, j, prologue_cut_id):
     global cut_id
 
     if j_iter[2].find('PC = 0x5555550d08') != -1:
@@ -513,7 +514,7 @@ def annot_j_iter(j_iter, j):
         print(f'    %fa8_{j} = {format_poly(576, 16)} /\\')
         print(f'    %fa9_{j} = {format_poly(432, 16)}')
         print()
-        print(f'    prove with [cuts[0]]')
+        print(f'    prove with [cuts[{prologue_cut_id}]]')
         print(f'  &&')
         print(f'    %fa0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
         print(f'    %fa1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
@@ -529,14 +530,15 @@ def annot_j_iter(j_iter, j):
         print(f'    %fa8_{j} = {format_poly(576, 16)} /\\')
         print(f'    %fa9_{j} = {format_poly(432, 16)}')
         print()
-        print(f'    prove with [cuts[0]];')
+        print(f'    prove with [cuts[{prologue_cut_id}]];')
         print()
+        j_iter_prologue_cut_id = cut_id
         cut_id += 1
 
         k0 = 0
         k0_iter_begin = k0_loop_begin
         for k0_iter_end in k0_iter_ends:
-            annot_jle2_k0_iter(j_iter[k0_iter_begin : k0_iter_end], j, k0)
+            annot_jle2_k0_iter(j_iter[k0_iter_begin : k0_iter_end], j, k0, prologue_cut_id, j_iter_prologue_cut_id)
             k0_iter_begin = k0_iter_end
             k0 += 1
 
@@ -676,12 +678,13 @@ def annot(lines):
         end = ' /\\\n' if i != 768 - 16 else ';\n'
         print(f'    {memory_arr(0x5555570070 + 2 * i, 16, 2)} = {format_poly(i, 16)}', end=end)
     print()
+    prologue_cut_id = cut_id
     cut_id += 1
 
     j = 0
     j_iter_begin = j_loop_begin
     for j_iter_end in j_iter_ends:
-        annot_j_iter(lines[j_iter_begin : j_iter_end], j)
+        annot_j_iter(lines[j_iter_begin : j_iter_end], j, prologue_cut_id)
         j_iter_begin = j_iter_end
         j += 1
         if j == 1:
