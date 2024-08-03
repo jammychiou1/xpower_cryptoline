@@ -4,11 +4,18 @@ def find_first_line(lines, pattern, begin=0):
             return now
     return -1
 
-def format_const(val):
+def format_imm(val):
     s = str(val)
     if val < 0:
         s = f'({s})'
     s += '@sint16'
+    return s
+
+def format_const(val):
+    s = str(val)
+    if val < 0:
+        s = f'({s})'
+    s += '@16'
     return s
 
 def format_arr(arr):
@@ -40,7 +47,88 @@ assert_id = 0
 # TODO: patch 0x5555550f38 adds
 # TODO: patch 0x5555550f44 subc
 
-def annot_ntt10_4x_nof3546(ntt10_4x_nof3546):
+def annot_ntt5_4x_nof14(ntt5_4x_nof14, j, k0):
+    global cut_id
+
+    seg0_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550e80')
+    seg1_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550e98', seg0_end)
+    seg2_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550ea4', seg1_end)
+    seg3_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550ebc', seg2_end)
+    seg4_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550ec8', seg3_end)
+
+    seg0 = ntt5_4x_nof14[:seg0_end]
+    seg1 = ntt5_4x_nof14[seg0_end : seg1_end]
+    seg2 = ntt5_4x_nof14[seg1_end : seg2_end]
+    seg3 = ntt5_4x_nof14[seg2_end : seg3_end]
+    seg4 = ntt5_4x_nof14[seg3_end : seg4_end]
+    seg5 = ntt5_4x_nof14[seg4_end:]
+
+    print()
+    print('##### ntt5_4x_nof14')
+    print()
+    print(f'ghost %fb0_{j}{k0}@sint16[8], %fb2_{j}{k0}@sint16[8], %fb3_{j}{k0}@sint16[8] :')
+    print(f'    %fb0_{j}{k0} = %v1 /\\')
+    print(f'    %fb2_{j}{k0} = %v2 /\\')
+    print(f'    %fb3_{j}{k0} = %v6')
+    print(f'  &&')
+    print(f'    %fb0_{j}{k0} = %v1 /\\')
+    print(f'    %fb2_{j}{k0} = %v2 /\\')
+    print(f'    %fb3_{j}{k0} = %v6;')
+    print()
+    print(f'cut (* {cut_id} *)')
+    print(f'    %fb0_{j}{k0} = %v1 /\\')
+    print(f'    %fb2_{j}{k0} = %v2 /\\')
+    print(f'    %fb3_{j}{k0} = %v6 /\\')
+    print()
+    print(f'    %fb0_{j}{k0} = %fa0_{j}{k0} /\\')
+    print(f'    %fb2_{j}{k0} = %fa2_{j}{k0} /\\')
+    print(f'    %fb3_{j}{k0} = %fa8_{j}{k0}')
+    print()
+    print(f'    prove with [cuts[0]] # TODO')
+    print(f'  &&')
+    print(f'    %fb0_{j}{k0} = %v1 /\\')
+    print(f'    %fb2_{j}{k0} = %v2 /\\')
+    print(f'    %fb3_{j}{k0} = %v6 /\\')
+    print()
+    print(f'    %fb0_{j}{k0} = %fa0_{j}{k0} /\\')
+    print(f'    %fb2_{j}{k0} = %fa2_{j}{k0} /\\')
+    print(f'    %fb3_{j}{k0} = %fa8_{j}{k0}')
+    print()
+    print(f'    prove with [cuts[0]]; # TODO')
+    print()
+    cut_id += 1
+
+    print()
+    print(''.join(seg0), end='')
+    print()
+    print('assert true && true;')
+    print()
+    print(''.join(seg1), end='')
+    print()
+    print('assert true && true;')
+    print()
+    print(''.join(seg2), end='')
+    print()
+    print('assert true && true;')
+    print()
+    print(''.join(seg3), end='')
+    print()
+    print('assert true && true;')
+    print()
+    print(''.join(seg4), end='')
+    print()
+    print('assert true && true;')
+    print()
+    print(''.join(seg5), end='')
+    print()
+    print(f'cut (* {cut_id} *)')
+    print(f'    true && true;')
+    print()
+    cut_id += 1
+
+def annot_ntt10_4x_nof3546(ntt10_4x_nof3546, j, k0):
+    global cut_id
+
     ntt5_4x_nof14_end = find_first_line(ntt10_4x_nof3546, 'PC = 0x5555550edc')
     ntt5_4x_nof03_end = find_first_line(ntt10_4x_nof3546, 'PC = 0x5555550f68', ntt5_4x_nof14_end)
 
@@ -52,11 +140,7 @@ def annot_ntt10_4x_nof3546(ntt10_4x_nof3546):
     print('#### ntt10_4x_nof3546')
     print()
 
-    print()
-    print('##### ntt5_4x_nof14')
-    print()
-    print(''.join(ntt5_4x_nof14), end='')
-    print()
+    annot_ntt5_4x_nof14(ntt5_4x_nof14, j, k0)
 
     print()
     print('##### ntt5_4x_nof03')
@@ -122,68 +206,56 @@ def annot_jle2_k0_iter(k0_iter, j, k0):
     print(''.join(load), end='')
     print()
     print(f'ghost %fa0_{j}{k0}@sint16[8], %fa1_{j}{k0}@sint16[8], %fa2_{j}{k0}@sint16[8], %fa7_{j}{k0}@sint16[8], %fa8_{j}{k0}@sint16[8], %fa9_{j}{k0}@sint16[8] :')
-    print(f'    %fa0_{j}{k0} = %v17 /\\')
-    print(f'    %fa1_{j}{k0} = %v6  /\\')
-    print(f'    %fa2_{j}{k0} = %v19 /\\')
-    print(f'    %fa7_{j}{k0} = %v1  /\\')
-    print(f'    %fa8_{j}{k0} = %v16 /\\')
-    print(f'    %fa9_{j}{k0} = %v2')
+    print(f'    %fa0_{j}{k0} = %v1  /\\')
+    print(f'    %fa1_{j}{k0} = %v16 /\\')
+    print(f'    %fa2_{j}{k0} = %v2  /\\')
+    print(f'    %fa7_{j}{k0} = %v17 /\\')
+    print(f'    %fa8_{j}{k0} = %v6  /\\')
+    print(f'    %fa9_{j}{k0} = %v19')
     print(f'  &&')
-    print(f'    %fa0_{j}{k0} = %v17 /\\')
-    print(f'    %fa1_{j}{k0} = %v6  /\\')
-    print(f'    %fa2_{j}{k0} = %v19 /\\')
-    print(f'    %fa7_{j}{k0} = %v1  /\\')
-    print(f'    %fa8_{j}{k0} = %v16 /\\')
-    print(f'    %fa9_{j}{k0} = %v2;')
+    print(f'    %fa0_{j}{k0} = %v1  /\\')
+    print(f'    %fa1_{j}{k0} = %v16 /\\')
+    print(f'    %fa2_{j}{k0} = %v2  /\\')
+    print(f'    %fa7_{j}{k0} = %v17 /\\')
+    print(f'    %fa8_{j}{k0} = %v6  /\\')
+    print(f'    %fa9_{j}{k0} = %v19;')
     print()
     print(f'cut (* {cut_id} *)')
-    print(f'    %fa0_{j}{k0} = {memory_arr(0x7ffffff030 + 8 * k0, 8, 2)} /\\')
-    print(f'    %fa1_{j}{k0} = {memory_arr(0x7ffffff050 + 8 * k0, 8, 2)} /\\')
-    print(f'    %fa2_{j}{k0} = {memory_arr(0x7ffffff070 + 8 * k0, 8, 2)} /\\')
-    print(f'    %fa7_{j}{k0} = {memory_arr(0x7ffffff090 + 8 * k0, 8, 2)} /\\')
-    print(f'    %fa8_{j}{k0} = {memory_arr(0x7ffffff0b0 + 8 * k0, 8, 2)} /\\')
-    print(f'    %fa9_{j}{k0} = {memory_arr(0x7ffffff0d0 + 8 * k0, 8, 2)} /\\')
+    print(f'    %fa0_{j}{k0} = %v1  /\\')
+    print(f'    %fa1_{j}{k0} = %v16 /\\')
+    print(f'    %fa2_{j}{k0} = %v2  /\\')
+    print(f'    %fa7_{j}{k0} = %v17 /\\')
+    print(f'    %fa8_{j}{k0} = %v6  /\\')
+    print(f'    %fa9_{j}{k0} = %v19 /\\')
     print()
-    print(f'    %fa0_{j}{k0} <= {format_arr(["Q2"] * 8)} /\\')
-    print(f'    %fa1_{j}{k0} <= {format_arr(["Q2"] * 8)} /\\')
-    print(f'    %fa2_{j}{k0} <= {format_arr(["Q2"] * 8)} /\\')
-    print(f'    %fa7_{j}{k0} <= {format_arr(["Q2"] * 8)} /\\')
-    print(f'    %fa8_{j}{k0} <= {format_arr(["Q2"] * 8)} /\\')
-    print(f'    %fa9_{j}{k0} <= {format_arr(["Q2"] * 8)} /\\')
+    print(f'    %fa0_{j}{k0} = %fa0_{j}[:8] /\\')
+    print(f'    %fa1_{j}{k0} = %fa1_{j}[:8] /\\')
+    print(f'    %fa2_{j}{k0} = %fa2_{j}[:8] /\\')
+    print(f'    %fa7_{j}{k0} = %fa7_{j}[:8] /\\')
+    print(f'    %fa8_{j}{k0} = %fa8_{j}[:8] /\\')
+    print(f'    %fa9_{j}{k0} = %fa9_{j}[:8]')
     print()
-    print(f'    %fa0_{j}{k0} >= {format_arr(["NQ2"] * 8)} /\\')
-    print(f'    %fa1_{j}{k0} >= {format_arr(["NQ2"] * 8)} /\\')
-    print(f'    %fa2_{j}{k0} >= {format_arr(["NQ2"] * 8)} /\\')
-    print(f'    %fa7_{j}{k0} >= {format_arr(["NQ2"] * 8)} /\\')
-    print(f'    %fa8_{j}{k0} >= {format_arr(["NQ2"] * 8)} /\\')
-    print(f'    %fa9_{j}{k0} >= {format_arr(["NQ2"] * 8)}')
-    print()
-    print(f'    prove with [algebra solver isl]')
+    print(f'    prove with [cuts[0]] # TODO')
     print(f'  &&')
-    print(f'    %fa0_{j}{k0} = {memory_arr(0x7ffffff030, 8, 2)} /\\')
-    print(f'    %fa1_{j}{k0} = {memory_arr(0x7ffffff050, 8, 2)} /\\')
-    print(f'    %fa2_{j}{k0} = {memory_arr(0x7ffffff070, 8, 2)} /\\')
-    print(f'    %fa7_{j}{k0} = {memory_arr(0x7ffffff090, 8, 2)} /\\')
-    print(f'    %fa8_{j}{k0} = {memory_arr(0x7ffffff0b0, 8, 2)} /\\')
-    print(f'    %fa9_{j}{k0} = {memory_arr(0x7ffffff0d0, 8, 2)} /\\')
+    print(f'    %fa0_{j}{k0} = %v1  /\\')
+    print(f'    %fa1_{j}{k0} = %v16 /\\')
+    print(f'    %fa2_{j}{k0} = %v2  /\\')
+    print(f'    %fa7_{j}{k0} = %v17 /\\')
+    print(f'    %fa8_{j}{k0} = %v6  /\\')
+    print(f'    %fa9_{j}{k0} = %v19 /\\')
     print()
-    print(f'    %fa0_{j}{k0} <=s {format_arr(["Q2"] * 8)} /\\')
-    print(f'    %fa1_{j}{k0} <=s {format_arr(["Q2"] * 8)} /\\')
-    print(f'    %fa2_{j}{k0} <=s {format_arr(["Q2"] * 8)} /\\')
-    print(f'    %fa7_{j}{k0} <=s {format_arr(["Q2"] * 8)} /\\')
-    print(f'    %fa8_{j}{k0} <=s {format_arr(["Q2"] * 8)} /\\')
-    print(f'    %fa9_{j}{k0} <=s {format_arr(["Q2"] * 8)} /\\')
+    print(f'    %fa0_{j}{k0} = %fa0_{j}[:8] /\\')
+    print(f'    %fa1_{j}{k0} = %fa1_{j}[:8] /\\')
+    print(f'    %fa2_{j}{k0} = %fa2_{j}[:8] /\\')
+    print(f'    %fa7_{j}{k0} = %fa7_{j}[:8] /\\')
+    print(f'    %fa8_{j}{k0} = %fa8_{j}[:8] /\\')
+    print(f'    %fa9_{j}{k0} = %fa9_{j}[:8]')
     print()
-    print(f'    %fa0_{j}{k0} >=s {format_arr(["NQ2"] * 8)} /\\')
-    print(f'    %fa1_{j}{k0} >=s {format_arr(["NQ2"] * 8)} /\\')
-    print(f'    %fa2_{j}{k0} >=s {format_arr(["NQ2"] * 8)} /\\')
-    print(f'    %fa7_{j}{k0} >=s {format_arr(["NQ2"] * 8)} /\\')
-    print(f'    %fa8_{j}{k0} >=s {format_arr(["NQ2"] * 8)} /\\')
-    print(f'    %fa9_{j}{k0} >=s {format_arr(["NQ2"] * 8)};')
+    print(f'    prove with [cuts[0]]; # TODO')
     print()
     cut_id += 1
 
-    annot_ntt10_4x_nof3546(ntt10_4x_nof3546)
+    annot_ntt10_4x_nof3546(ntt10_4x_nof3546, j, k0)
 
     print()
     print('#### twist_his')
@@ -262,64 +334,52 @@ def annot_j_iter(j_iter, j):
         print(''.join(prologue), end='')
         print()
         print(f'ghost %fa0_{j}@sint16[16], %fa1_{j}@sint16[16], %fa2_{j}@sint16[16], %fa7_{j}@sint16[16], %fa8_{j}@sint16[16], %fa9_{j}@sint16[16] :')
-        print(f'    %fa0_{j} = {memory_arr(0x7ffffff030, 16, 2)} /\\')
-        print(f'    %fa1_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
-        print(f'    %fa2_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
-        print(f'    %fa7_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
-        print(f'    %fa8_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
-        print(f'    %fa9_{j} = {memory_arr(0x7ffffff0d0, 16, 2)}')
+        print(f'    %fa0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
+        print(f'    %fa1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
+        print(f'    %fa2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
+        print(f'    %fa7_{j} = {memory_arr(0x7ffffff030, 16, 2)} /\\')
+        print(f'    %fa8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
+        print(f'    %fa9_{j} = {memory_arr(0x7ffffff070, 16, 2)}')
         print(f'  &&')
-        print(f'    %fa0_{j} = {memory_arr(0x7ffffff030, 16, 2)} /\\')
-        print(f'    %fa1_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
-        print(f'    %fa2_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
-        print(f'    %fa7_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
-        print(f'    %fa8_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
-        print(f'    %fa9_{j} = {memory_arr(0x7ffffff0d0, 16, 2)};')
+        print(f'    %fa0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
+        print(f'    %fa1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
+        print(f'    %fa2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
+        print(f'    %fa7_{j} = {memory_arr(0x7ffffff030, 16, 2)} /\\')
+        print(f'    %fa8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
+        print(f'    %fa9_{j} = {memory_arr(0x7ffffff070, 16, 2)};')
         print()
         print(f'cut (* {cut_id} *)')
-        print(f'    %fa0_{j} = {memory_arr(0x7ffffff030, 16, 2)} /\\')
-        print(f'    %fa1_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
-        print(f'    %fa2_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
-        print(f'    %fa7_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
-        print(f'    %fa8_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
-        print(f'    %fa9_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
+        print(f'    %fa0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
+        print(f'    %fa1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
+        print(f'    %fa2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
+        print(f'    %fa7_{j} = {memory_arr(0x7ffffff030, 16, 2)} /\\')
+        print(f'    %fa8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
+        print(f'    %fa9_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
         print()
-        print(f'    %fa0_{j} <= {format_arr(["Q2"] * 16)} /\\')
-        print(f'    %fa1_{j} <= {format_arr(["Q2"] * 16)} /\\')
-        print(f'    %fa2_{j} <= {format_arr(["Q2"] * 16)} /\\')
-        print(f'    %fa7_{j} <= {format_arr(["Q2"] * 16)} /\\')
-        print(f'    %fa8_{j} <= {format_arr(["Q2"] * 16)} /\\')
-        print(f'    %fa9_{j} <= {format_arr(["Q2"] * 16)} /\\')
+        print(f'    %fa0_{j} = {format_poly(288, 16)} /\\')
+        print(f'    %fa1_{j} = {format_poly(144, 16)} /\\')
+        print(f'    %fa2_{j} = {format_poly(  0, 16)} /\\')
+        print(f'    %fa7_{j} = {format_poly(720, 16)} /\\')
+        print(f'    %fa8_{j} = {format_poly(576, 16)} /\\')
+        print(f'    %fa9_{j} = {format_poly(432, 16)}')
         print()
-        print(f'    %fa0_{j} >= {format_arr(["NQ2"] * 16)} /\\')
-        print(f'    %fa1_{j} >= {format_arr(["NQ2"] * 16)} /\\')
-        print(f'    %fa2_{j} >= {format_arr(["NQ2"] * 16)} /\\')
-        print(f'    %fa7_{j} >= {format_arr(["NQ2"] * 16)} /\\')
-        print(f'    %fa8_{j} >= {format_arr(["NQ2"] * 16)} /\\')
-        print(f'    %fa9_{j} >= {format_arr(["NQ2"] * 16)}')
-        print()
-        print(f'    prove with [algebra solver isl]')
+        print(f'    prove with [cuts[0]]')
         print(f'  &&')
-        print(f'    %fa0_{j} = {memory_arr(0x7ffffff030, 16, 2)} /\\')
-        print(f'    %fa1_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
-        print(f'    %fa2_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
-        print(f'    %fa7_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
-        print(f'    %fa8_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
-        print(f'    %fa9_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
+        print(f'    %fa0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
+        print(f'    %fa1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
+        print(f'    %fa2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
+        print(f'    %fa7_{j} = {memory_arr(0x7ffffff030, 16, 2)} /\\')
+        print(f'    %fa8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
+        print(f'    %fa9_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
         print()
-        print(f'    %fa0_{j} <=s {format_arr(["Q2"] * 16)} /\\')
-        print(f'    %fa1_{j} <=s {format_arr(["Q2"] * 16)} /\\')
-        print(f'    %fa2_{j} <=s {format_arr(["Q2"] * 16)} /\\')
-        print(f'    %fa7_{j} <=s {format_arr(["Q2"] * 16)} /\\')
-        print(f'    %fa8_{j} <=s {format_arr(["Q2"] * 16)} /\\')
-        print(f'    %fa9_{j} <=s {format_arr(["Q2"] * 16)} /\\')
+        print(f'    %fa0_{j} = {format_poly(288, 16)} /\\')
+        print(f'    %fa1_{j} = {format_poly(144, 16)} /\\')
+        print(f'    %fa2_{j} = {format_poly(  0, 16)} /\\')
+        print(f'    %fa7_{j} = {format_poly(720, 16)} /\\')
+        print(f'    %fa8_{j} = {format_poly(576, 16)} /\\')
+        print(f'    %fa9_{j} = {format_poly(432, 16)}')
         print()
-        print(f'    %fa0_{j} >=s {format_arr(["NQ2"] * 16)} /\\')
-        print(f'    %fa1_{j} >=s {format_arr(["NQ2"] * 16)} /\\')
-        print(f'    %fa2_{j} >=s {format_arr(["NQ2"] * 16)} /\\')
-        print(f'    %fa7_{j} >=s {format_arr(["NQ2"] * 16)} /\\')
-        print(f'    %fa8_{j} >=s {format_arr(["NQ2"] * 16)} /\\')
-        print(f'    %fa9_{j} >=s {format_arr(["NQ2"] * 16)};')
+        print(f'    prove with [cuts[0]];')
         print()
         cut_id += 1
 
@@ -378,6 +438,8 @@ def annot_j_iter(j_iter, j):
         print()
 
 def annot(lines):
+    global cut_id
+
     j_loop_begin = find_first_line(lines, 'PC = 0x5555550ce0') + 2
     j_loop_end = find_first_line(lines, 'SP = 0x7ffffff0f0', j_loop_begin)
 
@@ -405,7 +467,7 @@ def annot(lines):
     print('    sint16 Q, sint16 Q2, sint16 NQ2')
     print(') =')
     print('{')
-    print('    Q = 4591 /\\ Q2 = 2295 /\\ NQ2 = (-2295) /\\')
+    print('    Q = 4591 /\\ Q2 = 2295 /\\ NQ2 = -2295 /\\')
     print()
     for i in range(0, 768, 16):
         print(f'    {format_poly(i, 16)} <= {format_arr(["Q2"] * 16)} /\\')
@@ -428,12 +490,12 @@ def annot(lines):
     print('# constants')
     print()
     consts = [4591, 29, 7, 0, 0, 0, 0, 0, 1005, 918, -818, -1736, 7173, 6552, -5838, -12391]
-    rhs = [format_const(c) for c in consts]
+    rhs = [format_imm(c) for c in consts]
     print(f'mov {memory_arr(0x55555529d0, 16, 2)} {format_arr(rhs)};')
     print()
     for j in range(9):
         twist_consts = [-2274, -16231, 1610, 11491, -2113, -15081, -1815, -12954, -2274, -16231, 1610, 11491, -2113, -15081, -1815, -12954]
-        rhs = [format_const(c) for c in twist_consts]
+        rhs = [format_imm(c) for c in twist_consts]
         print(f'mov {memory_arr(0x55555529f0 + 32 * j, 16, 2)} {format_arr(rhs)};')
     print()
 
@@ -449,6 +511,22 @@ def annot(lines):
     print()
     print(''.join(prologue), end='')
     print()
+    print(f'cut (* {cut_id} *)')
+    print(f'    %v0 = {format_arr([str(c) for c in consts[:8]])} /\\')
+    print(f'    %v4 = {format_arr([str(c) for c in consts[8:]])} /\\')
+    print()
+    for i in range(0, 768, 16):
+        end = ' /\\\n' if i != 768 - 16 else '\n'
+        print(f'    {memory_arr(0x5555570070 + 2 * i, 16, 2)} = {format_poly(i, 16)}', end=end)
+    print(f'  &&')
+    print(f'    %v0 = {format_arr([format_const(c) for c in consts[:8]])} /\\')
+    print(f'    %v4 = {format_arr([format_const(c) for c in consts[8:]])} /\\')
+    print()
+    for i in range(0, 768, 16):
+        end = ' /\\\n' if i != 768 - 16 else ';\n'
+        print(f'    {memory_arr(0x5555570070 + 2 * i, 16, 2)} = {format_poly(i, 16)}', end=end)
+    print()
+    cut_id += 1
 
     j = 0
     j_iter_begin = j_loop_begin
@@ -456,7 +534,7 @@ def annot(lines):
         annot_j_iter(lines[j_iter_begin : j_iter_end], j)
         j_iter_begin = j_iter_end
         j += 1
-        if j == 3:
+        if j == 1:
             break
 
     print()
