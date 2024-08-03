@@ -728,7 +728,7 @@ add %v5 %v5 %v2;
 add %v20 %v1 %v3;
 
 cut (* 4 *)
-    true && true;
+    true && true prove with [precondition, cuts[0, 1, 2, 3]];
 
 
 ##### ntt5_4x_nof03
@@ -1174,7 +1174,7 @@ add %v5 %v5 %v2;
 add %v20 %v1 %v3;
 
 cut (* 7 *)
-    true && true;
+    true && true prove with [precondition, cuts[0, 1, 2, 3]];
 
 
 ##### ntt5_4x_nof03

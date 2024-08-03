@@ -122,7 +122,7 @@ def annot_ntt5_4x_nof14(ntt5_4x_nof14, j, k0):
     print(''.join(seg5), end='')
     print()
     print(f'cut (* {cut_id} *)')
-    print(f'    true && true;')
+    print(f'    true && true prove with [precondition, cuts[0, 1, 2, 3]];')
     print()
     cut_id += 1
 
