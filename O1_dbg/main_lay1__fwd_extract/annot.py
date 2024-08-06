@@ -1169,12 +1169,20 @@ def annot_jle2_k0_iter(k0_iter, j, k0, prologue_cut_id, j_iter_prologue_cut_id):
     print(f'    %fa8_{j}{k0} = %v6  /\\')
     print(f'    %fa9_{j}{k0} = %v19 /\\')
     print()
-    print(f'    %fa0_{j}{k0} = %fa0_{j}[:8] /\\')
-    print(f'    %fa1_{j}{k0} = %fa1_{j}[:8] /\\')
-    print(f'    %fa2_{j}{k0} = %fa2_{j}[:8] /\\')
-    print(f'    %fa7_{j}{k0} = %fa7_{j}[:8] /\\')
-    print(f'    %fa8_{j}{k0} = %fa8_{j}[:8] /\\')
-    print(f'    %fa9_{j}{k0} = %fa9_{j}[:8]')
+    if k0 == 0:
+        print(f'    %fa0_{j}{k0} = %fa0_{j}[:8] /\\')
+        print(f'    %fa1_{j}{k0} = %fa1_{j}[:8] /\\')
+        print(f'    %fa2_{j}{k0} = %fa2_{j}[:8] /\\')
+        print(f'    %fa7_{j}{k0} = %fa7_{j}[:8] /\\')
+        print(f'    %fa8_{j}{k0} = %fa8_{j}[:8] /\\')
+        print(f'    %fa9_{j}{k0} = %fa9_{j}[:8]')
+    else:
+        print(f'    %fa0_{j}{k0} = %fa0_{j}[8:] /\\')
+        print(f'    %fa1_{j}{k0} = %fa1_{j}[8:] /\\')
+        print(f'    %fa2_{j}{k0} = %fa2_{j}[8:] /\\')
+        print(f'    %fa7_{j}{k0} = %fa7_{j}[8:] /\\')
+        print(f'    %fa8_{j}{k0} = %fa8_{j}[8:] /\\')
+        print(f'    %fa9_{j}{k0} = %fa9_{j}[8:]')
     print()
     print(f'    prove with [cuts[{j_iter_prologue_cut_id}]]')
     print(f'  &&')
@@ -1185,12 +1193,20 @@ def annot_jle2_k0_iter(k0_iter, j, k0, prologue_cut_id, j_iter_prologue_cut_id):
     print(f'    %fa8_{j}{k0} = %v6  /\\')
     print(f'    %fa9_{j}{k0} = %v19 /\\')
     print()
-    print(f'    %fa0_{j}{k0} = %fa0_{j}[:8] /\\')
-    print(f'    %fa1_{j}{k0} = %fa1_{j}[:8] /\\')
-    print(f'    %fa2_{j}{k0} = %fa2_{j}[:8] /\\')
-    print(f'    %fa7_{j}{k0} = %fa7_{j}[:8] /\\')
-    print(f'    %fa8_{j}{k0} = %fa8_{j}[:8] /\\')
-    print(f'    %fa9_{j}{k0} = %fa9_{j}[:8]')
+    if k0 == 0:
+        print(f'    %fa0_{j}{k0} = %fa0_{j}[:8] /\\')
+        print(f'    %fa1_{j}{k0} = %fa1_{j}[:8] /\\')
+        print(f'    %fa2_{j}{k0} = %fa2_{j}[:8] /\\')
+        print(f'    %fa7_{j}{k0} = %fa7_{j}[:8] /\\')
+        print(f'    %fa8_{j}{k0} = %fa8_{j}[:8] /\\')
+        print(f'    %fa9_{j}{k0} = %fa9_{j}[:8]')
+    else:
+        print(f'    %fa0_{j}{k0} = %fa0_{j}[8:] /\\')
+        print(f'    %fa1_{j}{k0} = %fa1_{j}[8:] /\\')
+        print(f'    %fa2_{j}{k0} = %fa2_{j}[8:] /\\')
+        print(f'    %fa7_{j}{k0} = %fa7_{j}[8:] /\\')
+        print(f'    %fa8_{j}{k0} = %fa8_{j}[8:] /\\')
+        print(f'    %fa9_{j}{k0} = %fa9_{j}[8:]')
     print()
     print(f'    prove with [cuts[{j_iter_prologue_cut_id}]];')
     print()
@@ -1206,6 +1222,16 @@ def annot_jle2_k0_iter(k0_iter, j, k0, prologue_cut_id, j_iter_prologue_cut_id):
     print()
     print(''.join(store), end='')
     print()
+    regs = [22, 6, 19, 5, 18, 21, 17, 16, 7, 1]
+    print(f'cut (* {cut_id} *)')
+    for i, reg in enumerate(regs):
+        delim = ' /\\' if i != 9 else ''
+        print(f'    {memory_arr(0x5555571278 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
+    print('  &&')
+    for i, reg in enumerate(regs):
+        delim = ' /\\' if i != 9 else ';'
+        print(f'    {memory_arr(0x5555571278 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
+    cut_id += 1
 
 def annot_jgt2_k0_iter(k0_iter, j, k0):
     load_end = find_first_line(k0_iter, 'PC = 0x5555551070')
@@ -1294,12 +1320,12 @@ def annot_j_iter(j_iter, j, prologue_cut_id):
         print(f'    %fa8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
         print(f'    %fa9_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
         print()
-        print(f'    %fa0_{j} = {format_poly(288, 16)} /\\')
-        print(f'    %fa1_{j} = {format_poly(144, 16)} /\\')
-        print(f'    %fa2_{j} = {format_poly(  0, 16)} /\\')
-        print(f'    %fa7_{j} = {format_poly(720, 16)} /\\')
-        print(f'    %fa8_{j} = {format_poly(576, 16)} /\\')
-        print(f'    %fa9_{j} = {format_poly(432, 16)}')
+        print(f'    %fa0_{j} = {format_poly(288 + 16 * j, 16)} /\\')
+        print(f'    %fa1_{j} = {format_poly(144 + 16 * j, 16)} /\\')
+        print(f'    %fa2_{j} = {format_poly(  0 + 16 * j, 16)} /\\')
+        print(f'    %fa7_{j} = {format_poly(720 + 16 * j, 16)} /\\')
+        print(f'    %fa8_{j} = {format_poly(576 + 16 * j, 16)} /\\')
+        print(f'    %fa9_{j} = {format_poly(432 + 16 * j, 16)}')
         print()
         print(f'    prove with [cuts[{prologue_cut_id}]]')
         print(f'  &&')
@@ -1310,12 +1336,12 @@ def annot_j_iter(j_iter, j, prologue_cut_id):
         print(f'    %fa8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
         print(f'    %fa9_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
         print()
-        print(f'    %fa0_{j} = {format_poly(288, 16)} /\\')
-        print(f'    %fa1_{j} = {format_poly(144, 16)} /\\')
-        print(f'    %fa2_{j} = {format_poly(  0, 16)} /\\')
-        print(f'    %fa7_{j} = {format_poly(720, 16)} /\\')
-        print(f'    %fa8_{j} = {format_poly(576, 16)} /\\')
-        print(f'    %fa9_{j} = {format_poly(432, 16)}')
+        print(f'    %fa0_{j} = {format_poly(288 + 16 * j, 16)} /\\')
+        print(f'    %fa1_{j} = {format_poly(144 + 16 * j, 16)} /\\')
+        print(f'    %fa2_{j} = {format_poly(  0 + 16 * j, 16)} /\\')
+        print(f'    %fa7_{j} = {format_poly(720 + 16 * j, 16)} /\\')
+        print(f'    %fa8_{j} = {format_poly(576 + 16 * j, 16)} /\\')
+        print(f'    %fa9_{j} = {format_poly(432 + 16 * j, 16)}')
         print()
         print(f'    prove with [cuts[{prologue_cut_id}]];')
         print()
@@ -1474,7 +1500,7 @@ def annot(lines):
         annot_j_iter(lines[j_iter_begin : j_iter_end], j, prologue_cut_id)
         j_iter_begin = j_iter_end
         j += 1
-        if j == 1:
+        if j == 3:
             break
 
     print()
