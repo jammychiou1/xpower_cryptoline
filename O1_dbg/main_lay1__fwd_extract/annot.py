@@ -1233,7 +1233,9 @@ def annot_jle2_k0_iter(k0_iter, j, k0, prologue_cut_id, j_iter_prologue_cut_id):
         print(f'    {memory_arr(0x5555571278 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
     cut_id += 1
 
-def annot_jgt2_k0_iter(k0_iter, j, k0):
+def annot_jgt2_k0_iter(k0_iter, j, k0, prologue_cut_id, j_iter_prologue_cut_id):
+    global cut_id
+
     load_end = find_first_line(k0_iter, 'PC = 0x5555551070')
     ntt10_4x_nof35467_end = find_first_line(k0_iter, 'PC = 0x5555551170', load_end)
     twist_his_end = find_first_line(k0_iter, 'PC = 0x5555551014', ntt10_4x_nof35467_end)
@@ -1252,6 +1254,64 @@ def annot_jgt2_k0_iter(k0_iter, j, k0):
     print()
     print(''.join(load), end='')
     print()
+    print(f'ghost %fd0_{j}{k0}@sint16[8], %fd1_{j}{k0}@sint16[8], %fd2_{j}{k0}@sint16[8], %fd8_{j}{k0}@sint16[8], %fd9_{j}{k0}@sint16[8] :')
+    print(f'    %fd0_{j}{k0} = %v2  /\\')
+    print(f'    %fd1_{j}{k0} = %v16 /\\')
+    print(f'    %fd2_{j}{k0} = %v3  /\\')
+    print(f'    %fd8_{j}{k0} = %v6  /\\')
+    print(f'    %fd9_{j}{k0} = %v18')
+    print(f'  &&')
+    print(f'    %fd0_{j}{k0} = %v2  /\\')
+    print(f'    %fd1_{j}{k0} = %v16 /\\')
+    print(f'    %fd2_{j}{k0} = %v3  /\\')
+    print(f'    %fd8_{j}{k0} = %v6  /\\')
+    print(f'    %fd9_{j}{k0} = %v18;')
+    print()
+    print(f'cut (* {cut_id} *)')
+    print(f'    %fd0_{j}{k0} = %v2  /\\')
+    print(f'    %fd1_{j}{k0} = %v16 /\\')
+    print(f'    %fd2_{j}{k0} = %v3  /\\')
+    print(f'    %fd8_{j}{k0} = %v6  /\\')
+    print(f'    %fd9_{j}{k0} = %v18 /\\')
+    print()
+    if k0 == 0:
+        print(f'    %fd0_{j}{k0} = %fd0_{j}[:8] /\\')
+        print(f'    %fd1_{j}{k0} = %fd1_{j}[:8] /\\')
+        print(f'    %fd2_{j}{k0} = %fd2_{j}[:8] /\\')
+        print(f'    %fd8_{j}{k0} = %fd8_{j}[:8] /\\')
+        print(f'    %fd9_{j}{k0} = %fd9_{j}[:8]')
+    else:
+        print(f'    %fd0_{j}{k0} = %fd0_{j}[8:] /\\')
+        print(f'    %fd1_{j}{k0} = %fd1_{j}[8:] /\\')
+        print(f'    %fd2_{j}{k0} = %fd2_{j}[8:] /\\')
+        print(f'    %fd8_{j}{k0} = %fd8_{j}[8:] /\\')
+        print(f'    %fd9_{j}{k0} = %fd9_{j}[8:]')
+    print()
+    print(f'    prove with [cuts[{j_iter_prologue_cut_id}]]')
+    print(f'  &&')
+    print(f'    %fd0_{j}{k0} = %v2  /\\')
+    print(f'    %fd1_{j}{k0} = %v16 /\\')
+    print(f'    %fd2_{j}{k0} = %v3  /\\')
+    print(f'    %fd8_{j}{k0} = %v6  /\\')
+    print(f'    %fd9_{j}{k0} = %v18 /\\')
+    print()
+    if k0 == 0:
+        print(f'    %fd0_{j}{k0} = %fd0_{j}[:8] /\\')
+        print(f'    %fd1_{j}{k0} = %fd1_{j}[:8] /\\')
+        print(f'    %fd2_{j}{k0} = %fd2_{j}[:8] /\\')
+        print(f'    %fd8_{j}{k0} = %fd8_{j}[:8] /\\')
+        print(f'    %fd9_{j}{k0} = %fd9_{j}[:8]')
+    else:
+        print(f'    %fd0_{j}{k0} = %fd0_{j}[8:] /\\')
+        print(f'    %fd1_{j}{k0} = %fd1_{j}[8:] /\\')
+        print(f'    %fd2_{j}{k0} = %fd2_{j}[8:] /\\')
+        print(f'    %fd8_{j}{k0} = %fd8_{j}[8:] /\\')
+        print(f'    %fd9_{j}{k0} = %fd9_{j}[8:]')
+    print()
+    print(f'    prove with [cuts[{j_iter_prologue_cut_id}]];')
+    print()
+    k0_iter_load_cut_id = cut_id
+    cut_id += 1
 
     annot_ntt10_4x_nof35467(ntt10_4x_nof35467)
 
@@ -1388,11 +1448,55 @@ def annot_j_iter(j_iter, j, prologue_cut_id):
         print()
         print(''.join(prologue), end='')
         print()
+        print(f'ghost %fd0_{j}@sint16[16], %fd1_{j}@sint16[16], %fd2_{j}@sint16[16], %fd8_{j}@sint16[16], %fd9_{j}@sint16[16] :')
+        print(f'    %fd0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
+        print(f'    %fd1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
+        print(f'    %fd2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
+        print(f'    %fd8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
+        print(f'    %fd9_{j} = {memory_arr(0x7ffffff070, 16, 2)}')
+        print(f'  &&')
+        print(f'    %fd0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
+        print(f'    %fd1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
+        print(f'    %fd2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
+        print(f'    %fd8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
+        print(f'    %fd9_{j} = {memory_arr(0x7ffffff070, 16, 2)};')
+        print()
+        print(f'cut (* {cut_id} *)')
+        print(f'    %fd0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
+        print(f'    %fd1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
+        print(f'    %fd2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
+        print(f'    %fd8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
+        print(f'    %fd9_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
+        print()
+        print(f'    %fd0_{j} = {format_poly(288 + 16 * j, 16)} /\\')
+        print(f'    %fd1_{j} = {format_poly(144 + 16 * j, 16)} /\\')
+        print(f'    %fd2_{j} = {format_poly(  0 + 16 * j, 16)} /\\')
+        print(f'    %fd8_{j} = {format_poly(576 + 16 * j, 16)} /\\')
+        print(f'    %fd9_{j} = {format_poly(432 + 16 * j, 16)}')
+        print()
+        print(f'    prove with [cuts[{prologue_cut_id}]]')
+        print(f'  &&')
+        print(f'    %fd0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
+        print(f'    %fd1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
+        print(f'    %fd2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
+        print(f'    %fd8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
+        print(f'    %fd9_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
+        print()
+        print(f'    %fd0_{j} = {format_poly(288 + 16 * j, 16)} /\\')
+        print(f'    %fd1_{j} = {format_poly(144 + 16 * j, 16)} /\\')
+        print(f'    %fd2_{j} = {format_poly(  0 + 16 * j, 16)} /\\')
+        print(f'    %fd8_{j} = {format_poly(576 + 16 * j, 16)} /\\')
+        print(f'    %fd9_{j} = {format_poly(432 + 16 * j, 16)}')
+        print()
+        print(f'    prove with [cuts[{prologue_cut_id}]];')
+        print()
+        j_iter_prologue_cut_id = cut_id
+        cut_id += 1
 
         k0 = 0
         k0_iter_begin = k0_loop_begin
         for k0_iter_end in k0_iter_ends:
-            annot_jgt2_k0_iter(j_iter[k0_iter_begin : k0_iter_end], j, k0)
+            annot_jgt2_k0_iter(j_iter[k0_iter_begin : k0_iter_end], j, k0, prologue_cut_id, j_iter_prologue_cut_id)
             k0_iter_begin = k0_iter_end
             k0 += 1
 
@@ -1500,7 +1604,7 @@ def annot(lines):
         annot_j_iter(lines[j_iter_begin : j_iter_end], j, prologue_cut_id)
         j_iter_begin = j_iter_end
         j += 1
-        if j == 3:
+        if j == 4:
             break
 
     print()
