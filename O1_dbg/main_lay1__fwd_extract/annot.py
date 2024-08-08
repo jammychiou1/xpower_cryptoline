@@ -2179,6 +2179,16 @@ def annot_jgt2_k0_iter(k0_iter, j, k0, prologue_cut_id, j_iter_prologue_cut_id):
     print()
     print(''.join(store), end='')
     print()
+    regs = [24, 5, 20, 1, 19, 23, 17, 16, 7, 3]
+    print(f'cut (* {cut_id} *)')
+    for i, reg in enumerate(regs):
+        delim = ' /\\' if i != 9 else ''
+        print(f'    {memory_arr(0x5555571278 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
+    print('  &&')
+    for i, reg in enumerate(regs):
+        delim = ' /\\' if i != 9 else ';'
+        print(f'    {memory_arr(0x5555571278 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
+    cut_id += 1
 
 
 def annot_j_iter(j_iter, j, prologue_cut_id):
