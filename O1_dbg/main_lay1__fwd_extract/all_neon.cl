@@ -11750,6 +11750,13477 @@ cut (* 68 *)
 #b.eq	0x555555131c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1712>  // b.none#! 0x555555121c = 0x555555121c;
 
 
+## j_iter
+
+
+### j_iter prologue
+
+(* #b.le	0x5555550ce4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+120>#! PC = 0x5555551224 *)
+#b.le	0x5555550ce4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+120>#! 0x5555551224 = 0x5555551224;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570570; Value = 0x0000000000000000; PC = 0x5555551248 *)
+mov %v2 [L0x5555570570,L0x5555570572,L0x5555570574,L0x5555570576,L0x5555570578,L0x555557057a,L0x555557057c,L0x555557057e];
+mov %v3 [L0x5555570580,L0x5555570582,L0x5555570584,L0x5555570586,L0x5555570588,L0x555557058a,L0x555557058c,L0x555557058e];
+(* st1	{v2.8h, v3.8h}, [x17]                       #! EA = L0x7ffffff050; PC = 0x555555124c *)
+mov [L0x7ffffff050,L0x7ffffff052,L0x7ffffff054,L0x7ffffff056,L0x7ffffff058,L0x7ffffff05a,L0x7ffffff05c,L0x7ffffff05e] %v2;
+mov [L0x7ffffff060,L0x7ffffff062,L0x7ffffff064,L0x7ffffff066,L0x7ffffff068,L0x7ffffff06a,L0x7ffffff06c,L0x7ffffff06e] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570450; Value = 0x0000000000000000; PC = 0x5555551270 *)
+mov %v2 [L0x5555570450,L0x5555570452,L0x5555570454,L0x5555570456,L0x5555570458,L0x555557045a,L0x555557045c,L0x555557045e];
+mov %v3 [L0x5555570460,L0x5555570462,L0x5555570464,L0x5555570466,L0x5555570468,L0x555557046a,L0x555557046c,L0x555557046e];
+(* st1	{v2.8h, v3.8h}, [x16]                       #! EA = L0x7ffffff070; PC = 0x5555551274 *)
+mov [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e] %v2;
+mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570330; Value = 0x0000000000000000; PC = 0x5555551298 *)
+mov %v2 [L0x5555570330,L0x5555570332,L0x5555570334,L0x5555570336,L0x5555570338,L0x555557033a,L0x555557033c,L0x555557033e];
+mov %v3 [L0x5555570340,L0x5555570342,L0x5555570344,L0x5555570346,L0x5555570348,L0x555557034a,L0x555557034c,L0x555557034e];
+(* st1	{v2.8h, v3.8h}, [x15]                       #! EA = L0x7ffffff090; PC = 0x555555129c *)
+mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v2;
+mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570210; Value = 0x0000000000000000; PC = 0x55555512c0 *)
+mov %v2 [L0x5555570210,L0x5555570212,L0x5555570214,L0x5555570216,L0x5555570218,L0x555557021a,L0x555557021c,L0x555557021e];
+mov %v3 [L0x5555570220,L0x5555570222,L0x5555570224,L0x5555570226,L0x5555570228,L0x555557022a,L0x555557022c,L0x555557022e];
+(* st1	{v2.8h, v3.8h}, [x14]                       #! EA = L0x7ffffff0b0; PC = 0x55555512c4 *)
+mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v2;
+mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x55555700f0; Value = 0x0000000000000000; PC = 0x55555512e8 *)
+mov %v2 [L0x55555700f0,L0x55555700f2,L0x55555700f4,L0x55555700f6,L0x55555700f8,L0x55555700fa,L0x55555700fc,L0x55555700fe];
+mov %v3 [L0x5555570100,L0x5555570102,L0x5555570104,L0x5555570106,L0x5555570108,L0x555557010a,L0x555557010c,L0x555557010e];
+(* st1	{v2.8h, v3.8h}, [x13]                       #! EA = L0x7ffffff0d0; PC = 0x55555512ec *)
+mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v2;
+mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v3;
+(* #b	0x555555105c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1008>#! PC = 0x5555551318 *)
+#b	0x555555105c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1008>#! 0x5555551318 = 0x5555551318;
+
+ghost %fd0_4@sint16[16], %fd1_4@sint16[16], %fd2_4@sint16[16], %fd8_4@sint16[16], %fd9_4@sint16[16] :
+    %fd0_4 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_4 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_4 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_4 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_4 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e]
+  &&
+    %fd0_4 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_4 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_4 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_4 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_4 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e];
+
+cut (* 69 *)
+    %fd0_4 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_4 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_4 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_4 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_4 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e] /\
+
+    %fd0_4 = [poly352, poly353, poly354, poly355, poly356, poly357, poly358, poly359, poly360, poly361, poly362, poly363, poly364, poly365, poly366, poly367] /\
+    %fd1_4 = [poly208, poly209, poly210, poly211, poly212, poly213, poly214, poly215, poly216, poly217, poly218, poly219, poly220, poly221, poly222, poly223] /\
+    %fd2_4 = [poly64,  poly65,  poly66,  poly67,  poly68,  poly69,  poly70,  poly71,  poly72,  poly73,  poly74,  poly75,  poly76,  poly77,  poly78,  poly79 ] /\
+    %fd8_4 = [poly640, poly641, poly642, poly643, poly644, poly645, poly646, poly647, poly648, poly649, poly650, poly651, poly652, poly653, poly654, poly655] /\
+    %fd9_4 = [poly496, poly497, poly498, poly499, poly500, poly501, poly502, poly503, poly504, poly505, poly506, poly507, poly508, poly509, poly510, poly511]
+
+    prove with [cuts[0]]
+  &&
+    %fd0_4 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_4 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_4 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_4 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_4 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e] /\
+
+    %fd0_4 = [poly352, poly353, poly354, poly355, poly356, poly357, poly358, poly359, poly360, poly361, poly362, poly363, poly364, poly365, poly366, poly367] /\
+    %fd1_4 = [poly208, poly209, poly210, poly211, poly212, poly213, poly214, poly215, poly216, poly217, poly218, poly219, poly220, poly221, poly222, poly223] /\
+    %fd2_4 = [poly64,  poly65,  poly66,  poly67,  poly68,  poly69,  poly70,  poly71,  poly72,  poly73,  poly74,  poly75,  poly76,  poly77,  poly78,  poly79 ] /\
+    %fd8_4 = [poly640, poly641, poly642, poly643, poly644, poly645, poly646, poly647, poly648, poly649, poly650, poly651, poly652, poly653, poly654, poly655] /\
+    %fd9_4 = [poly496, poly497, poly498, poly499, poly500, poly501, poly502, poly503, poly504, poly505, poly506, poly507, poly508, poly509, poly510, poly511]
+
+    prove with [cuts[0]];
+
+
+### k0_iter
+
+
+#### load
+
+(* ldr	q2, [x22]                                   #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555105c *)
+mov %v2 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
+(* ldr	q16, [x21]                                  #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x5555551060 *)
+mov %v16 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
+(* ldr	q3, [x20]                                   #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551064 *)
+mov %v3 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
+(* ldr	q6, [x19]                                   #! EA = L0x7ffffff050; Value = 0x0000000000000000; PC = 0x5555551068 *)
+mov %v6 [L0x7ffffff050,L0x7ffffff052,L0x7ffffff054,L0x7ffffff056,L0x7ffffff058,L0x7ffffff05a,L0x7ffffff05c,L0x7ffffff05e];
+(* ldr	q18, [x30]                                  #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555106c *)
+mov %v18 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
+
+ghost %fd0_40@sint16[8], %fd1_40@sint16[8], %fd2_40@sint16[8], %fd8_40@sint16[8], %fd9_40@sint16[8] :
+    %fd0_40 = %v2  /\
+    %fd1_40 = %v16 /\
+    %fd2_40 = %v3  /\
+    %fd8_40 = %v6  /\
+    %fd9_40 = %v18
+  &&
+    %fd0_40 = %v2  /\
+    %fd1_40 = %v16 /\
+    %fd2_40 = %v3  /\
+    %fd8_40 = %v6  /\
+    %fd9_40 = %v18;
+
+cut (* 70 *)
+    %fd0_40 = %v2  /\
+    %fd1_40 = %v16 /\
+    %fd2_40 = %v3  /\
+    %fd8_40 = %v6  /\
+    %fd9_40 = %v18 /\
+
+    %fd0_40 = %fd0_4[:8] /\
+    %fd1_40 = %fd1_4[:8] /\
+    %fd2_40 = %fd2_4[:8] /\
+    %fd8_40 = %fd8_4[:8] /\
+    %fd9_40 = %fd9_4[:8]
+
+    prove with [cuts[69]]
+  &&
+    %fd0_40 = %v2  /\
+    %fd1_40 = %v16 /\
+    %fd2_40 = %v3  /\
+    %fd8_40 = %v6  /\
+    %fd9_40 = %v18 /\
+
+    %fd0_40 = %fd0_4[:8] /\
+    %fd1_40 = %fd1_4[:8] /\
+    %fd2_40 = %fd2_4[:8] /\
+    %fd8_40 = %fd8_4[:8] /\
+    %fd9_40 = %fd9_4[:8]
+
+    prove with [cuts[69]];
+
+
+#### ntt10_4x_nof35467
+
+
+##### ntt5_4x_nof14
+
+ghost %fe0_40@sint16[8], %fe2_40@sint16[8], %fe3_40@sint16[8] :
+    %fe0_40 = %v2 /\
+    %fe2_40 = %v3 /\
+    %fe3_40 = %v6
+  &&
+    %fe0_40 = %v2 /\
+    %fe2_40 = %v3 /\
+    %fe3_40 = %v6;
+
+cut (* 71 *)
+    %fe0_40 = %v2 /\
+    %fe2_40 = %v3 /\
+    %fe3_40 = %v6 /\
+
+    %fe0_40 = %fd0_40 /\
+    %fe2_40 = %fd2_40 /\
+    %fe3_40 = %fd8_40
+
+    prove with [cuts[70]]
+  &&
+    %fe0_40 = %v2 /\
+    %fe2_40 = %v3 /\
+    %fe3_40 = %v6 /\
+
+    %fe0_40 = %fd0_40 /\
+    %fe2_40 = %fd2_40 /\
+    %fe3_40 = %fd8_40
+
+    prove with [cuts[70]];
+
+(* add	v5.8h, v3.8h, v6.8h                         #! PC = 0x5555551070 *)
+add %v5 %v3 %v6;
+(* add	v7.8h, v2.8h, v5.8h                         #! PC = 0x5555551074 *)
+add %v7 %v2 %v5;
+(* sqrdmulh	v1.8h, v7.8h, v0.h[1]                  #! PC = 0x5555551078 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v7.8h, v7.8h, #2                            #! PC = 0x555555107c *)
+shl %v7 %v7 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v7.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551080 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_40 + %fe2_40 + %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_40 + %fe2_40 + %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_40 + %fe2_40 + %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_40 + %fe2_40 + %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7
+    && true;
+
+(* shl	v2.8h, v2.8h, #2                            #! PC = 0x5555551084 *)
+shl %v2 %v2 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* sub	v2.8h, v2.8h, v5.8h                         #! PC = 0x5555551088 *)
+sub %v2 %v2 %v5;
+(* sshr	v1.8h, v2.8h, #12                          #! PC = 0x555555108c *)
+split %v1 %dc %v2 12;
+(* cmlt	v17.8h, v2.8h, #0                          #! PC = 0x5555551090 *)
+split %v17 %dc %v2 15;
+(* sub	v1.8h, v1.8h, v17.8h                        #! PC = 0x5555551094 *)
+sub %v1 %v1 %v17;
+(* mls	v2.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551098 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_40 - %fe2_40 - %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_40 - %fe2_40 - %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_40 - %fe2_40 - %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_40 - %fe2_40 - %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x555555109c *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x55555510a0 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x55555510a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_40 + %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_40 + %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_40 + %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_40 + %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* sub	v1.8h, v2.8h, v5.8h                         #! PC = 0x55555510a8 *)
+sub %v1 %v2 %v5;
+(* add	v2.8h, v2.8h, v5.8h                         #! PC = 0x55555510ac *)
+add %v2 %v2 %v5;
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x55555510b0 *)
+sub %v3 %v3 %v6;
+(* sqrdmulh	v6.8h, v3.8h, v4.h[6]                  #! PC = 0x55555510b4 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v5.8h, v3.8h, v4.h[2]                       #! PC = 0x55555510b8 *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v5 %v3 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_40 - %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_40 - %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_40 - %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_40 - %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5
+    && true;
+
+(* sqrdmulh	v6.8h, v3.8h, v4.h[7]                  #! PC = 0x55555510c0 *)
+broadcast %sqrdmulh 8 [%v4[7]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v3.8h, v3.8h, v4.h[3]                       #! PC = 0x55555510c4 *)
+broadcast %mul 8 [%v4[3]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_40 - %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_40 - %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_40 - %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_40 - %fe3_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3
+    && true;
+
+(* sub	v6.8h, v3.8h, v5.8h                         #! PC = 0x55555510cc *)
+sub %v6 %v3 %v5;
+(* sub	v19.8h, v1.8h, v3.8h                        #! PC = 0x55555510d0 *)
+sub %v19 %v1 %v3;
+(* sub	v22.8h, v2.8h, v6.8h                        #! PC = 0x55555510d4 *)
+sub %v22 %v2 %v6;
+(* add	v17.8h, v1.8h, v3.8h                        #! PC = 0x55555510d8 *)
+add %v17 %v1 %v3;
+(* add	v2.8h, v2.8h, v6.8h                         #! PC = 0x55555510dc *)
+add %v2 %v2 %v6;
+
+cut (* 72 *)
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_40 +
+        %fe2_40 +
+        %fe3_40
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_40 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe2_40 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe3_40
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v2  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_40 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe2_40 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe3_40
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v22 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_40 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe2_40 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe3_40
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_40 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe2_40 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe3_40
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %fe0_40 = %fd0_40 /\ %fe2_40 = %fd2_40 /\ %fe3_40 = %fd8_40
+
+  &&
+    %v7  <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v19 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v2  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v22 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v17 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v7  >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v19 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v2  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v22 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v17 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %fe0_40 = %fd0_40 /\ %fe2_40 = %fd2_40 /\ %fe3_40 = %fd8_40
+
+    prove with [precondition, cuts[0, 69, 70]];
+
+
+##### ntt5_4x_nof023
+
+ghost %ff1_40@sint16[8], %ff4_40@sint16[8] :
+    %ff1_40 = %v16 /\
+    %ff4_40 = %v18
+  &&
+    %ff1_40 = %v16 /\
+    %ff4_40 = %v18;
+
+cut (* 73 *)
+    %ff1_40 = %v16 /\
+    %ff4_40 = %v18 /\
+
+    %ff1_40 = %fd1_40 /\
+    %ff4_40 = %fd9_40
+
+    prove with [cuts[70]]
+  &&
+    %ff1_40 = %v16 /\
+    %ff4_40 = %v18 /\
+
+    %ff1_40 = %fd1_40 /\
+    %ff4_40 = %fd9_40
+
+    prove with [cuts[70]];
+
+(* add	v5.8h, v16.8h, v18.8h                       #! PC = 0x55555510e0 *)
+add %v5 %v16 %v18;
+(* sqrdmulh	v1.8h, v5.8h, v0.h[1]                  #! PC = 0x55555510e4 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v23.8h, v5.8h, #2                           #! PC = 0x55555510e8 *)
+shl %v23 %v5 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v23.8h, v1.8h, v0.h[0]                      #! PC = 0x55555510ec *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_40 + %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_40 + %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_40 + %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_40 + %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23
+    && true;
+
+(* neg	v3.8h, v5.8h                                #! PC = 0x55555510f0 *)
+broadcast %neg 8 [0@sint16]; sub %v3 %neg %v5;
+(* sshr	v1.8h, v3.8h, #12                          #! PC = 0x55555510f4 *)
+split %v1 %dc %v3 12;
+(* cmlt	v6.8h, v3.8h, #0                           #! PC = 0x55555510f8 *)
+split %v6 %dc %v3 15;
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x55555510fc *)
+sub %v1 %v1 %v6;
+(* mls	v3.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551100 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    -(%ff1_40 + %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    -(%ff1_40 + %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    -(%ff1_40 + %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    -(%ff1_40 + %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x5555551104 *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x5555551108 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x555555110c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_40 + %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_40 + %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_40 + %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_40 + %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* add	v21.8h, v3.8h, v5.8h                        #! PC = 0x5555551110 *)
+add %v21 %v3 %v5;
+(* sub	v3.8h, v3.8h, v5.8h                         #! PC = 0x5555551114 *)
+sub %v3 %v3 %v5;
+(* sub	v1.8h, v16.8h, v18.8h                       #! PC = 0x5555551118 *)
+sub %v1 %v16 %v18;
+(* sqrdmulh	v5.8h, v1.8h, v4.h[5]                  #! PC = 0x555555111c *)
+broadcast %sqrdmulh 8 [%v4[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v6.8h, v1.8h, v4.h[1]                       #! PC = 0x5555551120 *)
+broadcast %mul 8 [%v4[1]]; mull %mdc %v6 %v1 %mul; cast %v6@int16[8] %v6;
+(* mls	v6.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551124 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_40 - %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_40 - %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_40 - %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_40 - %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6
+    && true;
+
+(* sqrdmulh	v5.8h, v1.8h, v4.h[6]                  #! PC = 0x5555551128 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v4.h[2]                       #! PC = 0x555555112c *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551130 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_40 - %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_40 - %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_40 - %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_40 - %ff4_40)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1
+    && true;
+
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x5555551134 *)
+sub %v1 %v1 %v6;
+(* add	v16.8h, v21.8h, v6.8h                       #! PC = 0x5555551138 *)
+add %v16 %v21 %v6;
+(* add	v5.8h, v3.8h, v1.8h                         #! PC = 0x555555113c *)
+add %v5 %v3 %v1;
+(* sub	v21.8h, v21.8h, v6.8h                       #! PC = 0x5555551140 *)
+sub %v21 %v21 %v6;
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551144 *)
+sub %v3 %v3 %v1;
+
+cut (* 74 *)
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %ff1_40 +
+        %ff4_40
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %ff1_40 -
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %ff4_40
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %ff1_40 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff4_40
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff1_40 -
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %ff4_40
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v21 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %ff1_40 -
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %ff4_40
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %ff1_40 = %fd1_40 /\ %ff4_40 = %fd9_40
+  &&
+    %v23 <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v16 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v3  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v5  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v21 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v23 >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v16 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v3  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v5  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v21 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %ff1_40 = %fd1_40 /\ %ff4_40 = %fd9_40
+
+    prove with [precondition, cuts[0, 69, 70]];
+
+
+##### addsub
+
+(* add	v24.8h, v23.8h, v7.8h                       #! PC = 0x5555551148 *)
+add %v24 %v23 %v7;
+(* sub	v23.8h, v7.8h, v23.8h                       #! PC = 0x555555114c *)
+sub %v23 %v7 %v23;
+(* add	v20.8h, v16.8h, v19.8h                      #! PC = 0x5555551150 *)
+add %v20 %v16 %v19;
+(* sub	v16.8h, v19.8h, v16.8h                      #! PC = 0x5555551154 *)
+sub %v16 %v19 %v16;
+(* add	v19.8h, v3.8h, v2.8h                        #! PC = 0x5555551158 *)
+add %v19 %v3 %v2;
+(* sub	v6.8h, v2.8h, v3.8h                         #! PC = 0x555555115c *)
+sub %v6 %v2 %v3;
+(* add	v18.8h, v5.8h, v22.8h                       #! PC = 0x5555551160 *)
+add %v18 %v5 %v22;
+(* sub	v5.8h, v22.8h, v5.8h                        #! PC = 0x5555551164 *)
+sub %v5 %v22 %v5;
+(* add	v7.8h, v21.8h, v17.8h                       #! PC = 0x5555551168 *)
+add %v7 %v21 %v17;
+(* sub	v1.8h, v17.8h, v21.8h                       #! PC = 0x555555116c *)
+sub %v1 %v17 %v21;
+
+
+cut (* 75 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_40 +
+        %fd1_40 +
+        %fd2_40 +
+        %fd8_40 +
+        %fd9_40
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_40 -
+        %fd1_40 +
+        %fd2_40 +
+        %fd8_40 -
+        %fd9_40
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_40 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd1_40 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_40 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_40 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd9_40
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_40 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd1_40 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_40 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_40 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd9_40
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_40 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd1_40 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_40 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_40 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd9_40
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v6  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_40 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd1_40 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_40 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_40 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd9_40
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v18 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_40 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd1_40 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_40 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_40 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd9_40
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_40 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd1_40 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_40 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_40 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd9_40
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_40 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd1_40 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_40 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_40 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd9_40
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_40 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd1_40 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_40 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_40 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd9_40
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
+
+    prove with [cuts[72, 74]] # TODO
+  &&
+    %v24 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v23 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v20 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v16 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v19 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v6  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v18 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v5  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v7  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v1  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+
+    %v24 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v23 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v20 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v16 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v19 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v6  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v18 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v5  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v7  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v1  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16]
+
+    prove with [cuts[72, 74]]; # TODO
+
+
+#### twist_his
+
+ghost
+    %hhd0_40@sint16[8], %hhd1_40@sint16[8], %hhd2_40@sint16[8], %hhd3_40@sint16[8], %hhd4_40@sint16[8],
+    %hhd5_40@sint16[8], %hhd6_40@sint16[8], %hhd7_40@sint16[8], %hhd8_40@sint16[8], %hhd9_40@sint16[8] :
+
+    %hhd0_40 = %v24 /\ %hhd1_40 = %v5  /\ %hhd2_40 = %v20 /\ %hhd3_40 = %v1  /\ %hhd4_40 = %v19 /\
+    %hhd5_40 = %v23 /\ %hhd6_40 = %v18 /\ %hhd7_40 = %v16 /\ %hhd8_40 = %v7  /\ %hhd9_40 = %v6
+  &&
+    %hhd0_40 = %v24 /\ %hhd1_40 = %v5  /\ %hhd2_40 = %v20 /\ %hhd3_40 = %v1  /\ %hhd4_40 = %v19 /\
+    %hhd5_40 = %v23 /\ %hhd6_40 = %v18 /\ %hhd7_40 = %v16 /\ %hhd8_40 = %v7  /\ %hhd9_40 = %v6;
+
+(* ld1	{v2.8h, v3.8h}, [x24]                       #! EA = L0x5555552a70; Value = 0xc517f7bfcd66f8e9; PC = 0x5555551170 *)
+mov %v2 [L0x5555552a70,L0x5555552a72,L0x5555552a74,L0x5555552a76,L0x5555552a78,L0x5555552a7a,L0x5555552a7c,L0x5555552a7e];
+mov %v3 [L0x5555552a80,L0x5555552a82,L0x5555552a84,L0x5555552a86,L0x5555552a88,L0x5555552a8a,L0x5555552a8c,L0x5555552a8e];
+(* sqrdmulh	v17.8h, v24.8h, v0.h[2]                #! PC = 0x5555551174 *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v24 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v24.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551178 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v24 %v24 %mls;
+
+assert
+    %hhd0_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd0_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd0_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd0_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24
+    && true;
+
+(* sqrdmulh	v17.8h, v23.8h, v0.h[2]                #! PC = 0x555555117c *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v23 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v23.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551180 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    %hhd5_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd5_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd5_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd5_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23
+    && true;
+
+(* sqrdmulh	v17.8h, v5.8h, v2.h[1]                 #! PC = 0x5555551184 *)
+broadcast %sqrdmulh 8 [%v2[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v2.h[0]                       #! PC = 0x5555551188 *)
+broadcast %mul 8 [%v2[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v17.8h, v0.h[0]                      #! PC = 0x555555118c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd1_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd1_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd1_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd1_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5
+    && true;
+
+(* sqrdmulh	v17.8h, v20.8h, v2.h[3]                #! PC = 0x5555551190 *)
+broadcast %sqrdmulh 8 [%v2[3]]; smulj %LO %v20 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v20.8h, v20.8h, v2.h[2]                     #! PC = 0x5555551194 *)
+broadcast %mul 8 [%v2[2]]; mull %mdc %v20 %v20 %mul; cast %v20@int16[8] %v20;
+(* mls	v20.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551198 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v20 %v20 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd2_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd2_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd2_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd2_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20
+    && true;
+
+(* sqrdmulh	v17.8h, v1.8h, v2.h[5]                 #! PC = 0x555555119c *)
+broadcast %sqrdmulh 8 [%v2[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v2.h[4]                       #! PC = 0x55555511a0 *)
+broadcast %mul 8 [%v2[4]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v17.8h, v0.h[0]                      #! PC = 0x55555511a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd3_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd3_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd3_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd3_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1
+    && true;
+
+(* sqrdmulh	v17.8h, v19.8h, v2.h[7]                #! PC = 0x55555511a8 *)
+broadcast %sqrdmulh 8 [%v2[7]]; smulj %LO %v19 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v19.8h, v19.8h, v2.h[6]                     #! PC = 0x55555511ac *)
+broadcast %mul 8 [%v2[6]]; mull %mdc %v19 %v19 %mul; cast %v19@int16[8] %v19;
+(* mls	v19.8h, v17.8h, v0.h[0]                     #! PC = 0x55555511b0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v19 %v19 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd4_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd4_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd4_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd4_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19
+    && true;
+
+(* sqrdmulh	v21.8h, v18.8h, v3.h[1]                #! PC = 0x55555511b4 *)
+broadcast %sqrdmulh 8 [%v3[1]]; smulj %LO %v18 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v21 %LO11 %LO01;
+(* mul	v17.8h, v18.8h, v3.h[0]                     #! PC = 0x55555511b8 *)
+broadcast %mul 8 [%v3[0]]; mull %mdc %v17 %v18 %mul; cast %v17@int16[8] %v17;
+(* mls	v17.8h, v21.8h, v0.h[0]                     #! PC = 0x55555511bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v21 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd6_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd6_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd6_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    = %v17 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd6_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v20
+    = %v17
+    && true;
+
+(* sqrdmulh	v18.8h, v16.8h, v3.h[3]                #! PC = 0x55555511c0 *)
+broadcast %sqrdmulh 8 [%v3[3]]; smulj %LO %v16 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v16.8h, v16.8h, v3.h[2]                     #! PC = 0x55555511c4 *)
+broadcast %mul 8 [%v3[2]]; mull %mdc %v16 %v16 %mul; cast %v16@int16[8] %v16;
+(* mls	v16.8h, v18.8h, v0.h[0]                     #! PC = 0x55555511c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd7_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd7_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd7_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd7_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16
+    && true;
+
+(* sqrdmulh	v18.8h, v7.8h, v3.h[5]                 #! PC = 0x55555511cc *)
+broadcast %sqrdmulh 8 [%v3[5]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v7.8h, v7.8h, v3.h[4]                       #! PC = 0x55555511d0 *)
+broadcast %mul 8 [%v3[4]]; mull %mdc %v7 %v7 %mul; cast %v7@int16[8] %v7;
+(* mls	v7.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511d4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd8_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd8_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd8_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd8_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7
+    && true;
+
+(* sqrdmulh	v18.8h, v6.8h, v3.h[7]                 #! PC = 0x55555511d8 *)
+broadcast %sqrdmulh 8 [%v3[7]]; smulj %LO %v6 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v3.8h, v6.8h, v3.h[6]                       #! PC = 0x55555511dc *)
+broadcast %mul 8 [%v3[6]]; mull %mdc %v3 %v6 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511e0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd9_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd9_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd9_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd9_40
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3
+    && true;
+
+(* #b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! PC = 0x55555511e8 *)
+#b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! 0x55555511e8 = 0x55555511e8;
+
+cut (* 76 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_40 +
+        %fd9_40 +
+        %fd0_40 +
+        %fd1_40 +
+        %fd2_40 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_40 +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd9_40 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_40 +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd1_40 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_40 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_40 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd9_40 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_40 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd1_40 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_40 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_40 +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd9_40 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_40 +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd1_40 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_40 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_40 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd9_40 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_40 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd1_40 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_40 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_40 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_40 +
+        %fd0_40 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_40 +
+        %fd2_40 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_40 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd9_40 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_40 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd1_40 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_40 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_40 +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd9_40 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_40 +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd1_40 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_40 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_40 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd9_40 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_40 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd1_40 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_40 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_40 +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd9_40 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_40 +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd1_40 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_40 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    true # TODO
+    prove with [precondition]
+  &&
+    %v24 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v5  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v20 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v1  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v19 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v23 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v17 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v16 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v7  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v3  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+
+    %v24 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v5  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v20 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v1  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v19 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v23 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v17 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v16 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v7  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v3  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16];
+
+
+#### store
+
+(* str	q24, [x0]                                   #! EA = L0x55555712b8; PC = 0x5555551014 *)
+mov [L0x55555712b8,L0x55555712ba,L0x55555712bc,L0x55555712be,L0x55555712c0,L0x55555712c2,L0x55555712c4,L0x55555712c6] %v24;
+(* str	q5, [x0, #288]                              #! EA = L0x55555713d8; PC = 0x5555551018 *)
+mov [L0x55555713d8,L0x55555713da,L0x55555713dc,L0x55555713de,L0x55555713e0,L0x55555713e2,L0x55555713e4,L0x55555713e6] %v5;
+(* str	q20, [x0, #576]                             #! EA = L0x55555714f8; PC = 0x555555101c *)
+mov [L0x55555714f8,L0x55555714fa,L0x55555714fc,L0x55555714fe,L0x5555571500,L0x5555571502,L0x5555571504,L0x5555571506] %v20;
+(* str	q1, [x0, #864]                              #! EA = L0x5555571618; PC = 0x5555551020 *)
+mov [L0x5555571618,L0x555557161a,L0x555557161c,L0x555557161e,L0x5555571620,L0x5555571622,L0x5555571624,L0x5555571626] %v1;
+(* str	q19, [x0, #1152]                            #! EA = L0x5555571738; PC = 0x5555551024 *)
+mov [L0x5555571738,L0x555557173a,L0x555557173c,L0x555557173e,L0x5555571740,L0x5555571742,L0x5555571744,L0x5555571746] %v19;
+(* str	q23, [x0, #1440]                            #! EA = L0x5555571858; PC = 0x5555551028 *)
+mov [L0x5555571858,L0x555557185a,L0x555557185c,L0x555557185e,L0x5555571860,L0x5555571862,L0x5555571864,L0x5555571866] %v23;
+(* str	q17, [x0, #1728]                            #! EA = L0x5555571978; PC = 0x555555102c *)
+mov [L0x5555571978,L0x555557197a,L0x555557197c,L0x555557197e,L0x5555571980,L0x5555571982,L0x5555571984,L0x5555571986] %v17;
+(* str	q16, [x0, #2016]                            #! EA = L0x5555571a98; PC = 0x5555551030 *)
+mov [L0x5555571a98,L0x5555571a9a,L0x5555571a9c,L0x5555571a9e,L0x5555571aa0,L0x5555571aa2,L0x5555571aa4,L0x5555571aa6] %v16;
+(* str	q7, [x0, #2304]                             #! EA = L0x5555571bb8; PC = 0x5555551034 *)
+mov [L0x5555571bb8,L0x5555571bba,L0x5555571bbc,L0x5555571bbe,L0x5555571bc0,L0x5555571bc2,L0x5555571bc4,L0x5555571bc6] %v7;
+(* str	q3, [x0, #2592]                             #! EA = L0x5555571cd8; PC = 0x5555551038 *)
+mov [L0x5555571cd8,L0x5555571cda,L0x5555571cdc,L0x5555571cde,L0x5555571ce0,L0x5555571ce2,L0x5555571ce4,L0x5555571ce6] %v3;
+(* #b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! PC = 0x5555551058 *)
+#b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! 0x5555551058 = 0x5555551058;
+
+cut (* 77 *)
+    [L0x55555712b8, L0x55555712ba, L0x55555712bc, L0x55555712be, L0x55555712c0, L0x55555712c2, L0x55555712c4, L0x55555712c6] = %v24 /\
+    [L0x55555713d8, L0x55555713da, L0x55555713dc, L0x55555713de, L0x55555713e0, L0x55555713e2, L0x55555713e4, L0x55555713e6] = %v5 /\
+    [L0x55555714f8, L0x55555714fa, L0x55555714fc, L0x55555714fe, L0x5555571500, L0x5555571502, L0x5555571504, L0x5555571506] = %v20 /\
+    [L0x5555571618, L0x555557161a, L0x555557161c, L0x555557161e, L0x5555571620, L0x5555571622, L0x5555571624, L0x5555571626] = %v1 /\
+    [L0x5555571738, L0x555557173a, L0x555557173c, L0x555557173e, L0x5555571740, L0x5555571742, L0x5555571744, L0x5555571746] = %v19 /\
+    [L0x5555571858, L0x555557185a, L0x555557185c, L0x555557185e, L0x5555571860, L0x5555571862, L0x5555571864, L0x5555571866] = %v23 /\
+    [L0x5555571978, L0x555557197a, L0x555557197c, L0x555557197e, L0x5555571980, L0x5555571982, L0x5555571984, L0x5555571986] = %v17 /\
+    [L0x5555571a98, L0x5555571a9a, L0x5555571a9c, L0x5555571a9e, L0x5555571aa0, L0x5555571aa2, L0x5555571aa4, L0x5555571aa6] = %v16 /\
+    [L0x5555571bb8, L0x5555571bba, L0x5555571bbc, L0x5555571bbe, L0x5555571bc0, L0x5555571bc2, L0x5555571bc4, L0x5555571bc6] = %v7 /\
+    [L0x5555571cd8, L0x5555571cda, L0x5555571cdc, L0x5555571cde, L0x5555571ce0, L0x5555571ce2, L0x5555571ce4, L0x5555571ce6] = %v3
+  &&
+    [L0x55555712b8, L0x55555712ba, L0x55555712bc, L0x55555712be, L0x55555712c0, L0x55555712c2, L0x55555712c4, L0x55555712c6] = %v24 /\
+    [L0x55555713d8, L0x55555713da, L0x55555713dc, L0x55555713de, L0x55555713e0, L0x55555713e2, L0x55555713e4, L0x55555713e6] = %v5 /\
+    [L0x55555714f8, L0x55555714fa, L0x55555714fc, L0x55555714fe, L0x5555571500, L0x5555571502, L0x5555571504, L0x5555571506] = %v20 /\
+    [L0x5555571618, L0x555557161a, L0x555557161c, L0x555557161e, L0x5555571620, L0x5555571622, L0x5555571624, L0x5555571626] = %v1 /\
+    [L0x5555571738, L0x555557173a, L0x555557173c, L0x555557173e, L0x5555571740, L0x5555571742, L0x5555571744, L0x5555571746] = %v19 /\
+    [L0x5555571858, L0x555557185a, L0x555557185c, L0x555557185e, L0x5555571860, L0x5555571862, L0x5555571864, L0x5555571866] = %v23 /\
+    [L0x5555571978, L0x555557197a, L0x555557197c, L0x555557197e, L0x5555571980, L0x5555571982, L0x5555571984, L0x5555571986] = %v17 /\
+    [L0x5555571a98, L0x5555571a9a, L0x5555571a9c, L0x5555571a9e, L0x5555571aa0, L0x5555571aa2, L0x5555571aa4, L0x5555571aa6] = %v16 /\
+    [L0x5555571bb8, L0x5555571bba, L0x5555571bbc, L0x5555571bbe, L0x5555571bc0, L0x5555571bc2, L0x5555571bc4, L0x5555571bc6] = %v7 /\
+    [L0x5555571cd8, L0x5555571cda, L0x5555571cdc, L0x5555571cde, L0x5555571ce0, L0x5555571ce2, L0x5555571ce4, L0x5555571ce6] = %v3;
+
+### k0_iter
+
+
+#### load
+
+(* ldr	q2, [x22]                                   #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x555555105c *)
+mov %v2 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
+(* ldr	q16, [x21]                                  #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551060 *)
+mov %v16 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
+(* ldr	q3, [x20]                                   #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551064 *)
+mov %v3 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
+(* ldr	q6, [x19]                                   #! EA = L0x7ffffff060; Value = 0x0000000000000000; PC = 0x5555551068 *)
+mov %v6 [L0x7ffffff060,L0x7ffffff062,L0x7ffffff064,L0x7ffffff066,L0x7ffffff068,L0x7ffffff06a,L0x7ffffff06c,L0x7ffffff06e];
+(* ldr	q18, [x30]                                  #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x555555106c *)
+mov %v18 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
+
+ghost %fd0_41@sint16[8], %fd1_41@sint16[8], %fd2_41@sint16[8], %fd8_41@sint16[8], %fd9_41@sint16[8] :
+    %fd0_41 = %v2  /\
+    %fd1_41 = %v16 /\
+    %fd2_41 = %v3  /\
+    %fd8_41 = %v6  /\
+    %fd9_41 = %v18
+  &&
+    %fd0_41 = %v2  /\
+    %fd1_41 = %v16 /\
+    %fd2_41 = %v3  /\
+    %fd8_41 = %v6  /\
+    %fd9_41 = %v18;
+
+cut (* 78 *)
+    %fd0_41 = %v2  /\
+    %fd1_41 = %v16 /\
+    %fd2_41 = %v3  /\
+    %fd8_41 = %v6  /\
+    %fd9_41 = %v18 /\
+
+    %fd0_41 = %fd0_4[8:] /\
+    %fd1_41 = %fd1_4[8:] /\
+    %fd2_41 = %fd2_4[8:] /\
+    %fd8_41 = %fd8_4[8:] /\
+    %fd9_41 = %fd9_4[8:]
+
+    prove with [cuts[69]]
+  &&
+    %fd0_41 = %v2  /\
+    %fd1_41 = %v16 /\
+    %fd2_41 = %v3  /\
+    %fd8_41 = %v6  /\
+    %fd9_41 = %v18 /\
+
+    %fd0_41 = %fd0_4[8:] /\
+    %fd1_41 = %fd1_4[8:] /\
+    %fd2_41 = %fd2_4[8:] /\
+    %fd8_41 = %fd8_4[8:] /\
+    %fd9_41 = %fd9_4[8:]
+
+    prove with [cuts[69]];
+
+
+#### ntt10_4x_nof35467
+
+
+##### ntt5_4x_nof14
+
+ghost %fe0_41@sint16[8], %fe2_41@sint16[8], %fe3_41@sint16[8] :
+    %fe0_41 = %v2 /\
+    %fe2_41 = %v3 /\
+    %fe3_41 = %v6
+  &&
+    %fe0_41 = %v2 /\
+    %fe2_41 = %v3 /\
+    %fe3_41 = %v6;
+
+cut (* 79 *)
+    %fe0_41 = %v2 /\
+    %fe2_41 = %v3 /\
+    %fe3_41 = %v6 /\
+
+    %fe0_41 = %fd0_41 /\
+    %fe2_41 = %fd2_41 /\
+    %fe3_41 = %fd8_41
+
+    prove with [cuts[78]]
+  &&
+    %fe0_41 = %v2 /\
+    %fe2_41 = %v3 /\
+    %fe3_41 = %v6 /\
+
+    %fe0_41 = %fd0_41 /\
+    %fe2_41 = %fd2_41 /\
+    %fe3_41 = %fd8_41
+
+    prove with [cuts[78]];
+
+(* add	v5.8h, v3.8h, v6.8h                         #! PC = 0x5555551070 *)
+add %v5 %v3 %v6;
+(* add	v7.8h, v2.8h, v5.8h                         #! PC = 0x5555551074 *)
+add %v7 %v2 %v5;
+(* sqrdmulh	v1.8h, v7.8h, v0.h[1]                  #! PC = 0x5555551078 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v7.8h, v7.8h, #2                            #! PC = 0x555555107c *)
+shl %v7 %v7 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v7.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551080 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_41 + %fe2_41 + %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_41 + %fe2_41 + %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_41 + %fe2_41 + %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_41 + %fe2_41 + %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7
+    && true;
+
+(* shl	v2.8h, v2.8h, #2                            #! PC = 0x5555551084 *)
+shl %v2 %v2 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* sub	v2.8h, v2.8h, v5.8h                         #! PC = 0x5555551088 *)
+sub %v2 %v2 %v5;
+(* sshr	v1.8h, v2.8h, #12                          #! PC = 0x555555108c *)
+split %v1 %dc %v2 12;
+(* cmlt	v17.8h, v2.8h, #0                          #! PC = 0x5555551090 *)
+split %v17 %dc %v2 15;
+(* sub	v1.8h, v1.8h, v17.8h                        #! PC = 0x5555551094 *)
+sub %v1 %v1 %v17;
+(* mls	v2.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551098 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_41 - %fe2_41 - %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_41 - %fe2_41 - %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_41 - %fe2_41 - %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_41 - %fe2_41 - %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x555555109c *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x55555510a0 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x55555510a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_41 + %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_41 + %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_41 + %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_41 + %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* sub	v1.8h, v2.8h, v5.8h                         #! PC = 0x55555510a8 *)
+sub %v1 %v2 %v5;
+(* add	v2.8h, v2.8h, v5.8h                         #! PC = 0x55555510ac *)
+add %v2 %v2 %v5;
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x55555510b0 *)
+sub %v3 %v3 %v6;
+(* sqrdmulh	v6.8h, v3.8h, v4.h[6]                  #! PC = 0x55555510b4 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v5.8h, v3.8h, v4.h[2]                       #! PC = 0x55555510b8 *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v5 %v3 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_41 - %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_41 - %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_41 - %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_41 - %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5
+    && true;
+
+(* sqrdmulh	v6.8h, v3.8h, v4.h[7]                  #! PC = 0x55555510c0 *)
+broadcast %sqrdmulh 8 [%v4[7]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v3.8h, v3.8h, v4.h[3]                       #! PC = 0x55555510c4 *)
+broadcast %mul 8 [%v4[3]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_41 - %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_41 - %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_41 - %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_41 - %fe3_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3
+    && true;
+
+(* sub	v6.8h, v3.8h, v5.8h                         #! PC = 0x55555510cc *)
+sub %v6 %v3 %v5;
+(* sub	v19.8h, v1.8h, v3.8h                        #! PC = 0x55555510d0 *)
+sub %v19 %v1 %v3;
+(* sub	v22.8h, v2.8h, v6.8h                        #! PC = 0x55555510d4 *)
+sub %v22 %v2 %v6;
+(* add	v17.8h, v1.8h, v3.8h                        #! PC = 0x55555510d8 *)
+add %v17 %v1 %v3;
+(* add	v2.8h, v2.8h, v6.8h                         #! PC = 0x55555510dc *)
+add %v2 %v2 %v6;
+
+cut (* 80 *)
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_41 +
+        %fe2_41 +
+        %fe3_41
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_41 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe2_41 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe3_41
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v2  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_41 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe2_41 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe3_41
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v22 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_41 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe2_41 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe3_41
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_41 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe2_41 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe3_41
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %fe0_41 = %fd0_41 /\ %fe2_41 = %fd2_41 /\ %fe3_41 = %fd8_41
+
+  &&
+    %v7  <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v19 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v2  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v22 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v17 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v7  >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v19 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v2  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v22 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v17 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %fe0_41 = %fd0_41 /\ %fe2_41 = %fd2_41 /\ %fe3_41 = %fd8_41
+
+    prove with [precondition, cuts[0, 69, 78]];
+
+
+##### ntt5_4x_nof023
+
+ghost %ff1_41@sint16[8], %ff4_41@sint16[8] :
+    %ff1_41 = %v16 /\
+    %ff4_41 = %v18
+  &&
+    %ff1_41 = %v16 /\
+    %ff4_41 = %v18;
+
+cut (* 81 *)
+    %ff1_41 = %v16 /\
+    %ff4_41 = %v18 /\
+
+    %ff1_41 = %fd1_41 /\
+    %ff4_41 = %fd9_41
+
+    prove with [cuts[78]]
+  &&
+    %ff1_41 = %v16 /\
+    %ff4_41 = %v18 /\
+
+    %ff1_41 = %fd1_41 /\
+    %ff4_41 = %fd9_41
+
+    prove with [cuts[78]];
+
+(* add	v5.8h, v16.8h, v18.8h                       #! PC = 0x55555510e0 *)
+add %v5 %v16 %v18;
+(* sqrdmulh	v1.8h, v5.8h, v0.h[1]                  #! PC = 0x55555510e4 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v23.8h, v5.8h, #2                           #! PC = 0x55555510e8 *)
+shl %v23 %v5 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v23.8h, v1.8h, v0.h[0]                      #! PC = 0x55555510ec *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_41 + %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_41 + %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_41 + %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_41 + %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23
+    && true;
+
+(* neg	v3.8h, v5.8h                                #! PC = 0x55555510f0 *)
+broadcast %neg 8 [0@sint16]; sub %v3 %neg %v5;
+(* sshr	v1.8h, v3.8h, #12                          #! PC = 0x55555510f4 *)
+split %v1 %dc %v3 12;
+(* cmlt	v6.8h, v3.8h, #0                           #! PC = 0x55555510f8 *)
+split %v6 %dc %v3 15;
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x55555510fc *)
+sub %v1 %v1 %v6;
+(* mls	v3.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551100 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    -(%ff1_41 + %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    -(%ff1_41 + %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    -(%ff1_41 + %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    -(%ff1_41 + %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x5555551104 *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x5555551108 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x555555110c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_41 + %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_41 + %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_41 + %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_41 + %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* add	v21.8h, v3.8h, v5.8h                        #! PC = 0x5555551110 *)
+add %v21 %v3 %v5;
+(* sub	v3.8h, v3.8h, v5.8h                         #! PC = 0x5555551114 *)
+sub %v3 %v3 %v5;
+(* sub	v1.8h, v16.8h, v18.8h                       #! PC = 0x5555551118 *)
+sub %v1 %v16 %v18;
+(* sqrdmulh	v5.8h, v1.8h, v4.h[5]                  #! PC = 0x555555111c *)
+broadcast %sqrdmulh 8 [%v4[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v6.8h, v1.8h, v4.h[1]                       #! PC = 0x5555551120 *)
+broadcast %mul 8 [%v4[1]]; mull %mdc %v6 %v1 %mul; cast %v6@int16[8] %v6;
+(* mls	v6.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551124 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_41 - %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_41 - %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_41 - %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_41 - %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6
+    && true;
+
+(* sqrdmulh	v5.8h, v1.8h, v4.h[6]                  #! PC = 0x5555551128 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v4.h[2]                       #! PC = 0x555555112c *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551130 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_41 - %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_41 - %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_41 - %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_41 - %ff4_41)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1
+    && true;
+
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x5555551134 *)
+sub %v1 %v1 %v6;
+(* add	v16.8h, v21.8h, v6.8h                       #! PC = 0x5555551138 *)
+add %v16 %v21 %v6;
+(* add	v5.8h, v3.8h, v1.8h                         #! PC = 0x555555113c *)
+add %v5 %v3 %v1;
+(* sub	v21.8h, v21.8h, v6.8h                       #! PC = 0x5555551140 *)
+sub %v21 %v21 %v6;
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551144 *)
+sub %v3 %v3 %v1;
+
+cut (* 82 *)
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %ff1_41 +
+        %ff4_41
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %ff1_41 -
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %ff4_41
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %ff1_41 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff4_41
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff1_41 -
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %ff4_41
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v21 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %ff1_41 -
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %ff4_41
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %ff1_41 = %fd1_41 /\ %ff4_41 = %fd9_41
+  &&
+    %v23 <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v16 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v3  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v5  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v21 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v23 >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v16 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v3  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v5  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v21 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %ff1_41 = %fd1_41 /\ %ff4_41 = %fd9_41
+
+    prove with [precondition, cuts[0, 69, 78]];
+
+
+##### addsub
+
+(* add	v24.8h, v23.8h, v7.8h                       #! PC = 0x5555551148 *)
+add %v24 %v23 %v7;
+(* sub	v23.8h, v7.8h, v23.8h                       #! PC = 0x555555114c *)
+sub %v23 %v7 %v23;
+(* add	v20.8h, v16.8h, v19.8h                      #! PC = 0x5555551150 *)
+add %v20 %v16 %v19;
+(* sub	v16.8h, v19.8h, v16.8h                      #! PC = 0x5555551154 *)
+sub %v16 %v19 %v16;
+(* add	v19.8h, v3.8h, v2.8h                        #! PC = 0x5555551158 *)
+add %v19 %v3 %v2;
+(* sub	v6.8h, v2.8h, v3.8h                         #! PC = 0x555555115c *)
+sub %v6 %v2 %v3;
+(* add	v18.8h, v5.8h, v22.8h                       #! PC = 0x5555551160 *)
+add %v18 %v5 %v22;
+(* sub	v5.8h, v22.8h, v5.8h                        #! PC = 0x5555551164 *)
+sub %v5 %v22 %v5;
+(* add	v7.8h, v21.8h, v17.8h                       #! PC = 0x5555551168 *)
+add %v7 %v21 %v17;
+(* sub	v1.8h, v17.8h, v21.8h                       #! PC = 0x555555116c *)
+sub %v1 %v17 %v21;
+
+
+cut (* 83 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_41 +
+        %fd1_41 +
+        %fd2_41 +
+        %fd8_41 +
+        %fd9_41
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_41 -
+        %fd1_41 +
+        %fd2_41 +
+        %fd8_41 -
+        %fd9_41
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_41 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd1_41 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_41 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_41 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd9_41
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_41 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd1_41 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_41 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_41 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd9_41
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_41 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd1_41 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_41 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_41 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd9_41
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v6  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_41 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd1_41 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_41 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_41 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd9_41
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v18 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_41 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd1_41 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_41 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_41 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd9_41
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_41 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd1_41 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_41 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_41 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd9_41
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_41 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd1_41 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_41 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_41 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd9_41
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_41 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd1_41 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_41 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_41 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd9_41
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
+
+    prove with [cuts[80, 82]] # TODO
+  &&
+    %v24 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v23 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v20 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v16 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v19 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v6  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v18 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v5  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v7  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v1  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+
+    %v24 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v23 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v20 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v16 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v19 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v6  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v18 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v5  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v7  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v1  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16]
+
+    prove with [cuts[80, 82]]; # TODO
+
+
+#### twist_his
+
+ghost
+    %hhd0_41@sint16[8], %hhd1_41@sint16[8], %hhd2_41@sint16[8], %hhd3_41@sint16[8], %hhd4_41@sint16[8],
+    %hhd5_41@sint16[8], %hhd6_41@sint16[8], %hhd7_41@sint16[8], %hhd8_41@sint16[8], %hhd9_41@sint16[8] :
+
+    %hhd0_41 = %v24 /\ %hhd1_41 = %v5  /\ %hhd2_41 = %v20 /\ %hhd3_41 = %v1  /\ %hhd4_41 = %v19 /\
+    %hhd5_41 = %v23 /\ %hhd6_41 = %v18 /\ %hhd7_41 = %v16 /\ %hhd8_41 = %v7  /\ %hhd9_41 = %v6
+  &&
+    %hhd0_41 = %v24 /\ %hhd1_41 = %v5  /\ %hhd2_41 = %v20 /\ %hhd3_41 = %v1  /\ %hhd4_41 = %v19 /\
+    %hhd5_41 = %v23 /\ %hhd6_41 = %v18 /\ %hhd7_41 = %v16 /\ %hhd8_41 = %v7  /\ %hhd9_41 = %v6;
+
+(* ld1	{v2.8h, v3.8h}, [x24]                       #! EA = L0x5555552a70; Value = 0xc517f7bfcd66f8e9; PC = 0x5555551170 *)
+mov %v2 [L0x5555552a70,L0x5555552a72,L0x5555552a74,L0x5555552a76,L0x5555552a78,L0x5555552a7a,L0x5555552a7c,L0x5555552a7e];
+mov %v3 [L0x5555552a80,L0x5555552a82,L0x5555552a84,L0x5555552a86,L0x5555552a88,L0x5555552a8a,L0x5555552a8c,L0x5555552a8e];
+(* sqrdmulh	v17.8h, v24.8h, v0.h[2]                #! PC = 0x5555551174 *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v24 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v24.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551178 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v24 %v24 %mls;
+
+assert
+    %hhd0_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd0_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd0_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd0_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24
+    && true;
+
+(* sqrdmulh	v17.8h, v23.8h, v0.h[2]                #! PC = 0x555555117c *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v23 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v23.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551180 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    %hhd5_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd5_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd5_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd5_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23
+    && true;
+
+(* sqrdmulh	v17.8h, v5.8h, v2.h[1]                 #! PC = 0x5555551184 *)
+broadcast %sqrdmulh 8 [%v2[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v2.h[0]                       #! PC = 0x5555551188 *)
+broadcast %mul 8 [%v2[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v17.8h, v0.h[0]                      #! PC = 0x555555118c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd1_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd1_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd1_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd1_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5
+    && true;
+
+(* sqrdmulh	v17.8h, v20.8h, v2.h[3]                #! PC = 0x5555551190 *)
+broadcast %sqrdmulh 8 [%v2[3]]; smulj %LO %v20 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v20.8h, v20.8h, v2.h[2]                     #! PC = 0x5555551194 *)
+broadcast %mul 8 [%v2[2]]; mull %mdc %v20 %v20 %mul; cast %v20@int16[8] %v20;
+(* mls	v20.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551198 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v20 %v20 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd2_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd2_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd2_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd2_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20
+    && true;
+
+(* sqrdmulh	v17.8h, v1.8h, v2.h[5]                 #! PC = 0x555555119c *)
+broadcast %sqrdmulh 8 [%v2[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v2.h[4]                       #! PC = 0x55555511a0 *)
+broadcast %mul 8 [%v2[4]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v17.8h, v0.h[0]                      #! PC = 0x55555511a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd3_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd3_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd3_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd3_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1
+    && true;
+
+(* sqrdmulh	v17.8h, v19.8h, v2.h[7]                #! PC = 0x55555511a8 *)
+broadcast %sqrdmulh 8 [%v2[7]]; smulj %LO %v19 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v19.8h, v19.8h, v2.h[6]                     #! PC = 0x55555511ac *)
+broadcast %mul 8 [%v2[6]]; mull %mdc %v19 %v19 %mul; cast %v19@int16[8] %v19;
+(* mls	v19.8h, v17.8h, v0.h[0]                     #! PC = 0x55555511b0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v19 %v19 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd4_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd4_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd4_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd4_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19
+    && true;
+
+(* sqrdmulh	v21.8h, v18.8h, v3.h[1]                #! PC = 0x55555511b4 *)
+broadcast %sqrdmulh 8 [%v3[1]]; smulj %LO %v18 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v21 %LO11 %LO01;
+(* mul	v17.8h, v18.8h, v3.h[0]                     #! PC = 0x55555511b8 *)
+broadcast %mul 8 [%v3[0]]; mull %mdc %v17 %v18 %mul; cast %v17@int16[8] %v17;
+(* mls	v17.8h, v21.8h, v0.h[0]                     #! PC = 0x55555511bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v21 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd6_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd6_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd6_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    = %v17 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd6_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v20
+    = %v17
+    && true;
+
+(* sqrdmulh	v18.8h, v16.8h, v3.h[3]                #! PC = 0x55555511c0 *)
+broadcast %sqrdmulh 8 [%v3[3]]; smulj %LO %v16 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v16.8h, v16.8h, v3.h[2]                     #! PC = 0x55555511c4 *)
+broadcast %mul 8 [%v3[2]]; mull %mdc %v16 %v16 %mul; cast %v16@int16[8] %v16;
+(* mls	v16.8h, v18.8h, v0.h[0]                     #! PC = 0x55555511c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd7_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd7_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd7_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd7_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16
+    && true;
+
+(* sqrdmulh	v18.8h, v7.8h, v3.h[5]                 #! PC = 0x55555511cc *)
+broadcast %sqrdmulh 8 [%v3[5]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v7.8h, v7.8h, v3.h[4]                       #! PC = 0x55555511d0 *)
+broadcast %mul 8 [%v3[4]]; mull %mdc %v7 %v7 %mul; cast %v7@int16[8] %v7;
+(* mls	v7.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511d4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd8_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd8_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd8_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd8_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7
+    && true;
+
+(* sqrdmulh	v18.8h, v6.8h, v3.h[7]                 #! PC = 0x55555511d8 *)
+broadcast %sqrdmulh 8 [%v3[7]]; smulj %LO %v6 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v3.8h, v6.8h, v3.h[6]                       #! PC = 0x55555511dc *)
+broadcast %mul 8 [%v3[6]]; mull %mdc %v3 %v6 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511e0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd9_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd9_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd9_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd9_41
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3
+    && true;
+
+(* #b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! PC = 0x55555511e8 *)
+#b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! 0x55555511e8 = 0x55555511e8;
+
+cut (* 84 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_41 +
+        %fd9_41 +
+        %fd0_41 +
+        %fd1_41 +
+        %fd2_41 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_41 +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd9_41 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_41 +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd1_41 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_41 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_41 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd9_41 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_41 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd1_41 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_41 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_41 +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd9_41 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_41 +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd1_41 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_41 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_41 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd9_41 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_41 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd1_41 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_41 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_41 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_41 +
+        %fd0_41 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_41 +
+        %fd2_41 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_41 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd9_41 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_41 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd1_41 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_41 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_41 +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd9_41 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_41 +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd1_41 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_41 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_41 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd9_41 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_41 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd1_41 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_41 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd8_41 +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd9_41 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_41 +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd1_41 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_41 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    true # TODO
+    prove with [precondition]
+  &&
+    %v24 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v5  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v20 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v1  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v19 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v23 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v17 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v16 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v7  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v3  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+
+    %v24 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v5  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v20 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v1  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v19 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v23 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v17 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v16 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v7  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v3  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16];
+
+
+#### store
+
+(* str	q24, [x0]                                   #! EA = L0x5555571348; PC = 0x5555551014 *)
+mov [L0x5555571348,L0x555557134a,L0x555557134c,L0x555557134e,L0x5555571350,L0x5555571352,L0x5555571354,L0x5555571356] %v24;
+(* str	q5, [x0, #288]                              #! EA = L0x5555571468; PC = 0x5555551018 *)
+mov [L0x5555571468,L0x555557146a,L0x555557146c,L0x555557146e,L0x5555571470,L0x5555571472,L0x5555571474,L0x5555571476] %v5;
+(* str	q20, [x0, #576]                             #! EA = L0x5555571588; PC = 0x555555101c *)
+mov [L0x5555571588,L0x555557158a,L0x555557158c,L0x555557158e,L0x5555571590,L0x5555571592,L0x5555571594,L0x5555571596] %v20;
+(* str	q1, [x0, #864]                              #! EA = L0x55555716a8; PC = 0x5555551020 *)
+mov [L0x55555716a8,L0x55555716aa,L0x55555716ac,L0x55555716ae,L0x55555716b0,L0x55555716b2,L0x55555716b4,L0x55555716b6] %v1;
+(* str	q19, [x0, #1152]                            #! EA = L0x55555717c8; PC = 0x5555551024 *)
+mov [L0x55555717c8,L0x55555717ca,L0x55555717cc,L0x55555717ce,L0x55555717d0,L0x55555717d2,L0x55555717d4,L0x55555717d6] %v19;
+(* str	q23, [x0, #1440]                            #! EA = L0x55555718e8; PC = 0x5555551028 *)
+mov [L0x55555718e8,L0x55555718ea,L0x55555718ec,L0x55555718ee,L0x55555718f0,L0x55555718f2,L0x55555718f4,L0x55555718f6] %v23;
+(* str	q17, [x0, #1728]                            #! EA = L0x5555571a08; PC = 0x555555102c *)
+mov [L0x5555571a08,L0x5555571a0a,L0x5555571a0c,L0x5555571a0e,L0x5555571a10,L0x5555571a12,L0x5555571a14,L0x5555571a16] %v17;
+(* str	q16, [x0, #2016]                            #! EA = L0x5555571b28; PC = 0x5555551030 *)
+mov [L0x5555571b28,L0x5555571b2a,L0x5555571b2c,L0x5555571b2e,L0x5555571b30,L0x5555571b32,L0x5555571b34,L0x5555571b36] %v16;
+(* str	q7, [x0, #2304]                             #! EA = L0x5555571c48; PC = 0x5555551034 *)
+mov [L0x5555571c48,L0x5555571c4a,L0x5555571c4c,L0x5555571c4e,L0x5555571c50,L0x5555571c52,L0x5555571c54,L0x5555571c56] %v7;
+(* str	q3, [x0, #2592]                             #! EA = L0x5555571d68; PC = 0x5555551038 *)
+mov [L0x5555571d68,L0x5555571d6a,L0x5555571d6c,L0x5555571d6e,L0x5555571d70,L0x5555571d72,L0x5555571d74,L0x5555571d76] %v3;
+(* #b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! PC = 0x5555551058 *)
+#b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! 0x5555551058 = 0x5555551058;
+
+cut (* 85 *)
+    [L0x5555571348, L0x555557134a, L0x555557134c, L0x555557134e, L0x5555571350, L0x5555571352, L0x5555571354, L0x5555571356] = %v24 /\
+    [L0x5555571468, L0x555557146a, L0x555557146c, L0x555557146e, L0x5555571470, L0x5555571472, L0x5555571474, L0x5555571476] = %v5 /\
+    [L0x5555571588, L0x555557158a, L0x555557158c, L0x555557158e, L0x5555571590, L0x5555571592, L0x5555571594, L0x5555571596] = %v20 /\
+    [L0x55555716a8, L0x55555716aa, L0x55555716ac, L0x55555716ae, L0x55555716b0, L0x55555716b2, L0x55555716b4, L0x55555716b6] = %v1 /\
+    [L0x55555717c8, L0x55555717ca, L0x55555717cc, L0x55555717ce, L0x55555717d0, L0x55555717d2, L0x55555717d4, L0x55555717d6] = %v19 /\
+    [L0x55555718e8, L0x55555718ea, L0x55555718ec, L0x55555718ee, L0x55555718f0, L0x55555718f2, L0x55555718f4, L0x55555718f6] = %v23 /\
+    [L0x5555571a08, L0x5555571a0a, L0x5555571a0c, L0x5555571a0e, L0x5555571a10, L0x5555571a12, L0x5555571a14, L0x5555571a16] = %v17 /\
+    [L0x5555571b28, L0x5555571b2a, L0x5555571b2c, L0x5555571b2e, L0x5555571b30, L0x5555571b32, L0x5555571b34, L0x5555571b36] = %v16 /\
+    [L0x5555571c48, L0x5555571c4a, L0x5555571c4c, L0x5555571c4e, L0x5555571c50, L0x5555571c52, L0x5555571c54, L0x5555571c56] = %v7 /\
+    [L0x5555571d68, L0x5555571d6a, L0x5555571d6c, L0x5555571d6e, L0x5555571d70, L0x5555571d72, L0x5555571d74, L0x5555571d76] = %v3
+  &&
+    [L0x5555571348, L0x555557134a, L0x555557134c, L0x555557134e, L0x5555571350, L0x5555571352, L0x5555571354, L0x5555571356] = %v24 /\
+    [L0x5555571468, L0x555557146a, L0x555557146c, L0x555557146e, L0x5555571470, L0x5555571472, L0x5555571474, L0x5555571476] = %v5 /\
+    [L0x5555571588, L0x555557158a, L0x555557158c, L0x555557158e, L0x5555571590, L0x5555571592, L0x5555571594, L0x5555571596] = %v20 /\
+    [L0x55555716a8, L0x55555716aa, L0x55555716ac, L0x55555716ae, L0x55555716b0, L0x55555716b2, L0x55555716b4, L0x55555716b6] = %v1 /\
+    [L0x55555717c8, L0x55555717ca, L0x55555717cc, L0x55555717ce, L0x55555717d0, L0x55555717d2, L0x55555717d4, L0x55555717d6] = %v19 /\
+    [L0x55555718e8, L0x55555718ea, L0x55555718ec, L0x55555718ee, L0x55555718f0, L0x55555718f2, L0x55555718f4, L0x55555718f6] = %v23 /\
+    [L0x5555571a08, L0x5555571a0a, L0x5555571a0c, L0x5555571a0e, L0x5555571a10, L0x5555571a12, L0x5555571a14, L0x5555571a16] = %v17 /\
+    [L0x5555571b28, L0x5555571b2a, L0x5555571b2c, L0x5555571b2e, L0x5555571b30, L0x5555571b32, L0x5555571b34, L0x5555571b36] = %v16 /\
+    [L0x5555571c48, L0x5555571c4a, L0x5555571c4c, L0x5555571c4e, L0x5555571c50, L0x5555571c52, L0x5555571c54, L0x5555571c56] = %v7 /\
+    [L0x5555571d68, L0x5555571d6a, L0x5555571d6c, L0x5555571d6e, L0x5555571d70, L0x5555571d72, L0x5555571d74, L0x5555571d76] = %v3;
+
+### j_iter epilogue
+
+(* #b.eq	0x555555131c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1712>  // b.none#! PC = 0x555555121c *)
+#b.eq	0x555555131c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1712>  // b.none#! 0x555555121c = 0x555555121c;
+
+
+## j_iter
+
+
+### j_iter prologue
+
+(* #b.le	0x5555550ce4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+120>#! PC = 0x5555551224 *)
+#b.le	0x5555550ce4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+120>#! 0x5555551224 = 0x5555551224;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570590; Value = 0x0000000000000000; PC = 0x5555551248 *)
+mov %v2 [L0x5555570590,L0x5555570592,L0x5555570594,L0x5555570596,L0x5555570598,L0x555557059a,L0x555557059c,L0x555557059e];
+mov %v3 [L0x55555705a0,L0x55555705a2,L0x55555705a4,L0x55555705a6,L0x55555705a8,L0x55555705aa,L0x55555705ac,L0x55555705ae];
+(* st1	{v2.8h, v3.8h}, [x17]                       #! EA = L0x7ffffff050; PC = 0x555555124c *)
+mov [L0x7ffffff050,L0x7ffffff052,L0x7ffffff054,L0x7ffffff056,L0x7ffffff058,L0x7ffffff05a,L0x7ffffff05c,L0x7ffffff05e] %v2;
+mov [L0x7ffffff060,L0x7ffffff062,L0x7ffffff064,L0x7ffffff066,L0x7ffffff068,L0x7ffffff06a,L0x7ffffff06c,L0x7ffffff06e] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570470; Value = 0x0000000000000000; PC = 0x5555551270 *)
+mov %v2 [L0x5555570470,L0x5555570472,L0x5555570474,L0x5555570476,L0x5555570478,L0x555557047a,L0x555557047c,L0x555557047e];
+mov %v3 [L0x5555570480,L0x5555570482,L0x5555570484,L0x5555570486,L0x5555570488,L0x555557048a,L0x555557048c,L0x555557048e];
+(* st1	{v2.8h, v3.8h}, [x16]                       #! EA = L0x7ffffff070; PC = 0x5555551274 *)
+mov [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e] %v2;
+mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570350; Value = 0x0000000000000000; PC = 0x5555551298 *)
+mov %v2 [L0x5555570350,L0x5555570352,L0x5555570354,L0x5555570356,L0x5555570358,L0x555557035a,L0x555557035c,L0x555557035e];
+mov %v3 [L0x5555570360,L0x5555570362,L0x5555570364,L0x5555570366,L0x5555570368,L0x555557036a,L0x555557036c,L0x555557036e];
+(* st1	{v2.8h, v3.8h}, [x15]                       #! EA = L0x7ffffff090; PC = 0x555555129c *)
+mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v2;
+mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570230; Value = 0x0000000000000000; PC = 0x55555512c0 *)
+mov %v2 [L0x5555570230,L0x5555570232,L0x5555570234,L0x5555570236,L0x5555570238,L0x555557023a,L0x555557023c,L0x555557023e];
+mov %v3 [L0x5555570240,L0x5555570242,L0x5555570244,L0x5555570246,L0x5555570248,L0x555557024a,L0x555557024c,L0x555557024e];
+(* st1	{v2.8h, v3.8h}, [x14]                       #! EA = L0x7ffffff0b0; PC = 0x55555512c4 *)
+mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v2;
+mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570110; Value = 0x0000000000000000; PC = 0x55555512e8 *)
+mov %v2 [L0x5555570110,L0x5555570112,L0x5555570114,L0x5555570116,L0x5555570118,L0x555557011a,L0x555557011c,L0x555557011e];
+mov %v3 [L0x5555570120,L0x5555570122,L0x5555570124,L0x5555570126,L0x5555570128,L0x555557012a,L0x555557012c,L0x555557012e];
+(* st1	{v2.8h, v3.8h}, [x13]                       #! EA = L0x7ffffff0d0; PC = 0x55555512ec *)
+mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v2;
+mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v3;
+(* #b	0x555555105c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1008>#! PC = 0x5555551318 *)
+#b	0x555555105c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1008>#! 0x5555551318 = 0x5555551318;
+
+ghost %fd0_5@sint16[16], %fd1_5@sint16[16], %fd2_5@sint16[16], %fd8_5@sint16[16], %fd9_5@sint16[16] :
+    %fd0_5 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_5 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_5 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_5 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_5 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e]
+  &&
+    %fd0_5 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_5 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_5 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_5 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_5 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e];
+
+cut (* 86 *)
+    %fd0_5 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_5 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_5 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_5 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_5 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e] /\
+
+    %fd0_5 = [poly368, poly369, poly370, poly371, poly372, poly373, poly374, poly375, poly376, poly377, poly378, poly379, poly380, poly381, poly382, poly383] /\
+    %fd1_5 = [poly224, poly225, poly226, poly227, poly228, poly229, poly230, poly231, poly232, poly233, poly234, poly235, poly236, poly237, poly238, poly239] /\
+    %fd2_5 = [poly80,  poly81,  poly82,  poly83,  poly84,  poly85,  poly86,  poly87,  poly88,  poly89,  poly90,  poly91,  poly92,  poly93,  poly94,  poly95 ] /\
+    %fd8_5 = [poly656, poly657, poly658, poly659, poly660, poly661, poly662, poly663, poly664, poly665, poly666, poly667, poly668, poly669, poly670, poly671] /\
+    %fd9_5 = [poly512, poly513, poly514, poly515, poly516, poly517, poly518, poly519, poly520, poly521, poly522, poly523, poly524, poly525, poly526, poly527]
+
+    prove with [cuts[0]]
+  &&
+    %fd0_5 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_5 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_5 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_5 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_5 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e] /\
+
+    %fd0_5 = [poly368, poly369, poly370, poly371, poly372, poly373, poly374, poly375, poly376, poly377, poly378, poly379, poly380, poly381, poly382, poly383] /\
+    %fd1_5 = [poly224, poly225, poly226, poly227, poly228, poly229, poly230, poly231, poly232, poly233, poly234, poly235, poly236, poly237, poly238, poly239] /\
+    %fd2_5 = [poly80,  poly81,  poly82,  poly83,  poly84,  poly85,  poly86,  poly87,  poly88,  poly89,  poly90,  poly91,  poly92,  poly93,  poly94,  poly95 ] /\
+    %fd8_5 = [poly656, poly657, poly658, poly659, poly660, poly661, poly662, poly663, poly664, poly665, poly666, poly667, poly668, poly669, poly670, poly671] /\
+    %fd9_5 = [poly512, poly513, poly514, poly515, poly516, poly517, poly518, poly519, poly520, poly521, poly522, poly523, poly524, poly525, poly526, poly527]
+
+    prove with [cuts[0]];
+
+
+### k0_iter
+
+
+#### load
+
+(* ldr	q2, [x22]                                   #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555105c *)
+mov %v2 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
+(* ldr	q16, [x21]                                  #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x5555551060 *)
+mov %v16 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
+(* ldr	q3, [x20]                                   #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551064 *)
+mov %v3 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
+(* ldr	q6, [x19]                                   #! EA = L0x7ffffff050; Value = 0x0000000000000000; PC = 0x5555551068 *)
+mov %v6 [L0x7ffffff050,L0x7ffffff052,L0x7ffffff054,L0x7ffffff056,L0x7ffffff058,L0x7ffffff05a,L0x7ffffff05c,L0x7ffffff05e];
+(* ldr	q18, [x30]                                  #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555106c *)
+mov %v18 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
+
+ghost %fd0_50@sint16[8], %fd1_50@sint16[8], %fd2_50@sint16[8], %fd8_50@sint16[8], %fd9_50@sint16[8] :
+    %fd0_50 = %v2  /\
+    %fd1_50 = %v16 /\
+    %fd2_50 = %v3  /\
+    %fd8_50 = %v6  /\
+    %fd9_50 = %v18
+  &&
+    %fd0_50 = %v2  /\
+    %fd1_50 = %v16 /\
+    %fd2_50 = %v3  /\
+    %fd8_50 = %v6  /\
+    %fd9_50 = %v18;
+
+cut (* 87 *)
+    %fd0_50 = %v2  /\
+    %fd1_50 = %v16 /\
+    %fd2_50 = %v3  /\
+    %fd8_50 = %v6  /\
+    %fd9_50 = %v18 /\
+
+    %fd0_50 = %fd0_5[:8] /\
+    %fd1_50 = %fd1_5[:8] /\
+    %fd2_50 = %fd2_5[:8] /\
+    %fd8_50 = %fd8_5[:8] /\
+    %fd9_50 = %fd9_5[:8]
+
+    prove with [cuts[86]]
+  &&
+    %fd0_50 = %v2  /\
+    %fd1_50 = %v16 /\
+    %fd2_50 = %v3  /\
+    %fd8_50 = %v6  /\
+    %fd9_50 = %v18 /\
+
+    %fd0_50 = %fd0_5[:8] /\
+    %fd1_50 = %fd1_5[:8] /\
+    %fd2_50 = %fd2_5[:8] /\
+    %fd8_50 = %fd8_5[:8] /\
+    %fd9_50 = %fd9_5[:8]
+
+    prove with [cuts[86]];
+
+
+#### ntt10_4x_nof35467
+
+
+##### ntt5_4x_nof14
+
+ghost %fe0_50@sint16[8], %fe2_50@sint16[8], %fe3_50@sint16[8] :
+    %fe0_50 = %v2 /\
+    %fe2_50 = %v3 /\
+    %fe3_50 = %v6
+  &&
+    %fe0_50 = %v2 /\
+    %fe2_50 = %v3 /\
+    %fe3_50 = %v6;
+
+cut (* 88 *)
+    %fe0_50 = %v2 /\
+    %fe2_50 = %v3 /\
+    %fe3_50 = %v6 /\
+
+    %fe0_50 = %fd0_50 /\
+    %fe2_50 = %fd2_50 /\
+    %fe3_50 = %fd8_50
+
+    prove with [cuts[87]]
+  &&
+    %fe0_50 = %v2 /\
+    %fe2_50 = %v3 /\
+    %fe3_50 = %v6 /\
+
+    %fe0_50 = %fd0_50 /\
+    %fe2_50 = %fd2_50 /\
+    %fe3_50 = %fd8_50
+
+    prove with [cuts[87]];
+
+(* add	v5.8h, v3.8h, v6.8h                         #! PC = 0x5555551070 *)
+add %v5 %v3 %v6;
+(* add	v7.8h, v2.8h, v5.8h                         #! PC = 0x5555551074 *)
+add %v7 %v2 %v5;
+(* sqrdmulh	v1.8h, v7.8h, v0.h[1]                  #! PC = 0x5555551078 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v7.8h, v7.8h, #2                            #! PC = 0x555555107c *)
+shl %v7 %v7 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v7.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551080 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_50 + %fe2_50 + %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_50 + %fe2_50 + %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_50 + %fe2_50 + %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_50 + %fe2_50 + %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7
+    && true;
+
+(* shl	v2.8h, v2.8h, #2                            #! PC = 0x5555551084 *)
+shl %v2 %v2 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* sub	v2.8h, v2.8h, v5.8h                         #! PC = 0x5555551088 *)
+sub %v2 %v2 %v5;
+(* sshr	v1.8h, v2.8h, #12                          #! PC = 0x555555108c *)
+split %v1 %dc %v2 12;
+(* cmlt	v17.8h, v2.8h, #0                          #! PC = 0x5555551090 *)
+split %v17 %dc %v2 15;
+(* sub	v1.8h, v1.8h, v17.8h                        #! PC = 0x5555551094 *)
+sub %v1 %v1 %v17;
+(* mls	v2.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551098 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_50 - %fe2_50 - %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_50 - %fe2_50 - %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_50 - %fe2_50 - %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_50 - %fe2_50 - %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x555555109c *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x55555510a0 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x55555510a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_50 + %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_50 + %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_50 + %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_50 + %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* sub	v1.8h, v2.8h, v5.8h                         #! PC = 0x55555510a8 *)
+sub %v1 %v2 %v5;
+(* add	v2.8h, v2.8h, v5.8h                         #! PC = 0x55555510ac *)
+add %v2 %v2 %v5;
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x55555510b0 *)
+sub %v3 %v3 %v6;
+(* sqrdmulh	v6.8h, v3.8h, v4.h[6]                  #! PC = 0x55555510b4 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v5.8h, v3.8h, v4.h[2]                       #! PC = 0x55555510b8 *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v5 %v3 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_50 - %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_50 - %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_50 - %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_50 - %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5
+    && true;
+
+(* sqrdmulh	v6.8h, v3.8h, v4.h[7]                  #! PC = 0x55555510c0 *)
+broadcast %sqrdmulh 8 [%v4[7]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v3.8h, v3.8h, v4.h[3]                       #! PC = 0x55555510c4 *)
+broadcast %mul 8 [%v4[3]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_50 - %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_50 - %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_50 - %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_50 - %fe3_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3
+    && true;
+
+(* sub	v6.8h, v3.8h, v5.8h                         #! PC = 0x55555510cc *)
+sub %v6 %v3 %v5;
+(* sub	v19.8h, v1.8h, v3.8h                        #! PC = 0x55555510d0 *)
+sub %v19 %v1 %v3;
+(* sub	v22.8h, v2.8h, v6.8h                        #! PC = 0x55555510d4 *)
+sub %v22 %v2 %v6;
+(* add	v17.8h, v1.8h, v3.8h                        #! PC = 0x55555510d8 *)
+add %v17 %v1 %v3;
+(* add	v2.8h, v2.8h, v6.8h                         #! PC = 0x55555510dc *)
+add %v2 %v2 %v6;
+
+cut (* 89 *)
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_50 +
+        %fe2_50 +
+        %fe3_50
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_50 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe2_50 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe3_50
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v2  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_50 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe2_50 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe3_50
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v22 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_50 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe2_50 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe3_50
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_50 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe2_50 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe3_50
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %fe0_50 = %fd0_50 /\ %fe2_50 = %fd2_50 /\ %fe3_50 = %fd8_50
+
+  &&
+    %v7  <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v19 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v2  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v22 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v17 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v7  >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v19 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v2  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v22 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v17 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %fe0_50 = %fd0_50 /\ %fe2_50 = %fd2_50 /\ %fe3_50 = %fd8_50
+
+    prove with [precondition, cuts[0, 86, 87]];
+
+
+##### ntt5_4x_nof023
+
+ghost %ff1_50@sint16[8], %ff4_50@sint16[8] :
+    %ff1_50 = %v16 /\
+    %ff4_50 = %v18
+  &&
+    %ff1_50 = %v16 /\
+    %ff4_50 = %v18;
+
+cut (* 90 *)
+    %ff1_50 = %v16 /\
+    %ff4_50 = %v18 /\
+
+    %ff1_50 = %fd1_50 /\
+    %ff4_50 = %fd9_50
+
+    prove with [cuts[87]]
+  &&
+    %ff1_50 = %v16 /\
+    %ff4_50 = %v18 /\
+
+    %ff1_50 = %fd1_50 /\
+    %ff4_50 = %fd9_50
+
+    prove with [cuts[87]];
+
+(* add	v5.8h, v16.8h, v18.8h                       #! PC = 0x55555510e0 *)
+add %v5 %v16 %v18;
+(* sqrdmulh	v1.8h, v5.8h, v0.h[1]                  #! PC = 0x55555510e4 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v23.8h, v5.8h, #2                           #! PC = 0x55555510e8 *)
+shl %v23 %v5 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v23.8h, v1.8h, v0.h[0]                      #! PC = 0x55555510ec *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_50 + %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_50 + %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_50 + %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_50 + %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23
+    && true;
+
+(* neg	v3.8h, v5.8h                                #! PC = 0x55555510f0 *)
+broadcast %neg 8 [0@sint16]; sub %v3 %neg %v5;
+(* sshr	v1.8h, v3.8h, #12                          #! PC = 0x55555510f4 *)
+split %v1 %dc %v3 12;
+(* cmlt	v6.8h, v3.8h, #0                           #! PC = 0x55555510f8 *)
+split %v6 %dc %v3 15;
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x55555510fc *)
+sub %v1 %v1 %v6;
+(* mls	v3.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551100 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    -(%ff1_50 + %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    -(%ff1_50 + %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    -(%ff1_50 + %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    -(%ff1_50 + %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x5555551104 *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x5555551108 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x555555110c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_50 + %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_50 + %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_50 + %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_50 + %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* add	v21.8h, v3.8h, v5.8h                        #! PC = 0x5555551110 *)
+add %v21 %v3 %v5;
+(* sub	v3.8h, v3.8h, v5.8h                         #! PC = 0x5555551114 *)
+sub %v3 %v3 %v5;
+(* sub	v1.8h, v16.8h, v18.8h                       #! PC = 0x5555551118 *)
+sub %v1 %v16 %v18;
+(* sqrdmulh	v5.8h, v1.8h, v4.h[5]                  #! PC = 0x555555111c *)
+broadcast %sqrdmulh 8 [%v4[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v6.8h, v1.8h, v4.h[1]                       #! PC = 0x5555551120 *)
+broadcast %mul 8 [%v4[1]]; mull %mdc %v6 %v1 %mul; cast %v6@int16[8] %v6;
+(* mls	v6.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551124 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_50 - %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_50 - %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_50 - %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_50 - %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6
+    && true;
+
+(* sqrdmulh	v5.8h, v1.8h, v4.h[6]                  #! PC = 0x5555551128 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v4.h[2]                       #! PC = 0x555555112c *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551130 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_50 - %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_50 - %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_50 - %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_50 - %ff4_50)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1
+    && true;
+
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x5555551134 *)
+sub %v1 %v1 %v6;
+(* add	v16.8h, v21.8h, v6.8h                       #! PC = 0x5555551138 *)
+add %v16 %v21 %v6;
+(* add	v5.8h, v3.8h, v1.8h                         #! PC = 0x555555113c *)
+add %v5 %v3 %v1;
+(* sub	v21.8h, v21.8h, v6.8h                       #! PC = 0x5555551140 *)
+sub %v21 %v21 %v6;
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551144 *)
+sub %v3 %v3 %v1;
+
+cut (* 91 *)
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %ff1_50 +
+        %ff4_50
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %ff1_50 -
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %ff4_50
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %ff1_50 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff4_50
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff1_50 -
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %ff4_50
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v21 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %ff1_50 -
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %ff4_50
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %ff1_50 = %fd1_50 /\ %ff4_50 = %fd9_50
+  &&
+    %v23 <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v16 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v3  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v5  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v21 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v23 >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v16 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v3  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v5  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v21 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %ff1_50 = %fd1_50 /\ %ff4_50 = %fd9_50
+
+    prove with [precondition, cuts[0, 86, 87]];
+
+
+##### addsub
+
+(* add	v24.8h, v23.8h, v7.8h                       #! PC = 0x5555551148 *)
+add %v24 %v23 %v7;
+(* sub	v23.8h, v7.8h, v23.8h                       #! PC = 0x555555114c *)
+sub %v23 %v7 %v23;
+(* add	v20.8h, v16.8h, v19.8h                      #! PC = 0x5555551150 *)
+add %v20 %v16 %v19;
+(* sub	v16.8h, v19.8h, v16.8h                      #! PC = 0x5555551154 *)
+sub %v16 %v19 %v16;
+(* add	v19.8h, v3.8h, v2.8h                        #! PC = 0x5555551158 *)
+add %v19 %v3 %v2;
+(* sub	v6.8h, v2.8h, v3.8h                         #! PC = 0x555555115c *)
+sub %v6 %v2 %v3;
+(* add	v18.8h, v5.8h, v22.8h                       #! PC = 0x5555551160 *)
+add %v18 %v5 %v22;
+(* sub	v5.8h, v22.8h, v5.8h                        #! PC = 0x5555551164 *)
+sub %v5 %v22 %v5;
+(* add	v7.8h, v21.8h, v17.8h                       #! PC = 0x5555551168 *)
+add %v7 %v21 %v17;
+(* sub	v1.8h, v17.8h, v21.8h                       #! PC = 0x555555116c *)
+sub %v1 %v17 %v21;
+
+
+cut (* 92 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_50 +
+        %fd1_50 +
+        %fd2_50 +
+        %fd8_50 +
+        %fd9_50
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_50 -
+        %fd1_50 +
+        %fd2_50 +
+        %fd8_50 -
+        %fd9_50
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_50 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd1_50 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_50 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_50 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd9_50
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_50 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd1_50 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_50 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_50 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd9_50
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_50 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd1_50 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_50 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_50 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd9_50
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v6  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_50 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd1_50 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_50 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_50 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd9_50
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v18 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_50 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd1_50 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_50 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_50 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd9_50
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_50 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd1_50 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_50 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_50 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd9_50
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_50 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd1_50 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_50 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_50 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd9_50
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_50 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd1_50 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_50 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_50 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd9_50
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
+
+    prove with [cuts[89, 91]] # TODO
+  &&
+    %v24 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v23 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v20 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v16 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v19 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v6  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v18 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v5  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v7  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v1  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+
+    %v24 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v23 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v20 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v16 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v19 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v6  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v18 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v5  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v7  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v1  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16]
+
+    prove with [cuts[89, 91]]; # TODO
+
+
+#### twist_his
+
+ghost
+    %hhd0_50@sint16[8], %hhd1_50@sint16[8], %hhd2_50@sint16[8], %hhd3_50@sint16[8], %hhd4_50@sint16[8],
+    %hhd5_50@sint16[8], %hhd6_50@sint16[8], %hhd7_50@sint16[8], %hhd8_50@sint16[8], %hhd9_50@sint16[8] :
+
+    %hhd0_50 = %v24 /\ %hhd1_50 = %v5  /\ %hhd2_50 = %v20 /\ %hhd3_50 = %v1  /\ %hhd4_50 = %v19 /\
+    %hhd5_50 = %v23 /\ %hhd6_50 = %v18 /\ %hhd7_50 = %v16 /\ %hhd8_50 = %v7  /\ %hhd9_50 = %v6
+  &&
+    %hhd0_50 = %v24 /\ %hhd1_50 = %v5  /\ %hhd2_50 = %v20 /\ %hhd3_50 = %v1  /\ %hhd4_50 = %v19 /\
+    %hhd5_50 = %v23 /\ %hhd6_50 = %v18 /\ %hhd7_50 = %v16 /\ %hhd8_50 = %v7  /\ %hhd9_50 = %v6;
+
+(* ld1	{v2.8h, v3.8h}, [x24]                       #! EA = L0x5555552a90; Value = 0x2ce3064a3f6708e2; PC = 0x5555551170 *)
+mov %v2 [L0x5555552a90,L0x5555552a92,L0x5555552a94,L0x5555552a96,L0x5555552a98,L0x5555552a9a,L0x5555552a9c,L0x5555552a9e];
+mov %v3 [L0x5555552aa0,L0x5555552aa2,L0x5555552aa4,L0x5555552aa6,L0x5555552aa8,L0x5555552aaa,L0x5555552aac,L0x5555552aae];
+(* sqrdmulh	v17.8h, v24.8h, v0.h[2]                #! PC = 0x5555551174 *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v24 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v24.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551178 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v24 %v24 %mls;
+
+assert
+    %hhd0_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd0_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd0_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd0_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24
+    && true;
+
+(* sqrdmulh	v17.8h, v23.8h, v0.h[2]                #! PC = 0x555555117c *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v23 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v23.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551180 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    %hhd5_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd5_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd5_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd5_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23
+    && true;
+
+(* sqrdmulh	v17.8h, v5.8h, v2.h[1]                 #! PC = 0x5555551184 *)
+broadcast %sqrdmulh 8 [%v2[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v2.h[0]                       #! PC = 0x5555551188 *)
+broadcast %mul 8 [%v2[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v17.8h, v0.h[0]                      #! PC = 0x555555118c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [2274, 2274, 2274, 2274, 2274, 2274, 2274, 2274] * %hhd1_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [2274, 2274, 2274, 2274, 2274, 2274, 2274, 2274] * %hhd1_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [2274, 2274, 2274, 2274, 2274, 2274, 2274, 2274] * %hhd1_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [2274, 2274, 2274, 2274, 2274, 2274, 2274, 2274] * %hhd1_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5
+    && true;
+
+(* sqrdmulh	v17.8h, v20.8h, v2.h[3]                #! PC = 0x5555551190 *)
+broadcast %sqrdmulh 8 [%v2[3]]; smulj %LO %v20 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v20.8h, v20.8h, v2.h[2]                     #! PC = 0x5555551194 *)
+broadcast %mul 8 [%v2[2]]; mull %mdc %v20 %v20 %mul; cast %v20@int16[8] %v20;
+(* mls	v20.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551198 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v20 %v20 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd2_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd2_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd2_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd2_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20
+    && true;
+
+(* sqrdmulh	v17.8h, v1.8h, v2.h[5]                 #! PC = 0x555555119c *)
+broadcast %sqrdmulh 8 [%v2[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v2.h[4]                       #! PC = 0x55555511a0 *)
+broadcast %mul 8 [%v2[4]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v17.8h, v0.h[0]                      #! PC = 0x55555511a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [2113, 2113, 2113, 2113, 2113, 2113, 2113, 2113] * %hhd3_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [2113, 2113, 2113, 2113, 2113, 2113, 2113, 2113] * %hhd3_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [2113, 2113, 2113, 2113, 2113, 2113, 2113, 2113] * %hhd3_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [2113, 2113, 2113, 2113, 2113, 2113, 2113, 2113] * %hhd3_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1
+    && true;
+
+(* sqrdmulh	v17.8h, v19.8h, v2.h[7]                #! PC = 0x55555511a8 *)
+broadcast %sqrdmulh 8 [%v2[7]]; smulj %LO %v19 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v19.8h, v19.8h, v2.h[6]                     #! PC = 0x55555511ac *)
+broadcast %mul 8 [%v2[6]]; mull %mdc %v19 %v19 %mul; cast %v19@int16[8] %v19;
+(* mls	v19.8h, v17.8h, v0.h[0]                     #! PC = 0x55555511b0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v19 %v19 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd4_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd4_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd4_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd4_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19
+    && true;
+
+(* sqrdmulh	v21.8h, v18.8h, v3.h[1]                #! PC = 0x55555511b4 *)
+broadcast %sqrdmulh 8 [%v3[1]]; smulj %LO %v18 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v21 %LO11 %LO01;
+(* mul	v17.8h, v18.8h, v3.h[0]                     #! PC = 0x55555511b8 *)
+broadcast %mul 8 [%v3[0]]; mull %mdc %v17 %v18 %mul; cast %v17@int16[8] %v17;
+(* mls	v17.8h, v21.8h, v0.h[0]                     #! PC = 0x55555511bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v21 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd6_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd6_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd6_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    = %v17 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd6_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v20
+    = %v17
+    && true;
+
+(* sqrdmulh	v18.8h, v16.8h, v3.h[3]                #! PC = 0x55555511c0 *)
+broadcast %sqrdmulh 8 [%v3[3]]; smulj %LO %v16 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v16.8h, v16.8h, v3.h[2]                     #! PC = 0x55555511c4 *)
+broadcast %mul 8 [%v3[2]]; mull %mdc %v16 %v16 %mul; cast %v16@int16[8] %v16;
+(* mls	v16.8h, v18.8h, v0.h[0]                     #! PC = 0x55555511c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
+
+assert
+    [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %hhd7_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %hhd7_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %hhd7_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %hhd7_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16
+    && true;
+
+(* sqrdmulh	v18.8h, v7.8h, v3.h[5]                 #! PC = 0x55555511cc *)
+broadcast %sqrdmulh 8 [%v3[5]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v7.8h, v7.8h, v3.h[4]                       #! PC = 0x55555511d0 *)
+broadcast %mul 8 [%v3[4]]; mull %mdc %v7 %v7 %mul; cast %v7@int16[8] %v7;
+(* mls	v7.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511d4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd8_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd8_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd8_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd8_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7
+    && true;
+
+(* sqrdmulh	v18.8h, v6.8h, v3.h[7]                 #! PC = 0x55555511d8 *)
+broadcast %sqrdmulh 8 [%v3[7]]; smulj %LO %v6 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v3.8h, v6.8h, v3.h[6]                       #! PC = 0x55555511dc *)
+broadcast %mul 8 [%v3[6]]; mull %mdc %v3 %v6 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511e0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [1815, 1815, 1815, 1815, 1815, 1815, 1815, 1815] * %hhd9_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1815, 1815, 1815, 1815, 1815, 1815, 1815, 1815] * %hhd9_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1815, 1815, 1815, 1815, 1815, 1815, 1815, 1815] * %hhd9_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1815, 1815, 1815, 1815, 1815, 1815, 1815, 1815] * %hhd9_50
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3
+    && true;
+
+(* #b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! PC = 0x55555511e8 *)
+#b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! 0x55555511e8 = 0x55555511e8;
+(* neg	v23.8h, v23.8h                              #! PC = 0x55555511ec *)
+broadcast %neg 8 [0@sint16]; sub %v23 %neg %v23;
+(* #b	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>#! PC = 0x55555511f0 *)
+#b	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>#! 0x55555511f0 = 0x55555511f0;
+
+cut (* 93 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        %fd8_50 +
+        %fd9_50 +
+        %fd0_50 +
+        %fd1_50 +
+        %fd2_50 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd8_50 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd9_50 +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd0_50 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd1_50 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd2_50 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd8_50 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd9_50 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_50 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd1_50 +
+        %fd2_50 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd8_50 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd9_50 +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd0_50 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd1_50 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd2_50 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd8_50 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd9_50 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_50 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd1_50 +
+        %fd2_50 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd8_50 +
+        %fd9_50 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd0_50 +
+        %fd1_50 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd2_50 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd8_50 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd9_50 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_50 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd1_50 +
+        %fd2_50 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd8_50 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd9_50 +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd0_50 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd1_50 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd2_50 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd8_50 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd9_50 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_50 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd1_50 +
+        %fd2_50 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd8_50 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd9_50 +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd0_50 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd1_50 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd2_50 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    true # TODO
+    prove with [precondition]
+  &&
+    %v24 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v5  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v20 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v1  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v19 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v23 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v17 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v16 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v7  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v3  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+
+    %v24 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v5  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v20 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v1  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v19 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v23 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v17 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v16 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v7  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v3  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16];
+
+
+#### store
+
+(* str	q24, [x0]                                   #! EA = L0x55555712c8; PC = 0x5555551014 *)
+mov [L0x55555712c8,L0x55555712ca,L0x55555712cc,L0x55555712ce,L0x55555712d0,L0x55555712d2,L0x55555712d4,L0x55555712d6] %v24;
+(* str	q5, [x0, #288]                              #! EA = L0x55555713e8; PC = 0x5555551018 *)
+mov [L0x55555713e8,L0x55555713ea,L0x55555713ec,L0x55555713ee,L0x55555713f0,L0x55555713f2,L0x55555713f4,L0x55555713f6] %v5;
+(* str	q20, [x0, #576]                             #! EA = L0x5555571508; PC = 0x555555101c *)
+mov [L0x5555571508,L0x555557150a,L0x555557150c,L0x555557150e,L0x5555571510,L0x5555571512,L0x5555571514,L0x5555571516] %v20;
+(* str	q1, [x0, #864]                              #! EA = L0x5555571628; PC = 0x5555551020 *)
+mov [L0x5555571628,L0x555557162a,L0x555557162c,L0x555557162e,L0x5555571630,L0x5555571632,L0x5555571634,L0x5555571636] %v1;
+(* str	q19, [x0, #1152]                            #! EA = L0x5555571748; PC = 0x5555551024 *)
+mov [L0x5555571748,L0x555557174a,L0x555557174c,L0x555557174e,L0x5555571750,L0x5555571752,L0x5555571754,L0x5555571756] %v19;
+(* str	q23, [x0, #1440]                            #! EA = L0x5555571868; PC = 0x5555551028 *)
+mov [L0x5555571868,L0x555557186a,L0x555557186c,L0x555557186e,L0x5555571870,L0x5555571872,L0x5555571874,L0x5555571876] %v23;
+(* str	q17, [x0, #1728]                            #! EA = L0x5555571988; PC = 0x555555102c *)
+mov [L0x5555571988,L0x555557198a,L0x555557198c,L0x555557198e,L0x5555571990,L0x5555571992,L0x5555571994,L0x5555571996] %v17;
+(* str	q16, [x0, #2016]                            #! EA = L0x5555571aa8; PC = 0x5555551030 *)
+mov [L0x5555571aa8,L0x5555571aaa,L0x5555571aac,L0x5555571aae,L0x5555571ab0,L0x5555571ab2,L0x5555571ab4,L0x5555571ab6] %v16;
+(* str	q7, [x0, #2304]                             #! EA = L0x5555571bc8; PC = 0x5555551034 *)
+mov [L0x5555571bc8,L0x5555571bca,L0x5555571bcc,L0x5555571bce,L0x5555571bd0,L0x5555571bd2,L0x5555571bd4,L0x5555571bd6] %v7;
+(* str	q3, [x0, #2592]                             #! EA = L0x5555571ce8; PC = 0x5555551038 *)
+mov [L0x5555571ce8,L0x5555571cea,L0x5555571cec,L0x5555571cee,L0x5555571cf0,L0x5555571cf2,L0x5555571cf4,L0x5555571cf6] %v3;
+(* #b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! PC = 0x5555551058 *)
+#b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! 0x5555551058 = 0x5555551058;
+
+cut (* 94 *)
+    [L0x55555712c8, L0x55555712ca, L0x55555712cc, L0x55555712ce, L0x55555712d0, L0x55555712d2, L0x55555712d4, L0x55555712d6] = %v24 /\
+    [L0x55555713e8, L0x55555713ea, L0x55555713ec, L0x55555713ee, L0x55555713f0, L0x55555713f2, L0x55555713f4, L0x55555713f6] = %v5 /\
+    [L0x5555571508, L0x555557150a, L0x555557150c, L0x555557150e, L0x5555571510, L0x5555571512, L0x5555571514, L0x5555571516] = %v20 /\
+    [L0x5555571628, L0x555557162a, L0x555557162c, L0x555557162e, L0x5555571630, L0x5555571632, L0x5555571634, L0x5555571636] = %v1 /\
+    [L0x5555571748, L0x555557174a, L0x555557174c, L0x555557174e, L0x5555571750, L0x5555571752, L0x5555571754, L0x5555571756] = %v19 /\
+    [L0x5555571868, L0x555557186a, L0x555557186c, L0x555557186e, L0x5555571870, L0x5555571872, L0x5555571874, L0x5555571876] = %v23 /\
+    [L0x5555571988, L0x555557198a, L0x555557198c, L0x555557198e, L0x5555571990, L0x5555571992, L0x5555571994, L0x5555571996] = %v17 /\
+    [L0x5555571aa8, L0x5555571aaa, L0x5555571aac, L0x5555571aae, L0x5555571ab0, L0x5555571ab2, L0x5555571ab4, L0x5555571ab6] = %v16 /\
+    [L0x5555571bc8, L0x5555571bca, L0x5555571bcc, L0x5555571bce, L0x5555571bd0, L0x5555571bd2, L0x5555571bd4, L0x5555571bd6] = %v7 /\
+    [L0x5555571ce8, L0x5555571cea, L0x5555571cec, L0x5555571cee, L0x5555571cf0, L0x5555571cf2, L0x5555571cf4, L0x5555571cf6] = %v3
+  &&
+    [L0x55555712c8, L0x55555712ca, L0x55555712cc, L0x55555712ce, L0x55555712d0, L0x55555712d2, L0x55555712d4, L0x55555712d6] = %v24 /\
+    [L0x55555713e8, L0x55555713ea, L0x55555713ec, L0x55555713ee, L0x55555713f0, L0x55555713f2, L0x55555713f4, L0x55555713f6] = %v5 /\
+    [L0x5555571508, L0x555557150a, L0x555557150c, L0x555557150e, L0x5555571510, L0x5555571512, L0x5555571514, L0x5555571516] = %v20 /\
+    [L0x5555571628, L0x555557162a, L0x555557162c, L0x555557162e, L0x5555571630, L0x5555571632, L0x5555571634, L0x5555571636] = %v1 /\
+    [L0x5555571748, L0x555557174a, L0x555557174c, L0x555557174e, L0x5555571750, L0x5555571752, L0x5555571754, L0x5555571756] = %v19 /\
+    [L0x5555571868, L0x555557186a, L0x555557186c, L0x555557186e, L0x5555571870, L0x5555571872, L0x5555571874, L0x5555571876] = %v23 /\
+    [L0x5555571988, L0x555557198a, L0x555557198c, L0x555557198e, L0x5555571990, L0x5555571992, L0x5555571994, L0x5555571996] = %v17 /\
+    [L0x5555571aa8, L0x5555571aaa, L0x5555571aac, L0x5555571aae, L0x5555571ab0, L0x5555571ab2, L0x5555571ab4, L0x5555571ab6] = %v16 /\
+    [L0x5555571bc8, L0x5555571bca, L0x5555571bcc, L0x5555571bce, L0x5555571bd0, L0x5555571bd2, L0x5555571bd4, L0x5555571bd6] = %v7 /\
+    [L0x5555571ce8, L0x5555571cea, L0x5555571cec, L0x5555571cee, L0x5555571cf0, L0x5555571cf2, L0x5555571cf4, L0x5555571cf6] = %v3;
+
+### k0_iter
+
+
+#### load
+
+(* ldr	q2, [x22]                                   #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x555555105c *)
+mov %v2 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
+(* ldr	q16, [x21]                                  #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551060 *)
+mov %v16 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
+(* ldr	q3, [x20]                                   #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551064 *)
+mov %v3 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
+(* ldr	q6, [x19]                                   #! EA = L0x7ffffff060; Value = 0x0000000000000000; PC = 0x5555551068 *)
+mov %v6 [L0x7ffffff060,L0x7ffffff062,L0x7ffffff064,L0x7ffffff066,L0x7ffffff068,L0x7ffffff06a,L0x7ffffff06c,L0x7ffffff06e];
+(* ldr	q18, [x30]                                  #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x555555106c *)
+mov %v18 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
+
+ghost %fd0_51@sint16[8], %fd1_51@sint16[8], %fd2_51@sint16[8], %fd8_51@sint16[8], %fd9_51@sint16[8] :
+    %fd0_51 = %v2  /\
+    %fd1_51 = %v16 /\
+    %fd2_51 = %v3  /\
+    %fd8_51 = %v6  /\
+    %fd9_51 = %v18
+  &&
+    %fd0_51 = %v2  /\
+    %fd1_51 = %v16 /\
+    %fd2_51 = %v3  /\
+    %fd8_51 = %v6  /\
+    %fd9_51 = %v18;
+
+cut (* 95 *)
+    %fd0_51 = %v2  /\
+    %fd1_51 = %v16 /\
+    %fd2_51 = %v3  /\
+    %fd8_51 = %v6  /\
+    %fd9_51 = %v18 /\
+
+    %fd0_51 = %fd0_5[8:] /\
+    %fd1_51 = %fd1_5[8:] /\
+    %fd2_51 = %fd2_5[8:] /\
+    %fd8_51 = %fd8_5[8:] /\
+    %fd9_51 = %fd9_5[8:]
+
+    prove with [cuts[86]]
+  &&
+    %fd0_51 = %v2  /\
+    %fd1_51 = %v16 /\
+    %fd2_51 = %v3  /\
+    %fd8_51 = %v6  /\
+    %fd9_51 = %v18 /\
+
+    %fd0_51 = %fd0_5[8:] /\
+    %fd1_51 = %fd1_5[8:] /\
+    %fd2_51 = %fd2_5[8:] /\
+    %fd8_51 = %fd8_5[8:] /\
+    %fd9_51 = %fd9_5[8:]
+
+    prove with [cuts[86]];
+
+
+#### ntt10_4x_nof35467
+
+
+##### ntt5_4x_nof14
+
+ghost %fe0_51@sint16[8], %fe2_51@sint16[8], %fe3_51@sint16[8] :
+    %fe0_51 = %v2 /\
+    %fe2_51 = %v3 /\
+    %fe3_51 = %v6
+  &&
+    %fe0_51 = %v2 /\
+    %fe2_51 = %v3 /\
+    %fe3_51 = %v6;
+
+cut (* 96 *)
+    %fe0_51 = %v2 /\
+    %fe2_51 = %v3 /\
+    %fe3_51 = %v6 /\
+
+    %fe0_51 = %fd0_51 /\
+    %fe2_51 = %fd2_51 /\
+    %fe3_51 = %fd8_51
+
+    prove with [cuts[95]]
+  &&
+    %fe0_51 = %v2 /\
+    %fe2_51 = %v3 /\
+    %fe3_51 = %v6 /\
+
+    %fe0_51 = %fd0_51 /\
+    %fe2_51 = %fd2_51 /\
+    %fe3_51 = %fd8_51
+
+    prove with [cuts[95]];
+
+(* add	v5.8h, v3.8h, v6.8h                         #! PC = 0x5555551070 *)
+add %v5 %v3 %v6;
+(* add	v7.8h, v2.8h, v5.8h                         #! PC = 0x5555551074 *)
+add %v7 %v2 %v5;
+(* sqrdmulh	v1.8h, v7.8h, v0.h[1]                  #! PC = 0x5555551078 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v7.8h, v7.8h, #2                            #! PC = 0x555555107c *)
+shl %v7 %v7 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v7.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551080 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_51 + %fe2_51 + %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_51 + %fe2_51 + %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_51 + %fe2_51 + %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_51 + %fe2_51 + %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7
+    && true;
+
+(* shl	v2.8h, v2.8h, #2                            #! PC = 0x5555551084 *)
+shl %v2 %v2 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* sub	v2.8h, v2.8h, v5.8h                         #! PC = 0x5555551088 *)
+sub %v2 %v2 %v5;
+(* sshr	v1.8h, v2.8h, #12                          #! PC = 0x555555108c *)
+split %v1 %dc %v2 12;
+(* cmlt	v17.8h, v2.8h, #0                          #! PC = 0x5555551090 *)
+split %v17 %dc %v2 15;
+(* sub	v1.8h, v1.8h, v17.8h                        #! PC = 0x5555551094 *)
+sub %v1 %v1 %v17;
+(* mls	v2.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551098 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_51 - %fe2_51 - %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_51 - %fe2_51 - %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_51 - %fe2_51 - %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_51 - %fe2_51 - %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x555555109c *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x55555510a0 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x55555510a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_51 + %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_51 + %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_51 + %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_51 + %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* sub	v1.8h, v2.8h, v5.8h                         #! PC = 0x55555510a8 *)
+sub %v1 %v2 %v5;
+(* add	v2.8h, v2.8h, v5.8h                         #! PC = 0x55555510ac *)
+add %v2 %v2 %v5;
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x55555510b0 *)
+sub %v3 %v3 %v6;
+(* sqrdmulh	v6.8h, v3.8h, v4.h[6]                  #! PC = 0x55555510b4 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v5.8h, v3.8h, v4.h[2]                       #! PC = 0x55555510b8 *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v5 %v3 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_51 - %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_51 - %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_51 - %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_51 - %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5
+    && true;
+
+(* sqrdmulh	v6.8h, v3.8h, v4.h[7]                  #! PC = 0x55555510c0 *)
+broadcast %sqrdmulh 8 [%v4[7]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v3.8h, v3.8h, v4.h[3]                       #! PC = 0x55555510c4 *)
+broadcast %mul 8 [%v4[3]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_51 - %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_51 - %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_51 - %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_51 - %fe3_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3
+    && true;
+
+(* sub	v6.8h, v3.8h, v5.8h                         #! PC = 0x55555510cc *)
+sub %v6 %v3 %v5;
+(* sub	v19.8h, v1.8h, v3.8h                        #! PC = 0x55555510d0 *)
+sub %v19 %v1 %v3;
+(* sub	v22.8h, v2.8h, v6.8h                        #! PC = 0x55555510d4 *)
+sub %v22 %v2 %v6;
+(* add	v17.8h, v1.8h, v3.8h                        #! PC = 0x55555510d8 *)
+add %v17 %v1 %v3;
+(* add	v2.8h, v2.8h, v6.8h                         #! PC = 0x55555510dc *)
+add %v2 %v2 %v6;
+
+cut (* 97 *)
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_51 +
+        %fe2_51 +
+        %fe3_51
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_51 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe2_51 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe3_51
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v2  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_51 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe2_51 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe3_51
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v22 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_51 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe2_51 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe3_51
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_51 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe2_51 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe3_51
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %fe0_51 = %fd0_51 /\ %fe2_51 = %fd2_51 /\ %fe3_51 = %fd8_51
+
+  &&
+    %v7  <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v19 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v2  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v22 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v17 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v7  >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v19 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v2  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v22 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v17 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %fe0_51 = %fd0_51 /\ %fe2_51 = %fd2_51 /\ %fe3_51 = %fd8_51
+
+    prove with [precondition, cuts[0, 86, 95]];
+
+
+##### ntt5_4x_nof023
+
+ghost %ff1_51@sint16[8], %ff4_51@sint16[8] :
+    %ff1_51 = %v16 /\
+    %ff4_51 = %v18
+  &&
+    %ff1_51 = %v16 /\
+    %ff4_51 = %v18;
+
+cut (* 98 *)
+    %ff1_51 = %v16 /\
+    %ff4_51 = %v18 /\
+
+    %ff1_51 = %fd1_51 /\
+    %ff4_51 = %fd9_51
+
+    prove with [cuts[95]]
+  &&
+    %ff1_51 = %v16 /\
+    %ff4_51 = %v18 /\
+
+    %ff1_51 = %fd1_51 /\
+    %ff4_51 = %fd9_51
+
+    prove with [cuts[95]];
+
+(* add	v5.8h, v16.8h, v18.8h                       #! PC = 0x55555510e0 *)
+add %v5 %v16 %v18;
+(* sqrdmulh	v1.8h, v5.8h, v0.h[1]                  #! PC = 0x55555510e4 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v23.8h, v5.8h, #2                           #! PC = 0x55555510e8 *)
+shl %v23 %v5 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v23.8h, v1.8h, v0.h[0]                      #! PC = 0x55555510ec *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_51 + %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_51 + %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_51 + %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_51 + %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23
+    && true;
+
+(* neg	v3.8h, v5.8h                                #! PC = 0x55555510f0 *)
+broadcast %neg 8 [0@sint16]; sub %v3 %neg %v5;
+(* sshr	v1.8h, v3.8h, #12                          #! PC = 0x55555510f4 *)
+split %v1 %dc %v3 12;
+(* cmlt	v6.8h, v3.8h, #0                           #! PC = 0x55555510f8 *)
+split %v6 %dc %v3 15;
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x55555510fc *)
+sub %v1 %v1 %v6;
+(* mls	v3.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551100 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    -(%ff1_51 + %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    -(%ff1_51 + %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    -(%ff1_51 + %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    -(%ff1_51 + %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x5555551104 *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x5555551108 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x555555110c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_51 + %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_51 + %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_51 + %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_51 + %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* add	v21.8h, v3.8h, v5.8h                        #! PC = 0x5555551110 *)
+add %v21 %v3 %v5;
+(* sub	v3.8h, v3.8h, v5.8h                         #! PC = 0x5555551114 *)
+sub %v3 %v3 %v5;
+(* sub	v1.8h, v16.8h, v18.8h                       #! PC = 0x5555551118 *)
+sub %v1 %v16 %v18;
+(* sqrdmulh	v5.8h, v1.8h, v4.h[5]                  #! PC = 0x555555111c *)
+broadcast %sqrdmulh 8 [%v4[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v6.8h, v1.8h, v4.h[1]                       #! PC = 0x5555551120 *)
+broadcast %mul 8 [%v4[1]]; mull %mdc %v6 %v1 %mul; cast %v6@int16[8] %v6;
+(* mls	v6.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551124 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_51 - %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_51 - %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_51 - %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_51 - %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6
+    && true;
+
+(* sqrdmulh	v5.8h, v1.8h, v4.h[6]                  #! PC = 0x5555551128 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v4.h[2]                       #! PC = 0x555555112c *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551130 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_51 - %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_51 - %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_51 - %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_51 - %ff4_51)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1
+    && true;
+
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x5555551134 *)
+sub %v1 %v1 %v6;
+(* add	v16.8h, v21.8h, v6.8h                       #! PC = 0x5555551138 *)
+add %v16 %v21 %v6;
+(* add	v5.8h, v3.8h, v1.8h                         #! PC = 0x555555113c *)
+add %v5 %v3 %v1;
+(* sub	v21.8h, v21.8h, v6.8h                       #! PC = 0x5555551140 *)
+sub %v21 %v21 %v6;
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551144 *)
+sub %v3 %v3 %v1;
+
+cut (* 99 *)
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %ff1_51 +
+        %ff4_51
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %ff1_51 -
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %ff4_51
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %ff1_51 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff4_51
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff1_51 -
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %ff4_51
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v21 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %ff1_51 -
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %ff4_51
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %ff1_51 = %fd1_51 /\ %ff4_51 = %fd9_51
+  &&
+    %v23 <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v16 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v3  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v5  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v21 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v23 >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v16 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v3  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v5  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v21 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %ff1_51 = %fd1_51 /\ %ff4_51 = %fd9_51
+
+    prove with [precondition, cuts[0, 86, 95]];
+
+
+##### addsub
+
+(* add	v24.8h, v23.8h, v7.8h                       #! PC = 0x5555551148 *)
+add %v24 %v23 %v7;
+(* sub	v23.8h, v7.8h, v23.8h                       #! PC = 0x555555114c *)
+sub %v23 %v7 %v23;
+(* add	v20.8h, v16.8h, v19.8h                      #! PC = 0x5555551150 *)
+add %v20 %v16 %v19;
+(* sub	v16.8h, v19.8h, v16.8h                      #! PC = 0x5555551154 *)
+sub %v16 %v19 %v16;
+(* add	v19.8h, v3.8h, v2.8h                        #! PC = 0x5555551158 *)
+add %v19 %v3 %v2;
+(* sub	v6.8h, v2.8h, v3.8h                         #! PC = 0x555555115c *)
+sub %v6 %v2 %v3;
+(* add	v18.8h, v5.8h, v22.8h                       #! PC = 0x5555551160 *)
+add %v18 %v5 %v22;
+(* sub	v5.8h, v22.8h, v5.8h                        #! PC = 0x5555551164 *)
+sub %v5 %v22 %v5;
+(* add	v7.8h, v21.8h, v17.8h                       #! PC = 0x5555551168 *)
+add %v7 %v21 %v17;
+(* sub	v1.8h, v17.8h, v21.8h                       #! PC = 0x555555116c *)
+sub %v1 %v17 %v21;
+
+
+cut (* 100 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_51 +
+        %fd1_51 +
+        %fd2_51 +
+        %fd8_51 +
+        %fd9_51
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_51 -
+        %fd1_51 +
+        %fd2_51 +
+        %fd8_51 -
+        %fd9_51
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_51 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd1_51 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_51 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_51 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd9_51
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_51 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd1_51 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_51 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_51 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd9_51
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_51 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd1_51 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_51 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_51 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd9_51
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v6  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_51 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd1_51 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_51 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_51 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd9_51
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v18 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_51 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd1_51 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_51 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_51 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd9_51
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_51 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd1_51 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_51 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_51 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd9_51
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_51 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd1_51 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_51 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_51 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd9_51
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_51 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd1_51 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_51 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_51 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd9_51
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
+
+    prove with [cuts[97, 99]] # TODO
+  &&
+    %v24 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v23 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v20 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v16 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v19 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v6  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v18 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v5  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v7  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v1  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+
+    %v24 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v23 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v20 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v16 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v19 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v6  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v18 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v5  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v7  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v1  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16]
+
+    prove with [cuts[97, 99]]; # TODO
+
+
+#### twist_his
+
+ghost
+    %hhd0_51@sint16[8], %hhd1_51@sint16[8], %hhd2_51@sint16[8], %hhd3_51@sint16[8], %hhd4_51@sint16[8],
+    %hhd5_51@sint16[8], %hhd6_51@sint16[8], %hhd7_51@sint16[8], %hhd8_51@sint16[8], %hhd9_51@sint16[8] :
+
+    %hhd0_51 = %v24 /\ %hhd1_51 = %v5  /\ %hhd2_51 = %v20 /\ %hhd3_51 = %v1  /\ %hhd4_51 = %v19 /\
+    %hhd5_51 = %v23 /\ %hhd6_51 = %v18 /\ %hhd7_51 = %v16 /\ %hhd8_51 = %v7  /\ %hhd9_51 = %v6
+  &&
+    %hhd0_51 = %v24 /\ %hhd1_51 = %v5  /\ %hhd2_51 = %v20 /\ %hhd3_51 = %v1  /\ %hhd4_51 = %v19 /\
+    %hhd5_51 = %v23 /\ %hhd6_51 = %v18 /\ %hhd7_51 = %v16 /\ %hhd8_51 = %v7  /\ %hhd9_51 = %v6;
+
+(* ld1	{v2.8h, v3.8h}, [x24]                       #! EA = L0x5555552a90; Value = 0x2ce3064a3f6708e2; PC = 0x5555551170 *)
+mov %v2 [L0x5555552a90,L0x5555552a92,L0x5555552a94,L0x5555552a96,L0x5555552a98,L0x5555552a9a,L0x5555552a9c,L0x5555552a9e];
+mov %v3 [L0x5555552aa0,L0x5555552aa2,L0x5555552aa4,L0x5555552aa6,L0x5555552aa8,L0x5555552aaa,L0x5555552aac,L0x5555552aae];
+(* sqrdmulh	v17.8h, v24.8h, v0.h[2]                #! PC = 0x5555551174 *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v24 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v24.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551178 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v24 %v24 %mls;
+
+assert
+    %hhd0_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd0_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd0_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd0_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24
+    && true;
+
+(* sqrdmulh	v17.8h, v23.8h, v0.h[2]                #! PC = 0x555555117c *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v23 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v23.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551180 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    %hhd5_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd5_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd5_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd5_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23
+    && true;
+
+(* sqrdmulh	v17.8h, v5.8h, v2.h[1]                 #! PC = 0x5555551184 *)
+broadcast %sqrdmulh 8 [%v2[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v2.h[0]                       #! PC = 0x5555551188 *)
+broadcast %mul 8 [%v2[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v17.8h, v0.h[0]                      #! PC = 0x555555118c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [2274, 2274, 2274, 2274, 2274, 2274, 2274, 2274] * %hhd1_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [2274, 2274, 2274, 2274, 2274, 2274, 2274, 2274] * %hhd1_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [2274, 2274, 2274, 2274, 2274, 2274, 2274, 2274] * %hhd1_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [2274, 2274, 2274, 2274, 2274, 2274, 2274, 2274] * %hhd1_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5
+    && true;
+
+(* sqrdmulh	v17.8h, v20.8h, v2.h[3]                #! PC = 0x5555551190 *)
+broadcast %sqrdmulh 8 [%v2[3]]; smulj %LO %v20 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v20.8h, v20.8h, v2.h[2]                     #! PC = 0x5555551194 *)
+broadcast %mul 8 [%v2[2]]; mull %mdc %v20 %v20 %mul; cast %v20@int16[8] %v20;
+(* mls	v20.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551198 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v20 %v20 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd2_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd2_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd2_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd2_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20
+    && true;
+
+(* sqrdmulh	v17.8h, v1.8h, v2.h[5]                 #! PC = 0x555555119c *)
+broadcast %sqrdmulh 8 [%v2[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v2.h[4]                       #! PC = 0x55555511a0 *)
+broadcast %mul 8 [%v2[4]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v17.8h, v0.h[0]                      #! PC = 0x55555511a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [2113, 2113, 2113, 2113, 2113, 2113, 2113, 2113] * %hhd3_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [2113, 2113, 2113, 2113, 2113, 2113, 2113, 2113] * %hhd3_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [2113, 2113, 2113, 2113, 2113, 2113, 2113, 2113] * %hhd3_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [2113, 2113, 2113, 2113, 2113, 2113, 2113, 2113] * %hhd3_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1
+    && true;
+
+(* sqrdmulh	v17.8h, v19.8h, v2.h[7]                #! PC = 0x55555511a8 *)
+broadcast %sqrdmulh 8 [%v2[7]]; smulj %LO %v19 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v19.8h, v19.8h, v2.h[6]                     #! PC = 0x55555511ac *)
+broadcast %mul 8 [%v2[6]]; mull %mdc %v19 %v19 %mul; cast %v19@int16[8] %v19;
+(* mls	v19.8h, v17.8h, v0.h[0]                     #! PC = 0x55555511b0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v19 %v19 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd4_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd4_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd4_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd4_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19
+    && true;
+
+(* sqrdmulh	v21.8h, v18.8h, v3.h[1]                #! PC = 0x55555511b4 *)
+broadcast %sqrdmulh 8 [%v3[1]]; smulj %LO %v18 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v21 %LO11 %LO01;
+(* mul	v17.8h, v18.8h, v3.h[0]                     #! PC = 0x55555511b8 *)
+broadcast %mul 8 [%v3[0]]; mull %mdc %v17 %v18 %mul; cast %v17@int16[8] %v17;
+(* mls	v17.8h, v21.8h, v0.h[0]                     #! PC = 0x55555511bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v21 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd6_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd6_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd6_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    = %v17 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd6_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v20
+    = %v17
+    && true;
+
+(* sqrdmulh	v18.8h, v16.8h, v3.h[3]                #! PC = 0x55555511c0 *)
+broadcast %sqrdmulh 8 [%v3[3]]; smulj %LO %v16 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v16.8h, v16.8h, v3.h[2]                     #! PC = 0x55555511c4 *)
+broadcast %mul 8 [%v3[2]]; mull %mdc %v16 %v16 %mul; cast %v16@int16[8] %v16;
+(* mls	v16.8h, v18.8h, v0.h[0]                     #! PC = 0x55555511c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
+
+assert
+    [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %hhd7_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %hhd7_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %hhd7_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %hhd7_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16
+    && true;
+
+(* sqrdmulh	v18.8h, v7.8h, v3.h[5]                 #! PC = 0x55555511cc *)
+broadcast %sqrdmulh 8 [%v3[5]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v7.8h, v7.8h, v3.h[4]                       #! PC = 0x55555511d0 *)
+broadcast %mul 8 [%v3[4]]; mull %mdc %v7 %v7 %mul; cast %v7@int16[8] %v7;
+(* mls	v7.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511d4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd8_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd8_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd8_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd8_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7
+    && true;
+
+(* sqrdmulh	v18.8h, v6.8h, v3.h[7]                 #! PC = 0x55555511d8 *)
+broadcast %sqrdmulh 8 [%v3[7]]; smulj %LO %v6 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v3.8h, v6.8h, v3.h[6]                       #! PC = 0x55555511dc *)
+broadcast %mul 8 [%v3[6]]; mull %mdc %v3 %v6 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511e0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [1815, 1815, 1815, 1815, 1815, 1815, 1815, 1815] * %hhd9_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1815, 1815, 1815, 1815, 1815, 1815, 1815, 1815] * %hhd9_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1815, 1815, 1815, 1815, 1815, 1815, 1815, 1815] * %hhd9_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1815, 1815, 1815, 1815, 1815, 1815, 1815, 1815] * %hhd9_51
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3
+    && true;
+
+(* #b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! PC = 0x55555511e8 *)
+#b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! 0x55555511e8 = 0x55555511e8;
+(* neg	v23.8h, v23.8h                              #! PC = 0x55555511ec *)
+broadcast %neg 8 [0@sint16]; sub %v23 %neg %v23;
+(* #b	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>#! PC = 0x55555511f0 *)
+#b	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>#! 0x55555511f0 = 0x55555511f0;
+
+cut (* 101 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        %fd8_51 +
+        %fd9_51 +
+        %fd0_51 +
+        %fd1_51 +
+        %fd2_51 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd8_51 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd9_51 +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd0_51 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd1_51 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd2_51 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd8_51 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd9_51 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_51 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd1_51 +
+        %fd2_51 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd8_51 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd9_51 +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd0_51 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd1_51 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd2_51 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd8_51 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd9_51 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_51 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd1_51 +
+        %fd2_51 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd8_51 +
+        %fd9_51 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd0_51 +
+        %fd1_51 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd2_51 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd8_51 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd9_51 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_51 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd1_51 +
+        %fd2_51 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd8_51 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd9_51 +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd0_51 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd1_51 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd2_51 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd8_51 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd9_51 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_51 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd1_51 +
+        %fd2_51 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd8_51 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd9_51 +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd0_51 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd1_51 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd2_51 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    true # TODO
+    prove with [precondition]
+  &&
+    %v24 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v5  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v20 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v1  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v19 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v23 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v17 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v16 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v7  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v3  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+
+    %v24 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v5  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v20 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v1  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v19 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v23 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v17 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v16 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v7  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v3  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16];
+
+
+#### store
+
+(* str	q24, [x0]                                   #! EA = L0x5555571358; PC = 0x5555551014 *)
+mov [L0x5555571358,L0x555557135a,L0x555557135c,L0x555557135e,L0x5555571360,L0x5555571362,L0x5555571364,L0x5555571366] %v24;
+(* str	q5, [x0, #288]                              #! EA = L0x5555571478; PC = 0x5555551018 *)
+mov [L0x5555571478,L0x555557147a,L0x555557147c,L0x555557147e,L0x5555571480,L0x5555571482,L0x5555571484,L0x5555571486] %v5;
+(* str	q20, [x0, #576]                             #! EA = L0x5555571598; PC = 0x555555101c *)
+mov [L0x5555571598,L0x555557159a,L0x555557159c,L0x555557159e,L0x55555715a0,L0x55555715a2,L0x55555715a4,L0x55555715a6] %v20;
+(* str	q1, [x0, #864]                              #! EA = L0x55555716b8; PC = 0x5555551020 *)
+mov [L0x55555716b8,L0x55555716ba,L0x55555716bc,L0x55555716be,L0x55555716c0,L0x55555716c2,L0x55555716c4,L0x55555716c6] %v1;
+(* str	q19, [x0, #1152]                            #! EA = L0x55555717d8; PC = 0x5555551024 *)
+mov [L0x55555717d8,L0x55555717da,L0x55555717dc,L0x55555717de,L0x55555717e0,L0x55555717e2,L0x55555717e4,L0x55555717e6] %v19;
+(* str	q23, [x0, #1440]                            #! EA = L0x55555718f8; PC = 0x5555551028 *)
+mov [L0x55555718f8,L0x55555718fa,L0x55555718fc,L0x55555718fe,L0x5555571900,L0x5555571902,L0x5555571904,L0x5555571906] %v23;
+(* str	q17, [x0, #1728]                            #! EA = L0x5555571a18; PC = 0x555555102c *)
+mov [L0x5555571a18,L0x5555571a1a,L0x5555571a1c,L0x5555571a1e,L0x5555571a20,L0x5555571a22,L0x5555571a24,L0x5555571a26] %v17;
+(* str	q16, [x0, #2016]                            #! EA = L0x5555571b38; PC = 0x5555551030 *)
+mov [L0x5555571b38,L0x5555571b3a,L0x5555571b3c,L0x5555571b3e,L0x5555571b40,L0x5555571b42,L0x5555571b44,L0x5555571b46] %v16;
+(* str	q7, [x0, #2304]                             #! EA = L0x5555571c58; PC = 0x5555551034 *)
+mov [L0x5555571c58,L0x5555571c5a,L0x5555571c5c,L0x5555571c5e,L0x5555571c60,L0x5555571c62,L0x5555571c64,L0x5555571c66] %v7;
+(* str	q3, [x0, #2592]                             #! EA = L0x5555571d78; PC = 0x5555551038 *)
+mov [L0x5555571d78,L0x5555571d7a,L0x5555571d7c,L0x5555571d7e,L0x5555571d80,L0x5555571d82,L0x5555571d84,L0x5555571d86] %v3;
+(* #b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! PC = 0x5555551058 *)
+#b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! 0x5555551058 = 0x5555551058;
+
+cut (* 102 *)
+    [L0x5555571358, L0x555557135a, L0x555557135c, L0x555557135e, L0x5555571360, L0x5555571362, L0x5555571364, L0x5555571366] = %v24 /\
+    [L0x5555571478, L0x555557147a, L0x555557147c, L0x555557147e, L0x5555571480, L0x5555571482, L0x5555571484, L0x5555571486] = %v5 /\
+    [L0x5555571598, L0x555557159a, L0x555557159c, L0x555557159e, L0x55555715a0, L0x55555715a2, L0x55555715a4, L0x55555715a6] = %v20 /\
+    [L0x55555716b8, L0x55555716ba, L0x55555716bc, L0x55555716be, L0x55555716c0, L0x55555716c2, L0x55555716c4, L0x55555716c6] = %v1 /\
+    [L0x55555717d8, L0x55555717da, L0x55555717dc, L0x55555717de, L0x55555717e0, L0x55555717e2, L0x55555717e4, L0x55555717e6] = %v19 /\
+    [L0x55555718f8, L0x55555718fa, L0x55555718fc, L0x55555718fe, L0x5555571900, L0x5555571902, L0x5555571904, L0x5555571906] = %v23 /\
+    [L0x5555571a18, L0x5555571a1a, L0x5555571a1c, L0x5555571a1e, L0x5555571a20, L0x5555571a22, L0x5555571a24, L0x5555571a26] = %v17 /\
+    [L0x5555571b38, L0x5555571b3a, L0x5555571b3c, L0x5555571b3e, L0x5555571b40, L0x5555571b42, L0x5555571b44, L0x5555571b46] = %v16 /\
+    [L0x5555571c58, L0x5555571c5a, L0x5555571c5c, L0x5555571c5e, L0x5555571c60, L0x5555571c62, L0x5555571c64, L0x5555571c66] = %v7 /\
+    [L0x5555571d78, L0x5555571d7a, L0x5555571d7c, L0x5555571d7e, L0x5555571d80, L0x5555571d82, L0x5555571d84, L0x5555571d86] = %v3
+  &&
+    [L0x5555571358, L0x555557135a, L0x555557135c, L0x555557135e, L0x5555571360, L0x5555571362, L0x5555571364, L0x5555571366] = %v24 /\
+    [L0x5555571478, L0x555557147a, L0x555557147c, L0x555557147e, L0x5555571480, L0x5555571482, L0x5555571484, L0x5555571486] = %v5 /\
+    [L0x5555571598, L0x555557159a, L0x555557159c, L0x555557159e, L0x55555715a0, L0x55555715a2, L0x55555715a4, L0x55555715a6] = %v20 /\
+    [L0x55555716b8, L0x55555716ba, L0x55555716bc, L0x55555716be, L0x55555716c0, L0x55555716c2, L0x55555716c4, L0x55555716c6] = %v1 /\
+    [L0x55555717d8, L0x55555717da, L0x55555717dc, L0x55555717de, L0x55555717e0, L0x55555717e2, L0x55555717e4, L0x55555717e6] = %v19 /\
+    [L0x55555718f8, L0x55555718fa, L0x55555718fc, L0x55555718fe, L0x5555571900, L0x5555571902, L0x5555571904, L0x5555571906] = %v23 /\
+    [L0x5555571a18, L0x5555571a1a, L0x5555571a1c, L0x5555571a1e, L0x5555571a20, L0x5555571a22, L0x5555571a24, L0x5555571a26] = %v17 /\
+    [L0x5555571b38, L0x5555571b3a, L0x5555571b3c, L0x5555571b3e, L0x5555571b40, L0x5555571b42, L0x5555571b44, L0x5555571b46] = %v16 /\
+    [L0x5555571c58, L0x5555571c5a, L0x5555571c5c, L0x5555571c5e, L0x5555571c60, L0x5555571c62, L0x5555571c64, L0x5555571c66] = %v7 /\
+    [L0x5555571d78, L0x5555571d7a, L0x5555571d7c, L0x5555571d7e, L0x5555571d80, L0x5555571d82, L0x5555571d84, L0x5555571d86] = %v3;
+
+### j_iter epilogue
+
+(* #b.eq	0x555555131c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1712>  // b.none#! PC = 0x555555121c *)
+#b.eq	0x555555131c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1712>  // b.none#! 0x555555121c = 0x555555121c;
+
+
+## j_iter
+
+
+### j_iter prologue
+
+(* #b.le	0x5555550ce4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+120>#! PC = 0x5555551224 *)
+#b.le	0x5555550ce4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+120>#! 0x5555551224 = 0x5555551224;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x55555705b0; Value = 0x0000000000000000; PC = 0x5555551248 *)
+mov %v2 [L0x55555705b0,L0x55555705b2,L0x55555705b4,L0x55555705b6,L0x55555705b8,L0x55555705ba,L0x55555705bc,L0x55555705be];
+mov %v3 [L0x55555705c0,L0x55555705c2,L0x55555705c4,L0x55555705c6,L0x55555705c8,L0x55555705ca,L0x55555705cc,L0x55555705ce];
+(* st1	{v2.8h, v3.8h}, [x17]                       #! EA = L0x7ffffff050; PC = 0x555555124c *)
+mov [L0x7ffffff050,L0x7ffffff052,L0x7ffffff054,L0x7ffffff056,L0x7ffffff058,L0x7ffffff05a,L0x7ffffff05c,L0x7ffffff05e] %v2;
+mov [L0x7ffffff060,L0x7ffffff062,L0x7ffffff064,L0x7ffffff066,L0x7ffffff068,L0x7ffffff06a,L0x7ffffff06c,L0x7ffffff06e] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570490; Value = 0x0000000000000000; PC = 0x5555551270 *)
+mov %v2 [L0x5555570490,L0x5555570492,L0x5555570494,L0x5555570496,L0x5555570498,L0x555557049a,L0x555557049c,L0x555557049e];
+mov %v3 [L0x55555704a0,L0x55555704a2,L0x55555704a4,L0x55555704a6,L0x55555704a8,L0x55555704aa,L0x55555704ac,L0x55555704ae];
+(* st1	{v2.8h, v3.8h}, [x16]                       #! EA = L0x7ffffff070; PC = 0x5555551274 *)
+mov [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e] %v2;
+mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570370; Value = 0x0000000000000000; PC = 0x5555551298 *)
+mov %v2 [L0x5555570370,L0x5555570372,L0x5555570374,L0x5555570376,L0x5555570378,L0x555557037a,L0x555557037c,L0x555557037e];
+mov %v3 [L0x5555570380,L0x5555570382,L0x5555570384,L0x5555570386,L0x5555570388,L0x555557038a,L0x555557038c,L0x555557038e];
+(* st1	{v2.8h, v3.8h}, [x15]                       #! EA = L0x7ffffff090; PC = 0x555555129c *)
+mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v2;
+mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570250; Value = 0x0000000000000000; PC = 0x55555512c0 *)
+mov %v2 [L0x5555570250,L0x5555570252,L0x5555570254,L0x5555570256,L0x5555570258,L0x555557025a,L0x555557025c,L0x555557025e];
+mov %v3 [L0x5555570260,L0x5555570262,L0x5555570264,L0x5555570266,L0x5555570268,L0x555557026a,L0x555557026c,L0x555557026e];
+(* st1	{v2.8h, v3.8h}, [x14]                       #! EA = L0x7ffffff0b0; PC = 0x55555512c4 *)
+mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v2;
+mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570130; Value = 0x0000000000000000; PC = 0x55555512e8 *)
+mov %v2 [L0x5555570130,L0x5555570132,L0x5555570134,L0x5555570136,L0x5555570138,L0x555557013a,L0x555557013c,L0x555557013e];
+mov %v3 [L0x5555570140,L0x5555570142,L0x5555570144,L0x5555570146,L0x5555570148,L0x555557014a,L0x555557014c,L0x555557014e];
+(* st1	{v2.8h, v3.8h}, [x13]                       #! EA = L0x7ffffff0d0; PC = 0x55555512ec *)
+mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v2;
+mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v3;
+(* #b	0x555555105c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1008>#! PC = 0x5555551318 *)
+#b	0x555555105c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1008>#! 0x5555551318 = 0x5555551318;
+
+ghost %fd0_6@sint16[16], %fd1_6@sint16[16], %fd2_6@sint16[16], %fd8_6@sint16[16], %fd9_6@sint16[16] :
+    %fd0_6 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_6 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_6 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_6 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_6 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e]
+  &&
+    %fd0_6 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_6 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_6 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_6 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_6 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e];
+
+cut (* 103 *)
+    %fd0_6 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_6 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_6 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_6 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_6 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e] /\
+
+    %fd0_6 = [poly384, poly385, poly386, poly387, poly388, poly389, poly390, poly391, poly392, poly393, poly394, poly395, poly396, poly397, poly398, poly399] /\
+    %fd1_6 = [poly240, poly241, poly242, poly243, poly244, poly245, poly246, poly247, poly248, poly249, poly250, poly251, poly252, poly253, poly254, poly255] /\
+    %fd2_6 = [poly96,  poly97,  poly98,  poly99,  poly100, poly101, poly102, poly103, poly104, poly105, poly106, poly107, poly108, poly109, poly110, poly111] /\
+    %fd8_6 = [poly672, poly673, poly674, poly675, poly676, poly677, poly678, poly679, poly680, poly681, poly682, poly683, poly684, poly685, poly686, poly687] /\
+    %fd9_6 = [poly528, poly529, poly530, poly531, poly532, poly533, poly534, poly535, poly536, poly537, poly538, poly539, poly540, poly541, poly542, poly543]
+
+    prove with [cuts[0]]
+  &&
+    %fd0_6 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_6 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_6 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_6 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_6 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e] /\
+
+    %fd0_6 = [poly384, poly385, poly386, poly387, poly388, poly389, poly390, poly391, poly392, poly393, poly394, poly395, poly396, poly397, poly398, poly399] /\
+    %fd1_6 = [poly240, poly241, poly242, poly243, poly244, poly245, poly246, poly247, poly248, poly249, poly250, poly251, poly252, poly253, poly254, poly255] /\
+    %fd2_6 = [poly96,  poly97,  poly98,  poly99,  poly100, poly101, poly102, poly103, poly104, poly105, poly106, poly107, poly108, poly109, poly110, poly111] /\
+    %fd8_6 = [poly672, poly673, poly674, poly675, poly676, poly677, poly678, poly679, poly680, poly681, poly682, poly683, poly684, poly685, poly686, poly687] /\
+    %fd9_6 = [poly528, poly529, poly530, poly531, poly532, poly533, poly534, poly535, poly536, poly537, poly538, poly539, poly540, poly541, poly542, poly543]
+
+    prove with [cuts[0]];
+
+
+### k0_iter
+
+
+#### load
+
+(* ldr	q2, [x22]                                   #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555105c *)
+mov %v2 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
+(* ldr	q16, [x21]                                  #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x5555551060 *)
+mov %v16 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
+(* ldr	q3, [x20]                                   #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551064 *)
+mov %v3 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
+(* ldr	q6, [x19]                                   #! EA = L0x7ffffff050; Value = 0x0000000000000000; PC = 0x5555551068 *)
+mov %v6 [L0x7ffffff050,L0x7ffffff052,L0x7ffffff054,L0x7ffffff056,L0x7ffffff058,L0x7ffffff05a,L0x7ffffff05c,L0x7ffffff05e];
+(* ldr	q18, [x30]                                  #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555106c *)
+mov %v18 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
+
+ghost %fd0_60@sint16[8], %fd1_60@sint16[8], %fd2_60@sint16[8], %fd8_60@sint16[8], %fd9_60@sint16[8] :
+    %fd0_60 = %v2  /\
+    %fd1_60 = %v16 /\
+    %fd2_60 = %v3  /\
+    %fd8_60 = %v6  /\
+    %fd9_60 = %v18
+  &&
+    %fd0_60 = %v2  /\
+    %fd1_60 = %v16 /\
+    %fd2_60 = %v3  /\
+    %fd8_60 = %v6  /\
+    %fd9_60 = %v18;
+
+cut (* 104 *)
+    %fd0_60 = %v2  /\
+    %fd1_60 = %v16 /\
+    %fd2_60 = %v3  /\
+    %fd8_60 = %v6  /\
+    %fd9_60 = %v18 /\
+
+    %fd0_60 = %fd0_6[:8] /\
+    %fd1_60 = %fd1_6[:8] /\
+    %fd2_60 = %fd2_6[:8] /\
+    %fd8_60 = %fd8_6[:8] /\
+    %fd9_60 = %fd9_6[:8]
+
+    prove with [cuts[103]]
+  &&
+    %fd0_60 = %v2  /\
+    %fd1_60 = %v16 /\
+    %fd2_60 = %v3  /\
+    %fd8_60 = %v6  /\
+    %fd9_60 = %v18 /\
+
+    %fd0_60 = %fd0_6[:8] /\
+    %fd1_60 = %fd1_6[:8] /\
+    %fd2_60 = %fd2_6[:8] /\
+    %fd8_60 = %fd8_6[:8] /\
+    %fd9_60 = %fd9_6[:8]
+
+    prove with [cuts[103]];
+
+
+#### ntt10_4x_nof35467
+
+
+##### ntt5_4x_nof14
+
+ghost %fe0_60@sint16[8], %fe2_60@sint16[8], %fe3_60@sint16[8] :
+    %fe0_60 = %v2 /\
+    %fe2_60 = %v3 /\
+    %fe3_60 = %v6
+  &&
+    %fe0_60 = %v2 /\
+    %fe2_60 = %v3 /\
+    %fe3_60 = %v6;
+
+cut (* 105 *)
+    %fe0_60 = %v2 /\
+    %fe2_60 = %v3 /\
+    %fe3_60 = %v6 /\
+
+    %fe0_60 = %fd0_60 /\
+    %fe2_60 = %fd2_60 /\
+    %fe3_60 = %fd8_60
+
+    prove with [cuts[104]]
+  &&
+    %fe0_60 = %v2 /\
+    %fe2_60 = %v3 /\
+    %fe3_60 = %v6 /\
+
+    %fe0_60 = %fd0_60 /\
+    %fe2_60 = %fd2_60 /\
+    %fe3_60 = %fd8_60
+
+    prove with [cuts[104]];
+
+(* add	v5.8h, v3.8h, v6.8h                         #! PC = 0x5555551070 *)
+add %v5 %v3 %v6;
+(* add	v7.8h, v2.8h, v5.8h                         #! PC = 0x5555551074 *)
+add %v7 %v2 %v5;
+(* sqrdmulh	v1.8h, v7.8h, v0.h[1]                  #! PC = 0x5555551078 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v7.8h, v7.8h, #2                            #! PC = 0x555555107c *)
+shl %v7 %v7 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v7.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551080 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_60 + %fe2_60 + %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_60 + %fe2_60 + %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_60 + %fe2_60 + %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_60 + %fe2_60 + %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7
+    && true;
+
+(* shl	v2.8h, v2.8h, #2                            #! PC = 0x5555551084 *)
+shl %v2 %v2 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* sub	v2.8h, v2.8h, v5.8h                         #! PC = 0x5555551088 *)
+sub %v2 %v2 %v5;
+(* sshr	v1.8h, v2.8h, #12                          #! PC = 0x555555108c *)
+split %v1 %dc %v2 12;
+(* cmlt	v17.8h, v2.8h, #0                          #! PC = 0x5555551090 *)
+split %v17 %dc %v2 15;
+(* sub	v1.8h, v1.8h, v17.8h                        #! PC = 0x5555551094 *)
+sub %v1 %v1 %v17;
+(* mls	v2.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551098 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_60 - %fe2_60 - %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_60 - %fe2_60 - %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_60 - %fe2_60 - %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_60 - %fe2_60 - %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x555555109c *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x55555510a0 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x55555510a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_60 + %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_60 + %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_60 + %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_60 + %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* sub	v1.8h, v2.8h, v5.8h                         #! PC = 0x55555510a8 *)
+sub %v1 %v2 %v5;
+(* add	v2.8h, v2.8h, v5.8h                         #! PC = 0x55555510ac *)
+add %v2 %v2 %v5;
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x55555510b0 *)
+sub %v3 %v3 %v6;
+(* sqrdmulh	v6.8h, v3.8h, v4.h[6]                  #! PC = 0x55555510b4 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v5.8h, v3.8h, v4.h[2]                       #! PC = 0x55555510b8 *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v5 %v3 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_60 - %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_60 - %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_60 - %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_60 - %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5
+    && true;
+
+(* sqrdmulh	v6.8h, v3.8h, v4.h[7]                  #! PC = 0x55555510c0 *)
+broadcast %sqrdmulh 8 [%v4[7]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v3.8h, v3.8h, v4.h[3]                       #! PC = 0x55555510c4 *)
+broadcast %mul 8 [%v4[3]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_60 - %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_60 - %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_60 - %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_60 - %fe3_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3
+    && true;
+
+(* sub	v6.8h, v3.8h, v5.8h                         #! PC = 0x55555510cc *)
+sub %v6 %v3 %v5;
+(* sub	v19.8h, v1.8h, v3.8h                        #! PC = 0x55555510d0 *)
+sub %v19 %v1 %v3;
+(* sub	v22.8h, v2.8h, v6.8h                        #! PC = 0x55555510d4 *)
+sub %v22 %v2 %v6;
+(* add	v17.8h, v1.8h, v3.8h                        #! PC = 0x55555510d8 *)
+add %v17 %v1 %v3;
+(* add	v2.8h, v2.8h, v6.8h                         #! PC = 0x55555510dc *)
+add %v2 %v2 %v6;
+
+cut (* 106 *)
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_60 +
+        %fe2_60 +
+        %fe3_60
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_60 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe2_60 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe3_60
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v2  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_60 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe2_60 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe3_60
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v22 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_60 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe2_60 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe3_60
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_60 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe2_60 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe3_60
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %fe0_60 = %fd0_60 /\ %fe2_60 = %fd2_60 /\ %fe3_60 = %fd8_60
+
+  &&
+    %v7  <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v19 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v2  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v22 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v17 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v7  >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v19 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v2  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v22 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v17 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %fe0_60 = %fd0_60 /\ %fe2_60 = %fd2_60 /\ %fe3_60 = %fd8_60
+
+    prove with [precondition, cuts[0, 103, 104]];
+
+
+##### ntt5_4x_nof023
+
+ghost %ff1_60@sint16[8], %ff4_60@sint16[8] :
+    %ff1_60 = %v16 /\
+    %ff4_60 = %v18
+  &&
+    %ff1_60 = %v16 /\
+    %ff4_60 = %v18;
+
+cut (* 107 *)
+    %ff1_60 = %v16 /\
+    %ff4_60 = %v18 /\
+
+    %ff1_60 = %fd1_60 /\
+    %ff4_60 = %fd9_60
+
+    prove with [cuts[104]]
+  &&
+    %ff1_60 = %v16 /\
+    %ff4_60 = %v18 /\
+
+    %ff1_60 = %fd1_60 /\
+    %ff4_60 = %fd9_60
+
+    prove with [cuts[104]];
+
+(* add	v5.8h, v16.8h, v18.8h                       #! PC = 0x55555510e0 *)
+add %v5 %v16 %v18;
+(* sqrdmulh	v1.8h, v5.8h, v0.h[1]                  #! PC = 0x55555510e4 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v23.8h, v5.8h, #2                           #! PC = 0x55555510e8 *)
+shl %v23 %v5 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v23.8h, v1.8h, v0.h[0]                      #! PC = 0x55555510ec *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_60 + %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_60 + %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_60 + %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_60 + %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23
+    && true;
+
+(* neg	v3.8h, v5.8h                                #! PC = 0x55555510f0 *)
+broadcast %neg 8 [0@sint16]; sub %v3 %neg %v5;
+(* sshr	v1.8h, v3.8h, #12                          #! PC = 0x55555510f4 *)
+split %v1 %dc %v3 12;
+(* cmlt	v6.8h, v3.8h, #0                           #! PC = 0x55555510f8 *)
+split %v6 %dc %v3 15;
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x55555510fc *)
+sub %v1 %v1 %v6;
+(* mls	v3.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551100 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    -(%ff1_60 + %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    -(%ff1_60 + %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    -(%ff1_60 + %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    -(%ff1_60 + %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x5555551104 *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x5555551108 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x555555110c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_60 + %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_60 + %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_60 + %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_60 + %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* add	v21.8h, v3.8h, v5.8h                        #! PC = 0x5555551110 *)
+add %v21 %v3 %v5;
+(* sub	v3.8h, v3.8h, v5.8h                         #! PC = 0x5555551114 *)
+sub %v3 %v3 %v5;
+(* sub	v1.8h, v16.8h, v18.8h                       #! PC = 0x5555551118 *)
+sub %v1 %v16 %v18;
+(* sqrdmulh	v5.8h, v1.8h, v4.h[5]                  #! PC = 0x555555111c *)
+broadcast %sqrdmulh 8 [%v4[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v6.8h, v1.8h, v4.h[1]                       #! PC = 0x5555551120 *)
+broadcast %mul 8 [%v4[1]]; mull %mdc %v6 %v1 %mul; cast %v6@int16[8] %v6;
+(* mls	v6.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551124 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_60 - %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_60 - %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_60 - %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_60 - %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6
+    && true;
+
+(* sqrdmulh	v5.8h, v1.8h, v4.h[6]                  #! PC = 0x5555551128 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v4.h[2]                       #! PC = 0x555555112c *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551130 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_60 - %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_60 - %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_60 - %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_60 - %ff4_60)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1
+    && true;
+
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x5555551134 *)
+sub %v1 %v1 %v6;
+(* add	v16.8h, v21.8h, v6.8h                       #! PC = 0x5555551138 *)
+add %v16 %v21 %v6;
+(* add	v5.8h, v3.8h, v1.8h                         #! PC = 0x555555113c *)
+add %v5 %v3 %v1;
+(* sub	v21.8h, v21.8h, v6.8h                       #! PC = 0x5555551140 *)
+sub %v21 %v21 %v6;
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551144 *)
+sub %v3 %v3 %v1;
+
+cut (* 108 *)
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %ff1_60 +
+        %ff4_60
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %ff1_60 -
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %ff4_60
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %ff1_60 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff4_60
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff1_60 -
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %ff4_60
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v21 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %ff1_60 -
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %ff4_60
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %ff1_60 = %fd1_60 /\ %ff4_60 = %fd9_60
+  &&
+    %v23 <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v16 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v3  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v5  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v21 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v23 >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v16 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v3  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v5  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v21 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %ff1_60 = %fd1_60 /\ %ff4_60 = %fd9_60
+
+    prove with [precondition, cuts[0, 103, 104]];
+
+
+##### addsub
+
+(* add	v24.8h, v23.8h, v7.8h                       #! PC = 0x5555551148 *)
+add %v24 %v23 %v7;
+(* sub	v23.8h, v7.8h, v23.8h                       #! PC = 0x555555114c *)
+sub %v23 %v7 %v23;
+(* add	v20.8h, v16.8h, v19.8h                      #! PC = 0x5555551150 *)
+add %v20 %v16 %v19;
+(* sub	v16.8h, v19.8h, v16.8h                      #! PC = 0x5555551154 *)
+sub %v16 %v19 %v16;
+(* add	v19.8h, v3.8h, v2.8h                        #! PC = 0x5555551158 *)
+add %v19 %v3 %v2;
+(* sub	v6.8h, v2.8h, v3.8h                         #! PC = 0x555555115c *)
+sub %v6 %v2 %v3;
+(* add	v18.8h, v5.8h, v22.8h                       #! PC = 0x5555551160 *)
+add %v18 %v5 %v22;
+(* sub	v5.8h, v22.8h, v5.8h                        #! PC = 0x5555551164 *)
+sub %v5 %v22 %v5;
+(* add	v7.8h, v21.8h, v17.8h                       #! PC = 0x5555551168 *)
+add %v7 %v21 %v17;
+(* sub	v1.8h, v17.8h, v21.8h                       #! PC = 0x555555116c *)
+sub %v1 %v17 %v21;
+
+
+cut (* 109 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_60 +
+        %fd1_60 +
+        %fd2_60 +
+        %fd8_60 +
+        %fd9_60
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_60 -
+        %fd1_60 +
+        %fd2_60 +
+        %fd8_60 -
+        %fd9_60
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_60 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd1_60 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_60 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_60 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd9_60
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_60 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd1_60 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_60 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_60 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd9_60
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_60 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd1_60 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_60 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_60 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd9_60
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v6  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_60 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd1_60 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_60 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_60 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd9_60
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v18 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_60 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd1_60 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_60 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_60 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd9_60
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_60 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd1_60 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_60 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_60 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd9_60
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_60 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd1_60 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_60 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_60 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd9_60
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_60 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd1_60 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_60 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_60 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd9_60
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
+
+    prove with [cuts[106, 108]] # TODO
+  &&
+    %v24 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v23 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v20 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v16 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v19 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v6  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v18 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v5  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v7  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v1  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+
+    %v24 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v23 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v20 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v16 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v19 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v6  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v18 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v5  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v7  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v1  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16]
+
+    prove with [cuts[106, 108]]; # TODO
+
+
+#### twist_his
+
+ghost
+    %hhd0_60@sint16[8], %hhd1_60@sint16[8], %hhd2_60@sint16[8], %hhd3_60@sint16[8], %hhd4_60@sint16[8],
+    %hhd5_60@sint16[8], %hhd6_60@sint16[8], %hhd7_60@sint16[8], %hhd8_60@sint16[8], %hhd9_60@sint16[8] :
+
+    %hhd0_60 = %v24 /\ %hhd1_60 = %v5  /\ %hhd2_60 = %v20 /\ %hhd3_60 = %v1  /\ %hhd4_60 = %v19 /\
+    %hhd5_60 = %v23 /\ %hhd6_60 = %v18 /\ %hhd7_60 = %v16 /\ %hhd8_60 = %v7  /\ %hhd9_60 = %v6
+  &&
+    %hhd0_60 = %v24 /\ %hhd1_60 = %v5  /\ %hhd2_60 = %v20 /\ %hhd3_60 = %v1  /\ %hhd4_60 = %v19 /\
+    %hhd5_60 = %v23 /\ %hhd6_60 = %v18 /\ %hhd7_60 = %v16 /\ %hhd8_60 = %v7  /\ %hhd9_60 = %v6;
+
+(* ld1	{v2.8h, v3.8h}, [x24]                       #! EA = L0x5555552ab0; Value = 0xc099f71ec517f7bf; PC = 0x5555551170 *)
+mov %v2 [L0x5555552ab0,L0x5555552ab2,L0x5555552ab4,L0x5555552ab6,L0x5555552ab8,L0x5555552aba,L0x5555552abc,L0x5555552abe];
+mov %v3 [L0x5555552ac0,L0x5555552ac2,L0x5555552ac4,L0x5555552ac6,L0x5555552ac8,L0x5555552aca,L0x5555552acc,L0x5555552ace];
+(* sqrdmulh	v17.8h, v24.8h, v0.h[2]                #! PC = 0x5555551174 *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v24 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v24.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551178 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v24 %v24 %mls;
+
+assert
+    %hhd0_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd0_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd0_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd0_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24
+    && true;
+
+(* sqrdmulh	v17.8h, v23.8h, v0.h[2]                #! PC = 0x555555117c *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v23 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v23.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551180 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    %hhd5_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd5_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd5_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd5_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23
+    && true;
+
+(* sqrdmulh	v17.8h, v5.8h, v2.h[1]                 #! PC = 0x5555551184 *)
+broadcast %sqrdmulh 8 [%v2[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v2.h[0]                       #! PC = 0x5555551188 *)
+broadcast %mul 8 [%v2[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v17.8h, v0.h[0]                      #! PC = 0x555555118c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd1_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd1_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd1_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd1_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5
+    && true;
+
+(* sqrdmulh	v17.8h, v20.8h, v2.h[3]                #! PC = 0x5555551190 *)
+broadcast %sqrdmulh 8 [%v2[3]]; smulj %LO %v20 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v20.8h, v20.8h, v2.h[2]                     #! PC = 0x5555551194 *)
+broadcast %mul 8 [%v2[2]]; mull %mdc %v20 %v20 %mul; cast %v20@int16[8] %v20;
+(* mls	v20.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551198 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v20 %v20 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd2_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd2_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd2_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd2_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20
+    && true;
+
+(* sqrdmulh	v17.8h, v1.8h, v2.h[5]                 #! PC = 0x555555119c *)
+broadcast %sqrdmulh 8 [%v2[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v2.h[4]                       #! PC = 0x55555511a0 *)
+broadcast %mul 8 [%v2[4]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v17.8h, v0.h[0]                      #! PC = 0x55555511a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd3_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd3_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd3_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd3_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1
+    && true;
+
+(* sqrdmulh	v17.8h, v19.8h, v2.h[7]                #! PC = 0x55555511a8 *)
+broadcast %sqrdmulh 8 [%v2[7]]; smulj %LO %v19 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v19.8h, v19.8h, v2.h[6]                     #! PC = 0x55555511ac *)
+broadcast %mul 8 [%v2[6]]; mull %mdc %v19 %v19 %mul; cast %v19@int16[8] %v19;
+(* mls	v19.8h, v17.8h, v0.h[0]                     #! PC = 0x55555511b0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v19 %v19 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd4_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd4_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd4_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd4_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19
+    && true;
+
+(* sqrdmulh	v21.8h, v18.8h, v3.h[1]                #! PC = 0x55555511b4 *)
+broadcast %sqrdmulh 8 [%v3[1]]; smulj %LO %v18 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v21 %LO11 %LO01;
+(* mul	v17.8h, v18.8h, v3.h[0]                     #! PC = 0x55555511b8 *)
+broadcast %mul 8 [%v3[0]]; mull %mdc %v17 %v18 %mul; cast %v17@int16[8] %v17;
+(* mls	v17.8h, v21.8h, v0.h[0]                     #! PC = 0x55555511bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v21 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd6_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd6_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd6_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    = %v17 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd6_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v20
+    = %v17
+    && true;
+
+(* sqrdmulh	v18.8h, v16.8h, v3.h[3]                #! PC = 0x55555511c0 *)
+broadcast %sqrdmulh 8 [%v3[3]]; smulj %LO %v16 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v16.8h, v16.8h, v3.h[2]                     #! PC = 0x55555511c4 *)
+broadcast %mul 8 [%v3[2]]; mull %mdc %v16 %v16 %mul; cast %v16@int16[8] %v16;
+(* mls	v16.8h, v18.8h, v0.h[0]                     #! PC = 0x55555511c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd7_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd7_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd7_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd7_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16
+    && true;
+
+(* sqrdmulh	v18.8h, v7.8h, v3.h[5]                 #! PC = 0x55555511cc *)
+broadcast %sqrdmulh 8 [%v3[5]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v7.8h, v7.8h, v3.h[4]                       #! PC = 0x55555511d0 *)
+broadcast %mul 8 [%v3[4]]; mull %mdc %v7 %v7 %mul; cast %v7@int16[8] %v7;
+(* mls	v7.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511d4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd8_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd8_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd8_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd8_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7
+    && true;
+
+(* sqrdmulh	v18.8h, v6.8h, v3.h[7]                 #! PC = 0x55555511d8 *)
+broadcast %sqrdmulh 8 [%v3[7]]; smulj %LO %v6 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v3.8h, v6.8h, v3.h[6]                       #! PC = 0x55555511dc *)
+broadcast %mul 8 [%v3[6]]; mull %mdc %v3 %v6 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511e0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd9_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd9_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd9_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd9_60
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3
+    && true;
+
+(* #b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! PC = 0x55555511e8 *)
+#b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! 0x55555511e8 = 0x55555511e8;
+
+cut (* 110 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        %fd8_60 +
+        %fd9_60 +
+        %fd0_60 +
+        %fd1_60 +
+        %fd2_60 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd8_60 +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd9_60 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_60 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_60 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_60 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd8_60 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd9_60 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_60 +
+        %fd1_60 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_60 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd8_60 +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd9_60 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_60 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_60 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_60 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd8_60 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd9_60 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_60 +
+        %fd1_60 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_60 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        %fd8_60 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_60 +
+        %fd0_60 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_60 +
+        %fd2_60 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd8_60 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd9_60 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_60 +
+        %fd1_60 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_60 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd8_60 +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd9_60 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_60 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_60 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_60 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd8_60 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd9_60 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_60 +
+        %fd1_60 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_60 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd8_60 +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd9_60 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_60 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_60 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_60 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    true # TODO
+    prove with [precondition]
+  &&
+    %v24 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v5  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v20 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v1  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v19 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v23 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v17 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v16 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v7  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v3  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+
+    %v24 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v5  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v20 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v1  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v19 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v23 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v17 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v16 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v7  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v3  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16];
+
+
+#### store
+
+(* str	q24, [x0]                                   #! EA = L0x55555712d8; PC = 0x5555551014 *)
+mov [L0x55555712d8,L0x55555712da,L0x55555712dc,L0x55555712de,L0x55555712e0,L0x55555712e2,L0x55555712e4,L0x55555712e6] %v24;
+(* str	q5, [x0, #288]                              #! EA = L0x55555713f8; PC = 0x5555551018 *)
+mov [L0x55555713f8,L0x55555713fa,L0x55555713fc,L0x55555713fe,L0x5555571400,L0x5555571402,L0x5555571404,L0x5555571406] %v5;
+(* str	q20, [x0, #576]                             #! EA = L0x5555571518; PC = 0x555555101c *)
+mov [L0x5555571518,L0x555557151a,L0x555557151c,L0x555557151e,L0x5555571520,L0x5555571522,L0x5555571524,L0x5555571526] %v20;
+(* str	q1, [x0, #864]                              #! EA = L0x5555571638; PC = 0x5555551020 *)
+mov [L0x5555571638,L0x555557163a,L0x555557163c,L0x555557163e,L0x5555571640,L0x5555571642,L0x5555571644,L0x5555571646] %v1;
+(* str	q19, [x0, #1152]                            #! EA = L0x5555571758; PC = 0x5555551024 *)
+mov [L0x5555571758,L0x555557175a,L0x555557175c,L0x555557175e,L0x5555571760,L0x5555571762,L0x5555571764,L0x5555571766] %v19;
+(* str	q23, [x0, #1440]                            #! EA = L0x5555571878; PC = 0x5555551028 *)
+mov [L0x5555571878,L0x555557187a,L0x555557187c,L0x555557187e,L0x5555571880,L0x5555571882,L0x5555571884,L0x5555571886] %v23;
+(* str	q17, [x0, #1728]                            #! EA = L0x5555571998; PC = 0x555555102c *)
+mov [L0x5555571998,L0x555557199a,L0x555557199c,L0x555557199e,L0x55555719a0,L0x55555719a2,L0x55555719a4,L0x55555719a6] %v17;
+(* str	q16, [x0, #2016]                            #! EA = L0x5555571ab8; PC = 0x5555551030 *)
+mov [L0x5555571ab8,L0x5555571aba,L0x5555571abc,L0x5555571abe,L0x5555571ac0,L0x5555571ac2,L0x5555571ac4,L0x5555571ac6] %v16;
+(* str	q7, [x0, #2304]                             #! EA = L0x5555571bd8; PC = 0x5555551034 *)
+mov [L0x5555571bd8,L0x5555571bda,L0x5555571bdc,L0x5555571bde,L0x5555571be0,L0x5555571be2,L0x5555571be4,L0x5555571be6] %v7;
+(* str	q3, [x0, #2592]                             #! EA = L0x5555571cf8; PC = 0x5555551038 *)
+mov [L0x5555571cf8,L0x5555571cfa,L0x5555571cfc,L0x5555571cfe,L0x5555571d00,L0x5555571d02,L0x5555571d04,L0x5555571d06] %v3;
+(* #b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! PC = 0x5555551058 *)
+#b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! 0x5555551058 = 0x5555551058;
+
+cut (* 111 *)
+    [L0x55555712d8, L0x55555712da, L0x55555712dc, L0x55555712de, L0x55555712e0, L0x55555712e2, L0x55555712e4, L0x55555712e6] = %v24 /\
+    [L0x55555713f8, L0x55555713fa, L0x55555713fc, L0x55555713fe, L0x5555571400, L0x5555571402, L0x5555571404, L0x5555571406] = %v5 /\
+    [L0x5555571518, L0x555557151a, L0x555557151c, L0x555557151e, L0x5555571520, L0x5555571522, L0x5555571524, L0x5555571526] = %v20 /\
+    [L0x5555571638, L0x555557163a, L0x555557163c, L0x555557163e, L0x5555571640, L0x5555571642, L0x5555571644, L0x5555571646] = %v1 /\
+    [L0x5555571758, L0x555557175a, L0x555557175c, L0x555557175e, L0x5555571760, L0x5555571762, L0x5555571764, L0x5555571766] = %v19 /\
+    [L0x5555571878, L0x555557187a, L0x555557187c, L0x555557187e, L0x5555571880, L0x5555571882, L0x5555571884, L0x5555571886] = %v23 /\
+    [L0x5555571998, L0x555557199a, L0x555557199c, L0x555557199e, L0x55555719a0, L0x55555719a2, L0x55555719a4, L0x55555719a6] = %v17 /\
+    [L0x5555571ab8, L0x5555571aba, L0x5555571abc, L0x5555571abe, L0x5555571ac0, L0x5555571ac2, L0x5555571ac4, L0x5555571ac6] = %v16 /\
+    [L0x5555571bd8, L0x5555571bda, L0x5555571bdc, L0x5555571bde, L0x5555571be0, L0x5555571be2, L0x5555571be4, L0x5555571be6] = %v7 /\
+    [L0x5555571cf8, L0x5555571cfa, L0x5555571cfc, L0x5555571cfe, L0x5555571d00, L0x5555571d02, L0x5555571d04, L0x5555571d06] = %v3
+  &&
+    [L0x55555712d8, L0x55555712da, L0x55555712dc, L0x55555712de, L0x55555712e0, L0x55555712e2, L0x55555712e4, L0x55555712e6] = %v24 /\
+    [L0x55555713f8, L0x55555713fa, L0x55555713fc, L0x55555713fe, L0x5555571400, L0x5555571402, L0x5555571404, L0x5555571406] = %v5 /\
+    [L0x5555571518, L0x555557151a, L0x555557151c, L0x555557151e, L0x5555571520, L0x5555571522, L0x5555571524, L0x5555571526] = %v20 /\
+    [L0x5555571638, L0x555557163a, L0x555557163c, L0x555557163e, L0x5555571640, L0x5555571642, L0x5555571644, L0x5555571646] = %v1 /\
+    [L0x5555571758, L0x555557175a, L0x555557175c, L0x555557175e, L0x5555571760, L0x5555571762, L0x5555571764, L0x5555571766] = %v19 /\
+    [L0x5555571878, L0x555557187a, L0x555557187c, L0x555557187e, L0x5555571880, L0x5555571882, L0x5555571884, L0x5555571886] = %v23 /\
+    [L0x5555571998, L0x555557199a, L0x555557199c, L0x555557199e, L0x55555719a0, L0x55555719a2, L0x55555719a4, L0x55555719a6] = %v17 /\
+    [L0x5555571ab8, L0x5555571aba, L0x5555571abc, L0x5555571abe, L0x5555571ac0, L0x5555571ac2, L0x5555571ac4, L0x5555571ac6] = %v16 /\
+    [L0x5555571bd8, L0x5555571bda, L0x5555571bdc, L0x5555571bde, L0x5555571be0, L0x5555571be2, L0x5555571be4, L0x5555571be6] = %v7 /\
+    [L0x5555571cf8, L0x5555571cfa, L0x5555571cfc, L0x5555571cfe, L0x5555571d00, L0x5555571d02, L0x5555571d04, L0x5555571d06] = %v3;
+
+### k0_iter
+
+
+#### load
+
+(* ldr	q2, [x22]                                   #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x555555105c *)
+mov %v2 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
+(* ldr	q16, [x21]                                  #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551060 *)
+mov %v16 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
+(* ldr	q3, [x20]                                   #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551064 *)
+mov %v3 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
+(* ldr	q6, [x19]                                   #! EA = L0x7ffffff060; Value = 0x0000000000000000; PC = 0x5555551068 *)
+mov %v6 [L0x7ffffff060,L0x7ffffff062,L0x7ffffff064,L0x7ffffff066,L0x7ffffff068,L0x7ffffff06a,L0x7ffffff06c,L0x7ffffff06e];
+(* ldr	q18, [x30]                                  #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x555555106c *)
+mov %v18 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
+
+ghost %fd0_61@sint16[8], %fd1_61@sint16[8], %fd2_61@sint16[8], %fd8_61@sint16[8], %fd9_61@sint16[8] :
+    %fd0_61 = %v2  /\
+    %fd1_61 = %v16 /\
+    %fd2_61 = %v3  /\
+    %fd8_61 = %v6  /\
+    %fd9_61 = %v18
+  &&
+    %fd0_61 = %v2  /\
+    %fd1_61 = %v16 /\
+    %fd2_61 = %v3  /\
+    %fd8_61 = %v6  /\
+    %fd9_61 = %v18;
+
+cut (* 112 *)
+    %fd0_61 = %v2  /\
+    %fd1_61 = %v16 /\
+    %fd2_61 = %v3  /\
+    %fd8_61 = %v6  /\
+    %fd9_61 = %v18 /\
+
+    %fd0_61 = %fd0_6[8:] /\
+    %fd1_61 = %fd1_6[8:] /\
+    %fd2_61 = %fd2_6[8:] /\
+    %fd8_61 = %fd8_6[8:] /\
+    %fd9_61 = %fd9_6[8:]
+
+    prove with [cuts[103]]
+  &&
+    %fd0_61 = %v2  /\
+    %fd1_61 = %v16 /\
+    %fd2_61 = %v3  /\
+    %fd8_61 = %v6  /\
+    %fd9_61 = %v18 /\
+
+    %fd0_61 = %fd0_6[8:] /\
+    %fd1_61 = %fd1_6[8:] /\
+    %fd2_61 = %fd2_6[8:] /\
+    %fd8_61 = %fd8_6[8:] /\
+    %fd9_61 = %fd9_6[8:]
+
+    prove with [cuts[103]];
+
+
+#### ntt10_4x_nof35467
+
+
+##### ntt5_4x_nof14
+
+ghost %fe0_61@sint16[8], %fe2_61@sint16[8], %fe3_61@sint16[8] :
+    %fe0_61 = %v2 /\
+    %fe2_61 = %v3 /\
+    %fe3_61 = %v6
+  &&
+    %fe0_61 = %v2 /\
+    %fe2_61 = %v3 /\
+    %fe3_61 = %v6;
+
+cut (* 113 *)
+    %fe0_61 = %v2 /\
+    %fe2_61 = %v3 /\
+    %fe3_61 = %v6 /\
+
+    %fe0_61 = %fd0_61 /\
+    %fe2_61 = %fd2_61 /\
+    %fe3_61 = %fd8_61
+
+    prove with [cuts[112]]
+  &&
+    %fe0_61 = %v2 /\
+    %fe2_61 = %v3 /\
+    %fe3_61 = %v6 /\
+
+    %fe0_61 = %fd0_61 /\
+    %fe2_61 = %fd2_61 /\
+    %fe3_61 = %fd8_61
+
+    prove with [cuts[112]];
+
+(* add	v5.8h, v3.8h, v6.8h                         #! PC = 0x5555551070 *)
+add %v5 %v3 %v6;
+(* add	v7.8h, v2.8h, v5.8h                         #! PC = 0x5555551074 *)
+add %v7 %v2 %v5;
+(* sqrdmulh	v1.8h, v7.8h, v0.h[1]                  #! PC = 0x5555551078 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v7.8h, v7.8h, #2                            #! PC = 0x555555107c *)
+shl %v7 %v7 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v7.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551080 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_61 + %fe2_61 + %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_61 + %fe2_61 + %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_61 + %fe2_61 + %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_61 + %fe2_61 + %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7
+    && true;
+
+(* shl	v2.8h, v2.8h, #2                            #! PC = 0x5555551084 *)
+shl %v2 %v2 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* sub	v2.8h, v2.8h, v5.8h                         #! PC = 0x5555551088 *)
+sub %v2 %v2 %v5;
+(* sshr	v1.8h, v2.8h, #12                          #! PC = 0x555555108c *)
+split %v1 %dc %v2 12;
+(* cmlt	v17.8h, v2.8h, #0                          #! PC = 0x5555551090 *)
+split %v17 %dc %v2 15;
+(* sub	v1.8h, v1.8h, v17.8h                        #! PC = 0x5555551094 *)
+sub %v1 %v1 %v17;
+(* mls	v2.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551098 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_61 - %fe2_61 - %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_61 - %fe2_61 - %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_61 - %fe2_61 - %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_61 - %fe2_61 - %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x555555109c *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x55555510a0 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x55555510a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_61 + %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_61 + %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_61 + %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_61 + %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* sub	v1.8h, v2.8h, v5.8h                         #! PC = 0x55555510a8 *)
+sub %v1 %v2 %v5;
+(* add	v2.8h, v2.8h, v5.8h                         #! PC = 0x55555510ac *)
+add %v2 %v2 %v5;
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x55555510b0 *)
+sub %v3 %v3 %v6;
+(* sqrdmulh	v6.8h, v3.8h, v4.h[6]                  #! PC = 0x55555510b4 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v5.8h, v3.8h, v4.h[2]                       #! PC = 0x55555510b8 *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v5 %v3 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_61 - %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_61 - %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_61 - %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_61 - %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5
+    && true;
+
+(* sqrdmulh	v6.8h, v3.8h, v4.h[7]                  #! PC = 0x55555510c0 *)
+broadcast %sqrdmulh 8 [%v4[7]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v3.8h, v3.8h, v4.h[3]                       #! PC = 0x55555510c4 *)
+broadcast %mul 8 [%v4[3]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_61 - %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_61 - %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_61 - %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_61 - %fe3_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3
+    && true;
+
+(* sub	v6.8h, v3.8h, v5.8h                         #! PC = 0x55555510cc *)
+sub %v6 %v3 %v5;
+(* sub	v19.8h, v1.8h, v3.8h                        #! PC = 0x55555510d0 *)
+sub %v19 %v1 %v3;
+(* sub	v22.8h, v2.8h, v6.8h                        #! PC = 0x55555510d4 *)
+sub %v22 %v2 %v6;
+(* add	v17.8h, v1.8h, v3.8h                        #! PC = 0x55555510d8 *)
+add %v17 %v1 %v3;
+(* add	v2.8h, v2.8h, v6.8h                         #! PC = 0x55555510dc *)
+add %v2 %v2 %v6;
+
+cut (* 114 *)
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_61 +
+        %fe2_61 +
+        %fe3_61
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_61 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe2_61 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe3_61
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v2  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_61 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe2_61 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe3_61
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v22 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_61 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe2_61 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe3_61
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_61 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe2_61 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe3_61
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %fe0_61 = %fd0_61 /\ %fe2_61 = %fd2_61 /\ %fe3_61 = %fd8_61
+
+  &&
+    %v7  <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v19 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v2  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v22 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v17 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v7  >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v19 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v2  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v22 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v17 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %fe0_61 = %fd0_61 /\ %fe2_61 = %fd2_61 /\ %fe3_61 = %fd8_61
+
+    prove with [precondition, cuts[0, 103, 112]];
+
+
+##### ntt5_4x_nof023
+
+ghost %ff1_61@sint16[8], %ff4_61@sint16[8] :
+    %ff1_61 = %v16 /\
+    %ff4_61 = %v18
+  &&
+    %ff1_61 = %v16 /\
+    %ff4_61 = %v18;
+
+cut (* 115 *)
+    %ff1_61 = %v16 /\
+    %ff4_61 = %v18 /\
+
+    %ff1_61 = %fd1_61 /\
+    %ff4_61 = %fd9_61
+
+    prove with [cuts[112]]
+  &&
+    %ff1_61 = %v16 /\
+    %ff4_61 = %v18 /\
+
+    %ff1_61 = %fd1_61 /\
+    %ff4_61 = %fd9_61
+
+    prove with [cuts[112]];
+
+(* add	v5.8h, v16.8h, v18.8h                       #! PC = 0x55555510e0 *)
+add %v5 %v16 %v18;
+(* sqrdmulh	v1.8h, v5.8h, v0.h[1]                  #! PC = 0x55555510e4 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v23.8h, v5.8h, #2                           #! PC = 0x55555510e8 *)
+shl %v23 %v5 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v23.8h, v1.8h, v0.h[0]                      #! PC = 0x55555510ec *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_61 + %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_61 + %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_61 + %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_61 + %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23
+    && true;
+
+(* neg	v3.8h, v5.8h                                #! PC = 0x55555510f0 *)
+broadcast %neg 8 [0@sint16]; sub %v3 %neg %v5;
+(* sshr	v1.8h, v3.8h, #12                          #! PC = 0x55555510f4 *)
+split %v1 %dc %v3 12;
+(* cmlt	v6.8h, v3.8h, #0                           #! PC = 0x55555510f8 *)
+split %v6 %dc %v3 15;
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x55555510fc *)
+sub %v1 %v1 %v6;
+(* mls	v3.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551100 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    -(%ff1_61 + %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    -(%ff1_61 + %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    -(%ff1_61 + %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    -(%ff1_61 + %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x5555551104 *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x5555551108 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x555555110c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_61 + %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_61 + %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_61 + %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_61 + %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* add	v21.8h, v3.8h, v5.8h                        #! PC = 0x5555551110 *)
+add %v21 %v3 %v5;
+(* sub	v3.8h, v3.8h, v5.8h                         #! PC = 0x5555551114 *)
+sub %v3 %v3 %v5;
+(* sub	v1.8h, v16.8h, v18.8h                       #! PC = 0x5555551118 *)
+sub %v1 %v16 %v18;
+(* sqrdmulh	v5.8h, v1.8h, v4.h[5]                  #! PC = 0x555555111c *)
+broadcast %sqrdmulh 8 [%v4[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v6.8h, v1.8h, v4.h[1]                       #! PC = 0x5555551120 *)
+broadcast %mul 8 [%v4[1]]; mull %mdc %v6 %v1 %mul; cast %v6@int16[8] %v6;
+(* mls	v6.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551124 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_61 - %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_61 - %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_61 - %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_61 - %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6
+    && true;
+
+(* sqrdmulh	v5.8h, v1.8h, v4.h[6]                  #! PC = 0x5555551128 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v4.h[2]                       #! PC = 0x555555112c *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551130 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_61 - %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_61 - %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_61 - %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_61 - %ff4_61)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1
+    && true;
+
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x5555551134 *)
+sub %v1 %v1 %v6;
+(* add	v16.8h, v21.8h, v6.8h                       #! PC = 0x5555551138 *)
+add %v16 %v21 %v6;
+(* add	v5.8h, v3.8h, v1.8h                         #! PC = 0x555555113c *)
+add %v5 %v3 %v1;
+(* sub	v21.8h, v21.8h, v6.8h                       #! PC = 0x5555551140 *)
+sub %v21 %v21 %v6;
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551144 *)
+sub %v3 %v3 %v1;
+
+cut (* 116 *)
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %ff1_61 +
+        %ff4_61
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %ff1_61 -
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %ff4_61
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %ff1_61 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff4_61
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff1_61 -
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %ff4_61
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v21 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %ff1_61 -
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %ff4_61
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %ff1_61 = %fd1_61 /\ %ff4_61 = %fd9_61
+  &&
+    %v23 <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v16 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v3  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v5  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v21 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v23 >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v16 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v3  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v5  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v21 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %ff1_61 = %fd1_61 /\ %ff4_61 = %fd9_61
+
+    prove with [precondition, cuts[0, 103, 112]];
+
+
+##### addsub
+
+(* add	v24.8h, v23.8h, v7.8h                       #! PC = 0x5555551148 *)
+add %v24 %v23 %v7;
+(* sub	v23.8h, v7.8h, v23.8h                       #! PC = 0x555555114c *)
+sub %v23 %v7 %v23;
+(* add	v20.8h, v16.8h, v19.8h                      #! PC = 0x5555551150 *)
+add %v20 %v16 %v19;
+(* sub	v16.8h, v19.8h, v16.8h                      #! PC = 0x5555551154 *)
+sub %v16 %v19 %v16;
+(* add	v19.8h, v3.8h, v2.8h                        #! PC = 0x5555551158 *)
+add %v19 %v3 %v2;
+(* sub	v6.8h, v2.8h, v3.8h                         #! PC = 0x555555115c *)
+sub %v6 %v2 %v3;
+(* add	v18.8h, v5.8h, v22.8h                       #! PC = 0x5555551160 *)
+add %v18 %v5 %v22;
+(* sub	v5.8h, v22.8h, v5.8h                        #! PC = 0x5555551164 *)
+sub %v5 %v22 %v5;
+(* add	v7.8h, v21.8h, v17.8h                       #! PC = 0x5555551168 *)
+add %v7 %v21 %v17;
+(* sub	v1.8h, v17.8h, v21.8h                       #! PC = 0x555555116c *)
+sub %v1 %v17 %v21;
+
+
+cut (* 117 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_61 +
+        %fd1_61 +
+        %fd2_61 +
+        %fd8_61 +
+        %fd9_61
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_61 -
+        %fd1_61 +
+        %fd2_61 +
+        %fd8_61 -
+        %fd9_61
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_61 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd1_61 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_61 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_61 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd9_61
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_61 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd1_61 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_61 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_61 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd9_61
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_61 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd1_61 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_61 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_61 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd9_61
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v6  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_61 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd1_61 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_61 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_61 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd9_61
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v18 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_61 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd1_61 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_61 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_61 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd9_61
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_61 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd1_61 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_61 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_61 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd9_61
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_61 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd1_61 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_61 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_61 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd9_61
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_61 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd1_61 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_61 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_61 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd9_61
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
+
+    prove with [cuts[114, 116]] # TODO
+  &&
+    %v24 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v23 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v20 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v16 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v19 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v6  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v18 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v5  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v7  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v1  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+
+    %v24 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v23 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v20 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v16 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v19 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v6  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v18 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v5  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v7  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v1  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16]
+
+    prove with [cuts[114, 116]]; # TODO
+
+
+#### twist_his
+
+ghost
+    %hhd0_61@sint16[8], %hhd1_61@sint16[8], %hhd2_61@sint16[8], %hhd3_61@sint16[8], %hhd4_61@sint16[8],
+    %hhd5_61@sint16[8], %hhd6_61@sint16[8], %hhd7_61@sint16[8], %hhd8_61@sint16[8], %hhd9_61@sint16[8] :
+
+    %hhd0_61 = %v24 /\ %hhd1_61 = %v5  /\ %hhd2_61 = %v20 /\ %hhd3_61 = %v1  /\ %hhd4_61 = %v19 /\
+    %hhd5_61 = %v23 /\ %hhd6_61 = %v18 /\ %hhd7_61 = %v16 /\ %hhd8_61 = %v7  /\ %hhd9_61 = %v6
+  &&
+    %hhd0_61 = %v24 /\ %hhd1_61 = %v5  /\ %hhd2_61 = %v20 /\ %hhd3_61 = %v1  /\ %hhd4_61 = %v19 /\
+    %hhd5_61 = %v23 /\ %hhd6_61 = %v18 /\ %hhd7_61 = %v16 /\ %hhd8_61 = %v7  /\ %hhd9_61 = %v6;
+
+(* ld1	{v2.8h, v3.8h}, [x24]                       #! EA = L0x5555552ab0; Value = 0xc099f71ec517f7bf; PC = 0x5555551170 *)
+mov %v2 [L0x5555552ab0,L0x5555552ab2,L0x5555552ab4,L0x5555552ab6,L0x5555552ab8,L0x5555552aba,L0x5555552abc,L0x5555552abe];
+mov %v3 [L0x5555552ac0,L0x5555552ac2,L0x5555552ac4,L0x5555552ac6,L0x5555552ac8,L0x5555552aca,L0x5555552acc,L0x5555552ace];
+(* sqrdmulh	v17.8h, v24.8h, v0.h[2]                #! PC = 0x5555551174 *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v24 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v24.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551178 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v24 %v24 %mls;
+
+assert
+    %hhd0_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd0_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd0_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd0_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24
+    && true;
+
+(* sqrdmulh	v17.8h, v23.8h, v0.h[2]                #! PC = 0x555555117c *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v23 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v23.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551180 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    %hhd5_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd5_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd5_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd5_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23
+    && true;
+
+(* sqrdmulh	v17.8h, v5.8h, v2.h[1]                 #! PC = 0x5555551184 *)
+broadcast %sqrdmulh 8 [%v2[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v2.h[0]                       #! PC = 0x5555551188 *)
+broadcast %mul 8 [%v2[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v17.8h, v0.h[0]                      #! PC = 0x555555118c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd1_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd1_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd1_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd1_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5
+    && true;
+
+(* sqrdmulh	v17.8h, v20.8h, v2.h[3]                #! PC = 0x5555551190 *)
+broadcast %sqrdmulh 8 [%v2[3]]; smulj %LO %v20 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v20.8h, v20.8h, v2.h[2]                     #! PC = 0x5555551194 *)
+broadcast %mul 8 [%v2[2]]; mull %mdc %v20 %v20 %mul; cast %v20@int16[8] %v20;
+(* mls	v20.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551198 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v20 %v20 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd2_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd2_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd2_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd2_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20
+    && true;
+
+(* sqrdmulh	v17.8h, v1.8h, v2.h[5]                 #! PC = 0x555555119c *)
+broadcast %sqrdmulh 8 [%v2[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v2.h[4]                       #! PC = 0x55555511a0 *)
+broadcast %mul 8 [%v2[4]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v17.8h, v0.h[0]                      #! PC = 0x55555511a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd3_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd3_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd3_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd3_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1
+    && true;
+
+(* sqrdmulh	v17.8h, v19.8h, v2.h[7]                #! PC = 0x55555511a8 *)
+broadcast %sqrdmulh 8 [%v2[7]]; smulj %LO %v19 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v19.8h, v19.8h, v2.h[6]                     #! PC = 0x55555511ac *)
+broadcast %mul 8 [%v2[6]]; mull %mdc %v19 %v19 %mul; cast %v19@int16[8] %v19;
+(* mls	v19.8h, v17.8h, v0.h[0]                     #! PC = 0x55555511b0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v19 %v19 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd4_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd4_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd4_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd4_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19
+    && true;
+
+(* sqrdmulh	v21.8h, v18.8h, v3.h[1]                #! PC = 0x55555511b4 *)
+broadcast %sqrdmulh 8 [%v3[1]]; smulj %LO %v18 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v21 %LO11 %LO01;
+(* mul	v17.8h, v18.8h, v3.h[0]                     #! PC = 0x55555511b8 *)
+broadcast %mul 8 [%v3[0]]; mull %mdc %v17 %v18 %mul; cast %v17@int16[8] %v17;
+(* mls	v17.8h, v21.8h, v0.h[0]                     #! PC = 0x55555511bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v21 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd6_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd6_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd6_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    = %v17 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd6_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v20
+    = %v17
+    && true;
+
+(* sqrdmulh	v18.8h, v16.8h, v3.h[3]                #! PC = 0x55555511c0 *)
+broadcast %sqrdmulh 8 [%v3[3]]; smulj %LO %v16 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v16.8h, v16.8h, v3.h[2]                     #! PC = 0x55555511c4 *)
+broadcast %mul 8 [%v3[2]]; mull %mdc %v16 %v16 %mul; cast %v16@int16[8] %v16;
+(* mls	v16.8h, v18.8h, v0.h[0]                     #! PC = 0x55555511c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd7_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd7_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd7_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd7_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16
+    && true;
+
+(* sqrdmulh	v18.8h, v7.8h, v3.h[5]                 #! PC = 0x55555511cc *)
+broadcast %sqrdmulh 8 [%v3[5]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v7.8h, v7.8h, v3.h[4]                       #! PC = 0x55555511d0 *)
+broadcast %mul 8 [%v3[4]]; mull %mdc %v7 %v7 %mul; cast %v7@int16[8] %v7;
+(* mls	v7.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511d4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd8_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd8_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd8_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd8_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7
+    && true;
+
+(* sqrdmulh	v18.8h, v6.8h, v3.h[7]                 #! PC = 0x55555511d8 *)
+broadcast %sqrdmulh 8 [%v3[7]]; smulj %LO %v6 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v3.8h, v6.8h, v3.h[6]                       #! PC = 0x55555511dc *)
+broadcast %mul 8 [%v3[6]]; mull %mdc %v3 %v6 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511e0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd9_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd9_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd9_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd9_61
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3
+    && true;
+
+(* #b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! PC = 0x55555511e8 *)
+#b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! 0x55555511e8 = 0x55555511e8;
+
+cut (* 118 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        %fd8_61 +
+        %fd9_61 +
+        %fd0_61 +
+        %fd1_61 +
+        %fd2_61 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd8_61 +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd9_61 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_61 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_61 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_61 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd8_61 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd9_61 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_61 +
+        %fd1_61 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_61 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd8_61 +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd9_61 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_61 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_61 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_61 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd8_61 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd9_61 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_61 +
+        %fd1_61 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_61 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        %fd8_61 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_61 +
+        %fd0_61 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_61 +
+        %fd2_61 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd8_61 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd9_61 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_61 +
+        %fd1_61 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_61 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd8_61 +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd9_61 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_61 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_61 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_61 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd8_61 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd9_61 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_61 +
+        %fd1_61 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_61 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd8_61 +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd9_61 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_61 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_61 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_61 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    true # TODO
+    prove with [precondition]
+  &&
+    %v24 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v5  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v20 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v1  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v19 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v23 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v17 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v16 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v7  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v3  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+
+    %v24 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v5  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v20 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v1  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v19 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v23 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v17 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v16 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v7  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v3  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16];
+
+
+#### store
+
+(* str	q24, [x0]                                   #! EA = L0x5555571368; PC = 0x5555551014 *)
+mov [L0x5555571368,L0x555557136a,L0x555557136c,L0x555557136e,L0x5555571370,L0x5555571372,L0x5555571374,L0x5555571376] %v24;
+(* str	q5, [x0, #288]                              #! EA = L0x5555571488; PC = 0x5555551018 *)
+mov [L0x5555571488,L0x555557148a,L0x555557148c,L0x555557148e,L0x5555571490,L0x5555571492,L0x5555571494,L0x5555571496] %v5;
+(* str	q20, [x0, #576]                             #! EA = L0x55555715a8; PC = 0x555555101c *)
+mov [L0x55555715a8,L0x55555715aa,L0x55555715ac,L0x55555715ae,L0x55555715b0,L0x55555715b2,L0x55555715b4,L0x55555715b6] %v20;
+(* str	q1, [x0, #864]                              #! EA = L0x55555716c8; PC = 0x5555551020 *)
+mov [L0x55555716c8,L0x55555716ca,L0x55555716cc,L0x55555716ce,L0x55555716d0,L0x55555716d2,L0x55555716d4,L0x55555716d6] %v1;
+(* str	q19, [x0, #1152]                            #! EA = L0x55555717e8; PC = 0x5555551024 *)
+mov [L0x55555717e8,L0x55555717ea,L0x55555717ec,L0x55555717ee,L0x55555717f0,L0x55555717f2,L0x55555717f4,L0x55555717f6] %v19;
+(* str	q23, [x0, #1440]                            #! EA = L0x5555571908; PC = 0x5555551028 *)
+mov [L0x5555571908,L0x555557190a,L0x555557190c,L0x555557190e,L0x5555571910,L0x5555571912,L0x5555571914,L0x5555571916] %v23;
+(* str	q17, [x0, #1728]                            #! EA = L0x5555571a28; PC = 0x555555102c *)
+mov [L0x5555571a28,L0x5555571a2a,L0x5555571a2c,L0x5555571a2e,L0x5555571a30,L0x5555571a32,L0x5555571a34,L0x5555571a36] %v17;
+(* str	q16, [x0, #2016]                            #! EA = L0x5555571b48; PC = 0x5555551030 *)
+mov [L0x5555571b48,L0x5555571b4a,L0x5555571b4c,L0x5555571b4e,L0x5555571b50,L0x5555571b52,L0x5555571b54,L0x5555571b56] %v16;
+(* str	q7, [x0, #2304]                             #! EA = L0x5555571c68; PC = 0x5555551034 *)
+mov [L0x5555571c68,L0x5555571c6a,L0x5555571c6c,L0x5555571c6e,L0x5555571c70,L0x5555571c72,L0x5555571c74,L0x5555571c76] %v7;
+(* str	q3, [x0, #2592]                             #! EA = L0x5555571d88; PC = 0x5555551038 *)
+mov [L0x5555571d88,L0x5555571d8a,L0x5555571d8c,L0x5555571d8e,L0x5555571d90,L0x5555571d92,L0x5555571d94,L0x5555571d96] %v3;
+(* #b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! PC = 0x5555551058 *)
+#b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! 0x5555551058 = 0x5555551058;
+
+cut (* 119 *)
+    [L0x5555571368, L0x555557136a, L0x555557136c, L0x555557136e, L0x5555571370, L0x5555571372, L0x5555571374, L0x5555571376] = %v24 /\
+    [L0x5555571488, L0x555557148a, L0x555557148c, L0x555557148e, L0x5555571490, L0x5555571492, L0x5555571494, L0x5555571496] = %v5 /\
+    [L0x55555715a8, L0x55555715aa, L0x55555715ac, L0x55555715ae, L0x55555715b0, L0x55555715b2, L0x55555715b4, L0x55555715b6] = %v20 /\
+    [L0x55555716c8, L0x55555716ca, L0x55555716cc, L0x55555716ce, L0x55555716d0, L0x55555716d2, L0x55555716d4, L0x55555716d6] = %v1 /\
+    [L0x55555717e8, L0x55555717ea, L0x55555717ec, L0x55555717ee, L0x55555717f0, L0x55555717f2, L0x55555717f4, L0x55555717f6] = %v19 /\
+    [L0x5555571908, L0x555557190a, L0x555557190c, L0x555557190e, L0x5555571910, L0x5555571912, L0x5555571914, L0x5555571916] = %v23 /\
+    [L0x5555571a28, L0x5555571a2a, L0x5555571a2c, L0x5555571a2e, L0x5555571a30, L0x5555571a32, L0x5555571a34, L0x5555571a36] = %v17 /\
+    [L0x5555571b48, L0x5555571b4a, L0x5555571b4c, L0x5555571b4e, L0x5555571b50, L0x5555571b52, L0x5555571b54, L0x5555571b56] = %v16 /\
+    [L0x5555571c68, L0x5555571c6a, L0x5555571c6c, L0x5555571c6e, L0x5555571c70, L0x5555571c72, L0x5555571c74, L0x5555571c76] = %v7 /\
+    [L0x5555571d88, L0x5555571d8a, L0x5555571d8c, L0x5555571d8e, L0x5555571d90, L0x5555571d92, L0x5555571d94, L0x5555571d96] = %v3
+  &&
+    [L0x5555571368, L0x555557136a, L0x555557136c, L0x555557136e, L0x5555571370, L0x5555571372, L0x5555571374, L0x5555571376] = %v24 /\
+    [L0x5555571488, L0x555557148a, L0x555557148c, L0x555557148e, L0x5555571490, L0x5555571492, L0x5555571494, L0x5555571496] = %v5 /\
+    [L0x55555715a8, L0x55555715aa, L0x55555715ac, L0x55555715ae, L0x55555715b0, L0x55555715b2, L0x55555715b4, L0x55555715b6] = %v20 /\
+    [L0x55555716c8, L0x55555716ca, L0x55555716cc, L0x55555716ce, L0x55555716d0, L0x55555716d2, L0x55555716d4, L0x55555716d6] = %v1 /\
+    [L0x55555717e8, L0x55555717ea, L0x55555717ec, L0x55555717ee, L0x55555717f0, L0x55555717f2, L0x55555717f4, L0x55555717f6] = %v19 /\
+    [L0x5555571908, L0x555557190a, L0x555557190c, L0x555557190e, L0x5555571910, L0x5555571912, L0x5555571914, L0x5555571916] = %v23 /\
+    [L0x5555571a28, L0x5555571a2a, L0x5555571a2c, L0x5555571a2e, L0x5555571a30, L0x5555571a32, L0x5555571a34, L0x5555571a36] = %v17 /\
+    [L0x5555571b48, L0x5555571b4a, L0x5555571b4c, L0x5555571b4e, L0x5555571b50, L0x5555571b52, L0x5555571b54, L0x5555571b56] = %v16 /\
+    [L0x5555571c68, L0x5555571c6a, L0x5555571c6c, L0x5555571c6e, L0x5555571c70, L0x5555571c72, L0x5555571c74, L0x5555571c76] = %v7 /\
+    [L0x5555571d88, L0x5555571d8a, L0x5555571d8c, L0x5555571d8e, L0x5555571d90, L0x5555571d92, L0x5555571d94, L0x5555571d96] = %v3;
+
+### j_iter epilogue
+
+(* #b.eq	0x555555131c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1712>  // b.none#! PC = 0x555555121c *)
+#b.eq	0x555555131c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1712>  // b.none#! 0x555555121c = 0x555555121c;
+
+
+## j_iter
+
+
+### j_iter prologue
+
+(* #b.le	0x5555550ce4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+120>#! PC = 0x5555551224 *)
+#b.le	0x5555550ce4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+120>#! 0x5555551224 = 0x5555551224;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x55555705d0; Value = 0x0000000000000000; PC = 0x5555551248 *)
+mov %v2 [L0x55555705d0,L0x55555705d2,L0x55555705d4,L0x55555705d6,L0x55555705d8,L0x55555705da,L0x55555705dc,L0x55555705de];
+mov %v3 [L0x55555705e0,L0x55555705e2,L0x55555705e4,L0x55555705e6,L0x55555705e8,L0x55555705ea,L0x55555705ec,L0x55555705ee];
+(* st1	{v2.8h, v3.8h}, [x17]                       #! EA = L0x7ffffff050; PC = 0x555555124c *)
+mov [L0x7ffffff050,L0x7ffffff052,L0x7ffffff054,L0x7ffffff056,L0x7ffffff058,L0x7ffffff05a,L0x7ffffff05c,L0x7ffffff05e] %v2;
+mov [L0x7ffffff060,L0x7ffffff062,L0x7ffffff064,L0x7ffffff066,L0x7ffffff068,L0x7ffffff06a,L0x7ffffff06c,L0x7ffffff06e] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x55555704b0; Value = 0x0000000000000000; PC = 0x5555551270 *)
+mov %v2 [L0x55555704b0,L0x55555704b2,L0x55555704b4,L0x55555704b6,L0x55555704b8,L0x55555704ba,L0x55555704bc,L0x55555704be];
+mov %v3 [L0x55555704c0,L0x55555704c2,L0x55555704c4,L0x55555704c6,L0x55555704c8,L0x55555704ca,L0x55555704cc,L0x55555704ce];
+(* st1	{v2.8h, v3.8h}, [x16]                       #! EA = L0x7ffffff070; PC = 0x5555551274 *)
+mov [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e] %v2;
+mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570390; Value = 0x0000000000000000; PC = 0x5555551298 *)
+mov %v2 [L0x5555570390,L0x5555570392,L0x5555570394,L0x5555570396,L0x5555570398,L0x555557039a,L0x555557039c,L0x555557039e];
+mov %v3 [L0x55555703a0,L0x55555703a2,L0x55555703a4,L0x55555703a6,L0x55555703a8,L0x55555703aa,L0x55555703ac,L0x55555703ae];
+(* st1	{v2.8h, v3.8h}, [x15]                       #! EA = L0x7ffffff090; PC = 0x555555129c *)
+mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v2;
+mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570270; Value = 0x0000000000000000; PC = 0x55555512c0 *)
+mov %v2 [L0x5555570270,L0x5555570272,L0x5555570274,L0x5555570276,L0x5555570278,L0x555557027a,L0x555557027c,L0x555557027e];
+mov %v3 [L0x5555570280,L0x5555570282,L0x5555570284,L0x5555570286,L0x5555570288,L0x555557028a,L0x555557028c,L0x555557028e];
+(* st1	{v2.8h, v3.8h}, [x14]                       #! EA = L0x7ffffff0b0; PC = 0x55555512c4 *)
+mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v2;
+mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570150; Value = 0x0000000000000000; PC = 0x55555512e8 *)
+mov %v2 [L0x5555570150,L0x5555570152,L0x5555570154,L0x5555570156,L0x5555570158,L0x555557015a,L0x555557015c,L0x555557015e];
+mov %v3 [L0x5555570160,L0x5555570162,L0x5555570164,L0x5555570166,L0x5555570168,L0x555557016a,L0x555557016c,L0x555557016e];
+(* st1	{v2.8h, v3.8h}, [x13]                       #! EA = L0x7ffffff0d0; PC = 0x55555512ec *)
+mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v2;
+mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v3;
+(* #b	0x555555105c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1008>#! PC = 0x5555551318 *)
+#b	0x555555105c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1008>#! 0x5555551318 = 0x5555551318;
+
+ghost %fd0_7@sint16[16], %fd1_7@sint16[16], %fd2_7@sint16[16], %fd8_7@sint16[16], %fd9_7@sint16[16] :
+    %fd0_7 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_7 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_7 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_7 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_7 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e]
+  &&
+    %fd0_7 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_7 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_7 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_7 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_7 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e];
+
+cut (* 120 *)
+    %fd0_7 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_7 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_7 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_7 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_7 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e] /\
+
+    %fd0_7 = [poly400, poly401, poly402, poly403, poly404, poly405, poly406, poly407, poly408, poly409, poly410, poly411, poly412, poly413, poly414, poly415] /\
+    %fd1_7 = [poly256, poly257, poly258, poly259, poly260, poly261, poly262, poly263, poly264, poly265, poly266, poly267, poly268, poly269, poly270, poly271] /\
+    %fd2_7 = [poly112, poly113, poly114, poly115, poly116, poly117, poly118, poly119, poly120, poly121, poly122, poly123, poly124, poly125, poly126, poly127] /\
+    %fd8_7 = [poly688, poly689, poly690, poly691, poly692, poly693, poly694, poly695, poly696, poly697, poly698, poly699, poly700, poly701, poly702, poly703] /\
+    %fd9_7 = [poly544, poly545, poly546, poly547, poly548, poly549, poly550, poly551, poly552, poly553, poly554, poly555, poly556, poly557, poly558, poly559]
+
+    prove with [cuts[0]]
+  &&
+    %fd0_7 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_7 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_7 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_7 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_7 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e] /\
+
+    %fd0_7 = [poly400, poly401, poly402, poly403, poly404, poly405, poly406, poly407, poly408, poly409, poly410, poly411, poly412, poly413, poly414, poly415] /\
+    %fd1_7 = [poly256, poly257, poly258, poly259, poly260, poly261, poly262, poly263, poly264, poly265, poly266, poly267, poly268, poly269, poly270, poly271] /\
+    %fd2_7 = [poly112, poly113, poly114, poly115, poly116, poly117, poly118, poly119, poly120, poly121, poly122, poly123, poly124, poly125, poly126, poly127] /\
+    %fd8_7 = [poly688, poly689, poly690, poly691, poly692, poly693, poly694, poly695, poly696, poly697, poly698, poly699, poly700, poly701, poly702, poly703] /\
+    %fd9_7 = [poly544, poly545, poly546, poly547, poly548, poly549, poly550, poly551, poly552, poly553, poly554, poly555, poly556, poly557, poly558, poly559]
+
+    prove with [cuts[0]];
+
+
+### k0_iter
+
+
+#### load
+
+(* ldr	q2, [x22]                                   #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555105c *)
+mov %v2 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
+(* ldr	q16, [x21]                                  #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x5555551060 *)
+mov %v16 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
+(* ldr	q3, [x20]                                   #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551064 *)
+mov %v3 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
+(* ldr	q6, [x19]                                   #! EA = L0x7ffffff050; Value = 0x0000000000000000; PC = 0x5555551068 *)
+mov %v6 [L0x7ffffff050,L0x7ffffff052,L0x7ffffff054,L0x7ffffff056,L0x7ffffff058,L0x7ffffff05a,L0x7ffffff05c,L0x7ffffff05e];
+(* ldr	q18, [x30]                                  #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555106c *)
+mov %v18 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
+
+ghost %fd0_70@sint16[8], %fd1_70@sint16[8], %fd2_70@sint16[8], %fd8_70@sint16[8], %fd9_70@sint16[8] :
+    %fd0_70 = %v2  /\
+    %fd1_70 = %v16 /\
+    %fd2_70 = %v3  /\
+    %fd8_70 = %v6  /\
+    %fd9_70 = %v18
+  &&
+    %fd0_70 = %v2  /\
+    %fd1_70 = %v16 /\
+    %fd2_70 = %v3  /\
+    %fd8_70 = %v6  /\
+    %fd9_70 = %v18;
+
+cut (* 121 *)
+    %fd0_70 = %v2  /\
+    %fd1_70 = %v16 /\
+    %fd2_70 = %v3  /\
+    %fd8_70 = %v6  /\
+    %fd9_70 = %v18 /\
+
+    %fd0_70 = %fd0_7[:8] /\
+    %fd1_70 = %fd1_7[:8] /\
+    %fd2_70 = %fd2_7[:8] /\
+    %fd8_70 = %fd8_7[:8] /\
+    %fd9_70 = %fd9_7[:8]
+
+    prove with [cuts[120]]
+  &&
+    %fd0_70 = %v2  /\
+    %fd1_70 = %v16 /\
+    %fd2_70 = %v3  /\
+    %fd8_70 = %v6  /\
+    %fd9_70 = %v18 /\
+
+    %fd0_70 = %fd0_7[:8] /\
+    %fd1_70 = %fd1_7[:8] /\
+    %fd2_70 = %fd2_7[:8] /\
+    %fd8_70 = %fd8_7[:8] /\
+    %fd9_70 = %fd9_7[:8]
+
+    prove with [cuts[120]];
+
+
+#### ntt10_4x_nof35467
+
+
+##### ntt5_4x_nof14
+
+ghost %fe0_70@sint16[8], %fe2_70@sint16[8], %fe3_70@sint16[8] :
+    %fe0_70 = %v2 /\
+    %fe2_70 = %v3 /\
+    %fe3_70 = %v6
+  &&
+    %fe0_70 = %v2 /\
+    %fe2_70 = %v3 /\
+    %fe3_70 = %v6;
+
+cut (* 122 *)
+    %fe0_70 = %v2 /\
+    %fe2_70 = %v3 /\
+    %fe3_70 = %v6 /\
+
+    %fe0_70 = %fd0_70 /\
+    %fe2_70 = %fd2_70 /\
+    %fe3_70 = %fd8_70
+
+    prove with [cuts[121]]
+  &&
+    %fe0_70 = %v2 /\
+    %fe2_70 = %v3 /\
+    %fe3_70 = %v6 /\
+
+    %fe0_70 = %fd0_70 /\
+    %fe2_70 = %fd2_70 /\
+    %fe3_70 = %fd8_70
+
+    prove with [cuts[121]];
+
+(* add	v5.8h, v3.8h, v6.8h                         #! PC = 0x5555551070 *)
+add %v5 %v3 %v6;
+(* add	v7.8h, v2.8h, v5.8h                         #! PC = 0x5555551074 *)
+add %v7 %v2 %v5;
+(* sqrdmulh	v1.8h, v7.8h, v0.h[1]                  #! PC = 0x5555551078 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v7.8h, v7.8h, #2                            #! PC = 0x555555107c *)
+shl %v7 %v7 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v7.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551080 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_70 + %fe2_70 + %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_70 + %fe2_70 + %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_70 + %fe2_70 + %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_70 + %fe2_70 + %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7
+    && true;
+
+(* shl	v2.8h, v2.8h, #2                            #! PC = 0x5555551084 *)
+shl %v2 %v2 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* sub	v2.8h, v2.8h, v5.8h                         #! PC = 0x5555551088 *)
+sub %v2 %v2 %v5;
+(* sshr	v1.8h, v2.8h, #12                          #! PC = 0x555555108c *)
+split %v1 %dc %v2 12;
+(* cmlt	v17.8h, v2.8h, #0                          #! PC = 0x5555551090 *)
+split %v17 %dc %v2 15;
+(* sub	v1.8h, v1.8h, v17.8h                        #! PC = 0x5555551094 *)
+sub %v1 %v1 %v17;
+(* mls	v2.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551098 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_70 - %fe2_70 - %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_70 - %fe2_70 - %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_70 - %fe2_70 - %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_70 - %fe2_70 - %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x555555109c *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x55555510a0 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x55555510a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_70 + %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_70 + %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_70 + %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_70 + %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* sub	v1.8h, v2.8h, v5.8h                         #! PC = 0x55555510a8 *)
+sub %v1 %v2 %v5;
+(* add	v2.8h, v2.8h, v5.8h                         #! PC = 0x55555510ac *)
+add %v2 %v2 %v5;
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x55555510b0 *)
+sub %v3 %v3 %v6;
+(* sqrdmulh	v6.8h, v3.8h, v4.h[6]                  #! PC = 0x55555510b4 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v5.8h, v3.8h, v4.h[2]                       #! PC = 0x55555510b8 *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v5 %v3 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_70 - %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_70 - %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_70 - %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_70 - %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5
+    && true;
+
+(* sqrdmulh	v6.8h, v3.8h, v4.h[7]                  #! PC = 0x55555510c0 *)
+broadcast %sqrdmulh 8 [%v4[7]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v3.8h, v3.8h, v4.h[3]                       #! PC = 0x55555510c4 *)
+broadcast %mul 8 [%v4[3]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_70 - %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_70 - %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_70 - %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_70 - %fe3_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3
+    && true;
+
+(* sub	v6.8h, v3.8h, v5.8h                         #! PC = 0x55555510cc *)
+sub %v6 %v3 %v5;
+(* sub	v19.8h, v1.8h, v3.8h                        #! PC = 0x55555510d0 *)
+sub %v19 %v1 %v3;
+(* sub	v22.8h, v2.8h, v6.8h                        #! PC = 0x55555510d4 *)
+sub %v22 %v2 %v6;
+(* add	v17.8h, v1.8h, v3.8h                        #! PC = 0x55555510d8 *)
+add %v17 %v1 %v3;
+(* add	v2.8h, v2.8h, v6.8h                         #! PC = 0x55555510dc *)
+add %v2 %v2 %v6;
+
+cut (* 123 *)
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_70 +
+        %fe2_70 +
+        %fe3_70
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_70 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe2_70 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe3_70
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v2  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_70 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe2_70 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe3_70
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v22 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_70 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe2_70 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe3_70
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_70 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe2_70 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe3_70
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %fe0_70 = %fd0_70 /\ %fe2_70 = %fd2_70 /\ %fe3_70 = %fd8_70
+
+  &&
+    %v7  <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v19 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v2  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v22 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v17 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v7  >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v19 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v2  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v22 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v17 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %fe0_70 = %fd0_70 /\ %fe2_70 = %fd2_70 /\ %fe3_70 = %fd8_70
+
+    prove with [precondition, cuts[0, 120, 121]];
+
+
+##### ntt5_4x_nof023
+
+ghost %ff1_70@sint16[8], %ff4_70@sint16[8] :
+    %ff1_70 = %v16 /\
+    %ff4_70 = %v18
+  &&
+    %ff1_70 = %v16 /\
+    %ff4_70 = %v18;
+
+cut (* 124 *)
+    %ff1_70 = %v16 /\
+    %ff4_70 = %v18 /\
+
+    %ff1_70 = %fd1_70 /\
+    %ff4_70 = %fd9_70
+
+    prove with [cuts[121]]
+  &&
+    %ff1_70 = %v16 /\
+    %ff4_70 = %v18 /\
+
+    %ff1_70 = %fd1_70 /\
+    %ff4_70 = %fd9_70
+
+    prove with [cuts[121]];
+
+(* add	v5.8h, v16.8h, v18.8h                       #! PC = 0x55555510e0 *)
+add %v5 %v16 %v18;
+(* sqrdmulh	v1.8h, v5.8h, v0.h[1]                  #! PC = 0x55555510e4 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v23.8h, v5.8h, #2                           #! PC = 0x55555510e8 *)
+shl %v23 %v5 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v23.8h, v1.8h, v0.h[0]                      #! PC = 0x55555510ec *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_70 + %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_70 + %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_70 + %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_70 + %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23
+    && true;
+
+(* neg	v3.8h, v5.8h                                #! PC = 0x55555510f0 *)
+broadcast %neg 8 [0@sint16]; sub %v3 %neg %v5;
+(* sshr	v1.8h, v3.8h, #12                          #! PC = 0x55555510f4 *)
+split %v1 %dc %v3 12;
+(* cmlt	v6.8h, v3.8h, #0                           #! PC = 0x55555510f8 *)
+split %v6 %dc %v3 15;
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x55555510fc *)
+sub %v1 %v1 %v6;
+(* mls	v3.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551100 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    -(%ff1_70 + %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    -(%ff1_70 + %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    -(%ff1_70 + %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    -(%ff1_70 + %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x5555551104 *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x5555551108 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x555555110c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_70 + %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_70 + %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_70 + %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_70 + %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* add	v21.8h, v3.8h, v5.8h                        #! PC = 0x5555551110 *)
+add %v21 %v3 %v5;
+(* sub	v3.8h, v3.8h, v5.8h                         #! PC = 0x5555551114 *)
+sub %v3 %v3 %v5;
+(* sub	v1.8h, v16.8h, v18.8h                       #! PC = 0x5555551118 *)
+sub %v1 %v16 %v18;
+(* sqrdmulh	v5.8h, v1.8h, v4.h[5]                  #! PC = 0x555555111c *)
+broadcast %sqrdmulh 8 [%v4[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v6.8h, v1.8h, v4.h[1]                       #! PC = 0x5555551120 *)
+broadcast %mul 8 [%v4[1]]; mull %mdc %v6 %v1 %mul; cast %v6@int16[8] %v6;
+(* mls	v6.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551124 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_70 - %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_70 - %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_70 - %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_70 - %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6
+    && true;
+
+(* sqrdmulh	v5.8h, v1.8h, v4.h[6]                  #! PC = 0x5555551128 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v4.h[2]                       #! PC = 0x555555112c *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551130 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_70 - %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_70 - %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_70 - %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_70 - %ff4_70)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1
+    && true;
+
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x5555551134 *)
+sub %v1 %v1 %v6;
+(* add	v16.8h, v21.8h, v6.8h                       #! PC = 0x5555551138 *)
+add %v16 %v21 %v6;
+(* add	v5.8h, v3.8h, v1.8h                         #! PC = 0x555555113c *)
+add %v5 %v3 %v1;
+(* sub	v21.8h, v21.8h, v6.8h                       #! PC = 0x5555551140 *)
+sub %v21 %v21 %v6;
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551144 *)
+sub %v3 %v3 %v1;
+
+cut (* 125 *)
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %ff1_70 +
+        %ff4_70
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %ff1_70 -
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %ff4_70
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %ff1_70 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff4_70
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff1_70 -
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %ff4_70
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v21 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %ff1_70 -
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %ff4_70
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %ff1_70 = %fd1_70 /\ %ff4_70 = %fd9_70
+  &&
+    %v23 <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v16 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v3  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v5  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v21 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v23 >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v16 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v3  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v5  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v21 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %ff1_70 = %fd1_70 /\ %ff4_70 = %fd9_70
+
+    prove with [precondition, cuts[0, 120, 121]];
+
+
+##### addsub
+
+(* add	v24.8h, v23.8h, v7.8h                       #! PC = 0x5555551148 *)
+add %v24 %v23 %v7;
+(* sub	v23.8h, v7.8h, v23.8h                       #! PC = 0x555555114c *)
+sub %v23 %v7 %v23;
+(* add	v20.8h, v16.8h, v19.8h                      #! PC = 0x5555551150 *)
+add %v20 %v16 %v19;
+(* sub	v16.8h, v19.8h, v16.8h                      #! PC = 0x5555551154 *)
+sub %v16 %v19 %v16;
+(* add	v19.8h, v3.8h, v2.8h                        #! PC = 0x5555551158 *)
+add %v19 %v3 %v2;
+(* sub	v6.8h, v2.8h, v3.8h                         #! PC = 0x555555115c *)
+sub %v6 %v2 %v3;
+(* add	v18.8h, v5.8h, v22.8h                       #! PC = 0x5555551160 *)
+add %v18 %v5 %v22;
+(* sub	v5.8h, v22.8h, v5.8h                        #! PC = 0x5555551164 *)
+sub %v5 %v22 %v5;
+(* add	v7.8h, v21.8h, v17.8h                       #! PC = 0x5555551168 *)
+add %v7 %v21 %v17;
+(* sub	v1.8h, v17.8h, v21.8h                       #! PC = 0x555555116c *)
+sub %v1 %v17 %v21;
+
+
+cut (* 126 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_70 +
+        %fd1_70 +
+        %fd2_70 +
+        %fd8_70 +
+        %fd9_70
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_70 -
+        %fd1_70 +
+        %fd2_70 +
+        %fd8_70 -
+        %fd9_70
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_70 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd1_70 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_70 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_70 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd9_70
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_70 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd1_70 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_70 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_70 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd9_70
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_70 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd1_70 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_70 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_70 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd9_70
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v6  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_70 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd1_70 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_70 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_70 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd9_70
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v18 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_70 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd1_70 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_70 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_70 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd9_70
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_70 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd1_70 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_70 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_70 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd9_70
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_70 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd1_70 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_70 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_70 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd9_70
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_70 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd1_70 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_70 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_70 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd9_70
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
+
+    prove with [cuts[123, 125]] # TODO
+  &&
+    %v24 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v23 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v20 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v16 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v19 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v6  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v18 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v5  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v7  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v1  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+
+    %v24 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v23 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v20 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v16 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v19 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v6  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v18 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v5  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v7  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v1  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16]
+
+    prove with [cuts[123, 125]]; # TODO
+
+
+#### twist_his
+
+ghost
+    %hhd0_70@sint16[8], %hhd1_70@sint16[8], %hhd2_70@sint16[8], %hhd3_70@sint16[8], %hhd4_70@sint16[8],
+    %hhd5_70@sint16[8], %hhd6_70@sint16[8], %hhd7_70@sint16[8], %hhd8_70@sint16[8], %hhd9_70@sint16[8] :
+
+    %hhd0_70 = %v24 /\ %hhd1_70 = %v5  /\ %hhd2_70 = %v20 /\ %hhd3_70 = %v1  /\ %hhd4_70 = %v19 /\
+    %hhd5_70 = %v23 /\ %hhd6_70 = %v18 /\ %hhd7_70 = %v16 /\ %hhd8_70 = %v7  /\ %hhd9_70 = %v6
+  &&
+    %hhd0_70 = %v24 /\ %hhd1_70 = %v5  /\ %hhd2_70 = %v20 /\ %hhd3_70 = %v1  /\ %hhd4_70 = %v19 /\
+    %hhd5_70 = %v23 /\ %hhd6_70 = %v18 /\ %hhd7_70 = %v16 /\ %hhd8_70 = %v7  /\ %hhd9_70 = %v6;
+
+(* ld1	{v2.8h, v3.8h}, [x24]                       #! EA = L0x5555552ad0; Value = 0x00070001fff9ffff; PC = 0x5555551170 *)
+mov %v2 [L0x5555552ad0,L0x5555552ad2,L0x5555552ad4,L0x5555552ad6,L0x5555552ad8,L0x5555552ada,L0x5555552adc,L0x5555552ade];
+mov %v3 [L0x5555552ae0,L0x5555552ae2,L0x5555552ae4,L0x5555552ae6,L0x5555552ae8,L0x5555552aea,L0x5555552aec,L0x5555552aee];
+(* sqrdmulh	v17.8h, v24.8h, v0.h[2]                #! PC = 0x5555551174 *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v24 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v24.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551178 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v24 %v24 %mls;
+
+assert
+    %hhd0_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd0_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd0_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd0_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24
+    && true;
+
+(* sqrdmulh	v17.8h, v23.8h, v0.h[2]                #! PC = 0x555555117c *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v23 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v23.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551180 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    %hhd5_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd5_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd5_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd5_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23
+    && true;
+
+(* sqrdmulh	v17.8h, v5.8h, v2.h[1]                 #! PC = 0x5555551184 *)
+broadcast %sqrdmulh 8 [%v2[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v2.h[0]                       #! PC = 0x5555551188 *)
+broadcast %mul 8 [%v2[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v17.8h, v0.h[0]                      #! PC = 0x555555118c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd1_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd1_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd1_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd1_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5
+    && true;
+
+(* sqrdmulh	v17.8h, v20.8h, v2.h[3]                #! PC = 0x5555551190 *)
+broadcast %sqrdmulh 8 [%v2[3]]; smulj %LO %v20 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v20.8h, v20.8h, v2.h[2]                     #! PC = 0x5555551194 *)
+broadcast %mul 8 [%v2[2]]; mull %mdc %v20 %v20 %mul; cast %v20@int16[8] %v20;
+(* mls	v20.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551198 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v20 %v20 %mls;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd2_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd2_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd2_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd2_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20
+    && true;
+
+(* sqrdmulh	v17.8h, v1.8h, v2.h[5]                 #! PC = 0x555555119c *)
+broadcast %sqrdmulh 8 [%v2[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v2.h[4]                       #! PC = 0x55555511a0 *)
+broadcast %mul 8 [%v2[4]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v17.8h, v0.h[0]                      #! PC = 0x55555511a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd3_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd3_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd3_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd3_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1
+    && true;
+
+(* sqrdmulh	v17.8h, v19.8h, v2.h[7]                #! PC = 0x55555511a8 *)
+broadcast %sqrdmulh 8 [%v2[7]]; smulj %LO %v19 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v19.8h, v19.8h, v2.h[6]                     #! PC = 0x55555511ac *)
+broadcast %mul 8 [%v2[6]]; mull %mdc %v19 %v19 %mul; cast %v19@int16[8] %v19;
+(* mls	v19.8h, v17.8h, v0.h[0]                     #! PC = 0x55555511b0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v19 %v19 %mls;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd4_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd4_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd4_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd4_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19
+    && true;
+
+(* sqrdmulh	v21.8h, v18.8h, v3.h[1]                #! PC = 0x55555511b4 *)
+broadcast %sqrdmulh 8 [%v3[1]]; smulj %LO %v18 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v21 %LO11 %LO01;
+(* mul	v17.8h, v18.8h, v3.h[0]                     #! PC = 0x55555511b8 *)
+broadcast %mul 8 [%v3[0]]; mull %mdc %v17 %v18 %mul; cast %v17@int16[8] %v17;
+(* mls	v17.8h, v21.8h, v0.h[0]                     #! PC = 0x55555511bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v21 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd6_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd6_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd6_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    = %v17 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd6_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v20
+    = %v17
+    && true;
+
+(* sqrdmulh	v18.8h, v16.8h, v3.h[3]                #! PC = 0x55555511c0 *)
+broadcast %sqrdmulh 8 [%v3[3]]; smulj %LO %v16 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v16.8h, v16.8h, v3.h[2]                     #! PC = 0x55555511c4 *)
+broadcast %mul 8 [%v3[2]]; mull %mdc %v16 %v16 %mul; cast %v16@int16[8] %v16;
+(* mls	v16.8h, v18.8h, v0.h[0]                     #! PC = 0x55555511c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd7_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd7_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd7_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd7_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16
+    && true;
+
+(* sqrdmulh	v18.8h, v7.8h, v3.h[5]                 #! PC = 0x55555511cc *)
+broadcast %sqrdmulh 8 [%v3[5]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v7.8h, v7.8h, v3.h[4]                       #! PC = 0x55555511d0 *)
+broadcast %mul 8 [%v3[4]]; mull %mdc %v7 %v7 %mul; cast %v7@int16[8] %v7;
+(* mls	v7.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511d4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd8_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd8_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd8_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd8_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7
+    && true;
+
+(* sqrdmulh	v18.8h, v6.8h, v3.h[7]                 #! PC = 0x55555511d8 *)
+broadcast %sqrdmulh 8 [%v3[7]]; smulj %LO %v6 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v3.8h, v6.8h, v3.h[6]                       #! PC = 0x55555511dc *)
+broadcast %mul 8 [%v3[6]]; mull %mdc %v3 %v6 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511e0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd9_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd9_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd9_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd9_70
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3
+    && true;
+
+(* #b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! PC = 0x55555511e8 *)
+#b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! 0x55555511e8 = 0x55555511e8;
+(* neg	v23.8h, v23.8h                              #! PC = 0x55555511ec *)
+broadcast %neg 8 [0@sint16]; sub %v23 %neg %v23;
+(* #b	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>#! PC = 0x55555511f0 *)
+#b	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>#! 0x55555511f0 = 0x55555511f0;
+
+cut (* 127 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        %fd8_70 +
+        %fd9_70 +
+        %fd0_70 +
+        %fd1_70 +
+        %fd2_70 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd8_70 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd9_70 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd0_70 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd1_70 +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd2_70 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd8_70 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd9_70 +
+        %fd0_70 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd1_70 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_70 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd8_70 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd9_70 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd0_70 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd1_70 +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd2_70 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd8_70 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd9_70 +
+        %fd0_70 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd1_70 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_70 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd8_70 +
+        %fd9_70 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd0_70 +
+        %fd1_70 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd2_70 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd8_70 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd9_70 +
+        %fd0_70 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd1_70 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_70 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd8_70 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd9_70 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd0_70 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd1_70 +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd2_70 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd8_70 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd9_70 +
+        %fd0_70 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd1_70 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_70 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd8_70 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd9_70 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd0_70 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd1_70 +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd2_70 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    true # TODO
+    prove with [precondition]
+  &&
+    %v24 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v5  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v20 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v1  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v19 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v23 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v17 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v16 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v7  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v3  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+
+    %v24 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v5  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v20 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v1  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v19 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v23 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v17 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v16 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v7  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v3  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16];
+
+
+#### store
+
+(* str	q24, [x0]                                   #! EA = L0x55555712e8; PC = 0x5555551014 *)
+mov [L0x55555712e8,L0x55555712ea,L0x55555712ec,L0x55555712ee,L0x55555712f0,L0x55555712f2,L0x55555712f4,L0x55555712f6] %v24;
+(* str	q5, [x0, #288]                              #! EA = L0x5555571408; PC = 0x5555551018 *)
+mov [L0x5555571408,L0x555557140a,L0x555557140c,L0x555557140e,L0x5555571410,L0x5555571412,L0x5555571414,L0x5555571416] %v5;
+(* str	q20, [x0, #576]                             #! EA = L0x5555571528; PC = 0x555555101c *)
+mov [L0x5555571528,L0x555557152a,L0x555557152c,L0x555557152e,L0x5555571530,L0x5555571532,L0x5555571534,L0x5555571536] %v20;
+(* str	q1, [x0, #864]                              #! EA = L0x5555571648; PC = 0x5555551020 *)
+mov [L0x5555571648,L0x555557164a,L0x555557164c,L0x555557164e,L0x5555571650,L0x5555571652,L0x5555571654,L0x5555571656] %v1;
+(* str	q19, [x0, #1152]                            #! EA = L0x5555571768; PC = 0x5555551024 *)
+mov [L0x5555571768,L0x555557176a,L0x555557176c,L0x555557176e,L0x5555571770,L0x5555571772,L0x5555571774,L0x5555571776] %v19;
+(* str	q23, [x0, #1440]                            #! EA = L0x5555571888; PC = 0x5555551028 *)
+mov [L0x5555571888,L0x555557188a,L0x555557188c,L0x555557188e,L0x5555571890,L0x5555571892,L0x5555571894,L0x5555571896] %v23;
+(* str	q17, [x0, #1728]                            #! EA = L0x55555719a8; PC = 0x555555102c *)
+mov [L0x55555719a8,L0x55555719aa,L0x55555719ac,L0x55555719ae,L0x55555719b0,L0x55555719b2,L0x55555719b4,L0x55555719b6] %v17;
+(* str	q16, [x0, #2016]                            #! EA = L0x5555571ac8; PC = 0x5555551030 *)
+mov [L0x5555571ac8,L0x5555571aca,L0x5555571acc,L0x5555571ace,L0x5555571ad0,L0x5555571ad2,L0x5555571ad4,L0x5555571ad6] %v16;
+(* str	q7, [x0, #2304]                             #! EA = L0x5555571be8; PC = 0x5555551034 *)
+mov [L0x5555571be8,L0x5555571bea,L0x5555571bec,L0x5555571bee,L0x5555571bf0,L0x5555571bf2,L0x5555571bf4,L0x5555571bf6] %v7;
+(* str	q3, [x0, #2592]                             #! EA = L0x5555571d08; PC = 0x5555551038 *)
+mov [L0x5555571d08,L0x5555571d0a,L0x5555571d0c,L0x5555571d0e,L0x5555571d10,L0x5555571d12,L0x5555571d14,L0x5555571d16] %v3;
+(* #b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! PC = 0x5555551058 *)
+#b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! 0x5555551058 = 0x5555551058;
+
+cut (* 128 *)
+    [L0x55555712e8, L0x55555712ea, L0x55555712ec, L0x55555712ee, L0x55555712f0, L0x55555712f2, L0x55555712f4, L0x55555712f6] = %v24 /\
+    [L0x5555571408, L0x555557140a, L0x555557140c, L0x555557140e, L0x5555571410, L0x5555571412, L0x5555571414, L0x5555571416] = %v5 /\
+    [L0x5555571528, L0x555557152a, L0x555557152c, L0x555557152e, L0x5555571530, L0x5555571532, L0x5555571534, L0x5555571536] = %v20 /\
+    [L0x5555571648, L0x555557164a, L0x555557164c, L0x555557164e, L0x5555571650, L0x5555571652, L0x5555571654, L0x5555571656] = %v1 /\
+    [L0x5555571768, L0x555557176a, L0x555557176c, L0x555557176e, L0x5555571770, L0x5555571772, L0x5555571774, L0x5555571776] = %v19 /\
+    [L0x5555571888, L0x555557188a, L0x555557188c, L0x555557188e, L0x5555571890, L0x5555571892, L0x5555571894, L0x5555571896] = %v23 /\
+    [L0x55555719a8, L0x55555719aa, L0x55555719ac, L0x55555719ae, L0x55555719b0, L0x55555719b2, L0x55555719b4, L0x55555719b6] = %v17 /\
+    [L0x5555571ac8, L0x5555571aca, L0x5555571acc, L0x5555571ace, L0x5555571ad0, L0x5555571ad2, L0x5555571ad4, L0x5555571ad6] = %v16 /\
+    [L0x5555571be8, L0x5555571bea, L0x5555571bec, L0x5555571bee, L0x5555571bf0, L0x5555571bf2, L0x5555571bf4, L0x5555571bf6] = %v7 /\
+    [L0x5555571d08, L0x5555571d0a, L0x5555571d0c, L0x5555571d0e, L0x5555571d10, L0x5555571d12, L0x5555571d14, L0x5555571d16] = %v3
+  &&
+    [L0x55555712e8, L0x55555712ea, L0x55555712ec, L0x55555712ee, L0x55555712f0, L0x55555712f2, L0x55555712f4, L0x55555712f6] = %v24 /\
+    [L0x5555571408, L0x555557140a, L0x555557140c, L0x555557140e, L0x5555571410, L0x5555571412, L0x5555571414, L0x5555571416] = %v5 /\
+    [L0x5555571528, L0x555557152a, L0x555557152c, L0x555557152e, L0x5555571530, L0x5555571532, L0x5555571534, L0x5555571536] = %v20 /\
+    [L0x5555571648, L0x555557164a, L0x555557164c, L0x555557164e, L0x5555571650, L0x5555571652, L0x5555571654, L0x5555571656] = %v1 /\
+    [L0x5555571768, L0x555557176a, L0x555557176c, L0x555557176e, L0x5555571770, L0x5555571772, L0x5555571774, L0x5555571776] = %v19 /\
+    [L0x5555571888, L0x555557188a, L0x555557188c, L0x555557188e, L0x5555571890, L0x5555571892, L0x5555571894, L0x5555571896] = %v23 /\
+    [L0x55555719a8, L0x55555719aa, L0x55555719ac, L0x55555719ae, L0x55555719b0, L0x55555719b2, L0x55555719b4, L0x55555719b6] = %v17 /\
+    [L0x5555571ac8, L0x5555571aca, L0x5555571acc, L0x5555571ace, L0x5555571ad0, L0x5555571ad2, L0x5555571ad4, L0x5555571ad6] = %v16 /\
+    [L0x5555571be8, L0x5555571bea, L0x5555571bec, L0x5555571bee, L0x5555571bf0, L0x5555571bf2, L0x5555571bf4, L0x5555571bf6] = %v7 /\
+    [L0x5555571d08, L0x5555571d0a, L0x5555571d0c, L0x5555571d0e, L0x5555571d10, L0x5555571d12, L0x5555571d14, L0x5555571d16] = %v3;
+
+### k0_iter
+
+
+#### load
+
+(* ldr	q2, [x22]                                   #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x555555105c *)
+mov %v2 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
+(* ldr	q16, [x21]                                  #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551060 *)
+mov %v16 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
+(* ldr	q3, [x20]                                   #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551064 *)
+mov %v3 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
+(* ldr	q6, [x19]                                   #! EA = L0x7ffffff060; Value = 0x0000000000000000; PC = 0x5555551068 *)
+mov %v6 [L0x7ffffff060,L0x7ffffff062,L0x7ffffff064,L0x7ffffff066,L0x7ffffff068,L0x7ffffff06a,L0x7ffffff06c,L0x7ffffff06e];
+(* ldr	q18, [x30]                                  #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x555555106c *)
+mov %v18 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
+
+ghost %fd0_71@sint16[8], %fd1_71@sint16[8], %fd2_71@sint16[8], %fd8_71@sint16[8], %fd9_71@sint16[8] :
+    %fd0_71 = %v2  /\
+    %fd1_71 = %v16 /\
+    %fd2_71 = %v3  /\
+    %fd8_71 = %v6  /\
+    %fd9_71 = %v18
+  &&
+    %fd0_71 = %v2  /\
+    %fd1_71 = %v16 /\
+    %fd2_71 = %v3  /\
+    %fd8_71 = %v6  /\
+    %fd9_71 = %v18;
+
+cut (* 129 *)
+    %fd0_71 = %v2  /\
+    %fd1_71 = %v16 /\
+    %fd2_71 = %v3  /\
+    %fd8_71 = %v6  /\
+    %fd9_71 = %v18 /\
+
+    %fd0_71 = %fd0_7[8:] /\
+    %fd1_71 = %fd1_7[8:] /\
+    %fd2_71 = %fd2_7[8:] /\
+    %fd8_71 = %fd8_7[8:] /\
+    %fd9_71 = %fd9_7[8:]
+
+    prove with [cuts[120]]
+  &&
+    %fd0_71 = %v2  /\
+    %fd1_71 = %v16 /\
+    %fd2_71 = %v3  /\
+    %fd8_71 = %v6  /\
+    %fd9_71 = %v18 /\
+
+    %fd0_71 = %fd0_7[8:] /\
+    %fd1_71 = %fd1_7[8:] /\
+    %fd2_71 = %fd2_7[8:] /\
+    %fd8_71 = %fd8_7[8:] /\
+    %fd9_71 = %fd9_7[8:]
+
+    prove with [cuts[120]];
+
+
+#### ntt10_4x_nof35467
+
+
+##### ntt5_4x_nof14
+
+ghost %fe0_71@sint16[8], %fe2_71@sint16[8], %fe3_71@sint16[8] :
+    %fe0_71 = %v2 /\
+    %fe2_71 = %v3 /\
+    %fe3_71 = %v6
+  &&
+    %fe0_71 = %v2 /\
+    %fe2_71 = %v3 /\
+    %fe3_71 = %v6;
+
+cut (* 130 *)
+    %fe0_71 = %v2 /\
+    %fe2_71 = %v3 /\
+    %fe3_71 = %v6 /\
+
+    %fe0_71 = %fd0_71 /\
+    %fe2_71 = %fd2_71 /\
+    %fe3_71 = %fd8_71
+
+    prove with [cuts[129]]
+  &&
+    %fe0_71 = %v2 /\
+    %fe2_71 = %v3 /\
+    %fe3_71 = %v6 /\
+
+    %fe0_71 = %fd0_71 /\
+    %fe2_71 = %fd2_71 /\
+    %fe3_71 = %fd8_71
+
+    prove with [cuts[129]];
+
+(* add	v5.8h, v3.8h, v6.8h                         #! PC = 0x5555551070 *)
+add %v5 %v3 %v6;
+(* add	v7.8h, v2.8h, v5.8h                         #! PC = 0x5555551074 *)
+add %v7 %v2 %v5;
+(* sqrdmulh	v1.8h, v7.8h, v0.h[1]                  #! PC = 0x5555551078 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v7.8h, v7.8h, #2                            #! PC = 0x555555107c *)
+shl %v7 %v7 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v7.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551080 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_71 + %fe2_71 + %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_71 + %fe2_71 + %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_71 + %fe2_71 + %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_71 + %fe2_71 + %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7
+    && true;
+
+(* shl	v2.8h, v2.8h, #2                            #! PC = 0x5555551084 *)
+shl %v2 %v2 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* sub	v2.8h, v2.8h, v5.8h                         #! PC = 0x5555551088 *)
+sub %v2 %v2 %v5;
+(* sshr	v1.8h, v2.8h, #12                          #! PC = 0x555555108c *)
+split %v1 %dc %v2 12;
+(* cmlt	v17.8h, v2.8h, #0                          #! PC = 0x5555551090 *)
+split %v17 %dc %v2 15;
+(* sub	v1.8h, v1.8h, v17.8h                        #! PC = 0x5555551094 *)
+sub %v1 %v1 %v17;
+(* mls	v2.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551098 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_71 - %fe2_71 - %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_71 - %fe2_71 - %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_71 - %fe2_71 - %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_71 - %fe2_71 - %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x555555109c *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x55555510a0 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x55555510a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_71 + %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_71 + %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_71 + %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_71 + %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* sub	v1.8h, v2.8h, v5.8h                         #! PC = 0x55555510a8 *)
+sub %v1 %v2 %v5;
+(* add	v2.8h, v2.8h, v5.8h                         #! PC = 0x55555510ac *)
+add %v2 %v2 %v5;
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x55555510b0 *)
+sub %v3 %v3 %v6;
+(* sqrdmulh	v6.8h, v3.8h, v4.h[6]                  #! PC = 0x55555510b4 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v5.8h, v3.8h, v4.h[2]                       #! PC = 0x55555510b8 *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v5 %v3 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_71 - %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_71 - %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_71 - %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_71 - %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5
+    && true;
+
+(* sqrdmulh	v6.8h, v3.8h, v4.h[7]                  #! PC = 0x55555510c0 *)
+broadcast %sqrdmulh 8 [%v4[7]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v3.8h, v3.8h, v4.h[3]                       #! PC = 0x55555510c4 *)
+broadcast %mul 8 [%v4[3]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_71 - %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_71 - %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_71 - %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_71 - %fe3_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3
+    && true;
+
+(* sub	v6.8h, v3.8h, v5.8h                         #! PC = 0x55555510cc *)
+sub %v6 %v3 %v5;
+(* sub	v19.8h, v1.8h, v3.8h                        #! PC = 0x55555510d0 *)
+sub %v19 %v1 %v3;
+(* sub	v22.8h, v2.8h, v6.8h                        #! PC = 0x55555510d4 *)
+sub %v22 %v2 %v6;
+(* add	v17.8h, v1.8h, v3.8h                        #! PC = 0x55555510d8 *)
+add %v17 %v1 %v3;
+(* add	v2.8h, v2.8h, v6.8h                         #! PC = 0x55555510dc *)
+add %v2 %v2 %v6;
+
+cut (* 131 *)
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_71 +
+        %fe2_71 +
+        %fe3_71
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_71 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe2_71 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe3_71
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v2  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_71 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe2_71 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe3_71
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v22 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_71 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe2_71 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe3_71
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_71 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe2_71 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe3_71
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %fe0_71 = %fd0_71 /\ %fe2_71 = %fd2_71 /\ %fe3_71 = %fd8_71
+
+  &&
+    %v7  <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v19 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v2  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v22 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v17 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v7  >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v19 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v2  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v22 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v17 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %fe0_71 = %fd0_71 /\ %fe2_71 = %fd2_71 /\ %fe3_71 = %fd8_71
+
+    prove with [precondition, cuts[0, 120, 129]];
+
+
+##### ntt5_4x_nof023
+
+ghost %ff1_71@sint16[8], %ff4_71@sint16[8] :
+    %ff1_71 = %v16 /\
+    %ff4_71 = %v18
+  &&
+    %ff1_71 = %v16 /\
+    %ff4_71 = %v18;
+
+cut (* 132 *)
+    %ff1_71 = %v16 /\
+    %ff4_71 = %v18 /\
+
+    %ff1_71 = %fd1_71 /\
+    %ff4_71 = %fd9_71
+
+    prove with [cuts[129]]
+  &&
+    %ff1_71 = %v16 /\
+    %ff4_71 = %v18 /\
+
+    %ff1_71 = %fd1_71 /\
+    %ff4_71 = %fd9_71
+
+    prove with [cuts[129]];
+
+(* add	v5.8h, v16.8h, v18.8h                       #! PC = 0x55555510e0 *)
+add %v5 %v16 %v18;
+(* sqrdmulh	v1.8h, v5.8h, v0.h[1]                  #! PC = 0x55555510e4 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v23.8h, v5.8h, #2                           #! PC = 0x55555510e8 *)
+shl %v23 %v5 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v23.8h, v1.8h, v0.h[0]                      #! PC = 0x55555510ec *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_71 + %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_71 + %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_71 + %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_71 + %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23
+    && true;
+
+(* neg	v3.8h, v5.8h                                #! PC = 0x55555510f0 *)
+broadcast %neg 8 [0@sint16]; sub %v3 %neg %v5;
+(* sshr	v1.8h, v3.8h, #12                          #! PC = 0x55555510f4 *)
+split %v1 %dc %v3 12;
+(* cmlt	v6.8h, v3.8h, #0                           #! PC = 0x55555510f8 *)
+split %v6 %dc %v3 15;
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x55555510fc *)
+sub %v1 %v1 %v6;
+(* mls	v3.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551100 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    -(%ff1_71 + %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    -(%ff1_71 + %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    -(%ff1_71 + %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    -(%ff1_71 + %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x5555551104 *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x5555551108 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x555555110c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_71 + %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_71 + %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_71 + %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_71 + %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* add	v21.8h, v3.8h, v5.8h                        #! PC = 0x5555551110 *)
+add %v21 %v3 %v5;
+(* sub	v3.8h, v3.8h, v5.8h                         #! PC = 0x5555551114 *)
+sub %v3 %v3 %v5;
+(* sub	v1.8h, v16.8h, v18.8h                       #! PC = 0x5555551118 *)
+sub %v1 %v16 %v18;
+(* sqrdmulh	v5.8h, v1.8h, v4.h[5]                  #! PC = 0x555555111c *)
+broadcast %sqrdmulh 8 [%v4[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v6.8h, v1.8h, v4.h[1]                       #! PC = 0x5555551120 *)
+broadcast %mul 8 [%v4[1]]; mull %mdc %v6 %v1 %mul; cast %v6@int16[8] %v6;
+(* mls	v6.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551124 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_71 - %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_71 - %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_71 - %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_71 - %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6
+    && true;
+
+(* sqrdmulh	v5.8h, v1.8h, v4.h[6]                  #! PC = 0x5555551128 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v4.h[2]                       #! PC = 0x555555112c *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551130 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_71 - %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_71 - %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_71 - %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_71 - %ff4_71)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1
+    && true;
+
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x5555551134 *)
+sub %v1 %v1 %v6;
+(* add	v16.8h, v21.8h, v6.8h                       #! PC = 0x5555551138 *)
+add %v16 %v21 %v6;
+(* add	v5.8h, v3.8h, v1.8h                         #! PC = 0x555555113c *)
+add %v5 %v3 %v1;
+(* sub	v21.8h, v21.8h, v6.8h                       #! PC = 0x5555551140 *)
+sub %v21 %v21 %v6;
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551144 *)
+sub %v3 %v3 %v1;
+
+cut (* 133 *)
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %ff1_71 +
+        %ff4_71
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %ff1_71 -
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %ff4_71
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %ff1_71 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff4_71
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff1_71 -
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %ff4_71
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v21 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %ff1_71 -
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %ff4_71
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %ff1_71 = %fd1_71 /\ %ff4_71 = %fd9_71
+  &&
+    %v23 <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v16 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v3  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v5  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v21 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v23 >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v16 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v3  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v5  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v21 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %ff1_71 = %fd1_71 /\ %ff4_71 = %fd9_71
+
+    prove with [precondition, cuts[0, 120, 129]];
+
+
+##### addsub
+
+(* add	v24.8h, v23.8h, v7.8h                       #! PC = 0x5555551148 *)
+add %v24 %v23 %v7;
+(* sub	v23.8h, v7.8h, v23.8h                       #! PC = 0x555555114c *)
+sub %v23 %v7 %v23;
+(* add	v20.8h, v16.8h, v19.8h                      #! PC = 0x5555551150 *)
+add %v20 %v16 %v19;
+(* sub	v16.8h, v19.8h, v16.8h                      #! PC = 0x5555551154 *)
+sub %v16 %v19 %v16;
+(* add	v19.8h, v3.8h, v2.8h                        #! PC = 0x5555551158 *)
+add %v19 %v3 %v2;
+(* sub	v6.8h, v2.8h, v3.8h                         #! PC = 0x555555115c *)
+sub %v6 %v2 %v3;
+(* add	v18.8h, v5.8h, v22.8h                       #! PC = 0x5555551160 *)
+add %v18 %v5 %v22;
+(* sub	v5.8h, v22.8h, v5.8h                        #! PC = 0x5555551164 *)
+sub %v5 %v22 %v5;
+(* add	v7.8h, v21.8h, v17.8h                       #! PC = 0x5555551168 *)
+add %v7 %v21 %v17;
+(* sub	v1.8h, v17.8h, v21.8h                       #! PC = 0x555555116c *)
+sub %v1 %v17 %v21;
+
+
+cut (* 134 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_71 +
+        %fd1_71 +
+        %fd2_71 +
+        %fd8_71 +
+        %fd9_71
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_71 -
+        %fd1_71 +
+        %fd2_71 +
+        %fd8_71 -
+        %fd9_71
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_71 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd1_71 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_71 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_71 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd9_71
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_71 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd1_71 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_71 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_71 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd9_71
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_71 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd1_71 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_71 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_71 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd9_71
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v6  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_71 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd1_71 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_71 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_71 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd9_71
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v18 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_71 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd1_71 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_71 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_71 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd9_71
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_71 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd1_71 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_71 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_71 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd9_71
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_71 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd1_71 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_71 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_71 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd9_71
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_71 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd1_71 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_71 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_71 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd9_71
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
+
+    prove with [cuts[131, 133]] # TODO
+  &&
+    %v24 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v23 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v20 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v16 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v19 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v6  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v18 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v5  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v7  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v1  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+
+    %v24 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v23 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v20 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v16 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v19 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v6  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v18 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v5  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v7  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v1  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16]
+
+    prove with [cuts[131, 133]]; # TODO
+
+
+#### twist_his
+
+ghost
+    %hhd0_71@sint16[8], %hhd1_71@sint16[8], %hhd2_71@sint16[8], %hhd3_71@sint16[8], %hhd4_71@sint16[8],
+    %hhd5_71@sint16[8], %hhd6_71@sint16[8], %hhd7_71@sint16[8], %hhd8_71@sint16[8], %hhd9_71@sint16[8] :
+
+    %hhd0_71 = %v24 /\ %hhd1_71 = %v5  /\ %hhd2_71 = %v20 /\ %hhd3_71 = %v1  /\ %hhd4_71 = %v19 /\
+    %hhd5_71 = %v23 /\ %hhd6_71 = %v18 /\ %hhd7_71 = %v16 /\ %hhd8_71 = %v7  /\ %hhd9_71 = %v6
+  &&
+    %hhd0_71 = %v24 /\ %hhd1_71 = %v5  /\ %hhd2_71 = %v20 /\ %hhd3_71 = %v1  /\ %hhd4_71 = %v19 /\
+    %hhd5_71 = %v23 /\ %hhd6_71 = %v18 /\ %hhd7_71 = %v16 /\ %hhd8_71 = %v7  /\ %hhd9_71 = %v6;
+
+(* ld1	{v2.8h, v3.8h}, [x24]                       #! EA = L0x5555552ad0; Value = 0x00070001fff9ffff; PC = 0x5555551170 *)
+mov %v2 [L0x5555552ad0,L0x5555552ad2,L0x5555552ad4,L0x5555552ad6,L0x5555552ad8,L0x5555552ada,L0x5555552adc,L0x5555552ade];
+mov %v3 [L0x5555552ae0,L0x5555552ae2,L0x5555552ae4,L0x5555552ae6,L0x5555552ae8,L0x5555552aea,L0x5555552aec,L0x5555552aee];
+(* sqrdmulh	v17.8h, v24.8h, v0.h[2]                #! PC = 0x5555551174 *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v24 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v24.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551178 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v24 %v24 %mls;
+
+assert
+    %hhd0_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd0_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd0_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd0_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24
+    && true;
+
+(* sqrdmulh	v17.8h, v23.8h, v0.h[2]                #! PC = 0x555555117c *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v23 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v23.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551180 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    %hhd5_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd5_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd5_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd5_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23
+    && true;
+
+(* sqrdmulh	v17.8h, v5.8h, v2.h[1]                 #! PC = 0x5555551184 *)
+broadcast %sqrdmulh 8 [%v2[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v2.h[0]                       #! PC = 0x5555551188 *)
+broadcast %mul 8 [%v2[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v17.8h, v0.h[0]                      #! PC = 0x555555118c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd1_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd1_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd1_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd1_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5
+    && true;
+
+(* sqrdmulh	v17.8h, v20.8h, v2.h[3]                #! PC = 0x5555551190 *)
+broadcast %sqrdmulh 8 [%v2[3]]; smulj %LO %v20 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v20.8h, v20.8h, v2.h[2]                     #! PC = 0x5555551194 *)
+broadcast %mul 8 [%v2[2]]; mull %mdc %v20 %v20 %mul; cast %v20@int16[8] %v20;
+(* mls	v20.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551198 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v20 %v20 %mls;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd2_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd2_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd2_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd2_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20
+    && true;
+
+(* sqrdmulh	v17.8h, v1.8h, v2.h[5]                 #! PC = 0x555555119c *)
+broadcast %sqrdmulh 8 [%v2[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v2.h[4]                       #! PC = 0x55555511a0 *)
+broadcast %mul 8 [%v2[4]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v17.8h, v0.h[0]                      #! PC = 0x55555511a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd3_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd3_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd3_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd3_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1
+    && true;
+
+(* sqrdmulh	v17.8h, v19.8h, v2.h[7]                #! PC = 0x55555511a8 *)
+broadcast %sqrdmulh 8 [%v2[7]]; smulj %LO %v19 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v19.8h, v19.8h, v2.h[6]                     #! PC = 0x55555511ac *)
+broadcast %mul 8 [%v2[6]]; mull %mdc %v19 %v19 %mul; cast %v19@int16[8] %v19;
+(* mls	v19.8h, v17.8h, v0.h[0]                     #! PC = 0x55555511b0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v19 %v19 %mls;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd4_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd4_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd4_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd4_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19
+    && true;
+
+(* sqrdmulh	v21.8h, v18.8h, v3.h[1]                #! PC = 0x55555511b4 *)
+broadcast %sqrdmulh 8 [%v3[1]]; smulj %LO %v18 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v21 %LO11 %LO01;
+(* mul	v17.8h, v18.8h, v3.h[0]                     #! PC = 0x55555511b8 *)
+broadcast %mul 8 [%v3[0]]; mull %mdc %v17 %v18 %mul; cast %v17@int16[8] %v17;
+(* mls	v17.8h, v21.8h, v0.h[0]                     #! PC = 0x55555511bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v21 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd6_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd6_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd6_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    = %v17 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd6_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v20
+    = %v17
+    && true;
+
+(* sqrdmulh	v18.8h, v16.8h, v3.h[3]                #! PC = 0x55555511c0 *)
+broadcast %sqrdmulh 8 [%v3[3]]; smulj %LO %v16 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v16.8h, v16.8h, v3.h[2]                     #! PC = 0x55555511c4 *)
+broadcast %mul 8 [%v3[2]]; mull %mdc %v16 %v16 %mul; cast %v16@int16[8] %v16;
+(* mls	v16.8h, v18.8h, v0.h[0]                     #! PC = 0x55555511c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd7_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd7_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd7_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd7_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16
+    && true;
+
+(* sqrdmulh	v18.8h, v7.8h, v3.h[5]                 #! PC = 0x55555511cc *)
+broadcast %sqrdmulh 8 [%v3[5]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v7.8h, v7.8h, v3.h[4]                       #! PC = 0x55555511d0 *)
+broadcast %mul 8 [%v3[4]]; mull %mdc %v7 %v7 %mul; cast %v7@int16[8] %v7;
+(* mls	v7.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511d4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd8_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd8_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd8_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1, 1, 1, 1, 1, 1, 1, 1] * %hhd8_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7
+    && true;
+
+(* sqrdmulh	v18.8h, v6.8h, v3.h[7]                 #! PC = 0x55555511d8 *)
+broadcast %sqrdmulh 8 [%v3[7]]; smulj %LO %v6 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v3.8h, v6.8h, v3.h[6]                       #! PC = 0x55555511dc *)
+broadcast %mul 8 [%v3[6]]; mull %mdc %v3 %v6 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511e0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd9_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd9_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd9_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1, -1, -1, -1, -1, -1, -1, -1] * %hhd9_71
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3
+    && true;
+
+(* #b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! PC = 0x55555511e8 *)
+#b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! 0x55555511e8 = 0x55555511e8;
+(* neg	v23.8h, v23.8h                              #! PC = 0x55555511ec *)
+broadcast %neg 8 [0@sint16]; sub %v23 %neg %v23;
+(* #b	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>#! PC = 0x55555511f0 *)
+#b	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>#! 0x55555511f0 = 0x55555511f0;
+
+cut (* 135 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        %fd8_71 +
+        %fd9_71 +
+        %fd0_71 +
+        %fd1_71 +
+        %fd2_71 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd8_71 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd9_71 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd0_71 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd1_71 +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd2_71 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd8_71 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd9_71 +
+        %fd0_71 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd1_71 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_71 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd8_71 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd9_71 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd0_71 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd1_71 +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd2_71 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd8_71 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd9_71 +
+        %fd0_71 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd1_71 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_71 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd8_71 +
+        %fd9_71 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd0_71 +
+        %fd1_71 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd2_71 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd8_71 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd9_71 +
+        %fd0_71 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd1_71 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_71 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd8_71 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd9_71 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd0_71 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd1_71 +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd2_71 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd8_71 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd9_71 +
+        %fd0_71 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd1_71 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_71 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd8_71 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd9_71 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd0_71 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd1_71 +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd2_71 +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    true # TODO
+    prove with [precondition]
+  &&
+    %v24 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v5  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v20 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v1  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v19 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v23 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v17 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v16 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v7  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v3  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+
+    %v24 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v5  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v20 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v1  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v19 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v23 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v17 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v16 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v7  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v3  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16];
+
+
+#### store
+
+(* str	q24, [x0]                                   #! EA = L0x5555571378; PC = 0x5555551014 *)
+mov [L0x5555571378,L0x555557137a,L0x555557137c,L0x555557137e,L0x5555571380,L0x5555571382,L0x5555571384,L0x5555571386] %v24;
+(* str	q5, [x0, #288]                              #! EA = L0x5555571498; PC = 0x5555551018 *)
+mov [L0x5555571498,L0x555557149a,L0x555557149c,L0x555557149e,L0x55555714a0,L0x55555714a2,L0x55555714a4,L0x55555714a6] %v5;
+(* str	q20, [x0, #576]                             #! EA = L0x55555715b8; PC = 0x555555101c *)
+mov [L0x55555715b8,L0x55555715ba,L0x55555715bc,L0x55555715be,L0x55555715c0,L0x55555715c2,L0x55555715c4,L0x55555715c6] %v20;
+(* str	q1, [x0, #864]                              #! EA = L0x55555716d8; PC = 0x5555551020 *)
+mov [L0x55555716d8,L0x55555716da,L0x55555716dc,L0x55555716de,L0x55555716e0,L0x55555716e2,L0x55555716e4,L0x55555716e6] %v1;
+(* str	q19, [x0, #1152]                            #! EA = L0x55555717f8; PC = 0x5555551024 *)
+mov [L0x55555717f8,L0x55555717fa,L0x55555717fc,L0x55555717fe,L0x5555571800,L0x5555571802,L0x5555571804,L0x5555571806] %v19;
+(* str	q23, [x0, #1440]                            #! EA = L0x5555571918; PC = 0x5555551028 *)
+mov [L0x5555571918,L0x555557191a,L0x555557191c,L0x555557191e,L0x5555571920,L0x5555571922,L0x5555571924,L0x5555571926] %v23;
+(* str	q17, [x0, #1728]                            #! EA = L0x5555571a38; PC = 0x555555102c *)
+mov [L0x5555571a38,L0x5555571a3a,L0x5555571a3c,L0x5555571a3e,L0x5555571a40,L0x5555571a42,L0x5555571a44,L0x5555571a46] %v17;
+(* str	q16, [x0, #2016]                            #! EA = L0x5555571b58; PC = 0x5555551030 *)
+mov [L0x5555571b58,L0x5555571b5a,L0x5555571b5c,L0x5555571b5e,L0x5555571b60,L0x5555571b62,L0x5555571b64,L0x5555571b66] %v16;
+(* str	q7, [x0, #2304]                             #! EA = L0x5555571c78; PC = 0x5555551034 *)
+mov [L0x5555571c78,L0x5555571c7a,L0x5555571c7c,L0x5555571c7e,L0x5555571c80,L0x5555571c82,L0x5555571c84,L0x5555571c86] %v7;
+(* str	q3, [x0, #2592]                             #! EA = L0x5555571d98; PC = 0x5555551038 *)
+mov [L0x5555571d98,L0x5555571d9a,L0x5555571d9c,L0x5555571d9e,L0x5555571da0,L0x5555571da2,L0x5555571da4,L0x5555571da6] %v3;
+(* #b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! PC = 0x5555551058 *)
+#b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! 0x5555551058 = 0x5555551058;
+
+cut (* 136 *)
+    [L0x5555571378, L0x555557137a, L0x555557137c, L0x555557137e, L0x5555571380, L0x5555571382, L0x5555571384, L0x5555571386] = %v24 /\
+    [L0x5555571498, L0x555557149a, L0x555557149c, L0x555557149e, L0x55555714a0, L0x55555714a2, L0x55555714a4, L0x55555714a6] = %v5 /\
+    [L0x55555715b8, L0x55555715ba, L0x55555715bc, L0x55555715be, L0x55555715c0, L0x55555715c2, L0x55555715c4, L0x55555715c6] = %v20 /\
+    [L0x55555716d8, L0x55555716da, L0x55555716dc, L0x55555716de, L0x55555716e0, L0x55555716e2, L0x55555716e4, L0x55555716e6] = %v1 /\
+    [L0x55555717f8, L0x55555717fa, L0x55555717fc, L0x55555717fe, L0x5555571800, L0x5555571802, L0x5555571804, L0x5555571806] = %v19 /\
+    [L0x5555571918, L0x555557191a, L0x555557191c, L0x555557191e, L0x5555571920, L0x5555571922, L0x5555571924, L0x5555571926] = %v23 /\
+    [L0x5555571a38, L0x5555571a3a, L0x5555571a3c, L0x5555571a3e, L0x5555571a40, L0x5555571a42, L0x5555571a44, L0x5555571a46] = %v17 /\
+    [L0x5555571b58, L0x5555571b5a, L0x5555571b5c, L0x5555571b5e, L0x5555571b60, L0x5555571b62, L0x5555571b64, L0x5555571b66] = %v16 /\
+    [L0x5555571c78, L0x5555571c7a, L0x5555571c7c, L0x5555571c7e, L0x5555571c80, L0x5555571c82, L0x5555571c84, L0x5555571c86] = %v7 /\
+    [L0x5555571d98, L0x5555571d9a, L0x5555571d9c, L0x5555571d9e, L0x5555571da0, L0x5555571da2, L0x5555571da4, L0x5555571da6] = %v3
+  &&
+    [L0x5555571378, L0x555557137a, L0x555557137c, L0x555557137e, L0x5555571380, L0x5555571382, L0x5555571384, L0x5555571386] = %v24 /\
+    [L0x5555571498, L0x555557149a, L0x555557149c, L0x555557149e, L0x55555714a0, L0x55555714a2, L0x55555714a4, L0x55555714a6] = %v5 /\
+    [L0x55555715b8, L0x55555715ba, L0x55555715bc, L0x55555715be, L0x55555715c0, L0x55555715c2, L0x55555715c4, L0x55555715c6] = %v20 /\
+    [L0x55555716d8, L0x55555716da, L0x55555716dc, L0x55555716de, L0x55555716e0, L0x55555716e2, L0x55555716e4, L0x55555716e6] = %v1 /\
+    [L0x55555717f8, L0x55555717fa, L0x55555717fc, L0x55555717fe, L0x5555571800, L0x5555571802, L0x5555571804, L0x5555571806] = %v19 /\
+    [L0x5555571918, L0x555557191a, L0x555557191c, L0x555557191e, L0x5555571920, L0x5555571922, L0x5555571924, L0x5555571926] = %v23 /\
+    [L0x5555571a38, L0x5555571a3a, L0x5555571a3c, L0x5555571a3e, L0x5555571a40, L0x5555571a42, L0x5555571a44, L0x5555571a46] = %v17 /\
+    [L0x5555571b58, L0x5555571b5a, L0x5555571b5c, L0x5555571b5e, L0x5555571b60, L0x5555571b62, L0x5555571b64, L0x5555571b66] = %v16 /\
+    [L0x5555571c78, L0x5555571c7a, L0x5555571c7c, L0x5555571c7e, L0x5555571c80, L0x5555571c82, L0x5555571c84, L0x5555571c86] = %v7 /\
+    [L0x5555571d98, L0x5555571d9a, L0x5555571d9c, L0x5555571d9e, L0x5555571da0, L0x5555571da2, L0x5555571da4, L0x5555571da6] = %v3;
+
+### j_iter epilogue
+
+(* #b.eq	0x555555131c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1712>  // b.none#! PC = 0x555555121c *)
+#b.eq	0x555555131c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1712>  // b.none#! 0x555555121c = 0x555555121c;
+
+
+## j_iter
+
+
+### j_iter prologue
+
+(* #b.le	0x5555550ce4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+120>#! PC = 0x5555551224 *)
+#b.le	0x5555550ce4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+120>#! 0x5555551224 = 0x5555551224;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x55555705f0; Value = 0x0000000000000000; PC = 0x5555551248 *)
+mov %v2 [L0x55555705f0,L0x55555705f2,L0x55555705f4,L0x55555705f6,L0x55555705f8,L0x55555705fa,L0x55555705fc,L0x55555705fe];
+mov %v3 [L0x5555570600,L0x5555570602,L0x5555570604,L0x5555570606,L0x5555570608,L0x555557060a,L0x555557060c,L0x555557060e];
+(* st1	{v2.8h, v3.8h}, [x17]                       #! EA = L0x7ffffff050; PC = 0x555555124c *)
+mov [L0x7ffffff050,L0x7ffffff052,L0x7ffffff054,L0x7ffffff056,L0x7ffffff058,L0x7ffffff05a,L0x7ffffff05c,L0x7ffffff05e] %v2;
+mov [L0x7ffffff060,L0x7ffffff062,L0x7ffffff064,L0x7ffffff066,L0x7ffffff068,L0x7ffffff06a,L0x7ffffff06c,L0x7ffffff06e] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x55555704d0; Value = 0x0000000000000000; PC = 0x5555551270 *)
+mov %v2 [L0x55555704d0,L0x55555704d2,L0x55555704d4,L0x55555704d6,L0x55555704d8,L0x55555704da,L0x55555704dc,L0x55555704de];
+mov %v3 [L0x55555704e0,L0x55555704e2,L0x55555704e4,L0x55555704e6,L0x55555704e8,L0x55555704ea,L0x55555704ec,L0x55555704ee];
+(* st1	{v2.8h, v3.8h}, [x16]                       #! EA = L0x7ffffff070; PC = 0x5555551274 *)
+mov [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e] %v2;
+mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x55555703b0; Value = 0x0000000000000000; PC = 0x5555551298 *)
+mov %v2 [L0x55555703b0,L0x55555703b2,L0x55555703b4,L0x55555703b6,L0x55555703b8,L0x55555703ba,L0x55555703bc,L0x55555703be];
+mov %v3 [L0x55555703c0,L0x55555703c2,L0x55555703c4,L0x55555703c6,L0x55555703c8,L0x55555703ca,L0x55555703cc,L0x55555703ce];
+(* st1	{v2.8h, v3.8h}, [x15]                       #! EA = L0x7ffffff090; PC = 0x555555129c *)
+mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v2;
+mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570290; Value = 0x0000000000000000; PC = 0x55555512c0 *)
+mov %v2 [L0x5555570290,L0x5555570292,L0x5555570294,L0x5555570296,L0x5555570298,L0x555557029a,L0x555557029c,L0x555557029e];
+mov %v3 [L0x55555702a0,L0x55555702a2,L0x55555702a4,L0x55555702a6,L0x55555702a8,L0x55555702aa,L0x55555702ac,L0x55555702ae];
+(* st1	{v2.8h, v3.8h}, [x14]                       #! EA = L0x7ffffff0b0; PC = 0x55555512c4 *)
+mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v2;
+mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v3;
+(* ld1	{v2.8h, v3.8h}, [x0]                        #! EA = L0x5555570170; Value = 0x0000000000000000; PC = 0x55555512e8 *)
+mov %v2 [L0x5555570170,L0x5555570172,L0x5555570174,L0x5555570176,L0x5555570178,L0x555557017a,L0x555557017c,L0x555557017e];
+mov %v3 [L0x5555570180,L0x5555570182,L0x5555570184,L0x5555570186,L0x5555570188,L0x555557018a,L0x555557018c,L0x555557018e];
+(* st1	{v2.8h, v3.8h}, [x13]                       #! EA = L0x7ffffff0d0; PC = 0x55555512ec *)
+mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v2;
+mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v3;
+(* #b	0x555555105c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1008>#! PC = 0x5555551318 *)
+#b	0x555555105c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1008>#! 0x5555551318 = 0x5555551318;
+
+ghost %fd0_8@sint16[16], %fd1_8@sint16[16], %fd2_8@sint16[16], %fd8_8@sint16[16], %fd9_8@sint16[16] :
+    %fd0_8 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_8 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_8 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_8 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_8 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e]
+  &&
+    %fd0_8 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_8 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_8 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_8 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_8 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e];
+
+cut (* 137 *)
+    %fd0_8 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_8 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_8 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_8 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_8 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e] /\
+
+    %fd0_8 = [poly416, poly417, poly418, poly419, poly420, poly421, poly422, poly423, poly424, poly425, poly426, poly427, poly428, poly429, poly430, poly431] /\
+    %fd1_8 = [poly272, poly273, poly274, poly275, poly276, poly277, poly278, poly279, poly280, poly281, poly282, poly283, poly284, poly285, poly286, poly287] /\
+    %fd2_8 = [poly128, poly129, poly130, poly131, poly132, poly133, poly134, poly135, poly136, poly137, poly138, poly139, poly140, poly141, poly142, poly143] /\
+    %fd8_8 = [poly704, poly705, poly706, poly707, poly708, poly709, poly710, poly711, poly712, poly713, poly714, poly715, poly716, poly717, poly718, poly719] /\
+    %fd9_8 = [poly560, poly561, poly562, poly563, poly564, poly565, poly566, poly567, poly568, poly569, poly570, poly571, poly572, poly573, poly574, poly575]
+
+    prove with [cuts[0]]
+  &&
+    %fd0_8 = [L0x7ffffff090, L0x7ffffff092, L0x7ffffff094, L0x7ffffff096, L0x7ffffff098, L0x7ffffff09a, L0x7ffffff09c, L0x7ffffff09e, L0x7ffffff0a0, L0x7ffffff0a2, L0x7ffffff0a4, L0x7ffffff0a6, L0x7ffffff0a8, L0x7ffffff0aa, L0x7ffffff0ac, L0x7ffffff0ae] /\
+    %fd1_8 = [L0x7ffffff0b0, L0x7ffffff0b2, L0x7ffffff0b4, L0x7ffffff0b6, L0x7ffffff0b8, L0x7ffffff0ba, L0x7ffffff0bc, L0x7ffffff0be, L0x7ffffff0c0, L0x7ffffff0c2, L0x7ffffff0c4, L0x7ffffff0c6, L0x7ffffff0c8, L0x7ffffff0ca, L0x7ffffff0cc, L0x7ffffff0ce] /\
+    %fd2_8 = [L0x7ffffff0d0, L0x7ffffff0d2, L0x7ffffff0d4, L0x7ffffff0d6, L0x7ffffff0d8, L0x7ffffff0da, L0x7ffffff0dc, L0x7ffffff0de, L0x7ffffff0e0, L0x7ffffff0e2, L0x7ffffff0e4, L0x7ffffff0e6, L0x7ffffff0e8, L0x7ffffff0ea, L0x7ffffff0ec, L0x7ffffff0ee] /\
+    %fd8_8 = [L0x7ffffff050, L0x7ffffff052, L0x7ffffff054, L0x7ffffff056, L0x7ffffff058, L0x7ffffff05a, L0x7ffffff05c, L0x7ffffff05e, L0x7ffffff060, L0x7ffffff062, L0x7ffffff064, L0x7ffffff066, L0x7ffffff068, L0x7ffffff06a, L0x7ffffff06c, L0x7ffffff06e] /\
+    %fd9_8 = [L0x7ffffff070, L0x7ffffff072, L0x7ffffff074, L0x7ffffff076, L0x7ffffff078, L0x7ffffff07a, L0x7ffffff07c, L0x7ffffff07e, L0x7ffffff080, L0x7ffffff082, L0x7ffffff084, L0x7ffffff086, L0x7ffffff088, L0x7ffffff08a, L0x7ffffff08c, L0x7ffffff08e] /\
+
+    %fd0_8 = [poly416, poly417, poly418, poly419, poly420, poly421, poly422, poly423, poly424, poly425, poly426, poly427, poly428, poly429, poly430, poly431] /\
+    %fd1_8 = [poly272, poly273, poly274, poly275, poly276, poly277, poly278, poly279, poly280, poly281, poly282, poly283, poly284, poly285, poly286, poly287] /\
+    %fd2_8 = [poly128, poly129, poly130, poly131, poly132, poly133, poly134, poly135, poly136, poly137, poly138, poly139, poly140, poly141, poly142, poly143] /\
+    %fd8_8 = [poly704, poly705, poly706, poly707, poly708, poly709, poly710, poly711, poly712, poly713, poly714, poly715, poly716, poly717, poly718, poly719] /\
+    %fd9_8 = [poly560, poly561, poly562, poly563, poly564, poly565, poly566, poly567, poly568, poly569, poly570, poly571, poly572, poly573, poly574, poly575]
+
+    prove with [cuts[0]];
+
+
+### k0_iter
+
+
+#### load
+
+(* ldr	q2, [x22]                                   #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555105c *)
+mov %v2 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
+(* ldr	q16, [x21]                                  #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x5555551060 *)
+mov %v16 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
+(* ldr	q3, [x20]                                   #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551064 *)
+mov %v3 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
+(* ldr	q6, [x19]                                   #! EA = L0x7ffffff050; Value = 0x0000000000000000; PC = 0x5555551068 *)
+mov %v6 [L0x7ffffff050,L0x7ffffff052,L0x7ffffff054,L0x7ffffff056,L0x7ffffff058,L0x7ffffff05a,L0x7ffffff05c,L0x7ffffff05e];
+(* ldr	q18, [x30]                                  #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555106c *)
+mov %v18 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
+
+ghost %fd0_80@sint16[8], %fd1_80@sint16[8], %fd2_80@sint16[8], %fd8_80@sint16[8], %fd9_80@sint16[8] :
+    %fd0_80 = %v2  /\
+    %fd1_80 = %v16 /\
+    %fd2_80 = %v3  /\
+    %fd8_80 = %v6  /\
+    %fd9_80 = %v18
+  &&
+    %fd0_80 = %v2  /\
+    %fd1_80 = %v16 /\
+    %fd2_80 = %v3  /\
+    %fd8_80 = %v6  /\
+    %fd9_80 = %v18;
+
+cut (* 138 *)
+    %fd0_80 = %v2  /\
+    %fd1_80 = %v16 /\
+    %fd2_80 = %v3  /\
+    %fd8_80 = %v6  /\
+    %fd9_80 = %v18 /\
+
+    %fd0_80 = %fd0_8[:8] /\
+    %fd1_80 = %fd1_8[:8] /\
+    %fd2_80 = %fd2_8[:8] /\
+    %fd8_80 = %fd8_8[:8] /\
+    %fd9_80 = %fd9_8[:8]
+
+    prove with [cuts[137]]
+  &&
+    %fd0_80 = %v2  /\
+    %fd1_80 = %v16 /\
+    %fd2_80 = %v3  /\
+    %fd8_80 = %v6  /\
+    %fd9_80 = %v18 /\
+
+    %fd0_80 = %fd0_8[:8] /\
+    %fd1_80 = %fd1_8[:8] /\
+    %fd2_80 = %fd2_8[:8] /\
+    %fd8_80 = %fd8_8[:8] /\
+    %fd9_80 = %fd9_8[:8]
+
+    prove with [cuts[137]];
+
+
+#### ntt10_4x_nof35467
+
+
+##### ntt5_4x_nof14
+
+ghost %fe0_80@sint16[8], %fe2_80@sint16[8], %fe3_80@sint16[8] :
+    %fe0_80 = %v2 /\
+    %fe2_80 = %v3 /\
+    %fe3_80 = %v6
+  &&
+    %fe0_80 = %v2 /\
+    %fe2_80 = %v3 /\
+    %fe3_80 = %v6;
+
+cut (* 139 *)
+    %fe0_80 = %v2 /\
+    %fe2_80 = %v3 /\
+    %fe3_80 = %v6 /\
+
+    %fe0_80 = %fd0_80 /\
+    %fe2_80 = %fd2_80 /\
+    %fe3_80 = %fd8_80
+
+    prove with [cuts[138]]
+  &&
+    %fe0_80 = %v2 /\
+    %fe2_80 = %v3 /\
+    %fe3_80 = %v6 /\
+
+    %fe0_80 = %fd0_80 /\
+    %fe2_80 = %fd2_80 /\
+    %fe3_80 = %fd8_80
+
+    prove with [cuts[138]];
+
+(* add	v5.8h, v3.8h, v6.8h                         #! PC = 0x5555551070 *)
+add %v5 %v3 %v6;
+(* add	v7.8h, v2.8h, v5.8h                         #! PC = 0x5555551074 *)
+add %v7 %v2 %v5;
+(* sqrdmulh	v1.8h, v7.8h, v0.h[1]                  #! PC = 0x5555551078 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v7.8h, v7.8h, #2                            #! PC = 0x555555107c *)
+shl %v7 %v7 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v7.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551080 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_80 + %fe2_80 + %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_80 + %fe2_80 + %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_80 + %fe2_80 + %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_80 + %fe2_80 + %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7
+    && true;
+
+(* shl	v2.8h, v2.8h, #2                            #! PC = 0x5555551084 *)
+shl %v2 %v2 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* sub	v2.8h, v2.8h, v5.8h                         #! PC = 0x5555551088 *)
+sub %v2 %v2 %v5;
+(* sshr	v1.8h, v2.8h, #12                          #! PC = 0x555555108c *)
+split %v1 %dc %v2 12;
+(* cmlt	v17.8h, v2.8h, #0                          #! PC = 0x5555551090 *)
+split %v17 %dc %v2 15;
+(* sub	v1.8h, v1.8h, v17.8h                        #! PC = 0x5555551094 *)
+sub %v1 %v1 %v17;
+(* mls	v2.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551098 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_80 - %fe2_80 - %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_80 - %fe2_80 - %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_80 - %fe2_80 - %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_80 - %fe2_80 - %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x555555109c *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x55555510a0 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x55555510a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_80 + %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_80 + %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_80 + %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_80 + %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* sub	v1.8h, v2.8h, v5.8h                         #! PC = 0x55555510a8 *)
+sub %v1 %v2 %v5;
+(* add	v2.8h, v2.8h, v5.8h                         #! PC = 0x55555510ac *)
+add %v2 %v2 %v5;
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x55555510b0 *)
+sub %v3 %v3 %v6;
+(* sqrdmulh	v6.8h, v3.8h, v4.h[6]                  #! PC = 0x55555510b4 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v5.8h, v3.8h, v4.h[2]                       #! PC = 0x55555510b8 *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v5 %v3 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_80 - %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_80 - %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_80 - %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_80 - %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5
+    && true;
+
+(* sqrdmulh	v6.8h, v3.8h, v4.h[7]                  #! PC = 0x55555510c0 *)
+broadcast %sqrdmulh 8 [%v4[7]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v3.8h, v3.8h, v4.h[3]                       #! PC = 0x55555510c4 *)
+broadcast %mul 8 [%v4[3]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_80 - %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_80 - %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_80 - %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_80 - %fe3_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3
+    && true;
+
+(* sub	v6.8h, v3.8h, v5.8h                         #! PC = 0x55555510cc *)
+sub %v6 %v3 %v5;
+(* sub	v19.8h, v1.8h, v3.8h                        #! PC = 0x55555510d0 *)
+sub %v19 %v1 %v3;
+(* sub	v22.8h, v2.8h, v6.8h                        #! PC = 0x55555510d4 *)
+sub %v22 %v2 %v6;
+(* add	v17.8h, v1.8h, v3.8h                        #! PC = 0x55555510d8 *)
+add %v17 %v1 %v3;
+(* add	v2.8h, v2.8h, v6.8h                         #! PC = 0x55555510dc *)
+add %v2 %v2 %v6;
+
+cut (* 140 *)
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_80 +
+        %fe2_80 +
+        %fe3_80
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_80 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe2_80 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe3_80
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v2  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_80 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe2_80 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe3_80
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v22 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_80 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe2_80 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe3_80
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_80 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe2_80 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe3_80
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %fe0_80 = %fd0_80 /\ %fe2_80 = %fd2_80 /\ %fe3_80 = %fd8_80
+
+  &&
+    %v7  <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v19 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v2  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v22 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v17 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v7  >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v19 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v2  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v22 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v17 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %fe0_80 = %fd0_80 /\ %fe2_80 = %fd2_80 /\ %fe3_80 = %fd8_80
+
+    prove with [precondition, cuts[0, 137, 138]];
+
+
+##### ntt5_4x_nof023
+
+ghost %ff1_80@sint16[8], %ff4_80@sint16[8] :
+    %ff1_80 = %v16 /\
+    %ff4_80 = %v18
+  &&
+    %ff1_80 = %v16 /\
+    %ff4_80 = %v18;
+
+cut (* 141 *)
+    %ff1_80 = %v16 /\
+    %ff4_80 = %v18 /\
+
+    %ff1_80 = %fd1_80 /\
+    %ff4_80 = %fd9_80
+
+    prove with [cuts[138]]
+  &&
+    %ff1_80 = %v16 /\
+    %ff4_80 = %v18 /\
+
+    %ff1_80 = %fd1_80 /\
+    %ff4_80 = %fd9_80
+
+    prove with [cuts[138]];
+
+(* add	v5.8h, v16.8h, v18.8h                       #! PC = 0x55555510e0 *)
+add %v5 %v16 %v18;
+(* sqrdmulh	v1.8h, v5.8h, v0.h[1]                  #! PC = 0x55555510e4 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v23.8h, v5.8h, #2                           #! PC = 0x55555510e8 *)
+shl %v23 %v5 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v23.8h, v1.8h, v0.h[0]                      #! PC = 0x55555510ec *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_80 + %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_80 + %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_80 + %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_80 + %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23
+    && true;
+
+(* neg	v3.8h, v5.8h                                #! PC = 0x55555510f0 *)
+broadcast %neg 8 [0@sint16]; sub %v3 %neg %v5;
+(* sshr	v1.8h, v3.8h, #12                          #! PC = 0x55555510f4 *)
+split %v1 %dc %v3 12;
+(* cmlt	v6.8h, v3.8h, #0                           #! PC = 0x55555510f8 *)
+split %v6 %dc %v3 15;
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x55555510fc *)
+sub %v1 %v1 %v6;
+(* mls	v3.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551100 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    -(%ff1_80 + %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    -(%ff1_80 + %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    -(%ff1_80 + %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    -(%ff1_80 + %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x5555551104 *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x5555551108 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x555555110c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_80 + %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_80 + %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_80 + %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_80 + %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* add	v21.8h, v3.8h, v5.8h                        #! PC = 0x5555551110 *)
+add %v21 %v3 %v5;
+(* sub	v3.8h, v3.8h, v5.8h                         #! PC = 0x5555551114 *)
+sub %v3 %v3 %v5;
+(* sub	v1.8h, v16.8h, v18.8h                       #! PC = 0x5555551118 *)
+sub %v1 %v16 %v18;
+(* sqrdmulh	v5.8h, v1.8h, v4.h[5]                  #! PC = 0x555555111c *)
+broadcast %sqrdmulh 8 [%v4[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v6.8h, v1.8h, v4.h[1]                       #! PC = 0x5555551120 *)
+broadcast %mul 8 [%v4[1]]; mull %mdc %v6 %v1 %mul; cast %v6@int16[8] %v6;
+(* mls	v6.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551124 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_80 - %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_80 - %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_80 - %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_80 - %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6
+    && true;
+
+(* sqrdmulh	v5.8h, v1.8h, v4.h[6]                  #! PC = 0x5555551128 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v4.h[2]                       #! PC = 0x555555112c *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551130 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_80 - %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_80 - %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_80 - %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_80 - %ff4_80)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1
+    && true;
+
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x5555551134 *)
+sub %v1 %v1 %v6;
+(* add	v16.8h, v21.8h, v6.8h                       #! PC = 0x5555551138 *)
+add %v16 %v21 %v6;
+(* add	v5.8h, v3.8h, v1.8h                         #! PC = 0x555555113c *)
+add %v5 %v3 %v1;
+(* sub	v21.8h, v21.8h, v6.8h                       #! PC = 0x5555551140 *)
+sub %v21 %v21 %v6;
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551144 *)
+sub %v3 %v3 %v1;
+
+cut (* 142 *)
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %ff1_80 +
+        %ff4_80
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %ff1_80 -
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %ff4_80
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %ff1_80 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff4_80
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff1_80 -
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %ff4_80
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v21 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %ff1_80 -
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %ff4_80
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %ff1_80 = %fd1_80 /\ %ff4_80 = %fd9_80
+  &&
+    %v23 <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v16 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v3  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v5  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v21 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v23 >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v16 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v3  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v5  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v21 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %ff1_80 = %fd1_80 /\ %ff4_80 = %fd9_80
+
+    prove with [precondition, cuts[0, 137, 138]];
+
+
+##### addsub
+
+(* add	v24.8h, v23.8h, v7.8h                       #! PC = 0x5555551148 *)
+add %v24 %v23 %v7;
+(* sub	v23.8h, v7.8h, v23.8h                       #! PC = 0x555555114c *)
+sub %v23 %v7 %v23;
+(* add	v20.8h, v16.8h, v19.8h                      #! PC = 0x5555551150 *)
+add %v20 %v16 %v19;
+(* sub	v16.8h, v19.8h, v16.8h                      #! PC = 0x5555551154 *)
+sub %v16 %v19 %v16;
+(* add	v19.8h, v3.8h, v2.8h                        #! PC = 0x5555551158 *)
+add %v19 %v3 %v2;
+(* sub	v6.8h, v2.8h, v3.8h                         #! PC = 0x555555115c *)
+sub %v6 %v2 %v3;
+(* add	v18.8h, v5.8h, v22.8h                       #! PC = 0x5555551160 *)
+add %v18 %v5 %v22;
+(* sub	v5.8h, v22.8h, v5.8h                        #! PC = 0x5555551164 *)
+sub %v5 %v22 %v5;
+(* add	v7.8h, v21.8h, v17.8h                       #! PC = 0x5555551168 *)
+add %v7 %v21 %v17;
+(* sub	v1.8h, v17.8h, v21.8h                       #! PC = 0x555555116c *)
+sub %v1 %v17 %v21;
+
+
+cut (* 143 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_80 +
+        %fd1_80 +
+        %fd2_80 +
+        %fd8_80 +
+        %fd9_80
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_80 -
+        %fd1_80 +
+        %fd2_80 +
+        %fd8_80 -
+        %fd9_80
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_80 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd1_80 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_80 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_80 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd9_80
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_80 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd1_80 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_80 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_80 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd9_80
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_80 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd1_80 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_80 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_80 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd9_80
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v6  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_80 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd1_80 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_80 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_80 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd9_80
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v18 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_80 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd1_80 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_80 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_80 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd9_80
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_80 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd1_80 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_80 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_80 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd9_80
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_80 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd1_80 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_80 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_80 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd9_80
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_80 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd1_80 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_80 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_80 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd9_80
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
+
+    prove with [cuts[140, 142]] # TODO
+  &&
+    %v24 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v23 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v20 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v16 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v19 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v6  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v18 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v5  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v7  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v1  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+
+    %v24 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v23 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v20 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v16 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v19 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v6  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v18 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v5  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v7  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v1  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16]
+
+    prove with [cuts[140, 142]]; # TODO
+
+
+#### twist_his
+
+ghost
+    %hhd0_80@sint16[8], %hhd1_80@sint16[8], %hhd2_80@sint16[8], %hhd3_80@sint16[8], %hhd4_80@sint16[8],
+    %hhd5_80@sint16[8], %hhd6_80@sint16[8], %hhd7_80@sint16[8], %hhd8_80@sint16[8], %hhd9_80@sint16[8] :
+
+    %hhd0_80 = %v24 /\ %hhd1_80 = %v5  /\ %hhd2_80 = %v20 /\ %hhd3_80 = %v1  /\ %hhd4_80 = %v19 /\
+    %hhd5_80 = %v23 /\ %hhd6_80 = %v18 /\ %hhd7_80 = %v16 /\ %hhd8_80 = %v7  /\ %hhd9_80 = %v6
+  &&
+    %hhd0_80 = %v24 /\ %hhd1_80 = %v5  /\ %hhd2_80 = %v20 /\ %hhd3_80 = %v1  /\ %hhd4_80 = %v19 /\
+    %hhd5_80 = %v23 /\ %hhd6_80 = %v18 /\ %hhd7_80 = %v16 /\ %hhd8_80 = %v7  /\ %hhd9_80 = %v6;
+
+(* ld1	{v2.8h, v3.8h}, [x24]                       #! EA = L0x5555552af0; Value = 0xcd66f8e92ce3064a; PC = 0x5555551170 *)
+mov %v2 [L0x5555552af0,L0x5555552af2,L0x5555552af4,L0x5555552af6,L0x5555552af8,L0x5555552afa,L0x5555552afc,L0x5555552afe];
+mov %v3 [L0x5555552b00,L0x5555552b02,L0x5555552b04,L0x5555552b06,L0x5555552b08,L0x5555552b0a,L0x5555552b0c,L0x5555552b0e];
+(* sqrdmulh	v17.8h, v24.8h, v0.h[2]                #! PC = 0x5555551174 *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v24 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v24.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551178 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v24 %v24 %mls;
+
+assert
+    %hhd0_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd0_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd0_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd0_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24
+    && true;
+
+(* sqrdmulh	v17.8h, v23.8h, v0.h[2]                #! PC = 0x555555117c *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v23 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v23.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551180 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    %hhd5_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd5_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd5_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd5_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23
+    && true;
+
+(* sqrdmulh	v17.8h, v5.8h, v2.h[1]                 #! PC = 0x5555551184 *)
+broadcast %sqrdmulh 8 [%v2[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v2.h[0]                       #! PC = 0x5555551188 *)
+broadcast %mul 8 [%v2[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v17.8h, v0.h[0]                      #! PC = 0x555555118c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd1_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd1_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd1_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd1_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5
+    && true;
+
+(* sqrdmulh	v17.8h, v20.8h, v2.h[3]                #! PC = 0x5555551190 *)
+broadcast %sqrdmulh 8 [%v2[3]]; smulj %LO %v20 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v20.8h, v20.8h, v2.h[2]                     #! PC = 0x5555551194 *)
+broadcast %mul 8 [%v2[2]]; mull %mdc %v20 %v20 %mul; cast %v20@int16[8] %v20;
+(* mls	v20.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551198 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v20 %v20 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd2_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd2_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd2_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd2_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20
+    && true;
+
+(* sqrdmulh	v17.8h, v1.8h, v2.h[5]                 #! PC = 0x555555119c *)
+broadcast %sqrdmulh 8 [%v2[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v2.h[4]                       #! PC = 0x55555511a0 *)
+broadcast %mul 8 [%v2[4]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v17.8h, v0.h[0]                      #! PC = 0x55555511a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd3_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd3_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd3_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd3_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1
+    && true;
+
+(* sqrdmulh	v17.8h, v19.8h, v2.h[7]                #! PC = 0x55555511a8 *)
+broadcast %sqrdmulh 8 [%v2[7]]; smulj %LO %v19 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v19.8h, v19.8h, v2.h[6]                     #! PC = 0x55555511ac *)
+broadcast %mul 8 [%v2[6]]; mull %mdc %v19 %v19 %mul; cast %v19@int16[8] %v19;
+(* mls	v19.8h, v17.8h, v0.h[0]                     #! PC = 0x55555511b0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v19 %v19 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd4_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd4_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd4_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd4_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19
+    && true;
+
+(* sqrdmulh	v21.8h, v18.8h, v3.h[1]                #! PC = 0x55555511b4 *)
+broadcast %sqrdmulh 8 [%v3[1]]; smulj %LO %v18 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v21 %LO11 %LO01;
+(* mul	v17.8h, v18.8h, v3.h[0]                     #! PC = 0x55555511b8 *)
+broadcast %mul 8 [%v3[0]]; mull %mdc %v17 %v18 %mul; cast %v17@int16[8] %v17;
+(* mls	v17.8h, v21.8h, v0.h[0]                     #! PC = 0x55555511bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v21 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd6_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd6_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd6_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    = %v17 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd6_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v20
+    = %v17
+    && true;
+
+(* sqrdmulh	v18.8h, v16.8h, v3.h[3]                #! PC = 0x55555511c0 *)
+broadcast %sqrdmulh 8 [%v3[3]]; smulj %LO %v16 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v16.8h, v16.8h, v3.h[2]                     #! PC = 0x55555511c4 *)
+broadcast %mul 8 [%v3[2]]; mull %mdc %v16 %v16 %mul; cast %v16@int16[8] %v16;
+(* mls	v16.8h, v18.8h, v0.h[0]                     #! PC = 0x55555511c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd7_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd7_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd7_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd7_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16
+    && true;
+
+(* sqrdmulh	v18.8h, v7.8h, v3.h[5]                 #! PC = 0x55555511cc *)
+broadcast %sqrdmulh 8 [%v3[5]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v7.8h, v7.8h, v3.h[4]                       #! PC = 0x55555511d0 *)
+broadcast %mul 8 [%v3[4]]; mull %mdc %v7 %v7 %mul; cast %v7@int16[8] %v7;
+(* mls	v7.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511d4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd8_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd8_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd8_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd8_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7
+    && true;
+
+(* sqrdmulh	v18.8h, v6.8h, v3.h[7]                 #! PC = 0x55555511d8 *)
+broadcast %sqrdmulh 8 [%v3[7]]; smulj %LO %v6 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v3.8h, v6.8h, v3.h[6]                       #! PC = 0x55555511dc *)
+broadcast %mul 8 [%v3[6]]; mull %mdc %v3 %v6 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511e0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd9_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd9_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd9_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd9_80
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3
+    && true;
+
+(* #b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! PC = 0x55555511e8 *)
+#b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! 0x55555511e8 = 0x55555511e8;
+
+cut (* 144 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        %fd8_80 +
+        %fd9_80 +
+        %fd0_80 +
+        %fd1_80 +
+        %fd2_80 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd8_80 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_80 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_80 +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd1_80 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_80 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd8_80 +
+        %fd9_80 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_80 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd1_80 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_80 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd8_80 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_80 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_80 +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd1_80 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_80 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd8_80 +
+        %fd9_80 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_80 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd1_80 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_80 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        %fd8_80 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_80 +
+        %fd0_80 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_80 +
+        %fd2_80 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd8_80 +
+        %fd9_80 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_80 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd1_80 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_80 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd8_80 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_80 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_80 +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd1_80 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_80 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd8_80 +
+        %fd9_80 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_80 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd1_80 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_80 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd8_80 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_80 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_80 +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd1_80 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_80 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    true # TODO
+    prove with [precondition]
+  &&
+    %v24 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v5  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v20 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v1  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v19 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v23 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v17 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v16 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v7  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v3  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+
+    %v24 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v5  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v20 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v1  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v19 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v23 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v17 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v16 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v7  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v3  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16];
+
+
+#### store
+
+(* str	q24, [x0]                                   #! EA = L0x55555712f8; PC = 0x5555551014 *)
+mov [L0x55555712f8,L0x55555712fa,L0x55555712fc,L0x55555712fe,L0x5555571300,L0x5555571302,L0x5555571304,L0x5555571306] %v24;
+(* str	q5, [x0, #288]                              #! EA = L0x5555571418; PC = 0x5555551018 *)
+mov [L0x5555571418,L0x555557141a,L0x555557141c,L0x555557141e,L0x5555571420,L0x5555571422,L0x5555571424,L0x5555571426] %v5;
+(* str	q20, [x0, #576]                             #! EA = L0x5555571538; PC = 0x555555101c *)
+mov [L0x5555571538,L0x555557153a,L0x555557153c,L0x555557153e,L0x5555571540,L0x5555571542,L0x5555571544,L0x5555571546] %v20;
+(* str	q1, [x0, #864]                              #! EA = L0x5555571658; PC = 0x5555551020 *)
+mov [L0x5555571658,L0x555557165a,L0x555557165c,L0x555557165e,L0x5555571660,L0x5555571662,L0x5555571664,L0x5555571666] %v1;
+(* str	q19, [x0, #1152]                            #! EA = L0x5555571778; PC = 0x5555551024 *)
+mov [L0x5555571778,L0x555557177a,L0x555557177c,L0x555557177e,L0x5555571780,L0x5555571782,L0x5555571784,L0x5555571786] %v19;
+(* str	q23, [x0, #1440]                            #! EA = L0x5555571898; PC = 0x5555551028 *)
+mov [L0x5555571898,L0x555557189a,L0x555557189c,L0x555557189e,L0x55555718a0,L0x55555718a2,L0x55555718a4,L0x55555718a6] %v23;
+(* str	q17, [x0, #1728]                            #! EA = L0x55555719b8; PC = 0x555555102c *)
+mov [L0x55555719b8,L0x55555719ba,L0x55555719bc,L0x55555719be,L0x55555719c0,L0x55555719c2,L0x55555719c4,L0x55555719c6] %v17;
+(* str	q16, [x0, #2016]                            #! EA = L0x5555571ad8; PC = 0x5555551030 *)
+mov [L0x5555571ad8,L0x5555571ada,L0x5555571adc,L0x5555571ade,L0x5555571ae0,L0x5555571ae2,L0x5555571ae4,L0x5555571ae6] %v16;
+(* str	q7, [x0, #2304]                             #! EA = L0x5555571bf8; PC = 0x5555551034 *)
+mov [L0x5555571bf8,L0x5555571bfa,L0x5555571bfc,L0x5555571bfe,L0x5555571c00,L0x5555571c02,L0x5555571c04,L0x5555571c06] %v7;
+(* str	q3, [x0, #2592]                             #! EA = L0x5555571d18; PC = 0x5555551038 *)
+mov [L0x5555571d18,L0x5555571d1a,L0x5555571d1c,L0x5555571d1e,L0x5555571d20,L0x5555571d22,L0x5555571d24,L0x5555571d26] %v3;
+(* #b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! PC = 0x5555551058 *)
+#b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! 0x5555551058 = 0x5555551058;
+
+cut (* 145 *)
+    [L0x55555712f8, L0x55555712fa, L0x55555712fc, L0x55555712fe, L0x5555571300, L0x5555571302, L0x5555571304, L0x5555571306] = %v24 /\
+    [L0x5555571418, L0x555557141a, L0x555557141c, L0x555557141e, L0x5555571420, L0x5555571422, L0x5555571424, L0x5555571426] = %v5 /\
+    [L0x5555571538, L0x555557153a, L0x555557153c, L0x555557153e, L0x5555571540, L0x5555571542, L0x5555571544, L0x5555571546] = %v20 /\
+    [L0x5555571658, L0x555557165a, L0x555557165c, L0x555557165e, L0x5555571660, L0x5555571662, L0x5555571664, L0x5555571666] = %v1 /\
+    [L0x5555571778, L0x555557177a, L0x555557177c, L0x555557177e, L0x5555571780, L0x5555571782, L0x5555571784, L0x5555571786] = %v19 /\
+    [L0x5555571898, L0x555557189a, L0x555557189c, L0x555557189e, L0x55555718a0, L0x55555718a2, L0x55555718a4, L0x55555718a6] = %v23 /\
+    [L0x55555719b8, L0x55555719ba, L0x55555719bc, L0x55555719be, L0x55555719c0, L0x55555719c2, L0x55555719c4, L0x55555719c6] = %v17 /\
+    [L0x5555571ad8, L0x5555571ada, L0x5555571adc, L0x5555571ade, L0x5555571ae0, L0x5555571ae2, L0x5555571ae4, L0x5555571ae6] = %v16 /\
+    [L0x5555571bf8, L0x5555571bfa, L0x5555571bfc, L0x5555571bfe, L0x5555571c00, L0x5555571c02, L0x5555571c04, L0x5555571c06] = %v7 /\
+    [L0x5555571d18, L0x5555571d1a, L0x5555571d1c, L0x5555571d1e, L0x5555571d20, L0x5555571d22, L0x5555571d24, L0x5555571d26] = %v3
+  &&
+    [L0x55555712f8, L0x55555712fa, L0x55555712fc, L0x55555712fe, L0x5555571300, L0x5555571302, L0x5555571304, L0x5555571306] = %v24 /\
+    [L0x5555571418, L0x555557141a, L0x555557141c, L0x555557141e, L0x5555571420, L0x5555571422, L0x5555571424, L0x5555571426] = %v5 /\
+    [L0x5555571538, L0x555557153a, L0x555557153c, L0x555557153e, L0x5555571540, L0x5555571542, L0x5555571544, L0x5555571546] = %v20 /\
+    [L0x5555571658, L0x555557165a, L0x555557165c, L0x555557165e, L0x5555571660, L0x5555571662, L0x5555571664, L0x5555571666] = %v1 /\
+    [L0x5555571778, L0x555557177a, L0x555557177c, L0x555557177e, L0x5555571780, L0x5555571782, L0x5555571784, L0x5555571786] = %v19 /\
+    [L0x5555571898, L0x555557189a, L0x555557189c, L0x555557189e, L0x55555718a0, L0x55555718a2, L0x55555718a4, L0x55555718a6] = %v23 /\
+    [L0x55555719b8, L0x55555719ba, L0x55555719bc, L0x55555719be, L0x55555719c0, L0x55555719c2, L0x55555719c4, L0x55555719c6] = %v17 /\
+    [L0x5555571ad8, L0x5555571ada, L0x5555571adc, L0x5555571ade, L0x5555571ae0, L0x5555571ae2, L0x5555571ae4, L0x5555571ae6] = %v16 /\
+    [L0x5555571bf8, L0x5555571bfa, L0x5555571bfc, L0x5555571bfe, L0x5555571c00, L0x5555571c02, L0x5555571c04, L0x5555571c06] = %v7 /\
+    [L0x5555571d18, L0x5555571d1a, L0x5555571d1c, L0x5555571d1e, L0x5555571d20, L0x5555571d22, L0x5555571d24, L0x5555571d26] = %v3;
+
+### k0_iter
+
+
+#### load
+
+(* ldr	q2, [x22]                                   #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x555555105c *)
+mov %v2 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
+(* ldr	q16, [x21]                                  #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551060 *)
+mov %v16 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
+(* ldr	q3, [x20]                                   #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551064 *)
+mov %v3 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
+(* ldr	q6, [x19]                                   #! EA = L0x7ffffff060; Value = 0x0000000000000000; PC = 0x5555551068 *)
+mov %v6 [L0x7ffffff060,L0x7ffffff062,L0x7ffffff064,L0x7ffffff066,L0x7ffffff068,L0x7ffffff06a,L0x7ffffff06c,L0x7ffffff06e];
+(* ldr	q18, [x30]                                  #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x555555106c *)
+mov %v18 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
+
+ghost %fd0_81@sint16[8], %fd1_81@sint16[8], %fd2_81@sint16[8], %fd8_81@sint16[8], %fd9_81@sint16[8] :
+    %fd0_81 = %v2  /\
+    %fd1_81 = %v16 /\
+    %fd2_81 = %v3  /\
+    %fd8_81 = %v6  /\
+    %fd9_81 = %v18
+  &&
+    %fd0_81 = %v2  /\
+    %fd1_81 = %v16 /\
+    %fd2_81 = %v3  /\
+    %fd8_81 = %v6  /\
+    %fd9_81 = %v18;
+
+cut (* 146 *)
+    %fd0_81 = %v2  /\
+    %fd1_81 = %v16 /\
+    %fd2_81 = %v3  /\
+    %fd8_81 = %v6  /\
+    %fd9_81 = %v18 /\
+
+    %fd0_81 = %fd0_8[8:] /\
+    %fd1_81 = %fd1_8[8:] /\
+    %fd2_81 = %fd2_8[8:] /\
+    %fd8_81 = %fd8_8[8:] /\
+    %fd9_81 = %fd9_8[8:]
+
+    prove with [cuts[137]]
+  &&
+    %fd0_81 = %v2  /\
+    %fd1_81 = %v16 /\
+    %fd2_81 = %v3  /\
+    %fd8_81 = %v6  /\
+    %fd9_81 = %v18 /\
+
+    %fd0_81 = %fd0_8[8:] /\
+    %fd1_81 = %fd1_8[8:] /\
+    %fd2_81 = %fd2_8[8:] /\
+    %fd8_81 = %fd8_8[8:] /\
+    %fd9_81 = %fd9_8[8:]
+
+    prove with [cuts[137]];
+
+
+#### ntt10_4x_nof35467
+
+
+##### ntt5_4x_nof14
+
+ghost %fe0_81@sint16[8], %fe2_81@sint16[8], %fe3_81@sint16[8] :
+    %fe0_81 = %v2 /\
+    %fe2_81 = %v3 /\
+    %fe3_81 = %v6
+  &&
+    %fe0_81 = %v2 /\
+    %fe2_81 = %v3 /\
+    %fe3_81 = %v6;
+
+cut (* 147 *)
+    %fe0_81 = %v2 /\
+    %fe2_81 = %v3 /\
+    %fe3_81 = %v6 /\
+
+    %fe0_81 = %fd0_81 /\
+    %fe2_81 = %fd2_81 /\
+    %fe3_81 = %fd8_81
+
+    prove with [cuts[146]]
+  &&
+    %fe0_81 = %v2 /\
+    %fe2_81 = %v3 /\
+    %fe3_81 = %v6 /\
+
+    %fe0_81 = %fd0_81 /\
+    %fe2_81 = %fd2_81 /\
+    %fe3_81 = %fd8_81
+
+    prove with [cuts[146]];
+
+(* add	v5.8h, v3.8h, v6.8h                         #! PC = 0x5555551070 *)
+add %v5 %v3 %v6;
+(* add	v7.8h, v2.8h, v5.8h                         #! PC = 0x5555551074 *)
+add %v7 %v2 %v5;
+(* sqrdmulh	v1.8h, v7.8h, v0.h[1]                  #! PC = 0x5555551078 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v7.8h, v7.8h, #2                            #! PC = 0x555555107c *)
+shl %v7 %v7 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v7.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551080 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_81 + %fe2_81 + %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_81 + %fe2_81 + %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_81 + %fe2_81 + %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%fe0_81 + %fe2_81 + %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v7
+    && true;
+
+(* shl	v2.8h, v2.8h, #2                            #! PC = 0x5555551084 *)
+shl %v2 %v2 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* sub	v2.8h, v2.8h, v5.8h                         #! PC = 0x5555551088 *)
+sub %v2 %v2 %v5;
+(* sshr	v1.8h, v2.8h, #12                          #! PC = 0x555555108c *)
+split %v1 %dc %v2 12;
+(* cmlt	v17.8h, v2.8h, #0                          #! PC = 0x5555551090 *)
+split %v17 %dc %v2 15;
+(* sub	v1.8h, v1.8h, v17.8h                        #! PC = 0x5555551094 *)
+sub %v1 %v1 %v17;
+(* mls	v2.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551098 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_81 - %fe2_81 - %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_81 - %fe2_81 - %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_81 - %fe2_81 - %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    ([4, 4, 4, 4, 4, 4, 4, 4] * %fe0_81 - %fe2_81 - %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v2
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x555555109c *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x55555510a0 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x55555510a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_81 + %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_81 + %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_81 + %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fe2_81 + %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* sub	v1.8h, v2.8h, v5.8h                         #! PC = 0x55555510a8 *)
+sub %v1 %v2 %v5;
+(* add	v2.8h, v2.8h, v5.8h                         #! PC = 0x55555510ac *)
+add %v2 %v2 %v5;
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x55555510b0 *)
+sub %v3 %v3 %v6;
+(* sqrdmulh	v6.8h, v3.8h, v4.h[6]                  #! PC = 0x55555510b4 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v5.8h, v3.8h, v4.h[2]                       #! PC = 0x55555510b8 *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v5 %v3 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_81 - %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_81 - %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_81 - %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%fe2_81 - %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v5
+    && true;
+
+(* sqrdmulh	v6.8h, v3.8h, v4.h[7]                  #! PC = 0x55555510c0 *)
+broadcast %sqrdmulh 8 [%v4[7]]; smulj %LO %v3 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v6 %LO11 %LO01;
+(* mul	v3.8h, v3.8h, v4.h[3]                       #! PC = 0x55555510c4 *)
+broadcast %mul 8 [%v4[3]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v6.8h, v0.h[0]                       #! PC = 0x55555510c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v6 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_81 - %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_81 - %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_81 - %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fe2_81 - %fe3_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+    = %v3
+    && true;
+
+(* sub	v6.8h, v3.8h, v5.8h                         #! PC = 0x55555510cc *)
+sub %v6 %v3 %v5;
+(* sub	v19.8h, v1.8h, v3.8h                        #! PC = 0x55555510d0 *)
+sub %v19 %v1 %v3;
+(* sub	v22.8h, v2.8h, v6.8h                        #! PC = 0x55555510d4 *)
+sub %v22 %v2 %v6;
+(* add	v17.8h, v1.8h, v3.8h                        #! PC = 0x55555510d8 *)
+add %v17 %v1 %v3;
+(* add	v2.8h, v2.8h, v6.8h                         #! PC = 0x55555510dc *)
+add %v2 %v2 %v6;
+
+cut (* 148 *)
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_81 +
+        %fe2_81 +
+        %fe3_81
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_81 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe2_81 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe3_81
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v2  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_81 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe2_81 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe3_81
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v22 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_81 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fe2_81 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fe3_81
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fe0_81 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fe2_81 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fe3_81
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %fe0_81 = %fd0_81 /\ %fe2_81 = %fd2_81 /\ %fe3_81 = %fd8_81
+
+  &&
+    %v7  <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v19 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v2  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v22 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v17 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v7  >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v19 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v2  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v22 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v17 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %fe0_81 = %fd0_81 /\ %fe2_81 = %fd2_81 /\ %fe3_81 = %fd8_81
+
+    prove with [precondition, cuts[0, 137, 146]];
+
+
+##### ntt5_4x_nof023
+
+ghost %ff1_81@sint16[8], %ff4_81@sint16[8] :
+    %ff1_81 = %v16 /\
+    %ff4_81 = %v18
+  &&
+    %ff1_81 = %v16 /\
+    %ff4_81 = %v18;
+
+cut (* 149 *)
+    %ff1_81 = %v16 /\
+    %ff4_81 = %v18 /\
+
+    %ff1_81 = %fd1_81 /\
+    %ff4_81 = %fd9_81
+
+    prove with [cuts[146]]
+  &&
+    %ff1_81 = %v16 /\
+    %ff4_81 = %v18 /\
+
+    %ff1_81 = %fd1_81 /\
+    %ff4_81 = %fd9_81
+
+    prove with [cuts[146]];
+
+(* add	v5.8h, v16.8h, v18.8h                       #! PC = 0x55555510e0 *)
+add %v5 %v16 %v18;
+(* sqrdmulh	v1.8h, v5.8h, v0.h[1]                  #! PC = 0x55555510e4 *)
+broadcast %sqrdmulh 8 [%v0[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* shl	v23.8h, v5.8h, #2                           #! PC = 0x55555510e8 *)
+shl %v23 %v5 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
+(* mls	v23.8h, v1.8h, v0.h[0]                      #! PC = 0x55555510ec *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_81 + %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_81 + %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_81 + %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [4, 4, 4, 4, 4, 4, 4, 4] * (%ff1_81 + %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v23
+    && true;
+
+(* neg	v3.8h, v5.8h                                #! PC = 0x55555510f0 *)
+broadcast %neg 8 [0@sint16]; sub %v3 %neg %v5;
+(* sshr	v1.8h, v3.8h, #12                          #! PC = 0x55555510f4 *)
+split %v1 %dc %v3 12;
+(* cmlt	v6.8h, v3.8h, #0                           #! PC = 0x55555510f8 *)
+split %v6 %dc %v3 15;
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x55555510fc *)
+sub %v1 %v1 %v6;
+(* mls	v3.8h, v1.8h, v0.h[0]                       #! PC = 0x5555551100 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    -(%ff1_81 + %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    -(%ff1_81 + %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    -(%ff1_81 + %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    -(%ff1_81 + %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v3
+    && true;
+
+(* sqrdmulh	v1.8h, v5.8h, v4.h[4]                  #! PC = 0x5555551104 *)
+broadcast %sqrdmulh 8 [%v4[4]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v1 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v4.h[0]                       #! PC = 0x5555551108 *)
+broadcast %mul 8 [%v4[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v1.8h, v0.h[0]                       #! PC = 0x555555110c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v1 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_81 + %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_81 + %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_81 + %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%ff1_81 + %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+    = %v5
+    && true;
+
+(* add	v21.8h, v3.8h, v5.8h                        #! PC = 0x5555551110 *)
+add %v21 %v3 %v5;
+(* sub	v3.8h, v3.8h, v5.8h                         #! PC = 0x5555551114 *)
+sub %v3 %v3 %v5;
+(* sub	v1.8h, v16.8h, v18.8h                       #! PC = 0x5555551118 *)
+sub %v1 %v16 %v18;
+(* sqrdmulh	v5.8h, v1.8h, v4.h[5]                  #! PC = 0x555555111c *)
+broadcast %sqrdmulh 8 [%v4[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v6.8h, v1.8h, v4.h[1]                       #! PC = 0x5555551120 *)
+broadcast %mul 8 [%v4[1]]; mull %mdc %v6 %v1 %mul; cast %v6@int16[8] %v6;
+(* mls	v6.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551124 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_81 - %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_81 - %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_81 - %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [918, 918, 918, 918, 918, 918, 918, 918] * (%ff1_81 - %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v6
+    && true;
+
+(* sqrdmulh	v5.8h, v1.8h, v4.h[6]                  #! PC = 0x5555551128 *)
+broadcast %sqrdmulh 8 [%v4[6]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v5 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v4.h[2]                       #! PC = 0x555555112c *)
+broadcast %mul 8 [%v4[2]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v5.8h, v0.h[0]                       #! PC = 0x5555551130 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v5 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_81 - %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_81 - %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_81 - %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-818, -818, -818, -818, -818, -818, -818, -818] * (%ff1_81 - %ff4_81)
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+    = %v1
+    && true;
+
+(* sub	v1.8h, v1.8h, v6.8h                         #! PC = 0x5555551134 *)
+sub %v1 %v1 %v6;
+(* add	v16.8h, v21.8h, v6.8h                       #! PC = 0x5555551138 *)
+add %v16 %v21 %v6;
+(* add	v5.8h, v3.8h, v1.8h                         #! PC = 0x555555113c *)
+add %v5 %v3 %v1;
+(* sub	v21.8h, v21.8h, v6.8h                       #! PC = 0x5555551140 *)
+sub %v21 %v21 %v6;
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551144 *)
+sub %v3 %v3 %v1;
+
+cut (* 150 *)
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %ff1_81 +
+        %ff4_81
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %ff1_81 -
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %ff4_81
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %ff1_81 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff4_81
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %ff1_81 -
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %ff4_81
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v21 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %ff1_81 -
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %ff4_81
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %ff1_81 = %fd1_81 /\ %ff4_81 = %fd9_81
+  &&
+    %v23 <=s [ 5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16,  5000@16] /\
+    %v16 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v3  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v5  <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+    %v21 <=s [15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16, 15000@16] /\
+
+    %v23 >=s [ (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16,  (-5000)@16] /\
+    %v16 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v3  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v5  >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+    %v21 >=s [(-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16, (-15000)@16] /\
+
+    %ff1_81 = %fd1_81 /\ %ff4_81 = %fd9_81
+
+    prove with [precondition, cuts[0, 137, 146]];
+
+
+##### addsub
+
+(* add	v24.8h, v23.8h, v7.8h                       #! PC = 0x5555551148 *)
+add %v24 %v23 %v7;
+(* sub	v23.8h, v7.8h, v23.8h                       #! PC = 0x555555114c *)
+sub %v23 %v7 %v23;
+(* add	v20.8h, v16.8h, v19.8h                      #! PC = 0x5555551150 *)
+add %v20 %v16 %v19;
+(* sub	v16.8h, v19.8h, v16.8h                      #! PC = 0x5555551154 *)
+sub %v16 %v19 %v16;
+(* add	v19.8h, v3.8h, v2.8h                        #! PC = 0x5555551158 *)
+add %v19 %v3 %v2;
+(* sub	v6.8h, v2.8h, v3.8h                         #! PC = 0x555555115c *)
+sub %v6 %v2 %v3;
+(* add	v18.8h, v5.8h, v22.8h                       #! PC = 0x5555551160 *)
+add %v18 %v5 %v22;
+(* sub	v5.8h, v22.8h, v5.8h                        #! PC = 0x5555551164 *)
+sub %v5 %v22 %v5;
+(* add	v7.8h, v21.8h, v17.8h                       #! PC = 0x5555551168 *)
+add %v7 %v21 %v17;
+(* sub	v1.8h, v17.8h, v21.8h                       #! PC = 0x555555116c *)
+sub %v1 %v17 %v21;
+
+
+cut (* 151 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_81 +
+        %fd1_81 +
+        %fd2_81 +
+        %fd8_81 +
+        %fd9_81
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_81 -
+        %fd1_81 +
+        %fd2_81 +
+        %fd8_81 -
+        %fd9_81
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_81 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd1_81 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_81 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_81 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd9_81
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_81 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd1_81 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd2_81 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd8_81 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd9_81
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_81 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd1_81 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_81 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_81 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd9_81
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v6  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_81 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd1_81 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd2_81 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd8_81 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd9_81
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v18 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_81 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd1_81 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_81 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_81 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd9_81
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_81 +
+        [-1610, -1610, -1610, -1610, -1610, -1610, -1610, -1610] * %fd1_81 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd2_81 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd8_81 +
+        [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fd9_81
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_81 +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fd1_81 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_81 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_81 +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fd9_81
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fd0_81 +
+        [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fd1_81 +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fd2_81 +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fd8_81 +
+        [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fd9_81
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
+
+    prove with [cuts[148, 150]] # TODO
+  &&
+    %v24 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v23 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v20 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v16 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v19 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v6  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v18 <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v5  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v7  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+    %v1  <=s [30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16, 30000@16] /\
+
+    %v24 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v23 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v20 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v16 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v19 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v6  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v18 >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v5  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v7  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16] /\
+    %v1  >=s [(-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16, (-30000)@16]
+
+    prove with [cuts[148, 150]]; # TODO
+
+
+#### twist_his
+
+ghost
+    %hhd0_81@sint16[8], %hhd1_81@sint16[8], %hhd2_81@sint16[8], %hhd3_81@sint16[8], %hhd4_81@sint16[8],
+    %hhd5_81@sint16[8], %hhd6_81@sint16[8], %hhd7_81@sint16[8], %hhd8_81@sint16[8], %hhd9_81@sint16[8] :
+
+    %hhd0_81 = %v24 /\ %hhd1_81 = %v5  /\ %hhd2_81 = %v20 /\ %hhd3_81 = %v1  /\ %hhd4_81 = %v19 /\
+    %hhd5_81 = %v23 /\ %hhd6_81 = %v18 /\ %hhd7_81 = %v16 /\ %hhd8_81 = %v7  /\ %hhd9_81 = %v6
+  &&
+    %hhd0_81 = %v24 /\ %hhd1_81 = %v5  /\ %hhd2_81 = %v20 /\ %hhd3_81 = %v1  /\ %hhd4_81 = %v19 /\
+    %hhd5_81 = %v23 /\ %hhd6_81 = %v18 /\ %hhd7_81 = %v16 /\ %hhd8_81 = %v7  /\ %hhd9_81 = %v6;
+
+(* ld1	{v2.8h, v3.8h}, [x24]                       #! EA = L0x5555552af0; Value = 0xcd66f8e92ce3064a; PC = 0x5555551170 *)
+mov %v2 [L0x5555552af0,L0x5555552af2,L0x5555552af4,L0x5555552af6,L0x5555552af8,L0x5555552afa,L0x5555552afc,L0x5555552afe];
+mov %v3 [L0x5555552b00,L0x5555552b02,L0x5555552b04,L0x5555552b06,L0x5555552b08,L0x5555552b0a,L0x5555552b0c,L0x5555552b0e];
+(* sqrdmulh	v17.8h, v24.8h, v0.h[2]                #! PC = 0x5555551174 *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v24 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v24.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551178 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v24 %v24 %mls;
+
+assert
+    %hhd0_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd0_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd0_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd0_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v24
+    && true;
+
+(* sqrdmulh	v17.8h, v23.8h, v0.h[2]                #! PC = 0x555555117c *)
+broadcast %sqrdmulh 8 [%v0[2]]; smulj %LO %v23 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mls	v23.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551180 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v23 %v23 %mls;
+
+assert
+    %hhd5_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    %hhd5_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    %hhd5_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %hhd5_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v23
+    && true;
+
+(* sqrdmulh	v17.8h, v5.8h, v2.h[1]                 #! PC = 0x5555551184 *)
+broadcast %sqrdmulh 8 [%v2[1]]; smulj %LO %v5 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v5.8h, v5.8h, v2.h[0]                       #! PC = 0x5555551188 *)
+broadcast %mul 8 [%v2[0]]; mull %mdc %v5 %v5 %mul; cast %v5@int16[8] %v5;
+(* mls	v5.8h, v17.8h, v0.h[0]                      #! PC = 0x555555118c *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd1_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd1_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd1_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd1_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v5
+    && true;
+
+(* sqrdmulh	v17.8h, v20.8h, v2.h[3]                #! PC = 0x5555551190 *)
+broadcast %sqrdmulh 8 [%v2[3]]; smulj %LO %v20 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v20.8h, v20.8h, v2.h[2]                     #! PC = 0x5555551194 *)
+broadcast %mul 8 [%v2[2]]; mull %mdc %v20 %v20 %mul; cast %v20@int16[8] %v20;
+(* mls	v20.8h, v17.8h, v0.h[0]                     #! PC = 0x5555551198 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v20 %v20 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd2_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd2_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd2_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd2_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v20
+    && true;
+
+(* sqrdmulh	v17.8h, v1.8h, v2.h[5]                 #! PC = 0x555555119c *)
+broadcast %sqrdmulh 8 [%v2[5]]; smulj %LO %v1 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v1.8h, v1.8h, v2.h[4]                       #! PC = 0x55555511a0 *)
+broadcast %mul 8 [%v2[4]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
+(* mls	v1.8h, v17.8h, v0.h[0]                      #! PC = 0x55555511a4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd3_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd3_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd3_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd3_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v1
+    && true;
+
+(* sqrdmulh	v17.8h, v19.8h, v2.h[7]                #! PC = 0x55555511a8 *)
+broadcast %sqrdmulh 8 [%v2[7]]; smulj %LO %v19 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v17 %LO11 %LO01;
+(* mul	v19.8h, v19.8h, v2.h[6]                     #! PC = 0x55555511ac *)
+broadcast %mul 8 [%v2[6]]; mull %mdc %v19 %v19 %mul; cast %v19@int16[8] %v19;
+(* mls	v19.8h, v17.8h, v0.h[0]                     #! PC = 0x55555511b0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v17 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v19 %v19 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd4_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd4_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd4_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd4_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v17
+    = %v19
+    && true;
+
+(* sqrdmulh	v21.8h, v18.8h, v3.h[1]                #! PC = 0x55555511b4 *)
+broadcast %sqrdmulh 8 [%v3[1]]; smulj %LO %v18 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v21 %LO11 %LO01;
+(* mul	v17.8h, v18.8h, v3.h[0]                     #! PC = 0x55555511b8 *)
+broadcast %mul 8 [%v3[0]]; mull %mdc %v17 %v18 %mul; cast %v17@int16[8] %v17;
+(* mls	v17.8h, v21.8h, v0.h[0]                     #! PC = 0x55555511bc *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v21 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd6_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd6_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd6_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v21
+    = %v17 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [1610, 1610, 1610, 1610, 1610, 1610, 1610, 1610] * %hhd6_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v20
+    = %v17
+    && true;
+
+(* sqrdmulh	v18.8h, v16.8h, v3.h[3]                #! PC = 0x55555511c0 *)
+broadcast %sqrdmulh 8 [%v3[3]]; smulj %LO %v16 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v16.8h, v16.8h, v3.h[2]                     #! PC = 0x55555511c4 *)
+broadcast %mul 8 [%v3[2]]; mull %mdc %v16 %v16 %mul; cast %v16@int16[8] %v16;
+(* mls	v16.8h, v18.8h, v0.h[0]                     #! PC = 0x55555511c8 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd7_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd7_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd7_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %hhd7_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v16
+    && true;
+
+(* sqrdmulh	v18.8h, v7.8h, v3.h[5]                 #! PC = 0x55555511cc *)
+broadcast %sqrdmulh 8 [%v3[5]]; smulj %LO %v7 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v7.8h, v7.8h, v3.h[4]                       #! PC = 0x55555511d0 *)
+broadcast %mul 8 [%v3[4]]; mull %mdc %v7 %v7 %mul; cast %v7@int16[8] %v7;
+(* mls	v7.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511d4 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v7 %v7 %mls;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd8_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd8_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd8_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %hhd8_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v7
+    && true;
+
+(* sqrdmulh	v18.8h, v6.8h, v3.h[7]                 #! PC = 0x55555511d8 *)
+broadcast %sqrdmulh 8 [%v3[7]]; smulj %LO %v6 %sqrdmulh;
+ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
+vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
+add %v18 %LO11 %LO01;
+(* mul	v3.8h, v6.8h, v3.h[6]                       #! PC = 0x55555511dc *)
+broadcast %mul 8 [%v3[6]]; mull %mdc %v3 %v6 %mul; cast %v3@int16[8] %v3;
+(* mls	v3.8h, v18.8h, v0.h[0]                      #! PC = 0x55555511e0 *)
+broadcast %mls 8 [%v0[0]]; mull %dc %mls %v18 %mls;
+cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd9_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\
+
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd9_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl] && true;
+
+assert
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd9_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3  ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %hhd9_81
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v18
+    = %v3
+    && true;
+
+(* #b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! PC = 0x55555511e8 *)
+#b.ne	0x5555551014 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+936>  // b.any#! 0x55555511e8 = 0x55555511e8;
+
+cut (* 152 *)
+    %v24 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        %fd8_81 +
+        %fd9_81 +
+        %fd0_81 +
+        %fd1_81 +
+        %fd2_81 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd8_81 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_81 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_81 +
+        [W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7, W10**7] * %fd1_81 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_81 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd8_81 +
+        %fd9_81 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_81 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd1_81 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_81 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd8_81 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_81 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_81 +
+        [W10, W10, W10, W10, W10, W10, W10, W10] * %fd1_81 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_81 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v19 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd8_81 +
+        %fd9_81 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_81 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd1_81 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_81 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        %fd8_81 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_81 +
+        %fd0_81 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd1_81 +
+        %fd2_81 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd8_81 +
+        %fd9_81 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd0_81 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd1_81 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd2_81 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v16 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd8_81 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_81 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd0_81 +
+        [W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9, W10**9] * %fd1_81 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd2_81 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd8_81 +
+        %fd9_81 +
+        [W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8, W10**8] * %fd0_81 +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd1_81 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd2_81 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    %v3  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [0, 0, 0, 0, 0, 0, 0, 0] +
+        [W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6, W10**6] * %fd8_81 +
+        [W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5, W10**5] * %fd9_81 +
+        [W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4, W10**4] * %fd0_81 +
+        [W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3, W10**3] * %fd1_81 +
+        [W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2, W10**2] * %fd2_81 +
+        [0, 0, 0, 0, 0, 0, 0, 0]
+    ) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\
+
+    true # TODO
+    prove with [precondition]
+  &&
+    %v24 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v5  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v20 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v1  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v19 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v23 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v17 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v16 <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v7  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+    %v3  <=s [5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16, 5000@16] /\
+
+    %v24 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v5  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v20 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v1  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v19 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v23 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v17 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v16 >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v7  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16] /\
+    %v3  >=s [(-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16, (-5000)@16];
+
+
+#### store
+
+(* str	q24, [x0]                                   #! EA = L0x5555571388; PC = 0x5555551014 *)
+mov [L0x5555571388,L0x555557138a,L0x555557138c,L0x555557138e,L0x5555571390,L0x5555571392,L0x5555571394,L0x5555571396] %v24;
+(* str	q5, [x0, #288]                              #! EA = L0x55555714a8; PC = 0x5555551018 *)
+mov [L0x55555714a8,L0x55555714aa,L0x55555714ac,L0x55555714ae,L0x55555714b0,L0x55555714b2,L0x55555714b4,L0x55555714b6] %v5;
+(* str	q20, [x0, #576]                             #! EA = L0x55555715c8; PC = 0x555555101c *)
+mov [L0x55555715c8,L0x55555715ca,L0x55555715cc,L0x55555715ce,L0x55555715d0,L0x55555715d2,L0x55555715d4,L0x55555715d6] %v20;
+(* str	q1, [x0, #864]                              #! EA = L0x55555716e8; PC = 0x5555551020 *)
+mov [L0x55555716e8,L0x55555716ea,L0x55555716ec,L0x55555716ee,L0x55555716f0,L0x55555716f2,L0x55555716f4,L0x55555716f6] %v1;
+(* str	q19, [x0, #1152]                            #! EA = L0x5555571808; PC = 0x5555551024 *)
+mov [L0x5555571808,L0x555557180a,L0x555557180c,L0x555557180e,L0x5555571810,L0x5555571812,L0x5555571814,L0x5555571816] %v19;
+(* str	q23, [x0, #1440]                            #! EA = L0x5555571928; PC = 0x5555551028 *)
+mov [L0x5555571928,L0x555557192a,L0x555557192c,L0x555557192e,L0x5555571930,L0x5555571932,L0x5555571934,L0x5555571936] %v23;
+(* str	q17, [x0, #1728]                            #! EA = L0x5555571a48; PC = 0x555555102c *)
+mov [L0x5555571a48,L0x5555571a4a,L0x5555571a4c,L0x5555571a4e,L0x5555571a50,L0x5555571a52,L0x5555571a54,L0x5555571a56] %v17;
+(* str	q16, [x0, #2016]                            #! EA = L0x5555571b68; PC = 0x5555551030 *)
+mov [L0x5555571b68,L0x5555571b6a,L0x5555571b6c,L0x5555571b6e,L0x5555571b70,L0x5555571b72,L0x5555571b74,L0x5555571b76] %v16;
+(* str	q7, [x0, #2304]                             #! EA = L0x5555571c88; PC = 0x5555551034 *)
+mov [L0x5555571c88,L0x5555571c8a,L0x5555571c8c,L0x5555571c8e,L0x5555571c90,L0x5555571c92,L0x5555571c94,L0x5555571c96] %v7;
+(* str	q3, [x0, #2592]                             #! EA = L0x5555571da8; PC = 0x5555551038 *)
+mov [L0x5555571da8,L0x5555571daa,L0x5555571dac,L0x5555571dae,L0x5555571db0,L0x5555571db2,L0x5555571db4,L0x5555571db6] %v3;
+(* #b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! PC = 0x5555551058 *)
+#b.eq	0x55555511f4 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1416>  // b.none#! 0x5555551058 = 0x5555551058;
+
+cut (* 153 *)
+    [L0x5555571388, L0x555557138a, L0x555557138c, L0x555557138e, L0x5555571390, L0x5555571392, L0x5555571394, L0x5555571396] = %v24 /\
+    [L0x55555714a8, L0x55555714aa, L0x55555714ac, L0x55555714ae, L0x55555714b0, L0x55555714b2, L0x55555714b4, L0x55555714b6] = %v5 /\
+    [L0x55555715c8, L0x55555715ca, L0x55555715cc, L0x55555715ce, L0x55555715d0, L0x55555715d2, L0x55555715d4, L0x55555715d6] = %v20 /\
+    [L0x55555716e8, L0x55555716ea, L0x55555716ec, L0x55555716ee, L0x55555716f0, L0x55555716f2, L0x55555716f4, L0x55555716f6] = %v1 /\
+    [L0x5555571808, L0x555557180a, L0x555557180c, L0x555557180e, L0x5555571810, L0x5555571812, L0x5555571814, L0x5555571816] = %v19 /\
+    [L0x5555571928, L0x555557192a, L0x555557192c, L0x555557192e, L0x5555571930, L0x5555571932, L0x5555571934, L0x5555571936] = %v23 /\
+    [L0x5555571a48, L0x5555571a4a, L0x5555571a4c, L0x5555571a4e, L0x5555571a50, L0x5555571a52, L0x5555571a54, L0x5555571a56] = %v17 /\
+    [L0x5555571b68, L0x5555571b6a, L0x5555571b6c, L0x5555571b6e, L0x5555571b70, L0x5555571b72, L0x5555571b74, L0x5555571b76] = %v16 /\
+    [L0x5555571c88, L0x5555571c8a, L0x5555571c8c, L0x5555571c8e, L0x5555571c90, L0x5555571c92, L0x5555571c94, L0x5555571c96] = %v7 /\
+    [L0x5555571da8, L0x5555571daa, L0x5555571dac, L0x5555571dae, L0x5555571db0, L0x5555571db2, L0x5555571db4, L0x5555571db6] = %v3
+  &&
+    [L0x5555571388, L0x555557138a, L0x555557138c, L0x555557138e, L0x5555571390, L0x5555571392, L0x5555571394, L0x5555571396] = %v24 /\
+    [L0x55555714a8, L0x55555714aa, L0x55555714ac, L0x55555714ae, L0x55555714b0, L0x55555714b2, L0x55555714b4, L0x55555714b6] = %v5 /\
+    [L0x55555715c8, L0x55555715ca, L0x55555715cc, L0x55555715ce, L0x55555715d0, L0x55555715d2, L0x55555715d4, L0x55555715d6] = %v20 /\
+    [L0x55555716e8, L0x55555716ea, L0x55555716ec, L0x55555716ee, L0x55555716f0, L0x55555716f2, L0x55555716f4, L0x55555716f6] = %v1 /\
+    [L0x5555571808, L0x555557180a, L0x555557180c, L0x555557180e, L0x5555571810, L0x5555571812, L0x5555571814, L0x5555571816] = %v19 /\
+    [L0x5555571928, L0x555557192a, L0x555557192c, L0x555557192e, L0x5555571930, L0x5555571932, L0x5555571934, L0x5555571936] = %v23 /\
+    [L0x5555571a48, L0x5555571a4a, L0x5555571a4c, L0x5555571a4e, L0x5555571a50, L0x5555571a52, L0x5555571a54, L0x5555571a56] = %v17 /\
+    [L0x5555571b68, L0x5555571b6a, L0x5555571b6c, L0x5555571b6e, L0x5555571b70, L0x5555571b72, L0x5555571b74, L0x5555571b76] = %v16 /\
+    [L0x5555571c88, L0x5555571c8a, L0x5555571c8c, L0x5555571c8e, L0x5555571c90, L0x5555571c92, L0x5555571c94, L0x5555571c96] = %v7 /\
+    [L0x5555571da8, L0x5555571daa, L0x5555571dac, L0x5555571dae, L0x5555571db0, L0x5555571db2, L0x5555571db4, L0x5555571db6] = %v3;
+
+### j_iter epilogue
+
+(* #b.eq	0x555555131c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1712>  // b.none#! PC = 0x555555121c *)
+#b.eq	0x555555131c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1712>  // b.none#! 0x555555121c = 0x555555121c;
+
+
 # epilogue
 
 (* #! <- SP = 0x7ffffff0f0 *)

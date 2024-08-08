@@ -2470,8 +2470,8 @@ def annot(lines):
         annot_j_iter(lines[j_iter_begin : j_iter_end], j, prologue_cut_id)
         j_iter_begin = j_iter_end
         j += 1
-        if j == 4:
-            break
+        # if j == 4:
+        #     break
 
     print()
     print('# epilogue')
