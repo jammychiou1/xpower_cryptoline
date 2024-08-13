@@ -44,11 +44,91 @@ def memory_loc(addr):
 def memory_arr(base, len, size):
     return format_arr([memory_loc(base + size * i) for i in range(len)])
 
+def annot_k0_iter_0(k0_iter_0, i, prologue_cut_id):
+    global cut_id
+
+    ntt9_2x_begin = find_first_line(k0_iter_0, 'PC = 0x5555551a54')
+    ntt9_2x_end = find_first_line(k0_iter_0, 'PC = 0x5555551794', ntt9_2x_begin)
+
+    load = k0_iter_0[:ntt9_2x_begin]
+    ntt9_2x = k0_iter_0[ntt9_2x_begin : ntt9_2x_end]
+    store = k0_iter_0[ntt9_2x_end:]
+
+    print()
+    print('### k0_iter_0')
+    print()
+
+    print()
+    print('#### load')
+    print()
+    print(''.join(load), end='')
+    print()
+
+    print()
+    print('#### ntt9_2x')
+    print()
+    print(''.join(ntt9_2x), end='')
+    print()
+
+    print()
+    print('#### store')
+    print()
+    print(''.join(store), end='')
+    print()
+
+def annot_k0_iter_1(k0_iter_1, i, prologue_cut_id):
+    global cut_id
+
+    ntt9_2x_begin = find_first_line(k0_iter_1, 'PC = 0x5555551a54')
+    ntt9_2x_end = find_first_line(k0_iter_1, 'PC = 0x555555182c', ntt9_2x_begin)
+
+    load = k0_iter_1[:ntt9_2x_begin]
+    ntt9_2x = k0_iter_1[ntt9_2x_begin : ntt9_2x_end]
+    store = k0_iter_1[ntt9_2x_end:]
+
+    print()
+    print('### k0_iter_1')
+    print()
+
+    print()
+    print('#### load')
+    print()
+    print(''.join(load), end='')
+    print()
+
+    print()
+    print('#### ntt9_2x')
+    print()
+    print(''.join(ntt9_2x), end='')
+    print()
+
+    print()
+    print('#### store')
+    print()
+    print(''.join(store), end='')
+    print()
+
 def annot_i_iter(i_iter, i, prologue_cut_id):
+    global cut_id
+
+    k0_iter_0_end = find_first_line(i_iter, 'PC = 0x55555517dc')
+    k0_iter_1_end = find_first_line(i_iter, 'PC = 0x5555551880', k0_iter_0_end)
+
+    k0_iter_0 = i_iter[:k0_iter_0_end]
+    k0_iter_1 = i_iter[k0_iter_0_end : k0_iter_1_end]
+    epilogue = i_iter[k0_iter_1_end:]
+
     print()
     print('## i_iter')
     print()
-    print(''.join(i_iter), end='')
+
+    annot_k0_iter_0(k0_iter_0, i, prologue_cut_id)
+    annot_k0_iter_1(k0_iter_1, i, prologue_cut_id)
+
+    print()
+    print('### epilogue')
+    print()
+    print(''.join(epilogue), end='')
     print()
 
 cut_id = 0

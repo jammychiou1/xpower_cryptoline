@@ -1120,6 +1120,12 @@ cut (* 0 *)
 
 ## i_iter
 
+
+### k0_iter_0
+
+
+#### load
+
 (* ldr	q7, [x19, #112]                             #! EA = L0x55555712e8; Value = 0x0000000000000000; PC = 0x5555551740 *)
 mov %v7 [L0x55555712e8,L0x55555712ea,L0x55555712ec,L0x55555712ee,L0x55555712f0,L0x55555712f2,L0x55555712f4,L0x55555712f6];
 (* ldr	q6, [x19, #96]                              #! EA = L0x55555712d8; Value = 0x0000000000000000; PC = 0x5555551744 *)
@@ -1144,6 +1150,10 @@ mov %v0 [L0x5555571278,L0x555557127a,L0x555557127c,L0x555557127e,L0x5555571280,L
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551790 = 0x5555551790;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -1429,6 +1439,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000008; PC = 0x5555551794 *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19]                                   #! EA = L0x5555571278; PC = 0x5555551798 *)
@@ -1465,6 +1479,13 @@ mov [L0x55555712e8,L0x55555712ea,L0x55555712ec,L0x55555712ee,L0x55555712f0,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #128]                             #! EA = L0x55555712f8; PC = 0x55555517d8 *)
 mov [L0x55555712f8,L0x55555712fa,L0x55555712fc,L0x55555712fe,L0x5555571300,L0x5555571302,L0x5555571304,L0x5555571306] %v0;
+
+
+### k0_iter_1
+
+
+#### load
+
 (* ldr	q7, [x19, #256]                             #! EA = L0x5555571378; Value = 0x0000000000000000; PC = 0x55555517dc *)
 mov %v7 [L0x5555571378,L0x555557137a,L0x555557137c,L0x555557137e,L0x5555571380,L0x5555571382,L0x5555571384,L0x5555571386];
 (* ldr	q6, [x19, #240]                             #! EA = L0x5555571368; Value = 0x0000000000000000; PC = 0x55555517e0 *)
@@ -1489,6 +1510,10 @@ mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,L0x7fffffefe8,L0x7f
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551828 = 0x5555551828;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -1774,6 +1799,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19, #144]                             #! EA = L0x5555571308; PC = 0x5555551830 *)
@@ -1810,11 +1839,21 @@ mov [L0x5555571378,L0x555557137a,L0x555557137c,L0x555557137e,L0x5555571380,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571388; PC = 0x5555551870 *)
 mov [L0x5555571388,L0x555557138a,L0x555557138c,L0x555557138e,L0x5555571390,L0x5555571392,L0x5555571394,L0x5555571396] %v0;
+
+
+### epilogue
+
 (* #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551880 *)
 #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551880 = 0x5555551880;
 
 
 ## i_iter
+
+
+### k0_iter_0
+
+
+#### load
 
 (* ldr	q7, [x19, #112]                             #! EA = L0x5555571408; Value = 0x0000000000000000; PC = 0x5555551740 *)
 mov %v7 [L0x5555571408,L0x555557140a,L0x555557140c,L0x555557140e,L0x5555571410,L0x5555571412,L0x5555571414,L0x5555571416];
@@ -1840,6 +1879,10 @@ mov %v0 [L0x5555571398,L0x555557139a,L0x555557139c,L0x555557139e,L0x55555713a0,L
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551790 = 0x5555551790;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -2125,6 +2168,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000008; PC = 0x5555551794 *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19]                                   #! EA = L0x5555571398; PC = 0x5555551798 *)
@@ -2161,6 +2208,13 @@ mov [L0x5555571408,L0x555557140a,L0x555557140c,L0x555557140e,L0x5555571410,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #128]                             #! EA = L0x5555571418; PC = 0x55555517d8 *)
 mov [L0x5555571418,L0x555557141a,L0x555557141c,L0x555557141e,L0x5555571420,L0x5555571422,L0x5555571424,L0x5555571426] %v0;
+
+
+### k0_iter_1
+
+
+#### load
+
 (* ldr	q7, [x19, #256]                             #! EA = L0x5555571498; Value = 0x0000000000000000; PC = 0x55555517dc *)
 mov %v7 [L0x5555571498,L0x555557149a,L0x555557149c,L0x555557149e,L0x55555714a0,L0x55555714a2,L0x55555714a4,L0x55555714a6];
 (* ldr	q6, [x19, #240]                             #! EA = L0x5555571488; Value = 0x0000000000000000; PC = 0x55555517e0 *)
@@ -2185,6 +2239,10 @@ mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,L0x7fffffefe8,L0x7f
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551828 = 0x5555551828;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -2470,6 +2528,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19, #144]                             #! EA = L0x5555571428; PC = 0x5555551830 *)
@@ -2506,11 +2568,21 @@ mov [L0x5555571498,L0x555557149a,L0x555557149c,L0x555557149e,L0x55555714a0,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x55555714a8; PC = 0x5555551870 *)
 mov [L0x55555714a8,L0x55555714aa,L0x55555714ac,L0x55555714ae,L0x55555714b0,L0x55555714b2,L0x55555714b4,L0x55555714b6] %v0;
+
+
+### epilogue
+
 (* #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551880 *)
 #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551880 = 0x5555551880;
 
 
 ## i_iter
+
+
+### k0_iter_0
+
+
+#### load
 
 (* ldr	q7, [x19, #112]                             #! EA = L0x5555571528; Value = 0x0000000000000000; PC = 0x5555551740 *)
 mov %v7 [L0x5555571528,L0x555557152a,L0x555557152c,L0x555557152e,L0x5555571530,L0x5555571532,L0x5555571534,L0x5555571536];
@@ -2536,6 +2608,10 @@ mov %v0 [L0x55555714b8,L0x55555714ba,L0x55555714bc,L0x55555714be,L0x55555714c0,L
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551790 = 0x5555551790;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -2821,6 +2897,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000008; PC = 0x5555551794 *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19]                                   #! EA = L0x55555714b8; PC = 0x5555551798 *)
@@ -2857,6 +2937,13 @@ mov [L0x5555571528,L0x555557152a,L0x555557152c,L0x555557152e,L0x5555571530,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #128]                             #! EA = L0x5555571538; PC = 0x55555517d8 *)
 mov [L0x5555571538,L0x555557153a,L0x555557153c,L0x555557153e,L0x5555571540,L0x5555571542,L0x5555571544,L0x5555571546] %v0;
+
+
+### k0_iter_1
+
+
+#### load
+
 (* ldr	q7, [x19, #256]                             #! EA = L0x55555715b8; Value = 0x0000000000000000; PC = 0x55555517dc *)
 mov %v7 [L0x55555715b8,L0x55555715ba,L0x55555715bc,L0x55555715be,L0x55555715c0,L0x55555715c2,L0x55555715c4,L0x55555715c6];
 (* ldr	q6, [x19, #240]                             #! EA = L0x55555715a8; Value = 0x0000000000000000; PC = 0x55555517e0 *)
@@ -2881,6 +2968,10 @@ mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,L0x7fffffefe8,L0x7f
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551828 = 0x5555551828;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -3166,6 +3257,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19, #144]                             #! EA = L0x5555571548; PC = 0x5555551830 *)
@@ -3202,11 +3297,21 @@ mov [L0x55555715b8,L0x55555715ba,L0x55555715bc,L0x55555715be,L0x55555715c0,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x55555715c8; PC = 0x5555551870 *)
 mov [L0x55555715c8,L0x55555715ca,L0x55555715cc,L0x55555715ce,L0x55555715d0,L0x55555715d2,L0x55555715d4,L0x55555715d6] %v0;
+
+
+### epilogue
+
 (* #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551880 *)
 #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551880 = 0x5555551880;
 
 
 ## i_iter
+
+
+### k0_iter_0
+
+
+#### load
 
 (* ldr	q7, [x19, #112]                             #! EA = L0x5555571648; Value = 0x0000000000000000; PC = 0x5555551740 *)
 mov %v7 [L0x5555571648,L0x555557164a,L0x555557164c,L0x555557164e,L0x5555571650,L0x5555571652,L0x5555571654,L0x5555571656];
@@ -3232,6 +3337,10 @@ mov %v0 [L0x55555715d8,L0x55555715da,L0x55555715dc,L0x55555715de,L0x55555715e0,L
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551790 = 0x5555551790;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -3517,6 +3626,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000008; PC = 0x5555551794 *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19]                                   #! EA = L0x55555715d8; PC = 0x5555551798 *)
@@ -3553,6 +3666,13 @@ mov [L0x5555571648,L0x555557164a,L0x555557164c,L0x555557164e,L0x5555571650,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #128]                             #! EA = L0x5555571658; PC = 0x55555517d8 *)
 mov [L0x5555571658,L0x555557165a,L0x555557165c,L0x555557165e,L0x5555571660,L0x5555571662,L0x5555571664,L0x5555571666] %v0;
+
+
+### k0_iter_1
+
+
+#### load
+
 (* ldr	q7, [x19, #256]                             #! EA = L0x55555716d8; Value = 0x0000000000000000; PC = 0x55555517dc *)
 mov %v7 [L0x55555716d8,L0x55555716da,L0x55555716dc,L0x55555716de,L0x55555716e0,L0x55555716e2,L0x55555716e4,L0x55555716e6];
 (* ldr	q6, [x19, #240]                             #! EA = L0x55555716c8; Value = 0x0000000000000000; PC = 0x55555517e0 *)
@@ -3577,6 +3697,10 @@ mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,L0x7fffffefe8,L0x7f
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551828 = 0x5555551828;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -3862,6 +3986,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19, #144]                             #! EA = L0x5555571668; PC = 0x5555551830 *)
@@ -3898,11 +4026,21 @@ mov [L0x55555716d8,L0x55555716da,L0x55555716dc,L0x55555716de,L0x55555716e0,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x55555716e8; PC = 0x5555551870 *)
 mov [L0x55555716e8,L0x55555716ea,L0x55555716ec,L0x55555716ee,L0x55555716f0,L0x55555716f2,L0x55555716f4,L0x55555716f6] %v0;
+
+
+### epilogue
+
 (* #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551880 *)
 #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551880 = 0x5555551880;
 
 
 ## i_iter
+
+
+### k0_iter_0
+
+
+#### load
 
 (* ldr	q7, [x19, #112]                             #! EA = L0x5555571768; Value = 0x0000000000000000; PC = 0x5555551740 *)
 mov %v7 [L0x5555571768,L0x555557176a,L0x555557176c,L0x555557176e,L0x5555571770,L0x5555571772,L0x5555571774,L0x5555571776];
@@ -3928,6 +4066,10 @@ mov %v0 [L0x55555716f8,L0x55555716fa,L0x55555716fc,L0x55555716fe,L0x5555571700,L
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551790 = 0x5555551790;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -4213,6 +4355,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000008; PC = 0x5555551794 *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19]                                   #! EA = L0x55555716f8; PC = 0x5555551798 *)
@@ -4249,6 +4395,13 @@ mov [L0x5555571768,L0x555557176a,L0x555557176c,L0x555557176e,L0x5555571770,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #128]                             #! EA = L0x5555571778; PC = 0x55555517d8 *)
 mov [L0x5555571778,L0x555557177a,L0x555557177c,L0x555557177e,L0x5555571780,L0x5555571782,L0x5555571784,L0x5555571786] %v0;
+
+
+### k0_iter_1
+
+
+#### load
+
 (* ldr	q7, [x19, #256]                             #! EA = L0x55555717f8; Value = 0x0000000000000000; PC = 0x55555517dc *)
 mov %v7 [L0x55555717f8,L0x55555717fa,L0x55555717fc,L0x55555717fe,L0x5555571800,L0x5555571802,L0x5555571804,L0x5555571806];
 (* ldr	q6, [x19, #240]                             #! EA = L0x55555717e8; Value = 0x0000000000000000; PC = 0x55555517e0 *)
@@ -4273,6 +4426,10 @@ mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,L0x7fffffefe8,L0x7f
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551828 = 0x5555551828;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -4558,6 +4715,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19, #144]                             #! EA = L0x5555571788; PC = 0x5555551830 *)
@@ -4594,11 +4755,21 @@ mov [L0x55555717f8,L0x55555717fa,L0x55555717fc,L0x55555717fe,L0x5555571800,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571808; PC = 0x5555551870 *)
 mov [L0x5555571808,L0x555557180a,L0x555557180c,L0x555557180e,L0x5555571810,L0x5555571812,L0x5555571814,L0x5555571816] %v0;
+
+
+### epilogue
+
 (* #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551880 *)
 #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551880 = 0x5555551880;
 
 
 ## i_iter
+
+
+### k0_iter_0
+
+
+#### load
 
 (* ldr	q7, [x19, #112]                             #! EA = L0x5555571888; Value = 0x0000000000000000; PC = 0x5555551740 *)
 mov %v7 [L0x5555571888,L0x555557188a,L0x555557188c,L0x555557188e,L0x5555571890,L0x5555571892,L0x5555571894,L0x5555571896];
@@ -4624,6 +4795,10 @@ mov %v0 [L0x5555571818,L0x555557181a,L0x555557181c,L0x555557181e,L0x5555571820,L
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551790 = 0x5555551790;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -4909,6 +5084,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000008; PC = 0x5555551794 *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19]                                   #! EA = L0x5555571818; PC = 0x5555551798 *)
@@ -4945,6 +5124,13 @@ mov [L0x5555571888,L0x555557188a,L0x555557188c,L0x555557188e,L0x5555571890,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #128]                             #! EA = L0x5555571898; PC = 0x55555517d8 *)
 mov [L0x5555571898,L0x555557189a,L0x555557189c,L0x555557189e,L0x55555718a0,L0x55555718a2,L0x55555718a4,L0x55555718a6] %v0;
+
+
+### k0_iter_1
+
+
+#### load
+
 (* ldr	q7, [x19, #256]                             #! EA = L0x5555571918; Value = 0x0000000000000000; PC = 0x55555517dc *)
 mov %v7 [L0x5555571918,L0x555557191a,L0x555557191c,L0x555557191e,L0x5555571920,L0x5555571922,L0x5555571924,L0x5555571926];
 (* ldr	q6, [x19, #240]                             #! EA = L0x5555571908; Value = 0x0000000000000000; PC = 0x55555517e0 *)
@@ -4969,6 +5155,10 @@ mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,L0x7fffffefe8,L0x7f
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551828 = 0x5555551828;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -5254,6 +5444,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19, #144]                             #! EA = L0x55555718a8; PC = 0x5555551830 *)
@@ -5290,11 +5484,21 @@ mov [L0x5555571918,L0x555557191a,L0x555557191c,L0x555557191e,L0x5555571920,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571928; PC = 0x5555551870 *)
 mov [L0x5555571928,L0x555557192a,L0x555557192c,L0x555557192e,L0x5555571930,L0x5555571932,L0x5555571934,L0x5555571936] %v0;
+
+
+### epilogue
+
 (* #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551880 *)
 #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551880 = 0x5555551880;
 
 
 ## i_iter
+
+
+### k0_iter_0
+
+
+#### load
 
 (* ldr	q7, [x19, #112]                             #! EA = L0x55555719a8; Value = 0x0000000000000000; PC = 0x5555551740 *)
 mov %v7 [L0x55555719a8,L0x55555719aa,L0x55555719ac,L0x55555719ae,L0x55555719b0,L0x55555719b2,L0x55555719b4,L0x55555719b6];
@@ -5320,6 +5524,10 @@ mov %v0 [L0x5555571938,L0x555557193a,L0x555557193c,L0x555557193e,L0x5555571940,L
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551790 = 0x5555551790;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -5605,6 +5813,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000008; PC = 0x5555551794 *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19]                                   #! EA = L0x5555571938; PC = 0x5555551798 *)
@@ -5641,6 +5853,13 @@ mov [L0x55555719a8,L0x55555719aa,L0x55555719ac,L0x55555719ae,L0x55555719b0,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #128]                             #! EA = L0x55555719b8; PC = 0x55555517d8 *)
 mov [L0x55555719b8,L0x55555719ba,L0x55555719bc,L0x55555719be,L0x55555719c0,L0x55555719c2,L0x55555719c4,L0x55555719c6] %v0;
+
+
+### k0_iter_1
+
+
+#### load
+
 (* ldr	q7, [x19, #256]                             #! EA = L0x5555571a38; Value = 0x0000000000000000; PC = 0x55555517dc *)
 mov %v7 [L0x5555571a38,L0x5555571a3a,L0x5555571a3c,L0x5555571a3e,L0x5555571a40,L0x5555571a42,L0x5555571a44,L0x5555571a46];
 (* ldr	q6, [x19, #240]                             #! EA = L0x5555571a28; Value = 0x0000000000000000; PC = 0x55555517e0 *)
@@ -5665,6 +5884,10 @@ mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,L0x7fffffefe8,L0x7f
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551828 = 0x5555551828;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -5950,6 +6173,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19, #144]                             #! EA = L0x55555719c8; PC = 0x5555551830 *)
@@ -5986,11 +6213,21 @@ mov [L0x5555571a38,L0x5555571a3a,L0x5555571a3c,L0x5555571a3e,L0x5555571a40,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571a48; PC = 0x5555551870 *)
 mov [L0x5555571a48,L0x5555571a4a,L0x5555571a4c,L0x5555571a4e,L0x5555571a50,L0x5555571a52,L0x5555571a54,L0x5555571a56] %v0;
+
+
+### epilogue
+
 (* #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551880 *)
 #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551880 = 0x5555551880;
 
 
 ## i_iter
+
+
+### k0_iter_0
+
+
+#### load
 
 (* ldr	q7, [x19, #112]                             #! EA = L0x5555571ac8; Value = 0x0000000000000000; PC = 0x5555551740 *)
 mov %v7 [L0x5555571ac8,L0x5555571aca,L0x5555571acc,L0x5555571ace,L0x5555571ad0,L0x5555571ad2,L0x5555571ad4,L0x5555571ad6];
@@ -6016,6 +6253,10 @@ mov %v0 [L0x5555571a58,L0x5555571a5a,L0x5555571a5c,L0x5555571a5e,L0x5555571a60,L
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551790 = 0x5555551790;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -6301,6 +6542,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000008; PC = 0x5555551794 *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19]                                   #! EA = L0x5555571a58; PC = 0x5555551798 *)
@@ -6337,6 +6582,13 @@ mov [L0x5555571ac8,L0x5555571aca,L0x5555571acc,L0x5555571ace,L0x5555571ad0,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #128]                             #! EA = L0x5555571ad8; PC = 0x55555517d8 *)
 mov [L0x5555571ad8,L0x5555571ada,L0x5555571adc,L0x5555571ade,L0x5555571ae0,L0x5555571ae2,L0x5555571ae4,L0x5555571ae6] %v0;
+
+
+### k0_iter_1
+
+
+#### load
+
 (* ldr	q7, [x19, #256]                             #! EA = L0x5555571b58; Value = 0x0000000000000000; PC = 0x55555517dc *)
 mov %v7 [L0x5555571b58,L0x5555571b5a,L0x5555571b5c,L0x5555571b5e,L0x5555571b60,L0x5555571b62,L0x5555571b64,L0x5555571b66];
 (* ldr	q6, [x19, #240]                             #! EA = L0x5555571b48; Value = 0x0000000000000000; PC = 0x55555517e0 *)
@@ -6361,6 +6613,10 @@ mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,L0x7fffffefe8,L0x7f
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551828 = 0x5555551828;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -6646,6 +6902,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19, #144]                             #! EA = L0x5555571ae8; PC = 0x5555551830 *)
@@ -6682,11 +6942,21 @@ mov [L0x5555571b58,L0x5555571b5a,L0x5555571b5c,L0x5555571b5e,L0x5555571b60,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571b68; PC = 0x5555551870 *)
 mov [L0x5555571b68,L0x5555571b6a,L0x5555571b6c,L0x5555571b6e,L0x5555571b70,L0x5555571b72,L0x5555571b74,L0x5555571b76] %v0;
+
+
+### epilogue
+
 (* #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551880 *)
 #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551880 = 0x5555551880;
 
 
 ## i_iter
+
+
+### k0_iter_0
+
+
+#### load
 
 (* ldr	q7, [x19, #112]                             #! EA = L0x5555571be8; Value = 0x0000000000000000; PC = 0x5555551740 *)
 mov %v7 [L0x5555571be8,L0x5555571bea,L0x5555571bec,L0x5555571bee,L0x5555571bf0,L0x5555571bf2,L0x5555571bf4,L0x5555571bf6];
@@ -6712,6 +6982,10 @@ mov %v0 [L0x5555571b78,L0x5555571b7a,L0x5555571b7c,L0x5555571b7e,L0x5555571b80,L
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551790 = 0x5555551790;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -6997,6 +7271,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000008; PC = 0x5555551794 *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19]                                   #! EA = L0x5555571b78; PC = 0x5555551798 *)
@@ -7033,6 +7311,13 @@ mov [L0x5555571be8,L0x5555571bea,L0x5555571bec,L0x5555571bee,L0x5555571bf0,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #128]                             #! EA = L0x5555571bf8; PC = 0x55555517d8 *)
 mov [L0x5555571bf8,L0x5555571bfa,L0x5555571bfc,L0x5555571bfe,L0x5555571c00,L0x5555571c02,L0x5555571c04,L0x5555571c06] %v0;
+
+
+### k0_iter_1
+
+
+#### load
+
 (* ldr	q7, [x19, #256]                             #! EA = L0x5555571c78; Value = 0x0000000000000000; PC = 0x55555517dc *)
 mov %v7 [L0x5555571c78,L0x5555571c7a,L0x5555571c7c,L0x5555571c7e,L0x5555571c80,L0x5555571c82,L0x5555571c84,L0x5555571c86];
 (* ldr	q6, [x19, #240]                             #! EA = L0x5555571c68; Value = 0x0000000000000000; PC = 0x55555517e0 *)
@@ -7057,6 +7342,10 @@ mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,L0x7fffffefe8,L0x7f
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551828 = 0x5555551828;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -7342,6 +7631,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19, #144]                             #! EA = L0x5555571c08; PC = 0x5555551830 *)
@@ -7378,11 +7671,21 @@ mov [L0x5555571c78,L0x5555571c7a,L0x5555571c7c,L0x5555571c7e,L0x5555571c80,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571c88; PC = 0x5555551870 *)
 mov [L0x5555571c88,L0x5555571c8a,L0x5555571c8c,L0x5555571c8e,L0x5555571c90,L0x5555571c92,L0x5555571c94,L0x5555571c96] %v0;
+
+
+### epilogue
+
 (* #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551880 *)
 #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551880 = 0x5555551880;
 
 
 ## i_iter
+
+
+### k0_iter_0
+
+
+#### load
 
 (* ldr	q7, [x19, #112]                             #! EA = L0x5555571d08; Value = 0x0000000000000000; PC = 0x5555551740 *)
 mov %v7 [L0x5555571d08,L0x5555571d0a,L0x5555571d0c,L0x5555571d0e,L0x5555571d10,L0x5555571d12,L0x5555571d14,L0x5555571d16];
@@ -7408,6 +7711,10 @@ mov %v0 [L0x5555571c98,L0x5555571c9a,L0x5555571c9c,L0x5555571c9e,L0x5555571ca0,L
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551790 = 0x5555551790;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -7693,6 +8000,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000008; PC = 0x5555551794 *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19]                                   #! EA = L0x5555571c98; PC = 0x5555551798 *)
@@ -7729,6 +8040,13 @@ mov [L0x5555571d08,L0x5555571d0a,L0x5555571d0c,L0x5555571d0e,L0x5555571d10,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #128]                             #! EA = L0x5555571d18; PC = 0x55555517d8 *)
 mov [L0x5555571d18,L0x5555571d1a,L0x5555571d1c,L0x5555571d1e,L0x5555571d20,L0x5555571d22,L0x5555571d24,L0x5555571d26] %v0;
+
+
+### k0_iter_1
+
+
+#### load
+
 (* ldr	q7, [x19, #256]                             #! EA = L0x5555571d98; Value = 0x0000000000000000; PC = 0x55555517dc *)
 mov %v7 [L0x5555571d98,L0x5555571d9a,L0x5555571d9c,L0x5555571d9e,L0x5555571da0,L0x5555571da2,L0x5555571da4,L0x5555571da6];
 (* ldr	q6, [x19, #240]                             #! EA = L0x5555571d88; Value = 0x0000000000000000; PC = 0x55555517e0 *)
@@ -7753,6 +8071,10 @@ mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,L0x7fffffefe8,L0x7f
 #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551828 = 0x5555551828;
 (* #! -> SP = 0x7fffffefe0 *)
 #! 0x7fffffefe0 = 0x7fffffefe0;
+
+
+#### ntt9_2x
+
 (* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefd0; PC = 0x5555551a54 *)
 mov [L0x7fffffefd0,L0x7fffffefd2,L0x7fffffefd4,L0x7fffffefd6] %v8[0:4];
 mov [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde] %v9[0:4];
@@ -8038,6 +8360,10 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+#### store
+
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
 mov %v0 [L0x7ffffff070,L0x7ffffff072,L0x7ffffff074,L0x7ffffff076,L0x7ffffff078,L0x7ffffff07a,L0x7ffffff07c,L0x7ffffff07e];
 (* str	q0, [x19, #144]                             #! EA = L0x5555571d28; PC = 0x5555551830 *)
@@ -8074,6 +8400,10 @@ mov [L0x5555571d98,L0x5555571d9a,L0x5555571d9c,L0x5555571d9e,L0x5555571da0,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571da8; PC = 0x5555551870 *)
 mov [L0x5555571da8,L0x5555571daa,L0x5555571dac,L0x5555571dae,L0x5555571db0,L0x5555571db2,L0x5555571db4,L0x5555571db6] %v0;
+
+
+### epilogue
+
 (* #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551880 *)
 #b.ne	0x5555551734 <_ZN6xpower9main_lay211fwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551880 = 0x5555551880;
 
