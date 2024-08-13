@@ -1524,6 +1524,10 @@ ghost %fa0_00@sint16[8], %fa1_00@sint16[8], %fa2_00@sint16[8], %fa3_00@sint16[8]
     %fa8_00 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
 cut (* 1 *)
+    %fa0_00 = %v0 /\ %fa1_00 = %v1 /\ %fa2_00 = %v2 /\ %fa3_00 = %v3 /\
+    %fa4_00 = %v4 /\ %fa5_00 = %v5 /\ %fa6_00 = %v6 /\ %fa7_00 = %v7 /\
+    %fa8_00 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_00 = [arr0000, arr0001, arr0002, arr0003, arr0004, arr0005, arr0006, arr0007] /\
     %fa1_00 = [arr0010, arr0011, arr0012, arr0013, arr0014, arr0015, arr0016, arr0017] /\
     %fa2_00 = [arr0020, arr0021, arr0022, arr0023, arr0024, arr0025, arr0026, arr0027] /\
@@ -1536,6 +1540,10 @@ cut (* 1 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_00 = %v0 /\ %fa1_00 = %v1 /\ %fa2_00 = %v2 /\ %fa3_00 = %v3 /\
+    %fa4_00 = %v4 /\ %fa5_00 = %v5 /\ %fa6_00 = %v6 /\ %fa7_00 = %v7 /\
+    %fa8_00 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_00 = [arr0000, arr0001, arr0002, arr0003, arr0004, arr0005, arr0006, arr0007] /\
     %fa1_00 = [arr0010, arr0011, arr0012, arr0013, arr0014, arr0015, arr0016, arr0017] /\
     %fa2_00 = [arr0020, arr0021, arr0022, arr0023, arr0024, arr0025, arr0026, arr0027] /\
@@ -1835,6 +1843,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+cut (* 2 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 1]];
 
 
 #### store
@@ -1876,6 +1891,9 @@ mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L
 (* str	q0, [x19, #128]                             #! EA = L0x55555712f8; PC = 0x55555517d8 *)
 mov [L0x55555712f8,L0x55555712fa,L0x55555712fc,L0x55555712fe,L0x5555571300,L0x5555571302,L0x5555571304,L0x5555571306] %v0;
 
+cut (* 3 *)
+    true && true;
+
 
 ### k0_iter_1
 
@@ -1916,7 +1934,11 @@ ghost %fa0_01@sint16[8], %fa1_01@sint16[8], %fa2_01@sint16[8], %fa3_01@sint16[8]
     %fa4_01 = %v4 /\ %fa5_01 = %v5 /\ %fa6_01 = %v6 /\ %fa7_01 = %v7 /\
     %fa8_01 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 2 *)
+cut (* 4 *)
+    %fa0_01 = %v0 /\ %fa1_01 = %v1 /\ %fa2_01 = %v2 /\ %fa3_01 = %v3 /\
+    %fa4_01 = %v4 /\ %fa5_01 = %v5 /\ %fa6_01 = %v6 /\ %fa7_01 = %v7 /\
+    %fa8_01 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_01 = [arr0100, arr0101, arr0102, arr0103, arr0104, arr0105, arr0106, arr0107] /\
     %fa1_01 = [arr0110, arr0111, arr0112, arr0113, arr0114, arr0115, arr0116, arr0117] /\
     %fa2_01 = [arr0120, arr0121, arr0122, arr0123, arr0124, arr0125, arr0126, arr0127] /\
@@ -1929,6 +1951,10 @@ cut (* 2 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_01 = %v0 /\ %fa1_01 = %v1 /\ %fa2_01 = %v2 /\ %fa3_01 = %v3 /\
+    %fa4_01 = %v4 /\ %fa5_01 = %v5 /\ %fa6_01 = %v6 /\ %fa7_01 = %v7 /\
+    %fa8_01 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_01 = [arr0100, arr0101, arr0102, arr0103, arr0104, arr0105, arr0106, arr0107] /\
     %fa1_01 = [arr0110, arr0111, arr0112, arr0113, arr0114, arr0115, arr0116, arr0117] /\
     %fa2_01 = [arr0120, arr0121, arr0122, arr0123, arr0124, arr0125, arr0126, arr0127] /\
@@ -2230,6 +2256,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
 
 
+cut (* 5 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 4]];
+
+
 #### store
 
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
@@ -2268,6 +2301,9 @@ mov [L0x5555571378,L0x555557137a,L0x555557137c,L0x555557137e,L0x5555571380,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571388; PC = 0x5555551870 *)
 mov [L0x5555571388,L0x555557138a,L0x555557138c,L0x555557138e,L0x5555571390,L0x5555571392,L0x5555571394,L0x5555571396] %v0;
+
+cut (* 6 *)
+    true && true;
 
 
 ### epilogue
@@ -2318,7 +2354,11 @@ ghost %fa0_10@sint16[8], %fa1_10@sint16[8], %fa2_10@sint16[8], %fa3_10@sint16[8]
     %fa4_10 = %v4 /\ %fa5_10 = %v5 /\ %fa6_10 = %v6 /\ %fa7_10 = %v7 /\
     %fa8_10 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 3 *)
+cut (* 7 *)
+    %fa0_10 = %v0 /\ %fa1_10 = %v1 /\ %fa2_10 = %v2 /\ %fa3_10 = %v3 /\
+    %fa4_10 = %v4 /\ %fa5_10 = %v5 /\ %fa6_10 = %v6 /\ %fa7_10 = %v7 /\
+    %fa8_10 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_10 = [arr1000, arr1001, arr1002, arr1003, arr1004, arr1005, arr1006, arr1007] /\
     %fa1_10 = [arr1010, arr1011, arr1012, arr1013, arr1014, arr1015, arr1016, arr1017] /\
     %fa2_10 = [arr1020, arr1021, arr1022, arr1023, arr1024, arr1025, arr1026, arr1027] /\
@@ -2331,6 +2371,10 @@ cut (* 3 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_10 = %v0 /\ %fa1_10 = %v1 /\ %fa2_10 = %v2 /\ %fa3_10 = %v3 /\
+    %fa4_10 = %v4 /\ %fa5_10 = %v5 /\ %fa6_10 = %v6 /\ %fa7_10 = %v7 /\
+    %fa8_10 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_10 = [arr1000, arr1001, arr1002, arr1003, arr1004, arr1005, arr1006, arr1007] /\
     %fa1_10 = [arr1010, arr1011, arr1012, arr1013, arr1014, arr1015, arr1016, arr1017] /\
     %fa2_10 = [arr1020, arr1021, arr1022, arr1023, arr1024, arr1025, arr1026, arr1027] /\
@@ -2630,6 +2674,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+cut (* 8 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 7]];
 
 
 #### store
@@ -2671,6 +2722,9 @@ mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L
 (* str	q0, [x19, #128]                             #! EA = L0x5555571418; PC = 0x55555517d8 *)
 mov [L0x5555571418,L0x555557141a,L0x555557141c,L0x555557141e,L0x5555571420,L0x5555571422,L0x5555571424,L0x5555571426] %v0;
 
+cut (* 9 *)
+    true && true;
+
 
 ### k0_iter_1
 
@@ -2711,7 +2765,11 @@ ghost %fa0_11@sint16[8], %fa1_11@sint16[8], %fa2_11@sint16[8], %fa3_11@sint16[8]
     %fa4_11 = %v4 /\ %fa5_11 = %v5 /\ %fa6_11 = %v6 /\ %fa7_11 = %v7 /\
     %fa8_11 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 4 *)
+cut (* 10 *)
+    %fa0_11 = %v0 /\ %fa1_11 = %v1 /\ %fa2_11 = %v2 /\ %fa3_11 = %v3 /\
+    %fa4_11 = %v4 /\ %fa5_11 = %v5 /\ %fa6_11 = %v6 /\ %fa7_11 = %v7 /\
+    %fa8_11 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_11 = [arr1100, arr1101, arr1102, arr1103, arr1104, arr1105, arr1106, arr1107] /\
     %fa1_11 = [arr1110, arr1111, arr1112, arr1113, arr1114, arr1115, arr1116, arr1117] /\
     %fa2_11 = [arr1120, arr1121, arr1122, arr1123, arr1124, arr1125, arr1126, arr1127] /\
@@ -2724,6 +2782,10 @@ cut (* 4 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_11 = %v0 /\ %fa1_11 = %v1 /\ %fa2_11 = %v2 /\ %fa3_11 = %v3 /\
+    %fa4_11 = %v4 /\ %fa5_11 = %v5 /\ %fa6_11 = %v6 /\ %fa7_11 = %v7 /\
+    %fa8_11 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_11 = [arr1100, arr1101, arr1102, arr1103, arr1104, arr1105, arr1106, arr1107] /\
     %fa1_11 = [arr1110, arr1111, arr1112, arr1113, arr1114, arr1115, arr1116, arr1117] /\
     %fa2_11 = [arr1120, arr1121, arr1122, arr1123, arr1124, arr1125, arr1126, arr1127] /\
@@ -3025,6 +3087,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
 
 
+cut (* 11 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 10]];
+
+
 #### store
 
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
@@ -3063,6 +3132,9 @@ mov [L0x5555571498,L0x555557149a,L0x555557149c,L0x555557149e,L0x55555714a0,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x55555714a8; PC = 0x5555551870 *)
 mov [L0x55555714a8,L0x55555714aa,L0x55555714ac,L0x55555714ae,L0x55555714b0,L0x55555714b2,L0x55555714b4,L0x55555714b6] %v0;
+
+cut (* 12 *)
+    true && true;
 
 
 ### epilogue
@@ -3113,7 +3185,11 @@ ghost %fa0_20@sint16[8], %fa1_20@sint16[8], %fa2_20@sint16[8], %fa3_20@sint16[8]
     %fa4_20 = %v4 /\ %fa5_20 = %v5 /\ %fa6_20 = %v6 /\ %fa7_20 = %v7 /\
     %fa8_20 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 5 *)
+cut (* 13 *)
+    %fa0_20 = %v0 /\ %fa1_20 = %v1 /\ %fa2_20 = %v2 /\ %fa3_20 = %v3 /\
+    %fa4_20 = %v4 /\ %fa5_20 = %v5 /\ %fa6_20 = %v6 /\ %fa7_20 = %v7 /\
+    %fa8_20 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_20 = [arr2000, arr2001, arr2002, arr2003, arr2004, arr2005, arr2006, arr2007] /\
     %fa1_20 = [arr2010, arr2011, arr2012, arr2013, arr2014, arr2015, arr2016, arr2017] /\
     %fa2_20 = [arr2020, arr2021, arr2022, arr2023, arr2024, arr2025, arr2026, arr2027] /\
@@ -3126,6 +3202,10 @@ cut (* 5 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_20 = %v0 /\ %fa1_20 = %v1 /\ %fa2_20 = %v2 /\ %fa3_20 = %v3 /\
+    %fa4_20 = %v4 /\ %fa5_20 = %v5 /\ %fa6_20 = %v6 /\ %fa7_20 = %v7 /\
+    %fa8_20 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_20 = [arr2000, arr2001, arr2002, arr2003, arr2004, arr2005, arr2006, arr2007] /\
     %fa1_20 = [arr2010, arr2011, arr2012, arr2013, arr2014, arr2015, arr2016, arr2017] /\
     %fa2_20 = [arr2020, arr2021, arr2022, arr2023, arr2024, arr2025, arr2026, arr2027] /\
@@ -3425,6 +3505,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+cut (* 14 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 13]];
 
 
 #### store
@@ -3466,6 +3553,9 @@ mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L
 (* str	q0, [x19, #128]                             #! EA = L0x5555571538; PC = 0x55555517d8 *)
 mov [L0x5555571538,L0x555557153a,L0x555557153c,L0x555557153e,L0x5555571540,L0x5555571542,L0x5555571544,L0x5555571546] %v0;
 
+cut (* 15 *)
+    true && true;
+
 
 ### k0_iter_1
 
@@ -3506,7 +3596,11 @@ ghost %fa0_21@sint16[8], %fa1_21@sint16[8], %fa2_21@sint16[8], %fa3_21@sint16[8]
     %fa4_21 = %v4 /\ %fa5_21 = %v5 /\ %fa6_21 = %v6 /\ %fa7_21 = %v7 /\
     %fa8_21 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 6 *)
+cut (* 16 *)
+    %fa0_21 = %v0 /\ %fa1_21 = %v1 /\ %fa2_21 = %v2 /\ %fa3_21 = %v3 /\
+    %fa4_21 = %v4 /\ %fa5_21 = %v5 /\ %fa6_21 = %v6 /\ %fa7_21 = %v7 /\
+    %fa8_21 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_21 = [arr2100, arr2101, arr2102, arr2103, arr2104, arr2105, arr2106, arr2107] /\
     %fa1_21 = [arr2110, arr2111, arr2112, arr2113, arr2114, arr2115, arr2116, arr2117] /\
     %fa2_21 = [arr2120, arr2121, arr2122, arr2123, arr2124, arr2125, arr2126, arr2127] /\
@@ -3519,6 +3613,10 @@ cut (* 6 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_21 = %v0 /\ %fa1_21 = %v1 /\ %fa2_21 = %v2 /\ %fa3_21 = %v3 /\
+    %fa4_21 = %v4 /\ %fa5_21 = %v5 /\ %fa6_21 = %v6 /\ %fa7_21 = %v7 /\
+    %fa8_21 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_21 = [arr2100, arr2101, arr2102, arr2103, arr2104, arr2105, arr2106, arr2107] /\
     %fa1_21 = [arr2110, arr2111, arr2112, arr2113, arr2114, arr2115, arr2116, arr2117] /\
     %fa2_21 = [arr2120, arr2121, arr2122, arr2123, arr2124, arr2125, arr2126, arr2127] /\
@@ -3820,6 +3918,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
 
 
+cut (* 17 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 16]];
+
+
 #### store
 
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
@@ -3858,6 +3963,9 @@ mov [L0x55555715b8,L0x55555715ba,L0x55555715bc,L0x55555715be,L0x55555715c0,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x55555715c8; PC = 0x5555551870 *)
 mov [L0x55555715c8,L0x55555715ca,L0x55555715cc,L0x55555715ce,L0x55555715d0,L0x55555715d2,L0x55555715d4,L0x55555715d6] %v0;
+
+cut (* 18 *)
+    true && true;
 
 
 ### epilogue
@@ -3908,7 +4016,11 @@ ghost %fa0_30@sint16[8], %fa1_30@sint16[8], %fa2_30@sint16[8], %fa3_30@sint16[8]
     %fa4_30 = %v4 /\ %fa5_30 = %v5 /\ %fa6_30 = %v6 /\ %fa7_30 = %v7 /\
     %fa8_30 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 7 *)
+cut (* 19 *)
+    %fa0_30 = %v0 /\ %fa1_30 = %v1 /\ %fa2_30 = %v2 /\ %fa3_30 = %v3 /\
+    %fa4_30 = %v4 /\ %fa5_30 = %v5 /\ %fa6_30 = %v6 /\ %fa7_30 = %v7 /\
+    %fa8_30 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_30 = [arr3000, arr3001, arr3002, arr3003, arr3004, arr3005, arr3006, arr3007] /\
     %fa1_30 = [arr3010, arr3011, arr3012, arr3013, arr3014, arr3015, arr3016, arr3017] /\
     %fa2_30 = [arr3020, arr3021, arr3022, arr3023, arr3024, arr3025, arr3026, arr3027] /\
@@ -3921,6 +4033,10 @@ cut (* 7 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_30 = %v0 /\ %fa1_30 = %v1 /\ %fa2_30 = %v2 /\ %fa3_30 = %v3 /\
+    %fa4_30 = %v4 /\ %fa5_30 = %v5 /\ %fa6_30 = %v6 /\ %fa7_30 = %v7 /\
+    %fa8_30 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_30 = [arr3000, arr3001, arr3002, arr3003, arr3004, arr3005, arr3006, arr3007] /\
     %fa1_30 = [arr3010, arr3011, arr3012, arr3013, arr3014, arr3015, arr3016, arr3017] /\
     %fa2_30 = [arr3020, arr3021, arr3022, arr3023, arr3024, arr3025, arr3026, arr3027] /\
@@ -4220,6 +4336,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+cut (* 20 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 19]];
 
 
 #### store
@@ -4261,6 +4384,9 @@ mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L
 (* str	q0, [x19, #128]                             #! EA = L0x5555571658; PC = 0x55555517d8 *)
 mov [L0x5555571658,L0x555557165a,L0x555557165c,L0x555557165e,L0x5555571660,L0x5555571662,L0x5555571664,L0x5555571666] %v0;
 
+cut (* 21 *)
+    true && true;
+
 
 ### k0_iter_1
 
@@ -4301,7 +4427,11 @@ ghost %fa0_31@sint16[8], %fa1_31@sint16[8], %fa2_31@sint16[8], %fa3_31@sint16[8]
     %fa4_31 = %v4 /\ %fa5_31 = %v5 /\ %fa6_31 = %v6 /\ %fa7_31 = %v7 /\
     %fa8_31 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 8 *)
+cut (* 22 *)
+    %fa0_31 = %v0 /\ %fa1_31 = %v1 /\ %fa2_31 = %v2 /\ %fa3_31 = %v3 /\
+    %fa4_31 = %v4 /\ %fa5_31 = %v5 /\ %fa6_31 = %v6 /\ %fa7_31 = %v7 /\
+    %fa8_31 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_31 = [arr3100, arr3101, arr3102, arr3103, arr3104, arr3105, arr3106, arr3107] /\
     %fa1_31 = [arr3110, arr3111, arr3112, arr3113, arr3114, arr3115, arr3116, arr3117] /\
     %fa2_31 = [arr3120, arr3121, arr3122, arr3123, arr3124, arr3125, arr3126, arr3127] /\
@@ -4314,6 +4444,10 @@ cut (* 8 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_31 = %v0 /\ %fa1_31 = %v1 /\ %fa2_31 = %v2 /\ %fa3_31 = %v3 /\
+    %fa4_31 = %v4 /\ %fa5_31 = %v5 /\ %fa6_31 = %v6 /\ %fa7_31 = %v7 /\
+    %fa8_31 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_31 = [arr3100, arr3101, arr3102, arr3103, arr3104, arr3105, arr3106, arr3107] /\
     %fa1_31 = [arr3110, arr3111, arr3112, arr3113, arr3114, arr3115, arr3116, arr3117] /\
     %fa2_31 = [arr3120, arr3121, arr3122, arr3123, arr3124, arr3125, arr3126, arr3127] /\
@@ -4615,6 +4749,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
 
 
+cut (* 23 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 22]];
+
+
 #### store
 
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
@@ -4653,6 +4794,9 @@ mov [L0x55555716d8,L0x55555716da,L0x55555716dc,L0x55555716de,L0x55555716e0,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x55555716e8; PC = 0x5555551870 *)
 mov [L0x55555716e8,L0x55555716ea,L0x55555716ec,L0x55555716ee,L0x55555716f0,L0x55555716f2,L0x55555716f4,L0x55555716f6] %v0;
+
+cut (* 24 *)
+    true && true;
 
 
 ### epilogue
@@ -4703,7 +4847,11 @@ ghost %fa0_40@sint16[8], %fa1_40@sint16[8], %fa2_40@sint16[8], %fa3_40@sint16[8]
     %fa4_40 = %v4 /\ %fa5_40 = %v5 /\ %fa6_40 = %v6 /\ %fa7_40 = %v7 /\
     %fa8_40 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 9 *)
+cut (* 25 *)
+    %fa0_40 = %v0 /\ %fa1_40 = %v1 /\ %fa2_40 = %v2 /\ %fa3_40 = %v3 /\
+    %fa4_40 = %v4 /\ %fa5_40 = %v5 /\ %fa6_40 = %v6 /\ %fa7_40 = %v7 /\
+    %fa8_40 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_40 = [arr4000, arr4001, arr4002, arr4003, arr4004, arr4005, arr4006, arr4007] /\
     %fa1_40 = [arr4010, arr4011, arr4012, arr4013, arr4014, arr4015, arr4016, arr4017] /\
     %fa2_40 = [arr4020, arr4021, arr4022, arr4023, arr4024, arr4025, arr4026, arr4027] /\
@@ -4716,6 +4864,10 @@ cut (* 9 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_40 = %v0 /\ %fa1_40 = %v1 /\ %fa2_40 = %v2 /\ %fa3_40 = %v3 /\
+    %fa4_40 = %v4 /\ %fa5_40 = %v5 /\ %fa6_40 = %v6 /\ %fa7_40 = %v7 /\
+    %fa8_40 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_40 = [arr4000, arr4001, arr4002, arr4003, arr4004, arr4005, arr4006, arr4007] /\
     %fa1_40 = [arr4010, arr4011, arr4012, arr4013, arr4014, arr4015, arr4016, arr4017] /\
     %fa2_40 = [arr4020, arr4021, arr4022, arr4023, arr4024, arr4025, arr4026, arr4027] /\
@@ -5015,6 +5167,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+cut (* 26 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 25]];
 
 
 #### store
@@ -5056,6 +5215,9 @@ mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L
 (* str	q0, [x19, #128]                             #! EA = L0x5555571778; PC = 0x55555517d8 *)
 mov [L0x5555571778,L0x555557177a,L0x555557177c,L0x555557177e,L0x5555571780,L0x5555571782,L0x5555571784,L0x5555571786] %v0;
 
+cut (* 27 *)
+    true && true;
+
 
 ### k0_iter_1
 
@@ -5096,7 +5258,11 @@ ghost %fa0_41@sint16[8], %fa1_41@sint16[8], %fa2_41@sint16[8], %fa3_41@sint16[8]
     %fa4_41 = %v4 /\ %fa5_41 = %v5 /\ %fa6_41 = %v6 /\ %fa7_41 = %v7 /\
     %fa8_41 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 10 *)
+cut (* 28 *)
+    %fa0_41 = %v0 /\ %fa1_41 = %v1 /\ %fa2_41 = %v2 /\ %fa3_41 = %v3 /\
+    %fa4_41 = %v4 /\ %fa5_41 = %v5 /\ %fa6_41 = %v6 /\ %fa7_41 = %v7 /\
+    %fa8_41 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_41 = [arr4100, arr4101, arr4102, arr4103, arr4104, arr4105, arr4106, arr4107] /\
     %fa1_41 = [arr4110, arr4111, arr4112, arr4113, arr4114, arr4115, arr4116, arr4117] /\
     %fa2_41 = [arr4120, arr4121, arr4122, arr4123, arr4124, arr4125, arr4126, arr4127] /\
@@ -5109,6 +5275,10 @@ cut (* 10 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_41 = %v0 /\ %fa1_41 = %v1 /\ %fa2_41 = %v2 /\ %fa3_41 = %v3 /\
+    %fa4_41 = %v4 /\ %fa5_41 = %v5 /\ %fa6_41 = %v6 /\ %fa7_41 = %v7 /\
+    %fa8_41 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_41 = [arr4100, arr4101, arr4102, arr4103, arr4104, arr4105, arr4106, arr4107] /\
     %fa1_41 = [arr4110, arr4111, arr4112, arr4113, arr4114, arr4115, arr4116, arr4117] /\
     %fa2_41 = [arr4120, arr4121, arr4122, arr4123, arr4124, arr4125, arr4126, arr4127] /\
@@ -5410,6 +5580,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
 
 
+cut (* 29 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 28]];
+
+
 #### store
 
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
@@ -5448,6 +5625,9 @@ mov [L0x55555717f8,L0x55555717fa,L0x55555717fc,L0x55555717fe,L0x5555571800,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571808; PC = 0x5555551870 *)
 mov [L0x5555571808,L0x555557180a,L0x555557180c,L0x555557180e,L0x5555571810,L0x5555571812,L0x5555571814,L0x5555571816] %v0;
+
+cut (* 30 *)
+    true && true;
 
 
 ### epilogue
@@ -5498,7 +5678,11 @@ ghost %fa0_50@sint16[8], %fa1_50@sint16[8], %fa2_50@sint16[8], %fa3_50@sint16[8]
     %fa4_50 = %v4 /\ %fa5_50 = %v5 /\ %fa6_50 = %v6 /\ %fa7_50 = %v7 /\
     %fa8_50 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 11 *)
+cut (* 31 *)
+    %fa0_50 = %v0 /\ %fa1_50 = %v1 /\ %fa2_50 = %v2 /\ %fa3_50 = %v3 /\
+    %fa4_50 = %v4 /\ %fa5_50 = %v5 /\ %fa6_50 = %v6 /\ %fa7_50 = %v7 /\
+    %fa8_50 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_50 = [arr5000, arr5001, arr5002, arr5003, arr5004, arr5005, arr5006, arr5007] /\
     %fa1_50 = [arr5010, arr5011, arr5012, arr5013, arr5014, arr5015, arr5016, arr5017] /\
     %fa2_50 = [arr5020, arr5021, arr5022, arr5023, arr5024, arr5025, arr5026, arr5027] /\
@@ -5511,6 +5695,10 @@ cut (* 11 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_50 = %v0 /\ %fa1_50 = %v1 /\ %fa2_50 = %v2 /\ %fa3_50 = %v3 /\
+    %fa4_50 = %v4 /\ %fa5_50 = %v5 /\ %fa6_50 = %v6 /\ %fa7_50 = %v7 /\
+    %fa8_50 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_50 = [arr5000, arr5001, arr5002, arr5003, arr5004, arr5005, arr5006, arr5007] /\
     %fa1_50 = [arr5010, arr5011, arr5012, arr5013, arr5014, arr5015, arr5016, arr5017] /\
     %fa2_50 = [arr5020, arr5021, arr5022, arr5023, arr5024, arr5025, arr5026, arr5027] /\
@@ -5810,6 +5998,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+cut (* 32 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 31]];
 
 
 #### store
@@ -5851,6 +6046,9 @@ mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L
 (* str	q0, [x19, #128]                             #! EA = L0x5555571898; PC = 0x55555517d8 *)
 mov [L0x5555571898,L0x555557189a,L0x555557189c,L0x555557189e,L0x55555718a0,L0x55555718a2,L0x55555718a4,L0x55555718a6] %v0;
 
+cut (* 33 *)
+    true && true;
+
 
 ### k0_iter_1
 
@@ -5891,7 +6089,11 @@ ghost %fa0_51@sint16[8], %fa1_51@sint16[8], %fa2_51@sint16[8], %fa3_51@sint16[8]
     %fa4_51 = %v4 /\ %fa5_51 = %v5 /\ %fa6_51 = %v6 /\ %fa7_51 = %v7 /\
     %fa8_51 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 12 *)
+cut (* 34 *)
+    %fa0_51 = %v0 /\ %fa1_51 = %v1 /\ %fa2_51 = %v2 /\ %fa3_51 = %v3 /\
+    %fa4_51 = %v4 /\ %fa5_51 = %v5 /\ %fa6_51 = %v6 /\ %fa7_51 = %v7 /\
+    %fa8_51 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_51 = [arr5100, arr5101, arr5102, arr5103, arr5104, arr5105, arr5106, arr5107] /\
     %fa1_51 = [arr5110, arr5111, arr5112, arr5113, arr5114, arr5115, arr5116, arr5117] /\
     %fa2_51 = [arr5120, arr5121, arr5122, arr5123, arr5124, arr5125, arr5126, arr5127] /\
@@ -5904,6 +6106,10 @@ cut (* 12 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_51 = %v0 /\ %fa1_51 = %v1 /\ %fa2_51 = %v2 /\ %fa3_51 = %v3 /\
+    %fa4_51 = %v4 /\ %fa5_51 = %v5 /\ %fa6_51 = %v6 /\ %fa7_51 = %v7 /\
+    %fa8_51 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_51 = [arr5100, arr5101, arr5102, arr5103, arr5104, arr5105, arr5106, arr5107] /\
     %fa1_51 = [arr5110, arr5111, arr5112, arr5113, arr5114, arr5115, arr5116, arr5117] /\
     %fa2_51 = [arr5120, arr5121, arr5122, arr5123, arr5124, arr5125, arr5126, arr5127] /\
@@ -6205,6 +6411,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
 
 
+cut (* 35 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 34]];
+
+
 #### store
 
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
@@ -6243,6 +6456,9 @@ mov [L0x5555571918,L0x555557191a,L0x555557191c,L0x555557191e,L0x5555571920,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571928; PC = 0x5555551870 *)
 mov [L0x5555571928,L0x555557192a,L0x555557192c,L0x555557192e,L0x5555571930,L0x5555571932,L0x5555571934,L0x5555571936] %v0;
+
+cut (* 36 *)
+    true && true;
 
 
 ### epilogue
@@ -6293,7 +6509,11 @@ ghost %fa0_60@sint16[8], %fa1_60@sint16[8], %fa2_60@sint16[8], %fa3_60@sint16[8]
     %fa4_60 = %v4 /\ %fa5_60 = %v5 /\ %fa6_60 = %v6 /\ %fa7_60 = %v7 /\
     %fa8_60 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 13 *)
+cut (* 37 *)
+    %fa0_60 = %v0 /\ %fa1_60 = %v1 /\ %fa2_60 = %v2 /\ %fa3_60 = %v3 /\
+    %fa4_60 = %v4 /\ %fa5_60 = %v5 /\ %fa6_60 = %v6 /\ %fa7_60 = %v7 /\
+    %fa8_60 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_60 = [arr6000, arr6001, arr6002, arr6003, arr6004, arr6005, arr6006, arr6007] /\
     %fa1_60 = [arr6010, arr6011, arr6012, arr6013, arr6014, arr6015, arr6016, arr6017] /\
     %fa2_60 = [arr6020, arr6021, arr6022, arr6023, arr6024, arr6025, arr6026, arr6027] /\
@@ -6306,6 +6526,10 @@ cut (* 13 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_60 = %v0 /\ %fa1_60 = %v1 /\ %fa2_60 = %v2 /\ %fa3_60 = %v3 /\
+    %fa4_60 = %v4 /\ %fa5_60 = %v5 /\ %fa6_60 = %v6 /\ %fa7_60 = %v7 /\
+    %fa8_60 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_60 = [arr6000, arr6001, arr6002, arr6003, arr6004, arr6005, arr6006, arr6007] /\
     %fa1_60 = [arr6010, arr6011, arr6012, arr6013, arr6014, arr6015, arr6016, arr6017] /\
     %fa2_60 = [arr6020, arr6021, arr6022, arr6023, arr6024, arr6025, arr6026, arr6027] /\
@@ -6605,6 +6829,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+cut (* 38 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 37]];
 
 
 #### store
@@ -6646,6 +6877,9 @@ mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L
 (* str	q0, [x19, #128]                             #! EA = L0x55555719b8; PC = 0x55555517d8 *)
 mov [L0x55555719b8,L0x55555719ba,L0x55555719bc,L0x55555719be,L0x55555719c0,L0x55555719c2,L0x55555719c4,L0x55555719c6] %v0;
 
+cut (* 39 *)
+    true && true;
+
 
 ### k0_iter_1
 
@@ -6686,7 +6920,11 @@ ghost %fa0_61@sint16[8], %fa1_61@sint16[8], %fa2_61@sint16[8], %fa3_61@sint16[8]
     %fa4_61 = %v4 /\ %fa5_61 = %v5 /\ %fa6_61 = %v6 /\ %fa7_61 = %v7 /\
     %fa8_61 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 14 *)
+cut (* 40 *)
+    %fa0_61 = %v0 /\ %fa1_61 = %v1 /\ %fa2_61 = %v2 /\ %fa3_61 = %v3 /\
+    %fa4_61 = %v4 /\ %fa5_61 = %v5 /\ %fa6_61 = %v6 /\ %fa7_61 = %v7 /\
+    %fa8_61 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_61 = [arr6100, arr6101, arr6102, arr6103, arr6104, arr6105, arr6106, arr6107] /\
     %fa1_61 = [arr6110, arr6111, arr6112, arr6113, arr6114, arr6115, arr6116, arr6117] /\
     %fa2_61 = [arr6120, arr6121, arr6122, arr6123, arr6124, arr6125, arr6126, arr6127] /\
@@ -6699,6 +6937,10 @@ cut (* 14 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_61 = %v0 /\ %fa1_61 = %v1 /\ %fa2_61 = %v2 /\ %fa3_61 = %v3 /\
+    %fa4_61 = %v4 /\ %fa5_61 = %v5 /\ %fa6_61 = %v6 /\ %fa7_61 = %v7 /\
+    %fa8_61 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_61 = [arr6100, arr6101, arr6102, arr6103, arr6104, arr6105, arr6106, arr6107] /\
     %fa1_61 = [arr6110, arr6111, arr6112, arr6113, arr6114, arr6115, arr6116, arr6117] /\
     %fa2_61 = [arr6120, arr6121, arr6122, arr6123, arr6124, arr6125, arr6126, arr6127] /\
@@ -7000,6 +7242,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
 
 
+cut (* 41 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 40]];
+
+
 #### store
 
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
@@ -7038,6 +7287,9 @@ mov [L0x5555571a38,L0x5555571a3a,L0x5555571a3c,L0x5555571a3e,L0x5555571a40,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571a48; PC = 0x5555551870 *)
 mov [L0x5555571a48,L0x5555571a4a,L0x5555571a4c,L0x5555571a4e,L0x5555571a50,L0x5555571a52,L0x5555571a54,L0x5555571a56] %v0;
+
+cut (* 42 *)
+    true && true;
 
 
 ### epilogue
@@ -7088,7 +7340,11 @@ ghost %fa0_70@sint16[8], %fa1_70@sint16[8], %fa2_70@sint16[8], %fa3_70@sint16[8]
     %fa4_70 = %v4 /\ %fa5_70 = %v5 /\ %fa6_70 = %v6 /\ %fa7_70 = %v7 /\
     %fa8_70 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 15 *)
+cut (* 43 *)
+    %fa0_70 = %v0 /\ %fa1_70 = %v1 /\ %fa2_70 = %v2 /\ %fa3_70 = %v3 /\
+    %fa4_70 = %v4 /\ %fa5_70 = %v5 /\ %fa6_70 = %v6 /\ %fa7_70 = %v7 /\
+    %fa8_70 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_70 = [arr7000, arr7001, arr7002, arr7003, arr7004, arr7005, arr7006, arr7007] /\
     %fa1_70 = [arr7010, arr7011, arr7012, arr7013, arr7014, arr7015, arr7016, arr7017] /\
     %fa2_70 = [arr7020, arr7021, arr7022, arr7023, arr7024, arr7025, arr7026, arr7027] /\
@@ -7101,6 +7357,10 @@ cut (* 15 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_70 = %v0 /\ %fa1_70 = %v1 /\ %fa2_70 = %v2 /\ %fa3_70 = %v3 /\
+    %fa4_70 = %v4 /\ %fa5_70 = %v5 /\ %fa6_70 = %v6 /\ %fa7_70 = %v7 /\
+    %fa8_70 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_70 = [arr7000, arr7001, arr7002, arr7003, arr7004, arr7005, arr7006, arr7007] /\
     %fa1_70 = [arr7010, arr7011, arr7012, arr7013, arr7014, arr7015, arr7016, arr7017] /\
     %fa2_70 = [arr7020, arr7021, arr7022, arr7023, arr7024, arr7025, arr7026, arr7027] /\
@@ -7400,6 +7660,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+cut (* 44 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 43]];
 
 
 #### store
@@ -7441,6 +7708,9 @@ mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L
 (* str	q0, [x19, #128]                             #! EA = L0x5555571ad8; PC = 0x55555517d8 *)
 mov [L0x5555571ad8,L0x5555571ada,L0x5555571adc,L0x5555571ade,L0x5555571ae0,L0x5555571ae2,L0x5555571ae4,L0x5555571ae6] %v0;
 
+cut (* 45 *)
+    true && true;
+
 
 ### k0_iter_1
 
@@ -7481,7 +7751,11 @@ ghost %fa0_71@sint16[8], %fa1_71@sint16[8], %fa2_71@sint16[8], %fa3_71@sint16[8]
     %fa4_71 = %v4 /\ %fa5_71 = %v5 /\ %fa6_71 = %v6 /\ %fa7_71 = %v7 /\
     %fa8_71 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 16 *)
+cut (* 46 *)
+    %fa0_71 = %v0 /\ %fa1_71 = %v1 /\ %fa2_71 = %v2 /\ %fa3_71 = %v3 /\
+    %fa4_71 = %v4 /\ %fa5_71 = %v5 /\ %fa6_71 = %v6 /\ %fa7_71 = %v7 /\
+    %fa8_71 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_71 = [arr7100, arr7101, arr7102, arr7103, arr7104, arr7105, arr7106, arr7107] /\
     %fa1_71 = [arr7110, arr7111, arr7112, arr7113, arr7114, arr7115, arr7116, arr7117] /\
     %fa2_71 = [arr7120, arr7121, arr7122, arr7123, arr7124, arr7125, arr7126, arr7127] /\
@@ -7494,6 +7768,10 @@ cut (* 16 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_71 = %v0 /\ %fa1_71 = %v1 /\ %fa2_71 = %v2 /\ %fa3_71 = %v3 /\
+    %fa4_71 = %v4 /\ %fa5_71 = %v5 /\ %fa6_71 = %v6 /\ %fa7_71 = %v7 /\
+    %fa8_71 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_71 = [arr7100, arr7101, arr7102, arr7103, arr7104, arr7105, arr7106, arr7107] /\
     %fa1_71 = [arr7110, arr7111, arr7112, arr7113, arr7114, arr7115, arr7116, arr7117] /\
     %fa2_71 = [arr7120, arr7121, arr7122, arr7123, arr7124, arr7125, arr7126, arr7127] /\
@@ -7795,6 +8073,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
 
 
+cut (* 47 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 46]];
+
+
 #### store
 
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
@@ -7833,6 +8118,9 @@ mov [L0x5555571b58,L0x5555571b5a,L0x5555571b5c,L0x5555571b5e,L0x5555571b60,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571b68; PC = 0x5555551870 *)
 mov [L0x5555571b68,L0x5555571b6a,L0x5555571b6c,L0x5555571b6e,L0x5555571b70,L0x5555571b72,L0x5555571b74,L0x5555571b76] %v0;
+
+cut (* 48 *)
+    true && true;
 
 
 ### epilogue
@@ -7883,7 +8171,11 @@ ghost %fa0_80@sint16[8], %fa1_80@sint16[8], %fa2_80@sint16[8], %fa3_80@sint16[8]
     %fa4_80 = %v4 /\ %fa5_80 = %v5 /\ %fa6_80 = %v6 /\ %fa7_80 = %v7 /\
     %fa8_80 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 17 *)
+cut (* 49 *)
+    %fa0_80 = %v0 /\ %fa1_80 = %v1 /\ %fa2_80 = %v2 /\ %fa3_80 = %v3 /\
+    %fa4_80 = %v4 /\ %fa5_80 = %v5 /\ %fa6_80 = %v6 /\ %fa7_80 = %v7 /\
+    %fa8_80 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_80 = [arr8000, arr8001, arr8002, arr8003, arr8004, arr8005, arr8006, arr8007] /\
     %fa1_80 = [arr8010, arr8011, arr8012, arr8013, arr8014, arr8015, arr8016, arr8017] /\
     %fa2_80 = [arr8020, arr8021, arr8022, arr8023, arr8024, arr8025, arr8026, arr8027] /\
@@ -7896,6 +8188,10 @@ cut (* 17 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_80 = %v0 /\ %fa1_80 = %v1 /\ %fa2_80 = %v2 /\ %fa3_80 = %v3 /\
+    %fa4_80 = %v4 /\ %fa5_80 = %v5 /\ %fa6_80 = %v6 /\ %fa7_80 = %v7 /\
+    %fa8_80 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_80 = [arr8000, arr8001, arr8002, arr8003, arr8004, arr8005, arr8006, arr8007] /\
     %fa1_80 = [arr8010, arr8011, arr8012, arr8013, arr8014, arr8015, arr8016, arr8017] /\
     %fa2_80 = [arr8020, arr8021, arr8022, arr8023, arr8024, arr8025, arr8026, arr8027] /\
@@ -8195,6 +8491,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+cut (* 50 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 49]];
 
 
 #### store
@@ -8236,6 +8539,9 @@ mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L
 (* str	q0, [x19, #128]                             #! EA = L0x5555571bf8; PC = 0x55555517d8 *)
 mov [L0x5555571bf8,L0x5555571bfa,L0x5555571bfc,L0x5555571bfe,L0x5555571c00,L0x5555571c02,L0x5555571c04,L0x5555571c06] %v0;
 
+cut (* 51 *)
+    true && true;
+
 
 ### k0_iter_1
 
@@ -8276,7 +8582,11 @@ ghost %fa0_81@sint16[8], %fa1_81@sint16[8], %fa2_81@sint16[8], %fa3_81@sint16[8]
     %fa4_81 = %v4 /\ %fa5_81 = %v5 /\ %fa6_81 = %v6 /\ %fa7_81 = %v7 /\
     %fa8_81 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 18 *)
+cut (* 52 *)
+    %fa0_81 = %v0 /\ %fa1_81 = %v1 /\ %fa2_81 = %v2 /\ %fa3_81 = %v3 /\
+    %fa4_81 = %v4 /\ %fa5_81 = %v5 /\ %fa6_81 = %v6 /\ %fa7_81 = %v7 /\
+    %fa8_81 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_81 = [arr8100, arr8101, arr8102, arr8103, arr8104, arr8105, arr8106, arr8107] /\
     %fa1_81 = [arr8110, arr8111, arr8112, arr8113, arr8114, arr8115, arr8116, arr8117] /\
     %fa2_81 = [arr8120, arr8121, arr8122, arr8123, arr8124, arr8125, arr8126, arr8127] /\
@@ -8289,6 +8599,10 @@ cut (* 18 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_81 = %v0 /\ %fa1_81 = %v1 /\ %fa2_81 = %v2 /\ %fa3_81 = %v3 /\
+    %fa4_81 = %v4 /\ %fa5_81 = %v5 /\ %fa6_81 = %v6 /\ %fa7_81 = %v7 /\
+    %fa8_81 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_81 = [arr8100, arr8101, arr8102, arr8103, arr8104, arr8105, arr8106, arr8107] /\
     %fa1_81 = [arr8110, arr8111, arr8112, arr8113, arr8114, arr8115, arr8116, arr8117] /\
     %fa2_81 = [arr8120, arr8121, arr8122, arr8123, arr8124, arr8125, arr8126, arr8127] /\
@@ -8590,6 +8904,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
 
 
+cut (* 53 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 52]];
+
+
 #### store
 
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
@@ -8628,6 +8949,9 @@ mov [L0x5555571c78,L0x5555571c7a,L0x5555571c7c,L0x5555571c7e,L0x5555571c80,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571c88; PC = 0x5555551870 *)
 mov [L0x5555571c88,L0x5555571c8a,L0x5555571c8c,L0x5555571c8e,L0x5555571c90,L0x5555571c92,L0x5555571c94,L0x5555571c96] %v0;
+
+cut (* 54 *)
+    true && true;
 
 
 ### epilogue
@@ -8678,7 +9002,11 @@ ghost %fa0_90@sint16[8], %fa1_90@sint16[8], %fa2_90@sint16[8], %fa3_90@sint16[8]
     %fa4_90 = %v4 /\ %fa5_90 = %v5 /\ %fa6_90 = %v6 /\ %fa7_90 = %v7 /\
     %fa8_90 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 19 *)
+cut (* 55 *)
+    %fa0_90 = %v0 /\ %fa1_90 = %v1 /\ %fa2_90 = %v2 /\ %fa3_90 = %v3 /\
+    %fa4_90 = %v4 /\ %fa5_90 = %v5 /\ %fa6_90 = %v6 /\ %fa7_90 = %v7 /\
+    %fa8_90 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_90 = [arr9000, arr9001, arr9002, arr9003, arr9004, arr9005, arr9006, arr9007] /\
     %fa1_90 = [arr9010, arr9011, arr9012, arr9013, arr9014, arr9015, arr9016, arr9017] /\
     %fa2_90 = [arr9020, arr9021, arr9022, arr9023, arr9024, arr9025, arr9026, arr9027] /\
@@ -8691,6 +9019,10 @@ cut (* 19 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_90 = %v0 /\ %fa1_90 = %v1 /\ %fa2_90 = %v2 /\ %fa3_90 = %v3 /\
+    %fa4_90 = %v4 /\ %fa5_90 = %v5 /\ %fa6_90 = %v6 /\ %fa7_90 = %v7 /\
+    %fa8_90 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_90 = [arr9000, arr9001, arr9002, arr9003, arr9004, arr9005, arr9006, arr9007] /\
     %fa1_90 = [arr9010, arr9011, arr9012, arr9013, arr9014, arr9015, arr9016, arr9017] /\
     %fa2_90 = [arr9020, arr9021, arr9022, arr9023, arr9024, arr9025, arr9026, arr9027] /\
@@ -8990,6 +9322,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #! 0x7fffffefe0 = 0x7fffffefe0;
 (* #ret                                            #! PC = 0x5555551c1c *)
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
+
+
+cut (* 56 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 55]];
 
 
 #### store
@@ -9031,6 +9370,9 @@ mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L
 (* str	q0, [x19, #128]                             #! EA = L0x5555571d18; PC = 0x55555517d8 *)
 mov [L0x5555571d18,L0x5555571d1a,L0x5555571d1c,L0x5555571d1e,L0x5555571d20,L0x5555571d22,L0x5555571d24,L0x5555571d26] %v0;
 
+cut (* 57 *)
+    true && true;
+
 
 ### k0_iter_1
 
@@ -9071,7 +9413,11 @@ ghost %fa0_91@sint16[8], %fa1_91@sint16[8], %fa2_91@sint16[8], %fa3_91@sint16[8]
     %fa4_91 = %v4 /\ %fa5_91 = %v5 /\ %fa6_91 = %v6 /\ %fa7_91 = %v7 /\
     %fa8_91 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 
-cut (* 20 *)
+cut (* 58 *)
+    %fa0_91 = %v0 /\ %fa1_91 = %v1 /\ %fa2_91 = %v2 /\ %fa3_91 = %v3 /\
+    %fa4_91 = %v4 /\ %fa5_91 = %v5 /\ %fa6_91 = %v6 /\ %fa7_91 = %v7 /\
+    %fa8_91 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_91 = [arr9100, arr9101, arr9102, arr9103, arr9104, arr9105, arr9106, arr9107] /\
     %fa1_91 = [arr9110, arr9111, arr9112, arr9113, arr9114, arr9115, arr9116, arr9117] /\
     %fa2_91 = [arr9120, arr9121, arr9122, arr9123, arr9124, arr9125, arr9126, arr9127] /\
@@ -9084,6 +9430,10 @@ cut (* 20 *)
     true
     prove with [cuts[0]]
   &&
+    %fa0_91 = %v0 /\ %fa1_91 = %v1 /\ %fa2_91 = %v2 /\ %fa3_91 = %v3 /\
+    %fa4_91 = %v4 /\ %fa5_91 = %v5 /\ %fa6_91 = %v6 /\ %fa7_91 = %v7 /\
+    %fa8_91 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\
+
     %fa0_91 = [arr9100, arr9101, arr9102, arr9103, arr9104, arr9105, arr9106, arr9107] /\
     %fa1_91 = [arr9110, arr9111, arr9112, arr9113, arr9114, arr9115, arr9116, arr9117] /\
     %fa2_91 = [arr9120, arr9121, arr9122, arr9123, arr9124, arr9125, arr9126, arr9127] /\
@@ -9385,6 +9735,13 @@ mov %v9 [L0x7fffffefd8,L0x7fffffefda,L0x7fffffefdc,L0x7fffffefde,0@sint16,0@sint
 #ret                                            #! 0x5555551c1c = 0x5555551c1c;
 
 
+cut (* 59 *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[0, 58]];
+
+
 #### store
 
 (* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff070; Value = 0x0000000000000000; PC = 0x555555182c *)
@@ -9423,6 +9780,9 @@ mov [L0x5555571d98,L0x5555571d9a,L0x5555571d9c,L0x5555571d9e,L0x5555571da0,L0x55
 mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* str	q0, [x19, #272]                             #! EA = L0x5555571da8; PC = 0x5555551870 *)
 mov [L0x5555571da8,L0x5555571daa,L0x5555571dac,L0x5555571dae,L0x5555571db0,L0x5555571db2,L0x5555571db4,L0x5555571db6] %v0;
+
+cut (* 60 *)
+    true && true;
 
 
 ### epilogue

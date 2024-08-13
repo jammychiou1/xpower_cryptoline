@@ -44,6 +44,24 @@ def memory_loc(addr):
 def memory_arr(base, len, size):
     return format_arr([memory_loc(base + size * i) for i in range(len)])
 
+def annot_ntt9_2x(ntt9_2x, i, k0, prologue_cut_id, load_cut_id):
+    global cut_id
+
+    print()
+    print('#### ntt9_2x')
+    print()
+    print(''.join(ntt9_2x), end='')
+    print()
+    print(f'''
+cut (* {cut_id} *)
+    true
+  &&
+    true
+    prove with [precondition, cuts[{prologue_cut_id}, {load_cut_id}]];
+''')
+    cut_id += 1
+
+
 def annot_k0_iter_0(k0_iter_0, i, prologue_cut_id):
     global cut_id
 
@@ -73,30 +91,41 @@ ghost %fa0_{i}0@sint16[8], %fa1_{i}0@sint16[8], %fa2_{i}0@sint16[8], %fa3_{i}0@s
     %fa8_{i}0 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 ''')
     print(f'cut (* {cut_id} *)')
+    print(f'''\
+    %fa0_{i}0 = %v0 /\\ %fa1_{i}0 = %v1 /\\ %fa2_{i}0 = %v2 /\\ %fa3_{i}0 = %v3 /\\
+    %fa4_{i}0 = %v4 /\\ %fa5_{i}0 = %v5 /\\ %fa6_{i}0 = %v6 /\\ %fa7_{i}0 = %v7 /\\
+    %fa8_{i}0 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\\
+''')
     for j in range(9):
         rhs = [f'arr{i}0{j}{k}' for k in range(8)]
         print(f'    %fa{j}_{i}0 = {format_arr(rhs)} /\\')
     print(f'    true')
     print(f'    prove with [cuts[{prologue_cut_id}]]')
     print(f'  &&')
+    print(f'''\
+    %fa0_{i}0 = %v0 /\\ %fa1_{i}0 = %v1 /\\ %fa2_{i}0 = %v2 /\\ %fa3_{i}0 = %v3 /\\
+    %fa4_{i}0 = %v4 /\\ %fa5_{i}0 = %v5 /\\ %fa6_{i}0 = %v6 /\\ %fa7_{i}0 = %v7 /\\
+    %fa8_{i}0 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\\
+''')
     for j in range(9):
         rhs = [f'arr{i}0{j}{k}' for k in range(8)]
         print(f'    %fa{j}_{i}0 = {format_arr(rhs)} /\\')
     print(f'    true')
     print(f'    prove with [cuts[{prologue_cut_id}]];')
+    load_cut_id = cut_id
     cut_id += 1
 
-    print()
-    print('#### ntt9_2x')
-    print()
-    print(''.join(ntt9_2x), end='')
-    print()
+    annot_ntt9_2x(ntt9_2x, i, 0, prologue_cut_id, load_cut_id)
 
     print()
     print('#### store')
     print()
     print(''.join(store), end='')
-    print()
+    print(f'''
+cut (* {cut_id} *)
+    true && true;
+''')
+    cut_id += 1
 
 def annot_k0_iter_1(k0_iter_1, i, prologue_cut_id):
     global cut_id
@@ -127,30 +156,41 @@ ghost %fa0_{i}1@sint16[8], %fa1_{i}1@sint16[8], %fa2_{i}1@sint16[8], %fa3_{i}1@s
     %fa8_{i}1 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
 ''')
     print(f'cut (* {cut_id} *)')
+    print(f'''\
+    %fa0_{i}1 = %v0 /\\ %fa1_{i}1 = %v1 /\\ %fa2_{i}1 = %v2 /\\ %fa3_{i}1 = %v3 /\\
+    %fa4_{i}1 = %v4 /\\ %fa5_{i}1 = %v5 /\\ %fa6_{i}1 = %v6 /\\ %fa7_{i}1 = %v7 /\\
+    %fa8_{i}1 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\\
+''')
     for j in range(9):
         rhs = [f'arr{i}1{j}{k}' for k in range(8)]
         print(f'    %fa{j}_{i}1 = {format_arr(rhs)} /\\')
     print(f'    true')
     print(f'    prove with [cuts[{prologue_cut_id}]]')
     print(f'  &&')
+    print(f'''\
+    %fa0_{i}1 = %v0 /\\ %fa1_{i}1 = %v1 /\\ %fa2_{i}1 = %v2 /\\ %fa3_{i}1 = %v3 /\\
+    %fa4_{i}1 = %v4 /\\ %fa5_{i}1 = %v5 /\\ %fa6_{i}1 = %v6 /\\ %fa7_{i}1 = %v7 /\\
+    %fa8_{i}1 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\\
+''')
     for j in range(9):
         rhs = [f'arr{i}1{j}{k}' for k in range(8)]
         print(f'    %fa{j}_{i}1 = {format_arr(rhs)} /\\')
     print(f'    true')
     print(f'    prove with [cuts[{prologue_cut_id}]];')
+    load_cut_id = cut_id
     cut_id += 1
 
-    print()
-    print('#### ntt9_2x')
-    print()
-    print(''.join(ntt9_2x), end='')
-    print()
+    annot_ntt9_2x(ntt9_2x, i, 1, prologue_cut_id, load_cut_id)
 
     print()
     print('#### store')
     print()
     print(''.join(store), end='')
-    print()
+    print(f'''
+cut (* {cut_id} *)
+    true && true;
+''')
+    cut_id += 1
 
 def annot_i_iter(i_iter, i, prologue_cut_id):
     global cut_id
