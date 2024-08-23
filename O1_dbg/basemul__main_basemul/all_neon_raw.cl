@@ -19667,7 +19667,7 @@ mov [L0x5555573428,L0x555557342a,L0x555557342c,L0x555557342e,L0x5555573430,L0x55
 (* #b.eq	0x5555551f68 <_ZN6xpower7basemul12main_basemulEPA2_A9_A8_sS4_S4_+840>  // b.none#! PC = 0x5555551f48 *)
 #b.eq	0x5555551f68 <_ZN6xpower7basemul12main_basemulEPA2_A9_A8_sS4_S4_+840>  // b.none#! 0x5555551f48 = 0x5555551f48;
 (* ldr	d8, [sp], #16                               #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551f68 *)
-ldr	d8, %%L0x7ffffff100                               #! L0x7ffffff100 = L0x7ffffff100; 0x0000000000000000 = 0x0000000000000000; 0x5555551f68 = 0x5555551f68;
+mov %v8 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,0@sint16,0@sint16,0@sint16,0@sint16];
 (* #! <- SP = 0x7ffffff110 *)
 #! 0x7ffffff110 = 0x7ffffff110;
 (* #ret                                            #! PC = 0x5555551f6c *)

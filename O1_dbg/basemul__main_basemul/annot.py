@@ -45,7 +45,26 @@ def memory_arr(base, len, size):
     return format_arr([memory_loc(base + size * i) for i in range(len)])
 
 # consts = [4591, 29235, 0, 0, 0, 0, 0, 0, -621, 1891, -803, 0, -4432, 13497, -5731, -17729]
+consts = [0, 0, 0, 0, 0, 0, 0, 0]
 cut_id = 0
+
+def annot_radix2(radix2, i, j, prologue_cut_id):
+    global cut_id
+
+    print()
+    print('##### radix2')
+    print()
+    print(''.join(radix2), end='')
+    print()
+
+def annot_karatsuba(karatsuba, i, j, prologue_cut_id):
+    global cut_id
+
+    print()
+    print('##### karatsuba')
+    print()
+    print(''.join(karatsuba), end='')
+    print()
 
 def annot_j_iter(j_iter, i, j, prologue_cut_id):
     global cut_id
@@ -67,11 +86,10 @@ def annot_j_iter(j_iter, i, j, prologue_cut_id):
     print(''.join(load), end='')
     print()
 
-    print()
-    print('##### conv')
-    print()
-    print(''.join(conv), end='')
-    print()
+    if i % 2 == 0:
+        annot_radix2(conv, i, j, prologue_cut_id)
+    else:
+        annot_karatsuba(conv, i, j, prologue_cut_id)
 
     print()
     print('##### store')
@@ -138,74 +156,110 @@ def annot(lines):
     epilogue = lines[i_loop_end:]
 
     print('proc main(')
-    # print('    # array')
-    # for i in range(10):
-    #     for k0 in range(2):
-    #         for j in range(9):
-    #             arr = [f'sint16 arr{i}{k0}{j}{k},' for k in range(8)]
-    #             print(f'    {" ".join(arr)}')
-    # print()
-    # print('    # ghost')
-    # print('    sint16 Q, sint16 Q2, sint16 NQ2, sint16 W9')
+    print('    # array')
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'sint16 arr{i}{k0}{j}{k}_a,' for k in range(8)]
+                print(f'    {" ".join(arr)}')
+    print()
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'sint16 arr{i}{k0}{j}{k}_b,' for k in range(8)]
+                print(f'    {" ".join(arr)}')
+    print()
+    print('    # ghost')
+    print('    sint16 Q, sint16 Q2, sint16 NQ2')
     print(') =')
     print('{')
-    # print('    Q = 4591 /\\ Q2 = 2295 /\\ NQ2 = -2295 /\\')
-    # print('    W9 = -1606 /\\')
-    # print()
-    # for i in range(10):
-    #     for k0 in range(2):
-    #         for j in range(9):
-    #             arr = [f'arr{i}{k0}{j}{k}' for k in range(8)]
-    #             print(f'    {format_arr(arr)} <= {format_arr(["3875"] * 8)} /\\')
-    # print()
-    # for i in range(10):
-    #     for k0 in range(2):
-    #         for j in range(9):
-    #             arr = [f'arr{i}{k0}{j}{k}' for k in range(8)]
-    #             print(f'    {format_arr(arr)} >= {format_arr(["-3875"] * 8)} /\\')
+    print('    Q = 4591 /\\ Q2 = 2295 /\\ NQ2 = -2295 /\\')
+    print()
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_a' for k in range(8)]
+                print(f'    {format_arr(arr)} <= {format_arr(["8420"] * 8)} /\\')
+    print()
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_a' for k in range(8)]
+                print(f'    {format_arr(arr)} >= {format_arr(["-8420"] * 8)} /\\')
+    print()
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_b' for k in range(8)]
+                print(f'    {format_arr(arr)} <= {format_arr(["8420"] * 8)} /\\')
+    print()
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_b' for k in range(8)]
+                print(f'    {format_arr(arr)} >= {format_arr(["-8420"] * 8)} /\\')
+    print()
     print('    true')
     print('  &&')
-    # print('    Q = 4591@16 /\\ Q2 = 2295@16 /\\ NQ2 = (-2295)@16 /\\')
-    # print('    W9 = (-1606)@16 /\\')
-    # print()
-    # for i in range(10):
-    #     for k0 in range(2):
-    #         for j in range(9):
-    #             arr = [f'arr{i}{k0}{j}{k}' for k in range(8)]
-    #             print(f'    {format_arr(arr)} <=s {format_arr(["3875@16"] * 8)} /\\')
-    # print()
-    # for i in range(10):
-    #     for k0 in range(2):
-    #         for j in range(9):
-    #             arr = [f'arr{i}{k0}{j}{k}' for k in range(8)]
-    #             print(f'    {format_arr(arr)} >=s {format_arr(["(-3875)@16"] * 8)} /\\')
+    print('    Q = 4591@16 /\\ Q2 = 2295@16 /\\ NQ2 = (-2295)@16 /\\')
+    print()
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_a' for k in range(8)]
+                print(f'    {format_arr(arr)} <=s {format_arr(["8420@16"] * 8)} /\\')
+    print()
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_a' for k in range(8)]
+                print(f'    {format_arr(arr)} >=s {format_arr(["(-8420)@16"] * 8)} /\\')
+    print()
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_b' for k in range(8)]
+                print(f'    {format_arr(arr)} <=s {format_arr(["8420@16"] * 8)} /\\')
+    print()
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_b' for k in range(8)]
+                print(f'    {format_arr(arr)} >=s {format_arr(["(-8420)@16"] * 8)} /\\')
+    print()
     print('    true')
     print('}')
 
-    # print()
-    # print('# constants')
-    # print()
-    # rhs = [format_imm(c) for c in consts]
-    # print(f'mov {memory_arr(0x5555552b10, 16, 2)} {format_arr(rhs)};')
-    # print()
+    print()
+    print('# constants')
+    print()
+    for t in range(90):
+        rhs = [format_imm(c) for c in consts]
+        print(f'mov {memory_arr(0x5555552b40 + 16 * t, 8, 2)} {format_arr(rhs)};')
+    print()
 
-    # print()
-    # print('# setup')
-    # for i in range(10):
-    #     for k0 in range(2):
-    #         for j in range(9):
-    #             arr = [f'arr{i}{k0}{j}{k}' for k in range(8)]
-    #             print(f'mov {memory_arr(0x5555571278 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} {format_arr(arr)};')
-    # print()
-    # print('nondet %v8@sint16[8];')
-    # print('nondet %v9@sint16[8];')
-    # print()
-
-    # for i in range(len(lines)):
-    #     if lines[i].find('PC = 0x5555551abc') != -1:
-    #         lines[i + 1] = lines[i + 1].replace('add', 'adds %add_dc')
-    #     if lines[i].find('PC = 0x5555551ac8') != -1:
-    #         lines[i + 1] = lines[i + 1].replace('sub', 'subc %sub_dc')
+    print()
+    print('# setup')
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_a' for k in range(8)]
+                print(f'mov {memory_arr(0x5555571278 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} {format_arr(arr)};')
+    print()
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_b' for k in range(8)]
+                print(f'mov {memory_arr(0x5555571db8 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} {format_arr(arr)};')
+    print()
+    print(f'mov [L0x5555552b30,L0x5555552b32,L0x5555552b34,L0x5555552b36,L0x5555552b38,L0x5555552b3a,L0x5555552b3c,L0x5555552b3e] [4591@sint16, 0@sint16, 0@sint16, 0@sint16, 0@sint16, 0@sint16, 0@sint16, 0@sint16];')
+    print()
+    print('nondet %v8@sint16[8];')
+    print('nondet v60@sint32;')
+    print('nondet v61@sint32;')
+    print('nondet v80@sint32;')
+    print('nondet v81@sint32;')
+    print()
 
     print()
     print('# prologue')
@@ -213,43 +267,45 @@ def annot(lines):
     print(''.join(prologue), end='')
     print()
     print(f'cut (* {cut_id} *)')
-    print(f'    true && true;')
-    # for i in range(10):
-    #     for k0 in range(2):
-    #         for j in range(9):
-    #             arr = [f'arr{i}{k0}{j}{k}' for k in range(8)]
-    #             print(f'    {memory_arr(0x5555571278 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
-    # print()
+    # print(f'    true && true;')
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_a' for k in range(8)]
+                print(f'    {memory_arr(0x5555571278 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
+    print()
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_b' for k in range(8)]
+                print(f'    {memory_arr(0x5555571bd8 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
+    print()
     # print(f'    {memory_arr(0x5555552b10, 16, 2)} = {format_coefs(consts)}')
-    # print('  &&')
-    # for i in range(10):
-    #     for k0 in range(2):
-    #         for j in range(9):
-    #             arr = [f'arr{i}{k0}{j}{k}' for k in range(8)]
-    #             print(f'    {memory_arr(0x5555571278 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
-    # print()
+    print('    true')
+    print('  &&')
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_a' for k in range(8)]
+                print(f'    {memory_arr(0x5555571278 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
+    print()
+    for i in range(10):
+        for k0 in range(2):
+            for j in range(9):
+                arr = [f'arr{i}{k0}{j}{k}_b' for k in range(8)]
+                print(f'    {memory_arr(0x5555571bd8 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
+    print()
     # print(f'    {memory_arr(0x5555552b10, 16, 2)} = {format_arr([format_const(c) for c in consts])};')
+    print('    true;')
     prologue_cut_id = cut_id
     cut_id += 1
-
-    ## print()
-    ## print('# i_loop')
-    ## print()
-    ## print(''.join(lines[i_loop_begin : i_loop_end]), end='')
-    ## print()
 
     i = 0
     i_iter_begin = i_loop_begin
     for i_iter_end in i_iter_ends:
         annot_i_iter(lines[i_iter_begin : i_iter_end], i, prologue_cut_id)
-        # print()
-        # print('# i_iter')
-        # print()
-        # print(''.join(lines[i_iter_begin : i_iter_end]), end='')
-        # print()
         i_iter_begin = i_iter_end
         i += 1
-        # break
 
     print()
     print('# epilogue')
