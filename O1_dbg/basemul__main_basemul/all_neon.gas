@@ -20,7 +20,8 @@
 #! uzp1 $1v.8h, $2v.8h, $3v.8h -> mov %spl_join [%$2v[0], %$2v[1], %$2v[2], %$2v[3], %$3v[0], %$3v[1], %$3v[2], %$3v[3]]; spl %splh %$1v %spl_join 16; cast %$1v@int16[8] %$1v
 #! uzp2 $1v.8h, $2v.8h, $3v.8h -> mov %spl_join [%$2v[0], %$2v[1], %$2v[2], %$2v[3], %$3v[0], %$3v[1], %$3v[2], %$3v[3]]; spl %$1v %spll %spl_join 16
 
-#! sqrdmulh $1v.4s, $2v.4s, $3v.s\[$4c\] -> smulj %LO %$2v [$3v$4c,$3v$4c,$3v$4c,$3v$4c];\nssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;\nvpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;\nadd %$1v %LO11 %LO01
+#! sqrdmulh $1v.4s, $2v.4s, $3v.s\[0\] -> cast uint16 coef_l %$3v[0]; join coef %$3v[1] coef_l;\nsmulj %LO %$2v [coef,coef,coef,coef];\nssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;\nvpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;\nadd %$1v %LO11 %LO01
+#! sqrdmulh $1v.4s, $2v.4s, $3v.s\[1\] -> cast uint16 coef_l %$3v[2]; join coef %$3v[3] coef_l;\nsmulj %LO %$2v [coef,coef,coef,coef];\nssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;\nvpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;\nadd %$1v %LO11 %LO01
 
 	#! -> SP = 0x7ffffff110
 	str	d8, [sp, #-16]!                             #! EA = L0x7ffffff100; PC = 0x5555551c20

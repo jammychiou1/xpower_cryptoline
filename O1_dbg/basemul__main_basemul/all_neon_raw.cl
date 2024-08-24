@@ -173,12 +173,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -192,12 +194,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -383,12 +387,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -402,12 +408,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -593,12 +601,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -612,12 +622,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -803,12 +815,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -822,12 +836,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -1013,12 +1029,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -1032,12 +1050,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -1223,12 +1243,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -1242,12 +1264,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -1433,12 +1457,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -1452,12 +1478,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -1643,12 +1671,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -1662,12 +1692,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -1853,12 +1885,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -1872,12 +1906,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -2089,12 +2125,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -2106,12 +2144,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -2315,12 +2355,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -2332,12 +2374,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -2541,12 +2585,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -2558,12 +2604,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -2767,12 +2815,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -2784,12 +2834,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -2993,12 +3045,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -3010,12 +3064,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -3219,12 +3275,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -3236,12 +3294,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -3445,12 +3505,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -3462,12 +3524,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -3671,12 +3735,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -3688,12 +3754,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -3897,12 +3965,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -3914,12 +3984,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -4105,12 +4177,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -4124,12 +4198,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -4315,12 +4391,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -4334,12 +4412,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -4525,12 +4605,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -4544,12 +4626,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -4735,12 +4819,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -4754,12 +4840,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -4945,12 +5033,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -4964,12 +5054,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -5155,12 +5247,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -5174,12 +5268,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -5365,12 +5461,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -5384,12 +5482,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -5575,12 +5675,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -5594,12 +5696,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -5785,12 +5889,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -5804,12 +5910,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -6021,12 +6129,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -6038,12 +6148,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -6247,12 +6359,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -6264,12 +6378,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -6473,12 +6589,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -6490,12 +6608,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -6699,12 +6819,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -6716,12 +6838,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -6925,12 +7049,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -6942,12 +7068,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -7151,12 +7279,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -7168,12 +7298,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -7377,12 +7509,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -7394,12 +7528,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -7603,12 +7739,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -7620,12 +7758,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -7829,12 +7969,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -7846,12 +7988,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -8037,12 +8181,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -8056,12 +8202,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -8247,12 +8395,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -8266,12 +8416,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -8457,12 +8609,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -8476,12 +8630,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -8667,12 +8823,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -8686,12 +8844,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -8877,12 +9037,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -8896,12 +9058,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -9087,12 +9251,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -9106,12 +9272,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -9297,12 +9465,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -9316,12 +9486,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -9507,12 +9679,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -9526,12 +9700,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -9717,12 +9893,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -9736,12 +9914,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -9953,12 +10133,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -9970,12 +10152,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -10179,12 +10363,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -10196,12 +10382,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -10405,12 +10593,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -10422,12 +10612,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -10631,12 +10823,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -10648,12 +10842,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -10857,12 +11053,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -10874,12 +11072,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -11083,12 +11283,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -11100,12 +11302,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -11309,12 +11513,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -11326,12 +11532,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -11535,12 +11743,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -11552,12 +11762,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -11761,12 +11973,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -11778,12 +11992,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -11969,12 +12185,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -11988,12 +12206,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -12179,12 +12399,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -12198,12 +12420,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -12389,12 +12613,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -12408,12 +12634,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -12599,12 +12827,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -12618,12 +12848,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -12809,12 +13041,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -12828,12 +13062,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -13019,12 +13255,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -13038,12 +13276,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -13229,12 +13469,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -13248,12 +13490,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -13439,12 +13683,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -13458,12 +13704,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -13649,12 +13897,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -13668,12 +13918,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -13885,12 +14137,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -13902,12 +14156,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -14111,12 +14367,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -14128,12 +14386,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -14337,12 +14597,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -14354,12 +14616,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -14563,12 +14827,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -14580,12 +14846,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -14789,12 +15057,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -14806,12 +15076,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -15015,12 +15287,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -15032,12 +15306,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -15241,12 +15517,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -15258,12 +15536,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -15467,12 +15747,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -15484,12 +15766,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -15693,12 +15977,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -15710,12 +15996,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -15901,12 +16189,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -15920,12 +16210,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -16111,12 +16403,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -16130,12 +16424,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -16321,12 +16617,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -16340,12 +16638,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -16531,12 +16831,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -16550,12 +16852,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -16741,12 +17045,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -16760,12 +17066,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -16951,12 +17259,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -16970,12 +17280,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -17161,12 +17473,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -17180,12 +17494,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -17371,12 +17687,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -17390,12 +17708,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -17581,12 +17901,14 @@ sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551ef8 *)
 sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551efc *)
-smulj %LO %v2 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v2 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v7.4s, v6.s[0]                  #! PC = 0x5555551f00 *)
-smulj %LO %v7 [v60,v60,v60,v60];
+cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -17600,12 +17922,14 @@ mov %spl_join [%v1[0], %v1[1], %v1[2], %v1[3], %v3[0], %v3[1], %v3[2], %v3[3]]; 
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v1.4s, v0.4s, v6.s[1]                  #! PC = 0x5555551f14 *)
-smulj %LO %v0 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v1 %LO11 %LO01;
 (* sqrdmulh	v3.4s, v4.4s, v6.s[1]                  #! PC = 0x5555551f18 *)
-smulj %LO %v4 [v61,v61,v61,v61];
+cast uint16 coef_l %v6[2]; join coef %v6[3] coef_l;
+smulj %LO %v4 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
@@ -17817,12 +18141,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -17834,12 +18160,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -18043,12 +18371,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -18060,12 +18390,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -18269,12 +18601,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -18286,12 +18620,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -18495,12 +18831,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -18512,12 +18850,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -18721,12 +19061,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -18738,12 +19080,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -18947,12 +19291,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -18964,12 +19310,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -19173,12 +19521,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -19190,12 +19540,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -19399,12 +19751,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -19416,12 +19770,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
@@ -19625,12 +19981,14 @@ mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551d94 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; sub %v1 %v1 %mlsl;
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551d98 *)
-smulj %LO %v16 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v16 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v2.4s, v7.4s, v8.s[0]                  #! PC = 0x5555551d9c *)
-smulj %LO %v7 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v7 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v2 %LO11 %LO01;
@@ -19642,12 +20000,14 @@ mov %spl_join [%v16[0], %v16[1], %v16[2], %v16[3], %v7[0], %v7[1], %v7[2], %v7[3
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v3 %mul;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
 (* sqrdmulh	v3.4s, v0.4s, v8.s[0]                  #! PC = 0x5555551dac *)
-smulj %LO %v0 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v0 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v3 %LO11 %LO01;
 (* sqrdmulh	v8.4s, v1.4s, v8.s[0]                  #! PC = 0x5555551db0 *)
-smulj %LO %v1 [v80,v80,v80,v80];
+cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
+smulj %LO %v1 [coef,coef,coef,coef];
 ssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;
 vpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;
 add %v8 %LO11 %LO01;
