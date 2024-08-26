@@ -11,11 +11,11 @@ def format_imm(val):
     s += '@sint16'
     return s
 
-def format_const(val):
+def format_const(val, width=16):
     s = str(val)
     if val < 0:
         s = f'({s})'
-    s += '@16'
+    s += f'@{width}'
     return s
 
 def format_arr(arr):
@@ -138,14 +138,608 @@ consts_table = [
 ]
 cut_id = 0
 
+def combine_const(lo, hi):
+    if lo < 0: lo += 65536
+    return hi * 65536 + lo
+
+def insert_patch(lines, coef, loc, const_cut_id):
+    patch = [f'assert true && coef = {format_const(coef, 32)} prove with [cuts[{const_cut_id}]];\n',
+             f'assume coef = {coef} && coef = {format_const(coef, 32)};\n']
+    return lines[:loc] + patch + lines[loc:]
+
 def annot_radix2(radix2, i, j, prologue_cut_id):
     global cut_id
+
+    seg0_end  = find_first_line(radix2, 'PC = 0x5555551df8')
+    seg1_end  = find_first_line(radix2, 'PC = 0x5555551e04', seg0_end)
+    seg2_end  = find_first_line(radix2, 'PC = 0x5555551e14', seg1_end)
+    seg3_end  = find_first_line(radix2, 'PC = 0x5555551e20', seg2_end)
+    seg4_end  = find_first_line(radix2, 'PC = 0x5555551e2c', seg3_end)
+    seg5_end  = find_first_line(radix2, 'PC = 0x5555551e30', seg4_end)
+    seg6_end  = find_first_line(radix2, 'PC = 0x5555551eec', seg5_end)
+    seg7_end  = find_first_line(radix2, 'PC = 0x5555551efc', seg6_end)
+    seg8_end  = find_first_line(radix2, 'PC = 0x5555551f04', seg7_end)
+    seg9_end  = find_first_line(radix2, 'PC = 0x5555551f14', seg8_end)
+    seg10_end = find_first_line(radix2, 'PC = 0x5555551f1c', seg9_end)
+    seg11_end = find_first_line(radix2, 'PC = 0x5555551f2c', seg10_end)
+
+    seg0  = radix2[:seg0_end]
+    seg1  = radix2[seg0_end  : seg1_end]
+    seg2  = radix2[seg1_end  : seg2_end]
+    seg3  = radix2[seg2_end  : seg3_end]
+    seg4  = radix2[seg3_end  : seg4_end]
+    seg5  = radix2[seg4_end  : seg5_end]
+    seg6  = radix2[seg5_end  : seg6_end]
+    seg7  = radix2[seg6_end  : seg7_end]
+    seg8  = radix2[seg7_end  : seg8_end]
+    seg9  = radix2[seg8_end  : seg9_end]
+    seg10 = radix2[seg9_end  : seg10_end]
+    seg11 = radix2[seg10_end : seg11_end]
+    seg12 = radix2[seg11_end:]
 
     print()
     print('##### radix2')
     print()
-    print(''.join(radix2), end='')
+
     print()
+    print(''.join(seg0), end='')
+    print(f'''
+assert
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fa1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\\
+
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fa1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fa1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    = %v1 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fa1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    = %v1
+    && true;
+
+assert
+    %v1 <= [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000] /\\
+    %v1 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
+    prove with [precondition, cuts[{prologue_cut_id}], algebra solver isl]
+    && true;
+
+assume
+    %v1 <= [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000] /\\
+    %v1 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
+  &&
+    %v1 <=s [3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16] /\\
+    %v1 >=s [(-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16];
+''')
+    print(''.join(seg1), end='')
+    print(f'''
+assert
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fb1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\\
+
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fb1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fb1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    = %v18 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fb1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    = %v18
+    && true;
+
+assert
+    %v18 <= [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000] /\\
+    %v18 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
+    prove with [precondition, cuts[{prologue_cut_id}], algebra solver isl]
+    && true;
+
+assume
+    %v18 <= [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000] /\\
+    %v18 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
+  &&
+    %v18 <=s [3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16] /\\
+    %v18 >=s [(-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16];
+''')
+    print(''.join(seg2), end='')
+    print(f'''
+ghost %fc0_{i}{j}@sint16[8], %fc1_{i}{j}@sint16[8], %fd0_{i}{j}@sint16[8], %fd1_{i}{j}@sint16[8] :
+    %fc0_{i}{j} = %v2 /\\ %fc1_{i}{j} = %v1 /\\ %fd0_{i}{j} = %v8 /\\ %fd1_{i}{j} = %v18
+  &&
+    %fc0_{i}{j} = %v2 /\\ %fc1_{i}{j} = %v1 /\\ %fd0_{i}{j} = %v8 /\\ %fd1_{i}{j} = %v18;
+''')
+    print(''.join(seg3), end='')
+    print(f'''
+assert
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd0_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\\
+
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd0_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd0_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd0_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    = %v3
+    && true;
+
+assert
+    %v3 <= [3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500] /\\
+    %v3 >= [-3500, -3500, -3500, -3500, -3500, -3500, -3500, -3500]
+    prove with [precondition, cuts[{prologue_cut_id}], algebra solver isl]
+    && true;
+
+assume
+    %v3 <= [3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500] /\\
+    %v3 >= [-3500, -3500, -3500, -3500, -3500, -3500, -3500, -3500]
+  &&
+    %v3 <=s [3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16] /\\
+    %v3 >=s [(-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16];
+''')
+    print(''.join(seg4), end='')
+    print(f'''
+assert
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\\
+
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    = %v7
+    && true;
+
+assert
+    %v7 <= [3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500] /\\
+    %v7 >= [-3500, -3500, -3500, -3500, -3500, -3500, -3500, -3500]
+    prove with [precondition, cuts[{prologue_cut_id}], algebra solver isl]
+    && true;
+
+assume
+    %v7 <= [3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500] /\\
+    %v7 >= [-3500, -3500, -3500, -3500, -3500, -3500, -3500, -3500]
+  &&
+    %v7 <=s [3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16] /\\
+    %v7 >=s [(-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16];
+''')
+    print(''.join(seg5), end='')
+    print(f'''
+ghost %gd0_{i}{j}@sint16[8], %gd1_{i}{j}@sint16[8] :
+    %gd0_{i}{j} = %v3 /\\ %gd1_{i}{j} = %v7
+  &&
+    %gd0_{i}{j} = %v3 /\\ %gd1_{i}{j} = %v7;
+
+cut (* {cut_id} *)
+    %fc0_{i}{j} = %v2 /\\ %fc1_{i}{j} = %v1 /\\ %fd0_{i}{j} = %v8 /\\ %fd1_{i}{j} = %v18 /\\ %gd0_{i}{j} = %v3 /\\ %gd1_{i}{j} = %v7 /\\
+
+    %fc0_{i}{j} = %fa0_{i}{j} + {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fa1_{i}{j}
+        ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+    %fc1_{i}{j} = %fa0_{i}{j} - {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fa1_{i}{j}
+        ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+
+    %fd0_{i}{j} = %fb0_{i}{j} + {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fb1_{i}{j}
+        ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+    %fd1_{i}{j} = %fb0_{i}{j} - {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fb1_{i}{j}
+        ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+
+    %gd0_{i}{j} =  {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd0_{i}{j} ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+    %gd1_{i}{j} = -{format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd1_{i}{j} ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+
+    true
+  &&
+    %fc0_{i}{j} = %v2 /\\ %fc1_{i}{j} = %v1 /\\ %fd0_{i}{j} = %v8 /\\ %fd1_{i}{j} = %v18 /\\ %gd0_{i}{j} = %v3 /\\ %gd1_{i}{j} = %v7 /\\
+
+    %fc0_{i}{j} <=s [11420@16, 11420@16, 11420@16, 11420@16, 11420@16, 11420@16, 11420@16, 11420@16] /\\
+    %fc0_{i}{j} >=s [(-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16] /\\
+
+    %fc1_{i}{j} <=s [11420@16, 11420@16, 11420@16, 11420@16, 11420@16, 11420@16, 11420@16, 11420@16] /\\
+    %fc1_{i}{j} >=s [(-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16] /\\
+
+    %fd0_{i}{j} <=s [11420@16, 11420@16, 11420@16, 11420@16, 11420@16, 11420@16, 11420@16, 11420@16] /\\
+    %fd0_{i}{j} >=s [(-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16] /\\
+
+    %fd1_{i}{j} <=s [11420@16, 11420@16, 11420@16, 11420@16, 11420@16, 11420@16, 11420@16, 11420@16] /\\
+    %fd1_{i}{j} >=s [(-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16, (-11420)@16] /\\
+
+    %gd0_{i}{j} <=s [3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16] /\\
+    %gd0_{i}{j} >=s [(-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16] /\\
+
+    %gd1_{i}{j} <=s [3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16] /\\
+    %gd1_{i}{j} >=s [(-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16] /\\
+
+    %v5[0] = 4591@16 /\\
+    %v6 = {format_arr([format_const(c) for c in consts_table[10 * i + j]])} /\\
+
+    true
+    prove with [precondition, cuts[{prologue_cut_id}]];
+''')
+    const_cut_id = cut_id
+    cut_id += 1
+    print(''.join(seg6), end='')
+    print(f'''
+cut (* {cut_id} *)
+    %v0[0] = (
+        %fc0_{i}{j}[0] * %fd0_{i}{j}[0] +
+        %fc0_{i}{j}[1] * %gd0_{i}{j}[7] +
+        %fc0_{i}{j}[2] * %gd0_{i}{j}[6] +
+        %fc0_{i}{j}[3] * %gd0_{i}{j}[5] +
+        %fc0_{i}{j}[4] * %gd0_{i}{j}[4] +
+        %fc0_{i}{j}[5] * %gd0_{i}{j}[3] +
+        %fc0_{i}{j}[6] * %gd0_{i}{j}[2] +
+        %fc0_{i}{j}[7] * %gd0_{i}{j}[1]
+    ) /\\
+
+    %v0[1] = (
+        %fc0_{i}{j}[0] * %fd0_{i}{j}[1] +
+        %fc0_{i}{j}[1] * %fd0_{i}{j}[0] +
+        %fc0_{i}{j}[2] * %gd0_{i}{j}[7] +
+        %fc0_{i}{j}[3] * %gd0_{i}{j}[6] +
+        %fc0_{i}{j}[4] * %gd0_{i}{j}[5] +
+        %fc0_{i}{j}[5] * %gd0_{i}{j}[4] +
+        %fc0_{i}{j}[6] * %gd0_{i}{j}[3] +
+        %fc0_{i}{j}[7] * %gd0_{i}{j}[2]
+    ) /\\
+
+    %v0[2] = (
+        %fc0_{i}{j}[0] * %fd0_{i}{j}[2] +
+        %fc0_{i}{j}[1] * %fd0_{i}{j}[1] +
+        %fc0_{i}{j}[2] * %fd0_{i}{j}[0] +
+        %fc0_{i}{j}[3] * %gd0_{i}{j}[7] +
+        %fc0_{i}{j}[4] * %gd0_{i}{j}[6] +
+        %fc0_{i}{j}[5] * %gd0_{i}{j}[5] +
+        %fc0_{i}{j}[6] * %gd0_{i}{j}[4] +
+        %fc0_{i}{j}[7] * %gd0_{i}{j}[3]
+    ) /\\
+
+    %v0[3] = (
+        %fc0_{i}{j}[0] * %fd0_{i}{j}[3] +
+        %fc0_{i}{j}[1] * %fd0_{i}{j}[2] +
+        %fc0_{i}{j}[2] * %fd0_{i}{j}[1] +
+        %fc0_{i}{j}[3] * %fd0_{i}{j}[0] +
+        %fc0_{i}{j}[4] * %gd0_{i}{j}[7] +
+        %fc0_{i}{j}[5] * %gd0_{i}{j}[6] +
+        %fc0_{i}{j}[6] * %gd0_{i}{j}[5] +
+        %fc0_{i}{j}[7] * %gd0_{i}{j}[4]
+    ) /\\
+
+    %v8[0] = (
+        %fc0_{i}{j}[0] * %fd0_{i}{j}[4] +
+        %fc0_{i}{j}[1] * %fd0_{i}{j}[3] +
+        %fc0_{i}{j}[2] * %fd0_{i}{j}[2] +
+        %fc0_{i}{j}[3] * %fd0_{i}{j}[1] +
+        %fc0_{i}{j}[4] * %fd0_{i}{j}[0] +
+        %fc0_{i}{j}[5] * %gd0_{i}{j}[7] +
+        %fc0_{i}{j}[6] * %gd0_{i}{j}[6] +
+        %fc0_{i}{j}[7] * %gd0_{i}{j}[5]
+    ) /\\
+
+    %v8[1] = (
+        %fc0_{i}{j}[0] * %fd0_{i}{j}[5] +
+        %fc0_{i}{j}[1] * %fd0_{i}{j}[4] +
+        %fc0_{i}{j}[2] * %fd0_{i}{j}[3] +
+        %fc0_{i}{j}[3] * %fd0_{i}{j}[2] +
+        %fc0_{i}{j}[4] * %fd0_{i}{j}[1] +
+        %fc0_{i}{j}[5] * %fd0_{i}{j}[0] +
+        %fc0_{i}{j}[6] * %gd0_{i}{j}[7] +
+        %fc0_{i}{j}[7] * %gd0_{i}{j}[6]
+    ) /\\
+
+    %v8[2] = (
+        %fc0_{i}{j}[0] * %fd0_{i}{j}[6] +
+        %fc0_{i}{j}[1] * %fd0_{i}{j}[5] +
+        %fc0_{i}{j}[2] * %fd0_{i}{j}[4] +
+        %fc0_{i}{j}[3] * %fd0_{i}{j}[3] +
+        %fc0_{i}{j}[4] * %fd0_{i}{j}[2] +
+        %fc0_{i}{j}[5] * %fd0_{i}{j}[1] +
+        %fc0_{i}{j}[6] * %fd0_{i}{j}[0] +
+        %fc0_{i}{j}[7] * %gd0_{i}{j}[7]
+    ) /\\
+
+    %v8[3] = (
+        %fc0_{i}{j}[0] * %fd0_{i}{j}[7] +
+        %fc0_{i}{j}[1] * %fd0_{i}{j}[6] +
+        %fc0_{i}{j}[2] * %fd0_{i}{j}[5] +
+        %fc0_{i}{j}[3] * %fd0_{i}{j}[4] +
+        %fc0_{i}{j}[4] * %fd0_{i}{j}[3] +
+        %fc0_{i}{j}[5] * %fd0_{i}{j}[2] +
+        %fc0_{i}{j}[6] * %fd0_{i}{j}[1] +
+        %fc0_{i}{j}[7] * %fd0_{i}{j}[0]
+    ) /\\
+
+    %v4[0] = (
+        %fc1_{i}{j}[0] * %fd1_{i}{j}[0] +
+        %fc1_{i}{j}[1] * %gd1_{i}{j}[7] +
+        %fc1_{i}{j}[2] * %gd1_{i}{j}[6] +
+        %fc1_{i}{j}[3] * %gd1_{i}{j}[5] +
+        %fc1_{i}{j}[4] * %gd1_{i}{j}[4] +
+        %fc1_{i}{j}[5] * %gd1_{i}{j}[3] +
+        %fc1_{i}{j}[6] * %gd1_{i}{j}[2] +
+        %fc1_{i}{j}[7] * %gd1_{i}{j}[1]
+    ) /\\
+
+    %v4[1] = (
+        %fc1_{i}{j}[0] * %fd1_{i}{j}[1] +
+        %fc1_{i}{j}[1] * %fd1_{i}{j}[0] +
+        %fc1_{i}{j}[2] * %gd1_{i}{j}[7] +
+        %fc1_{i}{j}[3] * %gd1_{i}{j}[6] +
+        %fc1_{i}{j}[4] * %gd1_{i}{j}[5] +
+        %fc1_{i}{j}[5] * %gd1_{i}{j}[4] +
+        %fc1_{i}{j}[6] * %gd1_{i}{j}[3] +
+        %fc1_{i}{j}[7] * %gd1_{i}{j}[2]
+    ) /\\
+
+    %v4[2] = (
+        %fc1_{i}{j}[0] * %fd1_{i}{j}[2] +
+        %fc1_{i}{j}[1] * %fd1_{i}{j}[1] +
+        %fc1_{i}{j}[2] * %fd1_{i}{j}[0] +
+        %fc1_{i}{j}[3] * %gd1_{i}{j}[7] +
+        %fc1_{i}{j}[4] * %gd1_{i}{j}[6] +
+        %fc1_{i}{j}[5] * %gd1_{i}{j}[5] +
+        %fc1_{i}{j}[6] * %gd1_{i}{j}[4] +
+        %fc1_{i}{j}[7] * %gd1_{i}{j}[3]
+    ) /\\
+
+    %v4[3] = (
+        %fc1_{i}{j}[0] * %fd1_{i}{j}[3] +
+        %fc1_{i}{j}[1] * %fd1_{i}{j}[2] +
+        %fc1_{i}{j}[2] * %fd1_{i}{j}[1] +
+        %fc1_{i}{j}[3] * %fd1_{i}{j}[0] +
+        %fc1_{i}{j}[4] * %gd1_{i}{j}[7] +
+        %fc1_{i}{j}[5] * %gd1_{i}{j}[6] +
+        %fc1_{i}{j}[6] * %gd1_{i}{j}[5] +
+        %fc1_{i}{j}[7] * %gd1_{i}{j}[4]
+    ) /\\
+
+    %v3[0] = (
+        %fc1_{i}{j}[0] * %fd1_{i}{j}[4] +
+        %fc1_{i}{j}[1] * %fd1_{i}{j}[3] +
+        %fc1_{i}{j}[2] * %fd1_{i}{j}[2] +
+        %fc1_{i}{j}[3] * %fd1_{i}{j}[1] +
+        %fc1_{i}{j}[4] * %fd1_{i}{j}[0] +
+        %fc1_{i}{j}[5] * %gd1_{i}{j}[7] +
+        %fc1_{i}{j}[6] * %gd1_{i}{j}[6] +
+        %fc1_{i}{j}[7] * %gd1_{i}{j}[5]
+    ) /\\
+
+    %v3[1] = (
+        %fc1_{i}{j}[0] * %fd1_{i}{j}[5] +
+        %fc1_{i}{j}[1] * %fd1_{i}{j}[4] +
+        %fc1_{i}{j}[2] * %fd1_{i}{j}[3] +
+        %fc1_{i}{j}[3] * %fd1_{i}{j}[2] +
+        %fc1_{i}{j}[4] * %fd1_{i}{j}[1] +
+        %fc1_{i}{j}[5] * %fd1_{i}{j}[0] +
+        %fc1_{i}{j}[6] * %gd1_{i}{j}[7] +
+        %fc1_{i}{j}[7] * %gd1_{i}{j}[6]
+    ) /\\
+
+    %v3[2] = (
+        %fc1_{i}{j}[0] * %fd1_{i}{j}[6] +
+        %fc1_{i}{j}[1] * %fd1_{i}{j}[5] +
+        %fc1_{i}{j}[2] * %fd1_{i}{j}[4] +
+        %fc1_{i}{j}[3] * %fd1_{i}{j}[3] +
+        %fc1_{i}{j}[4] * %fd1_{i}{j}[2] +
+        %fc1_{i}{j}[5] * %fd1_{i}{j}[1] +
+        %fc1_{i}{j}[6] * %fd1_{i}{j}[0] +
+        %fc1_{i}{j}[7] * %gd1_{i}{j}[7]
+    ) /\\
+
+    %v3[3] = (
+        %fc1_{i}{j}[0] * %fd1_{i}{j}[7] +
+        %fc1_{i}{j}[1] * %fd1_{i}{j}[6] +
+        %fc1_{i}{j}[2] * %fd1_{i}{j}[5] +
+        %fc1_{i}{j}[3] * %fd1_{i}{j}[4] +
+        %fc1_{i}{j}[4] * %fd1_{i}{j}[3] +
+        %fc1_{i}{j}[5] * %fd1_{i}{j}[2] +
+        %fc1_{i}{j}[6] * %fd1_{i}{j}[1] +
+        %fc1_{i}{j}[7] * %fd1_{i}{j}[0]
+    ) /\\
+
+    true
+    prove with [cuts[0]]
+  &&
+    %v0 <=s [1043331200@32, 1043331200@32, 1043331200@32, 1043331200@32] /\\
+    %v0 >=s [(-1043331200)@32, (-1043331200)@32, (-1043331200)@32, (-1043331200)@32] /\\
+
+    %v8 <=s [1043331200@32, 1043331200@32, 1043331200@32, 1043331200@32] /\\
+    %v8 >=s [(-1043331200)@32, (-1043331200)@32, (-1043331200)@32, (-1043331200)@32] /\\
+
+    %v4 <=s [1043331200@32, 1043331200@32, 1043331200@32, 1043331200@32] /\\
+    %v4 >=s [(-1043331200)@32, (-1043331200)@32, (-1043331200)@32, (-1043331200)@32] /\\
+
+    %v3 <=s [1043331200@32, 1043331200@32, 1043331200@32, 1043331200@32] /\\
+    %v3 >=s [(-1043331200)@32, (-1043331200)@32, (-1043331200)@32, (-1043331200)@32] /\\
+
+    true
+    prove with [cuts[0]];
+''')
+    cut_id += 1
+
+    print(''.join(seg7), end='')
+    print(f'''
+ghost %h0_0_{i}{j}@sint32[4], %h0_1_{i}{j}@sint32[4], %h1_0_{i}{j}@sint32[4], %h1_1_{i}{j}@sint32[4] :
+    %h0_0_{i}{j} = %v2 /\\ %h0_1_{i}{j} = %v7 /\\
+    %h1_0_{i}{j} = %v0 /\\ %h1_1_{i}{j} = %v4
+  &&
+    %h0_0_{i}{j} = %v2 /\\ %h0_1_{i}{j} = %v7 /\\
+    %h1_0_{i}{j} = %v0 /\\ %h1_1_{i}{j} = %v4;
+''')
+
+    seg8 = insert_patch(seg8, combine_const(consts_table[10 * i + j][0], consts_table[10 * i + j][1]),
+                        find_first_line(seg8, 'PC = 0x5555551efc') + 2, const_cut_id)
+    seg8 = insert_patch(seg8, combine_const(consts_table[10 * i + j][0], consts_table[10 * i + j][1]),
+                        find_first_line(seg8, 'PC = 0x5555551f00') + 2, const_cut_id)
+    print(''.join(seg8), end='')
+    print(f'''
+ghost %e0_0_{i}{j}@sint32[4], %e0_1_{i}{j}@sint32[4] :
+    %e0_0_{i}{j} = %v1 /\\ %e0_1_{i}{j} = %v3
+  &&
+    %e0_0_{i}{j} = %v1 /\\ %e0_1_{i}{j} = %v3;
+''')
+    print(''.join(seg9), end='')
+    print(f'''
+assert
+    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_0_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e0_0_{i}{j}
+    <= [32767, 32767, 32767, 32767] /\\
+
+    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_0_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e0_0_{i}{j}
+    >= [-32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_0_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e0_0_{i}{j}
+    = %v2[:4]
+    ( mod [65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_0_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e0_0_{i}{j}
+    = %v2[:4]
+    && true;
+
+assert
+    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_1_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e0_1_{i}{j}
+    <= [32767, 32767, 32767, 32767] /\\
+
+    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_1_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e0_1_{i}{j}
+    >= [-32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_1_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e0_1_{i}{j}
+    = %v2[4:]
+    ( mod [65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_1_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e0_1_{i}{j}
+    = %v2[4:]
+    && true;
+''')
+
+    seg10 = insert_patch(seg10, combine_const(consts_table[10 * i + j][2], consts_table[10 * i + j][3]),
+                        find_first_line(seg10, 'PC = 0x5555551f14') + 2, const_cut_id)
+    seg10 = insert_patch(seg10, combine_const(consts_table[10 * i + j][2], consts_table[10 * i + j][3]),
+                        find_first_line(seg10, 'PC = 0x5555551f18') + 2, const_cut_id)
+    print(''.join(seg10), end='')
+    print(f'''
+ghost %e1_0_{i}{j}@sint32[4], %e1_1_{i}{j}@sint32[4] :
+    %e1_0_{i}{j} = %v1 /\\ %e1_1_{i}{j} = %v3
+  &&
+    %e1_0_{i}{j} = %v1 /\\ %e1_1_{i}{j} = %v3;
+''')
+    print(''.join(seg11), end='')
+    print(f'''
+assert
+    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_0_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e1_0_{i}{j}
+    <= [32767, 32767, 32767, 32767] /\\
+
+    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_0_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e1_0_{i}{j}
+    >= [-32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_0_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e1_0_{i}{j}
+    = %v0[:4]
+    ( mod [65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_0_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e1_0_{i}{j}
+    = %v0[:4]
+    && true;
+
+assert
+    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_1_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e1_1_{i}{j}
+    <= [32767, 32767, 32767, 32767] /\\
+
+    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_1_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e1_1_{i}{j}
+    >= [-32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_1_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e1_1_{i}{j}
+    = %v0[4:]
+    ( mod [65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_1_{i}{j}
+    - [4591, 4591, 4591, 4591] * %e1_1_{i}{j}
+    = %v0[4:]
+    && true;
+''')
+    print(''.join(seg12), end='')
+    print(f'''
+cut (* {cut_id} *)
+    true && true;
+''')
+    cut_id += 1
 
 def annot_karatsuba(karatsuba, i, j, prologue_cut_id):
     global cut_id
@@ -174,7 +768,34 @@ def annot_j_iter(j_iter, i, j, prologue_cut_id):
     print('##### load')
     print()
     print(''.join(load), end='')
-    print()
+    print(f'''
+ghost %fa0_{i}{j}@sint16[8], %fa1_{i}{j}@sint16[8], %fb0_{i}{j}@sint16[8], %fb1_{i}{j}@sint16[8] :
+    %fa0_{i}{j} = %v4 /\\ %fa1_{i}{j} = %v1 /\\ %fb0_{i}{j} = %v17 /\\ %fb1_{i}{j} = %v18
+  &&
+    %fa0_{i}{j} = %v4 /\\ %fa1_{i}{j} = %v1 /\\ %fb0_{i}{j} = %v17 /\\ %fb1_{i}{j} = %v18;\
+''')
+    print(f'''
+cut (* {cut_id} *)
+    %fa0_{i}{j} = %v4 /\\ %fa1_{i}{j} = %v1 /\\ %fb0_{i}{j} = %v17 /\\ %fb1_{i}{j} = %v18 /\\
+
+    %fa0_{i}{j} = {format_arr([f'arr{i}0{j}{k}_a' for k in range(8)])} /\\
+    %fa1_{i}{j} = {format_arr([f'arr{i}1{j}{k}_a' for k in range(8)])} /\\
+    %fb0_{i}{j} = {format_arr([f'arr{i}0{j}{k}_b' for k in range(8)])} /\\
+    %fb1_{i}{j} = {format_arr([f'arr{i}1{j}{k}_b' for k in range(8)])}
+
+    prove with [cuts[{prologue_cut_id}]]
+  &&
+    %fa0_{i}{j} = %v4 /\\ %fa1_{i}{j} = %v1 /\\ %fb0_{i}{j} = %v17 /\\ %fb1_{i}{j} = %v18 /\\
+
+    %fa0_{i}{j} = {format_arr([f'arr{i}0{j}{k}_a' for k in range(8)])} /\\
+    %fa1_{i}{j} = {format_arr([f'arr{i}1{j}{k}_a' for k in range(8)])} /\\
+    %fb0_{i}{j} = {format_arr([f'arr{i}0{j}{k}_b' for k in range(8)])} /\\
+    %fb1_{i}{j} = {format_arr([f'arr{i}1{j}{k}_b' for k in range(8)])}
+
+    prove with [cuts[{prologue_cut_id}]];
+''')
+    load_cut_id = cut_id
+    cut_id += 1
 
     if i % 2 == 0:
         annot_radix2(conv, i, j, prologue_cut_id)
@@ -185,7 +806,11 @@ def annot_j_iter(j_iter, i, j, prologue_cut_id):
     print('##### store')
     print()
     print(''.join(store), end='')
-    print()
+    print(f'''
+cut (* {cut_id} *)
+    true && true;
+''')
+    cut_id += 1
 
 def annot_i_iter(i_iter, i, prologue_cut_id):
     global cut_id
@@ -400,6 +1025,7 @@ def annot(lines):
         annot_i_iter(lines[i_iter_begin : i_iter_end], i, prologue_cut_id)
         i_iter_begin = i_iter_end
         i += 1
+        break
 
     print()
     print('# epilogue')
