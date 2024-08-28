@@ -147,7 +147,7 @@ def insert_patch(lines, coef, loc, const_cut_id):
              f'assume coef = {coef} && coef = {format_const(coef, 32)};\n']
     return lines[:loc] + patch + lines[loc:]
 
-def annot_radix2(radix2, i, j, prologue_cut_id):
+def annot_radix2(radix2, i, j, prologue_cut_id, load_cut_id):
     global cut_id
 
     seg0_end  = find_first_line(radix2, 'PC = 0x5555551df8')
@@ -185,11 +185,11 @@ def annot_radix2(radix2, i, j, prologue_cut_id):
     print(''.join(seg0), end='')
     print(f'''
 assert
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fa1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fa1_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\\
 
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fa1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fa1_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
 
@@ -197,13 +197,13 @@ assert
     && true;
 
 assert
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fa1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fa1_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     = %v1 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
     && true;
 
 assume
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fa1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fa1_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     = %v1
     && true;
@@ -224,11 +224,11 @@ assume
     print(''.join(seg1), end='')
     print(f'''
 assert
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fb1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb1_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\\
 
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fb1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb1_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
 
@@ -236,13 +236,13 @@ assert
     && true;
 
 assert
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fb1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb1_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     = %v18 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
     && true;
 
 assume
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fb1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb1_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     = %v18
     && true;
@@ -270,11 +270,11 @@ ghost %fc0_{i}{j}@sint16[8], %fc1_{i}{j}@sint16[8], %fd0_{i}{j}@sint16[8], %fd1_
     print(''.join(seg3), end='')
     print(f'''
 assert
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd0_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fd0_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\\
 
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd0_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fd0_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
 
@@ -282,13 +282,13 @@ assert
     && true;
 
 assert
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd0_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fd0_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
     && true;
 
 assume
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd0_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fd0_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     = %v3
     && true;
@@ -309,11 +309,11 @@ assume
     print(''.join(seg4), end='')
     print(f'''
 assert
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fd1_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\\
 
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fd1_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
 
@@ -321,13 +321,13 @@ assert
     && true;
 
 assert
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fd1_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
     && true;
 
 assume
-    {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fd1_{i}{j}
     - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
     = %v7
     && true;
@@ -355,18 +355,18 @@ ghost %gd0_{i}{j}@sint16[8], %gd1_{i}{j}@sint16[8] :
 cut (* {cut_id} *)
     %fc0_{i}{j} = %v2 /\\ %fc1_{i}{j} = %v1 /\\ %fd0_{i}{j} = %v8 /\\ %fd1_{i}{j} = %v18 /\\ %gd0_{i}{j} = %v3 /\\ %gd1_{i}{j} = %v7 /\\
 
-    %fc0_{i}{j} = %fa0_{i}{j} + {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fa1_{i}{j}
+    %fc0_{i}{j} = %fa0_{i}{j} + {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fa1_{i}{j}
         ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-    %fc1_{i}{j} = %fa0_{i}{j} - {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fa1_{i}{j}
-        ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-    %fd0_{i}{j} = %fb0_{i}{j} + {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fb1_{i}{j}
-        ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-    %fd1_{i}{j} = %fb0_{i}{j} - {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fb1_{i}{j}
+    %fc1_{i}{j} = %fa0_{i}{j} - {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fa1_{i}{j}
         ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
 
-    %gd0_{i}{j} =  {format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd0_{i}{j} ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-    %gd1_{i}{j} = -{format_coefs([consts_table[10 * i + j][7]] * 8)} * %fd1_{i}{j} ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+    %fd0_{i}{j} = %fb0_{i}{j} + {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb1_{i}{j}
+        ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+    %fd1_{i}{j} = %fb0_{i}{j} - {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb1_{i}{j}
+        ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+
+    %gd0_{i}{j} =  {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fd0_{i}{j} ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+    %gd1_{i}{j} = -{format_coefs([consts_table[9 * i + j][7]] * 8)} * %fd1_{i}{j} ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
 
     true
   &&
@@ -390,8 +390,7 @@ cut (* {cut_id} *)
     %gd1_{i}{j} <=s [3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16, 3500@16] /\\
     %gd1_{i}{j} >=s [(-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16, (-3500)@16] /\\
 
-    %v5[0] = 4591@16 /\\
-    %v6 = {format_arr([format_const(c) for c in consts_table[10 * i + j]])} /\\
+    %v6 = {format_arr([format_const(c) for c in consts_table[9 * i + j]])} /\\
 
     true
     prove with [precondition, cuts[{prologue_cut_id}]];
@@ -607,9 +606,9 @@ ghost %h0_0_{i}{j}@sint32[4], %h0_1_{i}{j}@sint32[4], %h1_0_{i}{j}@sint32[4], %h
     %h1_0_{i}{j} = %v0 /\\ %h1_1_{i}{j} = %v4;
 ''')
 
-    seg8 = insert_patch(seg8, combine_const(consts_table[10 * i + j][0], consts_table[10 * i + j][1]),
+    seg8 = insert_patch(seg8, combine_const(consts_table[9 * i + j][0], consts_table[9 * i + j][1]),
                         find_first_line(seg8, 'PC = 0x5555551efc') + 2, const_cut_id)
-    seg8 = insert_patch(seg8, combine_const(consts_table[10 * i + j][0], consts_table[10 * i + j][1]),
+    seg8 = insert_patch(seg8, combine_const(consts_table[9 * i + j][0], consts_table[9 * i + j][1]),
                         find_first_line(seg8, 'PC = 0x5555551f00') + 2, const_cut_id)
     print(''.join(seg8), end='')
     print(f'''
@@ -621,11 +620,11 @@ ghost %e0_0_{i}{j}@sint32[4], %e0_1_{i}{j}@sint32[4] :
     print(''.join(seg9), end='')
     print(f'''
 assert
-    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_0_{i}{j}
+    {format_coefs([consts_table[9 * i + j][4]] * 4)} * %h0_0_{i}{j}
     - [4591, 4591, 4591, 4591] * %e0_0_{i}{j}
     <= [32767, 32767, 32767, 32767] /\\
 
-    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_0_{i}{j}
+    {format_coefs([consts_table[9 * i + j][4]] * 4)} * %h0_0_{i}{j}
     - [4591, 4591, 4591, 4591] * %e0_0_{i}{j}
     >= [-32768, -32768, -32768, -32768]
 
@@ -633,24 +632,24 @@ assert
     && true;
 
 assert
-    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_0_{i}{j}
+    {format_coefs([consts_table[9 * i + j][4]] * 4)} * %h0_0_{i}{j}
     - [4591, 4591, 4591, 4591] * %e0_0_{i}{j}
     = %v2[:4]
     ( mod [65536, 65536, 65536, 65536] )
     && true;
 
 assume
-    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_0_{i}{j}
+    {format_coefs([consts_table[9 * i + j][4]] * 4)} * %h0_0_{i}{j}
     - [4591, 4591, 4591, 4591] * %e0_0_{i}{j}
     = %v2[:4]
     && true;
 
 assert
-    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][4]] * 4)} * %h0_1_{i}{j}
     - [4591, 4591, 4591, 4591] * %e0_1_{i}{j}
     <= [32767, 32767, 32767, 32767] /\\
 
-    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][4]] * 4)} * %h0_1_{i}{j}
     - [4591, 4591, 4591, 4591] * %e0_1_{i}{j}
     >= [-32768, -32768, -32768, -32768]
 
@@ -658,22 +657,22 @@ assert
     && true;
 
 assert
-    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][4]] * 4)} * %h0_1_{i}{j}
     - [4591, 4591, 4591, 4591] * %e0_1_{i}{j}
     = %v2[4:]
     ( mod [65536, 65536, 65536, 65536] )
     && true;
 
 assume
-    {format_coefs([consts_table[10 * i + j][4]] * 4)} * %h0_1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][4]] * 4)} * %h0_1_{i}{j}
     - [4591, 4591, 4591, 4591] * %e0_1_{i}{j}
     = %v2[4:]
     && true;
 ''')
 
-    seg10 = insert_patch(seg10, combine_const(consts_table[10 * i + j][2], consts_table[10 * i + j][3]),
+    seg10 = insert_patch(seg10, combine_const(consts_table[9 * i + j][2], consts_table[9 * i + j][3]),
                         find_first_line(seg10, 'PC = 0x5555551f14') + 2, const_cut_id)
-    seg10 = insert_patch(seg10, combine_const(consts_table[10 * i + j][2], consts_table[10 * i + j][3]),
+    seg10 = insert_patch(seg10, combine_const(consts_table[9 * i + j][2], consts_table[9 * i + j][3]),
                         find_first_line(seg10, 'PC = 0x5555551f18') + 2, const_cut_id)
     print(''.join(seg10), end='')
     print(f'''
@@ -685,11 +684,11 @@ ghost %e1_0_{i}{j}@sint32[4], %e1_1_{i}{j}@sint32[4] :
     print(''.join(seg11), end='')
     print(f'''
 assert
-    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_0_{i}{j}
+    {format_coefs([consts_table[9 * i + j][5]] * 4)} * %h1_0_{i}{j}
     - [4591, 4591, 4591, 4591] * %e1_0_{i}{j}
     <= [32767, 32767, 32767, 32767] /\\
 
-    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_0_{i}{j}
+    {format_coefs([consts_table[9 * i + j][5]] * 4)} * %h1_0_{i}{j}
     - [4591, 4591, 4591, 4591] * %e1_0_{i}{j}
     >= [-32768, -32768, -32768, -32768]
 
@@ -697,24 +696,24 @@ assert
     && true;
 
 assert
-    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_0_{i}{j}
+    {format_coefs([consts_table[9 * i + j][5]] * 4)} * %h1_0_{i}{j}
     - [4591, 4591, 4591, 4591] * %e1_0_{i}{j}
     = %v0[:4]
     ( mod [65536, 65536, 65536, 65536] )
     && true;
 
 assume
-    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_0_{i}{j}
+    {format_coefs([consts_table[9 * i + j][5]] * 4)} * %h1_0_{i}{j}
     - [4591, 4591, 4591, 4591] * %e1_0_{i}{j}
     = %v0[:4]
     && true;
 
 assert
-    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][5]] * 4)} * %h1_1_{i}{j}
     - [4591, 4591, 4591, 4591] * %e1_1_{i}{j}
     <= [32767, 32767, 32767, 32767] /\\
 
-    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][5]] * 4)} * %h1_1_{i}{j}
     - [4591, 4591, 4591, 4591] * %e1_1_{i}{j}
     >= [-32768, -32768, -32768, -32768]
 
@@ -722,14 +721,14 @@ assert
     && true;
 
 assert
-    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][5]] * 4)} * %h1_1_{i}{j}
     - [4591, 4591, 4591, 4591] * %e1_1_{i}{j}
     = %v0[4:]
     ( mod [65536, 65536, 65536, 65536] )
     && true;
 
 assume
-    {format_coefs([consts_table[10 * i + j][5]] * 4)} * %h1_1_{i}{j}
+    {format_coefs([consts_table[9 * i + j][5]] * 4)} * %h1_1_{i}{j}
     - [4591, 4591, 4591, 4591] * %e1_1_{i}{j}
     = %v0[4:]
     && true;
@@ -737,18 +736,904 @@ assume
     print(''.join(seg12), end='')
     print(f'''
 cut (* {cut_id} *)
-    true && true;
+    true
+  &&
+    true
+    prove with [cuts[{prologue_cut_id}]];
 ''')
     cut_id += 1
 
-def annot_karatsuba(karatsuba, i, j, prologue_cut_id):
+def annot_karatsuba(karatsuba, i, j, prologue_cut_id, load_cut_id):
     global cut_id
+
+    # from sys import stderr
+    # print(i, j, file=stderr)
+
+    seg0_end  = find_first_line(karatsuba, 'PC = 0x5555551c5c')
+    seg1_end  = find_first_line(karatsuba, 'PC = 0x5555551c68', seg0_end)
+    seg2_end  = find_first_line(karatsuba, 'PC = 0x5555551cc8', seg1_end)
+    seg3_end  = find_first_line(karatsuba, 'PC = 0x5555551d98', seg2_end)
+    seg4_end  = find_first_line(karatsuba, 'PC = 0x5555551da0', seg3_end)
+    seg5_end  = find_first_line(karatsuba, 'PC = 0x5555551dac', seg4_end)
+    seg6_end  = find_first_line(karatsuba, 'PC = 0x5555551db4', seg5_end)
+
+    seg0 = karatsuba[:seg0_end]
+    seg1 = karatsuba[seg0_end : seg1_end]
+    seg2 = karatsuba[seg1_end : seg2_end]
+    seg3 = karatsuba[seg2_end : seg3_end]
+    seg4 = karatsuba[seg3_end : seg4_end]
+    seg5 = karatsuba[seg4_end : seg5_end]
+    seg6 = karatsuba[seg5_end : seg6_end]
+    seg7 = karatsuba[seg6_end:]
 
     print()
     print('##### karatsuba')
     print()
-    print(''.join(karatsuba), end='')
+    print(''.join(seg0), end='')
+    print(f'''
+assert
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb0_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\\
+
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb0_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb0_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    = %v7 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb0_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    = %v7
+    && true;
+
+assert
+    %v7 <= [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000] /\\
+    %v7 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
+    prove with [precondition, cuts[{prologue_cut_id}], algebra solver isl]
+    && true;
+
+assume
+    %v7 <= [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000] /\\
+    %v7 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
+  &&
+    %v7 <=s [3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16] /\\
+    %v7 >=s [(-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16];
+''')
+    print(''.join(seg1), end='')
+    print(f'''
+assert
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    <= [32767, 32767, 32767, 32767, 32767, 32767, 32767, 32767] /\\
+
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    >= [-32768, -32768, -32768, -32768, -32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    = %v3 ( mod [65536, 65536, 65536, 65536, 65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb1_{i}{j}
+    - [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+    = %v3
+    && true;
+
+assert
+    %v3 <= [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000] /\\
+    %v3 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
+    prove with [precondition, cuts[{prologue_cut_id}], algebra solver isl]
+    && true;
+
+assume
+    %v3 <= [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000] /\\
+    %v3 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
+  &&
+    %v3 <=s [3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16] /\\
+    %v3 >=s [(-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16];
+''')
+    print(f'''
+ghost %gb0_{i}{j}@sint16[8], %gb1_{i}{j}@sint16[8] :
+    %gb0_{i}{j} = %v7 /\\ %gb1_{i}{j} = %v3
+  &&
+    %gb0_{i}{j} = %v7 /\\ %gb1_{i}{j} = %v3;
+
+cut (* {cut_id} *)
+    %fa0_{i}{j} = %v4 /\\ %fa1_{i}{j} = %v1 /\\ %fb0_{i}{j} = %v17 /\\ %fb1_{i}{j} = %v18 /\\
+    %gb0_{i}{j} = %v7 /\\ %gb1_{i}{j} = %v3 /\\
+
+    %fa0_{i}{j} <= [8420, 8420, 8420, 8420, 8420, 8420, 8420, 8420] /\\
+    %fa0_{i}{j} >= [-8420, -8420, -8420, -8420, -8420, -8420, -8420, -8420] /\\
+
+    %fa1_{i}{j} <= [8420, 8420, 8420, 8420, 8420, 8420, 8420, 8420] /\\
+    %fa1_{i}{j} >= [-8420, -8420, -8420, -8420, -8420, -8420, -8420, -8420] /\\
+
+    %fb0_{i}{j} <= [8420, 8420, 8420, 8420, 8420, 8420, 8420, 8420] /\\
+    %fb0_{i}{j} >= [-8420, -8420, -8420, -8420, -8420, -8420, -8420, -8420] /\\
+
+    %fb1_{i}{j} <= [8420, 8420, 8420, 8420, 8420, 8420, 8420, 8420] /\\
+    %fb1_{i}{j} >= [-8420, -8420, -8420, -8420, -8420, -8420, -8420, -8420] /\\
+
+    %gb0_{i}{j} <= [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000] /\\
+    %gb0_{i}{j} >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000] /\\
+
+    %gb1_{i}{j} <= [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000] /\\
+    %gb1_{i}{j} >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000] /\\
+
+    %v8 = {format_coefs(consts_table[9 * i + j])} /\\
+
+    true
+    prove with [precondition, cuts[{prologue_cut_id}, {load_cut_id}], algebra solver isl]
+  &&
+    %fa0_{i}{j} = %v4 /\\ %fa1_{i}{j} = %v1 /\\ %fb0_{i}{j} = %v17 /\\ %fb1_{i}{j} = %v18 /\\
+    %gb0_{i}{j} = %v7 /\\ %gb1_{i}{j} = %v3 /\\
+
+    %fa0_{i}{j} <=s [8420@16, 8420@16, 8420@16, 8420@16, 8420@16, 8420@16, 8420@16, 8420@16] /\\
+    %fa0_{i}{j} >=s [(-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16] /\\
+
+    %fa1_{i}{j} <=s [8420@16, 8420@16, 8420@16, 8420@16, 8420@16, 8420@16, 8420@16, 8420@16] /\\
+    %fa1_{i}{j} >=s [(-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16] /\\
+
+    %fb0_{i}{j} <=s [8420@16, 8420@16, 8420@16, 8420@16, 8420@16, 8420@16, 8420@16, 8420@16] /\\
+    %fb0_{i}{j} >=s [(-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16] /\\
+
+    %fb1_{i}{j} <=s [8420@16, 8420@16, 8420@16, 8420@16, 8420@16, 8420@16, 8420@16, 8420@16] /\\
+    %fb1_{i}{j} >=s [(-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16, (-8420)@16] /\\
+
+    %gb0_{i}{j} <=s [3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16] /\\
+    %gb0_{i}{j} >=s [(-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16] /\\
+
+    %gb1_{i}{j} <=s [3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16, 3000@16] /\\
+    %gb1_{i}{j} >=s [(-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16, (-3000)@16] /\\
+
+    %v8 = {format_arr([format_const(c) for c in consts_table[9 * i + j]])} /\\
+
+    true
+    prove with [precondition, cuts[{prologue_cut_id}]];
+''')
+    const_cut_id = cut_id
+    cut_id += 1
+    print(''.join(seg2), end='')
     print()
+    print(''.join(seg3), end='')
+    print(f'''
+assert
+    %v16[0] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[0] + %fa1_{i}{j}[0] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[1] * %gb1_{i}{j}[7] + %fa1_{i}{j}[1] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[2] * %gb1_{i}{j}[6] + %fa1_{i}{j}[2] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[3] * %gb1_{i}{j}[5] + %fa1_{i}{j}[3] * %gb0_{i}{j}[5] +
+        %fa0_{i}{j}[4] * %gb1_{i}{j}[4] + %fa1_{i}{j}[4] * %gb0_{i}{j}[4] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[3] + %fa1_{i}{j}[5] * %gb0_{i}{j}[3] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[2] + %fa1_{i}{j}[6] * %gb0_{i}{j}[2] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[1] + %fa1_{i}{j}[7] * %gb0_{i}{j}[1]
+    ) /\\
+
+    %v16[1] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[1] + %fa1_{i}{j}[0] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[0] + %fa1_{i}{j}[1] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[2] * %gb1_{i}{j}[7] + %fa1_{i}{j}[2] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[3] * %gb1_{i}{j}[6] + %fa1_{i}{j}[3] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[4] * %gb1_{i}{j}[5] + %fa1_{i}{j}[4] * %gb0_{i}{j}[5] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[4] + %fa1_{i}{j}[5] * %gb0_{i}{j}[4] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[3] + %fa1_{i}{j}[6] * %gb0_{i}{j}[3] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[2] + %fa1_{i}{j}[7] * %gb0_{i}{j}[2]
+    ) /\\
+
+    %v16[2] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[2] + %fa1_{i}{j}[0] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[1] + %fa1_{i}{j}[1] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[0] + %fa1_{i}{j}[2] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[3] * %gb1_{i}{j}[7] + %fa1_{i}{j}[3] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[4] * %gb1_{i}{j}[6] + %fa1_{i}{j}[4] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[5] + %fa1_{i}{j}[5] * %gb0_{i}{j}[5] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[4] + %fa1_{i}{j}[6] * %gb0_{i}{j}[4] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[3] + %fa1_{i}{j}[7] * %gb0_{i}{j}[3]
+    ) /\\
+
+    %v16[3] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[3] + %fa1_{i}{j}[0] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[2] + %fa1_{i}{j}[1] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[1] + %fa1_{i}{j}[2] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[0] + %fa1_{i}{j}[3] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[4] * %gb1_{i}{j}[7] + %fa1_{i}{j}[4] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[6] + %fa1_{i}{j}[5] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[5] + %fa1_{i}{j}[6] * %gb0_{i}{j}[5] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[4] + %fa1_{i}{j}[7] * %gb0_{i}{j}[4]
+    ) /\\
+
+    %v7 [0] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[4] + %fa1_{i}{j}[0] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[3] + %fa1_{i}{j}[1] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[2] + %fa1_{i}{j}[2] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[1] + %fa1_{i}{j}[3] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[0] + %fa1_{i}{j}[4] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[7] + %fa1_{i}{j}[5] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[6] + %fa1_{i}{j}[6] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[5] + %fa1_{i}{j}[7] * %gb0_{i}{j}[5]
+    ) /\\
+
+    %v7 [1] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[5] + %fa1_{i}{j}[0] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[4] + %fa1_{i}{j}[1] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[3] + %fa1_{i}{j}[2] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[2] + %fa1_{i}{j}[3] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[1] + %fa1_{i}{j}[4] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[0] + %fa1_{i}{j}[5] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[7] + %fa1_{i}{j}[6] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[6] + %fa1_{i}{j}[7] * %gb0_{i}{j}[6]
+    ) /\\
+
+    %v7 [2] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[6] + %fa1_{i}{j}[0] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[5] + %fa1_{i}{j}[1] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[4] + %fa1_{i}{j}[2] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[3] + %fa1_{i}{j}[3] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[2] + %fa1_{i}{j}[4] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[1] + %fa1_{i}{j}[5] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[0] + %fa1_{i}{j}[6] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[7] + %fa1_{i}{j}[7] * %gb0_{i}{j}[7]
+    ) /\\
+
+    %v7 [3] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[7] + %fa1_{i}{j}[0] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[6] + %fa1_{i}{j}[1] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[5] + %fa1_{i}{j}[2] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[4] + %fa1_{i}{j}[3] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[3] + %fa1_{i}{j}[4] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[2] + %fa1_{i}{j}[5] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[1] + %fa1_{i}{j}[6] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[0] + %fa1_{i}{j}[7] * %gb1_{i}{j}[0]
+    ) /\\
+
+    %v0 [0] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[0] + %fa1_{i}{j}[0] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[7] + %fa1_{i}{j}[1] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[6] + %fa1_{i}{j}[2] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[5] + %fa1_{i}{j}[3] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[4] + %fa1_{i}{j}[4] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[3] + %fa1_{i}{j}[5] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[2] + %fa1_{i}{j}[6] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[1] + %fa1_{i}{j}[7] * %gb1_{i}{j}[1]
+    ) /\\
+
+    %v0 [1] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[1] + %fa1_{i}{j}[0] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[0] + %fa1_{i}{j}[1] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[7] + %fa1_{i}{j}[2] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[6] + %fa1_{i}{j}[3] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[5] + %fa1_{i}{j}[4] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[4] + %fa1_{i}{j}[5] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[3] + %fa1_{i}{j}[6] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[2] + %fa1_{i}{j}[7] * %gb1_{i}{j}[2]
+    ) /\\
+
+    %v0 [2] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[2] + %fa1_{i}{j}[0] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[1] + %fa1_{i}{j}[1] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[0] + %fa1_{i}{j}[2] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[7] + %fa1_{i}{j}[3] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[6] + %fa1_{i}{j}[4] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[5] + %fa1_{i}{j}[5] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[4] + %fa1_{i}{j}[6] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[3] + %fa1_{i}{j}[7] * %gb1_{i}{j}[3]
+    ) /\\
+
+    %v0 [3] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[3] + %fa1_{i}{j}[0] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[2] + %fa1_{i}{j}[1] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[1] + %fa1_{i}{j}[2] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[0] + %fa1_{i}{j}[3] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[7] + %fa1_{i}{j}[4] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[6] + %fa1_{i}{j}[5] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[5] + %fa1_{i}{j}[6] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[4] + %fa1_{i}{j}[7] * %gb1_{i}{j}[4]
+    ) /\\
+
+    %v1 [0] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[4] + %fa1_{i}{j}[0] * %fb0_{i}{j}[4] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[3] + %fa1_{i}{j}[1] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[2] + %fa1_{i}{j}[2] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[1] + %fa1_{i}{j}[3] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[4] * %fb1_{i}{j}[0] + %fa1_{i}{j}[4] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[7] + %fa1_{i}{j}[5] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[6] + %fa1_{i}{j}[6] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[5] + %fa1_{i}{j}[7] * %gb1_{i}{j}[5]
+    ) /\\
+
+    %v1 [1] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[5] + %fa1_{i}{j}[0] * %fb0_{i}{j}[5] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[4] + %fa1_{i}{j}[1] * %fb0_{i}{j}[4] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[3] + %fa1_{i}{j}[2] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[2] + %fa1_{i}{j}[3] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[4] * %fb1_{i}{j}[1] + %fa1_{i}{j}[4] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[5] * %fb1_{i}{j}[0] + %fa1_{i}{j}[5] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[7] + %fa1_{i}{j}[6] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[6] + %fa1_{i}{j}[7] * %gb1_{i}{j}[6]
+    ) /\\
+
+    %v1 [2] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[6] + %fa1_{i}{j}[0] * %fb0_{i}{j}[6] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[5] + %fa1_{i}{j}[1] * %fb0_{i}{j}[5] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[4] + %fa1_{i}{j}[2] * %fb0_{i}{j}[4] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[3] + %fa1_{i}{j}[3] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[4] * %fb1_{i}{j}[2] + %fa1_{i}{j}[4] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[5] * %fb1_{i}{j}[1] + %fa1_{i}{j}[5] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[6] * %fb1_{i}{j}[0] + %fa1_{i}{j}[6] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[7] + %fa1_{i}{j}[7] * %gb1_{i}{j}[7]
+    ) /\\
+
+    %v1 [3] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[7] + %fa1_{i}{j}[0] * %fb0_{i}{j}[7] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[6] + %fa1_{i}{j}[1] * %fb0_{i}{j}[6] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[5] + %fa1_{i}{j}[2] * %fb0_{i}{j}[5] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[4] + %fa1_{i}{j}[3] * %fb0_{i}{j}[4] +
+        %fa0_{i}{j}[4] * %fb1_{i}{j}[3] + %fa1_{i}{j}[4] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[5] * %fb1_{i}{j}[2] + %fa1_{i}{j}[5] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[6] * %fb1_{i}{j}[1] + %fa1_{i}{j}[6] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[7] * %fb1_{i}{j}[0] + %fa1_{i}{j}[7] * %fb0_{i}{j}[0]
+    )
+    && true;
+
+assume
+    %v16[0] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[0] + %fa1_{i}{j}[0] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[1] * %gb1_{i}{j}[7] + %fa1_{i}{j}[1] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[2] * %gb1_{i}{j}[6] + %fa1_{i}{j}[2] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[3] * %gb1_{i}{j}[5] + %fa1_{i}{j}[3] * %gb0_{i}{j}[5] +
+        %fa0_{i}{j}[4] * %gb1_{i}{j}[4] + %fa1_{i}{j}[4] * %gb0_{i}{j}[4] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[3] + %fa1_{i}{j}[5] * %gb0_{i}{j}[3] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[2] + %fa1_{i}{j}[6] * %gb0_{i}{j}[2] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[1] + %fa1_{i}{j}[7] * %gb0_{i}{j}[1]
+    ) /\\
+
+    %v16[1] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[1] + %fa1_{i}{j}[0] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[0] + %fa1_{i}{j}[1] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[2] * %gb1_{i}{j}[7] + %fa1_{i}{j}[2] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[3] * %gb1_{i}{j}[6] + %fa1_{i}{j}[3] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[4] * %gb1_{i}{j}[5] + %fa1_{i}{j}[4] * %gb0_{i}{j}[5] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[4] + %fa1_{i}{j}[5] * %gb0_{i}{j}[4] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[3] + %fa1_{i}{j}[6] * %gb0_{i}{j}[3] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[2] + %fa1_{i}{j}[7] * %gb0_{i}{j}[2]
+    ) /\\
+
+    %v16[2] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[2] + %fa1_{i}{j}[0] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[1] + %fa1_{i}{j}[1] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[0] + %fa1_{i}{j}[2] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[3] * %gb1_{i}{j}[7] + %fa1_{i}{j}[3] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[4] * %gb1_{i}{j}[6] + %fa1_{i}{j}[4] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[5] + %fa1_{i}{j}[5] * %gb0_{i}{j}[5] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[4] + %fa1_{i}{j}[6] * %gb0_{i}{j}[4] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[3] + %fa1_{i}{j}[7] * %gb0_{i}{j}[3]
+    ) /\\
+
+    %v16[3] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[3] + %fa1_{i}{j}[0] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[2] + %fa1_{i}{j}[1] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[1] + %fa1_{i}{j}[2] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[0] + %fa1_{i}{j}[3] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[4] * %gb1_{i}{j}[7] + %fa1_{i}{j}[4] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[6] + %fa1_{i}{j}[5] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[5] + %fa1_{i}{j}[6] * %gb0_{i}{j}[5] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[4] + %fa1_{i}{j}[7] * %gb0_{i}{j}[4]
+    ) /\\
+
+    %v7 [0] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[4] + %fa1_{i}{j}[0] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[3] + %fa1_{i}{j}[1] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[2] + %fa1_{i}{j}[2] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[1] + %fa1_{i}{j}[3] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[0] + %fa1_{i}{j}[4] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[7] + %fa1_{i}{j}[5] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[6] + %fa1_{i}{j}[6] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[5] + %fa1_{i}{j}[7] * %gb0_{i}{j}[5]
+    ) /\\
+
+    %v7 [1] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[5] + %fa1_{i}{j}[0] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[4] + %fa1_{i}{j}[1] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[3] + %fa1_{i}{j}[2] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[2] + %fa1_{i}{j}[3] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[1] + %fa1_{i}{j}[4] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[0] + %fa1_{i}{j}[5] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[7] + %fa1_{i}{j}[6] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[6] + %fa1_{i}{j}[7] * %gb0_{i}{j}[6]
+    ) /\\
+
+    %v7 [2] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[6] + %fa1_{i}{j}[0] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[5] + %fa1_{i}{j}[1] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[4] + %fa1_{i}{j}[2] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[3] + %fa1_{i}{j}[3] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[2] + %fa1_{i}{j}[4] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[1] + %fa1_{i}{j}[5] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[0] + %fa1_{i}{j}[6] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[7] + %fa1_{i}{j}[7] * %gb0_{i}{j}[7]
+    ) /\\
+
+    %v7 [3] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[7] + %fa1_{i}{j}[0] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[6] + %fa1_{i}{j}[1] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[5] + %fa1_{i}{j}[2] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[4] + %fa1_{i}{j}[3] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[3] + %fa1_{i}{j}[4] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[2] + %fa1_{i}{j}[5] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[1] + %fa1_{i}{j}[6] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[0] + %fa1_{i}{j}[7] * %gb1_{i}{j}[0]
+    ) /\\
+
+    %v0 [0] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[0] + %fa1_{i}{j}[0] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[7] + %fa1_{i}{j}[1] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[6] + %fa1_{i}{j}[2] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[5] + %fa1_{i}{j}[3] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[4] + %fa1_{i}{j}[4] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[3] + %fa1_{i}{j}[5] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[2] + %fa1_{i}{j}[6] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[1] + %fa1_{i}{j}[7] * %gb1_{i}{j}[1]
+    ) /\\
+
+    %v0 [1] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[1] + %fa1_{i}{j}[0] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[0] + %fa1_{i}{j}[1] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[7] + %fa1_{i}{j}[2] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[6] + %fa1_{i}{j}[3] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[5] + %fa1_{i}{j}[4] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[4] + %fa1_{i}{j}[5] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[3] + %fa1_{i}{j}[6] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[2] + %fa1_{i}{j}[7] * %gb1_{i}{j}[2]
+    ) /\\
+
+    %v0 [2] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[2] + %fa1_{i}{j}[0] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[1] + %fa1_{i}{j}[1] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[0] + %fa1_{i}{j}[2] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[7] + %fa1_{i}{j}[3] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[6] + %fa1_{i}{j}[4] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[5] + %fa1_{i}{j}[5] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[4] + %fa1_{i}{j}[6] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[3] + %fa1_{i}{j}[7] * %gb1_{i}{j}[3]
+    ) /\\
+
+    %v0 [3] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[3] + %fa1_{i}{j}[0] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[2] + %fa1_{i}{j}[1] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[1] + %fa1_{i}{j}[2] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[0] + %fa1_{i}{j}[3] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[7] + %fa1_{i}{j}[4] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[6] + %fa1_{i}{j}[5] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[5] + %fa1_{i}{j}[6] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[4] + %fa1_{i}{j}[7] * %gb1_{i}{j}[4]
+    ) /\\
+
+    %v1 [0] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[4] + %fa1_{i}{j}[0] * %fb0_{i}{j}[4] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[3] + %fa1_{i}{j}[1] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[2] + %fa1_{i}{j}[2] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[1] + %fa1_{i}{j}[3] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[4] * %fb1_{i}{j}[0] + %fa1_{i}{j}[4] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[7] + %fa1_{i}{j}[5] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[6] + %fa1_{i}{j}[6] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[5] + %fa1_{i}{j}[7] * %gb1_{i}{j}[5]
+    ) /\\
+
+    %v1 [1] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[5] + %fa1_{i}{j}[0] * %fb0_{i}{j}[5] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[4] + %fa1_{i}{j}[1] * %fb0_{i}{j}[4] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[3] + %fa1_{i}{j}[2] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[2] + %fa1_{i}{j}[3] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[4] * %fb1_{i}{j}[1] + %fa1_{i}{j}[4] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[5] * %fb1_{i}{j}[0] + %fa1_{i}{j}[5] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[7] + %fa1_{i}{j}[6] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[6] + %fa1_{i}{j}[7] * %gb1_{i}{j}[6]
+    ) /\\
+
+    %v1 [2] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[6] + %fa1_{i}{j}[0] * %fb0_{i}{j}[6] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[5] + %fa1_{i}{j}[1] * %fb0_{i}{j}[5] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[4] + %fa1_{i}{j}[2] * %fb0_{i}{j}[4] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[3] + %fa1_{i}{j}[3] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[4] * %fb1_{i}{j}[2] + %fa1_{i}{j}[4] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[5] * %fb1_{i}{j}[1] + %fa1_{i}{j}[5] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[6] * %fb1_{i}{j}[0] + %fa1_{i}{j}[6] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[7] + %fa1_{i}{j}[7] * %gb1_{i}{j}[7]
+    ) /\\
+
+    %v1 [3] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[7] + %fa1_{i}{j}[0] * %fb0_{i}{j}[7] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[6] + %fa1_{i}{j}[1] * %fb0_{i}{j}[6] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[5] + %fa1_{i}{j}[2] * %fb0_{i}{j}[5] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[4] + %fa1_{i}{j}[3] * %fb0_{i}{j}[4] +
+        %fa0_{i}{j}[4] * %fb1_{i}{j}[3] + %fa1_{i}{j}[4] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[5] * %fb1_{i}{j}[2] + %fa1_{i}{j}[5] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[6] * %fb1_{i}{j}[1] + %fa1_{i}{j}[6] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[7] * %fb1_{i}{j}[0] + %fa1_{i}{j}[7] * %fb0_{i}{j}[0]
+    )
+    && true;
+
+assert
+    %v16 <= [1134342400, 1134342400, 1134342400, 1134342400] /\\
+    %v16 >= [-1134342400, -1134342400, -1134342400, -1134342400] /\\
+
+    %v7 <= [1134342400, 1134342400, 1134342400, 1134342400] /\\
+    %v7 >= [-1134342400, -1134342400, -1134342400, -1134342400] /\\
+
+    %v0 <= [1134342400, 1134342400, 1134342400, 1134342400] /\\
+    %v0 >= [-1134342400, -1134342400, -1134342400, -1134342400] /\\
+
+    %v1 <= [1134342400, 1134342400, 1134342400, 1134342400] /\\
+    %v1 >= [-1134342400, -1134342400, -1134342400, -1134342400]
+
+    prove with [algebra solver smt: z3]
+    && true;
+
+assume
+    %v16 <= [1134342400, 1134342400, 1134342400, 1134342400] /\\
+    %v16 >= [-1134342400, -1134342400, -1134342400, -1134342400] /\\
+
+    %v7 <= [1134342400, 1134342400, 1134342400, 1134342400] /\\
+    %v7 >= [-1134342400, -1134342400, -1134342400, -1134342400] /\\
+
+    %v0 <= [1134342400, 1134342400, 1134342400, 1134342400] /\\
+    %v0 >= [-1134342400, -1134342400, -1134342400, -1134342400] /\\
+
+    %v1 <= [1134342400, 1134342400, 1134342400, 1134342400] /\\
+    %v1 >= [-1134342400, -1134342400, -1134342400, -1134342400]
+  &&
+    %v16 <=s [1134342400@32, 1134342400@32, 1134342400@32, 1134342400@32] /\\
+    %v16 >=s [(-1134342400)@32, (-1134342400)@32, (-1134342400)@32, (-1134342400)@32] /\\
+
+    %v7 <=s [1134342400@32, 1134342400@32, 1134342400@32, 1134342400@32] /\\
+    %v7 >=s [(-1134342400)@32, (-1134342400)@32, (-1134342400)@32, (-1134342400)@32] /\\
+
+    %v0 <=s [1134342400@32, 1134342400@32, 1134342400@32, 1134342400@32] /\\
+    %v0 >=s [(-1134342400)@32, (-1134342400)@32, (-1134342400)@32, (-1134342400)@32] /\\
+
+    %v1 <=s [1134342400@32, 1134342400@32, 1134342400@32, 1134342400@32] /\\
+    %v1 >=s [(-1134342400)@32, (-1134342400)@32, (-1134342400)@32, (-1134342400)@32];\
+''')
+    print(f'''
+cut (* {cut_id} *)
+    %v16[0] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[0] + %fa1_{i}{j}[0] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[1] * %gb1_{i}{j}[7] + %fa1_{i}{j}[1] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[2] * %gb1_{i}{j}[6] + %fa1_{i}{j}[2] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[3] * %gb1_{i}{j}[5] + %fa1_{i}{j}[3] * %gb0_{i}{j}[5] +
+        %fa0_{i}{j}[4] * %gb1_{i}{j}[4] + %fa1_{i}{j}[4] * %gb0_{i}{j}[4] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[3] + %fa1_{i}{j}[5] * %gb0_{i}{j}[3] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[2] + %fa1_{i}{j}[6] * %gb0_{i}{j}[2] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[1] + %fa1_{i}{j}[7] * %gb0_{i}{j}[1]
+    ) /\\
+
+    %v16[1] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[1] + %fa1_{i}{j}[0] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[0] + %fa1_{i}{j}[1] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[2] * %gb1_{i}{j}[7] + %fa1_{i}{j}[2] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[3] * %gb1_{i}{j}[6] + %fa1_{i}{j}[3] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[4] * %gb1_{i}{j}[5] + %fa1_{i}{j}[4] * %gb0_{i}{j}[5] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[4] + %fa1_{i}{j}[5] * %gb0_{i}{j}[4] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[3] + %fa1_{i}{j}[6] * %gb0_{i}{j}[3] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[2] + %fa1_{i}{j}[7] * %gb0_{i}{j}[2]
+    ) /\\
+
+    %v16[2] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[2] + %fa1_{i}{j}[0] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[1] + %fa1_{i}{j}[1] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[0] + %fa1_{i}{j}[2] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[3] * %gb1_{i}{j}[7] + %fa1_{i}{j}[3] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[4] * %gb1_{i}{j}[6] + %fa1_{i}{j}[4] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[5] + %fa1_{i}{j}[5] * %gb0_{i}{j}[5] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[4] + %fa1_{i}{j}[6] * %gb0_{i}{j}[4] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[3] + %fa1_{i}{j}[7] * %gb0_{i}{j}[3]
+    ) /\\
+
+    %v16[3] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[3] + %fa1_{i}{j}[0] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[2] + %fa1_{i}{j}[1] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[1] + %fa1_{i}{j}[2] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[0] + %fa1_{i}{j}[3] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[4] * %gb1_{i}{j}[7] + %fa1_{i}{j}[4] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[6] + %fa1_{i}{j}[5] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[5] + %fa1_{i}{j}[6] * %gb0_{i}{j}[5] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[4] + %fa1_{i}{j}[7] * %gb0_{i}{j}[4]
+    ) /\\
+
+    %v7 [0] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[4] + %fa1_{i}{j}[0] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[3] + %fa1_{i}{j}[1] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[2] + %fa1_{i}{j}[2] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[1] + %fa1_{i}{j}[3] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[0] + %fa1_{i}{j}[4] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[5] * %gb1_{i}{j}[7] + %fa1_{i}{j}[5] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[6] + %fa1_{i}{j}[6] * %gb0_{i}{j}[6] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[5] + %fa1_{i}{j}[7] * %gb0_{i}{j}[5]
+    ) /\\
+
+    %v7 [1] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[5] + %fa1_{i}{j}[0] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[4] + %fa1_{i}{j}[1] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[3] + %fa1_{i}{j}[2] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[2] + %fa1_{i}{j}[3] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[1] + %fa1_{i}{j}[4] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[0] + %fa1_{i}{j}[5] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[6] * %gb1_{i}{j}[7] + %fa1_{i}{j}[6] * %gb0_{i}{j}[7] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[6] + %fa1_{i}{j}[7] * %gb0_{i}{j}[6]
+    ) /\\
+
+    %v7 [2] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[6] + %fa1_{i}{j}[0] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[5] + %fa1_{i}{j}[1] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[4] + %fa1_{i}{j}[2] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[3] + %fa1_{i}{j}[3] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[2] + %fa1_{i}{j}[4] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[1] + %fa1_{i}{j}[5] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[0] + %fa1_{i}{j}[6] * %gb1_{i}{j}[0] +
+        %fa0_{i}{j}[7] * %gb1_{i}{j}[7] + %fa1_{i}{j}[7] * %gb0_{i}{j}[7]
+    ) /\\
+
+    %v7 [3] = (
+        %fa0_{i}{j}[0] * %fb0_{i}{j}[7] + %fa1_{i}{j}[0] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[6] + %fa1_{i}{j}[1] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[5] + %fa1_{i}{j}[2] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[4] + %fa1_{i}{j}[3] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[3] + %fa1_{i}{j}[4] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[2] + %fa1_{i}{j}[5] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[1] + %fa1_{i}{j}[6] * %gb1_{i}{j}[1] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[0] + %fa1_{i}{j}[7] * %gb1_{i}{j}[0]
+    ) /\\
+
+    %v0 [0] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[0] + %fa1_{i}{j}[0] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[1] * %fb0_{i}{j}[7] + %fa1_{i}{j}[1] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[6] + %fa1_{i}{j}[2] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[5] + %fa1_{i}{j}[3] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[4] + %fa1_{i}{j}[4] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[3] + %fa1_{i}{j}[5] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[2] + %fa1_{i}{j}[6] * %gb1_{i}{j}[2] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[1] + %fa1_{i}{j}[7] * %gb1_{i}{j}[1]
+    ) /\\
+
+    %v0 [1] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[1] + %fa1_{i}{j}[0] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[0] + %fa1_{i}{j}[1] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[2] * %fb0_{i}{j}[7] + %fa1_{i}{j}[2] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[6] + %fa1_{i}{j}[3] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[5] + %fa1_{i}{j}[4] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[4] + %fa1_{i}{j}[5] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[3] + %fa1_{i}{j}[6] * %gb1_{i}{j}[3] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[2] + %fa1_{i}{j}[7] * %gb1_{i}{j}[2]
+    ) /\\
+
+    %v0 [2] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[2] + %fa1_{i}{j}[0] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[1] + %fa1_{i}{j}[1] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[0] + %fa1_{i}{j}[2] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[3] * %fb0_{i}{j}[7] + %fa1_{i}{j}[3] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[6] + %fa1_{i}{j}[4] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[5] + %fa1_{i}{j}[5] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[4] + %fa1_{i}{j}[6] * %gb1_{i}{j}[4] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[3] + %fa1_{i}{j}[7] * %gb1_{i}{j}[3]
+    ) /\\
+
+    %v0 [3] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[3] + %fa1_{i}{j}[0] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[2] + %fa1_{i}{j}[1] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[1] + %fa1_{i}{j}[2] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[0] + %fa1_{i}{j}[3] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[4] * %fb0_{i}{j}[7] + %fa1_{i}{j}[4] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[6] + %fa1_{i}{j}[5] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[5] + %fa1_{i}{j}[6] * %gb1_{i}{j}[5] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[4] + %fa1_{i}{j}[7] * %gb1_{i}{j}[4]
+    ) /\\
+
+    %v1 [0] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[4] + %fa1_{i}{j}[0] * %fb0_{i}{j}[4] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[3] + %fa1_{i}{j}[1] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[2] + %fa1_{i}{j}[2] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[1] + %fa1_{i}{j}[3] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[4] * %fb1_{i}{j}[0] + %fa1_{i}{j}[4] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[5] * %fb0_{i}{j}[7] + %fa1_{i}{j}[5] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[6] + %fa1_{i}{j}[6] * %gb1_{i}{j}[6] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[5] + %fa1_{i}{j}[7] * %gb1_{i}{j}[5]
+    ) /\\
+
+    %v1 [1] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[5] + %fa1_{i}{j}[0] * %fb0_{i}{j}[5] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[4] + %fa1_{i}{j}[1] * %fb0_{i}{j}[4] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[3] + %fa1_{i}{j}[2] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[2] + %fa1_{i}{j}[3] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[4] * %fb1_{i}{j}[1] + %fa1_{i}{j}[4] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[5] * %fb1_{i}{j}[0] + %fa1_{i}{j}[5] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[6] * %fb0_{i}{j}[7] + %fa1_{i}{j}[6] * %gb1_{i}{j}[7] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[6] + %fa1_{i}{j}[7] * %gb1_{i}{j}[6]
+    ) /\\
+
+    %v1 [2] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[6] + %fa1_{i}{j}[0] * %fb0_{i}{j}[6] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[5] + %fa1_{i}{j}[1] * %fb0_{i}{j}[5] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[4] + %fa1_{i}{j}[2] * %fb0_{i}{j}[4] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[3] + %fa1_{i}{j}[3] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[4] * %fb1_{i}{j}[2] + %fa1_{i}{j}[4] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[5] * %fb1_{i}{j}[1] + %fa1_{i}{j}[5] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[6] * %fb1_{i}{j}[0] + %fa1_{i}{j}[6] * %fb0_{i}{j}[0] +
+        %fa0_{i}{j}[7] * %fb0_{i}{j}[7] + %fa1_{i}{j}[7] * %gb1_{i}{j}[7]
+    ) /\\
+
+    %v1 [3] = (
+        %fa0_{i}{j}[0] * %fb1_{i}{j}[7] + %fa1_{i}{j}[0] * %fb0_{i}{j}[7] +
+        %fa0_{i}{j}[1] * %fb1_{i}{j}[6] + %fa1_{i}{j}[1] * %fb0_{i}{j}[6] +
+        %fa0_{i}{j}[2] * %fb1_{i}{j}[5] + %fa1_{i}{j}[2] * %fb0_{i}{j}[5] +
+        %fa0_{i}{j}[3] * %fb1_{i}{j}[4] + %fa1_{i}{j}[3] * %fb0_{i}{j}[4] +
+        %fa0_{i}{j}[4] * %fb1_{i}{j}[3] + %fa1_{i}{j}[4] * %fb0_{i}{j}[3] +
+        %fa0_{i}{j}[5] * %fb1_{i}{j}[2] + %fa1_{i}{j}[5] * %fb0_{i}{j}[2] +
+        %fa0_{i}{j}[6] * %fb1_{i}{j}[1] + %fa1_{i}{j}[6] * %fb0_{i}{j}[1] +
+        %fa0_{i}{j}[7] * %fb1_{i}{j}[0] + %fa1_{i}{j}[7] * %fb0_{i}{j}[0]
+    ),
+
+    %v16 <= [1134342400, 1134342400, 1134342400, 1134342400] /\\
+    %v16 >= [-1134342400, -1134342400, -1134342400, -1134342400] /\\
+
+    %v7 <= [1134342400, 1134342400, 1134342400, 1134342400] /\\
+    %v7 >= [-1134342400, -1134342400, -1134342400, -1134342400] /\\
+
+    %v0 <= [1134342400, 1134342400, 1134342400, 1134342400] /\\
+    %v0 >= [-1134342400, -1134342400, -1134342400, -1134342400] /\\
+
+    %v1 <= [1134342400, 1134342400, 1134342400, 1134342400] /\\
+    %v1 >= [-1134342400, -1134342400, -1134342400, -1134342400]
+
+    prove with [algebra solver isl]
+  &&
+    %v16 <=s [1134342400@32, 1134342400@32, 1134342400@32, 1134342400@32] /\\
+    %v16 >=s [(-1134342400)@32, (-1134342400)@32, (-1134342400)@32, (-1134342400)@32] /\\
+
+    %v7 <=s [1134342400@32, 1134342400@32, 1134342400@32, 1134342400@32] /\\
+    %v7 >=s [(-1134342400)@32, (-1134342400)@32, (-1134342400)@32, (-1134342400)@32] /\\
+
+    %v0 <=s [1134342400@32, 1134342400@32, 1134342400@32, 1134342400@32] /\\
+    %v0 >=s [(-1134342400)@32, (-1134342400)@32, (-1134342400)@32, (-1134342400)@32] /\\
+
+    %v1 <=s [1134342400@32, 1134342400@32, 1134342400@32, 1134342400@32] /\\
+    %v1 >=s [(-1134342400)@32, (-1134342400)@32, (-1134342400)@32, (-1134342400)@32];
+''')
+    cut_id += 1
+    print(f'''
+ghost %h0_0_{i}{j}@sint32[4], %h0_1_{i}{j}@sint32[4], %h1_0_{i}{j}@sint32[4], %h1_1_{i}{j}@sint32[4] :
+    %h0_0_{i}{j} = %v16 /\\ %h0_1_{i}{j} = %v7 /\\
+    %h1_0_{i}{j} = %v0  /\\ %h1_1_{i}{j} = %v1
+  &&
+    %h0_0_{i}{j} = %v16 /\\ %h0_1_{i}{j} = %v7 /\\
+    %h1_0_{i}{j} = %v0  /\\ %h1_1_{i}{j} = %v1;
+''')
+
+    seg4 = insert_patch(seg4, combine_const(consts_table[9 * i + j][0], consts_table[9 * i + j][1]),
+                        find_first_line(seg4, 'PC = 0x5555551d98') + 2, const_cut_id)
+    seg4 = insert_patch(seg4, combine_const(consts_table[9 * i + j][0], consts_table[9 * i + j][1]),
+                        find_first_line(seg4, 'PC = 0x5555551d9c') + 2, const_cut_id)
+    print(''.join(seg4), end='')
+    print(f'''
+ghost %e0_0_{i}{j}@sint32[4], %e0_1_{i}{j}@sint32[4] :
+    %e0_0_{i}{j} = %v3 /\\ %e0_1_{i}{j} = %v2
+  &&
+    %e0_0_{i}{j} = %v3 /\\ %e0_1_{i}{j} = %v2;
+''')
+    print(''.join(seg5), end='')
+    print(f'''
+assert
+    %h0_0_{i}{j} - [4591, 4591, 4591, 4591] * %e0_0_{i}{j}
+    <= [32767, 32767, 32767, 32767] /\\
+
+    %h0_0_{i}{j} - [4591, 4591, 4591, 4591] * %e0_0_{i}{j}
+    >= [-32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    %h0_0_{i}{j} - [4591, 4591, 4591, 4591] * %e0_0_{i}{j}
+    = %v2[:4]
+    ( mod [65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %h0_0_{i}{j} - [4591, 4591, 4591, 4591] * %e0_0_{i}{j}
+    = %v2[:4]
+    && true;
+
+assert
+    %h0_1_{i}{j} - [4591, 4591, 4591, 4591] * %e0_1_{i}{j}
+    <= [32767, 32767, 32767, 32767] /\\
+
+   %h0_1_{i}{j} - [4591, 4591, 4591, 4591] * %e0_1_{i}{j}
+    >= [-32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    %h0_1_{i}{j} - [4591, 4591, 4591, 4591] * %e0_1_{i}{j}
+    = %v2[4:]
+    ( mod [65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %h0_1_{i}{j} - [4591, 4591, 4591, 4591] * %e0_1_{i}{j}
+    = %v2[4:]
+    && true;
+''')
+
+    seg6 = insert_patch(seg6, combine_const(consts_table[9 * i + j][0], consts_table[9 * i + j][1]),
+                        find_first_line(seg6, 'PC = 0x5555551dac') + 2, const_cut_id)
+    seg6 = insert_patch(seg6, combine_const(consts_table[9 * i + j][0], consts_table[9 * i + j][1]),
+                        find_first_line(seg6, 'PC = 0x5555551db0') + 2, const_cut_id)
+    print(''.join(seg6), end='')
+    print(f'''
+ghost %e1_0_{i}{j}@sint32[4], %e1_1_{i}{j}@sint32[4] :
+    %e1_0_{i}{j} = %v3 /\\ %e1_1_{i}{j} = %v8
+  &&
+    %e1_0_{i}{j} = %v3 /\\ %e1_1_{i}{j} = %v8;
+''')
+    print(''.join(seg7), end='')
+    print(f'''
+assert
+    %h1_0_{i}{j} - [4591, 4591, 4591, 4591] * %e1_0_{i}{j}
+    <= [32767, 32767, 32767, 32767] /\\
+
+    %h1_0_{i}{j} - [4591, 4591, 4591, 4591] * %e1_0_{i}{j}
+    >= [-32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    %h1_0_{i}{j} - [4591, 4591, 4591, 4591] * %e1_0_{i}{j}
+    = %v0[:4]
+    ( mod [65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %h1_0_{i}{j} - [4591, 4591, 4591, 4591] * %e1_0_{i}{j}
+    = %v0[:4]
+    && true;
+
+assert
+    %h1_1_{i}{j} - [4591, 4591, 4591, 4591] * %e1_1_{i}{j}
+    <= [32767, 32767, 32767, 32767] /\\
+
+    %h1_1_{i}{j} - [4591, 4591, 4591, 4591] * %e1_1_{i}{j}
+    >= [-32768, -32768, -32768, -32768]
+
+    prove with [algebra solver isl]
+    && true;
+
+assert
+    %h1_1_{i}{j} - [4591, 4591, 4591, 4591] * %e1_1_{i}{j}
+    = %v0[4:]
+    ( mod [65536, 65536, 65536, 65536] )
+    && true;
+
+assume
+    %h1_1_{i}{j} - [4591, 4591, 4591, 4591] * %e1_1_{i}{j}
+    = %v0[4:]
+    && true;
+''')
 
 def annot_j_iter(j_iter, i, j, prologue_cut_id):
     global cut_id
@@ -798,9 +1683,9 @@ cut (* {cut_id} *)
     cut_id += 1
 
     if i % 2 == 0:
-        annot_radix2(conv, i, j, prologue_cut_id)
+        annot_radix2(conv, i, j, prologue_cut_id, load_cut_id)
     else:
-        annot_karatsuba(conv, i, j, prologue_cut_id)
+        annot_karatsuba(conv, i, j, prologue_cut_id, load_cut_id)
 
     print()
     print('##### store')
@@ -1025,7 +1910,6 @@ def annot(lines):
         annot_i_iter(lines[i_iter_begin : i_iter_end], i, prologue_cut_id)
         i_iter_begin = i_iter_end
         i += 1
-        break
 
     print()
     print('# epilogue')
