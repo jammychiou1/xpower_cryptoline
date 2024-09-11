@@ -147,6 +147,16 @@ def insert_patch(lines, coef, loc, const_cut_id):
              f'assume coef = {coef} && coef = {format_const(coef, 32)};\n']
     return lines[:loc] + patch + lines[loc:]
 
+def weight_prefix(i, j):
+    if i == 0 and j == 0:
+        return ''
+    # TODO: i == 1 or j == 1
+    if i == 0:
+        return f'W9 ** {j} * '
+    if j == 0:
+        return f'W10 ** {i} * '
+    return f'W10 ** {i} * W9 ** {j} * '
+
 def annot_radix2(radix2, i, j, prologue_cut_id, load_cut_id):
     global cut_id
 
@@ -734,9 +744,28 @@ assume
     && true;
 ''')
     print(''.join(seg12), end='')
+    print()
+    print(f'cut (* {cut_id} *)')
+
+    prefix = weight_prefix(i, j)
+    padding = ' ' * len(prefix)
+    for k in range(16):
+        reg = '%v2' if k < 8 else '%v0'
+        print(f'    {reg}[{k % 8}] = (')
+        for ka in range(16):
+            wrap = ka > k
+            kb = (k - ka) % 16
+            factor_a = f'arr{i}{ka // 8}{j}{ka % 8}_a'
+            factor_b = f'arr{i}{kb // 8}{j}{kb % 8}_b'
+            if not wrap:
+                print(f'        {padding}{factor_a} * {factor_b}', end=' +\n' if ka != 15 else '\n')
+            else:
+                print(f'        {prefix}{factor_a} * {factor_b}', end=' +\n' if ka != 15 else '\n')
+        print(f'    ) ( mod [4591] ) /\\')
+        print()
     print(f'''
-cut (* {cut_id} *)
     true
+    prove with [precondition, cuts[{cut_id - 3}, {cut_id - 2}, {cut_id - 1}]] # TODO
   &&
     true
     prove with [cuts[{prologue_cut_id}]];
@@ -1770,10 +1799,11 @@ def annot(lines):
                 print(f'    {" ".join(arr)}')
     print()
     print('    # ghost')
-    print('    sint16 Q, sint16 Q2, sint16 NQ2')
+    print('    sint16 Q, sint16 Q2, sint16 NQ2, sint16 W10, sint16 W9')
     print(') =')
     print('{')
     print('    Q = 4591 /\\ Q2 = 2295 /\\ NQ2 = -2295 /\\')
+    print('    W10 = -1610 /\\ W9 = -1606 /\\')
     print()
     for i in range(10):
         for k0 in range(2):
@@ -1802,6 +1832,7 @@ def annot(lines):
     print('    true')
     print('  &&')
     print('    Q = 4591@16 /\\ Q2 = 2295@16 /\\ NQ2 = (-2295)@16 /\\')
+    print('    W10 = (-1610)@16 /\\ W9 = (-1606)@16 /\\')
     print()
     for i in range(10):
         for k0 in range(2):
