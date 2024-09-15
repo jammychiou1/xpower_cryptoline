@@ -907,7 +907,13 @@ cut (* {cut_id} *)
     %v8 = {format_coefs(consts_table[9 * i + j])} /\\
 
     true
-    prove with [precondition, cuts[{prologue_cut_id}, {load_cut_id}], algebra solver isl]
+    prove with [precondition, cuts[{prologue_cut_id}, {load_cut_id}], algebra solver isl],
+
+    %gb0_{i}{j} = {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb0_{i}{j}
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+
+    %gb1_{i}{j} = {format_coefs([consts_table[9 * i + j][7]] * 8)} * %fb1_{i}{j}
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
   &&
     %fa0_{i}{j} = %v4 /\\ %fa1_{i}{j} = %v1 /\\ %fb0_{i}{j} = %v17 /\\ %fb1_{i}{j} = %v18 /\\
     %gb0_{i}{j} = %v7 /\\ %gb1_{i}{j} = %v3 /\\
@@ -1663,6 +1669,33 @@ assume
     = %v0[4:]
     && true;
 ''')
+
+    print()
+    print(f'cut (* {cut_id} *)')
+
+    prefix = weight_prefix(i, j)
+    padding = ' ' * len(prefix)
+    for k in range(16):
+        reg = '%v2' if k < 8 else '%v0'
+        print(f'    {reg}[{k % 8}] = (')
+        for ka in range(16):
+            wrap = ka > k
+            kb = (k - ka) % 16
+            factor_a = f'arr{i}{ka // 8}{j}{ka % 8}_a'
+            factor_b = f'arr{i}{kb // 8}{j}{kb % 8}_b'
+            if not wrap:
+                print(f'        {padding}{factor_a} * {factor_b}', end=' +\n' if ka != 15 else '\n')
+            else:
+                print(f'        {prefix}{factor_a} * {factor_b}', end=' +\n' if ka != 15 else '\n')
+        print(f'    ) ( mod [4591] ) /\\')
+        print()
+    print(f'''
+    true
+    prove with [precondition, cuts[{cut_id - 3}, {cut_id - 2}, {cut_id - 1}]] # TODO
+  &&
+    true;
+''')
+    cut_id += 1
 
 def annot_j_iter(j_iter, i, j, prologue_cut_id):
     global cut_id
