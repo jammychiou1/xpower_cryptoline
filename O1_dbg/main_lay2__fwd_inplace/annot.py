@@ -50,22 +50,22 @@ cut_id = 0
 def annot_ntt9_2x(ntt9_2x, i, k0, prologue_cut_id, load_cut_id):
     global cut_id
 
-    seg0_end  = find_first_line(ntt9_2x, 'PC = 0x5555551a8c')
-    seg1_end  = find_first_line(ntt9_2x, 'PC = 0x5555551ac8', seg0_end)
-    seg2_end  = find_first_line(ntt9_2x, 'PC = 0x5555551ad0', seg1_end)
-    seg3_end  = find_first_line(ntt9_2x, 'PC = 0x5555551af0', seg2_end)
-    seg4_end  = find_first_line(ntt9_2x, 'PC = 0x5555551b18', seg3_end)
-    seg5_end  = find_first_line(ntt9_2x, 'PC = 0x5555551b20', seg4_end)
-    seg6_end  = find_first_line(ntt9_2x, 'PC = 0x5555551b34', seg5_end)
-    seg7_end  = find_first_line(ntt9_2x, 'PC = 0x5555551b50', seg6_end)
-    seg8_end  = find_first_line(ntt9_2x, 'PC = 0x5555551b6c', seg7_end)
-    seg9_end  = find_first_line(ntt9_2x, 'PC = 0x5555551b78', seg8_end)
-    seg10_end = find_first_line(ntt9_2x, 'PC = 0x5555551b8c', seg9_end)
-    seg11_end = find_first_line(ntt9_2x, 'PC = 0x5555551ba8', seg10_end)
-    seg12_end = find_first_line(ntt9_2x, 'PC = 0x5555551bc4', seg11_end)
-    seg13_end = find_first_line(ntt9_2x, 'PC = 0x5555551bd0', seg12_end)
-    seg14_end = find_first_line(ntt9_2x, 'PC = 0x5555551be8', seg13_end)
-    seg15_end = find_first_line(ntt9_2x, 'PC = 0x5555551c08', seg14_end)
+    seg0_end  = find_first_line(ntt9_2x, 'PC = 0x555555163c')
+    seg1_end  = find_first_line(ntt9_2x, 'PC = 0x5555551678', seg0_end)
+    seg2_end  = find_first_line(ntt9_2x, 'PC = 0x5555551680', seg1_end)
+    seg3_end  = find_first_line(ntt9_2x, 'PC = 0x55555516a0', seg2_end)
+    seg4_end  = find_first_line(ntt9_2x, 'PC = 0x55555516c8', seg3_end)
+    seg5_end  = find_first_line(ntt9_2x, 'PC = 0x55555516d0', seg4_end)
+    seg6_end  = find_first_line(ntt9_2x, 'PC = 0x55555516e4', seg5_end)
+    seg7_end  = find_first_line(ntt9_2x, 'PC = 0x5555551700', seg6_end)
+    seg8_end  = find_first_line(ntt9_2x, 'PC = 0x555555171c', seg7_end)
+    seg9_end  = find_first_line(ntt9_2x, 'PC = 0x5555551728', seg8_end)
+    seg10_end = find_first_line(ntt9_2x, 'PC = 0x555555173c', seg9_end)
+    seg11_end = find_first_line(ntt9_2x, 'PC = 0x5555551758', seg10_end)
+    seg12_end = find_first_line(ntt9_2x, 'PC = 0x5555551774', seg11_end)
+    seg13_end = find_first_line(ntt9_2x, 'PC = 0x5555551780', seg12_end)
+    seg14_end = find_first_line(ntt9_2x, 'PC = 0x5555551798', seg13_end)
+    seg15_end = find_first_line(ntt9_2x, 'PC = 0x55555517b8', seg14_end)
 
     seg0  = ntt9_2x[:seg0_end]
     seg1  = ntt9_2x[seg0_end  : seg1_end ]
@@ -696,7 +696,7 @@ assume
     print()
     print(f'cut (* {cut_id} *)')
     for j in range(9):
-        print(f'    {memory_arr(0x7ffffff070 + 16 * j, 8, 2)} =')
+        print(f'    {memory_arr(0x7fffffc290 + 16 * j, 8, 2)} =')
         print(f'    [2, 2, 2, 2, 2, 2, 2, 2] * (')
         for jj in range(9):
             pow = j * jj % 9
@@ -717,32 +717,32 @@ assume
     true
     prove with [precondition, cuts[{prologue_cut_id}, {load_cut_id}]],
 
-    {memory_arr(0x7ffffff070, 8, 2)} <= {format_coefs([6885] * 8)} /\\
-    {memory_arr(0x7ffffff070, 8, 2)} >= {format_coefs([-6885] * 8)} /\\
+    {memory_arr(0x7fffffc290, 8, 2)} <= {format_coefs([6885] * 8)} /\\
+    {memory_arr(0x7fffffc290, 8, 2)} >= {format_coefs([-6885] * 8)} /\\
 
-    {memory_arr(0x7ffffff080, 8, 2)} <= {format_coefs([8145] * 8)} /\\
-    {memory_arr(0x7ffffff080, 8, 2)} >= {format_coefs([-8145] * 8)} /\\
+    {memory_arr(0x7fffffc2a0, 8, 2)} <= {format_coefs([8145] * 8)} /\\
+    {memory_arr(0x7fffffc2a0, 8, 2)} >= {format_coefs([-8145] * 8)} /\\
 
-    {memory_arr(0x7ffffff090, 8, 2)} <= {format_coefs([8420] * 8)} /\\
-    {memory_arr(0x7ffffff090, 8, 2)} >= {format_coefs([-8420] * 8)} /\\
+    {memory_arr(0x7fffffc2b0, 8, 2)} <= {format_coefs([8420] * 8)} /\\
+    {memory_arr(0x7fffffc2b0, 8, 2)} >= {format_coefs([-8420] * 8)} /\\
 
-    {memory_arr(0x7ffffff0a0, 8, 2)} <= {format_coefs([8010] * 8)} /\\
-    {memory_arr(0x7ffffff0a0, 8, 2)} >= {format_coefs([-8010] * 8)} /\\
+    {memory_arr(0x7fffffc2c0, 8, 2)} <= {format_coefs([8010] * 8)} /\\
+    {memory_arr(0x7fffffc2c0, 8, 2)} >= {format_coefs([-8010] * 8)} /\\
 
-    {memory_arr(0x7ffffff0b0, 8, 2)} <= {format_coefs([8420] * 8)} /\\
-    {memory_arr(0x7ffffff0b0, 8, 2)} >= {format_coefs([-8420] * 8)} /\\
+    {memory_arr(0x7fffffc2d0, 8, 2)} <= {format_coefs([8420] * 8)} /\\
+    {memory_arr(0x7fffffc2d0, 8, 2)} >= {format_coefs([-8420] * 8)} /\\
 
-    {memory_arr(0x7ffffff0c0, 8, 2)} <= {format_coefs([8420] * 8)} /\\
-    {memory_arr(0x7ffffff0c0, 8, 2)} >= {format_coefs([-8420] * 8)} /\\
+    {memory_arr(0x7fffffc2e0, 8, 2)} <= {format_coefs([8420] * 8)} /\\
+    {memory_arr(0x7fffffc2e0, 8, 2)} >= {format_coefs([-8420] * 8)} /\\
 
-    {memory_arr(0x7ffffff0d0, 8, 2)} <= {format_coefs([8010] * 8)} /\\
-    {memory_arr(0x7ffffff0d0, 8, 2)} >= {format_coefs([-8010] * 8)} /\\
+    {memory_arr(0x7fffffc2f0, 8, 2)} <= {format_coefs([8010] * 8)} /\\
+    {memory_arr(0x7fffffc2f0, 8, 2)} >= {format_coefs([-8010] * 8)} /\\
 
-    {memory_arr(0x7ffffff0e0, 8, 2)} <= {format_coefs([8420] * 8)} /\\
-    {memory_arr(0x7ffffff0e0, 8, 2)} >= {format_coefs([-8420] * 8)} /\\
+    {memory_arr(0x7fffffc300, 8, 2)} <= {format_coefs([8420] * 8)} /\\
+    {memory_arr(0x7fffffc300, 8, 2)} >= {format_coefs([-8420] * 8)} /\\
 
-    {memory_arr(0x7ffffff0f0, 8, 2)} <= {format_coefs([8145] * 8)} /\\
-    {memory_arr(0x7ffffff0f0, 8, 2)} >= {format_coefs([-8145] * 8)} /\\
+    {memory_arr(0x7fffffc310, 8, 2)} <= {format_coefs([8145] * 8)} /\\
+    {memory_arr(0x7fffffc310, 8, 2)} >= {format_coefs([-8145] * 8)} /\\
 
     true
     prove with [precondition, cuts[{prologue_cut_id}, {load_cut_id}], algebra solver isl]
@@ -758,8 +758,8 @@ assume
 def annot_k0_iter_0(k0_iter_0, i, prologue_cut_id):
     global cut_id
 
-    ntt9_2x_begin = find_first_line(k0_iter_0, 'PC = 0x5555551a54')
-    ntt9_2x_end = find_first_line(k0_iter_0, 'PC = 0x5555551794', ntt9_2x_begin)
+    ntt9_2x_begin = find_first_line(k0_iter_0, 'PC = 0x5555551604')
+    ntt9_2x_end = find_first_line(k0_iter_0, 'PC = 0x5555551344', ntt9_2x_begin)
 
     load = k0_iter_0[:ntt9_2x_begin]
     ntt9_2x = k0_iter_0[ntt9_2x_begin : ntt9_2x_end]
@@ -777,17 +777,17 @@ def annot_k0_iter_0(k0_iter_0, i, prologue_cut_id):
 ghost %fa0_{i}0@sint16[8], %fa1_{i}0@sint16[8], %fa2_{i}0@sint16[8], %fa3_{i}0@sint16[8], %fa4_{i}0@sint16[8], %fa5_{i}0@sint16[8], %fa6_{i}0@sint16[8], %fa7_{i}0@sint16[8], %fa8_{i}0@sint16[8] :
     %fa0_{i}0 = %v0 /\\ %fa1_{i}0 = %v1 /\\ %fa2_{i}0 = %v2 /\\ %fa3_{i}0 = %v3 /\\
     %fa4_{i}0 = %v4 /\\ %fa5_{i}0 = %v5 /\\ %fa6_{i}0 = %v6 /\\ %fa7_{i}0 = %v7 /\\
-    %fa8_{i}0 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee]
+    %fa8_{i}0 = [L0x7fffffc200, L0x7fffffc202, L0x7fffffc204, L0x7fffffc206, L0x7fffffc208, L0x7fffffc20a, L0x7fffffc20c, L0x7fffffc20e]
   &&
     %fa0_{i}0 = %v0 /\\ %fa1_{i}0 = %v1 /\\ %fa2_{i}0 = %v2 /\\ %fa3_{i}0 = %v3 /\\
     %fa4_{i}0 = %v4 /\\ %fa5_{i}0 = %v5 /\\ %fa6_{i}0 = %v6 /\\ %fa7_{i}0 = %v7 /\\
-    %fa8_{i}0 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
+    %fa8_{i}0 = [L0x7fffffc200, L0x7fffffc202, L0x7fffffc204, L0x7fffffc206, L0x7fffffc208, L0x7fffffc20a, L0x7fffffc20c, L0x7fffffc20e];
 ''')
     print(f'cut (* {cut_id} *)')
     print(f'''\
     %fa0_{i}0 = %v0 /\\ %fa1_{i}0 = %v1 /\\ %fa2_{i}0 = %v2 /\\ %fa3_{i}0 = %v3 /\\
     %fa4_{i}0 = %v4 /\\ %fa5_{i}0 = %v5 /\\ %fa6_{i}0 = %v6 /\\ %fa7_{i}0 = %v7 /\\
-    %fa8_{i}0 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\\
+    %fa8_{i}0 = [L0x7fffffc200, L0x7fffffc202, L0x7fffffc204, L0x7fffffc206, L0x7fffffc208, L0x7fffffc20a, L0x7fffffc20c, L0x7fffffc20e] /\\
 ''')
     for j in range(9):
         rhs = [f'arr{i}0{j}{k}' for k in range(8)]
@@ -798,7 +798,7 @@ ghost %fa0_{i}0@sint16[8], %fa1_{i}0@sint16[8], %fa2_{i}0@sint16[8], %fa3_{i}0@s
     print(f'''\
     %fa0_{i}0 = %v0 /\\ %fa1_{i}0 = %v1 /\\ %fa2_{i}0 = %v2 /\\ %fa3_{i}0 = %v3 /\\
     %fa4_{i}0 = %v4 /\\ %fa5_{i}0 = %v5 /\\ %fa6_{i}0 = %v6 /\\ %fa7_{i}0 = %v7 /\\
-    %fa8_{i}0 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\\
+    %fa8_{i}0 = [L0x7fffffc200, L0x7fffffc202, L0x7fffffc204, L0x7fffffc206, L0x7fffffc208, L0x7fffffc20a, L0x7fffffc20c, L0x7fffffc20e] /\\
 ''')
     for j in range(9):
         rhs = [f'arr{i}0{j}{k}' for k in range(8)]
@@ -823,8 +823,8 @@ cut (* {cut_id} *)
 def annot_k0_iter_1(k0_iter_1, i, prologue_cut_id):
     global cut_id
 
-    ntt9_2x_begin = find_first_line(k0_iter_1, 'PC = 0x5555551a54')
-    ntt9_2x_end = find_first_line(k0_iter_1, 'PC = 0x555555182c', ntt9_2x_begin)
+    ntt9_2x_begin = find_first_line(k0_iter_1, 'PC = 0x5555551604')
+    ntt9_2x_end = find_first_line(k0_iter_1, 'PC = 0x55555513dc', ntt9_2x_begin)
 
     load = k0_iter_1[:ntt9_2x_begin]
     ntt9_2x = k0_iter_1[ntt9_2x_begin : ntt9_2x_end]
@@ -842,17 +842,17 @@ def annot_k0_iter_1(k0_iter_1, i, prologue_cut_id):
 ghost %fa0_{i}1@sint16[8], %fa1_{i}1@sint16[8], %fa2_{i}1@sint16[8], %fa3_{i}1@sint16[8], %fa4_{i}1@sint16[8], %fa5_{i}1@sint16[8], %fa6_{i}1@sint16[8], %fa7_{i}1@sint16[8], %fa8_{i}1@sint16[8] :
     %fa0_{i}1 = %v0 /\\ %fa1_{i}1 = %v1 /\\ %fa2_{i}1 = %v2 /\\ %fa3_{i}1 = %v3 /\\
     %fa4_{i}1 = %v4 /\\ %fa5_{i}1 = %v5 /\\ %fa6_{i}1 = %v6 /\\ %fa7_{i}1 = %v7 /\\
-    %fa8_{i}1 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee]
+    %fa8_{i}1 = [L0x7fffffc200, L0x7fffffc202, L0x7fffffc204, L0x7fffffc206, L0x7fffffc208, L0x7fffffc20a, L0x7fffffc20c, L0x7fffffc20e]
   &&
     %fa0_{i}1 = %v0 /\\ %fa1_{i}1 = %v1 /\\ %fa2_{i}1 = %v2 /\\ %fa3_{i}1 = %v3 /\\
     %fa4_{i}1 = %v4 /\\ %fa5_{i}1 = %v5 /\\ %fa6_{i}1 = %v6 /\\ %fa7_{i}1 = %v7 /\\
-    %fa8_{i}1 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee];
+    %fa8_{i}1 = [L0x7fffffc200, L0x7fffffc202, L0x7fffffc204, L0x7fffffc206, L0x7fffffc208, L0x7fffffc20a, L0x7fffffc20c, L0x7fffffc20e];
 ''')
     print(f'cut (* {cut_id} *)')
     print(f'''\
     %fa0_{i}1 = %v0 /\\ %fa1_{i}1 = %v1 /\\ %fa2_{i}1 = %v2 /\\ %fa3_{i}1 = %v3 /\\
     %fa4_{i}1 = %v4 /\\ %fa5_{i}1 = %v5 /\\ %fa6_{i}1 = %v6 /\\ %fa7_{i}1 = %v7 /\\
-    %fa8_{i}1 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\\
+    %fa8_{i}1 = [L0x7fffffc200, L0x7fffffc202, L0x7fffffc204, L0x7fffffc206, L0x7fffffc208, L0x7fffffc20a, L0x7fffffc20c, L0x7fffffc20e] /\\
 ''')
     for j in range(9):
         rhs = [f'arr{i}1{j}{k}' for k in range(8)]
@@ -863,7 +863,7 @@ ghost %fa0_{i}1@sint16[8], %fa1_{i}1@sint16[8], %fa2_{i}1@sint16[8], %fa3_{i}1@s
     print(f'''\
     %fa0_{i}1 = %v0 /\\ %fa1_{i}1 = %v1 /\\ %fa2_{i}1 = %v2 /\\ %fa3_{i}1 = %v3 /\\
     %fa4_{i}1 = %v4 /\\ %fa5_{i}1 = %v5 /\\ %fa6_{i}1 = %v6 /\\ %fa7_{i}1 = %v7 /\\
-    %fa8_{i}1 = [L0x7fffffefe0, L0x7fffffefe2, L0x7fffffefe4, L0x7fffffefe6, L0x7fffffefe8, L0x7fffffefea, L0x7fffffefec, L0x7fffffefee] /\\
+    %fa8_{i}1 = [L0x7fffffc200, L0x7fffffc202, L0x7fffffc204, L0x7fffffc206, L0x7fffffc208, L0x7fffffc20a, L0x7fffffc20c, L0x7fffffc20e] /\\
 ''')
     for j in range(9):
         rhs = [f'arr{i}1{j}{k}' for k in range(8)]
@@ -888,8 +888,8 @@ cut (* {cut_id} *)
 def annot_i_iter(i_iter, i, prologue_cut_id):
     global cut_id
 
-    k0_iter_0_end = find_first_line(i_iter, 'PC = 0x55555517dc')
-    k0_iter_1_end = find_first_line(i_iter, 'PC = 0x5555551880', k0_iter_0_end)
+    k0_iter_0_end = find_first_line(i_iter, 'PC = 0x555555138c')
+    k0_iter_1_end = find_first_line(i_iter, 'PC = 0x5555551430', k0_iter_0_end)
 
     k0_iter_0 = i_iter[:k0_iter_0_end]
     k0_iter_1 = i_iter[k0_iter_0_end : k0_iter_1_end]
@@ -912,13 +912,13 @@ def annot_i_iter(i_iter, i, prologue_cut_id):
 def annot(lines):
     global cut_id
 
-    i_loop_begin = find_first_line(lines, 'PC = 0x5555551740')
-    i_loop_end = find_first_line(lines, 'SP = 0x7ffffff100', i_loop_begin)
+    i_loop_begin = find_first_line(lines, 'PC = 0x55555512f0')
+    i_loop_end = find_first_line(lines, 'SP = 0x7fffffc320', i_loop_begin)
 
     i_iter_ends = []
     i_iter_end = i_loop_begin
     while True:
-        i_iter_end = find_first_line(lines, 'PC = 0x5555551880', i_iter_end)
+        i_iter_end = find_first_line(lines, 'PC = 0x5555551430', i_iter_end)
         if i_iter_end == -1:
             break
         i_iter_end += 2
@@ -977,7 +977,7 @@ def annot(lines):
     print('# constants')
     print()
     rhs = [format_imm(c) for c in consts]
-    print(f'mov {memory_arr(0x5555552b10, 16, 2)} {format_arr(rhs)};')
+    print(f'mov {memory_arr(0x5555552810, 16, 2)} {format_arr(rhs)};')
     print()
 
     print()
@@ -986,16 +986,16 @@ def annot(lines):
         for k0 in range(2):
             for j in range(9):
                 arr = [f'arr{i}{k0}{j}{k}' for k in range(8)]
-                print(f'mov {memory_arr(0x5555571278 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} {format_arr(arr)};')
+                print(f'mov {memory_arr(0x7fffffd9d0 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} {format_arr(arr)};')
     print()
     print('nondet %v8@sint16[8];')
     print('nondet %v9@sint16[8];')
     print()
 
     for i in range(len(lines)):
-        if lines[i].find('PC = 0x5555551abc') != -1:
+        if lines[i].find('PC = 0x555555166c') != -1:
             lines[i + 1] = lines[i + 1].replace('add', 'adds %add_dc')
-        if lines[i].find('PC = 0x5555551ac8') != -1:
+        if lines[i].find('PC = 0x5555551678') != -1:
             lines[i + 1] = lines[i + 1].replace('sub', 'subc %sub_dc')
 
     print()
@@ -1008,17 +1008,17 @@ def annot(lines):
         for k0 in range(2):
             for j in range(9):
                 arr = [f'arr{i}{k0}{j}{k}' for k in range(8)]
-                print(f'    {memory_arr(0x5555571278 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
+                print(f'    {memory_arr(0x7fffffd9d0 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
     print()
-    print(f'    {memory_arr(0x5555552b10, 16, 2)} = {format_coefs(consts)}')
+    print(f'    {memory_arr(0x5555552810, 16, 2)} = {format_coefs(consts)}')
     print('  &&')
     for i in range(10):
         for k0 in range(2):
             for j in range(9):
                 arr = [f'arr{i}{k0}{j}{k}' for k in range(8)]
-                print(f'    {memory_arr(0x5555571278 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
+                print(f'    {memory_arr(0x7fffffd9d0 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
     print()
-    print(f'    {memory_arr(0x5555552b10, 16, 2)} = {format_arr([format_const(c) for c in consts])};')
+    print(f'    {memory_arr(0x5555552810, 16, 2)} = {format_arr([format_const(c) for c in consts])};')
     prologue_cut_id = cut_id
     cut_id += 1
 

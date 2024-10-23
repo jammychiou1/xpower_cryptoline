@@ -50,11 +50,11 @@ assert_id = 0
 def annot_ntt5_4x_nof14(ntt5_4x_nof14, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id):
     global cut_id
 
-    seg0_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550e80')
-    seg1_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550e98', seg0_end)
-    seg2_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550ea4', seg1_end)
-    seg3_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550ebc', seg2_end)
-    seg4_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550ec8', seg3_end)
+    seg0_end = find_first_line(ntt5_4x_nof14, 'PC = 0x555555097c')
+    seg1_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550994', seg0_end)
+    seg2_end = find_first_line(ntt5_4x_nof14, 'PC = 0x55555509a0', seg1_end)
+    seg3_end = find_first_line(ntt5_4x_nof14, 'PC = 0x55555509b8', seg2_end)
+    seg4_end = find_first_line(ntt5_4x_nof14, 'PC = 0x55555509c4', seg3_end)
 
     seg0 = ntt5_4x_nof14[:seg0_end]
     seg1 = ntt5_4x_nof14[seg0_end : seg1_end]
@@ -286,7 +286,7 @@ cut (* {cut_id} *)
 def annot_nega_part(nega_part, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id):
     global cut_id
 
-    seg0_end = find_first_line(nega_part, 'PC = 0x5555550f4c')
+    seg0_end = find_first_line(nega_part, 'PC = 0x5555550a48')
 
     seg0 = nega_part[:seg0_end]
     seg1 = nega_part[seg0_end:]
@@ -409,16 +409,16 @@ cut (* {cut_id} *)
 def annot_ntt5_4x_nof03(ntt5_4x_nof03, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id):
     global cut_id
 
-    adds_line = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550f38') + 1
+    adds_line = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550a34') + 1
     ntt5_4x_nof03[adds_line] = ntt5_4x_nof03[adds_line].replace('add', 'adds %add_dc')
-    subc_line = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550f44') + 1
+    subc_line = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550a40') + 1
     ntt5_4x_nof03[subc_line] = ntt5_4x_nof03[subc_line].replace('sub', 'subc %sub_dc')
 
-    seg0_end = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550ef0')
-    seg1_end = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550f04', seg0_end)
-    seg2_end = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550f14', seg1_end)
-    seg3_end = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550f20', seg1_end)
-    nega_end = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550f58', seg3_end)
+    seg0_end = find_first_line(ntt5_4x_nof03, 'PC = 0x55555509ec')
+    seg1_end = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550a00', seg0_end)
+    seg2_end = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550a10', seg1_end)
+    seg3_end = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550a1c', seg1_end)
+    nega_end = find_first_line(ntt5_4x_nof03, 'PC = 0x5555550a54', seg3_end)
 
     seg0 = ntt5_4x_nof03[:seg0_end]
     seg1 = ntt5_4x_nof03[seg0_end : seg1_end]
@@ -645,11 +645,11 @@ cut (* {cut_id} *)
 def annot_jgt2_ntt5_4x_nof14(ntt5_4x_nof14, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id):
     global cut_id
 
-    seg0_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555551084')
-    seg1_end = find_first_line(ntt5_4x_nof14, 'PC = 0x555555109c', seg0_end)
-    seg2_end = find_first_line(ntt5_4x_nof14, 'PC = 0x55555510a8', seg1_end)
-    seg3_end = find_first_line(ntt5_4x_nof14, 'PC = 0x55555510c0', seg2_end)
-    seg4_end = find_first_line(ntt5_4x_nof14, 'PC = 0x55555510cc', seg3_end)
+    seg0_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550b80')
+    seg1_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550b98', seg0_end)
+    seg2_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550ba4', seg1_end)
+    seg3_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550bbc', seg2_end)
+    seg4_end = find_first_line(ntt5_4x_nof14, 'PC = 0x5555550bc8', seg3_end)
 
     seg0 = ntt5_4x_nof14[:seg0_end]
     seg1 = ntt5_4x_nof14[seg0_end : seg1_end]
@@ -882,11 +882,11 @@ cut (* {cut_id} *)
 def annot_ntt5_4x_nof023(ntt5_4x_nof023, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id):
     global cut_id
 
-    seg0_end = find_first_line(ntt5_4x_nof023, 'PC = 0x55555510f0')
-    seg1_end = find_first_line(ntt5_4x_nof023, 'PC = 0x5555551104', seg0_end)
-    seg2_end = find_first_line(ntt5_4x_nof023, 'PC = 0x5555551110', seg1_end)
-    seg3_end = find_first_line(ntt5_4x_nof023, 'PC = 0x5555551128', seg2_end)
-    seg4_end = find_first_line(ntt5_4x_nof023, 'PC = 0x5555551134', seg3_end)
+    seg0_end = find_first_line(ntt5_4x_nof023, 'PC = 0x5555550bec')
+    seg1_end = find_first_line(ntt5_4x_nof023, 'PC = 0x5555550c00', seg0_end)
+    seg2_end = find_first_line(ntt5_4x_nof023, 'PC = 0x5555550c0c', seg1_end)
+    seg3_end = find_first_line(ntt5_4x_nof023, 'PC = 0x5555550c24', seg2_end)
+    seg4_end = find_first_line(ntt5_4x_nof023, 'PC = 0x5555550c30', seg3_end)
 
     seg0 = ntt5_4x_nof023[:seg0_end]
     seg1 = ntt5_4x_nof023[seg0_end : seg1_end]
@@ -1107,8 +1107,8 @@ cut (* {cut_id} *)
 def annot_ntt10_4x_nof3546(ntt10_4x_nof3546, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id):
     global cut_id
 
-    ntt5_4x_nof14_end = find_first_line(ntt10_4x_nof3546, 'PC = 0x5555550edc')
-    ntt5_4x_nof03_end = find_first_line(ntt10_4x_nof3546, 'PC = 0x5555550f68', ntt5_4x_nof14_end)
+    ntt5_4x_nof14_end = find_first_line(ntt10_4x_nof3546, 'PC = 0x55555509d8')
+    ntt5_4x_nof03_end = find_first_line(ntt10_4x_nof3546, 'PC = 0x5555550a64', ntt5_4x_nof14_end)
 
     ntt5_4x_nof14 = ntt10_4x_nof3546[:ntt5_4x_nof14_end]
     ntt5_4x_nof03 = ntt10_4x_nof3546[ntt5_4x_nof14_end : ntt5_4x_nof03_end]
@@ -1248,8 +1248,8 @@ cut (* {cut_id} *)
 def annot_ntt10_4x_nof35467(ntt10_4x_nof35467, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id):
     global cut_id
 
-    ntt5_4x_nof14_end = find_first_line(ntt10_4x_nof35467, 'PC = 0x55555510e0')
-    ntt5_4x_nof023_end = find_first_line(ntt10_4x_nof35467, 'PC = 0x5555551148', ntt5_4x_nof14_end)
+    ntt5_4x_nof14_end = find_first_line(ntt10_4x_nof35467, 'PC = 0x5555550bdc')
+    ntt5_4x_nof023_end = find_first_line(ntt10_4x_nof35467, 'PC = 0x5555550c44', ntt5_4x_nof14_end)
 
     ntt5_4x_nof14 = ntt10_4x_nof35467[:ntt5_4x_nof14_end]
     ntt5_4x_nof023 = ntt10_4x_nof35467[ntt5_4x_nof14_end : ntt5_4x_nof023_end]
@@ -1392,16 +1392,16 @@ twist_table = [
 def annot_twist_his(twist_his, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id):
     global cut_id
 
-    seg0_end = find_first_line(twist_his, 'PC = 0x5555550f9c')
-    seg1_end = find_first_line(twist_his, 'PC = 0x5555550fa4', seg0_end)
-    seg2_end = find_first_line(twist_his, 'PC = 0x5555550fb0', seg1_end)
-    seg3_end = find_first_line(twist_his, 'PC = 0x5555550fbc', seg2_end)
-    seg4_end = find_first_line(twist_his, 'PC = 0x5555550fc8', seg3_end)
-    seg5_end = find_first_line(twist_his, 'PC = 0x5555550fd4', seg4_end)
-    seg6_end = find_first_line(twist_his, 'PC = 0x5555550fe0', seg5_end)
-    seg7_end = find_first_line(twist_his, 'PC = 0x5555550fec', seg6_end)
-    seg8_end = find_first_line(twist_his, 'PC = 0x5555550ff8', seg7_end)
-    seg9_end = find_first_line(twist_his, 'PC = 0x5555551008', seg8_end)
+    seg0_end = find_first_line(twist_his, 'PC = 0x5555550a98')
+    seg1_end = find_first_line(twist_his, 'PC = 0x5555550aa0', seg0_end)
+    seg2_end = find_first_line(twist_his, 'PC = 0x5555550aac', seg1_end)
+    seg3_end = find_first_line(twist_his, 'PC = 0x5555550ab8', seg2_end)
+    seg4_end = find_first_line(twist_his, 'PC = 0x5555550ac4', seg3_end)
+    seg5_end = find_first_line(twist_his, 'PC = 0x5555550ad0', seg4_end)
+    seg6_end = find_first_line(twist_his, 'PC = 0x5555550adc', seg5_end)
+    seg7_end = find_first_line(twist_his, 'PC = 0x5555550ae8', seg6_end)
+    seg8_end = find_first_line(twist_his, 'PC = 0x5555550af4', seg7_end)
+    seg9_end = find_first_line(twist_his, 'PC = 0x5555550b04', seg8_end)
 
     seg0 = twist_his[:seg0_end]
     seg1 = twist_his[seg0_end : seg1_end]
@@ -1737,16 +1737,16 @@ assume
 def annot_jgt2_twist_his(twist_his, j, k0, prologue_cut_id, j_iter_prologue_cut_id, k0_iter_load_cut_id):
     global cut_id
 
-    seg0_end = find_first_line(twist_his, 'PC = 0x555555117c')
-    seg1_end = find_first_line(twist_his, 'PC = 0x5555551184', seg0_end)
-    seg2_end = find_first_line(twist_his, 'PC = 0x5555551190', seg1_end)
-    seg3_end = find_first_line(twist_his, 'PC = 0x555555119c', seg2_end)
-    seg4_end = find_first_line(twist_his, 'PC = 0x55555511a8', seg3_end)
-    seg5_end = find_first_line(twist_his, 'PC = 0x55555511b4', seg4_end)
-    seg6_end = find_first_line(twist_his, 'PC = 0x55555511c0', seg5_end)
-    seg7_end = find_first_line(twist_his, 'PC = 0x55555511cc', seg6_end)
-    seg8_end = find_first_line(twist_his, 'PC = 0x55555511d8', seg7_end)
-    seg9_end = find_first_line(twist_his, 'PC = 0x55555511e8', seg8_end)
+    seg0_end = find_first_line(twist_his, 'PC = 0x5555550c78')
+    seg1_end = find_first_line(twist_his, 'PC = 0x5555550c80', seg0_end)
+    seg2_end = find_first_line(twist_his, 'PC = 0x5555550c8c', seg1_end)
+    seg3_end = find_first_line(twist_his, 'PC = 0x5555550c98', seg2_end)
+    seg4_end = find_first_line(twist_his, 'PC = 0x5555550ca4', seg3_end)
+    seg5_end = find_first_line(twist_his, 'PC = 0x5555550cb0', seg4_end)
+    seg6_end = find_first_line(twist_his, 'PC = 0x5555550cbc', seg5_end)
+    seg7_end = find_first_line(twist_his, 'PC = 0x5555550cc8', seg6_end)
+    seg8_end = find_first_line(twist_his, 'PC = 0x5555550cd4', seg7_end)
+    seg9_end = find_first_line(twist_his, 'PC = 0x5555550ce4', seg8_end)
 
     seg0 = twist_his[:seg0_end]
     seg1 = twist_his[seg0_end : seg1_end]
@@ -2082,9 +2082,9 @@ assume
 def annot_jle2_k0_iter(k0_iter, j, k0, prologue_cut_id, j_iter_prologue_cut_id):
     global cut_id
 
-    load_end = find_first_line(k0_iter, 'PC = 0x5555550e6c')
-    ntt10_4x_nof3546_end = find_first_line(k0_iter, 'PC = 0x5555550f90', load_end)
-    twist_his_end = find_first_line(k0_iter, 'PC = 0x5555550e08', ntt10_4x_nof3546_end)
+    load_end = find_first_line(k0_iter, 'PC = 0x5555550968')
+    ntt10_4x_nof3546_end = find_first_line(k0_iter, 'PC = 0x5555550a8c', load_end)
+    twist_his_end = find_first_line(k0_iter, 'PC = 0x5555550904', ntt10_4x_nof3546_end)
 
     load = k0_iter[:load_end]
     ntt10_4x_nof3546 = k0_iter[load_end : ntt10_4x_nof3546_end]
@@ -2180,19 +2180,19 @@ def annot_jle2_k0_iter(k0_iter, j, k0, prologue_cut_id, j_iter_prologue_cut_id):
     print(f'cut (* {cut_id} *)')
     for i, reg in enumerate(regs):
         delim = ' /\\' if i != 9 else ''
-        print(f'    {memory_arr(0x5555571278 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
+        print(f'    {memory_arr(0x7fffffd9c0 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
     print('  &&')
     for i, reg in enumerate(regs):
         delim = ' /\\' if i != 9 else ';'
-        print(f'    {memory_arr(0x5555571278 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
+        print(f'    {memory_arr(0x7fffffd9c0 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
     cut_id += 1
 
 def annot_jgt2_k0_iter(k0_iter, j, k0, prologue_cut_id, j_iter_prologue_cut_id):
     global cut_id
 
-    load_end = find_first_line(k0_iter, 'PC = 0x5555551070')
-    ntt10_4x_nof35467_end = find_first_line(k0_iter, 'PC = 0x5555551170', load_end)
-    twist_his_end = find_first_line(k0_iter, 'PC = 0x5555551014', ntt10_4x_nof35467_end)
+    load_end = find_first_line(k0_iter, 'PC = 0x5555550b6c')
+    ntt10_4x_nof35467_end = find_first_line(k0_iter, 'PC = 0x5555550c6c', load_end)
+    twist_his_end = find_first_line(k0_iter, 'PC = 0x5555550b10', ntt10_4x_nof35467_end)
 
     load = k0_iter[:load_end]
     ntt10_4x_nof35467 = k0_iter[load_end : ntt10_4x_nof35467_end]
@@ -2280,25 +2280,25 @@ def annot_jgt2_k0_iter(k0_iter, j, k0, prologue_cut_id, j_iter_prologue_cut_id):
     print(f'cut (* {cut_id} *)')
     for i, reg in enumerate(regs):
         delim = ' /\\' if i != 9 else ''
-        print(f'    {memory_arr(0x5555571278 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
+        print(f'    {memory_arr(0x7fffffd9c0 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
     print('  &&')
     for i, reg in enumerate(regs):
         delim = ' /\\' if i != 9 else ';'
-        print(f'    {memory_arr(0x5555571278 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
+        print(f'    {memory_arr(0x7fffffd9c0 + 288 * i + 144 * k0 + 16 * j, 8, 2)} = %v{reg}{delim}')
     cut_id += 1
 
 
 def annot_j_iter(j_iter, j, prologue_cut_id):
     global cut_id
 
-    if j_iter[2].find('PC = 0x5555550d08') != -1:
-        k0_loop_begin = find_first_line(j_iter, 'PC = 0x5555550e04') + 2
-        k0_loop_end = find_first_line(j_iter, 'PC = 0x555555121c', k0_loop_begin)
+    if j_iter[2].find('PC = 0x5555550804') != -1:
+        k0_loop_begin = find_first_line(j_iter, 'PC = 0x5555550900') + 2
+        k0_loop_end = find_first_line(j_iter, 'PC = 0x5555550d18', k0_loop_begin)
 
         k0_iter_ends = []
         k0_iter_end = k0_loop_begin
         while True:
-            k0_iter_end = find_first_line(j_iter, 'PC = 0x5555550e50', k0_iter_end)
+            k0_iter_end = find_first_line(j_iter, 'PC = 0x555555094c', k0_iter_end)
             if k0_iter_end == -1:
                 break
             k0_iter_end += 2
@@ -2318,27 +2318,27 @@ def annot_j_iter(j_iter, j, prologue_cut_id):
         print(''.join(prologue), end='')
         print()
         print(f'ghost %fa0_{j}@sint16[16], %fa1_{j}@sint16[16], %fa2_{j}@sint16[16], %fa7_{j}@sint16[16], %fa8_{j}@sint16[16], %fa9_{j}@sint16[16] :')
-        print(f'    %fa0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
-        print(f'    %fa1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
-        print(f'    %fa2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
-        print(f'    %fa7_{j} = {memory_arr(0x7ffffff030, 16, 2)} /\\')
-        print(f'    %fa8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
-        print(f'    %fa9_{j} = {memory_arr(0x7ffffff070, 16, 2)}')
+        print(f'    %fa0_{j} = {memory_arr(0x7fffffc2b0, 16, 2)} /\\')
+        print(f'    %fa1_{j} = {memory_arr(0x7fffffc2d0, 16, 2)} /\\')
+        print(f'    %fa2_{j} = {memory_arr(0x7fffffc2f0, 16, 2)} /\\')
+        print(f'    %fa7_{j} = {memory_arr(0x7fffffc250, 16, 2)} /\\')
+        print(f'    %fa8_{j} = {memory_arr(0x7fffffc270, 16, 2)} /\\')
+        print(f'    %fa9_{j} = {memory_arr(0x7fffffc290, 16, 2)}')
         print(f'  &&')
-        print(f'    %fa0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
-        print(f'    %fa1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
-        print(f'    %fa2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
-        print(f'    %fa7_{j} = {memory_arr(0x7ffffff030, 16, 2)} /\\')
-        print(f'    %fa8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
-        print(f'    %fa9_{j} = {memory_arr(0x7ffffff070, 16, 2)};')
+        print(f'    %fa0_{j} = {memory_arr(0x7fffffc2b0, 16, 2)} /\\')
+        print(f'    %fa1_{j} = {memory_arr(0x7fffffc2d0, 16, 2)} /\\')
+        print(f'    %fa2_{j} = {memory_arr(0x7fffffc2f0, 16, 2)} /\\')
+        print(f'    %fa7_{j} = {memory_arr(0x7fffffc250, 16, 2)} /\\')
+        print(f'    %fa8_{j} = {memory_arr(0x7fffffc270, 16, 2)} /\\')
+        print(f'    %fa9_{j} = {memory_arr(0x7fffffc290, 16, 2)};')
         print()
         print(f'cut (* {cut_id} *)')
-        print(f'    %fa0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
-        print(f'    %fa1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
-        print(f'    %fa2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
-        print(f'    %fa7_{j} = {memory_arr(0x7ffffff030, 16, 2)} /\\')
-        print(f'    %fa8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
-        print(f'    %fa9_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
+        print(f'    %fa0_{j} = {memory_arr(0x7fffffc2b0, 16, 2)} /\\')
+        print(f'    %fa1_{j} = {memory_arr(0x7fffffc2d0, 16, 2)} /\\')
+        print(f'    %fa2_{j} = {memory_arr(0x7fffffc2f0, 16, 2)} /\\')
+        print(f'    %fa7_{j} = {memory_arr(0x7fffffc250, 16, 2)} /\\')
+        print(f'    %fa8_{j} = {memory_arr(0x7fffffc270, 16, 2)} /\\')
+        print(f'    %fa9_{j} = {memory_arr(0x7fffffc290, 16, 2)} /\\')
         print()
         print(f'    %fa0_{j} = {format_poly(288 + 16 * j, 16)} /\\')
         print(f'    %fa1_{j} = {format_poly(144 + 16 * j, 16)} /\\')
@@ -2349,12 +2349,12 @@ def annot_j_iter(j_iter, j, prologue_cut_id):
         print()
         print(f'    prove with [cuts[{prologue_cut_id}]]')
         print(f'  &&')
-        print(f'    %fa0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
-        print(f'    %fa1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
-        print(f'    %fa2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
-        print(f'    %fa7_{j} = {memory_arr(0x7ffffff030, 16, 2)} /\\')
-        print(f'    %fa8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
-        print(f'    %fa9_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
+        print(f'    %fa0_{j} = {memory_arr(0x7fffffc2b0, 16, 2)} /\\')
+        print(f'    %fa1_{j} = {memory_arr(0x7fffffc2d0, 16, 2)} /\\')
+        print(f'    %fa2_{j} = {memory_arr(0x7fffffc2f0, 16, 2)} /\\')
+        print(f'    %fa7_{j} = {memory_arr(0x7fffffc250, 16, 2)} /\\')
+        print(f'    %fa8_{j} = {memory_arr(0x7fffffc270, 16, 2)} /\\')
+        print(f'    %fa9_{j} = {memory_arr(0x7fffffc290, 16, 2)} /\\')
         print()
         print(f'    %fa0_{j} = {format_poly(288 + 16 * j, 16)} /\\')
         print(f'    %fa1_{j} = {format_poly(144 + 16 * j, 16)} /\\')
@@ -2381,15 +2381,15 @@ def annot_j_iter(j_iter, j, prologue_cut_id):
         print(''.join(epilogue), end='')
         print()
     else:
-        assert(j_iter[2].find('PC = 0x5555551248') != -1)
+        assert(j_iter[2].find('PC = 0x5555550d44') != -1)
 
-        k0_loop_begin = find_first_line(j_iter, 'PC = 0x5555551318') + 2
-        k0_loop_end = find_first_line(j_iter, 'PC = 0x555555121c', k0_loop_begin)
+        k0_loop_begin = find_first_line(j_iter, 'PC = 0x5555550e14') + 2
+        k0_loop_end = find_first_line(j_iter, 'PC = 0x5555550d18', k0_loop_begin)
 
         k0_iter_ends = []
         k0_iter_end = k0_loop_begin
         while True:
-            k0_iter_end = find_first_line(j_iter, 'PC = 0x5555551058', k0_iter_end)
+            k0_iter_end = find_first_line(j_iter, 'PC = 0x5555550b54', k0_iter_end)
             if k0_iter_end == -1:
                 break
             k0_iter_end += 2
@@ -2409,24 +2409,24 @@ def annot_j_iter(j_iter, j, prologue_cut_id):
         print(''.join(prologue), end='')
         print()
         print(f'ghost %fd0_{j}@sint16[16], %fd1_{j}@sint16[16], %fd2_{j}@sint16[16], %fd8_{j}@sint16[16], %fd9_{j}@sint16[16] :')
-        print(f'    %fd0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
-        print(f'    %fd1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
-        print(f'    %fd2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
-        print(f'    %fd8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
-        print(f'    %fd9_{j} = {memory_arr(0x7ffffff070, 16, 2)}')
+        print(f'    %fd0_{j} = {memory_arr(0x7fffffc2b0, 16, 2)} /\\')
+        print(f'    %fd1_{j} = {memory_arr(0x7fffffc2d0, 16, 2)} /\\')
+        print(f'    %fd2_{j} = {memory_arr(0x7fffffc2f0, 16, 2)} /\\')
+        print(f'    %fd8_{j} = {memory_arr(0x7fffffc270, 16, 2)} /\\')
+        print(f'    %fd9_{j} = {memory_arr(0x7fffffc290, 16, 2)}')
         print(f'  &&')
-        print(f'    %fd0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
-        print(f'    %fd1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
-        print(f'    %fd2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
-        print(f'    %fd8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
-        print(f'    %fd9_{j} = {memory_arr(0x7ffffff070, 16, 2)};')
+        print(f'    %fd0_{j} = {memory_arr(0x7fffffc2b0, 16, 2)} /\\')
+        print(f'    %fd1_{j} = {memory_arr(0x7fffffc2d0, 16, 2)} /\\')
+        print(f'    %fd2_{j} = {memory_arr(0x7fffffc2f0, 16, 2)} /\\')
+        print(f'    %fd8_{j} = {memory_arr(0x7fffffc270, 16, 2)} /\\')
+        print(f'    %fd9_{j} = {memory_arr(0x7fffffc290, 16, 2)};')
         print()
         print(f'cut (* {cut_id} *)')
-        print(f'    %fd0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
-        print(f'    %fd1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
-        print(f'    %fd2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
-        print(f'    %fd8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
-        print(f'    %fd9_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
+        print(f'    %fd0_{j} = {memory_arr(0x7fffffc2b0, 16, 2)} /\\')
+        print(f'    %fd1_{j} = {memory_arr(0x7fffffc2d0, 16, 2)} /\\')
+        print(f'    %fd2_{j} = {memory_arr(0x7fffffc2f0, 16, 2)} /\\')
+        print(f'    %fd8_{j} = {memory_arr(0x7fffffc270, 16, 2)} /\\')
+        print(f'    %fd9_{j} = {memory_arr(0x7fffffc290, 16, 2)} /\\')
         print()
         print(f'    %fd0_{j} = {format_poly(288 + 16 * j, 16)} /\\')
         print(f'    %fd1_{j} = {format_poly(144 + 16 * j, 16)} /\\')
@@ -2436,11 +2436,11 @@ def annot_j_iter(j_iter, j, prologue_cut_id):
         print()
         print(f'    prove with [cuts[{prologue_cut_id}]]')
         print(f'  &&')
-        print(f'    %fd0_{j} = {memory_arr(0x7ffffff090, 16, 2)} /\\')
-        print(f'    %fd1_{j} = {memory_arr(0x7ffffff0b0, 16, 2)} /\\')
-        print(f'    %fd2_{j} = {memory_arr(0x7ffffff0d0, 16, 2)} /\\')
-        print(f'    %fd8_{j} = {memory_arr(0x7ffffff050, 16, 2)} /\\')
-        print(f'    %fd9_{j} = {memory_arr(0x7ffffff070, 16, 2)} /\\')
+        print(f'    %fd0_{j} = {memory_arr(0x7fffffc2b0, 16, 2)} /\\')
+        print(f'    %fd1_{j} = {memory_arr(0x7fffffc2d0, 16, 2)} /\\')
+        print(f'    %fd2_{j} = {memory_arr(0x7fffffc2f0, 16, 2)} /\\')
+        print(f'    %fd8_{j} = {memory_arr(0x7fffffc270, 16, 2)} /\\')
+        print(f'    %fd9_{j} = {memory_arr(0x7fffffc290, 16, 2)} /\\')
         print()
         print(f'    %fd0_{j} = {format_poly(288 + 16 * j, 16)} /\\')
         print(f'    %fd1_{j} = {format_poly(144 + 16 * j, 16)} /\\')
@@ -2469,13 +2469,13 @@ def annot_j_iter(j_iter, j, prologue_cut_id):
 def annot(lines):
     global cut_id
 
-    j_loop_begin = find_first_line(lines, 'PC = 0x5555550ce0') + 2
-    j_loop_end = find_first_line(lines, 'SP = 0x7ffffff0f0', j_loop_begin)
+    j_loop_begin = find_first_line(lines, 'PC = 0x55555507dc') + 2
+    j_loop_end = find_first_line(lines, 'SP = 0x7fffffc310', j_loop_begin)
 
     j_iter_ends = []
     j_iter_end = j_loop_begin
     while True:
-        j_iter_end = find_first_line(lines, 'PC = 0x555555121c', j_iter_end)
+        j_iter_end = find_first_line(lines, 'PC = 0x5555550d18', j_iter_end)
         if j_iter_end == -1:
             break
         j_iter_end += 2
@@ -2522,19 +2522,19 @@ def annot(lines):
     print()
     consts = [4591, 29, 7, 0, 0, 0, 0, 0, 1005, 918, -818, -1736, 7173, 6552, -5838, -12391]
     rhs = [format_imm(c) for c in consts]
-    print(f'mov {memory_arr(0x55555529d0, 16, 2)} {format_arr(rhs)};')
+    print(f'mov {memory_arr(0x55555526d0, 16, 2)} {format_arr(rhs)};')
     print()
     for j in range(9):
         twist_consts = twist_table[j]
         rhs = [format_imm(c) for c in twist_consts]
-        print(f'mov {memory_arr(0x55555529f0 + 32 * j, 16, 2)} {format_arr(rhs)};')
+        print(f'mov {memory_arr(0x55555526f0 + 32 * j, 16, 2)} {format_arr(rhs)};')
     print()
 
     print()
     print('# inputs')
     print()
     for i in range(0, 768, 16):
-        print(f'mov {memory_arr(0x5555570070 + 2 * i, 16, 2)} {format_poly(i, 16)};')
+        print(f'mov {memory_arr(0x5555570c38 + 2 * i, 16, 2)} {format_poly(i, 16)};')
     print()
 
     print()
@@ -2549,14 +2549,14 @@ def annot(lines):
     print()
     for i in range(0, 768, 16):
         end = ' /\\\n' if i != 768 - 16 else '\n'
-        print(f'    {memory_arr(0x5555570070 + 2 * i, 16, 2)} = {format_poly(i, 16)}', end=end)
+        print(f'    {memory_arr(0x5555570c38 + 2 * i, 16, 2)} = {format_poly(i, 16)}', end=end)
     print(f'  &&')
     print(f'    %v0 = {format_arr([format_const(c) for c in consts[:8]])} /\\')
     print(f'    %v4 = {format_arr([format_const(c) for c in consts[8:]])} /\\')
     print()
     for i in range(0, 768, 16):
         end = ' /\\\n' if i != 768 - 16 else ';\n'
-        print(f'    {memory_arr(0x5555570070 + 2 * i, 16, 2)} = {format_poly(i, 16)}', end=end)
+        print(f'    {memory_arr(0x5555570c38 + 2 * i, 16, 2)} = {format_poly(i, 16)}', end=end)
     print()
     prologue_cut_id = cut_id
     cut_id += 1
