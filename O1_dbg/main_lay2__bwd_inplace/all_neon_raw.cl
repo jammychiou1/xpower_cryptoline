@@ -1,6927 +1,6927 @@
-(* #! -> SP = 0x7ffffff110 *)
-#! 0x7ffffff110 = 0x7ffffff110;
-(* ldr	q7, [x19, #32]                              #! EA = L0x5555572918; Value = 0x0000000000000040; PC = 0x55555518f0 *)
-mov %v7 [L0x5555572918,L0x555557291a,L0x555557291c,L0x555557291e,L0x5555572920,L0x5555572922,L0x5555572924,L0x5555572926];
-(* ldr	q6, [x19, #48]                              #! EA = L0x5555572928; Value = 0x0000000000000040; PC = 0x55555518f4 *)
-mov %v6 [L0x5555572928,L0x555557292a,L0x555557292c,L0x555557292e,L0x5555572930,L0x5555572932,L0x5555572934,L0x5555572936];
-(* ldr	q5, [x19, #64]                              #! EA = L0x5555572938; Value = 0x0000000000000040; PC = 0x55555518f8 *)
-mov %v5 [L0x5555572938,L0x555557293a,L0x555557293c,L0x555557293e,L0x5555572940,L0x5555572942,L0x5555572944,L0x5555572946];
-(* ldr	q4, [x19, #80]                              #! EA = L0x5555572948; Value = 0x0000000000000040; PC = 0x55555518fc *)
-mov %v4 [L0x5555572948,L0x555557294a,L0x555557294c,L0x555557294e,L0x5555572950,L0x5555572952,L0x5555572954,L0x5555572956];
-(* ldr	q3, [x19, #96]                              #! EA = L0x5555572958; Value = 0x0000000000000040; PC = 0x5555551900 *)
-mov %v3 [L0x5555572958,L0x555557295a,L0x555557295c,L0x555557295e,L0x5555572960,L0x5555572962,L0x5555572964,L0x5555572966];
-(* ldr	q2, [x19, #112]                             #! EA = L0x5555572968; Value = 0x0000000000000040; PC = 0x5555551904 *)
-mov %v2 [L0x5555572968,L0x555557296a,L0x555557296c,L0x555557296e,L0x5555572970,L0x5555572972,L0x5555572974,L0x5555572976];
-(* ldr	q1, [x19, #128]                             #! EA = L0x5555572978; Value = 0x0000000000000040; PC = 0x5555551908 *)
-mov %v1 [L0x5555572978,L0x555557297a,L0x555557297c,L0x555557297e,L0x5555572980,L0x5555572982,L0x5555572984,L0x5555572986];
-(* ldr	q0, [x19, #16]                              #! EA = L0x5555572908; Value = 0x0000000000000040; PC = 0x5555551914 *)
-mov %v0 [L0x5555572908,L0x555557290a,L0x555557290c,L0x555557290e,L0x5555572910,L0x5555572912,L0x5555572914,L0x5555572916];
-(* str	q0, [sp]                                    #! EA = L0x7fffffeff0; PC = 0x5555551918 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v0;
-(* ldr	q0, [x19]                                   #! EA = L0x55555728f8; Value = 0x0000000000000040; PC = 0x555555193c *)
-mov %v0 [L0x55555728f8,L0x55555728fa,L0x55555728fc,L0x55555728fe,L0x5555572900,L0x5555572902,L0x5555572904,L0x5555572906];
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551940 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551940 = 0x5555551940;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* #! -> SP = 0x7fffffc320 *)
+#! 0x7fffffc320 = 0x7fffffc320;
+(* ldr	q7, [x19, #32]                              #! EA = L0x7fffffc370; Value = 0x0000000000000000; PC = 0x55555514a0 *)
+mov %v7 [L0x7fffffc370,L0x7fffffc372,L0x7fffffc374,L0x7fffffc376,L0x7fffffc378,L0x7fffffc37a,L0x7fffffc37c,L0x7fffffc37e];
+(* ldr	q6, [x19, #48]                              #! EA = L0x7fffffc380; Value = 0x0000000000000000; PC = 0x55555514a4 *)
+mov %v6 [L0x7fffffc380,L0x7fffffc382,L0x7fffffc384,L0x7fffffc386,L0x7fffffc388,L0x7fffffc38a,L0x7fffffc38c,L0x7fffffc38e];
+(* ldr	q5, [x19, #64]                              #! EA = L0x7fffffc390; Value = 0x0000000000000000; PC = 0x55555514a8 *)
+mov %v5 [L0x7fffffc390,L0x7fffffc392,L0x7fffffc394,L0x7fffffc396,L0x7fffffc398,L0x7fffffc39a,L0x7fffffc39c,L0x7fffffc39e];
+(* ldr	q4, [x19, #80]                              #! EA = L0x7fffffc3a0; Value = 0x0000000000000000; PC = 0x55555514ac *)
+mov %v4 [L0x7fffffc3a0,L0x7fffffc3a2,L0x7fffffc3a4,L0x7fffffc3a6,L0x7fffffc3a8,L0x7fffffc3aa,L0x7fffffc3ac,L0x7fffffc3ae];
+(* ldr	q3, [x19, #96]                              #! EA = L0x7fffffc3b0; Value = 0x0000000000000000; PC = 0x55555514b0 *)
+mov %v3 [L0x7fffffc3b0,L0x7fffffc3b2,L0x7fffffc3b4,L0x7fffffc3b6,L0x7fffffc3b8,L0x7fffffc3ba,L0x7fffffc3bc,L0x7fffffc3be];
+(* ldr	q2, [x19, #112]                             #! EA = L0x7fffffc3c0; Value = 0x0000000000000000; PC = 0x55555514b4 *)
+mov %v2 [L0x7fffffc3c0,L0x7fffffc3c2,L0x7fffffc3c4,L0x7fffffc3c6,L0x7fffffc3c8,L0x7fffffc3ca,L0x7fffffc3cc,L0x7fffffc3ce];
+(* ldr	q1, [x19, #128]                             #! EA = L0x7fffffc3d0; Value = 0x0000000000000000; PC = 0x55555514b8 *)
+mov %v1 [L0x7fffffc3d0,L0x7fffffc3d2,L0x7fffffc3d4,L0x7fffffc3d6,L0x7fffffc3d8,L0x7fffffc3da,L0x7fffffc3dc,L0x7fffffc3de];
+(* ldr	q0, [x19, #16]                              #! EA = L0x7fffffc360; Value = 0x0000000000000000; PC = 0x55555514c4 *)
+mov %v0 [L0x7fffffc360,L0x7fffffc362,L0x7fffffc364,L0x7fffffc366,L0x7fffffc368,L0x7fffffc36a,L0x7fffffc36c,L0x7fffffc36e];
+(* str	q0, [sp]                                    #! EA = L0x7fffffc200; PC = 0x55555514c8 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v0;
+(* ldr	q0, [x19]                                   #! EA = L0x7fffffc350; Value = 0x0000000000000000; PC = 0x55555514ec *)
+mov %v0 [L0x7fffffc350,L0x7fffffc352,L0x7fffffc354,L0x7fffffc356,L0x7fffffc358,L0x7fffffc35a,L0x7fffffc35c,L0x7fffffc35e];
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555514f0 = 0x55555514f0;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000040; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000480; PC = 0x5555551944 *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19]                                   #! EA = L0x55555728f8; PC = 0x5555551948 *)
-mov [L0x55555728f8,L0x55555728fa,L0x55555728fc,L0x55555728fe,L0x5555572900,L0x5555572902,L0x5555572904,L0x5555572906] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555194c *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #16]                              #! EA = L0x5555572908; PC = 0x5555551950 *)
-mov [L0x5555572908,L0x555557290a,L0x555557290c,L0x555557290e,L0x5555572910,L0x5555572912,L0x5555572914,L0x5555572916] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x5555551954 *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #32]                              #! EA = L0x5555572918; PC = 0x5555551958 *)
-mov [L0x5555572918,L0x555557291a,L0x555557291c,L0x555557291e,L0x5555572920,L0x5555572922,L0x5555572924,L0x5555572926] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x555555195c *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #48]                              #! EA = L0x5555572928; PC = 0x5555551960 *)
-mov [L0x5555572928,L0x555557292a,L0x555557292c,L0x555557292e,L0x5555572930,L0x5555572932,L0x5555572934,L0x5555572936] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551964 *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #64]                              #! EA = L0x5555572938; PC = 0x5555551968 *)
-mov [L0x5555572938,L0x555557293a,L0x555557293c,L0x555557293e,L0x5555572940,L0x5555572942,L0x5555572944,L0x5555572946] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x555555196c *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #80]                              #! EA = L0x5555572948; PC = 0x5555551970 *)
-mov [L0x5555572948,L0x555557294a,L0x555557294c,L0x555557294e,L0x5555572950,L0x5555572952,L0x5555572954,L0x5555572956] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551974 *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #96]                              #! EA = L0x5555572958; PC = 0x5555551978 *)
-mov [L0x5555572958,L0x555557295a,L0x555557295c,L0x555557295e,L0x5555572960,L0x5555572962,L0x5555572964,L0x5555572966] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x555555197c *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #112]                             #! EA = L0x5555572968; PC = 0x5555551980 *)
-mov [L0x5555572968,L0x555557296a,L0x555557296c,L0x555557296e,L0x5555572970,L0x5555572972,L0x5555572974,L0x5555572976] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551984 *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #128]                             #! EA = L0x5555572978; PC = 0x5555551988 *)
-mov [L0x5555572978,L0x555557297a,L0x555557297c,L0x555557297e,L0x5555572980,L0x5555572982,L0x5555572984,L0x5555572986] %v0;
-(* ldr	q7, [x19, #176]                             #! EA = L0x55555729a8; Value = 0x0000000000000000; PC = 0x555555198c *)
-mov %v7 [L0x55555729a8,L0x55555729aa,L0x55555729ac,L0x55555729ae,L0x55555729b0,L0x55555729b2,L0x55555729b4,L0x55555729b6];
-(* ldr	q6, [x19, #192]                             #! EA = L0x55555729b8; Value = 0x0000000000000000; PC = 0x5555551990 *)
-mov %v6 [L0x55555729b8,L0x55555729ba,L0x55555729bc,L0x55555729be,L0x55555729c0,L0x55555729c2,L0x55555729c4,L0x55555729c6];
-(* ldr	q5, [x19, #208]                             #! EA = L0x55555729c8; Value = 0x0000000000000000; PC = 0x5555551994 *)
-mov %v5 [L0x55555729c8,L0x55555729ca,L0x55555729cc,L0x55555729ce,L0x55555729d0,L0x55555729d2,L0x55555729d4,L0x55555729d6];
-(* ldr	q4, [x19, #224]                             #! EA = L0x55555729d8; Value = 0x0000000000000000; PC = 0x5555551998 *)
-mov %v4 [L0x55555729d8,L0x55555729da,L0x55555729dc,L0x55555729de,L0x55555729e0,L0x55555729e2,L0x55555729e4,L0x55555729e6];
-(* ldr	q3, [x19, #240]                             #! EA = L0x55555729e8; Value = 0x0000000000000000; PC = 0x555555199c *)
-mov %v3 [L0x55555729e8,L0x55555729ea,L0x55555729ec,L0x55555729ee,L0x55555729f0,L0x55555729f2,L0x55555729f4,L0x55555729f6];
-(* ldr	q2, [x19, #256]                             #! EA = L0x55555729f8; Value = 0x0000000000000000; PC = 0x55555519a0 *)
-mov %v2 [L0x55555729f8,L0x55555729fa,L0x55555729fc,L0x55555729fe,L0x5555572a00,L0x5555572a02,L0x5555572a04,L0x5555572a06];
-(* ldr	q1, [x19, #272]                             #! EA = L0x5555572a08; Value = 0x0000000000000000; PC = 0x55555519a4 *)
-mov %v1 [L0x5555572a08,L0x5555572a0a,L0x5555572a0c,L0x5555572a0e,L0x5555572a10,L0x5555572a12,L0x5555572a14,L0x5555572a16];
-(* ldr	q0, [x19, #144]                             #! EA = L0x5555572988; Value = 0x0000000000000000; PC = 0x55555519a8 *)
-mov %v0 [L0x5555572988,L0x555557298a,L0x555557298c,L0x555557298e,L0x5555572990,L0x5555572992,L0x5555572994,L0x5555572996];
-(* ldr	q16, [x19, #160]                            #! EA = L0x5555572998; Value = 0x0000000000000000; PC = 0x55555519b0 *)
-mov %v16 [L0x5555572998,L0x555557299a,L0x555557299c,L0x555557299e,L0x55555729a0,L0x55555729a2,L0x55555729a4,L0x55555729a6];
-(* str	q16, [sp]                                   #! EA = L0x7fffffeff0; PC = 0x55555519b4 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v16;
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555519d8 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555519d8 = 0x55555519d8;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x55555514f4 *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19]                                   #! EA = L0x7fffffc350; PC = 0x55555514f8 *)
+mov [L0x7fffffc350,L0x7fffffc352,L0x7fffffc354,L0x7fffffc356,L0x7fffffc358,L0x7fffffc35a,L0x7fffffc35c,L0x7fffffc35e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x55555514fc *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #16]                              #! EA = L0x7fffffc360; PC = 0x5555551500 *)
+mov [L0x7fffffc360,L0x7fffffc362,L0x7fffffc364,L0x7fffffc366,L0x7fffffc368,L0x7fffffc36a,L0x7fffffc36c,L0x7fffffc36e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x5555551504 *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #32]                              #! EA = L0x7fffffc370; PC = 0x5555551508 *)
+mov [L0x7fffffc370,L0x7fffffc372,L0x7fffffc374,L0x7fffffc376,L0x7fffffc378,L0x7fffffc37a,L0x7fffffc37c,L0x7fffffc37e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x555555150c *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #48]                              #! EA = L0x7fffffc380; PC = 0x5555551510 *)
+mov [L0x7fffffc380,L0x7fffffc382,L0x7fffffc384,L0x7fffffc386,L0x7fffffc388,L0x7fffffc38a,L0x7fffffc38c,L0x7fffffc38e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x5555551514 *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #64]                              #! EA = L0x7fffffc390; PC = 0x5555551518 *)
+mov [L0x7fffffc390,L0x7fffffc392,L0x7fffffc394,L0x7fffffc396,L0x7fffffc398,L0x7fffffc39a,L0x7fffffc39c,L0x7fffffc39e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x555555151c *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #80]                              #! EA = L0x7fffffc3a0; PC = 0x5555551520 *)
+mov [L0x7fffffc3a0,L0x7fffffc3a2,L0x7fffffc3a4,L0x7fffffc3a6,L0x7fffffc3a8,L0x7fffffc3aa,L0x7fffffc3ac,L0x7fffffc3ae] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551524 *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #96]                              #! EA = L0x7fffffc3b0; PC = 0x5555551528 *)
+mov [L0x7fffffc3b0,L0x7fffffc3b2,L0x7fffffc3b4,L0x7fffffc3b6,L0x7fffffc3b8,L0x7fffffc3ba,L0x7fffffc3bc,L0x7fffffc3be] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x555555152c *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #112]                             #! EA = L0x7fffffc3c0; PC = 0x5555551530 *)
+mov [L0x7fffffc3c0,L0x7fffffc3c2,L0x7fffffc3c4,L0x7fffffc3c6,L0x7fffffc3c8,L0x7fffffc3ca,L0x7fffffc3cc,L0x7fffffc3ce] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x5555551534 *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #128]                             #! EA = L0x7fffffc3d0; PC = 0x5555551538 *)
+mov [L0x7fffffc3d0,L0x7fffffc3d2,L0x7fffffc3d4,L0x7fffffc3d6,L0x7fffffc3d8,L0x7fffffc3da,L0x7fffffc3dc,L0x7fffffc3de] %v0;
+(* ldr	q7, [x19, #176]                             #! EA = L0x7fffffc400; Value = 0x0000000000000000; PC = 0x555555153c *)
+mov %v7 [L0x7fffffc400,L0x7fffffc402,L0x7fffffc404,L0x7fffffc406,L0x7fffffc408,L0x7fffffc40a,L0x7fffffc40c,L0x7fffffc40e];
+(* ldr	q6, [x19, #192]                             #! EA = L0x7fffffc410; Value = 0x0000000000000000; PC = 0x5555551540 *)
+mov %v6 [L0x7fffffc410,L0x7fffffc412,L0x7fffffc414,L0x7fffffc416,L0x7fffffc418,L0x7fffffc41a,L0x7fffffc41c,L0x7fffffc41e];
+(* ldr	q5, [x19, #208]                             #! EA = L0x7fffffc420; Value = 0x0000000000000000; PC = 0x5555551544 *)
+mov %v5 [L0x7fffffc420,L0x7fffffc422,L0x7fffffc424,L0x7fffffc426,L0x7fffffc428,L0x7fffffc42a,L0x7fffffc42c,L0x7fffffc42e];
+(* ldr	q4, [x19, #224]                             #! EA = L0x7fffffc430; Value = 0x0000000000000000; PC = 0x5555551548 *)
+mov %v4 [L0x7fffffc430,L0x7fffffc432,L0x7fffffc434,L0x7fffffc436,L0x7fffffc438,L0x7fffffc43a,L0x7fffffc43c,L0x7fffffc43e];
+(* ldr	q3, [x19, #240]                             #! EA = L0x7fffffc440; Value = 0x0000000000000000; PC = 0x555555154c *)
+mov %v3 [L0x7fffffc440,L0x7fffffc442,L0x7fffffc444,L0x7fffffc446,L0x7fffffc448,L0x7fffffc44a,L0x7fffffc44c,L0x7fffffc44e];
+(* ldr	q2, [x19, #256]                             #! EA = L0x7fffffc450; Value = 0x0000000000000000; PC = 0x5555551550 *)
+mov %v2 [L0x7fffffc450,L0x7fffffc452,L0x7fffffc454,L0x7fffffc456,L0x7fffffc458,L0x7fffffc45a,L0x7fffffc45c,L0x7fffffc45e];
+(* ldr	q1, [x19, #272]                             #! EA = L0x7fffffc460; Value = 0x0000000000000000; PC = 0x5555551554 *)
+mov %v1 [L0x7fffffc460,L0x7fffffc462,L0x7fffffc464,L0x7fffffc466,L0x7fffffc468,L0x7fffffc46a,L0x7fffffc46c,L0x7fffffc46e];
+(* ldr	q0, [x19, #144]                             #! EA = L0x7fffffc3e0; Value = 0x0000000000000000; PC = 0x5555551558 *)
+mov %v0 [L0x7fffffc3e0,L0x7fffffc3e2,L0x7fffffc3e4,L0x7fffffc3e6,L0x7fffffc3e8,L0x7fffffc3ea,L0x7fffffc3ec,L0x7fffffc3ee];
+(* ldr	q16, [x19, #160]                            #! EA = L0x7fffffc3f0; Value = 0x0000000000000000; PC = 0x5555551560 *)
+mov %v16 [L0x7fffffc3f0,L0x7fffffc3f2,L0x7fffffc3f4,L0x7fffffc3f6,L0x7fffffc3f8,L0x7fffffc3fa,L0x7fffffc3fc,L0x7fffffc3fe];
+(* str	q16, [sp]                                   #! EA = L0x7fffffc200; PC = 0x5555551564 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v16;
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551588 = 0x5555551588;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000000; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x55555519dc *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19, #144]                             #! EA = L0x5555572988; PC = 0x55555519e0 *)
-mov [L0x5555572988,L0x555557298a,L0x555557298c,L0x555557298e,L0x5555572990,L0x5555572992,L0x5555572994,L0x5555572996] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x55555519e4 *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #160]                             #! EA = L0x5555572998; PC = 0x55555519e8 *)
-mov [L0x5555572998,L0x555557299a,L0x555557299c,L0x555557299e,L0x55555729a0,L0x55555729a2,L0x55555729a4,L0x55555729a6] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x55555519ec *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #176]                             #! EA = L0x55555729a8; PC = 0x55555519f0 *)
-mov [L0x55555729a8,L0x55555729aa,L0x55555729ac,L0x55555729ae,L0x55555729b0,L0x55555729b2,L0x55555729b4,L0x55555729b6] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x55555519f4 *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #192]                             #! EA = L0x55555729b8; PC = 0x55555519f8 *)
-mov [L0x55555729b8,L0x55555729ba,L0x55555729bc,L0x55555729be,L0x55555729c0,L0x55555729c2,L0x55555729c4,L0x55555729c6] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x55555519fc *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #208]                             #! EA = L0x55555729c8; PC = 0x5555551a00 *)
-mov [L0x55555729c8,L0x55555729ca,L0x55555729cc,L0x55555729ce,L0x55555729d0,L0x55555729d2,L0x55555729d4,L0x55555729d6] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551a04 *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #224]                             #! EA = L0x55555729d8; PC = 0x5555551a08 *)
-mov [L0x55555729d8,L0x55555729da,L0x55555729dc,L0x55555729de,L0x55555729e0,L0x55555729e2,L0x55555729e4,L0x55555729e6] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551a0c *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #240]                             #! EA = L0x55555729e8; PC = 0x5555551a10 *)
-mov [L0x55555729e8,L0x55555729ea,L0x55555729ec,L0x55555729ee,L0x55555729f0,L0x55555729f2,L0x55555729f4,L0x55555729f6] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x5555551a14 *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #256]                             #! EA = L0x55555729f8; PC = 0x5555551a18 *)
-mov [L0x55555729f8,L0x55555729fa,L0x55555729fc,L0x55555729fe,L0x5555572a00,L0x5555572a02,L0x5555572a04,L0x5555572a06] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551a1c *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #272]                             #! EA = L0x5555572a08; PC = 0x5555551a20 *)
-mov [L0x5555572a08,L0x5555572a0a,L0x5555572a0c,L0x5555572a0e,L0x5555572a10,L0x5555572a12,L0x5555572a14,L0x5555572a16] %v0;
-(* #b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551a30 *)
-#b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551a30 = 0x5555551a30;
-(* ldr	q7, [x19, #32]                              #! EA = L0x5555572a38; Value = 0x0000000000000040; PC = 0x55555518f0 *)
-mov %v7 [L0x5555572a38,L0x5555572a3a,L0x5555572a3c,L0x5555572a3e,L0x5555572a40,L0x5555572a42,L0x5555572a44,L0x5555572a46];
-(* ldr	q6, [x19, #48]                              #! EA = L0x5555572a48; Value = 0x0000000000000040; PC = 0x55555518f4 *)
-mov %v6 [L0x5555572a48,L0x5555572a4a,L0x5555572a4c,L0x5555572a4e,L0x5555572a50,L0x5555572a52,L0x5555572a54,L0x5555572a56];
-(* ldr	q5, [x19, #64]                              #! EA = L0x5555572a58; Value = 0x0000000000000040; PC = 0x55555518f8 *)
-mov %v5 [L0x5555572a58,L0x5555572a5a,L0x5555572a5c,L0x5555572a5e,L0x5555572a60,L0x5555572a62,L0x5555572a64,L0x5555572a66];
-(* ldr	q4, [x19, #80]                              #! EA = L0x5555572a68; Value = 0x0000000000000040; PC = 0x55555518fc *)
-mov %v4 [L0x5555572a68,L0x5555572a6a,L0x5555572a6c,L0x5555572a6e,L0x5555572a70,L0x5555572a72,L0x5555572a74,L0x5555572a76];
-(* ldr	q3, [x19, #96]                              #! EA = L0x5555572a78; Value = 0x0000000000000040; PC = 0x5555551900 *)
-mov %v3 [L0x5555572a78,L0x5555572a7a,L0x5555572a7c,L0x5555572a7e,L0x5555572a80,L0x5555572a82,L0x5555572a84,L0x5555572a86];
-(* ldr	q2, [x19, #112]                             #! EA = L0x5555572a88; Value = 0x0000000000000040; PC = 0x5555551904 *)
-mov %v2 [L0x5555572a88,L0x5555572a8a,L0x5555572a8c,L0x5555572a8e,L0x5555572a90,L0x5555572a92,L0x5555572a94,L0x5555572a96];
-(* ldr	q1, [x19, #128]                             #! EA = L0x5555572a98; Value = 0x0000000000000040; PC = 0x5555551908 *)
-mov %v1 [L0x5555572a98,L0x5555572a9a,L0x5555572a9c,L0x5555572a9e,L0x5555572aa0,L0x5555572aa2,L0x5555572aa4,L0x5555572aa6];
-(* ldr	q0, [x19, #16]                              #! EA = L0x5555572a28; Value = 0x0000000000000040; PC = 0x5555551914 *)
-mov %v0 [L0x5555572a28,L0x5555572a2a,L0x5555572a2c,L0x5555572a2e,L0x5555572a30,L0x5555572a32,L0x5555572a34,L0x5555572a36];
-(* str	q0, [sp]                                    #! EA = L0x7fffffeff0; PC = 0x5555551918 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v0;
-(* ldr	q0, [x19]                                   #! EA = L0x5555572a18; Value = 0x0000000000000040; PC = 0x555555193c *)
-mov %v0 [L0x5555572a18,L0x5555572a1a,L0x5555572a1c,L0x5555572a1e,L0x5555572a20,L0x5555572a22,L0x5555572a24,L0x5555572a26];
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551940 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551940 = 0x5555551940;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x555555158c *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19, #144]                             #! EA = L0x7fffffc3e0; PC = 0x5555551590 *)
+mov [L0x7fffffc3e0,L0x7fffffc3e2,L0x7fffffc3e4,L0x7fffffc3e6,L0x7fffffc3e8,L0x7fffffc3ea,L0x7fffffc3ec,L0x7fffffc3ee] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x5555551594 *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #160]                             #! EA = L0x7fffffc3f0; PC = 0x5555551598 *)
+mov [L0x7fffffc3f0,L0x7fffffc3f2,L0x7fffffc3f4,L0x7fffffc3f6,L0x7fffffc3f8,L0x7fffffc3fa,L0x7fffffc3fc,L0x7fffffc3fe] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x555555159c *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #176]                             #! EA = L0x7fffffc400; PC = 0x55555515a0 *)
+mov [L0x7fffffc400,L0x7fffffc402,L0x7fffffc404,L0x7fffffc406,L0x7fffffc408,L0x7fffffc40a,L0x7fffffc40c,L0x7fffffc40e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x55555515a4 *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #192]                             #! EA = L0x7fffffc410; PC = 0x55555515a8 *)
+mov [L0x7fffffc410,L0x7fffffc412,L0x7fffffc414,L0x7fffffc416,L0x7fffffc418,L0x7fffffc41a,L0x7fffffc41c,L0x7fffffc41e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x55555515ac *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #208]                             #! EA = L0x7fffffc420; PC = 0x55555515b0 *)
+mov [L0x7fffffc420,L0x7fffffc422,L0x7fffffc424,L0x7fffffc426,L0x7fffffc428,L0x7fffffc42a,L0x7fffffc42c,L0x7fffffc42e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x55555515b4 *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #224]                             #! EA = L0x7fffffc430; PC = 0x55555515b8 *)
+mov [L0x7fffffc430,L0x7fffffc432,L0x7fffffc434,L0x7fffffc436,L0x7fffffc438,L0x7fffffc43a,L0x7fffffc43c,L0x7fffffc43e] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555515bc *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #240]                             #! EA = L0x7fffffc440; PC = 0x55555515c0 *)
+mov [L0x7fffffc440,L0x7fffffc442,L0x7fffffc444,L0x7fffffc446,L0x7fffffc448,L0x7fffffc44a,L0x7fffffc44c,L0x7fffffc44e] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x55555515c4 *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #256]                             #! EA = L0x7fffffc450; PC = 0x55555515c8 *)
+mov [L0x7fffffc450,L0x7fffffc452,L0x7fffffc454,L0x7fffffc456,L0x7fffffc458,L0x7fffffc45a,L0x7fffffc45c,L0x7fffffc45e] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x55555515cc *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #272]                             #! EA = L0x7fffffc460; PC = 0x55555515d0 *)
+mov [L0x7fffffc460,L0x7fffffc462,L0x7fffffc464,L0x7fffffc466,L0x7fffffc468,L0x7fffffc46a,L0x7fffffc46c,L0x7fffffc46e] %v0;
+(* #b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x55555515e0 *)
+#b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x55555515e0 = 0x55555515e0;
+(* ldr	q7, [x19, #32]                              #! EA = L0x7fffffc490; Value = 0x0000000000000000; PC = 0x55555514a0 *)
+mov %v7 [L0x7fffffc490,L0x7fffffc492,L0x7fffffc494,L0x7fffffc496,L0x7fffffc498,L0x7fffffc49a,L0x7fffffc49c,L0x7fffffc49e];
+(* ldr	q6, [x19, #48]                              #! EA = L0x7fffffc4a0; Value = 0x0000000000000000; PC = 0x55555514a4 *)
+mov %v6 [L0x7fffffc4a0,L0x7fffffc4a2,L0x7fffffc4a4,L0x7fffffc4a6,L0x7fffffc4a8,L0x7fffffc4aa,L0x7fffffc4ac,L0x7fffffc4ae];
+(* ldr	q5, [x19, #64]                              #! EA = L0x7fffffc4b0; Value = 0x0000000000000000; PC = 0x55555514a8 *)
+mov %v5 [L0x7fffffc4b0,L0x7fffffc4b2,L0x7fffffc4b4,L0x7fffffc4b6,L0x7fffffc4b8,L0x7fffffc4ba,L0x7fffffc4bc,L0x7fffffc4be];
+(* ldr	q4, [x19, #80]                              #! EA = L0x7fffffc4c0; Value = 0x0000000000000000; PC = 0x55555514ac *)
+mov %v4 [L0x7fffffc4c0,L0x7fffffc4c2,L0x7fffffc4c4,L0x7fffffc4c6,L0x7fffffc4c8,L0x7fffffc4ca,L0x7fffffc4cc,L0x7fffffc4ce];
+(* ldr	q3, [x19, #96]                              #! EA = L0x7fffffc4d0; Value = 0x0000000000000000; PC = 0x55555514b0 *)
+mov %v3 [L0x7fffffc4d0,L0x7fffffc4d2,L0x7fffffc4d4,L0x7fffffc4d6,L0x7fffffc4d8,L0x7fffffc4da,L0x7fffffc4dc,L0x7fffffc4de];
+(* ldr	q2, [x19, #112]                             #! EA = L0x7fffffc4e0; Value = 0x0000000000000000; PC = 0x55555514b4 *)
+mov %v2 [L0x7fffffc4e0,L0x7fffffc4e2,L0x7fffffc4e4,L0x7fffffc4e6,L0x7fffffc4e8,L0x7fffffc4ea,L0x7fffffc4ec,L0x7fffffc4ee];
+(* ldr	q1, [x19, #128]                             #! EA = L0x7fffffc4f0; Value = 0x0000000000000000; PC = 0x55555514b8 *)
+mov %v1 [L0x7fffffc4f0,L0x7fffffc4f2,L0x7fffffc4f4,L0x7fffffc4f6,L0x7fffffc4f8,L0x7fffffc4fa,L0x7fffffc4fc,L0x7fffffc4fe];
+(* ldr	q0, [x19, #16]                              #! EA = L0x7fffffc480; Value = 0x0000000000000000; PC = 0x55555514c4 *)
+mov %v0 [L0x7fffffc480,L0x7fffffc482,L0x7fffffc484,L0x7fffffc486,L0x7fffffc488,L0x7fffffc48a,L0x7fffffc48c,L0x7fffffc48e];
+(* str	q0, [sp]                                    #! EA = L0x7fffffc200; PC = 0x55555514c8 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v0;
+(* ldr	q0, [x19]                                   #! EA = L0x7fffffc470; Value = 0x0000000000000000; PC = 0x55555514ec *)
+mov %v0 [L0x7fffffc470,L0x7fffffc472,L0x7fffffc474,L0x7fffffc476,L0x7fffffc478,L0x7fffffc47a,L0x7fffffc47c,L0x7fffffc47e];
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555514f0 = 0x55555514f0;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000040; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000480; PC = 0x5555551944 *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19]                                   #! EA = L0x5555572a18; PC = 0x5555551948 *)
-mov [L0x5555572a18,L0x5555572a1a,L0x5555572a1c,L0x5555572a1e,L0x5555572a20,L0x5555572a22,L0x5555572a24,L0x5555572a26] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555194c *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #16]                              #! EA = L0x5555572a28; PC = 0x5555551950 *)
-mov [L0x5555572a28,L0x5555572a2a,L0x5555572a2c,L0x5555572a2e,L0x5555572a30,L0x5555572a32,L0x5555572a34,L0x5555572a36] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x5555551954 *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #32]                              #! EA = L0x5555572a38; PC = 0x5555551958 *)
-mov [L0x5555572a38,L0x5555572a3a,L0x5555572a3c,L0x5555572a3e,L0x5555572a40,L0x5555572a42,L0x5555572a44,L0x5555572a46] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x555555195c *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #48]                              #! EA = L0x5555572a48; PC = 0x5555551960 *)
-mov [L0x5555572a48,L0x5555572a4a,L0x5555572a4c,L0x5555572a4e,L0x5555572a50,L0x5555572a52,L0x5555572a54,L0x5555572a56] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551964 *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #64]                              #! EA = L0x5555572a58; PC = 0x5555551968 *)
-mov [L0x5555572a58,L0x5555572a5a,L0x5555572a5c,L0x5555572a5e,L0x5555572a60,L0x5555572a62,L0x5555572a64,L0x5555572a66] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x555555196c *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #80]                              #! EA = L0x5555572a68; PC = 0x5555551970 *)
-mov [L0x5555572a68,L0x5555572a6a,L0x5555572a6c,L0x5555572a6e,L0x5555572a70,L0x5555572a72,L0x5555572a74,L0x5555572a76] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551974 *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #96]                              #! EA = L0x5555572a78; PC = 0x5555551978 *)
-mov [L0x5555572a78,L0x5555572a7a,L0x5555572a7c,L0x5555572a7e,L0x5555572a80,L0x5555572a82,L0x5555572a84,L0x5555572a86] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x555555197c *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #112]                             #! EA = L0x5555572a88; PC = 0x5555551980 *)
-mov [L0x5555572a88,L0x5555572a8a,L0x5555572a8c,L0x5555572a8e,L0x5555572a90,L0x5555572a92,L0x5555572a94,L0x5555572a96] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551984 *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #128]                             #! EA = L0x5555572a98; PC = 0x5555551988 *)
-mov [L0x5555572a98,L0x5555572a9a,L0x5555572a9c,L0x5555572a9e,L0x5555572aa0,L0x5555572aa2,L0x5555572aa4,L0x5555572aa6] %v0;
-(* ldr	q7, [x19, #176]                             #! EA = L0x5555572ac8; Value = 0x0000000000000000; PC = 0x555555198c *)
-mov %v7 [L0x5555572ac8,L0x5555572aca,L0x5555572acc,L0x5555572ace,L0x5555572ad0,L0x5555572ad2,L0x5555572ad4,L0x5555572ad6];
-(* ldr	q6, [x19, #192]                             #! EA = L0x5555572ad8; Value = 0x0000000000000000; PC = 0x5555551990 *)
-mov %v6 [L0x5555572ad8,L0x5555572ada,L0x5555572adc,L0x5555572ade,L0x5555572ae0,L0x5555572ae2,L0x5555572ae4,L0x5555572ae6];
-(* ldr	q5, [x19, #208]                             #! EA = L0x5555572ae8; Value = 0x0000000000000000; PC = 0x5555551994 *)
-mov %v5 [L0x5555572ae8,L0x5555572aea,L0x5555572aec,L0x5555572aee,L0x5555572af0,L0x5555572af2,L0x5555572af4,L0x5555572af6];
-(* ldr	q4, [x19, #224]                             #! EA = L0x5555572af8; Value = 0x0000000000000000; PC = 0x5555551998 *)
-mov %v4 [L0x5555572af8,L0x5555572afa,L0x5555572afc,L0x5555572afe,L0x5555572b00,L0x5555572b02,L0x5555572b04,L0x5555572b06];
-(* ldr	q3, [x19, #240]                             #! EA = L0x5555572b08; Value = 0x0000000000000000; PC = 0x555555199c *)
-mov %v3 [L0x5555572b08,L0x5555572b0a,L0x5555572b0c,L0x5555572b0e,L0x5555572b10,L0x5555572b12,L0x5555572b14,L0x5555572b16];
-(* ldr	q2, [x19, #256]                             #! EA = L0x5555572b18; Value = 0x0000000000000000; PC = 0x55555519a0 *)
-mov %v2 [L0x5555572b18,L0x5555572b1a,L0x5555572b1c,L0x5555572b1e,L0x5555572b20,L0x5555572b22,L0x5555572b24,L0x5555572b26];
-(* ldr	q1, [x19, #272]                             #! EA = L0x5555572b28; Value = 0x0000000000000000; PC = 0x55555519a4 *)
-mov %v1 [L0x5555572b28,L0x5555572b2a,L0x5555572b2c,L0x5555572b2e,L0x5555572b30,L0x5555572b32,L0x5555572b34,L0x5555572b36];
-(* ldr	q0, [x19, #144]                             #! EA = L0x5555572aa8; Value = 0x0000000000000000; PC = 0x55555519a8 *)
-mov %v0 [L0x5555572aa8,L0x5555572aaa,L0x5555572aac,L0x5555572aae,L0x5555572ab0,L0x5555572ab2,L0x5555572ab4,L0x5555572ab6];
-(* ldr	q16, [x19, #160]                            #! EA = L0x5555572ab8; Value = 0x0000000000000000; PC = 0x55555519b0 *)
-mov %v16 [L0x5555572ab8,L0x5555572aba,L0x5555572abc,L0x5555572abe,L0x5555572ac0,L0x5555572ac2,L0x5555572ac4,L0x5555572ac6];
-(* str	q16, [sp]                                   #! EA = L0x7fffffeff0; PC = 0x55555519b4 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v16;
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555519d8 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555519d8 = 0x55555519d8;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x55555514f4 *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19]                                   #! EA = L0x7fffffc470; PC = 0x55555514f8 *)
+mov [L0x7fffffc470,L0x7fffffc472,L0x7fffffc474,L0x7fffffc476,L0x7fffffc478,L0x7fffffc47a,L0x7fffffc47c,L0x7fffffc47e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x55555514fc *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #16]                              #! EA = L0x7fffffc480; PC = 0x5555551500 *)
+mov [L0x7fffffc480,L0x7fffffc482,L0x7fffffc484,L0x7fffffc486,L0x7fffffc488,L0x7fffffc48a,L0x7fffffc48c,L0x7fffffc48e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x5555551504 *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #32]                              #! EA = L0x7fffffc490; PC = 0x5555551508 *)
+mov [L0x7fffffc490,L0x7fffffc492,L0x7fffffc494,L0x7fffffc496,L0x7fffffc498,L0x7fffffc49a,L0x7fffffc49c,L0x7fffffc49e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x555555150c *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #48]                              #! EA = L0x7fffffc4a0; PC = 0x5555551510 *)
+mov [L0x7fffffc4a0,L0x7fffffc4a2,L0x7fffffc4a4,L0x7fffffc4a6,L0x7fffffc4a8,L0x7fffffc4aa,L0x7fffffc4ac,L0x7fffffc4ae] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x5555551514 *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #64]                              #! EA = L0x7fffffc4b0; PC = 0x5555551518 *)
+mov [L0x7fffffc4b0,L0x7fffffc4b2,L0x7fffffc4b4,L0x7fffffc4b6,L0x7fffffc4b8,L0x7fffffc4ba,L0x7fffffc4bc,L0x7fffffc4be] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x555555151c *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #80]                              #! EA = L0x7fffffc4c0; PC = 0x5555551520 *)
+mov [L0x7fffffc4c0,L0x7fffffc4c2,L0x7fffffc4c4,L0x7fffffc4c6,L0x7fffffc4c8,L0x7fffffc4ca,L0x7fffffc4cc,L0x7fffffc4ce] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551524 *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #96]                              #! EA = L0x7fffffc4d0; PC = 0x5555551528 *)
+mov [L0x7fffffc4d0,L0x7fffffc4d2,L0x7fffffc4d4,L0x7fffffc4d6,L0x7fffffc4d8,L0x7fffffc4da,L0x7fffffc4dc,L0x7fffffc4de] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x555555152c *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #112]                             #! EA = L0x7fffffc4e0; PC = 0x5555551530 *)
+mov [L0x7fffffc4e0,L0x7fffffc4e2,L0x7fffffc4e4,L0x7fffffc4e6,L0x7fffffc4e8,L0x7fffffc4ea,L0x7fffffc4ec,L0x7fffffc4ee] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x5555551534 *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #128]                             #! EA = L0x7fffffc4f0; PC = 0x5555551538 *)
+mov [L0x7fffffc4f0,L0x7fffffc4f2,L0x7fffffc4f4,L0x7fffffc4f6,L0x7fffffc4f8,L0x7fffffc4fa,L0x7fffffc4fc,L0x7fffffc4fe] %v0;
+(* ldr	q7, [x19, #176]                             #! EA = L0x7fffffc520; Value = 0x0000000000000000; PC = 0x555555153c *)
+mov %v7 [L0x7fffffc520,L0x7fffffc522,L0x7fffffc524,L0x7fffffc526,L0x7fffffc528,L0x7fffffc52a,L0x7fffffc52c,L0x7fffffc52e];
+(* ldr	q6, [x19, #192]                             #! EA = L0x7fffffc530; Value = 0x0000000000000000; PC = 0x5555551540 *)
+mov %v6 [L0x7fffffc530,L0x7fffffc532,L0x7fffffc534,L0x7fffffc536,L0x7fffffc538,L0x7fffffc53a,L0x7fffffc53c,L0x7fffffc53e];
+(* ldr	q5, [x19, #208]                             #! EA = L0x7fffffc540; Value = 0x0000000000000000; PC = 0x5555551544 *)
+mov %v5 [L0x7fffffc540,L0x7fffffc542,L0x7fffffc544,L0x7fffffc546,L0x7fffffc548,L0x7fffffc54a,L0x7fffffc54c,L0x7fffffc54e];
+(* ldr	q4, [x19, #224]                             #! EA = L0x7fffffc550; Value = 0x0000000000000000; PC = 0x5555551548 *)
+mov %v4 [L0x7fffffc550,L0x7fffffc552,L0x7fffffc554,L0x7fffffc556,L0x7fffffc558,L0x7fffffc55a,L0x7fffffc55c,L0x7fffffc55e];
+(* ldr	q3, [x19, #240]                             #! EA = L0x7fffffc560; Value = 0x0000000000000000; PC = 0x555555154c *)
+mov %v3 [L0x7fffffc560,L0x7fffffc562,L0x7fffffc564,L0x7fffffc566,L0x7fffffc568,L0x7fffffc56a,L0x7fffffc56c,L0x7fffffc56e];
+(* ldr	q2, [x19, #256]                             #! EA = L0x7fffffc570; Value = 0x0000000000000000; PC = 0x5555551550 *)
+mov %v2 [L0x7fffffc570,L0x7fffffc572,L0x7fffffc574,L0x7fffffc576,L0x7fffffc578,L0x7fffffc57a,L0x7fffffc57c,L0x7fffffc57e];
+(* ldr	q1, [x19, #272]                             #! EA = L0x7fffffc580; Value = 0x0000000000000000; PC = 0x5555551554 *)
+mov %v1 [L0x7fffffc580,L0x7fffffc582,L0x7fffffc584,L0x7fffffc586,L0x7fffffc588,L0x7fffffc58a,L0x7fffffc58c,L0x7fffffc58e];
+(* ldr	q0, [x19, #144]                             #! EA = L0x7fffffc500; Value = 0x0000000000000000; PC = 0x5555551558 *)
+mov %v0 [L0x7fffffc500,L0x7fffffc502,L0x7fffffc504,L0x7fffffc506,L0x7fffffc508,L0x7fffffc50a,L0x7fffffc50c,L0x7fffffc50e];
+(* ldr	q16, [x19, #160]                            #! EA = L0x7fffffc510; Value = 0x0000000000000000; PC = 0x5555551560 *)
+mov %v16 [L0x7fffffc510,L0x7fffffc512,L0x7fffffc514,L0x7fffffc516,L0x7fffffc518,L0x7fffffc51a,L0x7fffffc51c,L0x7fffffc51e];
+(* str	q16, [sp]                                   #! EA = L0x7fffffc200; PC = 0x5555551564 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v16;
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551588 = 0x5555551588;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000000; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x55555519dc *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19, #144]                             #! EA = L0x5555572aa8; PC = 0x55555519e0 *)
-mov [L0x5555572aa8,L0x5555572aaa,L0x5555572aac,L0x5555572aae,L0x5555572ab0,L0x5555572ab2,L0x5555572ab4,L0x5555572ab6] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x55555519e4 *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #160]                             #! EA = L0x5555572ab8; PC = 0x55555519e8 *)
-mov [L0x5555572ab8,L0x5555572aba,L0x5555572abc,L0x5555572abe,L0x5555572ac0,L0x5555572ac2,L0x5555572ac4,L0x5555572ac6] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x55555519ec *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #176]                             #! EA = L0x5555572ac8; PC = 0x55555519f0 *)
-mov [L0x5555572ac8,L0x5555572aca,L0x5555572acc,L0x5555572ace,L0x5555572ad0,L0x5555572ad2,L0x5555572ad4,L0x5555572ad6] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x55555519f4 *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #192]                             #! EA = L0x5555572ad8; PC = 0x55555519f8 *)
-mov [L0x5555572ad8,L0x5555572ada,L0x5555572adc,L0x5555572ade,L0x5555572ae0,L0x5555572ae2,L0x5555572ae4,L0x5555572ae6] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x55555519fc *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #208]                             #! EA = L0x5555572ae8; PC = 0x5555551a00 *)
-mov [L0x5555572ae8,L0x5555572aea,L0x5555572aec,L0x5555572aee,L0x5555572af0,L0x5555572af2,L0x5555572af4,L0x5555572af6] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551a04 *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #224]                             #! EA = L0x5555572af8; PC = 0x5555551a08 *)
-mov [L0x5555572af8,L0x5555572afa,L0x5555572afc,L0x5555572afe,L0x5555572b00,L0x5555572b02,L0x5555572b04,L0x5555572b06] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551a0c *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #240]                             #! EA = L0x5555572b08; PC = 0x5555551a10 *)
-mov [L0x5555572b08,L0x5555572b0a,L0x5555572b0c,L0x5555572b0e,L0x5555572b10,L0x5555572b12,L0x5555572b14,L0x5555572b16] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x5555551a14 *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #256]                             #! EA = L0x5555572b18; PC = 0x5555551a18 *)
-mov [L0x5555572b18,L0x5555572b1a,L0x5555572b1c,L0x5555572b1e,L0x5555572b20,L0x5555572b22,L0x5555572b24,L0x5555572b26] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551a1c *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #272]                             #! EA = L0x5555572b28; PC = 0x5555551a20 *)
-mov [L0x5555572b28,L0x5555572b2a,L0x5555572b2c,L0x5555572b2e,L0x5555572b30,L0x5555572b32,L0x5555572b34,L0x5555572b36] %v0;
-(* #b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551a30 *)
-#b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551a30 = 0x5555551a30;
-(* ldr	q7, [x19, #32]                              #! EA = L0x5555572b58; Value = 0x0000000000000040; PC = 0x55555518f0 *)
-mov %v7 [L0x5555572b58,L0x5555572b5a,L0x5555572b5c,L0x5555572b5e,L0x5555572b60,L0x5555572b62,L0x5555572b64,L0x5555572b66];
-(* ldr	q6, [x19, #48]                              #! EA = L0x5555572b68; Value = 0x0000000000000040; PC = 0x55555518f4 *)
-mov %v6 [L0x5555572b68,L0x5555572b6a,L0x5555572b6c,L0x5555572b6e,L0x5555572b70,L0x5555572b72,L0x5555572b74,L0x5555572b76];
-(* ldr	q5, [x19, #64]                              #! EA = L0x5555572b78; Value = 0x0000000000000040; PC = 0x55555518f8 *)
-mov %v5 [L0x5555572b78,L0x5555572b7a,L0x5555572b7c,L0x5555572b7e,L0x5555572b80,L0x5555572b82,L0x5555572b84,L0x5555572b86];
-(* ldr	q4, [x19, #80]                              #! EA = L0x5555572b88; Value = 0x0000000000000040; PC = 0x55555518fc *)
-mov %v4 [L0x5555572b88,L0x5555572b8a,L0x5555572b8c,L0x5555572b8e,L0x5555572b90,L0x5555572b92,L0x5555572b94,L0x5555572b96];
-(* ldr	q3, [x19, #96]                              #! EA = L0x5555572b98; Value = 0x0000000000000040; PC = 0x5555551900 *)
-mov %v3 [L0x5555572b98,L0x5555572b9a,L0x5555572b9c,L0x5555572b9e,L0x5555572ba0,L0x5555572ba2,L0x5555572ba4,L0x5555572ba6];
-(* ldr	q2, [x19, #112]                             #! EA = L0x5555572ba8; Value = 0x0000000000000040; PC = 0x5555551904 *)
-mov %v2 [L0x5555572ba8,L0x5555572baa,L0x5555572bac,L0x5555572bae,L0x5555572bb0,L0x5555572bb2,L0x5555572bb4,L0x5555572bb6];
-(* ldr	q1, [x19, #128]                             #! EA = L0x5555572bb8; Value = 0x0000000000000040; PC = 0x5555551908 *)
-mov %v1 [L0x5555572bb8,L0x5555572bba,L0x5555572bbc,L0x5555572bbe,L0x5555572bc0,L0x5555572bc2,L0x5555572bc4,L0x5555572bc6];
-(* ldr	q0, [x19, #16]                              #! EA = L0x5555572b48; Value = 0x0000000000000040; PC = 0x5555551914 *)
-mov %v0 [L0x5555572b48,L0x5555572b4a,L0x5555572b4c,L0x5555572b4e,L0x5555572b50,L0x5555572b52,L0x5555572b54,L0x5555572b56];
-(* str	q0, [sp]                                    #! EA = L0x7fffffeff0; PC = 0x5555551918 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v0;
-(* ldr	q0, [x19]                                   #! EA = L0x5555572b38; Value = 0x0000000000000040; PC = 0x555555193c *)
-mov %v0 [L0x5555572b38,L0x5555572b3a,L0x5555572b3c,L0x5555572b3e,L0x5555572b40,L0x5555572b42,L0x5555572b44,L0x5555572b46];
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551940 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551940 = 0x5555551940;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x555555158c *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19, #144]                             #! EA = L0x7fffffc500; PC = 0x5555551590 *)
+mov [L0x7fffffc500,L0x7fffffc502,L0x7fffffc504,L0x7fffffc506,L0x7fffffc508,L0x7fffffc50a,L0x7fffffc50c,L0x7fffffc50e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x5555551594 *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #160]                             #! EA = L0x7fffffc510; PC = 0x5555551598 *)
+mov [L0x7fffffc510,L0x7fffffc512,L0x7fffffc514,L0x7fffffc516,L0x7fffffc518,L0x7fffffc51a,L0x7fffffc51c,L0x7fffffc51e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x555555159c *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #176]                             #! EA = L0x7fffffc520; PC = 0x55555515a0 *)
+mov [L0x7fffffc520,L0x7fffffc522,L0x7fffffc524,L0x7fffffc526,L0x7fffffc528,L0x7fffffc52a,L0x7fffffc52c,L0x7fffffc52e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x55555515a4 *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #192]                             #! EA = L0x7fffffc530; PC = 0x55555515a8 *)
+mov [L0x7fffffc530,L0x7fffffc532,L0x7fffffc534,L0x7fffffc536,L0x7fffffc538,L0x7fffffc53a,L0x7fffffc53c,L0x7fffffc53e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x55555515ac *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #208]                             #! EA = L0x7fffffc540; PC = 0x55555515b0 *)
+mov [L0x7fffffc540,L0x7fffffc542,L0x7fffffc544,L0x7fffffc546,L0x7fffffc548,L0x7fffffc54a,L0x7fffffc54c,L0x7fffffc54e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x55555515b4 *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #224]                             #! EA = L0x7fffffc550; PC = 0x55555515b8 *)
+mov [L0x7fffffc550,L0x7fffffc552,L0x7fffffc554,L0x7fffffc556,L0x7fffffc558,L0x7fffffc55a,L0x7fffffc55c,L0x7fffffc55e] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555515bc *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #240]                             #! EA = L0x7fffffc560; PC = 0x55555515c0 *)
+mov [L0x7fffffc560,L0x7fffffc562,L0x7fffffc564,L0x7fffffc566,L0x7fffffc568,L0x7fffffc56a,L0x7fffffc56c,L0x7fffffc56e] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x55555515c4 *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #256]                             #! EA = L0x7fffffc570; PC = 0x55555515c8 *)
+mov [L0x7fffffc570,L0x7fffffc572,L0x7fffffc574,L0x7fffffc576,L0x7fffffc578,L0x7fffffc57a,L0x7fffffc57c,L0x7fffffc57e] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x55555515cc *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #272]                             #! EA = L0x7fffffc580; PC = 0x55555515d0 *)
+mov [L0x7fffffc580,L0x7fffffc582,L0x7fffffc584,L0x7fffffc586,L0x7fffffc588,L0x7fffffc58a,L0x7fffffc58c,L0x7fffffc58e] %v0;
+(* #b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x55555515e0 *)
+#b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x55555515e0 = 0x55555515e0;
+(* ldr	q7, [x19, #32]                              #! EA = L0x7fffffc5b0; Value = 0x0000000000000000; PC = 0x55555514a0 *)
+mov %v7 [L0x7fffffc5b0,L0x7fffffc5b2,L0x7fffffc5b4,L0x7fffffc5b6,L0x7fffffc5b8,L0x7fffffc5ba,L0x7fffffc5bc,L0x7fffffc5be];
+(* ldr	q6, [x19, #48]                              #! EA = L0x7fffffc5c0; Value = 0x0000000000000000; PC = 0x55555514a4 *)
+mov %v6 [L0x7fffffc5c0,L0x7fffffc5c2,L0x7fffffc5c4,L0x7fffffc5c6,L0x7fffffc5c8,L0x7fffffc5ca,L0x7fffffc5cc,L0x7fffffc5ce];
+(* ldr	q5, [x19, #64]                              #! EA = L0x7fffffc5d0; Value = 0x0000000000000000; PC = 0x55555514a8 *)
+mov %v5 [L0x7fffffc5d0,L0x7fffffc5d2,L0x7fffffc5d4,L0x7fffffc5d6,L0x7fffffc5d8,L0x7fffffc5da,L0x7fffffc5dc,L0x7fffffc5de];
+(* ldr	q4, [x19, #80]                              #! EA = L0x7fffffc5e0; Value = 0x0000000000000000; PC = 0x55555514ac *)
+mov %v4 [L0x7fffffc5e0,L0x7fffffc5e2,L0x7fffffc5e4,L0x7fffffc5e6,L0x7fffffc5e8,L0x7fffffc5ea,L0x7fffffc5ec,L0x7fffffc5ee];
+(* ldr	q3, [x19, #96]                              #! EA = L0x7fffffc5f0; Value = 0x0000000000000000; PC = 0x55555514b0 *)
+mov %v3 [L0x7fffffc5f0,L0x7fffffc5f2,L0x7fffffc5f4,L0x7fffffc5f6,L0x7fffffc5f8,L0x7fffffc5fa,L0x7fffffc5fc,L0x7fffffc5fe];
+(* ldr	q2, [x19, #112]                             #! EA = L0x7fffffc600; Value = 0x0000000000000000; PC = 0x55555514b4 *)
+mov %v2 [L0x7fffffc600,L0x7fffffc602,L0x7fffffc604,L0x7fffffc606,L0x7fffffc608,L0x7fffffc60a,L0x7fffffc60c,L0x7fffffc60e];
+(* ldr	q1, [x19, #128]                             #! EA = L0x7fffffc610; Value = 0x0000000000000000; PC = 0x55555514b8 *)
+mov %v1 [L0x7fffffc610,L0x7fffffc612,L0x7fffffc614,L0x7fffffc616,L0x7fffffc618,L0x7fffffc61a,L0x7fffffc61c,L0x7fffffc61e];
+(* ldr	q0, [x19, #16]                              #! EA = L0x7fffffc5a0; Value = 0x0000000000000000; PC = 0x55555514c4 *)
+mov %v0 [L0x7fffffc5a0,L0x7fffffc5a2,L0x7fffffc5a4,L0x7fffffc5a6,L0x7fffffc5a8,L0x7fffffc5aa,L0x7fffffc5ac,L0x7fffffc5ae];
+(* str	q0, [sp]                                    #! EA = L0x7fffffc200; PC = 0x55555514c8 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v0;
+(* ldr	q0, [x19]                                   #! EA = L0x7fffffc590; Value = 0x0000000000000000; PC = 0x55555514ec *)
+mov %v0 [L0x7fffffc590,L0x7fffffc592,L0x7fffffc594,L0x7fffffc596,L0x7fffffc598,L0x7fffffc59a,L0x7fffffc59c,L0x7fffffc59e];
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555514f0 = 0x55555514f0;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000040; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000480; PC = 0x5555551944 *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19]                                   #! EA = L0x5555572b38; PC = 0x5555551948 *)
-mov [L0x5555572b38,L0x5555572b3a,L0x5555572b3c,L0x5555572b3e,L0x5555572b40,L0x5555572b42,L0x5555572b44,L0x5555572b46] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555194c *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #16]                              #! EA = L0x5555572b48; PC = 0x5555551950 *)
-mov [L0x5555572b48,L0x5555572b4a,L0x5555572b4c,L0x5555572b4e,L0x5555572b50,L0x5555572b52,L0x5555572b54,L0x5555572b56] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x5555551954 *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #32]                              #! EA = L0x5555572b58; PC = 0x5555551958 *)
-mov [L0x5555572b58,L0x5555572b5a,L0x5555572b5c,L0x5555572b5e,L0x5555572b60,L0x5555572b62,L0x5555572b64,L0x5555572b66] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x555555195c *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #48]                              #! EA = L0x5555572b68; PC = 0x5555551960 *)
-mov [L0x5555572b68,L0x5555572b6a,L0x5555572b6c,L0x5555572b6e,L0x5555572b70,L0x5555572b72,L0x5555572b74,L0x5555572b76] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551964 *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #64]                              #! EA = L0x5555572b78; PC = 0x5555551968 *)
-mov [L0x5555572b78,L0x5555572b7a,L0x5555572b7c,L0x5555572b7e,L0x5555572b80,L0x5555572b82,L0x5555572b84,L0x5555572b86] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x555555196c *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #80]                              #! EA = L0x5555572b88; PC = 0x5555551970 *)
-mov [L0x5555572b88,L0x5555572b8a,L0x5555572b8c,L0x5555572b8e,L0x5555572b90,L0x5555572b92,L0x5555572b94,L0x5555572b96] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551974 *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #96]                              #! EA = L0x5555572b98; PC = 0x5555551978 *)
-mov [L0x5555572b98,L0x5555572b9a,L0x5555572b9c,L0x5555572b9e,L0x5555572ba0,L0x5555572ba2,L0x5555572ba4,L0x5555572ba6] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x555555197c *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #112]                             #! EA = L0x5555572ba8; PC = 0x5555551980 *)
-mov [L0x5555572ba8,L0x5555572baa,L0x5555572bac,L0x5555572bae,L0x5555572bb0,L0x5555572bb2,L0x5555572bb4,L0x5555572bb6] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551984 *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #128]                             #! EA = L0x5555572bb8; PC = 0x5555551988 *)
-mov [L0x5555572bb8,L0x5555572bba,L0x5555572bbc,L0x5555572bbe,L0x5555572bc0,L0x5555572bc2,L0x5555572bc4,L0x5555572bc6] %v0;
-(* ldr	q7, [x19, #176]                             #! EA = L0x5555572be8; Value = 0x0000000000000000; PC = 0x555555198c *)
-mov %v7 [L0x5555572be8,L0x5555572bea,L0x5555572bec,L0x5555572bee,L0x5555572bf0,L0x5555572bf2,L0x5555572bf4,L0x5555572bf6];
-(* ldr	q6, [x19, #192]                             #! EA = L0x5555572bf8; Value = 0x0000000000000000; PC = 0x5555551990 *)
-mov %v6 [L0x5555572bf8,L0x5555572bfa,L0x5555572bfc,L0x5555572bfe,L0x5555572c00,L0x5555572c02,L0x5555572c04,L0x5555572c06];
-(* ldr	q5, [x19, #208]                             #! EA = L0x5555572c08; Value = 0x0000000000000000; PC = 0x5555551994 *)
-mov %v5 [L0x5555572c08,L0x5555572c0a,L0x5555572c0c,L0x5555572c0e,L0x5555572c10,L0x5555572c12,L0x5555572c14,L0x5555572c16];
-(* ldr	q4, [x19, #224]                             #! EA = L0x5555572c18; Value = 0x0000000000000000; PC = 0x5555551998 *)
-mov %v4 [L0x5555572c18,L0x5555572c1a,L0x5555572c1c,L0x5555572c1e,L0x5555572c20,L0x5555572c22,L0x5555572c24,L0x5555572c26];
-(* ldr	q3, [x19, #240]                             #! EA = L0x5555572c28; Value = 0x0000000000000000; PC = 0x555555199c *)
-mov %v3 [L0x5555572c28,L0x5555572c2a,L0x5555572c2c,L0x5555572c2e,L0x5555572c30,L0x5555572c32,L0x5555572c34,L0x5555572c36];
-(* ldr	q2, [x19, #256]                             #! EA = L0x5555572c38; Value = 0x0000000000000000; PC = 0x55555519a0 *)
-mov %v2 [L0x5555572c38,L0x5555572c3a,L0x5555572c3c,L0x5555572c3e,L0x5555572c40,L0x5555572c42,L0x5555572c44,L0x5555572c46];
-(* ldr	q1, [x19, #272]                             #! EA = L0x5555572c48; Value = 0x0000000000000000; PC = 0x55555519a4 *)
-mov %v1 [L0x5555572c48,L0x5555572c4a,L0x5555572c4c,L0x5555572c4e,L0x5555572c50,L0x5555572c52,L0x5555572c54,L0x5555572c56];
-(* ldr	q0, [x19, #144]                             #! EA = L0x5555572bc8; Value = 0x0000000000000000; PC = 0x55555519a8 *)
-mov %v0 [L0x5555572bc8,L0x5555572bca,L0x5555572bcc,L0x5555572bce,L0x5555572bd0,L0x5555572bd2,L0x5555572bd4,L0x5555572bd6];
-(* ldr	q16, [x19, #160]                            #! EA = L0x5555572bd8; Value = 0x0000000000000000; PC = 0x55555519b0 *)
-mov %v16 [L0x5555572bd8,L0x5555572bda,L0x5555572bdc,L0x5555572bde,L0x5555572be0,L0x5555572be2,L0x5555572be4,L0x5555572be6];
-(* str	q16, [sp]                                   #! EA = L0x7fffffeff0; PC = 0x55555519b4 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v16;
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555519d8 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555519d8 = 0x55555519d8;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x55555514f4 *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19]                                   #! EA = L0x7fffffc590; PC = 0x55555514f8 *)
+mov [L0x7fffffc590,L0x7fffffc592,L0x7fffffc594,L0x7fffffc596,L0x7fffffc598,L0x7fffffc59a,L0x7fffffc59c,L0x7fffffc59e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x55555514fc *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #16]                              #! EA = L0x7fffffc5a0; PC = 0x5555551500 *)
+mov [L0x7fffffc5a0,L0x7fffffc5a2,L0x7fffffc5a4,L0x7fffffc5a6,L0x7fffffc5a8,L0x7fffffc5aa,L0x7fffffc5ac,L0x7fffffc5ae] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x5555551504 *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #32]                              #! EA = L0x7fffffc5b0; PC = 0x5555551508 *)
+mov [L0x7fffffc5b0,L0x7fffffc5b2,L0x7fffffc5b4,L0x7fffffc5b6,L0x7fffffc5b8,L0x7fffffc5ba,L0x7fffffc5bc,L0x7fffffc5be] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x555555150c *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #48]                              #! EA = L0x7fffffc5c0; PC = 0x5555551510 *)
+mov [L0x7fffffc5c0,L0x7fffffc5c2,L0x7fffffc5c4,L0x7fffffc5c6,L0x7fffffc5c8,L0x7fffffc5ca,L0x7fffffc5cc,L0x7fffffc5ce] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x5555551514 *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #64]                              #! EA = L0x7fffffc5d0; PC = 0x5555551518 *)
+mov [L0x7fffffc5d0,L0x7fffffc5d2,L0x7fffffc5d4,L0x7fffffc5d6,L0x7fffffc5d8,L0x7fffffc5da,L0x7fffffc5dc,L0x7fffffc5de] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x555555151c *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #80]                              #! EA = L0x7fffffc5e0; PC = 0x5555551520 *)
+mov [L0x7fffffc5e0,L0x7fffffc5e2,L0x7fffffc5e4,L0x7fffffc5e6,L0x7fffffc5e8,L0x7fffffc5ea,L0x7fffffc5ec,L0x7fffffc5ee] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551524 *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #96]                              #! EA = L0x7fffffc5f0; PC = 0x5555551528 *)
+mov [L0x7fffffc5f0,L0x7fffffc5f2,L0x7fffffc5f4,L0x7fffffc5f6,L0x7fffffc5f8,L0x7fffffc5fa,L0x7fffffc5fc,L0x7fffffc5fe] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x555555152c *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #112]                             #! EA = L0x7fffffc600; PC = 0x5555551530 *)
+mov [L0x7fffffc600,L0x7fffffc602,L0x7fffffc604,L0x7fffffc606,L0x7fffffc608,L0x7fffffc60a,L0x7fffffc60c,L0x7fffffc60e] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x5555551534 *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #128]                             #! EA = L0x7fffffc610; PC = 0x5555551538 *)
+mov [L0x7fffffc610,L0x7fffffc612,L0x7fffffc614,L0x7fffffc616,L0x7fffffc618,L0x7fffffc61a,L0x7fffffc61c,L0x7fffffc61e] %v0;
+(* ldr	q7, [x19, #176]                             #! EA = L0x7fffffc640; Value = 0x0000000000000000; PC = 0x555555153c *)
+mov %v7 [L0x7fffffc640,L0x7fffffc642,L0x7fffffc644,L0x7fffffc646,L0x7fffffc648,L0x7fffffc64a,L0x7fffffc64c,L0x7fffffc64e];
+(* ldr	q6, [x19, #192]                             #! EA = L0x7fffffc650; Value = 0x0000000000000000; PC = 0x5555551540 *)
+mov %v6 [L0x7fffffc650,L0x7fffffc652,L0x7fffffc654,L0x7fffffc656,L0x7fffffc658,L0x7fffffc65a,L0x7fffffc65c,L0x7fffffc65e];
+(* ldr	q5, [x19, #208]                             #! EA = L0x7fffffc660; Value = 0x0000000000000000; PC = 0x5555551544 *)
+mov %v5 [L0x7fffffc660,L0x7fffffc662,L0x7fffffc664,L0x7fffffc666,L0x7fffffc668,L0x7fffffc66a,L0x7fffffc66c,L0x7fffffc66e];
+(* ldr	q4, [x19, #224]                             #! EA = L0x7fffffc670; Value = 0x0000000000000000; PC = 0x5555551548 *)
+mov %v4 [L0x7fffffc670,L0x7fffffc672,L0x7fffffc674,L0x7fffffc676,L0x7fffffc678,L0x7fffffc67a,L0x7fffffc67c,L0x7fffffc67e];
+(* ldr	q3, [x19, #240]                             #! EA = L0x7fffffc680; Value = 0x0000000000000000; PC = 0x555555154c *)
+mov %v3 [L0x7fffffc680,L0x7fffffc682,L0x7fffffc684,L0x7fffffc686,L0x7fffffc688,L0x7fffffc68a,L0x7fffffc68c,L0x7fffffc68e];
+(* ldr	q2, [x19, #256]                             #! EA = L0x7fffffc690; Value = 0x0000000000000000; PC = 0x5555551550 *)
+mov %v2 [L0x7fffffc690,L0x7fffffc692,L0x7fffffc694,L0x7fffffc696,L0x7fffffc698,L0x7fffffc69a,L0x7fffffc69c,L0x7fffffc69e];
+(* ldr	q1, [x19, #272]                             #! EA = L0x7fffffc6a0; Value = 0x0000000000000000; PC = 0x5555551554 *)
+mov %v1 [L0x7fffffc6a0,L0x7fffffc6a2,L0x7fffffc6a4,L0x7fffffc6a6,L0x7fffffc6a8,L0x7fffffc6aa,L0x7fffffc6ac,L0x7fffffc6ae];
+(* ldr	q0, [x19, #144]                             #! EA = L0x7fffffc620; Value = 0x0000000000000000; PC = 0x5555551558 *)
+mov %v0 [L0x7fffffc620,L0x7fffffc622,L0x7fffffc624,L0x7fffffc626,L0x7fffffc628,L0x7fffffc62a,L0x7fffffc62c,L0x7fffffc62e];
+(* ldr	q16, [x19, #160]                            #! EA = L0x7fffffc630; Value = 0x0000000000000000; PC = 0x5555551560 *)
+mov %v16 [L0x7fffffc630,L0x7fffffc632,L0x7fffffc634,L0x7fffffc636,L0x7fffffc638,L0x7fffffc63a,L0x7fffffc63c,L0x7fffffc63e];
+(* str	q16, [sp]                                   #! EA = L0x7fffffc200; PC = 0x5555551564 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v16;
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551588 = 0x5555551588;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000000; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x55555519dc *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19, #144]                             #! EA = L0x5555572bc8; PC = 0x55555519e0 *)
-mov [L0x5555572bc8,L0x5555572bca,L0x5555572bcc,L0x5555572bce,L0x5555572bd0,L0x5555572bd2,L0x5555572bd4,L0x5555572bd6] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x55555519e4 *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #160]                             #! EA = L0x5555572bd8; PC = 0x55555519e8 *)
-mov [L0x5555572bd8,L0x5555572bda,L0x5555572bdc,L0x5555572bde,L0x5555572be0,L0x5555572be2,L0x5555572be4,L0x5555572be6] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x55555519ec *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #176]                             #! EA = L0x5555572be8; PC = 0x55555519f0 *)
-mov [L0x5555572be8,L0x5555572bea,L0x5555572bec,L0x5555572bee,L0x5555572bf0,L0x5555572bf2,L0x5555572bf4,L0x5555572bf6] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x55555519f4 *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #192]                             #! EA = L0x5555572bf8; PC = 0x55555519f8 *)
-mov [L0x5555572bf8,L0x5555572bfa,L0x5555572bfc,L0x5555572bfe,L0x5555572c00,L0x5555572c02,L0x5555572c04,L0x5555572c06] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x55555519fc *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #208]                             #! EA = L0x5555572c08; PC = 0x5555551a00 *)
-mov [L0x5555572c08,L0x5555572c0a,L0x5555572c0c,L0x5555572c0e,L0x5555572c10,L0x5555572c12,L0x5555572c14,L0x5555572c16] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551a04 *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #224]                             #! EA = L0x5555572c18; PC = 0x5555551a08 *)
-mov [L0x5555572c18,L0x5555572c1a,L0x5555572c1c,L0x5555572c1e,L0x5555572c20,L0x5555572c22,L0x5555572c24,L0x5555572c26] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551a0c *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #240]                             #! EA = L0x5555572c28; PC = 0x5555551a10 *)
-mov [L0x5555572c28,L0x5555572c2a,L0x5555572c2c,L0x5555572c2e,L0x5555572c30,L0x5555572c32,L0x5555572c34,L0x5555572c36] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x5555551a14 *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #256]                             #! EA = L0x5555572c38; PC = 0x5555551a18 *)
-mov [L0x5555572c38,L0x5555572c3a,L0x5555572c3c,L0x5555572c3e,L0x5555572c40,L0x5555572c42,L0x5555572c44,L0x5555572c46] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551a1c *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #272]                             #! EA = L0x5555572c48; PC = 0x5555551a20 *)
-mov [L0x5555572c48,L0x5555572c4a,L0x5555572c4c,L0x5555572c4e,L0x5555572c50,L0x5555572c52,L0x5555572c54,L0x5555572c56] %v0;
-(* #b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551a30 *)
-#b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551a30 = 0x5555551a30;
-(* ldr	q7, [x19, #32]                              #! EA = L0x5555572c78; Value = 0x0000000000000040; PC = 0x55555518f0 *)
-mov %v7 [L0x5555572c78,L0x5555572c7a,L0x5555572c7c,L0x5555572c7e,L0x5555572c80,L0x5555572c82,L0x5555572c84,L0x5555572c86];
-(* ldr	q6, [x19, #48]                              #! EA = L0x5555572c88; Value = 0x0000000000000040; PC = 0x55555518f4 *)
-mov %v6 [L0x5555572c88,L0x5555572c8a,L0x5555572c8c,L0x5555572c8e,L0x5555572c90,L0x5555572c92,L0x5555572c94,L0x5555572c96];
-(* ldr	q5, [x19, #64]                              #! EA = L0x5555572c98; Value = 0x0000000000000040; PC = 0x55555518f8 *)
-mov %v5 [L0x5555572c98,L0x5555572c9a,L0x5555572c9c,L0x5555572c9e,L0x5555572ca0,L0x5555572ca2,L0x5555572ca4,L0x5555572ca6];
-(* ldr	q4, [x19, #80]                              #! EA = L0x5555572ca8; Value = 0x0000000000000040; PC = 0x55555518fc *)
-mov %v4 [L0x5555572ca8,L0x5555572caa,L0x5555572cac,L0x5555572cae,L0x5555572cb0,L0x5555572cb2,L0x5555572cb4,L0x5555572cb6];
-(* ldr	q3, [x19, #96]                              #! EA = L0x5555572cb8; Value = 0x0000000000000040; PC = 0x5555551900 *)
-mov %v3 [L0x5555572cb8,L0x5555572cba,L0x5555572cbc,L0x5555572cbe,L0x5555572cc0,L0x5555572cc2,L0x5555572cc4,L0x5555572cc6];
-(* ldr	q2, [x19, #112]                             #! EA = L0x5555572cc8; Value = 0x0000000000000040; PC = 0x5555551904 *)
-mov %v2 [L0x5555572cc8,L0x5555572cca,L0x5555572ccc,L0x5555572cce,L0x5555572cd0,L0x5555572cd2,L0x5555572cd4,L0x5555572cd6];
-(* ldr	q1, [x19, #128]                             #! EA = L0x5555572cd8; Value = 0x0000000000000040; PC = 0x5555551908 *)
-mov %v1 [L0x5555572cd8,L0x5555572cda,L0x5555572cdc,L0x5555572cde,L0x5555572ce0,L0x5555572ce2,L0x5555572ce4,L0x5555572ce6];
-(* ldr	q0, [x19, #16]                              #! EA = L0x5555572c68; Value = 0x0000000000000040; PC = 0x5555551914 *)
-mov %v0 [L0x5555572c68,L0x5555572c6a,L0x5555572c6c,L0x5555572c6e,L0x5555572c70,L0x5555572c72,L0x5555572c74,L0x5555572c76];
-(* str	q0, [sp]                                    #! EA = L0x7fffffeff0; PC = 0x5555551918 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v0;
-(* ldr	q0, [x19]                                   #! EA = L0x5555572c58; Value = 0x0000000000000040; PC = 0x555555193c *)
-mov %v0 [L0x5555572c58,L0x5555572c5a,L0x5555572c5c,L0x5555572c5e,L0x5555572c60,L0x5555572c62,L0x5555572c64,L0x5555572c66];
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551940 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551940 = 0x5555551940;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x555555158c *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19, #144]                             #! EA = L0x7fffffc620; PC = 0x5555551590 *)
+mov [L0x7fffffc620,L0x7fffffc622,L0x7fffffc624,L0x7fffffc626,L0x7fffffc628,L0x7fffffc62a,L0x7fffffc62c,L0x7fffffc62e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x5555551594 *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #160]                             #! EA = L0x7fffffc630; PC = 0x5555551598 *)
+mov [L0x7fffffc630,L0x7fffffc632,L0x7fffffc634,L0x7fffffc636,L0x7fffffc638,L0x7fffffc63a,L0x7fffffc63c,L0x7fffffc63e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x555555159c *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #176]                             #! EA = L0x7fffffc640; PC = 0x55555515a0 *)
+mov [L0x7fffffc640,L0x7fffffc642,L0x7fffffc644,L0x7fffffc646,L0x7fffffc648,L0x7fffffc64a,L0x7fffffc64c,L0x7fffffc64e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x55555515a4 *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #192]                             #! EA = L0x7fffffc650; PC = 0x55555515a8 *)
+mov [L0x7fffffc650,L0x7fffffc652,L0x7fffffc654,L0x7fffffc656,L0x7fffffc658,L0x7fffffc65a,L0x7fffffc65c,L0x7fffffc65e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x55555515ac *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #208]                             #! EA = L0x7fffffc660; PC = 0x55555515b0 *)
+mov [L0x7fffffc660,L0x7fffffc662,L0x7fffffc664,L0x7fffffc666,L0x7fffffc668,L0x7fffffc66a,L0x7fffffc66c,L0x7fffffc66e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x55555515b4 *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #224]                             #! EA = L0x7fffffc670; PC = 0x55555515b8 *)
+mov [L0x7fffffc670,L0x7fffffc672,L0x7fffffc674,L0x7fffffc676,L0x7fffffc678,L0x7fffffc67a,L0x7fffffc67c,L0x7fffffc67e] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555515bc *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #240]                             #! EA = L0x7fffffc680; PC = 0x55555515c0 *)
+mov [L0x7fffffc680,L0x7fffffc682,L0x7fffffc684,L0x7fffffc686,L0x7fffffc688,L0x7fffffc68a,L0x7fffffc68c,L0x7fffffc68e] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x55555515c4 *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #256]                             #! EA = L0x7fffffc690; PC = 0x55555515c8 *)
+mov [L0x7fffffc690,L0x7fffffc692,L0x7fffffc694,L0x7fffffc696,L0x7fffffc698,L0x7fffffc69a,L0x7fffffc69c,L0x7fffffc69e] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x55555515cc *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #272]                             #! EA = L0x7fffffc6a0; PC = 0x55555515d0 *)
+mov [L0x7fffffc6a0,L0x7fffffc6a2,L0x7fffffc6a4,L0x7fffffc6a6,L0x7fffffc6a8,L0x7fffffc6aa,L0x7fffffc6ac,L0x7fffffc6ae] %v0;
+(* #b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x55555515e0 *)
+#b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x55555515e0 = 0x55555515e0;
+(* ldr	q7, [x19, #32]                              #! EA = L0x7fffffc6d0; Value = 0x0000000000000000; PC = 0x55555514a0 *)
+mov %v7 [L0x7fffffc6d0,L0x7fffffc6d2,L0x7fffffc6d4,L0x7fffffc6d6,L0x7fffffc6d8,L0x7fffffc6da,L0x7fffffc6dc,L0x7fffffc6de];
+(* ldr	q6, [x19, #48]                              #! EA = L0x7fffffc6e0; Value = 0x0000000000000000; PC = 0x55555514a4 *)
+mov %v6 [L0x7fffffc6e0,L0x7fffffc6e2,L0x7fffffc6e4,L0x7fffffc6e6,L0x7fffffc6e8,L0x7fffffc6ea,L0x7fffffc6ec,L0x7fffffc6ee];
+(* ldr	q5, [x19, #64]                              #! EA = L0x7fffffc6f0; Value = 0x0000000000000000; PC = 0x55555514a8 *)
+mov %v5 [L0x7fffffc6f0,L0x7fffffc6f2,L0x7fffffc6f4,L0x7fffffc6f6,L0x7fffffc6f8,L0x7fffffc6fa,L0x7fffffc6fc,L0x7fffffc6fe];
+(* ldr	q4, [x19, #80]                              #! EA = L0x7fffffc700; Value = 0x0000000000000000; PC = 0x55555514ac *)
+mov %v4 [L0x7fffffc700,L0x7fffffc702,L0x7fffffc704,L0x7fffffc706,L0x7fffffc708,L0x7fffffc70a,L0x7fffffc70c,L0x7fffffc70e];
+(* ldr	q3, [x19, #96]                              #! EA = L0x7fffffc710; Value = 0x0000000000000000; PC = 0x55555514b0 *)
+mov %v3 [L0x7fffffc710,L0x7fffffc712,L0x7fffffc714,L0x7fffffc716,L0x7fffffc718,L0x7fffffc71a,L0x7fffffc71c,L0x7fffffc71e];
+(* ldr	q2, [x19, #112]                             #! EA = L0x7fffffc720; Value = 0x0000000000000000; PC = 0x55555514b4 *)
+mov %v2 [L0x7fffffc720,L0x7fffffc722,L0x7fffffc724,L0x7fffffc726,L0x7fffffc728,L0x7fffffc72a,L0x7fffffc72c,L0x7fffffc72e];
+(* ldr	q1, [x19, #128]                             #! EA = L0x7fffffc730; Value = 0x0000000000000000; PC = 0x55555514b8 *)
+mov %v1 [L0x7fffffc730,L0x7fffffc732,L0x7fffffc734,L0x7fffffc736,L0x7fffffc738,L0x7fffffc73a,L0x7fffffc73c,L0x7fffffc73e];
+(* ldr	q0, [x19, #16]                              #! EA = L0x7fffffc6c0; Value = 0x0000000000000000; PC = 0x55555514c4 *)
+mov %v0 [L0x7fffffc6c0,L0x7fffffc6c2,L0x7fffffc6c4,L0x7fffffc6c6,L0x7fffffc6c8,L0x7fffffc6ca,L0x7fffffc6cc,L0x7fffffc6ce];
+(* str	q0, [sp]                                    #! EA = L0x7fffffc200; PC = 0x55555514c8 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v0;
+(* ldr	q0, [x19]                                   #! EA = L0x7fffffc6b0; Value = 0x0000000000000000; PC = 0x55555514ec *)
+mov %v0 [L0x7fffffc6b0,L0x7fffffc6b2,L0x7fffffc6b4,L0x7fffffc6b6,L0x7fffffc6b8,L0x7fffffc6ba,L0x7fffffc6bc,L0x7fffffc6be];
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555514f0 = 0x55555514f0;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000040; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000480; PC = 0x5555551944 *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19]                                   #! EA = L0x5555572c58; PC = 0x5555551948 *)
-mov [L0x5555572c58,L0x5555572c5a,L0x5555572c5c,L0x5555572c5e,L0x5555572c60,L0x5555572c62,L0x5555572c64,L0x5555572c66] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555194c *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #16]                              #! EA = L0x5555572c68; PC = 0x5555551950 *)
-mov [L0x5555572c68,L0x5555572c6a,L0x5555572c6c,L0x5555572c6e,L0x5555572c70,L0x5555572c72,L0x5555572c74,L0x5555572c76] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x5555551954 *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #32]                              #! EA = L0x5555572c78; PC = 0x5555551958 *)
-mov [L0x5555572c78,L0x5555572c7a,L0x5555572c7c,L0x5555572c7e,L0x5555572c80,L0x5555572c82,L0x5555572c84,L0x5555572c86] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x555555195c *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #48]                              #! EA = L0x5555572c88; PC = 0x5555551960 *)
-mov [L0x5555572c88,L0x5555572c8a,L0x5555572c8c,L0x5555572c8e,L0x5555572c90,L0x5555572c92,L0x5555572c94,L0x5555572c96] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551964 *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #64]                              #! EA = L0x5555572c98; PC = 0x5555551968 *)
-mov [L0x5555572c98,L0x5555572c9a,L0x5555572c9c,L0x5555572c9e,L0x5555572ca0,L0x5555572ca2,L0x5555572ca4,L0x5555572ca6] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x555555196c *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #80]                              #! EA = L0x5555572ca8; PC = 0x5555551970 *)
-mov [L0x5555572ca8,L0x5555572caa,L0x5555572cac,L0x5555572cae,L0x5555572cb0,L0x5555572cb2,L0x5555572cb4,L0x5555572cb6] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551974 *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #96]                              #! EA = L0x5555572cb8; PC = 0x5555551978 *)
-mov [L0x5555572cb8,L0x5555572cba,L0x5555572cbc,L0x5555572cbe,L0x5555572cc0,L0x5555572cc2,L0x5555572cc4,L0x5555572cc6] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x555555197c *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #112]                             #! EA = L0x5555572cc8; PC = 0x5555551980 *)
-mov [L0x5555572cc8,L0x5555572cca,L0x5555572ccc,L0x5555572cce,L0x5555572cd0,L0x5555572cd2,L0x5555572cd4,L0x5555572cd6] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551984 *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #128]                             #! EA = L0x5555572cd8; PC = 0x5555551988 *)
-mov [L0x5555572cd8,L0x5555572cda,L0x5555572cdc,L0x5555572cde,L0x5555572ce0,L0x5555572ce2,L0x5555572ce4,L0x5555572ce6] %v0;
-(* ldr	q7, [x19, #176]                             #! EA = L0x5555572d08; Value = 0x0000000000000000; PC = 0x555555198c *)
-mov %v7 [L0x5555572d08,L0x5555572d0a,L0x5555572d0c,L0x5555572d0e,L0x5555572d10,L0x5555572d12,L0x5555572d14,L0x5555572d16];
-(* ldr	q6, [x19, #192]                             #! EA = L0x5555572d18; Value = 0x0000000000000000; PC = 0x5555551990 *)
-mov %v6 [L0x5555572d18,L0x5555572d1a,L0x5555572d1c,L0x5555572d1e,L0x5555572d20,L0x5555572d22,L0x5555572d24,L0x5555572d26];
-(* ldr	q5, [x19, #208]                             #! EA = L0x5555572d28; Value = 0x0000000000000000; PC = 0x5555551994 *)
-mov %v5 [L0x5555572d28,L0x5555572d2a,L0x5555572d2c,L0x5555572d2e,L0x5555572d30,L0x5555572d32,L0x5555572d34,L0x5555572d36];
-(* ldr	q4, [x19, #224]                             #! EA = L0x5555572d38; Value = 0x0000000000000000; PC = 0x5555551998 *)
-mov %v4 [L0x5555572d38,L0x5555572d3a,L0x5555572d3c,L0x5555572d3e,L0x5555572d40,L0x5555572d42,L0x5555572d44,L0x5555572d46];
-(* ldr	q3, [x19, #240]                             #! EA = L0x5555572d48; Value = 0x0000000000000000; PC = 0x555555199c *)
-mov %v3 [L0x5555572d48,L0x5555572d4a,L0x5555572d4c,L0x5555572d4e,L0x5555572d50,L0x5555572d52,L0x5555572d54,L0x5555572d56];
-(* ldr	q2, [x19, #256]                             #! EA = L0x5555572d58; Value = 0x0000000000000000; PC = 0x55555519a0 *)
-mov %v2 [L0x5555572d58,L0x5555572d5a,L0x5555572d5c,L0x5555572d5e,L0x5555572d60,L0x5555572d62,L0x5555572d64,L0x5555572d66];
-(* ldr	q1, [x19, #272]                             #! EA = L0x5555572d68; Value = 0x0000000000000000; PC = 0x55555519a4 *)
-mov %v1 [L0x5555572d68,L0x5555572d6a,L0x5555572d6c,L0x5555572d6e,L0x5555572d70,L0x5555572d72,L0x5555572d74,L0x5555572d76];
-(* ldr	q0, [x19, #144]                             #! EA = L0x5555572ce8; Value = 0x0000000000000000; PC = 0x55555519a8 *)
-mov %v0 [L0x5555572ce8,L0x5555572cea,L0x5555572cec,L0x5555572cee,L0x5555572cf0,L0x5555572cf2,L0x5555572cf4,L0x5555572cf6];
-(* ldr	q16, [x19, #160]                            #! EA = L0x5555572cf8; Value = 0x0000000000000000; PC = 0x55555519b0 *)
-mov %v16 [L0x5555572cf8,L0x5555572cfa,L0x5555572cfc,L0x5555572cfe,L0x5555572d00,L0x5555572d02,L0x5555572d04,L0x5555572d06];
-(* str	q16, [sp]                                   #! EA = L0x7fffffeff0; PC = 0x55555519b4 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v16;
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555519d8 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555519d8 = 0x55555519d8;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x55555514f4 *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19]                                   #! EA = L0x7fffffc6b0; PC = 0x55555514f8 *)
+mov [L0x7fffffc6b0,L0x7fffffc6b2,L0x7fffffc6b4,L0x7fffffc6b6,L0x7fffffc6b8,L0x7fffffc6ba,L0x7fffffc6bc,L0x7fffffc6be] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x55555514fc *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #16]                              #! EA = L0x7fffffc6c0; PC = 0x5555551500 *)
+mov [L0x7fffffc6c0,L0x7fffffc6c2,L0x7fffffc6c4,L0x7fffffc6c6,L0x7fffffc6c8,L0x7fffffc6ca,L0x7fffffc6cc,L0x7fffffc6ce] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x5555551504 *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #32]                              #! EA = L0x7fffffc6d0; PC = 0x5555551508 *)
+mov [L0x7fffffc6d0,L0x7fffffc6d2,L0x7fffffc6d4,L0x7fffffc6d6,L0x7fffffc6d8,L0x7fffffc6da,L0x7fffffc6dc,L0x7fffffc6de] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x555555150c *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #48]                              #! EA = L0x7fffffc6e0; PC = 0x5555551510 *)
+mov [L0x7fffffc6e0,L0x7fffffc6e2,L0x7fffffc6e4,L0x7fffffc6e6,L0x7fffffc6e8,L0x7fffffc6ea,L0x7fffffc6ec,L0x7fffffc6ee] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x5555551514 *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #64]                              #! EA = L0x7fffffc6f0; PC = 0x5555551518 *)
+mov [L0x7fffffc6f0,L0x7fffffc6f2,L0x7fffffc6f4,L0x7fffffc6f6,L0x7fffffc6f8,L0x7fffffc6fa,L0x7fffffc6fc,L0x7fffffc6fe] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x555555151c *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #80]                              #! EA = L0x7fffffc700; PC = 0x5555551520 *)
+mov [L0x7fffffc700,L0x7fffffc702,L0x7fffffc704,L0x7fffffc706,L0x7fffffc708,L0x7fffffc70a,L0x7fffffc70c,L0x7fffffc70e] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551524 *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #96]                              #! EA = L0x7fffffc710; PC = 0x5555551528 *)
+mov [L0x7fffffc710,L0x7fffffc712,L0x7fffffc714,L0x7fffffc716,L0x7fffffc718,L0x7fffffc71a,L0x7fffffc71c,L0x7fffffc71e] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x555555152c *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #112]                             #! EA = L0x7fffffc720; PC = 0x5555551530 *)
+mov [L0x7fffffc720,L0x7fffffc722,L0x7fffffc724,L0x7fffffc726,L0x7fffffc728,L0x7fffffc72a,L0x7fffffc72c,L0x7fffffc72e] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x5555551534 *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #128]                             #! EA = L0x7fffffc730; PC = 0x5555551538 *)
+mov [L0x7fffffc730,L0x7fffffc732,L0x7fffffc734,L0x7fffffc736,L0x7fffffc738,L0x7fffffc73a,L0x7fffffc73c,L0x7fffffc73e] %v0;
+(* ldr	q7, [x19, #176]                             #! EA = L0x7fffffc760; Value = 0x0000000000000000; PC = 0x555555153c *)
+mov %v7 [L0x7fffffc760,L0x7fffffc762,L0x7fffffc764,L0x7fffffc766,L0x7fffffc768,L0x7fffffc76a,L0x7fffffc76c,L0x7fffffc76e];
+(* ldr	q6, [x19, #192]                             #! EA = L0x7fffffc770; Value = 0x0000000000000000; PC = 0x5555551540 *)
+mov %v6 [L0x7fffffc770,L0x7fffffc772,L0x7fffffc774,L0x7fffffc776,L0x7fffffc778,L0x7fffffc77a,L0x7fffffc77c,L0x7fffffc77e];
+(* ldr	q5, [x19, #208]                             #! EA = L0x7fffffc780; Value = 0x0000000000000000; PC = 0x5555551544 *)
+mov %v5 [L0x7fffffc780,L0x7fffffc782,L0x7fffffc784,L0x7fffffc786,L0x7fffffc788,L0x7fffffc78a,L0x7fffffc78c,L0x7fffffc78e];
+(* ldr	q4, [x19, #224]                             #! EA = L0x7fffffc790; Value = 0x0000000000000000; PC = 0x5555551548 *)
+mov %v4 [L0x7fffffc790,L0x7fffffc792,L0x7fffffc794,L0x7fffffc796,L0x7fffffc798,L0x7fffffc79a,L0x7fffffc79c,L0x7fffffc79e];
+(* ldr	q3, [x19, #240]                             #! EA = L0x7fffffc7a0; Value = 0x0000000000000000; PC = 0x555555154c *)
+mov %v3 [L0x7fffffc7a0,L0x7fffffc7a2,L0x7fffffc7a4,L0x7fffffc7a6,L0x7fffffc7a8,L0x7fffffc7aa,L0x7fffffc7ac,L0x7fffffc7ae];
+(* ldr	q2, [x19, #256]                             #! EA = L0x7fffffc7b0; Value = 0x0000000000000000; PC = 0x5555551550 *)
+mov %v2 [L0x7fffffc7b0,L0x7fffffc7b2,L0x7fffffc7b4,L0x7fffffc7b6,L0x7fffffc7b8,L0x7fffffc7ba,L0x7fffffc7bc,L0x7fffffc7be];
+(* ldr	q1, [x19, #272]                             #! EA = L0x7fffffc7c0; Value = 0x0000000000000000; PC = 0x5555551554 *)
+mov %v1 [L0x7fffffc7c0,L0x7fffffc7c2,L0x7fffffc7c4,L0x7fffffc7c6,L0x7fffffc7c8,L0x7fffffc7ca,L0x7fffffc7cc,L0x7fffffc7ce];
+(* ldr	q0, [x19, #144]                             #! EA = L0x7fffffc740; Value = 0x0000000000000000; PC = 0x5555551558 *)
+mov %v0 [L0x7fffffc740,L0x7fffffc742,L0x7fffffc744,L0x7fffffc746,L0x7fffffc748,L0x7fffffc74a,L0x7fffffc74c,L0x7fffffc74e];
+(* ldr	q16, [x19, #160]                            #! EA = L0x7fffffc750; Value = 0x0000000000000000; PC = 0x5555551560 *)
+mov %v16 [L0x7fffffc750,L0x7fffffc752,L0x7fffffc754,L0x7fffffc756,L0x7fffffc758,L0x7fffffc75a,L0x7fffffc75c,L0x7fffffc75e];
+(* str	q16, [sp]                                   #! EA = L0x7fffffc200; PC = 0x5555551564 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v16;
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551588 = 0x5555551588;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000000; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x55555519dc *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19, #144]                             #! EA = L0x5555572ce8; PC = 0x55555519e0 *)
-mov [L0x5555572ce8,L0x5555572cea,L0x5555572cec,L0x5555572cee,L0x5555572cf0,L0x5555572cf2,L0x5555572cf4,L0x5555572cf6] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x55555519e4 *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #160]                             #! EA = L0x5555572cf8; PC = 0x55555519e8 *)
-mov [L0x5555572cf8,L0x5555572cfa,L0x5555572cfc,L0x5555572cfe,L0x5555572d00,L0x5555572d02,L0x5555572d04,L0x5555572d06] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x55555519ec *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #176]                             #! EA = L0x5555572d08; PC = 0x55555519f0 *)
-mov [L0x5555572d08,L0x5555572d0a,L0x5555572d0c,L0x5555572d0e,L0x5555572d10,L0x5555572d12,L0x5555572d14,L0x5555572d16] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x55555519f4 *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #192]                             #! EA = L0x5555572d18; PC = 0x55555519f8 *)
-mov [L0x5555572d18,L0x5555572d1a,L0x5555572d1c,L0x5555572d1e,L0x5555572d20,L0x5555572d22,L0x5555572d24,L0x5555572d26] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x55555519fc *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #208]                             #! EA = L0x5555572d28; PC = 0x5555551a00 *)
-mov [L0x5555572d28,L0x5555572d2a,L0x5555572d2c,L0x5555572d2e,L0x5555572d30,L0x5555572d32,L0x5555572d34,L0x5555572d36] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551a04 *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #224]                             #! EA = L0x5555572d38; PC = 0x5555551a08 *)
-mov [L0x5555572d38,L0x5555572d3a,L0x5555572d3c,L0x5555572d3e,L0x5555572d40,L0x5555572d42,L0x5555572d44,L0x5555572d46] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551a0c *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #240]                             #! EA = L0x5555572d48; PC = 0x5555551a10 *)
-mov [L0x5555572d48,L0x5555572d4a,L0x5555572d4c,L0x5555572d4e,L0x5555572d50,L0x5555572d52,L0x5555572d54,L0x5555572d56] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x5555551a14 *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #256]                             #! EA = L0x5555572d58; PC = 0x5555551a18 *)
-mov [L0x5555572d58,L0x5555572d5a,L0x5555572d5c,L0x5555572d5e,L0x5555572d60,L0x5555572d62,L0x5555572d64,L0x5555572d66] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551a1c *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #272]                             #! EA = L0x5555572d68; PC = 0x5555551a20 *)
-mov [L0x5555572d68,L0x5555572d6a,L0x5555572d6c,L0x5555572d6e,L0x5555572d70,L0x5555572d72,L0x5555572d74,L0x5555572d76] %v0;
-(* #b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551a30 *)
-#b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551a30 = 0x5555551a30;
-(* ldr	q7, [x19, #32]                              #! EA = L0x5555572d98; Value = 0x0000000000000040; PC = 0x55555518f0 *)
-mov %v7 [L0x5555572d98,L0x5555572d9a,L0x5555572d9c,L0x5555572d9e,L0x5555572da0,L0x5555572da2,L0x5555572da4,L0x5555572da6];
-(* ldr	q6, [x19, #48]                              #! EA = L0x5555572da8; Value = 0x0000000000000040; PC = 0x55555518f4 *)
-mov %v6 [L0x5555572da8,L0x5555572daa,L0x5555572dac,L0x5555572dae,L0x5555572db0,L0x5555572db2,L0x5555572db4,L0x5555572db6];
-(* ldr	q5, [x19, #64]                              #! EA = L0x5555572db8; Value = 0x0000000000000040; PC = 0x55555518f8 *)
-mov %v5 [L0x5555572db8,L0x5555572dba,L0x5555572dbc,L0x5555572dbe,L0x5555572dc0,L0x5555572dc2,L0x5555572dc4,L0x5555572dc6];
-(* ldr	q4, [x19, #80]                              #! EA = L0x5555572dc8; Value = 0x0000000000000040; PC = 0x55555518fc *)
-mov %v4 [L0x5555572dc8,L0x5555572dca,L0x5555572dcc,L0x5555572dce,L0x5555572dd0,L0x5555572dd2,L0x5555572dd4,L0x5555572dd6];
-(* ldr	q3, [x19, #96]                              #! EA = L0x5555572dd8; Value = 0x0000000000000040; PC = 0x5555551900 *)
-mov %v3 [L0x5555572dd8,L0x5555572dda,L0x5555572ddc,L0x5555572dde,L0x5555572de0,L0x5555572de2,L0x5555572de4,L0x5555572de6];
-(* ldr	q2, [x19, #112]                             #! EA = L0x5555572de8; Value = 0x0000000000000040; PC = 0x5555551904 *)
-mov %v2 [L0x5555572de8,L0x5555572dea,L0x5555572dec,L0x5555572dee,L0x5555572df0,L0x5555572df2,L0x5555572df4,L0x5555572df6];
-(* ldr	q1, [x19, #128]                             #! EA = L0x5555572df8; Value = 0x0000000000000040; PC = 0x5555551908 *)
-mov %v1 [L0x5555572df8,L0x5555572dfa,L0x5555572dfc,L0x5555572dfe,L0x5555572e00,L0x5555572e02,L0x5555572e04,L0x5555572e06];
-(* ldr	q0, [x19, #16]                              #! EA = L0x5555572d88; Value = 0x0000000000000040; PC = 0x5555551914 *)
-mov %v0 [L0x5555572d88,L0x5555572d8a,L0x5555572d8c,L0x5555572d8e,L0x5555572d90,L0x5555572d92,L0x5555572d94,L0x5555572d96];
-(* str	q0, [sp]                                    #! EA = L0x7fffffeff0; PC = 0x5555551918 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v0;
-(* ldr	q0, [x19]                                   #! EA = L0x5555572d78; Value = 0x0000000000000040; PC = 0x555555193c *)
-mov %v0 [L0x5555572d78,L0x5555572d7a,L0x5555572d7c,L0x5555572d7e,L0x5555572d80,L0x5555572d82,L0x5555572d84,L0x5555572d86];
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551940 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551940 = 0x5555551940;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x555555158c *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19, #144]                             #! EA = L0x7fffffc740; PC = 0x5555551590 *)
+mov [L0x7fffffc740,L0x7fffffc742,L0x7fffffc744,L0x7fffffc746,L0x7fffffc748,L0x7fffffc74a,L0x7fffffc74c,L0x7fffffc74e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x5555551594 *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #160]                             #! EA = L0x7fffffc750; PC = 0x5555551598 *)
+mov [L0x7fffffc750,L0x7fffffc752,L0x7fffffc754,L0x7fffffc756,L0x7fffffc758,L0x7fffffc75a,L0x7fffffc75c,L0x7fffffc75e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x555555159c *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #176]                             #! EA = L0x7fffffc760; PC = 0x55555515a0 *)
+mov [L0x7fffffc760,L0x7fffffc762,L0x7fffffc764,L0x7fffffc766,L0x7fffffc768,L0x7fffffc76a,L0x7fffffc76c,L0x7fffffc76e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x55555515a4 *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #192]                             #! EA = L0x7fffffc770; PC = 0x55555515a8 *)
+mov [L0x7fffffc770,L0x7fffffc772,L0x7fffffc774,L0x7fffffc776,L0x7fffffc778,L0x7fffffc77a,L0x7fffffc77c,L0x7fffffc77e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x55555515ac *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #208]                             #! EA = L0x7fffffc780; PC = 0x55555515b0 *)
+mov [L0x7fffffc780,L0x7fffffc782,L0x7fffffc784,L0x7fffffc786,L0x7fffffc788,L0x7fffffc78a,L0x7fffffc78c,L0x7fffffc78e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x55555515b4 *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #224]                             #! EA = L0x7fffffc790; PC = 0x55555515b8 *)
+mov [L0x7fffffc790,L0x7fffffc792,L0x7fffffc794,L0x7fffffc796,L0x7fffffc798,L0x7fffffc79a,L0x7fffffc79c,L0x7fffffc79e] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555515bc *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #240]                             #! EA = L0x7fffffc7a0; PC = 0x55555515c0 *)
+mov [L0x7fffffc7a0,L0x7fffffc7a2,L0x7fffffc7a4,L0x7fffffc7a6,L0x7fffffc7a8,L0x7fffffc7aa,L0x7fffffc7ac,L0x7fffffc7ae] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x55555515c4 *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #256]                             #! EA = L0x7fffffc7b0; PC = 0x55555515c8 *)
+mov [L0x7fffffc7b0,L0x7fffffc7b2,L0x7fffffc7b4,L0x7fffffc7b6,L0x7fffffc7b8,L0x7fffffc7ba,L0x7fffffc7bc,L0x7fffffc7be] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x55555515cc *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #272]                             #! EA = L0x7fffffc7c0; PC = 0x55555515d0 *)
+mov [L0x7fffffc7c0,L0x7fffffc7c2,L0x7fffffc7c4,L0x7fffffc7c6,L0x7fffffc7c8,L0x7fffffc7ca,L0x7fffffc7cc,L0x7fffffc7ce] %v0;
+(* #b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x55555515e0 *)
+#b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x55555515e0 = 0x55555515e0;
+(* ldr	q7, [x19, #32]                              #! EA = L0x7fffffc7f0; Value = 0x0000000000000000; PC = 0x55555514a0 *)
+mov %v7 [L0x7fffffc7f0,L0x7fffffc7f2,L0x7fffffc7f4,L0x7fffffc7f6,L0x7fffffc7f8,L0x7fffffc7fa,L0x7fffffc7fc,L0x7fffffc7fe];
+(* ldr	q6, [x19, #48]                              #! EA = L0x7fffffc800; Value = 0x0000000000000000; PC = 0x55555514a4 *)
+mov %v6 [L0x7fffffc800,L0x7fffffc802,L0x7fffffc804,L0x7fffffc806,L0x7fffffc808,L0x7fffffc80a,L0x7fffffc80c,L0x7fffffc80e];
+(* ldr	q5, [x19, #64]                              #! EA = L0x7fffffc810; Value = 0x0000000000000000; PC = 0x55555514a8 *)
+mov %v5 [L0x7fffffc810,L0x7fffffc812,L0x7fffffc814,L0x7fffffc816,L0x7fffffc818,L0x7fffffc81a,L0x7fffffc81c,L0x7fffffc81e];
+(* ldr	q4, [x19, #80]                              #! EA = L0x7fffffc820; Value = 0x0000000000000000; PC = 0x55555514ac *)
+mov %v4 [L0x7fffffc820,L0x7fffffc822,L0x7fffffc824,L0x7fffffc826,L0x7fffffc828,L0x7fffffc82a,L0x7fffffc82c,L0x7fffffc82e];
+(* ldr	q3, [x19, #96]                              #! EA = L0x7fffffc830; Value = 0x0000000000000000; PC = 0x55555514b0 *)
+mov %v3 [L0x7fffffc830,L0x7fffffc832,L0x7fffffc834,L0x7fffffc836,L0x7fffffc838,L0x7fffffc83a,L0x7fffffc83c,L0x7fffffc83e];
+(* ldr	q2, [x19, #112]                             #! EA = L0x7fffffc840; Value = 0x0000000000000000; PC = 0x55555514b4 *)
+mov %v2 [L0x7fffffc840,L0x7fffffc842,L0x7fffffc844,L0x7fffffc846,L0x7fffffc848,L0x7fffffc84a,L0x7fffffc84c,L0x7fffffc84e];
+(* ldr	q1, [x19, #128]                             #! EA = L0x7fffffc850; Value = 0x0000000000000000; PC = 0x55555514b8 *)
+mov %v1 [L0x7fffffc850,L0x7fffffc852,L0x7fffffc854,L0x7fffffc856,L0x7fffffc858,L0x7fffffc85a,L0x7fffffc85c,L0x7fffffc85e];
+(* ldr	q0, [x19, #16]                              #! EA = L0x7fffffc7e0; Value = 0x0000000000000000; PC = 0x55555514c4 *)
+mov %v0 [L0x7fffffc7e0,L0x7fffffc7e2,L0x7fffffc7e4,L0x7fffffc7e6,L0x7fffffc7e8,L0x7fffffc7ea,L0x7fffffc7ec,L0x7fffffc7ee];
+(* str	q0, [sp]                                    #! EA = L0x7fffffc200; PC = 0x55555514c8 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v0;
+(* ldr	q0, [x19]                                   #! EA = L0x7fffffc7d0; Value = 0x0000000000000000; PC = 0x55555514ec *)
+mov %v0 [L0x7fffffc7d0,L0x7fffffc7d2,L0x7fffffc7d4,L0x7fffffc7d6,L0x7fffffc7d8,L0x7fffffc7da,L0x7fffffc7dc,L0x7fffffc7de];
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555514f0 = 0x55555514f0;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000040; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000480; PC = 0x5555551944 *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19]                                   #! EA = L0x5555572d78; PC = 0x5555551948 *)
-mov [L0x5555572d78,L0x5555572d7a,L0x5555572d7c,L0x5555572d7e,L0x5555572d80,L0x5555572d82,L0x5555572d84,L0x5555572d86] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555194c *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #16]                              #! EA = L0x5555572d88; PC = 0x5555551950 *)
-mov [L0x5555572d88,L0x5555572d8a,L0x5555572d8c,L0x5555572d8e,L0x5555572d90,L0x5555572d92,L0x5555572d94,L0x5555572d96] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x5555551954 *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #32]                              #! EA = L0x5555572d98; PC = 0x5555551958 *)
-mov [L0x5555572d98,L0x5555572d9a,L0x5555572d9c,L0x5555572d9e,L0x5555572da0,L0x5555572da2,L0x5555572da4,L0x5555572da6] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x555555195c *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #48]                              #! EA = L0x5555572da8; PC = 0x5555551960 *)
-mov [L0x5555572da8,L0x5555572daa,L0x5555572dac,L0x5555572dae,L0x5555572db0,L0x5555572db2,L0x5555572db4,L0x5555572db6] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551964 *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #64]                              #! EA = L0x5555572db8; PC = 0x5555551968 *)
-mov [L0x5555572db8,L0x5555572dba,L0x5555572dbc,L0x5555572dbe,L0x5555572dc0,L0x5555572dc2,L0x5555572dc4,L0x5555572dc6] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x555555196c *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #80]                              #! EA = L0x5555572dc8; PC = 0x5555551970 *)
-mov [L0x5555572dc8,L0x5555572dca,L0x5555572dcc,L0x5555572dce,L0x5555572dd0,L0x5555572dd2,L0x5555572dd4,L0x5555572dd6] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551974 *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #96]                              #! EA = L0x5555572dd8; PC = 0x5555551978 *)
-mov [L0x5555572dd8,L0x5555572dda,L0x5555572ddc,L0x5555572dde,L0x5555572de0,L0x5555572de2,L0x5555572de4,L0x5555572de6] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x555555197c *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #112]                             #! EA = L0x5555572de8; PC = 0x5555551980 *)
-mov [L0x5555572de8,L0x5555572dea,L0x5555572dec,L0x5555572dee,L0x5555572df0,L0x5555572df2,L0x5555572df4,L0x5555572df6] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551984 *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #128]                             #! EA = L0x5555572df8; PC = 0x5555551988 *)
-mov [L0x5555572df8,L0x5555572dfa,L0x5555572dfc,L0x5555572dfe,L0x5555572e00,L0x5555572e02,L0x5555572e04,L0x5555572e06] %v0;
-(* ldr	q7, [x19, #176]                             #! EA = L0x5555572e28; Value = 0x0000000000000000; PC = 0x555555198c *)
-mov %v7 [L0x5555572e28,L0x5555572e2a,L0x5555572e2c,L0x5555572e2e,L0x5555572e30,L0x5555572e32,L0x5555572e34,L0x5555572e36];
-(* ldr	q6, [x19, #192]                             #! EA = L0x5555572e38; Value = 0x0000000000000000; PC = 0x5555551990 *)
-mov %v6 [L0x5555572e38,L0x5555572e3a,L0x5555572e3c,L0x5555572e3e,L0x5555572e40,L0x5555572e42,L0x5555572e44,L0x5555572e46];
-(* ldr	q5, [x19, #208]                             #! EA = L0x5555572e48; Value = 0x0000000000000000; PC = 0x5555551994 *)
-mov %v5 [L0x5555572e48,L0x5555572e4a,L0x5555572e4c,L0x5555572e4e,L0x5555572e50,L0x5555572e52,L0x5555572e54,L0x5555572e56];
-(* ldr	q4, [x19, #224]                             #! EA = L0x5555572e58; Value = 0x0000000000000000; PC = 0x5555551998 *)
-mov %v4 [L0x5555572e58,L0x5555572e5a,L0x5555572e5c,L0x5555572e5e,L0x5555572e60,L0x5555572e62,L0x5555572e64,L0x5555572e66];
-(* ldr	q3, [x19, #240]                             #! EA = L0x5555572e68; Value = 0x0000000000000000; PC = 0x555555199c *)
-mov %v3 [L0x5555572e68,L0x5555572e6a,L0x5555572e6c,L0x5555572e6e,L0x5555572e70,L0x5555572e72,L0x5555572e74,L0x5555572e76];
-(* ldr	q2, [x19, #256]                             #! EA = L0x5555572e78; Value = 0x0000000000000000; PC = 0x55555519a0 *)
-mov %v2 [L0x5555572e78,L0x5555572e7a,L0x5555572e7c,L0x5555572e7e,L0x5555572e80,L0x5555572e82,L0x5555572e84,L0x5555572e86];
-(* ldr	q1, [x19, #272]                             #! EA = L0x5555572e88; Value = 0x0000000000000000; PC = 0x55555519a4 *)
-mov %v1 [L0x5555572e88,L0x5555572e8a,L0x5555572e8c,L0x5555572e8e,L0x5555572e90,L0x5555572e92,L0x5555572e94,L0x5555572e96];
-(* ldr	q0, [x19, #144]                             #! EA = L0x5555572e08; Value = 0x0000000000000000; PC = 0x55555519a8 *)
-mov %v0 [L0x5555572e08,L0x5555572e0a,L0x5555572e0c,L0x5555572e0e,L0x5555572e10,L0x5555572e12,L0x5555572e14,L0x5555572e16];
-(* ldr	q16, [x19, #160]                            #! EA = L0x5555572e18; Value = 0x0000000000000000; PC = 0x55555519b0 *)
-mov %v16 [L0x5555572e18,L0x5555572e1a,L0x5555572e1c,L0x5555572e1e,L0x5555572e20,L0x5555572e22,L0x5555572e24,L0x5555572e26];
-(* str	q16, [sp]                                   #! EA = L0x7fffffeff0; PC = 0x55555519b4 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v16;
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555519d8 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555519d8 = 0x55555519d8;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x55555514f4 *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19]                                   #! EA = L0x7fffffc7d0; PC = 0x55555514f8 *)
+mov [L0x7fffffc7d0,L0x7fffffc7d2,L0x7fffffc7d4,L0x7fffffc7d6,L0x7fffffc7d8,L0x7fffffc7da,L0x7fffffc7dc,L0x7fffffc7de] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x55555514fc *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #16]                              #! EA = L0x7fffffc7e0; PC = 0x5555551500 *)
+mov [L0x7fffffc7e0,L0x7fffffc7e2,L0x7fffffc7e4,L0x7fffffc7e6,L0x7fffffc7e8,L0x7fffffc7ea,L0x7fffffc7ec,L0x7fffffc7ee] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x5555551504 *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #32]                              #! EA = L0x7fffffc7f0; PC = 0x5555551508 *)
+mov [L0x7fffffc7f0,L0x7fffffc7f2,L0x7fffffc7f4,L0x7fffffc7f6,L0x7fffffc7f8,L0x7fffffc7fa,L0x7fffffc7fc,L0x7fffffc7fe] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x555555150c *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #48]                              #! EA = L0x7fffffc800; PC = 0x5555551510 *)
+mov [L0x7fffffc800,L0x7fffffc802,L0x7fffffc804,L0x7fffffc806,L0x7fffffc808,L0x7fffffc80a,L0x7fffffc80c,L0x7fffffc80e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x5555551514 *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #64]                              #! EA = L0x7fffffc810; PC = 0x5555551518 *)
+mov [L0x7fffffc810,L0x7fffffc812,L0x7fffffc814,L0x7fffffc816,L0x7fffffc818,L0x7fffffc81a,L0x7fffffc81c,L0x7fffffc81e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x555555151c *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #80]                              #! EA = L0x7fffffc820; PC = 0x5555551520 *)
+mov [L0x7fffffc820,L0x7fffffc822,L0x7fffffc824,L0x7fffffc826,L0x7fffffc828,L0x7fffffc82a,L0x7fffffc82c,L0x7fffffc82e] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551524 *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #96]                              #! EA = L0x7fffffc830; PC = 0x5555551528 *)
+mov [L0x7fffffc830,L0x7fffffc832,L0x7fffffc834,L0x7fffffc836,L0x7fffffc838,L0x7fffffc83a,L0x7fffffc83c,L0x7fffffc83e] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x555555152c *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #112]                             #! EA = L0x7fffffc840; PC = 0x5555551530 *)
+mov [L0x7fffffc840,L0x7fffffc842,L0x7fffffc844,L0x7fffffc846,L0x7fffffc848,L0x7fffffc84a,L0x7fffffc84c,L0x7fffffc84e] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x5555551534 *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #128]                             #! EA = L0x7fffffc850; PC = 0x5555551538 *)
+mov [L0x7fffffc850,L0x7fffffc852,L0x7fffffc854,L0x7fffffc856,L0x7fffffc858,L0x7fffffc85a,L0x7fffffc85c,L0x7fffffc85e] %v0;
+(* ldr	q7, [x19, #176]                             #! EA = L0x7fffffc880; Value = 0x0000000000000000; PC = 0x555555153c *)
+mov %v7 [L0x7fffffc880,L0x7fffffc882,L0x7fffffc884,L0x7fffffc886,L0x7fffffc888,L0x7fffffc88a,L0x7fffffc88c,L0x7fffffc88e];
+(* ldr	q6, [x19, #192]                             #! EA = L0x7fffffc890; Value = 0x0000000000000000; PC = 0x5555551540 *)
+mov %v6 [L0x7fffffc890,L0x7fffffc892,L0x7fffffc894,L0x7fffffc896,L0x7fffffc898,L0x7fffffc89a,L0x7fffffc89c,L0x7fffffc89e];
+(* ldr	q5, [x19, #208]                             #! EA = L0x7fffffc8a0; Value = 0x0000000000000000; PC = 0x5555551544 *)
+mov %v5 [L0x7fffffc8a0,L0x7fffffc8a2,L0x7fffffc8a4,L0x7fffffc8a6,L0x7fffffc8a8,L0x7fffffc8aa,L0x7fffffc8ac,L0x7fffffc8ae];
+(* ldr	q4, [x19, #224]                             #! EA = L0x7fffffc8b0; Value = 0x0000000000000000; PC = 0x5555551548 *)
+mov %v4 [L0x7fffffc8b0,L0x7fffffc8b2,L0x7fffffc8b4,L0x7fffffc8b6,L0x7fffffc8b8,L0x7fffffc8ba,L0x7fffffc8bc,L0x7fffffc8be];
+(* ldr	q3, [x19, #240]                             #! EA = L0x7fffffc8c0; Value = 0x0000000000000000; PC = 0x555555154c *)
+mov %v3 [L0x7fffffc8c0,L0x7fffffc8c2,L0x7fffffc8c4,L0x7fffffc8c6,L0x7fffffc8c8,L0x7fffffc8ca,L0x7fffffc8cc,L0x7fffffc8ce];
+(* ldr	q2, [x19, #256]                             #! EA = L0x7fffffc8d0; Value = 0x0000000000000000; PC = 0x5555551550 *)
+mov %v2 [L0x7fffffc8d0,L0x7fffffc8d2,L0x7fffffc8d4,L0x7fffffc8d6,L0x7fffffc8d8,L0x7fffffc8da,L0x7fffffc8dc,L0x7fffffc8de];
+(* ldr	q1, [x19, #272]                             #! EA = L0x7fffffc8e0; Value = 0x0000000000000000; PC = 0x5555551554 *)
+mov %v1 [L0x7fffffc8e0,L0x7fffffc8e2,L0x7fffffc8e4,L0x7fffffc8e6,L0x7fffffc8e8,L0x7fffffc8ea,L0x7fffffc8ec,L0x7fffffc8ee];
+(* ldr	q0, [x19, #144]                             #! EA = L0x7fffffc860; Value = 0x0000000000000000; PC = 0x5555551558 *)
+mov %v0 [L0x7fffffc860,L0x7fffffc862,L0x7fffffc864,L0x7fffffc866,L0x7fffffc868,L0x7fffffc86a,L0x7fffffc86c,L0x7fffffc86e];
+(* ldr	q16, [x19, #160]                            #! EA = L0x7fffffc870; Value = 0x0000000000000000; PC = 0x5555551560 *)
+mov %v16 [L0x7fffffc870,L0x7fffffc872,L0x7fffffc874,L0x7fffffc876,L0x7fffffc878,L0x7fffffc87a,L0x7fffffc87c,L0x7fffffc87e];
+(* str	q16, [sp]                                   #! EA = L0x7fffffc200; PC = 0x5555551564 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v16;
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551588 = 0x5555551588;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000000; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x55555519dc *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19, #144]                             #! EA = L0x5555572e08; PC = 0x55555519e0 *)
-mov [L0x5555572e08,L0x5555572e0a,L0x5555572e0c,L0x5555572e0e,L0x5555572e10,L0x5555572e12,L0x5555572e14,L0x5555572e16] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x55555519e4 *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #160]                             #! EA = L0x5555572e18; PC = 0x55555519e8 *)
-mov [L0x5555572e18,L0x5555572e1a,L0x5555572e1c,L0x5555572e1e,L0x5555572e20,L0x5555572e22,L0x5555572e24,L0x5555572e26] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x55555519ec *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #176]                             #! EA = L0x5555572e28; PC = 0x55555519f0 *)
-mov [L0x5555572e28,L0x5555572e2a,L0x5555572e2c,L0x5555572e2e,L0x5555572e30,L0x5555572e32,L0x5555572e34,L0x5555572e36] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x55555519f4 *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #192]                             #! EA = L0x5555572e38; PC = 0x55555519f8 *)
-mov [L0x5555572e38,L0x5555572e3a,L0x5555572e3c,L0x5555572e3e,L0x5555572e40,L0x5555572e42,L0x5555572e44,L0x5555572e46] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x55555519fc *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #208]                             #! EA = L0x5555572e48; PC = 0x5555551a00 *)
-mov [L0x5555572e48,L0x5555572e4a,L0x5555572e4c,L0x5555572e4e,L0x5555572e50,L0x5555572e52,L0x5555572e54,L0x5555572e56] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551a04 *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #224]                             #! EA = L0x5555572e58; PC = 0x5555551a08 *)
-mov [L0x5555572e58,L0x5555572e5a,L0x5555572e5c,L0x5555572e5e,L0x5555572e60,L0x5555572e62,L0x5555572e64,L0x5555572e66] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551a0c *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #240]                             #! EA = L0x5555572e68; PC = 0x5555551a10 *)
-mov [L0x5555572e68,L0x5555572e6a,L0x5555572e6c,L0x5555572e6e,L0x5555572e70,L0x5555572e72,L0x5555572e74,L0x5555572e76] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x5555551a14 *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #256]                             #! EA = L0x5555572e78; PC = 0x5555551a18 *)
-mov [L0x5555572e78,L0x5555572e7a,L0x5555572e7c,L0x5555572e7e,L0x5555572e80,L0x5555572e82,L0x5555572e84,L0x5555572e86] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551a1c *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #272]                             #! EA = L0x5555572e88; PC = 0x5555551a20 *)
-mov [L0x5555572e88,L0x5555572e8a,L0x5555572e8c,L0x5555572e8e,L0x5555572e90,L0x5555572e92,L0x5555572e94,L0x5555572e96] %v0;
-(* #b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551a30 *)
-#b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551a30 = 0x5555551a30;
-(* ldr	q7, [x19, #32]                              #! EA = L0x5555572eb8; Value = 0x0000000000000040; PC = 0x55555518f0 *)
-mov %v7 [L0x5555572eb8,L0x5555572eba,L0x5555572ebc,L0x5555572ebe,L0x5555572ec0,L0x5555572ec2,L0x5555572ec4,L0x5555572ec6];
-(* ldr	q6, [x19, #48]                              #! EA = L0x5555572ec8; Value = 0x0000000000000040; PC = 0x55555518f4 *)
-mov %v6 [L0x5555572ec8,L0x5555572eca,L0x5555572ecc,L0x5555572ece,L0x5555572ed0,L0x5555572ed2,L0x5555572ed4,L0x5555572ed6];
-(* ldr	q5, [x19, #64]                              #! EA = L0x5555572ed8; Value = 0x0000000000000040; PC = 0x55555518f8 *)
-mov %v5 [L0x5555572ed8,L0x5555572eda,L0x5555572edc,L0x5555572ede,L0x5555572ee0,L0x5555572ee2,L0x5555572ee4,L0x5555572ee6];
-(* ldr	q4, [x19, #80]                              #! EA = L0x5555572ee8; Value = 0x0000000000000040; PC = 0x55555518fc *)
-mov %v4 [L0x5555572ee8,L0x5555572eea,L0x5555572eec,L0x5555572eee,L0x5555572ef0,L0x5555572ef2,L0x5555572ef4,L0x5555572ef6];
-(* ldr	q3, [x19, #96]                              #! EA = L0x5555572ef8; Value = 0x0000000000000040; PC = 0x5555551900 *)
-mov %v3 [L0x5555572ef8,L0x5555572efa,L0x5555572efc,L0x5555572efe,L0x5555572f00,L0x5555572f02,L0x5555572f04,L0x5555572f06];
-(* ldr	q2, [x19, #112]                             #! EA = L0x5555572f08; Value = 0x0000000000000040; PC = 0x5555551904 *)
-mov %v2 [L0x5555572f08,L0x5555572f0a,L0x5555572f0c,L0x5555572f0e,L0x5555572f10,L0x5555572f12,L0x5555572f14,L0x5555572f16];
-(* ldr	q1, [x19, #128]                             #! EA = L0x5555572f18; Value = 0x0000000000000040; PC = 0x5555551908 *)
-mov %v1 [L0x5555572f18,L0x5555572f1a,L0x5555572f1c,L0x5555572f1e,L0x5555572f20,L0x5555572f22,L0x5555572f24,L0x5555572f26];
-(* ldr	q0, [x19, #16]                              #! EA = L0x5555572ea8; Value = 0x0000000000000040; PC = 0x5555551914 *)
-mov %v0 [L0x5555572ea8,L0x5555572eaa,L0x5555572eac,L0x5555572eae,L0x5555572eb0,L0x5555572eb2,L0x5555572eb4,L0x5555572eb6];
-(* str	q0, [sp]                                    #! EA = L0x7fffffeff0; PC = 0x5555551918 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v0;
-(* ldr	q0, [x19]                                   #! EA = L0x5555572e98; Value = 0x0000000000000040; PC = 0x555555193c *)
-mov %v0 [L0x5555572e98,L0x5555572e9a,L0x5555572e9c,L0x5555572e9e,L0x5555572ea0,L0x5555572ea2,L0x5555572ea4,L0x5555572ea6];
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551940 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551940 = 0x5555551940;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x555555158c *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19, #144]                             #! EA = L0x7fffffc860; PC = 0x5555551590 *)
+mov [L0x7fffffc860,L0x7fffffc862,L0x7fffffc864,L0x7fffffc866,L0x7fffffc868,L0x7fffffc86a,L0x7fffffc86c,L0x7fffffc86e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x5555551594 *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #160]                             #! EA = L0x7fffffc870; PC = 0x5555551598 *)
+mov [L0x7fffffc870,L0x7fffffc872,L0x7fffffc874,L0x7fffffc876,L0x7fffffc878,L0x7fffffc87a,L0x7fffffc87c,L0x7fffffc87e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x555555159c *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #176]                             #! EA = L0x7fffffc880; PC = 0x55555515a0 *)
+mov [L0x7fffffc880,L0x7fffffc882,L0x7fffffc884,L0x7fffffc886,L0x7fffffc888,L0x7fffffc88a,L0x7fffffc88c,L0x7fffffc88e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x55555515a4 *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #192]                             #! EA = L0x7fffffc890; PC = 0x55555515a8 *)
+mov [L0x7fffffc890,L0x7fffffc892,L0x7fffffc894,L0x7fffffc896,L0x7fffffc898,L0x7fffffc89a,L0x7fffffc89c,L0x7fffffc89e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x55555515ac *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #208]                             #! EA = L0x7fffffc8a0; PC = 0x55555515b0 *)
+mov [L0x7fffffc8a0,L0x7fffffc8a2,L0x7fffffc8a4,L0x7fffffc8a6,L0x7fffffc8a8,L0x7fffffc8aa,L0x7fffffc8ac,L0x7fffffc8ae] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x55555515b4 *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #224]                             #! EA = L0x7fffffc8b0; PC = 0x55555515b8 *)
+mov [L0x7fffffc8b0,L0x7fffffc8b2,L0x7fffffc8b4,L0x7fffffc8b6,L0x7fffffc8b8,L0x7fffffc8ba,L0x7fffffc8bc,L0x7fffffc8be] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555515bc *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #240]                             #! EA = L0x7fffffc8c0; PC = 0x55555515c0 *)
+mov [L0x7fffffc8c0,L0x7fffffc8c2,L0x7fffffc8c4,L0x7fffffc8c6,L0x7fffffc8c8,L0x7fffffc8ca,L0x7fffffc8cc,L0x7fffffc8ce] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x55555515c4 *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #256]                             #! EA = L0x7fffffc8d0; PC = 0x55555515c8 *)
+mov [L0x7fffffc8d0,L0x7fffffc8d2,L0x7fffffc8d4,L0x7fffffc8d6,L0x7fffffc8d8,L0x7fffffc8da,L0x7fffffc8dc,L0x7fffffc8de] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x55555515cc *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #272]                             #! EA = L0x7fffffc8e0; PC = 0x55555515d0 *)
+mov [L0x7fffffc8e0,L0x7fffffc8e2,L0x7fffffc8e4,L0x7fffffc8e6,L0x7fffffc8e8,L0x7fffffc8ea,L0x7fffffc8ec,L0x7fffffc8ee] %v0;
+(* #b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x55555515e0 *)
+#b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x55555515e0 = 0x55555515e0;
+(* ldr	q7, [x19, #32]                              #! EA = L0x7fffffc910; Value = 0x0000000000000000; PC = 0x55555514a0 *)
+mov %v7 [L0x7fffffc910,L0x7fffffc912,L0x7fffffc914,L0x7fffffc916,L0x7fffffc918,L0x7fffffc91a,L0x7fffffc91c,L0x7fffffc91e];
+(* ldr	q6, [x19, #48]                              #! EA = L0x7fffffc920; Value = 0x0000000000000000; PC = 0x55555514a4 *)
+mov %v6 [L0x7fffffc920,L0x7fffffc922,L0x7fffffc924,L0x7fffffc926,L0x7fffffc928,L0x7fffffc92a,L0x7fffffc92c,L0x7fffffc92e];
+(* ldr	q5, [x19, #64]                              #! EA = L0x7fffffc930; Value = 0x0000000000000000; PC = 0x55555514a8 *)
+mov %v5 [L0x7fffffc930,L0x7fffffc932,L0x7fffffc934,L0x7fffffc936,L0x7fffffc938,L0x7fffffc93a,L0x7fffffc93c,L0x7fffffc93e];
+(* ldr	q4, [x19, #80]                              #! EA = L0x7fffffc940; Value = 0x0000000000000000; PC = 0x55555514ac *)
+mov %v4 [L0x7fffffc940,L0x7fffffc942,L0x7fffffc944,L0x7fffffc946,L0x7fffffc948,L0x7fffffc94a,L0x7fffffc94c,L0x7fffffc94e];
+(* ldr	q3, [x19, #96]                              #! EA = L0x7fffffc950; Value = 0x0000000000000000; PC = 0x55555514b0 *)
+mov %v3 [L0x7fffffc950,L0x7fffffc952,L0x7fffffc954,L0x7fffffc956,L0x7fffffc958,L0x7fffffc95a,L0x7fffffc95c,L0x7fffffc95e];
+(* ldr	q2, [x19, #112]                             #! EA = L0x7fffffc960; Value = 0x0000000000000000; PC = 0x55555514b4 *)
+mov %v2 [L0x7fffffc960,L0x7fffffc962,L0x7fffffc964,L0x7fffffc966,L0x7fffffc968,L0x7fffffc96a,L0x7fffffc96c,L0x7fffffc96e];
+(* ldr	q1, [x19, #128]                             #! EA = L0x7fffffc970; Value = 0x0000000000000000; PC = 0x55555514b8 *)
+mov %v1 [L0x7fffffc970,L0x7fffffc972,L0x7fffffc974,L0x7fffffc976,L0x7fffffc978,L0x7fffffc97a,L0x7fffffc97c,L0x7fffffc97e];
+(* ldr	q0, [x19, #16]                              #! EA = L0x7fffffc900; Value = 0x0000000000000000; PC = 0x55555514c4 *)
+mov %v0 [L0x7fffffc900,L0x7fffffc902,L0x7fffffc904,L0x7fffffc906,L0x7fffffc908,L0x7fffffc90a,L0x7fffffc90c,L0x7fffffc90e];
+(* str	q0, [sp]                                    #! EA = L0x7fffffc200; PC = 0x55555514c8 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v0;
+(* ldr	q0, [x19]                                   #! EA = L0x7fffffc8f0; Value = 0x0000000000000000; PC = 0x55555514ec *)
+mov %v0 [L0x7fffffc8f0,L0x7fffffc8f2,L0x7fffffc8f4,L0x7fffffc8f6,L0x7fffffc8f8,L0x7fffffc8fa,L0x7fffffc8fc,L0x7fffffc8fe];
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555514f0 = 0x55555514f0;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000040; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000480; PC = 0x5555551944 *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19]                                   #! EA = L0x5555572e98; PC = 0x5555551948 *)
-mov [L0x5555572e98,L0x5555572e9a,L0x5555572e9c,L0x5555572e9e,L0x5555572ea0,L0x5555572ea2,L0x5555572ea4,L0x5555572ea6] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555194c *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #16]                              #! EA = L0x5555572ea8; PC = 0x5555551950 *)
-mov [L0x5555572ea8,L0x5555572eaa,L0x5555572eac,L0x5555572eae,L0x5555572eb0,L0x5555572eb2,L0x5555572eb4,L0x5555572eb6] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x5555551954 *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #32]                              #! EA = L0x5555572eb8; PC = 0x5555551958 *)
-mov [L0x5555572eb8,L0x5555572eba,L0x5555572ebc,L0x5555572ebe,L0x5555572ec0,L0x5555572ec2,L0x5555572ec4,L0x5555572ec6] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x555555195c *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #48]                              #! EA = L0x5555572ec8; PC = 0x5555551960 *)
-mov [L0x5555572ec8,L0x5555572eca,L0x5555572ecc,L0x5555572ece,L0x5555572ed0,L0x5555572ed2,L0x5555572ed4,L0x5555572ed6] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551964 *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #64]                              #! EA = L0x5555572ed8; PC = 0x5555551968 *)
-mov [L0x5555572ed8,L0x5555572eda,L0x5555572edc,L0x5555572ede,L0x5555572ee0,L0x5555572ee2,L0x5555572ee4,L0x5555572ee6] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x555555196c *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #80]                              #! EA = L0x5555572ee8; PC = 0x5555551970 *)
-mov [L0x5555572ee8,L0x5555572eea,L0x5555572eec,L0x5555572eee,L0x5555572ef0,L0x5555572ef2,L0x5555572ef4,L0x5555572ef6] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551974 *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #96]                              #! EA = L0x5555572ef8; PC = 0x5555551978 *)
-mov [L0x5555572ef8,L0x5555572efa,L0x5555572efc,L0x5555572efe,L0x5555572f00,L0x5555572f02,L0x5555572f04,L0x5555572f06] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x555555197c *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #112]                             #! EA = L0x5555572f08; PC = 0x5555551980 *)
-mov [L0x5555572f08,L0x5555572f0a,L0x5555572f0c,L0x5555572f0e,L0x5555572f10,L0x5555572f12,L0x5555572f14,L0x5555572f16] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551984 *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #128]                             #! EA = L0x5555572f18; PC = 0x5555551988 *)
-mov [L0x5555572f18,L0x5555572f1a,L0x5555572f1c,L0x5555572f1e,L0x5555572f20,L0x5555572f22,L0x5555572f24,L0x5555572f26] %v0;
-(* ldr	q7, [x19, #176]                             #! EA = L0x5555572f48; Value = 0x0000000000000000; PC = 0x555555198c *)
-mov %v7 [L0x5555572f48,L0x5555572f4a,L0x5555572f4c,L0x5555572f4e,L0x5555572f50,L0x5555572f52,L0x5555572f54,L0x5555572f56];
-(* ldr	q6, [x19, #192]                             #! EA = L0x5555572f58; Value = 0x0000000000000000; PC = 0x5555551990 *)
-mov %v6 [L0x5555572f58,L0x5555572f5a,L0x5555572f5c,L0x5555572f5e,L0x5555572f60,L0x5555572f62,L0x5555572f64,L0x5555572f66];
-(* ldr	q5, [x19, #208]                             #! EA = L0x5555572f68; Value = 0x0000000000000000; PC = 0x5555551994 *)
-mov %v5 [L0x5555572f68,L0x5555572f6a,L0x5555572f6c,L0x5555572f6e,L0x5555572f70,L0x5555572f72,L0x5555572f74,L0x5555572f76];
-(* ldr	q4, [x19, #224]                             #! EA = L0x5555572f78; Value = 0x0000000000000000; PC = 0x5555551998 *)
-mov %v4 [L0x5555572f78,L0x5555572f7a,L0x5555572f7c,L0x5555572f7e,L0x5555572f80,L0x5555572f82,L0x5555572f84,L0x5555572f86];
-(* ldr	q3, [x19, #240]                             #! EA = L0x5555572f88; Value = 0x0000000000000000; PC = 0x555555199c *)
-mov %v3 [L0x5555572f88,L0x5555572f8a,L0x5555572f8c,L0x5555572f8e,L0x5555572f90,L0x5555572f92,L0x5555572f94,L0x5555572f96];
-(* ldr	q2, [x19, #256]                             #! EA = L0x5555572f98; Value = 0x0000000000000000; PC = 0x55555519a0 *)
-mov %v2 [L0x5555572f98,L0x5555572f9a,L0x5555572f9c,L0x5555572f9e,L0x5555572fa0,L0x5555572fa2,L0x5555572fa4,L0x5555572fa6];
-(* ldr	q1, [x19, #272]                             #! EA = L0x5555572fa8; Value = 0x0000000000000000; PC = 0x55555519a4 *)
-mov %v1 [L0x5555572fa8,L0x5555572faa,L0x5555572fac,L0x5555572fae,L0x5555572fb0,L0x5555572fb2,L0x5555572fb4,L0x5555572fb6];
-(* ldr	q0, [x19, #144]                             #! EA = L0x5555572f28; Value = 0x0000000000000000; PC = 0x55555519a8 *)
-mov %v0 [L0x5555572f28,L0x5555572f2a,L0x5555572f2c,L0x5555572f2e,L0x5555572f30,L0x5555572f32,L0x5555572f34,L0x5555572f36];
-(* ldr	q16, [x19, #160]                            #! EA = L0x5555572f38; Value = 0x0000000000000000; PC = 0x55555519b0 *)
-mov %v16 [L0x5555572f38,L0x5555572f3a,L0x5555572f3c,L0x5555572f3e,L0x5555572f40,L0x5555572f42,L0x5555572f44,L0x5555572f46];
-(* str	q16, [sp]                                   #! EA = L0x7fffffeff0; PC = 0x55555519b4 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v16;
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555519d8 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555519d8 = 0x55555519d8;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x55555514f4 *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19]                                   #! EA = L0x7fffffc8f0; PC = 0x55555514f8 *)
+mov [L0x7fffffc8f0,L0x7fffffc8f2,L0x7fffffc8f4,L0x7fffffc8f6,L0x7fffffc8f8,L0x7fffffc8fa,L0x7fffffc8fc,L0x7fffffc8fe] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x55555514fc *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #16]                              #! EA = L0x7fffffc900; PC = 0x5555551500 *)
+mov [L0x7fffffc900,L0x7fffffc902,L0x7fffffc904,L0x7fffffc906,L0x7fffffc908,L0x7fffffc90a,L0x7fffffc90c,L0x7fffffc90e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x5555551504 *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #32]                              #! EA = L0x7fffffc910; PC = 0x5555551508 *)
+mov [L0x7fffffc910,L0x7fffffc912,L0x7fffffc914,L0x7fffffc916,L0x7fffffc918,L0x7fffffc91a,L0x7fffffc91c,L0x7fffffc91e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x555555150c *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #48]                              #! EA = L0x7fffffc920; PC = 0x5555551510 *)
+mov [L0x7fffffc920,L0x7fffffc922,L0x7fffffc924,L0x7fffffc926,L0x7fffffc928,L0x7fffffc92a,L0x7fffffc92c,L0x7fffffc92e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x5555551514 *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #64]                              #! EA = L0x7fffffc930; PC = 0x5555551518 *)
+mov [L0x7fffffc930,L0x7fffffc932,L0x7fffffc934,L0x7fffffc936,L0x7fffffc938,L0x7fffffc93a,L0x7fffffc93c,L0x7fffffc93e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x555555151c *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #80]                              #! EA = L0x7fffffc940; PC = 0x5555551520 *)
+mov [L0x7fffffc940,L0x7fffffc942,L0x7fffffc944,L0x7fffffc946,L0x7fffffc948,L0x7fffffc94a,L0x7fffffc94c,L0x7fffffc94e] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551524 *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #96]                              #! EA = L0x7fffffc950; PC = 0x5555551528 *)
+mov [L0x7fffffc950,L0x7fffffc952,L0x7fffffc954,L0x7fffffc956,L0x7fffffc958,L0x7fffffc95a,L0x7fffffc95c,L0x7fffffc95e] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x555555152c *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #112]                             #! EA = L0x7fffffc960; PC = 0x5555551530 *)
+mov [L0x7fffffc960,L0x7fffffc962,L0x7fffffc964,L0x7fffffc966,L0x7fffffc968,L0x7fffffc96a,L0x7fffffc96c,L0x7fffffc96e] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x5555551534 *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #128]                             #! EA = L0x7fffffc970; PC = 0x5555551538 *)
+mov [L0x7fffffc970,L0x7fffffc972,L0x7fffffc974,L0x7fffffc976,L0x7fffffc978,L0x7fffffc97a,L0x7fffffc97c,L0x7fffffc97e] %v0;
+(* ldr	q7, [x19, #176]                             #! EA = L0x7fffffc9a0; Value = 0x0000000000000000; PC = 0x555555153c *)
+mov %v7 [L0x7fffffc9a0,L0x7fffffc9a2,L0x7fffffc9a4,L0x7fffffc9a6,L0x7fffffc9a8,L0x7fffffc9aa,L0x7fffffc9ac,L0x7fffffc9ae];
+(* ldr	q6, [x19, #192]                             #! EA = L0x7fffffc9b0; Value = 0x0000000000000000; PC = 0x5555551540 *)
+mov %v6 [L0x7fffffc9b0,L0x7fffffc9b2,L0x7fffffc9b4,L0x7fffffc9b6,L0x7fffffc9b8,L0x7fffffc9ba,L0x7fffffc9bc,L0x7fffffc9be];
+(* ldr	q5, [x19, #208]                             #! EA = L0x7fffffc9c0; Value = 0x0000000000000000; PC = 0x5555551544 *)
+mov %v5 [L0x7fffffc9c0,L0x7fffffc9c2,L0x7fffffc9c4,L0x7fffffc9c6,L0x7fffffc9c8,L0x7fffffc9ca,L0x7fffffc9cc,L0x7fffffc9ce];
+(* ldr	q4, [x19, #224]                             #! EA = L0x7fffffc9d0; Value = 0x0000000000000000; PC = 0x5555551548 *)
+mov %v4 [L0x7fffffc9d0,L0x7fffffc9d2,L0x7fffffc9d4,L0x7fffffc9d6,L0x7fffffc9d8,L0x7fffffc9da,L0x7fffffc9dc,L0x7fffffc9de];
+(* ldr	q3, [x19, #240]                             #! EA = L0x7fffffc9e0; Value = 0x0000000000000000; PC = 0x555555154c *)
+mov %v3 [L0x7fffffc9e0,L0x7fffffc9e2,L0x7fffffc9e4,L0x7fffffc9e6,L0x7fffffc9e8,L0x7fffffc9ea,L0x7fffffc9ec,L0x7fffffc9ee];
+(* ldr	q2, [x19, #256]                             #! EA = L0x7fffffc9f0; Value = 0x0000000000000000; PC = 0x5555551550 *)
+mov %v2 [L0x7fffffc9f0,L0x7fffffc9f2,L0x7fffffc9f4,L0x7fffffc9f6,L0x7fffffc9f8,L0x7fffffc9fa,L0x7fffffc9fc,L0x7fffffc9fe];
+(* ldr	q1, [x19, #272]                             #! EA = L0x7fffffca00; Value = 0x0000000000000000; PC = 0x5555551554 *)
+mov %v1 [L0x7fffffca00,L0x7fffffca02,L0x7fffffca04,L0x7fffffca06,L0x7fffffca08,L0x7fffffca0a,L0x7fffffca0c,L0x7fffffca0e];
+(* ldr	q0, [x19, #144]                             #! EA = L0x7fffffc980; Value = 0x0000000000000000; PC = 0x5555551558 *)
+mov %v0 [L0x7fffffc980,L0x7fffffc982,L0x7fffffc984,L0x7fffffc986,L0x7fffffc988,L0x7fffffc98a,L0x7fffffc98c,L0x7fffffc98e];
+(* ldr	q16, [x19, #160]                            #! EA = L0x7fffffc990; Value = 0x0000000000000000; PC = 0x5555551560 *)
+mov %v16 [L0x7fffffc990,L0x7fffffc992,L0x7fffffc994,L0x7fffffc996,L0x7fffffc998,L0x7fffffc99a,L0x7fffffc99c,L0x7fffffc99e];
+(* str	q16, [sp]                                   #! EA = L0x7fffffc200; PC = 0x5555551564 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v16;
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551588 = 0x5555551588;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000000; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x55555519dc *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19, #144]                             #! EA = L0x5555572f28; PC = 0x55555519e0 *)
-mov [L0x5555572f28,L0x5555572f2a,L0x5555572f2c,L0x5555572f2e,L0x5555572f30,L0x5555572f32,L0x5555572f34,L0x5555572f36] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x55555519e4 *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #160]                             #! EA = L0x5555572f38; PC = 0x55555519e8 *)
-mov [L0x5555572f38,L0x5555572f3a,L0x5555572f3c,L0x5555572f3e,L0x5555572f40,L0x5555572f42,L0x5555572f44,L0x5555572f46] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x55555519ec *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #176]                             #! EA = L0x5555572f48; PC = 0x55555519f0 *)
-mov [L0x5555572f48,L0x5555572f4a,L0x5555572f4c,L0x5555572f4e,L0x5555572f50,L0x5555572f52,L0x5555572f54,L0x5555572f56] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x55555519f4 *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #192]                             #! EA = L0x5555572f58; PC = 0x55555519f8 *)
-mov [L0x5555572f58,L0x5555572f5a,L0x5555572f5c,L0x5555572f5e,L0x5555572f60,L0x5555572f62,L0x5555572f64,L0x5555572f66] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x55555519fc *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #208]                             #! EA = L0x5555572f68; PC = 0x5555551a00 *)
-mov [L0x5555572f68,L0x5555572f6a,L0x5555572f6c,L0x5555572f6e,L0x5555572f70,L0x5555572f72,L0x5555572f74,L0x5555572f76] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551a04 *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #224]                             #! EA = L0x5555572f78; PC = 0x5555551a08 *)
-mov [L0x5555572f78,L0x5555572f7a,L0x5555572f7c,L0x5555572f7e,L0x5555572f80,L0x5555572f82,L0x5555572f84,L0x5555572f86] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551a0c *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #240]                             #! EA = L0x5555572f88; PC = 0x5555551a10 *)
-mov [L0x5555572f88,L0x5555572f8a,L0x5555572f8c,L0x5555572f8e,L0x5555572f90,L0x5555572f92,L0x5555572f94,L0x5555572f96] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x5555551a14 *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #256]                             #! EA = L0x5555572f98; PC = 0x5555551a18 *)
-mov [L0x5555572f98,L0x5555572f9a,L0x5555572f9c,L0x5555572f9e,L0x5555572fa0,L0x5555572fa2,L0x5555572fa4,L0x5555572fa6] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551a1c *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #272]                             #! EA = L0x5555572fa8; PC = 0x5555551a20 *)
-mov [L0x5555572fa8,L0x5555572faa,L0x5555572fac,L0x5555572fae,L0x5555572fb0,L0x5555572fb2,L0x5555572fb4,L0x5555572fb6] %v0;
-(* #b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551a30 *)
-#b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551a30 = 0x5555551a30;
-(* ldr	q7, [x19, #32]                              #! EA = L0x5555572fd8; Value = 0x0000000000000040; PC = 0x55555518f0 *)
-mov %v7 [L0x5555572fd8,L0x5555572fda,L0x5555572fdc,L0x5555572fde,L0x5555572fe0,L0x5555572fe2,L0x5555572fe4,L0x5555572fe6];
-(* ldr	q6, [x19, #48]                              #! EA = L0x5555572fe8; Value = 0x0000000000000040; PC = 0x55555518f4 *)
-mov %v6 [L0x5555572fe8,L0x5555572fea,L0x5555572fec,L0x5555572fee,L0x5555572ff0,L0x5555572ff2,L0x5555572ff4,L0x5555572ff6];
-(* ldr	q5, [x19, #64]                              #! EA = L0x5555572ff8; Value = 0x0000000000000040; PC = 0x55555518f8 *)
-mov %v5 [L0x5555572ff8,L0x5555572ffa,L0x5555572ffc,L0x5555572ffe,L0x5555573000,L0x5555573002,L0x5555573004,L0x5555573006];
-(* ldr	q4, [x19, #80]                              #! EA = L0x5555573008; Value = 0x0000000000000040; PC = 0x55555518fc *)
-mov %v4 [L0x5555573008,L0x555557300a,L0x555557300c,L0x555557300e,L0x5555573010,L0x5555573012,L0x5555573014,L0x5555573016];
-(* ldr	q3, [x19, #96]                              #! EA = L0x5555573018; Value = 0x0000000000000040; PC = 0x5555551900 *)
-mov %v3 [L0x5555573018,L0x555557301a,L0x555557301c,L0x555557301e,L0x5555573020,L0x5555573022,L0x5555573024,L0x5555573026];
-(* ldr	q2, [x19, #112]                             #! EA = L0x5555573028; Value = 0x0000000000000040; PC = 0x5555551904 *)
-mov %v2 [L0x5555573028,L0x555557302a,L0x555557302c,L0x555557302e,L0x5555573030,L0x5555573032,L0x5555573034,L0x5555573036];
-(* ldr	q1, [x19, #128]                             #! EA = L0x5555573038; Value = 0x0000000000000040; PC = 0x5555551908 *)
-mov %v1 [L0x5555573038,L0x555557303a,L0x555557303c,L0x555557303e,L0x5555573040,L0x5555573042,L0x5555573044,L0x5555573046];
-(* ldr	q0, [x19, #16]                              #! EA = L0x5555572fc8; Value = 0x0000000000000040; PC = 0x5555551914 *)
-mov %v0 [L0x5555572fc8,L0x5555572fca,L0x5555572fcc,L0x5555572fce,L0x5555572fd0,L0x5555572fd2,L0x5555572fd4,L0x5555572fd6];
-(* str	q0, [sp]                                    #! EA = L0x7fffffeff0; PC = 0x5555551918 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v0;
-(* ldr	q0, [x19]                                   #! EA = L0x5555572fb8; Value = 0x0000000000000040; PC = 0x555555193c *)
-mov %v0 [L0x5555572fb8,L0x5555572fba,L0x5555572fbc,L0x5555572fbe,L0x5555572fc0,L0x5555572fc2,L0x5555572fc4,L0x5555572fc6];
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551940 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551940 = 0x5555551940;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x555555158c *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19, #144]                             #! EA = L0x7fffffc980; PC = 0x5555551590 *)
+mov [L0x7fffffc980,L0x7fffffc982,L0x7fffffc984,L0x7fffffc986,L0x7fffffc988,L0x7fffffc98a,L0x7fffffc98c,L0x7fffffc98e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x5555551594 *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #160]                             #! EA = L0x7fffffc990; PC = 0x5555551598 *)
+mov [L0x7fffffc990,L0x7fffffc992,L0x7fffffc994,L0x7fffffc996,L0x7fffffc998,L0x7fffffc99a,L0x7fffffc99c,L0x7fffffc99e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x555555159c *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #176]                             #! EA = L0x7fffffc9a0; PC = 0x55555515a0 *)
+mov [L0x7fffffc9a0,L0x7fffffc9a2,L0x7fffffc9a4,L0x7fffffc9a6,L0x7fffffc9a8,L0x7fffffc9aa,L0x7fffffc9ac,L0x7fffffc9ae] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x55555515a4 *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #192]                             #! EA = L0x7fffffc9b0; PC = 0x55555515a8 *)
+mov [L0x7fffffc9b0,L0x7fffffc9b2,L0x7fffffc9b4,L0x7fffffc9b6,L0x7fffffc9b8,L0x7fffffc9ba,L0x7fffffc9bc,L0x7fffffc9be] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x55555515ac *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #208]                             #! EA = L0x7fffffc9c0; PC = 0x55555515b0 *)
+mov [L0x7fffffc9c0,L0x7fffffc9c2,L0x7fffffc9c4,L0x7fffffc9c6,L0x7fffffc9c8,L0x7fffffc9ca,L0x7fffffc9cc,L0x7fffffc9ce] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x55555515b4 *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #224]                             #! EA = L0x7fffffc9d0; PC = 0x55555515b8 *)
+mov [L0x7fffffc9d0,L0x7fffffc9d2,L0x7fffffc9d4,L0x7fffffc9d6,L0x7fffffc9d8,L0x7fffffc9da,L0x7fffffc9dc,L0x7fffffc9de] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555515bc *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #240]                             #! EA = L0x7fffffc9e0; PC = 0x55555515c0 *)
+mov [L0x7fffffc9e0,L0x7fffffc9e2,L0x7fffffc9e4,L0x7fffffc9e6,L0x7fffffc9e8,L0x7fffffc9ea,L0x7fffffc9ec,L0x7fffffc9ee] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x55555515c4 *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #256]                             #! EA = L0x7fffffc9f0; PC = 0x55555515c8 *)
+mov [L0x7fffffc9f0,L0x7fffffc9f2,L0x7fffffc9f4,L0x7fffffc9f6,L0x7fffffc9f8,L0x7fffffc9fa,L0x7fffffc9fc,L0x7fffffc9fe] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x55555515cc *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #272]                             #! EA = L0x7fffffca00; PC = 0x55555515d0 *)
+mov [L0x7fffffca00,L0x7fffffca02,L0x7fffffca04,L0x7fffffca06,L0x7fffffca08,L0x7fffffca0a,L0x7fffffca0c,L0x7fffffca0e] %v0;
+(* #b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x55555515e0 *)
+#b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x55555515e0 = 0x55555515e0;
+(* ldr	q7, [x19, #32]                              #! EA = L0x7fffffca30; Value = 0x0000000000000000; PC = 0x55555514a0 *)
+mov %v7 [L0x7fffffca30,L0x7fffffca32,L0x7fffffca34,L0x7fffffca36,L0x7fffffca38,L0x7fffffca3a,L0x7fffffca3c,L0x7fffffca3e];
+(* ldr	q6, [x19, #48]                              #! EA = L0x7fffffca40; Value = 0x0000000000000000; PC = 0x55555514a4 *)
+mov %v6 [L0x7fffffca40,L0x7fffffca42,L0x7fffffca44,L0x7fffffca46,L0x7fffffca48,L0x7fffffca4a,L0x7fffffca4c,L0x7fffffca4e];
+(* ldr	q5, [x19, #64]                              #! EA = L0x7fffffca50; Value = 0x0000000000000000; PC = 0x55555514a8 *)
+mov %v5 [L0x7fffffca50,L0x7fffffca52,L0x7fffffca54,L0x7fffffca56,L0x7fffffca58,L0x7fffffca5a,L0x7fffffca5c,L0x7fffffca5e];
+(* ldr	q4, [x19, #80]                              #! EA = L0x7fffffca60; Value = 0x0000000000000000; PC = 0x55555514ac *)
+mov %v4 [L0x7fffffca60,L0x7fffffca62,L0x7fffffca64,L0x7fffffca66,L0x7fffffca68,L0x7fffffca6a,L0x7fffffca6c,L0x7fffffca6e];
+(* ldr	q3, [x19, #96]                              #! EA = L0x7fffffca70; Value = 0x0000000000000000; PC = 0x55555514b0 *)
+mov %v3 [L0x7fffffca70,L0x7fffffca72,L0x7fffffca74,L0x7fffffca76,L0x7fffffca78,L0x7fffffca7a,L0x7fffffca7c,L0x7fffffca7e];
+(* ldr	q2, [x19, #112]                             #! EA = L0x7fffffca80; Value = 0x0000000000000000; PC = 0x55555514b4 *)
+mov %v2 [L0x7fffffca80,L0x7fffffca82,L0x7fffffca84,L0x7fffffca86,L0x7fffffca88,L0x7fffffca8a,L0x7fffffca8c,L0x7fffffca8e];
+(* ldr	q1, [x19, #128]                             #! EA = L0x7fffffca90; Value = 0x0000000000000000; PC = 0x55555514b8 *)
+mov %v1 [L0x7fffffca90,L0x7fffffca92,L0x7fffffca94,L0x7fffffca96,L0x7fffffca98,L0x7fffffca9a,L0x7fffffca9c,L0x7fffffca9e];
+(* ldr	q0, [x19, #16]                              #! EA = L0x7fffffca20; Value = 0x0000000000000000; PC = 0x55555514c4 *)
+mov %v0 [L0x7fffffca20,L0x7fffffca22,L0x7fffffca24,L0x7fffffca26,L0x7fffffca28,L0x7fffffca2a,L0x7fffffca2c,L0x7fffffca2e];
+(* str	q0, [sp]                                    #! EA = L0x7fffffc200; PC = 0x55555514c8 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v0;
+(* ldr	q0, [x19]                                   #! EA = L0x7fffffca10; Value = 0x0000000000000000; PC = 0x55555514ec *)
+mov %v0 [L0x7fffffca10,L0x7fffffca12,L0x7fffffca14,L0x7fffffca16,L0x7fffffca18,L0x7fffffca1a,L0x7fffffca1c,L0x7fffffca1e];
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555514f0 = 0x55555514f0;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000040; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000480; PC = 0x5555551944 *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19]                                   #! EA = L0x5555572fb8; PC = 0x5555551948 *)
-mov [L0x5555572fb8,L0x5555572fba,L0x5555572fbc,L0x5555572fbe,L0x5555572fc0,L0x5555572fc2,L0x5555572fc4,L0x5555572fc6] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555194c *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #16]                              #! EA = L0x5555572fc8; PC = 0x5555551950 *)
-mov [L0x5555572fc8,L0x5555572fca,L0x5555572fcc,L0x5555572fce,L0x5555572fd0,L0x5555572fd2,L0x5555572fd4,L0x5555572fd6] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x5555551954 *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #32]                              #! EA = L0x5555572fd8; PC = 0x5555551958 *)
-mov [L0x5555572fd8,L0x5555572fda,L0x5555572fdc,L0x5555572fde,L0x5555572fe0,L0x5555572fe2,L0x5555572fe4,L0x5555572fe6] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x555555195c *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #48]                              #! EA = L0x5555572fe8; PC = 0x5555551960 *)
-mov [L0x5555572fe8,L0x5555572fea,L0x5555572fec,L0x5555572fee,L0x5555572ff0,L0x5555572ff2,L0x5555572ff4,L0x5555572ff6] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551964 *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #64]                              #! EA = L0x5555572ff8; PC = 0x5555551968 *)
-mov [L0x5555572ff8,L0x5555572ffa,L0x5555572ffc,L0x5555572ffe,L0x5555573000,L0x5555573002,L0x5555573004,L0x5555573006] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x555555196c *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #80]                              #! EA = L0x5555573008; PC = 0x5555551970 *)
-mov [L0x5555573008,L0x555557300a,L0x555557300c,L0x555557300e,L0x5555573010,L0x5555573012,L0x5555573014,L0x5555573016] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551974 *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #96]                              #! EA = L0x5555573018; PC = 0x5555551978 *)
-mov [L0x5555573018,L0x555557301a,L0x555557301c,L0x555557301e,L0x5555573020,L0x5555573022,L0x5555573024,L0x5555573026] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x555555197c *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #112]                             #! EA = L0x5555573028; PC = 0x5555551980 *)
-mov [L0x5555573028,L0x555557302a,L0x555557302c,L0x555557302e,L0x5555573030,L0x5555573032,L0x5555573034,L0x5555573036] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551984 *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #128]                             #! EA = L0x5555573038; PC = 0x5555551988 *)
-mov [L0x5555573038,L0x555557303a,L0x555557303c,L0x555557303e,L0x5555573040,L0x5555573042,L0x5555573044,L0x5555573046] %v0;
-(* ldr	q7, [x19, #176]                             #! EA = L0x5555573068; Value = 0x0000000000000000; PC = 0x555555198c *)
-mov %v7 [L0x5555573068,L0x555557306a,L0x555557306c,L0x555557306e,L0x5555573070,L0x5555573072,L0x5555573074,L0x5555573076];
-(* ldr	q6, [x19, #192]                             #! EA = L0x5555573078; Value = 0x0000000000000000; PC = 0x5555551990 *)
-mov %v6 [L0x5555573078,L0x555557307a,L0x555557307c,L0x555557307e,L0x5555573080,L0x5555573082,L0x5555573084,L0x5555573086];
-(* ldr	q5, [x19, #208]                             #! EA = L0x5555573088; Value = 0x0000000000000000; PC = 0x5555551994 *)
-mov %v5 [L0x5555573088,L0x555557308a,L0x555557308c,L0x555557308e,L0x5555573090,L0x5555573092,L0x5555573094,L0x5555573096];
-(* ldr	q4, [x19, #224]                             #! EA = L0x5555573098; Value = 0x0000000000000000; PC = 0x5555551998 *)
-mov %v4 [L0x5555573098,L0x555557309a,L0x555557309c,L0x555557309e,L0x55555730a0,L0x55555730a2,L0x55555730a4,L0x55555730a6];
-(* ldr	q3, [x19, #240]                             #! EA = L0x55555730a8; Value = 0x0000000000000000; PC = 0x555555199c *)
-mov %v3 [L0x55555730a8,L0x55555730aa,L0x55555730ac,L0x55555730ae,L0x55555730b0,L0x55555730b2,L0x55555730b4,L0x55555730b6];
-(* ldr	q2, [x19, #256]                             #! EA = L0x55555730b8; Value = 0x0000000000000000; PC = 0x55555519a0 *)
-mov %v2 [L0x55555730b8,L0x55555730ba,L0x55555730bc,L0x55555730be,L0x55555730c0,L0x55555730c2,L0x55555730c4,L0x55555730c6];
-(* ldr	q1, [x19, #272]                             #! EA = L0x55555730c8; Value = 0x0000000000000000; PC = 0x55555519a4 *)
-mov %v1 [L0x55555730c8,L0x55555730ca,L0x55555730cc,L0x55555730ce,L0x55555730d0,L0x55555730d2,L0x55555730d4,L0x55555730d6];
-(* ldr	q0, [x19, #144]                             #! EA = L0x5555573048; Value = 0x0000000000000000; PC = 0x55555519a8 *)
-mov %v0 [L0x5555573048,L0x555557304a,L0x555557304c,L0x555557304e,L0x5555573050,L0x5555573052,L0x5555573054,L0x5555573056];
-(* ldr	q16, [x19, #160]                            #! EA = L0x5555573058; Value = 0x0000000000000000; PC = 0x55555519b0 *)
-mov %v16 [L0x5555573058,L0x555557305a,L0x555557305c,L0x555557305e,L0x5555573060,L0x5555573062,L0x5555573064,L0x5555573066];
-(* str	q16, [sp]                                   #! EA = L0x7fffffeff0; PC = 0x55555519b4 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v16;
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555519d8 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555519d8 = 0x55555519d8;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x55555514f4 *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19]                                   #! EA = L0x7fffffca10; PC = 0x55555514f8 *)
+mov [L0x7fffffca10,L0x7fffffca12,L0x7fffffca14,L0x7fffffca16,L0x7fffffca18,L0x7fffffca1a,L0x7fffffca1c,L0x7fffffca1e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x55555514fc *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #16]                              #! EA = L0x7fffffca20; PC = 0x5555551500 *)
+mov [L0x7fffffca20,L0x7fffffca22,L0x7fffffca24,L0x7fffffca26,L0x7fffffca28,L0x7fffffca2a,L0x7fffffca2c,L0x7fffffca2e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x5555551504 *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #32]                              #! EA = L0x7fffffca30; PC = 0x5555551508 *)
+mov [L0x7fffffca30,L0x7fffffca32,L0x7fffffca34,L0x7fffffca36,L0x7fffffca38,L0x7fffffca3a,L0x7fffffca3c,L0x7fffffca3e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x555555150c *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #48]                              #! EA = L0x7fffffca40; PC = 0x5555551510 *)
+mov [L0x7fffffca40,L0x7fffffca42,L0x7fffffca44,L0x7fffffca46,L0x7fffffca48,L0x7fffffca4a,L0x7fffffca4c,L0x7fffffca4e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x5555551514 *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #64]                              #! EA = L0x7fffffca50; PC = 0x5555551518 *)
+mov [L0x7fffffca50,L0x7fffffca52,L0x7fffffca54,L0x7fffffca56,L0x7fffffca58,L0x7fffffca5a,L0x7fffffca5c,L0x7fffffca5e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x555555151c *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #80]                              #! EA = L0x7fffffca60; PC = 0x5555551520 *)
+mov [L0x7fffffca60,L0x7fffffca62,L0x7fffffca64,L0x7fffffca66,L0x7fffffca68,L0x7fffffca6a,L0x7fffffca6c,L0x7fffffca6e] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551524 *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #96]                              #! EA = L0x7fffffca70; PC = 0x5555551528 *)
+mov [L0x7fffffca70,L0x7fffffca72,L0x7fffffca74,L0x7fffffca76,L0x7fffffca78,L0x7fffffca7a,L0x7fffffca7c,L0x7fffffca7e] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x555555152c *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #112]                             #! EA = L0x7fffffca80; PC = 0x5555551530 *)
+mov [L0x7fffffca80,L0x7fffffca82,L0x7fffffca84,L0x7fffffca86,L0x7fffffca88,L0x7fffffca8a,L0x7fffffca8c,L0x7fffffca8e] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x5555551534 *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #128]                             #! EA = L0x7fffffca90; PC = 0x5555551538 *)
+mov [L0x7fffffca90,L0x7fffffca92,L0x7fffffca94,L0x7fffffca96,L0x7fffffca98,L0x7fffffca9a,L0x7fffffca9c,L0x7fffffca9e] %v0;
+(* ldr	q7, [x19, #176]                             #! EA = L0x7fffffcac0; Value = 0x0000000000000000; PC = 0x555555153c *)
+mov %v7 [L0x7fffffcac0,L0x7fffffcac2,L0x7fffffcac4,L0x7fffffcac6,L0x7fffffcac8,L0x7fffffcaca,L0x7fffffcacc,L0x7fffffcace];
+(* ldr	q6, [x19, #192]                             #! EA = L0x7fffffcad0; Value = 0x0000000000000000; PC = 0x5555551540 *)
+mov %v6 [L0x7fffffcad0,L0x7fffffcad2,L0x7fffffcad4,L0x7fffffcad6,L0x7fffffcad8,L0x7fffffcada,L0x7fffffcadc,L0x7fffffcade];
+(* ldr	q5, [x19, #208]                             #! EA = L0x7fffffcae0; Value = 0x0000000000000000; PC = 0x5555551544 *)
+mov %v5 [L0x7fffffcae0,L0x7fffffcae2,L0x7fffffcae4,L0x7fffffcae6,L0x7fffffcae8,L0x7fffffcaea,L0x7fffffcaec,L0x7fffffcaee];
+(* ldr	q4, [x19, #224]                             #! EA = L0x7fffffcaf0; Value = 0x0000000000000000; PC = 0x5555551548 *)
+mov %v4 [L0x7fffffcaf0,L0x7fffffcaf2,L0x7fffffcaf4,L0x7fffffcaf6,L0x7fffffcaf8,L0x7fffffcafa,L0x7fffffcafc,L0x7fffffcafe];
+(* ldr	q3, [x19, #240]                             #! EA = L0x7fffffcb00; Value = 0x0000000000000000; PC = 0x555555154c *)
+mov %v3 [L0x7fffffcb00,L0x7fffffcb02,L0x7fffffcb04,L0x7fffffcb06,L0x7fffffcb08,L0x7fffffcb0a,L0x7fffffcb0c,L0x7fffffcb0e];
+(* ldr	q2, [x19, #256]                             #! EA = L0x7fffffcb10; Value = 0x0000000000000000; PC = 0x5555551550 *)
+mov %v2 [L0x7fffffcb10,L0x7fffffcb12,L0x7fffffcb14,L0x7fffffcb16,L0x7fffffcb18,L0x7fffffcb1a,L0x7fffffcb1c,L0x7fffffcb1e];
+(* ldr	q1, [x19, #272]                             #! EA = L0x7fffffcb20; Value = 0x0000000000000000; PC = 0x5555551554 *)
+mov %v1 [L0x7fffffcb20,L0x7fffffcb22,L0x7fffffcb24,L0x7fffffcb26,L0x7fffffcb28,L0x7fffffcb2a,L0x7fffffcb2c,L0x7fffffcb2e];
+(* ldr	q0, [x19, #144]                             #! EA = L0x7fffffcaa0; Value = 0x0000000000000000; PC = 0x5555551558 *)
+mov %v0 [L0x7fffffcaa0,L0x7fffffcaa2,L0x7fffffcaa4,L0x7fffffcaa6,L0x7fffffcaa8,L0x7fffffcaaa,L0x7fffffcaac,L0x7fffffcaae];
+(* ldr	q16, [x19, #160]                            #! EA = L0x7fffffcab0; Value = 0x0000000000000000; PC = 0x5555551560 *)
+mov %v16 [L0x7fffffcab0,L0x7fffffcab2,L0x7fffffcab4,L0x7fffffcab6,L0x7fffffcab8,L0x7fffffcaba,L0x7fffffcabc,L0x7fffffcabe];
+(* str	q16, [sp]                                   #! EA = L0x7fffffc200; PC = 0x5555551564 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v16;
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551588 = 0x5555551588;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000000; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x55555519dc *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19, #144]                             #! EA = L0x5555573048; PC = 0x55555519e0 *)
-mov [L0x5555573048,L0x555557304a,L0x555557304c,L0x555557304e,L0x5555573050,L0x5555573052,L0x5555573054,L0x5555573056] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x55555519e4 *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #160]                             #! EA = L0x5555573058; PC = 0x55555519e8 *)
-mov [L0x5555573058,L0x555557305a,L0x555557305c,L0x555557305e,L0x5555573060,L0x5555573062,L0x5555573064,L0x5555573066] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x55555519ec *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #176]                             #! EA = L0x5555573068; PC = 0x55555519f0 *)
-mov [L0x5555573068,L0x555557306a,L0x555557306c,L0x555557306e,L0x5555573070,L0x5555573072,L0x5555573074,L0x5555573076] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x55555519f4 *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #192]                             #! EA = L0x5555573078; PC = 0x55555519f8 *)
-mov [L0x5555573078,L0x555557307a,L0x555557307c,L0x555557307e,L0x5555573080,L0x5555573082,L0x5555573084,L0x5555573086] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x55555519fc *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #208]                             #! EA = L0x5555573088; PC = 0x5555551a00 *)
-mov [L0x5555573088,L0x555557308a,L0x555557308c,L0x555557308e,L0x5555573090,L0x5555573092,L0x5555573094,L0x5555573096] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551a04 *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #224]                             #! EA = L0x5555573098; PC = 0x5555551a08 *)
-mov [L0x5555573098,L0x555557309a,L0x555557309c,L0x555557309e,L0x55555730a0,L0x55555730a2,L0x55555730a4,L0x55555730a6] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551a0c *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #240]                             #! EA = L0x55555730a8; PC = 0x5555551a10 *)
-mov [L0x55555730a8,L0x55555730aa,L0x55555730ac,L0x55555730ae,L0x55555730b0,L0x55555730b2,L0x55555730b4,L0x55555730b6] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x5555551a14 *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #256]                             #! EA = L0x55555730b8; PC = 0x5555551a18 *)
-mov [L0x55555730b8,L0x55555730ba,L0x55555730bc,L0x55555730be,L0x55555730c0,L0x55555730c2,L0x55555730c4,L0x55555730c6] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551a1c *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #272]                             #! EA = L0x55555730c8; PC = 0x5555551a20 *)
-mov [L0x55555730c8,L0x55555730ca,L0x55555730cc,L0x55555730ce,L0x55555730d0,L0x55555730d2,L0x55555730d4,L0x55555730d6] %v0;
-(* #b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551a30 *)
-#b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551a30 = 0x5555551a30;
-(* ldr	q7, [x19, #32]                              #! EA = L0x55555730f8; Value = 0x0000000000000040; PC = 0x55555518f0 *)
-mov %v7 [L0x55555730f8,L0x55555730fa,L0x55555730fc,L0x55555730fe,L0x5555573100,L0x5555573102,L0x5555573104,L0x5555573106];
-(* ldr	q6, [x19, #48]                              #! EA = L0x5555573108; Value = 0x0000000000000040; PC = 0x55555518f4 *)
-mov %v6 [L0x5555573108,L0x555557310a,L0x555557310c,L0x555557310e,L0x5555573110,L0x5555573112,L0x5555573114,L0x5555573116];
-(* ldr	q5, [x19, #64]                              #! EA = L0x5555573118; Value = 0x0000000000000040; PC = 0x55555518f8 *)
-mov %v5 [L0x5555573118,L0x555557311a,L0x555557311c,L0x555557311e,L0x5555573120,L0x5555573122,L0x5555573124,L0x5555573126];
-(* ldr	q4, [x19, #80]                              #! EA = L0x5555573128; Value = 0x0000000000000040; PC = 0x55555518fc *)
-mov %v4 [L0x5555573128,L0x555557312a,L0x555557312c,L0x555557312e,L0x5555573130,L0x5555573132,L0x5555573134,L0x5555573136];
-(* ldr	q3, [x19, #96]                              #! EA = L0x5555573138; Value = 0x0000000000000040; PC = 0x5555551900 *)
-mov %v3 [L0x5555573138,L0x555557313a,L0x555557313c,L0x555557313e,L0x5555573140,L0x5555573142,L0x5555573144,L0x5555573146];
-(* ldr	q2, [x19, #112]                             #! EA = L0x5555573148; Value = 0x0000000000000040; PC = 0x5555551904 *)
-mov %v2 [L0x5555573148,L0x555557314a,L0x555557314c,L0x555557314e,L0x5555573150,L0x5555573152,L0x5555573154,L0x5555573156];
-(* ldr	q1, [x19, #128]                             #! EA = L0x5555573158; Value = 0x0000000000000040; PC = 0x5555551908 *)
-mov %v1 [L0x5555573158,L0x555557315a,L0x555557315c,L0x555557315e,L0x5555573160,L0x5555573162,L0x5555573164,L0x5555573166];
-(* ldr	q0, [x19, #16]                              #! EA = L0x55555730e8; Value = 0x0000000000000040; PC = 0x5555551914 *)
-mov %v0 [L0x55555730e8,L0x55555730ea,L0x55555730ec,L0x55555730ee,L0x55555730f0,L0x55555730f2,L0x55555730f4,L0x55555730f6];
-(* str	q0, [sp]                                    #! EA = L0x7fffffeff0; PC = 0x5555551918 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v0;
-(* ldr	q0, [x19]                                   #! EA = L0x55555730d8; Value = 0x0000000000000040; PC = 0x555555193c *)
-mov %v0 [L0x55555730d8,L0x55555730da,L0x55555730dc,L0x55555730de,L0x55555730e0,L0x55555730e2,L0x55555730e4,L0x55555730e6];
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551940 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551940 = 0x5555551940;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x555555158c *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19, #144]                             #! EA = L0x7fffffcaa0; PC = 0x5555551590 *)
+mov [L0x7fffffcaa0,L0x7fffffcaa2,L0x7fffffcaa4,L0x7fffffcaa6,L0x7fffffcaa8,L0x7fffffcaaa,L0x7fffffcaac,L0x7fffffcaae] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x5555551594 *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #160]                             #! EA = L0x7fffffcab0; PC = 0x5555551598 *)
+mov [L0x7fffffcab0,L0x7fffffcab2,L0x7fffffcab4,L0x7fffffcab6,L0x7fffffcab8,L0x7fffffcaba,L0x7fffffcabc,L0x7fffffcabe] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x555555159c *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #176]                             #! EA = L0x7fffffcac0; PC = 0x55555515a0 *)
+mov [L0x7fffffcac0,L0x7fffffcac2,L0x7fffffcac4,L0x7fffffcac6,L0x7fffffcac8,L0x7fffffcaca,L0x7fffffcacc,L0x7fffffcace] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x55555515a4 *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #192]                             #! EA = L0x7fffffcad0; PC = 0x55555515a8 *)
+mov [L0x7fffffcad0,L0x7fffffcad2,L0x7fffffcad4,L0x7fffffcad6,L0x7fffffcad8,L0x7fffffcada,L0x7fffffcadc,L0x7fffffcade] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x55555515ac *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #208]                             #! EA = L0x7fffffcae0; PC = 0x55555515b0 *)
+mov [L0x7fffffcae0,L0x7fffffcae2,L0x7fffffcae4,L0x7fffffcae6,L0x7fffffcae8,L0x7fffffcaea,L0x7fffffcaec,L0x7fffffcaee] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x55555515b4 *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #224]                             #! EA = L0x7fffffcaf0; PC = 0x55555515b8 *)
+mov [L0x7fffffcaf0,L0x7fffffcaf2,L0x7fffffcaf4,L0x7fffffcaf6,L0x7fffffcaf8,L0x7fffffcafa,L0x7fffffcafc,L0x7fffffcafe] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555515bc *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #240]                             #! EA = L0x7fffffcb00; PC = 0x55555515c0 *)
+mov [L0x7fffffcb00,L0x7fffffcb02,L0x7fffffcb04,L0x7fffffcb06,L0x7fffffcb08,L0x7fffffcb0a,L0x7fffffcb0c,L0x7fffffcb0e] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x55555515c4 *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #256]                             #! EA = L0x7fffffcb10; PC = 0x55555515c8 *)
+mov [L0x7fffffcb10,L0x7fffffcb12,L0x7fffffcb14,L0x7fffffcb16,L0x7fffffcb18,L0x7fffffcb1a,L0x7fffffcb1c,L0x7fffffcb1e] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x55555515cc *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #272]                             #! EA = L0x7fffffcb20; PC = 0x55555515d0 *)
+mov [L0x7fffffcb20,L0x7fffffcb22,L0x7fffffcb24,L0x7fffffcb26,L0x7fffffcb28,L0x7fffffcb2a,L0x7fffffcb2c,L0x7fffffcb2e] %v0;
+(* #b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x55555515e0 *)
+#b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x55555515e0 = 0x55555515e0;
+(* ldr	q7, [x19, #32]                              #! EA = L0x7fffffcb50; Value = 0x0000000000000000; PC = 0x55555514a0 *)
+mov %v7 [L0x7fffffcb50,L0x7fffffcb52,L0x7fffffcb54,L0x7fffffcb56,L0x7fffffcb58,L0x7fffffcb5a,L0x7fffffcb5c,L0x7fffffcb5e];
+(* ldr	q6, [x19, #48]                              #! EA = L0x7fffffcb60; Value = 0x0000000000000000; PC = 0x55555514a4 *)
+mov %v6 [L0x7fffffcb60,L0x7fffffcb62,L0x7fffffcb64,L0x7fffffcb66,L0x7fffffcb68,L0x7fffffcb6a,L0x7fffffcb6c,L0x7fffffcb6e];
+(* ldr	q5, [x19, #64]                              #! EA = L0x7fffffcb70; Value = 0x0000000000000000; PC = 0x55555514a8 *)
+mov %v5 [L0x7fffffcb70,L0x7fffffcb72,L0x7fffffcb74,L0x7fffffcb76,L0x7fffffcb78,L0x7fffffcb7a,L0x7fffffcb7c,L0x7fffffcb7e];
+(* ldr	q4, [x19, #80]                              #! EA = L0x7fffffcb80; Value = 0x0000000000000000; PC = 0x55555514ac *)
+mov %v4 [L0x7fffffcb80,L0x7fffffcb82,L0x7fffffcb84,L0x7fffffcb86,L0x7fffffcb88,L0x7fffffcb8a,L0x7fffffcb8c,L0x7fffffcb8e];
+(* ldr	q3, [x19, #96]                              #! EA = L0x7fffffcb90; Value = 0x0000000000000000; PC = 0x55555514b0 *)
+mov %v3 [L0x7fffffcb90,L0x7fffffcb92,L0x7fffffcb94,L0x7fffffcb96,L0x7fffffcb98,L0x7fffffcb9a,L0x7fffffcb9c,L0x7fffffcb9e];
+(* ldr	q2, [x19, #112]                             #! EA = L0x7fffffcba0; Value = 0x0000000000000000; PC = 0x55555514b4 *)
+mov %v2 [L0x7fffffcba0,L0x7fffffcba2,L0x7fffffcba4,L0x7fffffcba6,L0x7fffffcba8,L0x7fffffcbaa,L0x7fffffcbac,L0x7fffffcbae];
+(* ldr	q1, [x19, #128]                             #! EA = L0x7fffffcbb0; Value = 0x0000000000000000; PC = 0x55555514b8 *)
+mov %v1 [L0x7fffffcbb0,L0x7fffffcbb2,L0x7fffffcbb4,L0x7fffffcbb6,L0x7fffffcbb8,L0x7fffffcbba,L0x7fffffcbbc,L0x7fffffcbbe];
+(* ldr	q0, [x19, #16]                              #! EA = L0x7fffffcb40; Value = 0x0000000000000000; PC = 0x55555514c4 *)
+mov %v0 [L0x7fffffcb40,L0x7fffffcb42,L0x7fffffcb44,L0x7fffffcb46,L0x7fffffcb48,L0x7fffffcb4a,L0x7fffffcb4c,L0x7fffffcb4e];
+(* str	q0, [sp]                                    #! EA = L0x7fffffc200; PC = 0x55555514c8 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v0;
+(* ldr	q0, [x19]                                   #! EA = L0x7fffffcb30; Value = 0x0000000000000000; PC = 0x55555514ec *)
+mov %v0 [L0x7fffffcb30,L0x7fffffcb32,L0x7fffffcb34,L0x7fffffcb36,L0x7fffffcb38,L0x7fffffcb3a,L0x7fffffcb3c,L0x7fffffcb3e];
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555514f0 = 0x55555514f0;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000040; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000480; PC = 0x5555551944 *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19]                                   #! EA = L0x55555730d8; PC = 0x5555551948 *)
-mov [L0x55555730d8,L0x55555730da,L0x55555730dc,L0x55555730de,L0x55555730e0,L0x55555730e2,L0x55555730e4,L0x55555730e6] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555194c *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #16]                              #! EA = L0x55555730e8; PC = 0x5555551950 *)
-mov [L0x55555730e8,L0x55555730ea,L0x55555730ec,L0x55555730ee,L0x55555730f0,L0x55555730f2,L0x55555730f4,L0x55555730f6] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x5555551954 *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #32]                              #! EA = L0x55555730f8; PC = 0x5555551958 *)
-mov [L0x55555730f8,L0x55555730fa,L0x55555730fc,L0x55555730fe,L0x5555573100,L0x5555573102,L0x5555573104,L0x5555573106] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x555555195c *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #48]                              #! EA = L0x5555573108; PC = 0x5555551960 *)
-mov [L0x5555573108,L0x555557310a,L0x555557310c,L0x555557310e,L0x5555573110,L0x5555573112,L0x5555573114,L0x5555573116] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551964 *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #64]                              #! EA = L0x5555573118; PC = 0x5555551968 *)
-mov [L0x5555573118,L0x555557311a,L0x555557311c,L0x555557311e,L0x5555573120,L0x5555573122,L0x5555573124,L0x5555573126] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x555555196c *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #80]                              #! EA = L0x5555573128; PC = 0x5555551970 *)
-mov [L0x5555573128,L0x555557312a,L0x555557312c,L0x555557312e,L0x5555573130,L0x5555573132,L0x5555573134,L0x5555573136] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551974 *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #96]                              #! EA = L0x5555573138; PC = 0x5555551978 *)
-mov [L0x5555573138,L0x555557313a,L0x555557313c,L0x555557313e,L0x5555573140,L0x5555573142,L0x5555573144,L0x5555573146] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x555555197c *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #112]                             #! EA = L0x5555573148; PC = 0x5555551980 *)
-mov [L0x5555573148,L0x555557314a,L0x555557314c,L0x555557314e,L0x5555573150,L0x5555573152,L0x5555573154,L0x5555573156] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551984 *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #128]                             #! EA = L0x5555573158; PC = 0x5555551988 *)
-mov [L0x5555573158,L0x555557315a,L0x555557315c,L0x555557315e,L0x5555573160,L0x5555573162,L0x5555573164,L0x5555573166] %v0;
-(* ldr	q7, [x19, #176]                             #! EA = L0x5555573188; Value = 0x0000000000000000; PC = 0x555555198c *)
-mov %v7 [L0x5555573188,L0x555557318a,L0x555557318c,L0x555557318e,L0x5555573190,L0x5555573192,L0x5555573194,L0x5555573196];
-(* ldr	q6, [x19, #192]                             #! EA = L0x5555573198; Value = 0x0000000000000000; PC = 0x5555551990 *)
-mov %v6 [L0x5555573198,L0x555557319a,L0x555557319c,L0x555557319e,L0x55555731a0,L0x55555731a2,L0x55555731a4,L0x55555731a6];
-(* ldr	q5, [x19, #208]                             #! EA = L0x55555731a8; Value = 0x0000000000000000; PC = 0x5555551994 *)
-mov %v5 [L0x55555731a8,L0x55555731aa,L0x55555731ac,L0x55555731ae,L0x55555731b0,L0x55555731b2,L0x55555731b4,L0x55555731b6];
-(* ldr	q4, [x19, #224]                             #! EA = L0x55555731b8; Value = 0x0000000000000000; PC = 0x5555551998 *)
-mov %v4 [L0x55555731b8,L0x55555731ba,L0x55555731bc,L0x55555731be,L0x55555731c0,L0x55555731c2,L0x55555731c4,L0x55555731c6];
-(* ldr	q3, [x19, #240]                             #! EA = L0x55555731c8; Value = 0x0000000000000000; PC = 0x555555199c *)
-mov %v3 [L0x55555731c8,L0x55555731ca,L0x55555731cc,L0x55555731ce,L0x55555731d0,L0x55555731d2,L0x55555731d4,L0x55555731d6];
-(* ldr	q2, [x19, #256]                             #! EA = L0x55555731d8; Value = 0x0000000000000000; PC = 0x55555519a0 *)
-mov %v2 [L0x55555731d8,L0x55555731da,L0x55555731dc,L0x55555731de,L0x55555731e0,L0x55555731e2,L0x55555731e4,L0x55555731e6];
-(* ldr	q1, [x19, #272]                             #! EA = L0x55555731e8; Value = 0x0000000000000000; PC = 0x55555519a4 *)
-mov %v1 [L0x55555731e8,L0x55555731ea,L0x55555731ec,L0x55555731ee,L0x55555731f0,L0x55555731f2,L0x55555731f4,L0x55555731f6];
-(* ldr	q0, [x19, #144]                             #! EA = L0x5555573168; Value = 0x0000000000000000; PC = 0x55555519a8 *)
-mov %v0 [L0x5555573168,L0x555557316a,L0x555557316c,L0x555557316e,L0x5555573170,L0x5555573172,L0x5555573174,L0x5555573176];
-(* ldr	q16, [x19, #160]                            #! EA = L0x5555573178; Value = 0x0000000000000000; PC = 0x55555519b0 *)
-mov %v16 [L0x5555573178,L0x555557317a,L0x555557317c,L0x555557317e,L0x5555573180,L0x5555573182,L0x5555573184,L0x5555573186];
-(* str	q16, [sp]                                   #! EA = L0x7fffffeff0; PC = 0x55555519b4 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v16;
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555519d8 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555519d8 = 0x55555519d8;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x55555514f4 *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19]                                   #! EA = L0x7fffffcb30; PC = 0x55555514f8 *)
+mov [L0x7fffffcb30,L0x7fffffcb32,L0x7fffffcb34,L0x7fffffcb36,L0x7fffffcb38,L0x7fffffcb3a,L0x7fffffcb3c,L0x7fffffcb3e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x55555514fc *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #16]                              #! EA = L0x7fffffcb40; PC = 0x5555551500 *)
+mov [L0x7fffffcb40,L0x7fffffcb42,L0x7fffffcb44,L0x7fffffcb46,L0x7fffffcb48,L0x7fffffcb4a,L0x7fffffcb4c,L0x7fffffcb4e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x5555551504 *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #32]                              #! EA = L0x7fffffcb50; PC = 0x5555551508 *)
+mov [L0x7fffffcb50,L0x7fffffcb52,L0x7fffffcb54,L0x7fffffcb56,L0x7fffffcb58,L0x7fffffcb5a,L0x7fffffcb5c,L0x7fffffcb5e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x555555150c *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #48]                              #! EA = L0x7fffffcb60; PC = 0x5555551510 *)
+mov [L0x7fffffcb60,L0x7fffffcb62,L0x7fffffcb64,L0x7fffffcb66,L0x7fffffcb68,L0x7fffffcb6a,L0x7fffffcb6c,L0x7fffffcb6e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x5555551514 *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #64]                              #! EA = L0x7fffffcb70; PC = 0x5555551518 *)
+mov [L0x7fffffcb70,L0x7fffffcb72,L0x7fffffcb74,L0x7fffffcb76,L0x7fffffcb78,L0x7fffffcb7a,L0x7fffffcb7c,L0x7fffffcb7e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x555555151c *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #80]                              #! EA = L0x7fffffcb80; PC = 0x5555551520 *)
+mov [L0x7fffffcb80,L0x7fffffcb82,L0x7fffffcb84,L0x7fffffcb86,L0x7fffffcb88,L0x7fffffcb8a,L0x7fffffcb8c,L0x7fffffcb8e] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551524 *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #96]                              #! EA = L0x7fffffcb90; PC = 0x5555551528 *)
+mov [L0x7fffffcb90,L0x7fffffcb92,L0x7fffffcb94,L0x7fffffcb96,L0x7fffffcb98,L0x7fffffcb9a,L0x7fffffcb9c,L0x7fffffcb9e] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x555555152c *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #112]                             #! EA = L0x7fffffcba0; PC = 0x5555551530 *)
+mov [L0x7fffffcba0,L0x7fffffcba2,L0x7fffffcba4,L0x7fffffcba6,L0x7fffffcba8,L0x7fffffcbaa,L0x7fffffcbac,L0x7fffffcbae] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x5555551534 *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #128]                             #! EA = L0x7fffffcbb0; PC = 0x5555551538 *)
+mov [L0x7fffffcbb0,L0x7fffffcbb2,L0x7fffffcbb4,L0x7fffffcbb6,L0x7fffffcbb8,L0x7fffffcbba,L0x7fffffcbbc,L0x7fffffcbbe] %v0;
+(* ldr	q7, [x19, #176]                             #! EA = L0x7fffffcbe0; Value = 0x0000000000000000; PC = 0x555555153c *)
+mov %v7 [L0x7fffffcbe0,L0x7fffffcbe2,L0x7fffffcbe4,L0x7fffffcbe6,L0x7fffffcbe8,L0x7fffffcbea,L0x7fffffcbec,L0x7fffffcbee];
+(* ldr	q6, [x19, #192]                             #! EA = L0x7fffffcbf0; Value = 0x0000000000000000; PC = 0x5555551540 *)
+mov %v6 [L0x7fffffcbf0,L0x7fffffcbf2,L0x7fffffcbf4,L0x7fffffcbf6,L0x7fffffcbf8,L0x7fffffcbfa,L0x7fffffcbfc,L0x7fffffcbfe];
+(* ldr	q5, [x19, #208]                             #! EA = L0x7fffffcc00; Value = 0x0000000000000000; PC = 0x5555551544 *)
+mov %v5 [L0x7fffffcc00,L0x7fffffcc02,L0x7fffffcc04,L0x7fffffcc06,L0x7fffffcc08,L0x7fffffcc0a,L0x7fffffcc0c,L0x7fffffcc0e];
+(* ldr	q4, [x19, #224]                             #! EA = L0x7fffffcc10; Value = 0x0000000000000000; PC = 0x5555551548 *)
+mov %v4 [L0x7fffffcc10,L0x7fffffcc12,L0x7fffffcc14,L0x7fffffcc16,L0x7fffffcc18,L0x7fffffcc1a,L0x7fffffcc1c,L0x7fffffcc1e];
+(* ldr	q3, [x19, #240]                             #! EA = L0x7fffffcc20; Value = 0x0000000000000000; PC = 0x555555154c *)
+mov %v3 [L0x7fffffcc20,L0x7fffffcc22,L0x7fffffcc24,L0x7fffffcc26,L0x7fffffcc28,L0x7fffffcc2a,L0x7fffffcc2c,L0x7fffffcc2e];
+(* ldr	q2, [x19, #256]                             #! EA = L0x7fffffcc30; Value = 0x0000000000000000; PC = 0x5555551550 *)
+mov %v2 [L0x7fffffcc30,L0x7fffffcc32,L0x7fffffcc34,L0x7fffffcc36,L0x7fffffcc38,L0x7fffffcc3a,L0x7fffffcc3c,L0x7fffffcc3e];
+(* ldr	q1, [x19, #272]                             #! EA = L0x7fffffcc40; Value = 0x0000000000000000; PC = 0x5555551554 *)
+mov %v1 [L0x7fffffcc40,L0x7fffffcc42,L0x7fffffcc44,L0x7fffffcc46,L0x7fffffcc48,L0x7fffffcc4a,L0x7fffffcc4c,L0x7fffffcc4e];
+(* ldr	q0, [x19, #144]                             #! EA = L0x7fffffcbc0; Value = 0x0000000000000000; PC = 0x5555551558 *)
+mov %v0 [L0x7fffffcbc0,L0x7fffffcbc2,L0x7fffffcbc4,L0x7fffffcbc6,L0x7fffffcbc8,L0x7fffffcbca,L0x7fffffcbcc,L0x7fffffcbce];
+(* ldr	q16, [x19, #160]                            #! EA = L0x7fffffcbd0; Value = 0x0000000000000000; PC = 0x5555551560 *)
+mov %v16 [L0x7fffffcbd0,L0x7fffffcbd2,L0x7fffffcbd4,L0x7fffffcbd6,L0x7fffffcbd8,L0x7fffffcbda,L0x7fffffcbdc,L0x7fffffcbde];
+(* str	q16, [sp]                                   #! EA = L0x7fffffc200; PC = 0x5555551564 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v16;
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551588 = 0x5555551588;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000000; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x55555519dc *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19, #144]                             #! EA = L0x5555573168; PC = 0x55555519e0 *)
-mov [L0x5555573168,L0x555557316a,L0x555557316c,L0x555557316e,L0x5555573170,L0x5555573172,L0x5555573174,L0x5555573176] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x55555519e4 *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #160]                             #! EA = L0x5555573178; PC = 0x55555519e8 *)
-mov [L0x5555573178,L0x555557317a,L0x555557317c,L0x555557317e,L0x5555573180,L0x5555573182,L0x5555573184,L0x5555573186] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x55555519ec *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #176]                             #! EA = L0x5555573188; PC = 0x55555519f0 *)
-mov [L0x5555573188,L0x555557318a,L0x555557318c,L0x555557318e,L0x5555573190,L0x5555573192,L0x5555573194,L0x5555573196] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x55555519f4 *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #192]                             #! EA = L0x5555573198; PC = 0x55555519f8 *)
-mov [L0x5555573198,L0x555557319a,L0x555557319c,L0x555557319e,L0x55555731a0,L0x55555731a2,L0x55555731a4,L0x55555731a6] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x55555519fc *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #208]                             #! EA = L0x55555731a8; PC = 0x5555551a00 *)
-mov [L0x55555731a8,L0x55555731aa,L0x55555731ac,L0x55555731ae,L0x55555731b0,L0x55555731b2,L0x55555731b4,L0x55555731b6] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551a04 *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #224]                             #! EA = L0x55555731b8; PC = 0x5555551a08 *)
-mov [L0x55555731b8,L0x55555731ba,L0x55555731bc,L0x55555731be,L0x55555731c0,L0x55555731c2,L0x55555731c4,L0x55555731c6] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551a0c *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #240]                             #! EA = L0x55555731c8; PC = 0x5555551a10 *)
-mov [L0x55555731c8,L0x55555731ca,L0x55555731cc,L0x55555731ce,L0x55555731d0,L0x55555731d2,L0x55555731d4,L0x55555731d6] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x5555551a14 *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #256]                             #! EA = L0x55555731d8; PC = 0x5555551a18 *)
-mov [L0x55555731d8,L0x55555731da,L0x55555731dc,L0x55555731de,L0x55555731e0,L0x55555731e2,L0x55555731e4,L0x55555731e6] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551a1c *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #272]                             #! EA = L0x55555731e8; PC = 0x5555551a20 *)
-mov [L0x55555731e8,L0x55555731ea,L0x55555731ec,L0x55555731ee,L0x55555731f0,L0x55555731f2,L0x55555731f4,L0x55555731f6] %v0;
-(* #b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551a30 *)
-#b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551a30 = 0x5555551a30;
-(* ldr	q7, [x19, #32]                              #! EA = L0x5555573218; Value = 0x0000000000000040; PC = 0x55555518f0 *)
-mov %v7 [L0x5555573218,L0x555557321a,L0x555557321c,L0x555557321e,L0x5555573220,L0x5555573222,L0x5555573224,L0x5555573226];
-(* ldr	q6, [x19, #48]                              #! EA = L0x5555573228; Value = 0x0000000000000040; PC = 0x55555518f4 *)
-mov %v6 [L0x5555573228,L0x555557322a,L0x555557322c,L0x555557322e,L0x5555573230,L0x5555573232,L0x5555573234,L0x5555573236];
-(* ldr	q5, [x19, #64]                              #! EA = L0x5555573238; Value = 0x0000000000000040; PC = 0x55555518f8 *)
-mov %v5 [L0x5555573238,L0x555557323a,L0x555557323c,L0x555557323e,L0x5555573240,L0x5555573242,L0x5555573244,L0x5555573246];
-(* ldr	q4, [x19, #80]                              #! EA = L0x5555573248; Value = 0x0000000000000040; PC = 0x55555518fc *)
-mov %v4 [L0x5555573248,L0x555557324a,L0x555557324c,L0x555557324e,L0x5555573250,L0x5555573252,L0x5555573254,L0x5555573256];
-(* ldr	q3, [x19, #96]                              #! EA = L0x5555573258; Value = 0x0000000000000040; PC = 0x5555551900 *)
-mov %v3 [L0x5555573258,L0x555557325a,L0x555557325c,L0x555557325e,L0x5555573260,L0x5555573262,L0x5555573264,L0x5555573266];
-(* ldr	q2, [x19, #112]                             #! EA = L0x5555573268; Value = 0x0000000000000040; PC = 0x5555551904 *)
-mov %v2 [L0x5555573268,L0x555557326a,L0x555557326c,L0x555557326e,L0x5555573270,L0x5555573272,L0x5555573274,L0x5555573276];
-(* ldr	q1, [x19, #128]                             #! EA = L0x5555573278; Value = 0x0000000000000040; PC = 0x5555551908 *)
-mov %v1 [L0x5555573278,L0x555557327a,L0x555557327c,L0x555557327e,L0x5555573280,L0x5555573282,L0x5555573284,L0x5555573286];
-(* ldr	q0, [x19, #16]                              #! EA = L0x5555573208; Value = 0x0000000000000040; PC = 0x5555551914 *)
-mov %v0 [L0x5555573208,L0x555557320a,L0x555557320c,L0x555557320e,L0x5555573210,L0x5555573212,L0x5555573214,L0x5555573216];
-(* str	q0, [sp]                                    #! EA = L0x7fffffeff0; PC = 0x5555551918 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v0;
-(* ldr	q0, [x19]                                   #! EA = L0x55555731f8; Value = 0x0000000000000040; PC = 0x555555193c *)
-mov %v0 [L0x55555731f8,L0x55555731fa,L0x55555731fc,L0x55555731fe,L0x5555573200,L0x5555573202,L0x5555573204,L0x5555573206];
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551940 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551940 = 0x5555551940;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x555555158c *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19, #144]                             #! EA = L0x7fffffcbc0; PC = 0x5555551590 *)
+mov [L0x7fffffcbc0,L0x7fffffcbc2,L0x7fffffcbc4,L0x7fffffcbc6,L0x7fffffcbc8,L0x7fffffcbca,L0x7fffffcbcc,L0x7fffffcbce] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x5555551594 *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #160]                             #! EA = L0x7fffffcbd0; PC = 0x5555551598 *)
+mov [L0x7fffffcbd0,L0x7fffffcbd2,L0x7fffffcbd4,L0x7fffffcbd6,L0x7fffffcbd8,L0x7fffffcbda,L0x7fffffcbdc,L0x7fffffcbde] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x555555159c *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #176]                             #! EA = L0x7fffffcbe0; PC = 0x55555515a0 *)
+mov [L0x7fffffcbe0,L0x7fffffcbe2,L0x7fffffcbe4,L0x7fffffcbe6,L0x7fffffcbe8,L0x7fffffcbea,L0x7fffffcbec,L0x7fffffcbee] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x55555515a4 *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #192]                             #! EA = L0x7fffffcbf0; PC = 0x55555515a8 *)
+mov [L0x7fffffcbf0,L0x7fffffcbf2,L0x7fffffcbf4,L0x7fffffcbf6,L0x7fffffcbf8,L0x7fffffcbfa,L0x7fffffcbfc,L0x7fffffcbfe] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x55555515ac *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #208]                             #! EA = L0x7fffffcc00; PC = 0x55555515b0 *)
+mov [L0x7fffffcc00,L0x7fffffcc02,L0x7fffffcc04,L0x7fffffcc06,L0x7fffffcc08,L0x7fffffcc0a,L0x7fffffcc0c,L0x7fffffcc0e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x55555515b4 *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #224]                             #! EA = L0x7fffffcc10; PC = 0x55555515b8 *)
+mov [L0x7fffffcc10,L0x7fffffcc12,L0x7fffffcc14,L0x7fffffcc16,L0x7fffffcc18,L0x7fffffcc1a,L0x7fffffcc1c,L0x7fffffcc1e] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555515bc *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #240]                             #! EA = L0x7fffffcc20; PC = 0x55555515c0 *)
+mov [L0x7fffffcc20,L0x7fffffcc22,L0x7fffffcc24,L0x7fffffcc26,L0x7fffffcc28,L0x7fffffcc2a,L0x7fffffcc2c,L0x7fffffcc2e] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x55555515c4 *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #256]                             #! EA = L0x7fffffcc30; PC = 0x55555515c8 *)
+mov [L0x7fffffcc30,L0x7fffffcc32,L0x7fffffcc34,L0x7fffffcc36,L0x7fffffcc38,L0x7fffffcc3a,L0x7fffffcc3c,L0x7fffffcc3e] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x55555515cc *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #272]                             #! EA = L0x7fffffcc40; PC = 0x55555515d0 *)
+mov [L0x7fffffcc40,L0x7fffffcc42,L0x7fffffcc44,L0x7fffffcc46,L0x7fffffcc48,L0x7fffffcc4a,L0x7fffffcc4c,L0x7fffffcc4e] %v0;
+(* #b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x55555515e0 *)
+#b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x55555515e0 = 0x55555515e0;
+(* ldr	q7, [x19, #32]                              #! EA = L0x7fffffcc70; Value = 0x0000000000000000; PC = 0x55555514a0 *)
+mov %v7 [L0x7fffffcc70,L0x7fffffcc72,L0x7fffffcc74,L0x7fffffcc76,L0x7fffffcc78,L0x7fffffcc7a,L0x7fffffcc7c,L0x7fffffcc7e];
+(* ldr	q6, [x19, #48]                              #! EA = L0x7fffffcc80; Value = 0x0000000000000000; PC = 0x55555514a4 *)
+mov %v6 [L0x7fffffcc80,L0x7fffffcc82,L0x7fffffcc84,L0x7fffffcc86,L0x7fffffcc88,L0x7fffffcc8a,L0x7fffffcc8c,L0x7fffffcc8e];
+(* ldr	q5, [x19, #64]                              #! EA = L0x7fffffcc90; Value = 0x0000000000000000; PC = 0x55555514a8 *)
+mov %v5 [L0x7fffffcc90,L0x7fffffcc92,L0x7fffffcc94,L0x7fffffcc96,L0x7fffffcc98,L0x7fffffcc9a,L0x7fffffcc9c,L0x7fffffcc9e];
+(* ldr	q4, [x19, #80]                              #! EA = L0x7fffffcca0; Value = 0x0000000000000000; PC = 0x55555514ac *)
+mov %v4 [L0x7fffffcca0,L0x7fffffcca2,L0x7fffffcca4,L0x7fffffcca6,L0x7fffffcca8,L0x7fffffccaa,L0x7fffffccac,L0x7fffffccae];
+(* ldr	q3, [x19, #96]                              #! EA = L0x7fffffccb0; Value = 0x0000000000000000; PC = 0x55555514b0 *)
+mov %v3 [L0x7fffffccb0,L0x7fffffccb2,L0x7fffffccb4,L0x7fffffccb6,L0x7fffffccb8,L0x7fffffccba,L0x7fffffccbc,L0x7fffffccbe];
+(* ldr	q2, [x19, #112]                             #! EA = L0x7fffffccc0; Value = 0x0000000000000000; PC = 0x55555514b4 *)
+mov %v2 [L0x7fffffccc0,L0x7fffffccc2,L0x7fffffccc4,L0x7fffffccc6,L0x7fffffccc8,L0x7fffffccca,L0x7fffffcccc,L0x7fffffccce];
+(* ldr	q1, [x19, #128]                             #! EA = L0x7fffffccd0; Value = 0x0000000000000000; PC = 0x55555514b8 *)
+mov %v1 [L0x7fffffccd0,L0x7fffffccd2,L0x7fffffccd4,L0x7fffffccd6,L0x7fffffccd8,L0x7fffffccda,L0x7fffffccdc,L0x7fffffccde];
+(* ldr	q0, [x19, #16]                              #! EA = L0x7fffffcc60; Value = 0x0000000000000000; PC = 0x55555514c4 *)
+mov %v0 [L0x7fffffcc60,L0x7fffffcc62,L0x7fffffcc64,L0x7fffffcc66,L0x7fffffcc68,L0x7fffffcc6a,L0x7fffffcc6c,L0x7fffffcc6e];
+(* str	q0, [sp]                                    #! EA = L0x7fffffc200; PC = 0x55555514c8 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v0;
+(* ldr	q0, [x19]                                   #! EA = L0x7fffffcc50; Value = 0x0000000000000000; PC = 0x55555514ec *)
+mov %v0 [L0x7fffffcc50,L0x7fffffcc52,L0x7fffffcc54,L0x7fffffcc56,L0x7fffffcc58,L0x7fffffcc5a,L0x7fffffcc5c,L0x7fffffcc5e];
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555514f0 = 0x55555514f0;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000040; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000480; PC = 0x5555551944 *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19]                                   #! EA = L0x55555731f8; PC = 0x5555551948 *)
-mov [L0x55555731f8,L0x55555731fa,L0x55555731fc,L0x55555731fe,L0x5555573200,L0x5555573202,L0x5555573204,L0x5555573206] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555194c *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #16]                              #! EA = L0x5555573208; PC = 0x5555551950 *)
-mov [L0x5555573208,L0x555557320a,L0x555557320c,L0x555557320e,L0x5555573210,L0x5555573212,L0x5555573214,L0x5555573216] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x5555551954 *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #32]                              #! EA = L0x5555573218; PC = 0x5555551958 *)
-mov [L0x5555573218,L0x555557321a,L0x555557321c,L0x555557321e,L0x5555573220,L0x5555573222,L0x5555573224,L0x5555573226] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x555555195c *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #48]                              #! EA = L0x5555573228; PC = 0x5555551960 *)
-mov [L0x5555573228,L0x555557322a,L0x555557322c,L0x555557322e,L0x5555573230,L0x5555573232,L0x5555573234,L0x5555573236] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551964 *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #64]                              #! EA = L0x5555573238; PC = 0x5555551968 *)
-mov [L0x5555573238,L0x555557323a,L0x555557323c,L0x555557323e,L0x5555573240,L0x5555573242,L0x5555573244,L0x5555573246] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x555555196c *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #80]                              #! EA = L0x5555573248; PC = 0x5555551970 *)
-mov [L0x5555573248,L0x555557324a,L0x555557324c,L0x555557324e,L0x5555573250,L0x5555573252,L0x5555573254,L0x5555573256] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551974 *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #96]                              #! EA = L0x5555573258; PC = 0x5555551978 *)
-mov [L0x5555573258,L0x555557325a,L0x555557325c,L0x555557325e,L0x5555573260,L0x5555573262,L0x5555573264,L0x5555573266] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x555555197c *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #112]                             #! EA = L0x5555573268; PC = 0x5555551980 *)
-mov [L0x5555573268,L0x555557326a,L0x555557326c,L0x555557326e,L0x5555573270,L0x5555573272,L0x5555573274,L0x5555573276] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551984 *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #128]                             #! EA = L0x5555573278; PC = 0x5555551988 *)
-mov [L0x5555573278,L0x555557327a,L0x555557327c,L0x555557327e,L0x5555573280,L0x5555573282,L0x5555573284,L0x5555573286] %v0;
-(* ldr	q7, [x19, #176]                             #! EA = L0x55555732a8; Value = 0x0000000000000000; PC = 0x555555198c *)
-mov %v7 [L0x55555732a8,L0x55555732aa,L0x55555732ac,L0x55555732ae,L0x55555732b0,L0x55555732b2,L0x55555732b4,L0x55555732b6];
-(* ldr	q6, [x19, #192]                             #! EA = L0x55555732b8; Value = 0x0000000000000000; PC = 0x5555551990 *)
-mov %v6 [L0x55555732b8,L0x55555732ba,L0x55555732bc,L0x55555732be,L0x55555732c0,L0x55555732c2,L0x55555732c4,L0x55555732c6];
-(* ldr	q5, [x19, #208]                             #! EA = L0x55555732c8; Value = 0x0000000000000000; PC = 0x5555551994 *)
-mov %v5 [L0x55555732c8,L0x55555732ca,L0x55555732cc,L0x55555732ce,L0x55555732d0,L0x55555732d2,L0x55555732d4,L0x55555732d6];
-(* ldr	q4, [x19, #224]                             #! EA = L0x55555732d8; Value = 0x0000000000000000; PC = 0x5555551998 *)
-mov %v4 [L0x55555732d8,L0x55555732da,L0x55555732dc,L0x55555732de,L0x55555732e0,L0x55555732e2,L0x55555732e4,L0x55555732e6];
-(* ldr	q3, [x19, #240]                             #! EA = L0x55555732e8; Value = 0x0000000000000000; PC = 0x555555199c *)
-mov %v3 [L0x55555732e8,L0x55555732ea,L0x55555732ec,L0x55555732ee,L0x55555732f0,L0x55555732f2,L0x55555732f4,L0x55555732f6];
-(* ldr	q2, [x19, #256]                             #! EA = L0x55555732f8; Value = 0x0000000000000000; PC = 0x55555519a0 *)
-mov %v2 [L0x55555732f8,L0x55555732fa,L0x55555732fc,L0x55555732fe,L0x5555573300,L0x5555573302,L0x5555573304,L0x5555573306];
-(* ldr	q1, [x19, #272]                             #! EA = L0x5555573308; Value = 0x0000000000000000; PC = 0x55555519a4 *)
-mov %v1 [L0x5555573308,L0x555557330a,L0x555557330c,L0x555557330e,L0x5555573310,L0x5555573312,L0x5555573314,L0x5555573316];
-(* ldr	q0, [x19, #144]                             #! EA = L0x5555573288; Value = 0x0000000000000000; PC = 0x55555519a8 *)
-mov %v0 [L0x5555573288,L0x555557328a,L0x555557328c,L0x555557328e,L0x5555573290,L0x5555573292,L0x5555573294,L0x5555573296];
-(* ldr	q16, [x19, #160]                            #! EA = L0x5555573298; Value = 0x0000000000000000; PC = 0x55555519b0 *)
-mov %v16 [L0x5555573298,L0x555557329a,L0x555557329c,L0x555557329e,L0x55555732a0,L0x55555732a2,L0x55555732a4,L0x55555732a6];
-(* str	q16, [sp]                                   #! EA = L0x7fffffeff0; PC = 0x55555519b4 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v16;
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555519d8 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555519d8 = 0x55555519d8;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x55555514f4 *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19]                                   #! EA = L0x7fffffcc50; PC = 0x55555514f8 *)
+mov [L0x7fffffcc50,L0x7fffffcc52,L0x7fffffcc54,L0x7fffffcc56,L0x7fffffcc58,L0x7fffffcc5a,L0x7fffffcc5c,L0x7fffffcc5e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x55555514fc *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #16]                              #! EA = L0x7fffffcc60; PC = 0x5555551500 *)
+mov [L0x7fffffcc60,L0x7fffffcc62,L0x7fffffcc64,L0x7fffffcc66,L0x7fffffcc68,L0x7fffffcc6a,L0x7fffffcc6c,L0x7fffffcc6e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x5555551504 *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #32]                              #! EA = L0x7fffffcc70; PC = 0x5555551508 *)
+mov [L0x7fffffcc70,L0x7fffffcc72,L0x7fffffcc74,L0x7fffffcc76,L0x7fffffcc78,L0x7fffffcc7a,L0x7fffffcc7c,L0x7fffffcc7e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x555555150c *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #48]                              #! EA = L0x7fffffcc80; PC = 0x5555551510 *)
+mov [L0x7fffffcc80,L0x7fffffcc82,L0x7fffffcc84,L0x7fffffcc86,L0x7fffffcc88,L0x7fffffcc8a,L0x7fffffcc8c,L0x7fffffcc8e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x5555551514 *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #64]                              #! EA = L0x7fffffcc90; PC = 0x5555551518 *)
+mov [L0x7fffffcc90,L0x7fffffcc92,L0x7fffffcc94,L0x7fffffcc96,L0x7fffffcc98,L0x7fffffcc9a,L0x7fffffcc9c,L0x7fffffcc9e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x555555151c *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #80]                              #! EA = L0x7fffffcca0; PC = 0x5555551520 *)
+mov [L0x7fffffcca0,L0x7fffffcca2,L0x7fffffcca4,L0x7fffffcca6,L0x7fffffcca8,L0x7fffffccaa,L0x7fffffccac,L0x7fffffccae] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551524 *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #96]                              #! EA = L0x7fffffccb0; PC = 0x5555551528 *)
+mov [L0x7fffffccb0,L0x7fffffccb2,L0x7fffffccb4,L0x7fffffccb6,L0x7fffffccb8,L0x7fffffccba,L0x7fffffccbc,L0x7fffffccbe] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x555555152c *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #112]                             #! EA = L0x7fffffccc0; PC = 0x5555551530 *)
+mov [L0x7fffffccc0,L0x7fffffccc2,L0x7fffffccc4,L0x7fffffccc6,L0x7fffffccc8,L0x7fffffccca,L0x7fffffcccc,L0x7fffffccce] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x5555551534 *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #128]                             #! EA = L0x7fffffccd0; PC = 0x5555551538 *)
+mov [L0x7fffffccd0,L0x7fffffccd2,L0x7fffffccd4,L0x7fffffccd6,L0x7fffffccd8,L0x7fffffccda,L0x7fffffccdc,L0x7fffffccde] %v0;
+(* ldr	q7, [x19, #176]                             #! EA = L0x7fffffcd00; Value = 0x0000000000000000; PC = 0x555555153c *)
+mov %v7 [L0x7fffffcd00,L0x7fffffcd02,L0x7fffffcd04,L0x7fffffcd06,L0x7fffffcd08,L0x7fffffcd0a,L0x7fffffcd0c,L0x7fffffcd0e];
+(* ldr	q6, [x19, #192]                             #! EA = L0x7fffffcd10; Value = 0x0000000000000000; PC = 0x5555551540 *)
+mov %v6 [L0x7fffffcd10,L0x7fffffcd12,L0x7fffffcd14,L0x7fffffcd16,L0x7fffffcd18,L0x7fffffcd1a,L0x7fffffcd1c,L0x7fffffcd1e];
+(* ldr	q5, [x19, #208]                             #! EA = L0x7fffffcd20; Value = 0x0000000000000000; PC = 0x5555551544 *)
+mov %v5 [L0x7fffffcd20,L0x7fffffcd22,L0x7fffffcd24,L0x7fffffcd26,L0x7fffffcd28,L0x7fffffcd2a,L0x7fffffcd2c,L0x7fffffcd2e];
+(* ldr	q4, [x19, #224]                             #! EA = L0x7fffffcd30; Value = 0x0000000000000000; PC = 0x5555551548 *)
+mov %v4 [L0x7fffffcd30,L0x7fffffcd32,L0x7fffffcd34,L0x7fffffcd36,L0x7fffffcd38,L0x7fffffcd3a,L0x7fffffcd3c,L0x7fffffcd3e];
+(* ldr	q3, [x19, #240]                             #! EA = L0x7fffffcd40; Value = 0x0000000000000000; PC = 0x555555154c *)
+mov %v3 [L0x7fffffcd40,L0x7fffffcd42,L0x7fffffcd44,L0x7fffffcd46,L0x7fffffcd48,L0x7fffffcd4a,L0x7fffffcd4c,L0x7fffffcd4e];
+(* ldr	q2, [x19, #256]                             #! EA = L0x7fffffcd50; Value = 0x0000000000000000; PC = 0x5555551550 *)
+mov %v2 [L0x7fffffcd50,L0x7fffffcd52,L0x7fffffcd54,L0x7fffffcd56,L0x7fffffcd58,L0x7fffffcd5a,L0x7fffffcd5c,L0x7fffffcd5e];
+(* ldr	q1, [x19, #272]                             #! EA = L0x7fffffcd60; Value = 0x0000000000000000; PC = 0x5555551554 *)
+mov %v1 [L0x7fffffcd60,L0x7fffffcd62,L0x7fffffcd64,L0x7fffffcd66,L0x7fffffcd68,L0x7fffffcd6a,L0x7fffffcd6c,L0x7fffffcd6e];
+(* ldr	q0, [x19, #144]                             #! EA = L0x7fffffcce0; Value = 0x0000000000000000; PC = 0x5555551558 *)
+mov %v0 [L0x7fffffcce0,L0x7fffffcce2,L0x7fffffcce4,L0x7fffffcce6,L0x7fffffcce8,L0x7fffffccea,L0x7fffffccec,L0x7fffffccee];
+(* ldr	q16, [x19, #160]                            #! EA = L0x7fffffccf0; Value = 0x0000000000000000; PC = 0x5555551560 *)
+mov %v16 [L0x7fffffccf0,L0x7fffffccf2,L0x7fffffccf4,L0x7fffffccf6,L0x7fffffccf8,L0x7fffffccfa,L0x7fffffccfc,L0x7fffffccfe];
+(* str	q16, [sp]                                   #! EA = L0x7fffffc200; PC = 0x5555551564 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v16;
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551588 = 0x5555551588;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000000; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x55555519dc *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19, #144]                             #! EA = L0x5555573288; PC = 0x55555519e0 *)
-mov [L0x5555573288,L0x555557328a,L0x555557328c,L0x555557328e,L0x5555573290,L0x5555573292,L0x5555573294,L0x5555573296] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x55555519e4 *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #160]                             #! EA = L0x5555573298; PC = 0x55555519e8 *)
-mov [L0x5555573298,L0x555557329a,L0x555557329c,L0x555557329e,L0x55555732a0,L0x55555732a2,L0x55555732a4,L0x55555732a6] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x55555519ec *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #176]                             #! EA = L0x55555732a8; PC = 0x55555519f0 *)
-mov [L0x55555732a8,L0x55555732aa,L0x55555732ac,L0x55555732ae,L0x55555732b0,L0x55555732b2,L0x55555732b4,L0x55555732b6] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x55555519f4 *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #192]                             #! EA = L0x55555732b8; PC = 0x55555519f8 *)
-mov [L0x55555732b8,L0x55555732ba,L0x55555732bc,L0x55555732be,L0x55555732c0,L0x55555732c2,L0x55555732c4,L0x55555732c6] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x55555519fc *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #208]                             #! EA = L0x55555732c8; PC = 0x5555551a00 *)
-mov [L0x55555732c8,L0x55555732ca,L0x55555732cc,L0x55555732ce,L0x55555732d0,L0x55555732d2,L0x55555732d4,L0x55555732d6] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551a04 *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #224]                             #! EA = L0x55555732d8; PC = 0x5555551a08 *)
-mov [L0x55555732d8,L0x55555732da,L0x55555732dc,L0x55555732de,L0x55555732e0,L0x55555732e2,L0x55555732e4,L0x55555732e6] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551a0c *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #240]                             #! EA = L0x55555732e8; PC = 0x5555551a10 *)
-mov [L0x55555732e8,L0x55555732ea,L0x55555732ec,L0x55555732ee,L0x55555732f0,L0x55555732f2,L0x55555732f4,L0x55555732f6] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x5555551a14 *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #256]                             #! EA = L0x55555732f8; PC = 0x5555551a18 *)
-mov [L0x55555732f8,L0x55555732fa,L0x55555732fc,L0x55555732fe,L0x5555573300,L0x5555573302,L0x5555573304,L0x5555573306] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551a1c *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #272]                             #! EA = L0x5555573308; PC = 0x5555551a20 *)
-mov [L0x5555573308,L0x555557330a,L0x555557330c,L0x555557330e,L0x5555573310,L0x5555573312,L0x5555573314,L0x5555573316] %v0;
-(* #b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551a30 *)
-#b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551a30 = 0x5555551a30;
-(* ldr	q7, [x19, #32]                              #! EA = L0x5555573338; Value = 0x0000000000000040; PC = 0x55555518f0 *)
-mov %v7 [L0x5555573338,L0x555557333a,L0x555557333c,L0x555557333e,L0x5555573340,L0x5555573342,L0x5555573344,L0x5555573346];
-(* ldr	q6, [x19, #48]                              #! EA = L0x5555573348; Value = 0x0000000000000040; PC = 0x55555518f4 *)
-mov %v6 [L0x5555573348,L0x555557334a,L0x555557334c,L0x555557334e,L0x5555573350,L0x5555573352,L0x5555573354,L0x5555573356];
-(* ldr	q5, [x19, #64]                              #! EA = L0x5555573358; Value = 0x0000000000000040; PC = 0x55555518f8 *)
-mov %v5 [L0x5555573358,L0x555557335a,L0x555557335c,L0x555557335e,L0x5555573360,L0x5555573362,L0x5555573364,L0x5555573366];
-(* ldr	q4, [x19, #80]                              #! EA = L0x5555573368; Value = 0x0000000000000040; PC = 0x55555518fc *)
-mov %v4 [L0x5555573368,L0x555557336a,L0x555557336c,L0x555557336e,L0x5555573370,L0x5555573372,L0x5555573374,L0x5555573376];
-(* ldr	q3, [x19, #96]                              #! EA = L0x5555573378; Value = 0x0000000000000040; PC = 0x5555551900 *)
-mov %v3 [L0x5555573378,L0x555557337a,L0x555557337c,L0x555557337e,L0x5555573380,L0x5555573382,L0x5555573384,L0x5555573386];
-(* ldr	q2, [x19, #112]                             #! EA = L0x5555573388; Value = 0x0000000000000040; PC = 0x5555551904 *)
-mov %v2 [L0x5555573388,L0x555557338a,L0x555557338c,L0x555557338e,L0x5555573390,L0x5555573392,L0x5555573394,L0x5555573396];
-(* ldr	q1, [x19, #128]                             #! EA = L0x5555573398; Value = 0x0000000000000040; PC = 0x5555551908 *)
-mov %v1 [L0x5555573398,L0x555557339a,L0x555557339c,L0x555557339e,L0x55555733a0,L0x55555733a2,L0x55555733a4,L0x55555733a6];
-(* ldr	q0, [x19, #16]                              #! EA = L0x5555573328; Value = 0x0000000000000040; PC = 0x5555551914 *)
-mov %v0 [L0x5555573328,L0x555557332a,L0x555557332c,L0x555557332e,L0x5555573330,L0x5555573332,L0x5555573334,L0x5555573336];
-(* str	q0, [sp]                                    #! EA = L0x7fffffeff0; PC = 0x5555551918 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v0;
-(* ldr	q0, [x19]                                   #! EA = L0x5555573318; Value = 0x0000000000000040; PC = 0x555555193c *)
-mov %v0 [L0x5555573318,L0x555557331a,L0x555557331c,L0x555557331e,L0x5555573320,L0x5555573322,L0x5555573324,L0x5555573326];
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551940 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551940 = 0x5555551940;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x555555158c *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19, #144]                             #! EA = L0x7fffffcce0; PC = 0x5555551590 *)
+mov [L0x7fffffcce0,L0x7fffffcce2,L0x7fffffcce4,L0x7fffffcce6,L0x7fffffcce8,L0x7fffffccea,L0x7fffffccec,L0x7fffffccee] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x5555551594 *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #160]                             #! EA = L0x7fffffccf0; PC = 0x5555551598 *)
+mov [L0x7fffffccf0,L0x7fffffccf2,L0x7fffffccf4,L0x7fffffccf6,L0x7fffffccf8,L0x7fffffccfa,L0x7fffffccfc,L0x7fffffccfe] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x555555159c *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #176]                             #! EA = L0x7fffffcd00; PC = 0x55555515a0 *)
+mov [L0x7fffffcd00,L0x7fffffcd02,L0x7fffffcd04,L0x7fffffcd06,L0x7fffffcd08,L0x7fffffcd0a,L0x7fffffcd0c,L0x7fffffcd0e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x55555515a4 *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #192]                             #! EA = L0x7fffffcd10; PC = 0x55555515a8 *)
+mov [L0x7fffffcd10,L0x7fffffcd12,L0x7fffffcd14,L0x7fffffcd16,L0x7fffffcd18,L0x7fffffcd1a,L0x7fffffcd1c,L0x7fffffcd1e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x55555515ac *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #208]                             #! EA = L0x7fffffcd20; PC = 0x55555515b0 *)
+mov [L0x7fffffcd20,L0x7fffffcd22,L0x7fffffcd24,L0x7fffffcd26,L0x7fffffcd28,L0x7fffffcd2a,L0x7fffffcd2c,L0x7fffffcd2e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x55555515b4 *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #224]                             #! EA = L0x7fffffcd30; PC = 0x55555515b8 *)
+mov [L0x7fffffcd30,L0x7fffffcd32,L0x7fffffcd34,L0x7fffffcd36,L0x7fffffcd38,L0x7fffffcd3a,L0x7fffffcd3c,L0x7fffffcd3e] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555515bc *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #240]                             #! EA = L0x7fffffcd40; PC = 0x55555515c0 *)
+mov [L0x7fffffcd40,L0x7fffffcd42,L0x7fffffcd44,L0x7fffffcd46,L0x7fffffcd48,L0x7fffffcd4a,L0x7fffffcd4c,L0x7fffffcd4e] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x55555515c4 *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #256]                             #! EA = L0x7fffffcd50; PC = 0x55555515c8 *)
+mov [L0x7fffffcd50,L0x7fffffcd52,L0x7fffffcd54,L0x7fffffcd56,L0x7fffffcd58,L0x7fffffcd5a,L0x7fffffcd5c,L0x7fffffcd5e] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x55555515cc *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #272]                             #! EA = L0x7fffffcd60; PC = 0x55555515d0 *)
+mov [L0x7fffffcd60,L0x7fffffcd62,L0x7fffffcd64,L0x7fffffcd66,L0x7fffffcd68,L0x7fffffcd6a,L0x7fffffcd6c,L0x7fffffcd6e] %v0;
+(* #b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x55555515e0 *)
+#b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x55555515e0 = 0x55555515e0;
+(* ldr	q7, [x19, #32]                              #! EA = L0x7fffffcd90; Value = 0x0000000000000000; PC = 0x55555514a0 *)
+mov %v7 [L0x7fffffcd90,L0x7fffffcd92,L0x7fffffcd94,L0x7fffffcd96,L0x7fffffcd98,L0x7fffffcd9a,L0x7fffffcd9c,L0x7fffffcd9e];
+(* ldr	q6, [x19, #48]                              #! EA = L0x7fffffcda0; Value = 0x0000000000000000; PC = 0x55555514a4 *)
+mov %v6 [L0x7fffffcda0,L0x7fffffcda2,L0x7fffffcda4,L0x7fffffcda6,L0x7fffffcda8,L0x7fffffcdaa,L0x7fffffcdac,L0x7fffffcdae];
+(* ldr	q5, [x19, #64]                              #! EA = L0x7fffffcdb0; Value = 0x0000000000000000; PC = 0x55555514a8 *)
+mov %v5 [L0x7fffffcdb0,L0x7fffffcdb2,L0x7fffffcdb4,L0x7fffffcdb6,L0x7fffffcdb8,L0x7fffffcdba,L0x7fffffcdbc,L0x7fffffcdbe];
+(* ldr	q4, [x19, #80]                              #! EA = L0x7fffffcdc0; Value = 0x0000000000000000; PC = 0x55555514ac *)
+mov %v4 [L0x7fffffcdc0,L0x7fffffcdc2,L0x7fffffcdc4,L0x7fffffcdc6,L0x7fffffcdc8,L0x7fffffcdca,L0x7fffffcdcc,L0x7fffffcdce];
+(* ldr	q3, [x19, #96]                              #! EA = L0x7fffffcdd0; Value = 0x0000000000000000; PC = 0x55555514b0 *)
+mov %v3 [L0x7fffffcdd0,L0x7fffffcdd2,L0x7fffffcdd4,L0x7fffffcdd6,L0x7fffffcdd8,L0x7fffffcdda,L0x7fffffcddc,L0x7fffffcdde];
+(* ldr	q2, [x19, #112]                             #! EA = L0x7fffffcde0; Value = 0x0000000000000000; PC = 0x55555514b4 *)
+mov %v2 [L0x7fffffcde0,L0x7fffffcde2,L0x7fffffcde4,L0x7fffffcde6,L0x7fffffcde8,L0x7fffffcdea,L0x7fffffcdec,L0x7fffffcdee];
+(* ldr	q1, [x19, #128]                             #! EA = L0x7fffffcdf0; Value = 0x0000000000000000; PC = 0x55555514b8 *)
+mov %v1 [L0x7fffffcdf0,L0x7fffffcdf2,L0x7fffffcdf4,L0x7fffffcdf6,L0x7fffffcdf8,L0x7fffffcdfa,L0x7fffffcdfc,L0x7fffffcdfe];
+(* ldr	q0, [x19, #16]                              #! EA = L0x7fffffcd80; Value = 0x0000000000000000; PC = 0x55555514c4 *)
+mov %v0 [L0x7fffffcd80,L0x7fffffcd82,L0x7fffffcd84,L0x7fffffcd86,L0x7fffffcd88,L0x7fffffcd8a,L0x7fffffcd8c,L0x7fffffcd8e];
+(* str	q0, [sp]                                    #! EA = L0x7fffffc200; PC = 0x55555514c8 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v0;
+(* ldr	q0, [x19]                                   #! EA = L0x7fffffcd70; Value = 0x0000000000000000; PC = 0x55555514ec *)
+mov %v0 [L0x7fffffcd70,L0x7fffffcd72,L0x7fffffcd74,L0x7fffffcd76,L0x7fffffcd78,L0x7fffffcd7a,L0x7fffffcd7c,L0x7fffffcd7e];
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555514f0 = 0x55555514f0;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000040; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000480; PC = 0x5555551944 *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19]                                   #! EA = L0x5555573318; PC = 0x5555551948 *)
-mov [L0x5555573318,L0x555557331a,L0x555557331c,L0x555557331e,L0x5555573320,L0x5555573322,L0x5555573324,L0x5555573326] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x555555194c *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #16]                              #! EA = L0x5555573328; PC = 0x5555551950 *)
-mov [L0x5555573328,L0x555557332a,L0x555557332c,L0x555557332e,L0x5555573330,L0x5555573332,L0x5555573334,L0x5555573336] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x5555551954 *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #32]                              #! EA = L0x5555573338; PC = 0x5555551958 *)
-mov [L0x5555573338,L0x555557333a,L0x555557333c,L0x555557333e,L0x5555573340,L0x5555573342,L0x5555573344,L0x5555573346] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x555555195c *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #48]                              #! EA = L0x5555573348; PC = 0x5555551960 *)
-mov [L0x5555573348,L0x555557334a,L0x555557334c,L0x555557334e,L0x5555573350,L0x5555573352,L0x5555573354,L0x5555573356] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x5555551964 *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #64]                              #! EA = L0x5555573358; PC = 0x5555551968 *)
-mov [L0x5555573358,L0x555557335a,L0x555557335c,L0x555557335e,L0x5555573360,L0x5555573362,L0x5555573364,L0x5555573366] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x555555196c *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #80]                              #! EA = L0x5555573368; PC = 0x5555551970 *)
-mov [L0x5555573368,L0x555557336a,L0x555557336c,L0x555557336e,L0x5555573370,L0x5555573372,L0x5555573374,L0x5555573376] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551974 *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #96]                              #! EA = L0x5555573378; PC = 0x5555551978 *)
-mov [L0x5555573378,L0x555557337a,L0x555557337c,L0x555557337e,L0x5555573380,L0x5555573382,L0x5555573384,L0x5555573386] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x555555197c *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #112]                             #! EA = L0x5555573388; PC = 0x5555551980 *)
-mov [L0x5555573388,L0x555557338a,L0x555557338c,L0x555557338e,L0x5555573390,L0x5555573392,L0x5555573394,L0x5555573396] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551984 *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #128]                             #! EA = L0x5555573398; PC = 0x5555551988 *)
-mov [L0x5555573398,L0x555557339a,L0x555557339c,L0x555557339e,L0x55555733a0,L0x55555733a2,L0x55555733a4,L0x55555733a6] %v0;
-(* ldr	q7, [x19, #176]                             #! EA = L0x55555733c8; Value = 0x0000000000000000; PC = 0x555555198c *)
-mov %v7 [L0x55555733c8,L0x55555733ca,L0x55555733cc,L0x55555733ce,L0x55555733d0,L0x55555733d2,L0x55555733d4,L0x55555733d6];
-(* ldr	q6, [x19, #192]                             #! EA = L0x55555733d8; Value = 0x0000000000000000; PC = 0x5555551990 *)
-mov %v6 [L0x55555733d8,L0x55555733da,L0x55555733dc,L0x55555733de,L0x55555733e0,L0x55555733e2,L0x55555733e4,L0x55555733e6];
-(* ldr	q5, [x19, #208]                             #! EA = L0x55555733e8; Value = 0x0000000000000000; PC = 0x5555551994 *)
-mov %v5 [L0x55555733e8,L0x55555733ea,L0x55555733ec,L0x55555733ee,L0x55555733f0,L0x55555733f2,L0x55555733f4,L0x55555733f6];
-(* ldr	q4, [x19, #224]                             #! EA = L0x55555733f8; Value = 0x0000000000000000; PC = 0x5555551998 *)
-mov %v4 [L0x55555733f8,L0x55555733fa,L0x55555733fc,L0x55555733fe,L0x5555573400,L0x5555573402,L0x5555573404,L0x5555573406];
-(* ldr	q3, [x19, #240]                             #! EA = L0x5555573408; Value = 0x0000000000000000; PC = 0x555555199c *)
-mov %v3 [L0x5555573408,L0x555557340a,L0x555557340c,L0x555557340e,L0x5555573410,L0x5555573412,L0x5555573414,L0x5555573416];
-(* ldr	q2, [x19, #256]                             #! EA = L0x5555573418; Value = 0x0000000000000000; PC = 0x55555519a0 *)
-mov %v2 [L0x5555573418,L0x555557341a,L0x555557341c,L0x555557341e,L0x5555573420,L0x5555573422,L0x5555573424,L0x5555573426];
-(* ldr	q1, [x19, #272]                             #! EA = L0x5555573428; Value = 0x0000000000000000; PC = 0x55555519a4 *)
-mov %v1 [L0x5555573428,L0x555557342a,L0x555557342c,L0x555557342e,L0x5555573430,L0x5555573432,L0x5555573434,L0x5555573436];
-(* ldr	q0, [x19, #144]                             #! EA = L0x55555733a8; Value = 0x0000000000000000; PC = 0x55555519a8 *)
-mov %v0 [L0x55555733a8,L0x55555733aa,L0x55555733ac,L0x55555733ae,L0x55555733b0,L0x55555733b2,L0x55555733b4,L0x55555733b6];
-(* ldr	q16, [x19, #160]                            #! EA = L0x55555733b8; Value = 0x0000000000000000; PC = 0x55555519b0 *)
-mov %v16 [L0x55555733b8,L0x55555733ba,L0x55555733bc,L0x55555733be,L0x55555733c0,L0x55555733c2,L0x55555733c4,L0x55555733c6];
-(* str	q16, [sp]                                   #! EA = L0x7fffffeff0; PC = 0x55555519b4 *)
-mov [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe] %v16;
-(* #bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555519d8 *)
-#bl	0x5555551a54 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x55555519d8 = 0x55555519d8;
-(* #! -> SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffefe0; PC = 0x5555551a54 *)
-mov [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6] %v8[0:4];
-mov [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee] %v9[0:4];
-(* mov	v20.16b, v4.16b                             #! PC = 0x5555551a58 *)
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x55555514f4 *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19]                                   #! EA = L0x7fffffcd70; PC = 0x55555514f8 *)
+mov [L0x7fffffcd70,L0x7fffffcd72,L0x7fffffcd74,L0x7fffffcd76,L0x7fffffcd78,L0x7fffffcd7a,L0x7fffffcd7c,L0x7fffffcd7e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x55555514fc *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #16]                              #! EA = L0x7fffffcd80; PC = 0x5555551500 *)
+mov [L0x7fffffcd80,L0x7fffffcd82,L0x7fffffcd84,L0x7fffffcd86,L0x7fffffcd88,L0x7fffffcd8a,L0x7fffffcd8c,L0x7fffffcd8e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x5555551504 *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #32]                              #! EA = L0x7fffffcd90; PC = 0x5555551508 *)
+mov [L0x7fffffcd90,L0x7fffffcd92,L0x7fffffcd94,L0x7fffffcd96,L0x7fffffcd98,L0x7fffffcd9a,L0x7fffffcd9c,L0x7fffffcd9e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x555555150c *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #48]                              #! EA = L0x7fffffcda0; PC = 0x5555551510 *)
+mov [L0x7fffffcda0,L0x7fffffcda2,L0x7fffffcda4,L0x7fffffcda6,L0x7fffffcda8,L0x7fffffcdaa,L0x7fffffcdac,L0x7fffffcdae] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x5555551514 *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #64]                              #! EA = L0x7fffffcdb0; PC = 0x5555551518 *)
+mov [L0x7fffffcdb0,L0x7fffffcdb2,L0x7fffffcdb4,L0x7fffffcdb6,L0x7fffffcdb8,L0x7fffffcdba,L0x7fffffcdbc,L0x7fffffcdbe] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x555555151c *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #80]                              #! EA = L0x7fffffcdc0; PC = 0x5555551520 *)
+mov [L0x7fffffcdc0,L0x7fffffcdc2,L0x7fffffcdc4,L0x7fffffcdc6,L0x7fffffcdc8,L0x7fffffcdca,L0x7fffffcdcc,L0x7fffffcdce] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551524 *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #96]                              #! EA = L0x7fffffcdd0; PC = 0x5555551528 *)
+mov [L0x7fffffcdd0,L0x7fffffcdd2,L0x7fffffcdd4,L0x7fffffcdd6,L0x7fffffcdd8,L0x7fffffcdda,L0x7fffffcddc,L0x7fffffcdde] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x555555152c *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #112]                             #! EA = L0x7fffffcde0; PC = 0x5555551530 *)
+mov [L0x7fffffcde0,L0x7fffffcde2,L0x7fffffcde4,L0x7fffffcde6,L0x7fffffcde8,L0x7fffffcdea,L0x7fffffcdec,L0x7fffffcdee] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x5555551534 *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #128]                             #! EA = L0x7fffffcdf0; PC = 0x5555551538 *)
+mov [L0x7fffffcdf0,L0x7fffffcdf2,L0x7fffffcdf4,L0x7fffffcdf6,L0x7fffffcdf8,L0x7fffffcdfa,L0x7fffffcdfc,L0x7fffffcdfe] %v0;
+(* ldr	q7, [x19, #176]                             #! EA = L0x7fffffce20; Value = 0x0000000000000000; PC = 0x555555153c *)
+mov %v7 [L0x7fffffce20,L0x7fffffce22,L0x7fffffce24,L0x7fffffce26,L0x7fffffce28,L0x7fffffce2a,L0x7fffffce2c,L0x7fffffce2e];
+(* ldr	q6, [x19, #192]                             #! EA = L0x7fffffce30; Value = 0x0000000000000000; PC = 0x5555551540 *)
+mov %v6 [L0x7fffffce30,L0x7fffffce32,L0x7fffffce34,L0x7fffffce36,L0x7fffffce38,L0x7fffffce3a,L0x7fffffce3c,L0x7fffffce3e];
+(* ldr	q5, [x19, #208]                             #! EA = L0x7fffffce40; Value = 0x0000000000000000; PC = 0x5555551544 *)
+mov %v5 [L0x7fffffce40,L0x7fffffce42,L0x7fffffce44,L0x7fffffce46,L0x7fffffce48,L0x7fffffce4a,L0x7fffffce4c,L0x7fffffce4e];
+(* ldr	q4, [x19, #224]                             #! EA = L0x7fffffce50; Value = 0x0000000000000000; PC = 0x5555551548 *)
+mov %v4 [L0x7fffffce50,L0x7fffffce52,L0x7fffffce54,L0x7fffffce56,L0x7fffffce58,L0x7fffffce5a,L0x7fffffce5c,L0x7fffffce5e];
+(* ldr	q3, [x19, #240]                             #! EA = L0x7fffffce60; Value = 0x0000000000000000; PC = 0x555555154c *)
+mov %v3 [L0x7fffffce60,L0x7fffffce62,L0x7fffffce64,L0x7fffffce66,L0x7fffffce68,L0x7fffffce6a,L0x7fffffce6c,L0x7fffffce6e];
+(* ldr	q2, [x19, #256]                             #! EA = L0x7fffffce70; Value = 0x0000000000000000; PC = 0x5555551550 *)
+mov %v2 [L0x7fffffce70,L0x7fffffce72,L0x7fffffce74,L0x7fffffce76,L0x7fffffce78,L0x7fffffce7a,L0x7fffffce7c,L0x7fffffce7e];
+(* ldr	q1, [x19, #272]                             #! EA = L0x7fffffce80; Value = 0x0000000000000000; PC = 0x5555551554 *)
+mov %v1 [L0x7fffffce80,L0x7fffffce82,L0x7fffffce84,L0x7fffffce86,L0x7fffffce88,L0x7fffffce8a,L0x7fffffce8c,L0x7fffffce8e];
+(* ldr	q0, [x19, #144]                             #! EA = L0x7fffffce00; Value = 0x0000000000000000; PC = 0x5555551558 *)
+mov %v0 [L0x7fffffce00,L0x7fffffce02,L0x7fffffce04,L0x7fffffce06,L0x7fffffce08,L0x7fffffce0a,L0x7fffffce0c,L0x7fffffce0e];
+(* ldr	q16, [x19, #160]                            #! EA = L0x7fffffce10; Value = 0x0000000000000000; PC = 0x5555551560 *)
+mov %v16 [L0x7fffffce10,L0x7fffffce12,L0x7fffffce14,L0x7fffffce16,L0x7fffffce18,L0x7fffffce1a,L0x7fffffce1c,L0x7fffffce1e];
+(* str	q16, [sp]                                   #! EA = L0x7fffffc200; PC = 0x5555551564 *)
+mov [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e] %v16;
+(* #bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588 *)
+#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! 0x5555551588 = 0x5555551588;
+(* #! -> SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc1f0; PC = 0x5555551604 *)
+mov [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6] %v8[0:4];
+mov [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe] %v9[0:4];
+(* mov	v20.16b, v4.16b                             #! PC = 0x5555551608 *)
 mov %v20 %v4;
-(* mov	v19.16b, v5.16b                             #! PC = 0x5555551a5c *)
+(* mov	v19.16b, v5.16b                             #! PC = 0x555555160c *)
 mov %v19 %v5;
-(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffeff0; Value = 0x0000000000000000; PC = 0x5555551a60 *)
-mov %v18 [L0x7fffffeff0,L0x7fffffeff2,L0x7fffffeff4,L0x7fffffeff6,L0x7fffffeff8,L0x7fffffeffa,L0x7fffffeffc,L0x7fffffeffe];
-(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551a64 *)
+(* ldr	q18, [sp, #16]                              #! EA = L0x7fffffc200; Value = 0x0000000000000000; PC = 0x5555551610 *)
+mov %v18 [L0x7fffffc200,L0x7fffffc202,L0x7fffffc204,L0x7fffffc206,L0x7fffffc208,L0x7fffffc20a,L0x7fffffc20c,L0x7fffffc20e];
+(* add	v9.8h, v3.8h, v6.8h                         #! PC = 0x5555551614 *)
 add %v9 %v3 %v6;
-(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551a68 *)
+(* sub	v3.8h, v3.8h, v6.8h                         #! PC = 0x5555551618 *)
 sub %v3 %v3 %v6;
-(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x5555551a6c *)
+(* add	v5.8h, v0.8h, v9.8h                         #! PC = 0x555555161c *)
 add %v5 %v0 %v9;
-(* ldr	q8, [x8, #2832]                             #! EA = L0x5555552b10; Value = 0x00000000723311ef; PC = 0x5555551a74 *)
-mov %v8 [L0x5555552b10,L0x5555552b12,L0x5555552b14,L0x5555552b16,L0x5555552b18,L0x5555552b1a,L0x5555552b1c,L0x5555552b1e];
-(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551a78 *)
+(* ldr	q8, [x8, #2064]                             #! EA = L0x5555552810; Value = 0x00000000723311ef; PC = 0x5555551624 *)
+mov %v8 [L0x5555552810,L0x5555552812,L0x5555552814,L0x5555552816,L0x5555552818,L0x555555281a,L0x555555281c,L0x555555281e];
+(* sqdmulh	v4.8h, v5.8h, v8.h[1]                   #! PC = 0x5555551628 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v5 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x5555551a7c *)
+(* srshr	v4.8h, v4.8h, #11                         #! PC = 0x555555162c *)
 split %HI %LO %v4 11; split %LO1 %dc %LO (11-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551a80 *)
+(* shl	v5.8h, v5.8h, #1                            #! PC = 0x5555551630 *)
 shl %v5 %v5 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* mov	v17.16b, v5.16b                             #! PC = 0x5555551a84 *)
+(* mov	v17.16b, v5.16b                             #! PC = 0x5555551634 *)
 mov %v17 %v5;
-(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551a88 *)
+(* mls	v17.8h, v4.8h, v8.h[0]                      #! PC = 0x5555551638 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v17 %v17 %mls;
-(* shl	v0.8h, v0.8h, #1                            #! PC = 0x5555551a8c *)
+(* shl	v0.8h, v0.8h, #1                            #! PC = 0x555555163c *)
 shl %v0 %v0 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551a90 *)
+(* sub	v0.8h, v0.8h, v9.8h                         #! PC = 0x5555551640 *)
 sub %v0 %v0 %v9;
-(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551a94 *)
+(* sqdmulh	v6.8h, v0.8h, v8.h[1]                   #! PC = 0x5555551644 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v0 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v6@sint16[8] %LO0;
-(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551a98 *)
+(* srshr	v6.8h, v6.8h, #10                         #! PC = 0x5555551648 *)
 split %HI %LO %v6 10; split %LO1 %dc %LO (10-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* ldr	q9, [x8, #2848]                             #! EA = L0x5555552b20; Value = 0x0000fcdd0763fd93; PC = 0x5555551aa0 *)
-mov %v9 [L0x5555552b20,L0x5555552b22,L0x5555552b24,L0x5555552b26,L0x5555552b28,L0x5555552b2a,L0x5555552b2c,L0x5555552b2e];
-(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551aa4 *)
+(* ldr	q9, [x8, #2080]                             #! EA = L0x5555552820; Value = 0x0000fcdd0763fd93; PC = 0x5555551650 *)
+mov %v9 [L0x5555552820,L0x5555552822,L0x5555552824,L0x5555552826,L0x5555552828,L0x555555282a,L0x555555282c,L0x555555282e];
+(* sqrdmulh	v4.8h, v3.8h, v9.h[7]                  #! PC = 0x5555551654 *)
 broadcast %sqrdmulh 8 [%v9[7]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551aa8 *)
+(* add	v5.8h, v6.8h, v4.8h                         #! PC = 0x5555551658 *)
 add %v5 %v6 %v4;
-(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x5555551aac *)
+(* srshr	v5.8h, v5.8h, #2                          #! PC = 0x555555165c *)
 split %HI %LO %v5 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551ab0 *)
+(* sub	v6.8h, v6.8h, v4.8h                         #! PC = 0x5555551660 *)
 sub %v6 %v6 %v4;
-(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551ab4 *)
+(* srshr	v6.8h, v6.8h, #2                          #! PC = 0x5555551664 *)
 split %HI %LO %v6 2; split %LO1 %dc %LO (2-1);
 cast %LO0@sint16[8] %LO1; add %v6 %HI %LO0;
-(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551ab8 *)
+(* mul	v3.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551668 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x5555551abc *)
+(* add	v4.8h, v0.8h, v3.8h                         #! PC = 0x555555166c *)
 add %v4 %v0 %v3;
-(* mov	v16.16b, v4.16b                             #! PC = 0x5555551ac0 *)
+(* mov	v16.16b, v4.16b                             #! PC = 0x5555551670 *)
 mov %v16 %v4;
-(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551ac4 *)
+(* mls	v16.8h, v5.8h, v8.h[0]                      #! PC = 0x5555551674 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v16 %v16 %mls;
-(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551ac8 *)
+(* sub	v0.8h, v0.8h, v3.8h                         #! PC = 0x5555551678 *)
 sub %v0 %v0 %v3;
-(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x5555551acc *)
+(* mls	v0.8h, v6.8h, v8.h[0]                       #! PC = 0x555555167c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v6 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v0 %v0 %mls;
-(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad0 *)
+(* add	v3.8h, v7.8h, v20.8h                        #! PC = 0x5555551680 *)
 add %v3 %v7 %v20;
-(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551ad4 *)
+(* sub	v4.8h, v7.8h, v20.8h                        #! PC = 0x5555551684 *)
 sub %v4 %v7 %v20;
-(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551ad8 *)
+(* add	v6.8h, v1.8h, v3.8h                         #! PC = 0x5555551688 *)
 add %v6 %v1 %v3;
-(* shl	v7.8h, v1.8h, #1                            #! PC = 0x5555551adc *)
+(* shl	v7.8h, v1.8h, #1                            #! PC = 0x555555168c *)
 shl %v7 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551ae0 *)
+(* sub	v7.8h, v7.8h, v3.8h                         #! PC = 0x5555551690 *)
 sub %v7 %v7 %v3;
-(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551ae4 *)
+(* sqrdmulh	v1.8h, v4.8h, v9.h[4]                  #! PC = 0x5555551694 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v4 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551ae8 *)
+(* mul	v4.8h, v4.8h, v9.h[0]                       #! PC = 0x5555551698 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v4 %v4 %mul; cast %v4@int16[8] %v4;
-(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551aec *)
+(* mls	v4.8h, v1.8h, v8.h[0]                       #! PC = 0x555555169c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x5555551af0 *)
+(* add	v3.8h, v4.8h, v7.8h                         #! PC = 0x55555516a0 *)
 add %v3 %v4 %v7;
-(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555551af4 *)
+(* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x55555516a4 *)
 sub %v7 %v7 %v4;
-(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x5555551af8 *)
+(* add	v1.8h, v2.8h, v19.8h                        #! PC = 0x55555516a8 *)
 add %v1 %v2 %v19;
-(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x5555551afc *)
+(* sub	v5.8h, v2.8h, v19.8h                        #! PC = 0x55555516ac *)
 sub %v5 %v2 %v19;
-(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x5555551b00 *)
+(* add	v19.8h, v18.8h, v1.8h                       #! PC = 0x55555516b0 *)
 add %v19 %v18 %v1;
-(* shl	v2.8h, v18.8h, #1                           #! PC = 0x5555551b04 *)
+(* shl	v2.8h, v18.8h, #1                           #! PC = 0x55555516b4 *)
 shl %v2 %v18 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x5555551b08 *)
+(* sub	v4.8h, v2.8h, v1.8h                         #! PC = 0x55555516b8 *)
 sub %v4 %v2 %v1;
-(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x5555551b0c *)
+(* sqrdmulh	v1.8h, v5.8h, v9.h[4]                  #! PC = 0x55555516bc *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v5 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x5555551b10 *)
+(* mul	v2.8h, v5.8h, v9.h[0]                       #! PC = 0x55555516c0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v2 %v5 %mul; cast %v2@int16[8] %v2;
-(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551b14 *)
+(* mls	v2.8h, v1.8h, v8.h[0]                       #! PC = 0x55555516c4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v2 %v2 %mls;
-(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x5555551b18 *)
+(* add	v1.8h, v2.8h, v4.8h                         #! PC = 0x55555516c8 *)
 add %v1 %v2 %v4;
-(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555551b1c *)
+(* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x55555516cc *)
 sub %v2 %v4 %v2;
-(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x5555551b20 *)
+(* add	v4.8h, v6.8h, v19.8h                        #! PC = 0x55555516d0 *)
 add %v4 %v6 %v19;
-(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x5555551b24 *)
+(* sub	v6.8h, v6.8h, v19.8h                        #! PC = 0x55555516d4 *)
 sub %v6 %v6 %v19;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b28 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x55555516d8 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b2c *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x55555516dc *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b30 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x55555516e0 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b34 *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x55555516e4 *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x5555551b38 *)
+(* add	v5.8h, v5.8h, v17.8h                        #! PC = 0x55555516e8 *)
 add %v5 %v5 %v17;
-(* str	q5, [x0]                                    #! EA = L0x7ffffff080; PC = 0x5555551b3c *)
-mov [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e] %v5;
-(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x5555551b40 *)
+(* str	q5, [x0]                                    #! EA = L0x7fffffc290; PC = 0x55555516ec *)
+mov [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e] %v5;
+(* sub	v5.8h, v17.8h, v4.8h                        #! PC = 0x55555516f0 *)
 sub %v5 %v17 %v4;
-(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x5555551b44 *)
+(* sqrdmulh	v4.8h, v6.8h, v9.h[4]                  #! PC = 0x55555516f4 *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v6 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x5555551b48 *)
+(* mul	v6.8h, v6.8h, v9.h[0]                       #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v6 %v6 %mul; cast %v6@int16[8] %v6;
-(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b4c *)
+(* mls	v6.8h, v4.8h, v8.h[0]                       #! PC = 0x55555516fc *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v6 %v6 %mls;
-(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551b50 *)
+(* add	v4.8h, v5.8h, v6.8h                         #! PC = 0x5555551700 *)
 add %v4 %v5 %v6;
-(* str	q4, [x3]                                    #! EA = L0x7ffffff0b0; PC = 0x5555551b54 *)
-mov [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be] %v4;
-(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551b58 *)
+(* str	q4, [x3]                                    #! EA = L0x7fffffc2c0; PC = 0x5555551704 *)
+mov [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce] %v4;
+(* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555551708 *)
 sub %v5 %v5 %v6;
-(* str	q5, [x6]                                    #! EA = L0x7ffffff0e0; PC = 0x5555551b5c *)
-mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v5;
-(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551b60 *)
+(* str	q5, [x6]                                    #! EA = L0x7fffffc2f0; PC = 0x555555170c *)
+mov [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe] %v5;
+(* sqrdmulh	v4.8h, v1.8h, v9.h[5]                  #! PC = 0x5555551710 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551b64 *)
+(* mul	v1.8h, v1.8h, v9.h[1]                       #! PC = 0x5555551714 *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b68 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551718 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x5555551b6c *)
+(* sqrdmulh	v4.8h, v7.8h, v9.h[6]                  #! PC = 0x555555171c *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v7 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551b70 *)
+(* mul	v5.8h, v7.8h, v9.h[2]                       #! PC = 0x5555551720 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v5 %v7 %mul; cast %v5@int16[8] %v5;
-(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551b74 *)
+(* mls	v5.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551724 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v5 %v5 %mls;
-(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551b78 *)
+(* add	v4.8h, v5.8h, v1.8h                         #! PC = 0x5555551728 *)
 add %v4 %v5 %v1;
-(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x5555551b7c *)
+(* sub	v1.8h, v1.8h, v5.8h                         #! PC = 0x555555172c *)
 sub %v1 %v1 %v5;
-(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551b80 *)
+(* sqdmulh	v5.8h, v4.8h, v8.h[1]                   #! PC = 0x5555551730 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v4 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v5@sint16[8] %LO0;
-(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551b84 *)
+(* srshr	v5.8h, v5.8h, #12                         #! PC = 0x5555551734 *)
 split %HI %LO %v5 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v5 %HI %LO0;
-(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551b88 *)
+(* mls	v4.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551738 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v4 %v4 %mls;
-(* shl	v5.8h, v4.8h, #1                            #! PC = 0x5555551b8c *)
+(* shl	v5.8h, v4.8h, #1                            #! PC = 0x555555173c *)
 shl %v5 %v4 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551b90 *)
+(* add	v5.8h, v5.8h, v16.8h                        #! PC = 0x5555551740 *)
 add %v5 %v5 %v16;
-(* str	q5, [x1]                                    #! EA = L0x7ffffff090; PC = 0x5555551b94 *)
-mov [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e] %v5;
-(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551b98 *)
+(* str	q5, [x1]                                    #! EA = L0x7fffffc2a0; PC = 0x5555551744 *)
+mov [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae] %v5;
+(* sub	v4.8h, v16.8h, v4.8h                        #! PC = 0x5555551748 *)
 sub %v4 %v16 %v4;
-(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x5555551b9c *)
+(* sqrdmulh	v5.8h, v1.8h, v9.h[4]                  #! PC = 0x555555174c *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v1 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v5 %LO11 %LO01;
-(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551ba0 *)
+(* mul	v1.8h, v1.8h, v9.h[0]                       #! PC = 0x5555551750 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v1 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551ba4 *)
+(* mls	v1.8h, v5.8h, v8.h[0]                       #! PC = 0x5555551754 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v5 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551ba8 *)
+(* add	v5.8h, v4.8h, v1.8h                         #! PC = 0x5555551758 *)
 add %v5 %v4 %v1;
-(* str	q5, [x7]                                    #! EA = L0x7ffffff0f0; PC = 0x5555551bac *)
-mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v5;
-(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551bb0 *)
+(* str	q5, [x7]                                    #! EA = L0x7fffffc300; PC = 0x555555175c *)
+mov [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e] %v5;
+(* sub	v4.8h, v4.8h, v1.8h                         #! PC = 0x5555551760 *)
 sub %v4 %v4 %v1;
-(* str	q4, [x4]                                    #! EA = L0x7ffffff0c0; PC = 0x5555551bb4 *)
-mov [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce] %v4;
-(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551bb8 *)
+(* str	q4, [x4]                                    #! EA = L0x7fffffc2d0; PC = 0x5555551764 *)
+mov [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de] %v4;
+(* sqrdmulh	v1.8h, v3.8h, v9.h[5]                  #! PC = 0x5555551768 *)
 broadcast %sqrdmulh 8 [%v9[5]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v1 %LO11 %LO01;
-(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x5555551bbc *)
+(* mul	v3.8h, v3.8h, v9.h[1]                       #! PC = 0x555555176c *)
 broadcast %mul 8 [%v9[1]]; mull %mdc %v3 %v3 %mul; cast %v3@int16[8] %v3;
-(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551bc0 *)
+(* mls	v3.8h, v1.8h, v8.h[0]                       #! PC = 0x5555551770 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v1 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v3 %v3 %mls;
-(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551bc4 *)
+(* sqrdmulh	v4.8h, v2.8h, v9.h[6]                  #! PC = 0x5555551774 *)
 broadcast %sqrdmulh 8 [%v9[6]]; smulj %LO %v2 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v4 %LO11 %LO01;
-(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551bc8 *)
+(* mul	v1.8h, v2.8h, v9.h[2]                       #! PC = 0x5555551778 *)
 broadcast %mul 8 [%v9[2]]; mull %mdc %v1 %v2 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551bcc *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x555555177c *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551bd0 *)
+(* add	v2.8h, v1.8h, v3.8h                         #! PC = 0x5555551780 *)
 add %v2 %v1 %v3;
-(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551bd4 *)
+(* sub	v3.8h, v3.8h, v1.8h                         #! PC = 0x5555551784 *)
 sub %v3 %v3 %v1;
-(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551bd8 *)
+(* sqdmulh	v4.8h, v2.8h, v8.h[1]                   #! PC = 0x5555551788 *)
 broadcast %sqdmulh 8 [%v8[1]]; smulj %LO %v2 %sqdmulh;
 ssplit %LO0 %dc %LO 15; vpc %v4@sint16[8] %LO0;
-(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x5555551bdc *)
+(* srshr	v4.8h, v4.8h, #12                         #! PC = 0x555555178c *)
 split %HI %LO %v4 12; split %LO1 %dc %LO (12-1);
 cast %LO0@sint16[8] %LO1; add %v4 %HI %LO0;
-(* mov	v1.16b, v2.16b                              #! PC = 0x5555551be0 *)
+(* mov	v1.16b, v2.16b                              #! PC = 0x5555551790 *)
 mov %v1 %v2;
-(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551be4 *)
+(* mls	v1.8h, v4.8h, v8.h[0]                       #! PC = 0x5555551794 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v4 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551be8 *)
+(* shl	v2.8h, v1.8h, #1                            #! PC = 0x5555551798 *)
 shl %v2 %v1 [(1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16, (1)@int16];
-(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x5555551bec *)
+(* add	v2.8h, v2.8h, v0.8h                         #! PC = 0x555555179c *)
 add %v2 %v2 %v0;
-(* str	q2, [x0]                                    #! EA = L0x7ffffff100; PC = 0x5555551bf4 *)
-mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551bf8 *)
+(* str	q2, [x0]                                    #! EA = L0x7fffffc310; PC = 0x55555517a4 *)
+mov [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517a8 *)
 sub %v0 %v0 %v1;
-(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x5555551bfc *)
+(* sqrdmulh	v2.8h, v3.8h, v9.h[4]                  #! PC = 0x55555517ac *)
 broadcast %sqrdmulh 8 [%v9[4]]; smulj %LO %v3 %sqrdmulh;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v2 %LO11 %LO01;
-(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x5555551c00 *)
+(* mul	v1.8h, v3.8h, v9.h[0]                       #! PC = 0x55555517b0 *)
 broadcast %mul 8 [%v9[0]]; mull %mdc %v1 %v3 %mul; cast %v1@int16[8] %v1;
-(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x5555551c04 *)
+(* mls	v1.8h, v2.8h, v8.h[0]                       #! PC = 0x55555517b4 *)
 broadcast %mls 8 [%v8[0]]; mull %dc %mls %v2 %mls;
 cast %mls@int16[8] %mls; subc %mdc %v1 %v1 %mls;
-(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x5555551c08 *)
+(* add	v2.8h, v0.8h, v1.8h                         #! PC = 0x55555517b8 *)
 add %v2 %v0 %v1;
-(* str	q2, [x2]                                    #! EA = L0x7ffffff0a0; PC = 0x5555551c0c *)
-mov [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae] %v2;
-(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x5555551c10 *)
+(* str	q2, [x2]                                    #! EA = L0x7fffffc2b0; PC = 0x55555517bc *)
+mov [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be] %v2;
+(* sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0 *)
 sub %v0 %v0 %v1;
-(* str	q0, [x5]                                    #! EA = L0x7ffffff0d0; PC = 0x5555551c14 *)
-mov [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de] %v0;
-(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffefe0; Value = 0x0000000000000000; PC = 0x5555551c18 *)
-mov %v8 [L0x7fffffefe0,L0x7fffffefe2,L0x7fffffefe4,L0x7fffffefe6,0@sint16,0@sint16,0@sint16,0@sint16];
-mov %v9 [L0x7fffffefe8,L0x7fffffefea,L0x7fffffefec,L0x7fffffefee,0@sint16,0@sint16,0@sint16,0@sint16];
-(* #! <- SP = 0x7fffffeff0 *)
-#! 0x7fffffeff0 = 0x7fffffeff0;
-(* #ret                                            #! PC = 0x5555551c1c *)
-#ret                                            #! 0x5555551c1c = 0x5555551c1c;
-(* ldr	q0, [sp, #144]                              #! EA = L0x7ffffff080; Value = 0x0000000000000000; PC = 0x55555519dc *)
-mov %v0 [L0x7ffffff080,L0x7ffffff082,L0x7ffffff084,L0x7ffffff086,L0x7ffffff088,L0x7ffffff08a,L0x7ffffff08c,L0x7ffffff08e];
-(* str	q0, [x19, #144]                             #! EA = L0x55555733a8; PC = 0x55555519e0 *)
-mov [L0x55555733a8,L0x55555733aa,L0x55555733ac,L0x55555733ae,L0x55555733b0,L0x55555733b2,L0x55555733b4,L0x55555733b6] %v0;
-(* ldr	q0, [sp, #160]                              #! EA = L0x7ffffff090; Value = 0x0000000000000000; PC = 0x55555519e4 *)
-mov %v0 [L0x7ffffff090,L0x7ffffff092,L0x7ffffff094,L0x7ffffff096,L0x7ffffff098,L0x7ffffff09a,L0x7ffffff09c,L0x7ffffff09e];
-(* str	q0, [x19, #160]                             #! EA = L0x55555733b8; PC = 0x55555519e8 *)
-mov [L0x55555733b8,L0x55555733ba,L0x55555733bc,L0x55555733be,L0x55555733c0,L0x55555733c2,L0x55555733c4,L0x55555733c6] %v0;
-(* ldr	q0, [sp, #176]                              #! EA = L0x7ffffff0a0; Value = 0x0000000000000000; PC = 0x55555519ec *)
-mov %v0 [L0x7ffffff0a0,L0x7ffffff0a2,L0x7ffffff0a4,L0x7ffffff0a6,L0x7ffffff0a8,L0x7ffffff0aa,L0x7ffffff0ac,L0x7ffffff0ae];
-(* str	q0, [x19, #176]                             #! EA = L0x55555733c8; PC = 0x55555519f0 *)
-mov [L0x55555733c8,L0x55555733ca,L0x55555733cc,L0x55555733ce,L0x55555733d0,L0x55555733d2,L0x55555733d4,L0x55555733d6] %v0;
-(* ldr	q0, [sp, #192]                              #! EA = L0x7ffffff0b0; Value = 0x0000000000000000; PC = 0x55555519f4 *)
-mov %v0 [L0x7ffffff0b0,L0x7ffffff0b2,L0x7ffffff0b4,L0x7ffffff0b6,L0x7ffffff0b8,L0x7ffffff0ba,L0x7ffffff0bc,L0x7ffffff0be];
-(* str	q0, [x19, #192]                             #! EA = L0x55555733d8; PC = 0x55555519f8 *)
-mov [L0x55555733d8,L0x55555733da,L0x55555733dc,L0x55555733de,L0x55555733e0,L0x55555733e2,L0x55555733e4,L0x55555733e6] %v0;
-(* ldr	q0, [sp, #208]                              #! EA = L0x7ffffff0c0; Value = 0x0000000000000000; PC = 0x55555519fc *)
-mov %v0 [L0x7ffffff0c0,L0x7ffffff0c2,L0x7ffffff0c4,L0x7ffffff0c6,L0x7ffffff0c8,L0x7ffffff0ca,L0x7ffffff0cc,L0x7ffffff0ce];
-(* str	q0, [x19, #208]                             #! EA = L0x55555733e8; PC = 0x5555551a00 *)
-mov [L0x55555733e8,L0x55555733ea,L0x55555733ec,L0x55555733ee,L0x55555733f0,L0x55555733f2,L0x55555733f4,L0x55555733f6] %v0;
-(* ldr	q0, [sp, #224]                              #! EA = L0x7ffffff0d0; Value = 0x0000000000000000; PC = 0x5555551a04 *)
-mov %v0 [L0x7ffffff0d0,L0x7ffffff0d2,L0x7ffffff0d4,L0x7ffffff0d6,L0x7ffffff0d8,L0x7ffffff0da,L0x7ffffff0dc,L0x7ffffff0de];
-(* str	q0, [x19, #224]                             #! EA = L0x55555733f8; PC = 0x5555551a08 *)
-mov [L0x55555733f8,L0x55555733fa,L0x55555733fc,L0x55555733fe,L0x5555573400,L0x5555573402,L0x5555573404,L0x5555573406] %v0;
-(* ldr	q0, [sp, #240]                              #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555551a0c *)
-mov %v0 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
-(* str	q0, [x19, #240]                             #! EA = L0x5555573408; PC = 0x5555551a10 *)
-mov [L0x5555573408,L0x555557340a,L0x555557340c,L0x555557340e,L0x5555573410,L0x5555573412,L0x5555573414,L0x5555573416] %v0;
-(* ldr	q0, [sp, #256]                              #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x5555551a14 *)
-mov %v0 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
-(* str	q0, [x19, #256]                             #! EA = L0x5555573418; PC = 0x5555551a18 *)
-mov [L0x5555573418,L0x555557341a,L0x555557341c,L0x555557341e,L0x5555573420,L0x5555573422,L0x5555573424,L0x5555573426] %v0;
-(* ldr	q0, [sp, #272]                              #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x5555551a1c *)
-mov %v0 [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e];
-(* str	q0, [x19, #272]                             #! EA = L0x5555573428; PC = 0x5555551a20 *)
-mov [L0x5555573428,L0x555557342a,L0x555557342c,L0x555557342e,L0x5555573430,L0x5555573432,L0x5555573434,L0x5555573436] %v0;
-(* #b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x5555551a30 *)
-#b.ne	0x55555518e4 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x5555551a30 = 0x5555551a30;
-(* #! <- SP = 0x7ffffff110 *)
-#! 0x7ffffff110 = 0x7ffffff110;
-(* #ret                                            #! PC = 0x5555551a50 *)
-#ret                                            #! 0x5555551a50 = 0x5555551a50;
+(* str	q0, [x5]                                    #! EA = L0x7fffffc2e0; PC = 0x55555517c4 *)
+mov [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee] %v0;
+(* ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc1f0; Value = 0x0000000000000000; PC = 0x55555517c8 *)
+mov %v8 [L0x7fffffc1f0,L0x7fffffc1f2,L0x7fffffc1f4,L0x7fffffc1f6,0@sint16,0@sint16,0@sint16,0@sint16];
+mov %v9 [L0x7fffffc1f8,L0x7fffffc1fa,L0x7fffffc1fc,L0x7fffffc1fe,0@sint16,0@sint16,0@sint16,0@sint16];
+(* #! <- SP = 0x7fffffc200 *)
+#! 0x7fffffc200 = 0x7fffffc200;
+(* #ret                                            #! PC = 0x55555517cc *)
+#ret                                            #! 0x55555517cc = 0x55555517cc;
+(* ldr	q0, [sp, #144]                              #! EA = L0x7fffffc290; Value = 0x0000000000000000; PC = 0x555555158c *)
+mov %v0 [L0x7fffffc290,L0x7fffffc292,L0x7fffffc294,L0x7fffffc296,L0x7fffffc298,L0x7fffffc29a,L0x7fffffc29c,L0x7fffffc29e];
+(* str	q0, [x19, #144]                             #! EA = L0x7fffffce00; PC = 0x5555551590 *)
+mov [L0x7fffffce00,L0x7fffffce02,L0x7fffffce04,L0x7fffffce06,L0x7fffffce08,L0x7fffffce0a,L0x7fffffce0c,L0x7fffffce0e] %v0;
+(* ldr	q0, [sp, #160]                              #! EA = L0x7fffffc2a0; Value = 0x0000000000000000; PC = 0x5555551594 *)
+mov %v0 [L0x7fffffc2a0,L0x7fffffc2a2,L0x7fffffc2a4,L0x7fffffc2a6,L0x7fffffc2a8,L0x7fffffc2aa,L0x7fffffc2ac,L0x7fffffc2ae];
+(* str	q0, [x19, #160]                             #! EA = L0x7fffffce10; PC = 0x5555551598 *)
+mov [L0x7fffffce10,L0x7fffffce12,L0x7fffffce14,L0x7fffffce16,L0x7fffffce18,L0x7fffffce1a,L0x7fffffce1c,L0x7fffffce1e] %v0;
+(* ldr	q0, [sp, #176]                              #! EA = L0x7fffffc2b0; Value = 0x0000000000000000; PC = 0x555555159c *)
+mov %v0 [L0x7fffffc2b0,L0x7fffffc2b2,L0x7fffffc2b4,L0x7fffffc2b6,L0x7fffffc2b8,L0x7fffffc2ba,L0x7fffffc2bc,L0x7fffffc2be];
+(* str	q0, [x19, #176]                             #! EA = L0x7fffffce20; PC = 0x55555515a0 *)
+mov [L0x7fffffce20,L0x7fffffce22,L0x7fffffce24,L0x7fffffce26,L0x7fffffce28,L0x7fffffce2a,L0x7fffffce2c,L0x7fffffce2e] %v0;
+(* ldr	q0, [sp, #192]                              #! EA = L0x7fffffc2c0; Value = 0x0000000000000000; PC = 0x55555515a4 *)
+mov %v0 [L0x7fffffc2c0,L0x7fffffc2c2,L0x7fffffc2c4,L0x7fffffc2c6,L0x7fffffc2c8,L0x7fffffc2ca,L0x7fffffc2cc,L0x7fffffc2ce];
+(* str	q0, [x19, #192]                             #! EA = L0x7fffffce30; PC = 0x55555515a8 *)
+mov [L0x7fffffce30,L0x7fffffce32,L0x7fffffce34,L0x7fffffce36,L0x7fffffce38,L0x7fffffce3a,L0x7fffffce3c,L0x7fffffce3e] %v0;
+(* ldr	q0, [sp, #208]                              #! EA = L0x7fffffc2d0; Value = 0x0000000000000000; PC = 0x55555515ac *)
+mov %v0 [L0x7fffffc2d0,L0x7fffffc2d2,L0x7fffffc2d4,L0x7fffffc2d6,L0x7fffffc2d8,L0x7fffffc2da,L0x7fffffc2dc,L0x7fffffc2de];
+(* str	q0, [x19, #208]                             #! EA = L0x7fffffce40; PC = 0x55555515b0 *)
+mov [L0x7fffffce40,L0x7fffffce42,L0x7fffffce44,L0x7fffffce46,L0x7fffffce48,L0x7fffffce4a,L0x7fffffce4c,L0x7fffffce4e] %v0;
+(* ldr	q0, [sp, #224]                              #! EA = L0x7fffffc2e0; Value = 0x0000000000000000; PC = 0x55555515b4 *)
+mov %v0 [L0x7fffffc2e0,L0x7fffffc2e2,L0x7fffffc2e4,L0x7fffffc2e6,L0x7fffffc2e8,L0x7fffffc2ea,L0x7fffffc2ec,L0x7fffffc2ee];
+(* str	q0, [x19, #224]                             #! EA = L0x7fffffce50; PC = 0x55555515b8 *)
+mov [L0x7fffffce50,L0x7fffffce52,L0x7fffffce54,L0x7fffffce56,L0x7fffffce58,L0x7fffffce5a,L0x7fffffce5c,L0x7fffffce5e] %v0;
+(* ldr	q0, [sp, #240]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555515bc *)
+mov %v0 [L0x7fffffc2f0,L0x7fffffc2f2,L0x7fffffc2f4,L0x7fffffc2f6,L0x7fffffc2f8,L0x7fffffc2fa,L0x7fffffc2fc,L0x7fffffc2fe];
+(* str	q0, [x19, #240]                             #! EA = L0x7fffffce60; PC = 0x55555515c0 *)
+mov [L0x7fffffce60,L0x7fffffce62,L0x7fffffce64,L0x7fffffce66,L0x7fffffce68,L0x7fffffce6a,L0x7fffffce6c,L0x7fffffce6e] %v0;
+(* ldr	q0, [sp, #256]                              #! EA = L0x7fffffc300; Value = 0x0000000000000000; PC = 0x55555515c4 *)
+mov %v0 [L0x7fffffc300,L0x7fffffc302,L0x7fffffc304,L0x7fffffc306,L0x7fffffc308,L0x7fffffc30a,L0x7fffffc30c,L0x7fffffc30e];
+(* str	q0, [x19, #256]                             #! EA = L0x7fffffce70; PC = 0x55555515c8 *)
+mov [L0x7fffffce70,L0x7fffffce72,L0x7fffffce74,L0x7fffffce76,L0x7fffffce78,L0x7fffffce7a,L0x7fffffce7c,L0x7fffffce7e] %v0;
+(* ldr	q0, [sp, #272]                              #! EA = L0x7fffffc310; Value = 0x0000000000000000; PC = 0x55555515cc *)
+mov %v0 [L0x7fffffc310,L0x7fffffc312,L0x7fffffc314,L0x7fffffc316,L0x7fffffc318,L0x7fffffc31a,L0x7fffffc31c,L0x7fffffc31e];
+(* str	q0, [x19, #272]                             #! EA = L0x7fffffce80; PC = 0x55555515d0 *)
+mov [L0x7fffffce80,L0x7fffffce82,L0x7fffffce84,L0x7fffffce86,L0x7fffffce88,L0x7fffffce8a,L0x7fffffce8c,L0x7fffffce8e] %v0;
+(* #b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! PC = 0x55555515e0 *)
+#b.ne	0x5555551494 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s+64>  // b.any#! 0x55555515e0 = 0x55555515e0;
+(* #! <- SP = 0x7fffffc320 *)
+#! 0x7fffffc320 = 0x7fffffc320;
+(* #ret                                            #! PC = 0x5555551600 *)
+#ret                                            #! 0x5555551600 = 0x5555551600;
 

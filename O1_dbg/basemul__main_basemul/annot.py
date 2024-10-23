@@ -160,18 +160,18 @@ def weight_prefix(i, j):
 def annot_radix2(radix2, i, j, prologue_cut_id, load_cut_id):
     global cut_id
 
-    seg0_end  = find_first_line(radix2, 'PC = 0x5555551df8')
-    seg1_end  = find_first_line(radix2, 'PC = 0x5555551e04', seg0_end)
-    seg2_end  = find_first_line(radix2, 'PC = 0x5555551e14', seg1_end)
-    seg3_end  = find_first_line(radix2, 'PC = 0x5555551e20', seg2_end)
-    seg4_end  = find_first_line(radix2, 'PC = 0x5555551e2c', seg3_end)
-    seg5_end  = find_first_line(radix2, 'PC = 0x5555551e30', seg4_end)
-    seg6_end  = find_first_line(radix2, 'PC = 0x5555551eec', seg5_end)
-    seg7_end  = find_first_line(radix2, 'PC = 0x5555551efc', seg6_end)
-    seg8_end  = find_first_line(radix2, 'PC = 0x5555551f04', seg7_end)
-    seg9_end  = find_first_line(radix2, 'PC = 0x5555551f14', seg8_end)
-    seg10_end = find_first_line(radix2, 'PC = 0x5555551f1c', seg9_end)
-    seg11_end = find_first_line(radix2, 'PC = 0x5555551f2c', seg10_end)
+    seg0_end  = find_first_line(radix2, 'PC = 0x55555519a8')
+    seg1_end  = find_first_line(radix2, 'PC = 0x55555519b4', seg0_end)
+    seg2_end  = find_first_line(radix2, 'PC = 0x55555519c4', seg1_end)
+    seg3_end  = find_first_line(radix2, 'PC = 0x55555519d0', seg2_end)
+    seg4_end  = find_first_line(radix2, 'PC = 0x55555519dc', seg3_end)
+    seg5_end  = find_first_line(radix2, 'PC = 0x55555519e0', seg4_end)
+    seg6_end  = find_first_line(radix2, 'PC = 0x5555551a9c', seg5_end)
+    seg7_end  = find_first_line(radix2, 'PC = 0x5555551aac', seg6_end)
+    seg8_end  = find_first_line(radix2, 'PC = 0x5555551ab4', seg7_end)
+    seg9_end  = find_first_line(radix2, 'PC = 0x5555551ac4', seg8_end)
+    seg10_end = find_first_line(radix2, 'PC = 0x5555551acc', seg9_end)
+    seg11_end = find_first_line(radix2, 'PC = 0x5555551adc', seg10_end)
 
     seg0  = radix2[:seg0_end]
     seg1  = radix2[seg0_end  : seg1_end]
@@ -617,9 +617,9 @@ ghost %h0_0_{i}{j}@sint32[4], %h0_1_{i}{j}@sint32[4], %h1_0_{i}{j}@sint32[4], %h
 ''')
 
     seg8 = insert_patch(seg8, combine_const(consts_table[9 * i + j][0], consts_table[9 * i + j][1]),
-                        find_first_line(seg8, 'PC = 0x5555551efc') + 2, const_cut_id)
+                        find_first_line(seg8, 'PC = 0x5555551aac') + 2, const_cut_id)
     seg8 = insert_patch(seg8, combine_const(consts_table[9 * i + j][0], consts_table[9 * i + j][1]),
-                        find_first_line(seg8, 'PC = 0x5555551f00') + 2, const_cut_id)
+                        find_first_line(seg8, 'PC = 0x5555551ab0') + 2, const_cut_id)
     print(''.join(seg8), end='')
     print(f'''
 ghost %e0_0_{i}{j}@sint32[4], %e0_1_{i}{j}@sint32[4] :
@@ -681,9 +681,9 @@ assume
 ''')
 
     seg10 = insert_patch(seg10, combine_const(consts_table[9 * i + j][2], consts_table[9 * i + j][3]),
-                        find_first_line(seg10, 'PC = 0x5555551f14') + 2, const_cut_id)
+                        find_first_line(seg10, 'PC = 0x5555551ac4') + 2, const_cut_id)
     seg10 = insert_patch(seg10, combine_const(consts_table[9 * i + j][2], consts_table[9 * i + j][3]),
-                        find_first_line(seg10, 'PC = 0x5555551f18') + 2, const_cut_id)
+                        find_first_line(seg10, 'PC = 0x5555551ac8') + 2, const_cut_id)
     print(''.join(seg10), end='')
     print(f'''
 ghost %e1_0_{i}{j}@sint32[4], %e1_1_{i}{j}@sint32[4] :
@@ -778,13 +778,13 @@ def annot_karatsuba(karatsuba, i, j, prologue_cut_id, load_cut_id):
     # from sys import stderr
     # print(i, j, file=stderr)
 
-    seg0_end  = find_first_line(karatsuba, 'PC = 0x5555551c5c')
-    seg1_end  = find_first_line(karatsuba, 'PC = 0x5555551c68', seg0_end)
-    seg2_end  = find_first_line(karatsuba, 'PC = 0x5555551cc8', seg1_end)
-    seg3_end  = find_first_line(karatsuba, 'PC = 0x5555551d98', seg2_end)
-    seg4_end  = find_first_line(karatsuba, 'PC = 0x5555551da0', seg3_end)
-    seg5_end  = find_first_line(karatsuba, 'PC = 0x5555551dac', seg4_end)
-    seg6_end  = find_first_line(karatsuba, 'PC = 0x5555551db4', seg5_end)
+    seg0_end  = find_first_line(karatsuba, 'PC = 0x555555180c')
+    seg1_end  = find_first_line(karatsuba, 'PC = 0x5555551818', seg0_end)
+    seg2_end  = find_first_line(karatsuba, 'PC = 0x5555551878', seg1_end)
+    seg3_end  = find_first_line(karatsuba, 'PC = 0x5555551948', seg2_end)
+    seg4_end  = find_first_line(karatsuba, 'PC = 0x5555551950', seg3_end)
+    seg5_end  = find_first_line(karatsuba, 'PC = 0x555555195c', seg4_end)
+    seg6_end  = find_first_line(karatsuba, 'PC = 0x5555551964', seg5_end)
 
     seg0 = karatsuba[:seg0_end]
     seg1 = karatsuba[seg0_end : seg1_end]
@@ -1559,9 +1559,9 @@ ghost %h0_0_{i}{j}@sint32[4], %h0_1_{i}{j}@sint32[4], %h1_0_{i}{j}@sint32[4], %h
 ''')
 
     seg4 = insert_patch(seg4, combine_const(consts_table[9 * i + j][0], consts_table[9 * i + j][1]),
-                        find_first_line(seg4, 'PC = 0x5555551d98') + 2, const_cut_id)
+                        find_first_line(seg4, 'PC = 0x5555551948') + 2, const_cut_id)
     seg4 = insert_patch(seg4, combine_const(consts_table[9 * i + j][0], consts_table[9 * i + j][1]),
-                        find_first_line(seg4, 'PC = 0x5555551d9c') + 2, const_cut_id)
+                        find_first_line(seg4, 'PC = 0x555555194c') + 2, const_cut_id)
     print(''.join(seg4), end='')
     print(f'''
 ghost %e0_0_{i}{j}@sint32[4], %e0_1_{i}{j}@sint32[4] :
@@ -1615,9 +1615,9 @@ assume
 ''')
 
     seg6 = insert_patch(seg6, combine_const(consts_table[9 * i + j][0], consts_table[9 * i + j][1]),
-                        find_first_line(seg6, 'PC = 0x5555551dac') + 2, const_cut_id)
+                        find_first_line(seg6, 'PC = 0x555555195c') + 2, const_cut_id)
     seg6 = insert_patch(seg6, combine_const(consts_table[9 * i + j][0], consts_table[9 * i + j][1]),
-                        find_first_line(seg6, 'PC = 0x5555551db0') + 2, const_cut_id)
+                        find_first_line(seg6, 'PC = 0x5555551960') + 2, const_cut_id)
     print(''.join(seg6), end='')
     print(f'''
 ghost %e1_0_{i}{j}@sint32[4], %e1_1_{i}{j}@sint32[4] :
@@ -1700,8 +1700,8 @@ assume
 def annot_j_iter(j_iter, i, j, prologue_cut_id):
     global cut_id
 
-    load_end = find_first_line(j_iter, 'PC = 0x5555551de4') + 2
-    store_begin = find_first_line(j_iter, 'PC = 0x5555551dc0', load_end)
+    load_end = find_first_line(j_iter, 'PC = 0x5555551994') + 2
+    store_begin = find_first_line(j_iter, 'PC = 0x5555551970', load_end)
 
     load = j_iter[:load_end]
     conv = j_iter[load_end : store_begin]
@@ -1762,13 +1762,13 @@ cut (* {cut_id} *)
 def annot_i_iter(i_iter, i, prologue_cut_id):
     global cut_id
 
-    j_loop_begin = find_first_line(i_iter, 'PC = 0x5555551f64') + 2
-    j_loop_end = find_first_line(i_iter, 'PC = 0x5555551f48', j_loop_begin)
+    j_loop_begin = find_first_line(i_iter, 'PC = 0x5555551b14') + 2
+    j_loop_end = find_first_line(i_iter, 'PC = 0x5555551af8', j_loop_begin)
 
     j_iter_ends = []
     j_iter_end = j_loop_begin
     while True:
-        j_iter_end = find_first_line(i_iter, 'PC = 0x5555551dd0', j_iter_end)
+        j_iter_end = find_first_line(i_iter, 'PC = 0x5555551980', j_iter_end)
         if j_iter_end == -1:
             break
         j_iter_end += 2
@@ -1801,13 +1801,13 @@ def annot_i_iter(i_iter, i, prologue_cut_id):
 def annot(lines):
     global cut_id
 
-    i_loop_begin = find_first_line(lines, 'PC = 0x5555551c44') + 2
-    i_loop_end = find_first_line(lines, 'PC = 0x5555551f68', i_loop_begin)
+    i_loop_begin = find_first_line(lines, 'PC = 0x55555517f4') + 2
+    i_loop_end = find_first_line(lines, 'PC = 0x5555551b18', i_loop_begin)
 
     i_iter_ends = []
     i_iter_end = i_loop_begin
     while True:
-        i_iter_end = find_first_line(lines, 'PC = 0x5555551f48', i_iter_end)
+        i_iter_end = find_first_line(lines, 'PC = 0x5555551af8', i_iter_end)
         if i_iter_end == -1:
             break
         i_iter_end += 2
@@ -1899,7 +1899,7 @@ def annot(lines):
     print()
     for t in range(90):
         rhs = [format_imm(c) for c in consts_table[t]]
-        print(f'mov {memory_arr(0x5555552b40 + 16 * t, 8, 2)} {format_arr(rhs)};')
+        print(f'mov {memory_arr(0x5555552840 + 16 * t, 8, 2)} {format_arr(rhs)};')
     print()
 
     print()
@@ -1908,15 +1908,15 @@ def annot(lines):
         for k0 in range(2):
             for j in range(9):
                 arr = [f'arr{i}{k0}{j}{k}_a' for k in range(8)]
-                print(f'mov {memory_arr(0x5555571278 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} {format_arr(arr)};')
+                print(f'mov {memory_arr(0x7fffffd9c0 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} {format_arr(arr)};')
     print()
     for i in range(10):
         for k0 in range(2):
             for j in range(9):
                 arr = [f'arr{i}{k0}{j}{k}_b' for k in range(8)]
-                print(f'mov {memory_arr(0x5555571db8 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} {format_arr(arr)};')
+                print(f'mov {memory_arr(0x7fffffce80 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} {format_arr(arr)};')
     print()
-    print(f'mov [L0x5555552b30,L0x5555552b32,L0x5555552b34,L0x5555552b36,L0x5555552b38,L0x5555552b3a,L0x5555552b3c,L0x5555552b3e] [4591@sint16, 0@sint16, 0@sint16, 0@sint16, 0@sint16, 0@sint16, 0@sint16, 0@sint16];')
+    print(f'mov [L0x5555552830,L0x5555552832,L0x5555552834,L0x5555552836,L0x5555552838,L0x555555283a,L0x555555283c,L0x555555283e] [4591@sint16, 0@sint16, 0@sint16, 0@sint16, 0@sint16, 0@sint16, 0@sint16, 0@sint16];')
     print()
     print('nondet %v8@sint16[8];')
     print('nondet v60@sint32;')
@@ -1936,16 +1936,16 @@ def annot(lines):
         for k0 in range(2):
             for j in range(9):
                 arr = [f'arr{i}{k0}{j}{k}_a' for k in range(8)]
-                print(f'    {memory_arr(0x5555571278 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
+                print(f'    {memory_arr(0x7fffffd9c0 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
     print()
     for i in range(10):
         for k0 in range(2):
             for j in range(9):
                 arr = [f'arr{i}{k0}{j}{k}_b' for k in range(8)]
-                print(f'    {memory_arr(0x5555571db8 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
+                print(f'    {memory_arr(0x7fffffce80 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
     print()
     for t in range(90):
-        print(f'    {memory_arr(0x5555552b40 + 16 * t, 8, 2)} = {format_coefs(consts_table[t])} /\\')
+        print(f'    {memory_arr(0x5555552840 + 16 * t, 8, 2)} = {format_coefs(consts_table[t])} /\\')
     print()
     print('    true')
     print('  &&')
@@ -1953,16 +1953,16 @@ def annot(lines):
         for k0 in range(2):
             for j in range(9):
                 arr = [f'arr{i}{k0}{j}{k}_a' for k in range(8)]
-                print(f'    {memory_arr(0x5555571278 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
+                print(f'    {memory_arr(0x7fffffd9c0 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
     print()
     for i in range(10):
         for k0 in range(2):
             for j in range(9):
                 arr = [f'arr{i}{k0}{j}{k}_b' for k in range(8)]
-                print(f'    {memory_arr(0x5555571db8 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
+                print(f'    {memory_arr(0x7fffffce80 + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} = {format_arr(arr)} /\\')
     print()
     for t in range(90):
-        print(f'    {memory_arr(0x5555552b40 + 16 * t, 8, 2)} = {format_arr([format_const(c) for c in consts_table[t]])} /\\')
+        print(f'    {memory_arr(0x5555552840 + 16 * t, 8, 2)} = {format_arr([format_const(c) for c in consts_table[t]])} /\\')
     print()
     print('    true;')
     prologue_cut_id = cut_id
