@@ -223,6 +223,7 @@ assume
     && true;
 ''')
     print(''.join(seg5), end='')
+    # FIXME: 2960 should be 2690? need test
     print(f'''
 cut (* {cut_id} *)
     %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
