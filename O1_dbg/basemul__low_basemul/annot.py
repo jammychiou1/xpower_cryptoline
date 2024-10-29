@@ -715,7 +715,14 @@ assume
         print()
     print(f'''
     true
-    prove with [precondition, cuts[{cut_id - 3}, {cut_id - 2}, {cut_id - 1}]] # TODO
+    prove with [precondition, cuts[{cut_id - 3}, {cut_id - 2}, {cut_id - 1}]], # TODO
+
+    %v1 <= [4580, 4580, 4580, 4580, 4580, 4580, 4580, 4580] /\\
+    %v1 >= [-4580, -4580, -4580, -4580, -4580, -4580, -4580, -4580] /\\
+    %v0 <= [4580, 4580, 4580, 4580, 4580, 4580, 4580, 4580] /\\
+    %v0 >= [-4580, -4580, -4580, -4580, -4580, -4580, -4580, -4580]
+
+    prove with [algebra solver isl]
   &&
     true
     prove with [cuts[{prologue_cut_id}]];
@@ -1775,7 +1782,14 @@ assume
         print()
     print(f'''
     true
-    prove with [precondition, cuts[{cut_id - 3}, {cut_id - 2}, {cut_id - 1}]]
+    prove with [precondition, cuts[{cut_id - 3}, {cut_id - 2}, {cut_id - 1}]],
+
+    %v1 <= [4580, 4580, 4580, 4580, 4580, 4580, 4580, 4580] /\\
+    %v1 >= [-4580, -4580, -4580, -4580, -4580, -4580, -4580, -4580] /\\
+    %v0 <= [4580, 4580, 4580, 4580, 4580, 4580, 4580, 4580] /\\
+    %v0 >= [-4580, -4580, -4580, -4580, -4580, -4580, -4580, -4580]
+
+    prove with [algebra solver isl]
     && true;
 ''')
     cut_id += 1
