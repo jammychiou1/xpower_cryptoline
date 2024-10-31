@@ -59,6 +59,19 @@ consts_table = [
 ]
 cut_id = 0
 
+range_table = [
+    [3700, 3700],
+    [2750, 2750],
+    [3550, 3450],
+    [2300, 2300],
+    [3100, 3550],
+    [2650, 2650],
+    [3450, 4580],
+    [2700, 2700],
+    [4580, 3100],
+    [2650, 2650],
+]
+
 def weight_prefix(i):
     if i == 0:
         return ''
@@ -717,10 +730,10 @@ assume
     true
     prove with [precondition, cuts[{cut_id - 3}, {cut_id - 2}, {cut_id - 1}]], # TODO
 
-    %v1 <= [4580, 4580, 4580, 4580, 4580, 4580, 4580, 4580] /\\
-    %v1 >= [-4580, -4580, -4580, -4580, -4580, -4580, -4580, -4580] /\\
-    %v0 <= [4580, 4580, 4580, 4580, 4580, 4580, 4580, 4580] /\\
-    %v0 >= [-4580, -4580, -4580, -4580, -4580, -4580, -4580, -4580]
+    %v1 <= {format_coefs([range_table[i][0]] * 8)} /\\
+    %v1 >= {format_coefs([-range_table[i][0]] * 8)} /\\
+    %v0 <= {format_coefs([range_table[i][1]] * 8)} /\\
+    %v0 >= {format_coefs([-range_table[i][1]] * 8)}
 
     prove with [algebra solver isl]
   &&
@@ -1784,10 +1797,10 @@ assume
     true
     prove with [precondition, cuts[{cut_id - 3}, {cut_id - 2}, {cut_id - 1}]],
 
-    %v1 <= [4580, 4580, 4580, 4580, 4580, 4580, 4580, 4580] /\\
-    %v1 >= [-4580, -4580, -4580, -4580, -4580, -4580, -4580, -4580] /\\
-    %v0 <= [4580, 4580, 4580, 4580, 4580, 4580, 4580, 4580] /\\
-    %v0 >= [-4580, -4580, -4580, -4580, -4580, -4580, -4580, -4580]
+    %v1 <= {format_coefs([range_table[i][0]] * 8)} /\\
+    %v1 >= {format_coefs([-range_table[i][0]] * 8)} /\\
+    %v0 <= {format_coefs([range_table[i][1]] * 8)} /\\
+    %v0 >= {format_coefs([-range_table[i][1]] * 8)}
 
     prove with [algebra solver isl]
     && true;
