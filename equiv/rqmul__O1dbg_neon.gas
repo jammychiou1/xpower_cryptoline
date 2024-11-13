@@ -1,3 +1,96 @@
+# address patterns
+
+#! [sp] = %%EA
+#! [sp, $1c] = %%EA
+#! [x$1c] = %%EA
+#! [x$1c, $2c] = %%EA
+#! [x$1c], $2c = %%EA
+#! [x$1c, x$2c] = %%EA
+
+# scalar
+
+#! ldrsh x$1c, $2ea -> mov x$1c $2ea; vpc x$1c@sint64 x$1c
+#! ldrh w$1c, $2ea -> mov x$1c $2ea; cast x$1c@uint16 x$1c; vpc x$1c@sint64 x$1c
+#! strh w$1c, $2ea -> cast tmp@sint16 x$1c; mov $2ea tmp
+
+#! mul x$1c, x$2c, x$3c -> mull dc x$1c x$2c x$3c; cast x$1c@sint64 x$1c
+#! madd x$1c, x$2c, x$3c, x$4c -> mull dc tmp x$2c x$3c; cast tmp@sint64 tmp; adds dc x$1c x$4c tmp
+#! add x$1c, x$2c, x$3c, lsl $4c -> shls dc tmp x$3c $4c; adds dc x$1c x$2c tmp
+#! mov x$1c, $2c // -> mov x$1c $2c@sint64
+#! movk x$1c, $2c, lsl #16 -> spl tmp1 tmp23 x$1c 32; spl tmp2 tmp3 tmp23 16; join tmp23 $2c@uint16 tmp3; join x$1c tmp1 tmp23
+#! asr x$1c, x$2c, $3c -> split x$1c dc x$2c $3c
+
+#! ldrsh w$1c, $2ea -> mov x$1c $2ea; vpc x$1c@sint32 x$1c; cast x$1c@uint32 x$1c; vpc x$1c@sint64 x$1c
+#! add w$1c, w$2c, $3c, lsl $4c -> cast w$2c@sint32 x$2c;\nadd w$1c w$2c ($3c * 2 ** $4c)@sint32;\nvpc x$1c@sint64 w$1c
+#! add w$1c, w$2c, w$3c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c;\nadds dc w$1c w$2c w$3c;\nvpc x$1c@sint64 w$1c
+#! sub w$1c, w$2c, w$3c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c;\nsubc dc w$1c w$2c w$3c;\nvpc x$1c@sint64 w$1c
+#! madd w$1c, w$2c, w$3c, w$4c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c; cast w$4c@sint32 x$4c;\nmull dc tmp w$2c w$3c; cast tmp@sint32 tmp; adds dc w$1c w$4c tmp;\nvpc x$1c@sint64 w$1c
+#! and w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nand w$1c@sint32 w$2c $3c@sint32;\nvpc x$1c@sint64 w$1c
+#! lsl w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nshls dc w$1c w$2c $3c;\nvpc x$1c@sint64 w$1c
+#! asr w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nsplit w$1c dc w$2c $3c;\nvpc x$1c@sint64 w$1c
+#! mov w$1c, $2c // -> mov w$1c $2c@uint32; vpc x$1c@sint64 w$1c
+
+# load/store
+
+#! ldr q$1c, $2ea -> mov %v$1c [$2ea[+0],$2ea[+2],$2ea[+4],$2ea[+6],$2ea[+8],$2ea[+10],$2ea[+12],$2ea[+14]]
+#! ld1 {v$1c.8h, v$2c.8h}, $3ea -> mov %v$1c [$3ea[+0],$3ea[+2],$3ea[+4],$3ea[+6],$3ea[+8],$3ea[+10],$3ea[+12],$3ea[+14]];\nmov %v$2c [$3ea[+16],$3ea[+18],$3ea[+20],$3ea[+22],$3ea[+24],$3ea[+26],$3ea[+28],$3ea[+30]]
+#! str q$1c, $2ea -> mov [$2ea[+0],$2ea[+2],$2ea[+4],$2ea[+6],$2ea[+8],$2ea[+10],$2ea[+12],$2ea[+14]] %v$1c
+#! st1 {v$1c.8h, v$2c.8h}, $3ea -> mov [$3ea[+0],$3ea[+2],$3ea[+4],$3ea[+6],$3ea[+8],$3ea[+10],$3ea[+12],$3ea[+14]] %v$1c;\nmov [$3ea[+16],$3ea[+18],$3ea[+20],$3ea[+22],$3ea[+24],$3ea[+26],$3ea[+28],$3ea[+30]] %v$2c\n
+
+#! ld1 {v16.8h-v19.8h}, $1ea -> mov %v16 [$1ea[+0],$1ea[+2],$1ea[+4],$1ea[+6],$1ea[+8],$1ea[+10],$1ea[+12],$1ea[+14]];\nmov %v17 [$1ea[+16],$1ea[+18],$1ea[+20],$1ea[+22],$1ea[+24],$1ea[+26],$1ea[+28],$1ea[+30]];\nmov %v18 [$1ea[+32],$1ea[+34],$1ea[+36],$1ea[+38],$1ea[+40],$1ea[+42],$1ea[+44],$1ea[+46]];\nmov %v19 [$1ea[+48],$1ea[+50],$1ea[+52],$1ea[+54],$1ea[+56],$1ea[+58],$1ea[+60],$1ea[+62]]
+#! ld1 {v20.8h-v23.8h}, $1ea -> mov %v20 [$1ea[+0],$1ea[+2],$1ea[+4],$1ea[+6],$1ea[+8],$1ea[+10],$1ea[+12],$1ea[+14]];\nmov %v21 [$1ea[+16],$1ea[+18],$1ea[+20],$1ea[+22],$1ea[+24],$1ea[+26],$1ea[+28],$1ea[+30]];\nmov %v22 [$1ea[+32],$1ea[+34],$1ea[+36],$1ea[+38],$1ea[+40],$1ea[+42],$1ea[+44],$1ea[+46]];\nmov %v23 [$1ea[+48],$1ea[+50],$1ea[+52],$1ea[+54],$1ea[+56],$1ea[+58],$1ea[+60],$1ea[+62]]
+
+#! st1 {v16.8h-v19.8h}, $1ea -> mov [$1ea[+0],$1ea[+2],$1ea[+4],$1ea[+6],$1ea[+8],$1ea[+10],$1ea[+12],$1ea[+14]] %v16;\nmov [$1ea[+16],$1ea[+18],$1ea[+20],$1ea[+22],$1ea[+24],$1ea[+26],$1ea[+28],$1ea[+30]] %v17;\nmov [$1ea[+32],$1ea[+34],$1ea[+36],$1ea[+38],$1ea[+40],$1ea[+42],$1ea[+44],$1ea[+46]] %v18;\nmov [$1ea[+48],$1ea[+50],$1ea[+52],$1ea[+54],$1ea[+56],$1ea[+58],$1ea[+60],$1ea[+62]] %v19
+#! st1 {v20.8h-v23.8h}, $1ea -> mov [$1ea[+0],$1ea[+2],$1ea[+4],$1ea[+6],$1ea[+8],$1ea[+10],$1ea[+12],$1ea[+14]] %v20;\nmov [$1ea[+16],$1ea[+18],$1ea[+20],$1ea[+22],$1ea[+24],$1ea[+26],$1ea[+28],$1ea[+30]] %v21;\nmov [$1ea[+32],$1ea[+34],$1ea[+36],$1ea[+38],$1ea[+40],$1ea[+42],$1ea[+44],$1ea[+46]] %v22;\nmov [$1ea[+48],$1ea[+50],$1ea[+52],$1ea[+54],$1ea[+56],$1ea[+58],$1ea[+60],$1ea[+62]] %v23
+
+#! ldr h$1c, $2ea -> mov %v$1c[0] $2ea
+#! str h$1c, $2ea -> mov $2ea %v$1c[0]
+
+# arithmetic
+
+#! add v$1c.8h, v$2c.8h, v$3c.8h -> adds %dc %v$1c %v$2c %v$3c
+#! sub v$1c.8h, v$2c.8h, v$3c.8h -> subc %dc %v$1c %v$2c %v$3c
+
+#! mls v$1c.8h, v$2c.8h, v$3c.h\[$4c\] -> broadcast %mul 8 [%v$3c[$4c]]; mull %dc %mls %v$2c %mul;\ncast %mls@int16[8] %mls; subc %dc %v$1c %v$1c %mls
+#! mul v$1c.8h, v$2c.8h, v$3c.h\[$4c\] -> broadcast %mul 8 [%v$3c[$4c]]; mull %dc %v$1c %v$2c %mul; cast %v$1c@int16[8] %v$1c
+#! sqrdmulh v$1c.8h, v$2c.8h, v$3c.h\[$4c\] -> broadcast %mul 8 [%v$3c[$4c]]; smulj %LO %v$2c %mul;\nssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;\nvpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;\nadd %v$1c %LO11 %LO01
+#! sqdmulh v$1c.8h, v$2c.8h, v$3c.h\[$4c\] -> broadcast %mul 8 [%v$3c[$4c]]; smulj %LO %v$2c %mul;\nssplit %LO0 %dc %LO 15; vpc %v$1c@sint16[8] %LO0
+
+#! smull v$1c.4s, v$2c.4h, v$3c.h\[$4c\] -> broadcast %mull 4 [%v$3c[$4c]]; smulj %v$1c [%v$2c[0],%v$2c[1],%v$2c[2],%v$2c[3]] %mull
+#! smull2 v$1c.4s, v$2c.8h, v$3c.h\[$4c\] -> broadcast %mull 4 [%v$3c[$4c]]; smulj %v$1c [%v$2c[4],%v$2c[5],%v$2c[6],%v$2c[7]] %mull
+#! smlal v$1c.4s, v$2c.4h, v$3c.h\[$4c\] -> broadcast %mull 4 [%v$3c[$4c]]; smulj %mlal [%v$2c[0],%v$2c[1],%v$2c[2],%v$2c[3]] %mull; adds %dc %v$1c %v$1c %mlal
+#! smlal2 v$1c.4s, v$2c.8h, v$3c.h\[$4c\] -> broadcast %mull 4 [%v$3c[$4c]]; smulj %mlal [%v$2c[4],%v$2c[5],%v$2c[6],%v$2c[7]] %mull; adds %dc %v$1c %v$1c %mlal
+#! smlsl v$1c.4s, v$2c.4h, v$3c.h\[$4c\] -> broadcast %mull 4 [%v$3c[$4c]]; smulj %mlsl [%v$2c[0],%v$2c[1],%v$2c[2],%v$2c[3]] %mull; subc %dc %v$1c %v$1c %mlsl
+#! smlsl2 v$1c.4s, v$2c.8h, v$3c.h\[$4c\] -> broadcast %mull 4 [%v$3c[$4c]]; smulj %mlsl [%v$2c[4],%v$2c[5],%v$2c[6],%v$2c[7]] %mull; subc %dc %v$1c %v$1c %mlsl
+
+#! add v$1c.4s, v$2c.4s, v$3c.4s -> adds %dc %v$1c %v$2c %v$3c
+#! sub v$1c.4s, v$2c.4s, v$3c.4s -> subc %dc %v$1c %v$2c %v$3c
+#! sqrdmulh v$1c.4s, v$2c.4s, v$3c.s\[0\] -> cast uint16 coef_l %v$3c[0]; join coef %v$3c[1] coef_l;\nsmulj %LO %v$2c [coef,coef,coef,coef];\nssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;\nvpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;\nadd %v$1c %LO11 %LO01
+#! sqrdmulh v$1c.4s, v$2c.4s, v$3c.s\[1\] -> cast uint16 coef_l %v$3c[2]; join coef %v$3c[3] coef_l;\nsmulj %LO %v$2c [coef,coef,coef,coef];\nssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;\nvpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;\nadd %v$1c %LO11 %LO01
+
+#! shl v$1c.8h, v$2c.8h, $3c -> vpc %long@sint32[8] %v$2c;\nshl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];\ncast %v$1c@sint16[8] %long
+#! sshr v$1c.8h, v$2c.8h, $3c -> split %v$1c %dc %v$2c $3c
+#! srshr v$1c.8h, v$2c.8h, $3c -> split %HI %LO %v$2c $3c; split %LO1 %dc %LO ($3c-1);\ncast %LO0@sint16[8] %LO1; add %v$1c %HI %LO0
+#! cmlt v$1c.8h, v$2c.8h, #0 -> split %v$1c %dc %v$2c 15
+#! neg v$1c.8h, v$2c.8h -> broadcast %zero 8 [0@sint16]; sub %v$1c %zero %v$2c
+
+#! cmgt v$1c.8h, v$2c.8h, v$3c.8h -> sub %cmp %v$3c %v$2c; split %v$1c %dc %cmp 15
+#! and v$1c.16b, v$2c.16b, v$3c.16b -> and %v$1c@sint16[8] %v$2c %v$3c
+
+# data manipulation
+
+#! mov v$1c.16b, v$2c.16b -> mov %v$1c %v$2c
+#! ext v$1c.16b, v$2c.16b, v$3c.16b, \#2 -> mov %v$1c [%v$2c[1],%v$2c[2],%v$2c[3],%v$2c[4],%v$2c[5],%v$2c[6],%v$2c[7],%v$3c[0]]
+#! ext v$1c.16b, v$2c.16b, v$3c.16b, \#4 -> mov %v$1c [%v$2c[2],%v$2c[3],%v$2c[4],%v$2c[5],%v$2c[6],%v$2c[7],%v$3c[0],%v$3c[1]]
+#! ext v$1c.16b, v$2c.16b, v$3c.16b, \#6 -> mov %v$1c [%v$2c[3],%v$2c[4],%v$2c[5],%v$2c[6],%v$2c[7],%v$3c[0],%v$3c[1],%v$3c[2]]
+#! ext v$1c.16b, v$2c.16b, v$3c.16b, \#8 -> mov %v$1c [%v$2c[4],%v$2c[5],%v$2c[6],%v$2c[7],%v$3c[0],%v$3c[1],%v$3c[2],%v$3c[3]]
+#! ext v$1c.16b, v$2c.16b, v$3c.16b, \#10 -> mov %v$1c [%v$2c[5],%v$2c[6],%v$2c[7],%v$3c[0],%v$3c[1],%v$3c[2],%v$3c[3],%v$3c[4]]
+#! ext v$1c.16b, v$2c.16b, v$3c.16b, \#12 -> mov %v$1c [%v$2c[6],%v$2c[7],%v$3c[0],%v$3c[1],%v$3c[2],%v$3c[3],%v$3c[4],%v$3c[5]]
+#! ext v$1c.16b, v$2c.16b, v$3c.16b, \#14 -> mov %v$1c [%v$2c[7],%v$3c[0],%v$3c[1],%v$3c[2],%v$3c[3],%v$3c[4],%v$3c[5],%v$3c[6]]
+#! uzp1 v$1c.8h, v$2c.8h, v$3c.8h -> mov %spl_join [%v$2c[0], %v$2c[1], %v$2c[2], %v$2c[3], %v$3c[0], %v$3c[1], %v$3c[2], %v$3c[3]]; spl %splh %v$1c %spl_join 16; cast %v$1c@int16[8] %v$1c
+#! uzp2 v$1c.8h, v$2c.8h, v$3c.8h -> mov %spl_join [%v$2c[0], %v$2c[1], %v$2c[2], %v$2c[3], %v$3c[0], %v$3c[1], %v$3c[2], %v$3c[3]]; spl %v$1c %spll %spl_join 16
+
+
 	#! -> SP = 0x7ffffff190
 	#bl	0x5555551ec8 <_ZN6xpower7mainmul7mainmulEPKsS2_Ps>#! PC = 0x5555552688
 	#! -> SP = 0x7fffffe570
@@ -2201,7 +2294,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffda30; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -2311,7 +2403,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -2344,7 +2435,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -2454,7 +2544,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -2488,7 +2577,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffdb50; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -2598,7 +2686,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -2631,7 +2718,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -2741,7 +2827,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -2775,7 +2860,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffdc70; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -2885,7 +2969,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -2918,7 +3001,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -3028,7 +3110,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -3062,7 +3143,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffdd90; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -3172,7 +3252,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -3205,7 +3284,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -3315,7 +3393,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -3349,7 +3426,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffdeb0; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -3459,7 +3535,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -3492,7 +3567,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -3602,7 +3676,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -3636,7 +3709,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffdfd0; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -3746,7 +3818,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -3779,7 +3850,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -3889,7 +3959,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -3923,7 +3992,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffe0f0; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -4033,7 +4101,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -4066,7 +4133,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -4176,7 +4242,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -4210,7 +4275,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffe210; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -4320,7 +4384,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -4353,7 +4416,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -4463,7 +4525,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -4497,7 +4558,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffe330; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -4607,7 +4667,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -4640,7 +4699,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -4750,7 +4808,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -4784,7 +4841,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffe450; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -4894,7 +4950,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -4927,7 +4982,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -5037,7 +5091,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -7261,7 +7314,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffcef0; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -7371,7 +7423,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -7404,7 +7455,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -7514,7 +7564,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -7548,7 +7597,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffd010; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -7658,7 +7706,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -7691,7 +7738,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -7801,7 +7847,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -7835,7 +7880,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffd130; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -7945,7 +7989,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -7978,7 +8021,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -8088,7 +8130,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -8122,7 +8163,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffd250; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -8232,7 +8272,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -8265,7 +8304,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -8375,7 +8413,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -8409,7 +8446,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffd370; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -8519,7 +8555,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -8552,7 +8587,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -8662,7 +8696,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -8696,7 +8729,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffd490; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -8806,7 +8838,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -8839,7 +8870,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -8949,7 +8979,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -8983,7 +9012,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffd5b0; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -9093,7 +9121,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -9126,7 +9153,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -9236,7 +9262,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -9270,7 +9295,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffd6d0; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -9380,7 +9404,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -9413,7 +9436,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -9523,7 +9545,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -9557,7 +9578,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffd7f0; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -9667,7 +9687,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -9700,7 +9719,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -9810,7 +9828,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -9844,7 +9861,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffd910; Value = 0x0000000000000000; PC = 0x555555133c
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551340
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -9954,7 +9970,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x5555551344
@@ -9987,7 +10002,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x55555513b4
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555513d8
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -10097,7 +10111,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555513dc
@@ -10123,7 +10136,6 @@
 	#ret                                            #! PC = 0x5555551450
 	#bl	0x55555517d0 <_ZN6xpower7basemul12main_basemulEPA2_A9_A8_sS4_S4_>#! PC = 0x5555551f2c
 	#! -> SP = 0x7fffffc380
-	str	d8, [sp, #-16]!                             #! EA = L0x7fffffc370; PC = 0x55555517d0
 	ldr	q5, [x0, #2128]                             #! EA = L0x5555552850; Value = 0x00000000000011ef; PC = 0x55555517f0
 	#b	0x5555551afc <_ZN6xpower7basemul12main_basemulEPA2_A9_A8_sS4_S4_+812>#! PC = 0x55555517f4
 	#b	0x5555551984 <_ZN6xpower7basemul12main_basemulEPA2_A9_A8_sS4_S4_+436>#! PC = 0x5555551b14
@@ -18786,7 +18798,6 @@
 	str	q0, [x3, x0]                                #! EA = L0x7fffffcee0; PC = 0x5555551974
 	#b.eq	0x5555551ae0 <_ZN6xpower7basemul12main_basemulEPA2_A9_A8_sS4_S4_+784>  // b.none#! PC = 0x5555551980
 	#b.eq	0x5555551b18 <_ZN6xpower7basemul12main_basemulEPA2_A9_A8_sS4_S4_+840>  // b.none#! PC = 0x5555551af8
-	ldr	d8, [sp], #16                               #! EA = L0x7fffffc370; Value = 0x0000000000000000; PC = 0x5555551b18
 	#! <- SP = 0x7fffffc380
 	#ret                                            #! PC = 0x5555551b1c
 	#bl	0x5555551454 <_ZN6xpower9main_lay211bwd_inplaceEPA2_A9_A8_s>#! PC = 0x5555551f34
@@ -18803,7 +18814,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffc3b0; Value = 0x0000000000000000; PC = 0x55555514ec
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -18913,7 +18923,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555514f4
@@ -18946,7 +18955,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x5555551564
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -19056,7 +19064,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x555555158c
@@ -19090,7 +19097,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffc4d0; Value = 0x0000000000000000; PC = 0x55555514ec
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -19200,7 +19206,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555514f4
@@ -19233,7 +19238,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x5555551564
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -19343,7 +19347,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x555555158c
@@ -19377,7 +19380,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffc5f0; Value = 0x0000000000000000; PC = 0x55555514ec
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -19487,7 +19489,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555514f4
@@ -19520,7 +19521,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x5555551564
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -19630,7 +19630,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x555555158c
@@ -19664,7 +19663,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffc710; Value = 0x0000000000000000; PC = 0x55555514ec
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -19774,7 +19772,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555514f4
@@ -19807,7 +19804,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x5555551564
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -19917,7 +19913,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x555555158c
@@ -19951,7 +19946,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffc830; Value = 0x0000000000000000; PC = 0x55555514ec
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -20061,7 +20055,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555514f4
@@ -20094,7 +20087,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x5555551564
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -20204,7 +20196,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x555555158c
@@ -20238,7 +20229,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffc950; Value = 0x0000000000000000; PC = 0x55555514ec
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -20348,7 +20338,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555514f4
@@ -20381,7 +20370,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x5555551564
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -20491,7 +20479,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x555555158c
@@ -20525,7 +20512,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffca70; Value = 0x0000000000000000; PC = 0x55555514ec
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -20635,7 +20621,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555514f4
@@ -20668,7 +20653,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x5555551564
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -20778,7 +20762,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x555555158c
@@ -20812,7 +20795,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffcb90; Value = 0x0000000000000000; PC = 0x55555514ec
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -20922,7 +20904,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555514f4
@@ -20955,7 +20936,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x5555551564
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -21065,7 +21045,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x555555158c
@@ -21099,7 +21078,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffccb0; Value = 0x0000000000000000; PC = 0x55555514ec
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -21209,7 +21187,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555514f4
@@ -21242,7 +21219,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x5555551564
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -21352,7 +21328,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x555555158c
@@ -21386,7 +21361,6 @@
 	ldr	q0, [x19]                                   #! EA = L0x7fffffcdd0; Value = 0x0000000000000000; PC = 0x55555514ec
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x55555514f0
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -21496,7 +21470,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x55555514f4
@@ -21529,7 +21502,6 @@
 	str	q16, [sp]                                   #! EA = L0x7fffffc260; PC = 0x5555551564
 	#bl	0x5555551604 <_ZN6xpower9main_lay27ntt9_2xE11__Int16x8_tS1_S1_S1_S1_S1_S1_S1_S1_RS1_S2_S2_S2_S2_S2_S2_S2_S2_>#! PC = 0x5555551588
 	#! -> SP = 0x7fffffc260
-	stp	d8, d9, [sp, #-16]!                         #! EA = L0x7fffffc250; PC = 0x5555551604
 	mov	v20.16b, v4.16b                             #! PC = 0x5555551608
 	mov	v19.16b, v5.16b                             #! PC = 0x555555160c
 	ldr	q18, [sp, #16]                              #! EA = L0x7fffffc260; Value = 0x0000000000000000; PC = 0x5555551610
@@ -21639,7 +21611,6 @@
 	str	q2, [x2]                                    #! EA = L0x7fffffc310; PC = 0x55555517bc
 	sub	v0.8h, v0.8h, v1.8h                         #! PC = 0x55555517c0
 	str	q0, [x5]                                    #! EA = L0x7fffffc340; PC = 0x55555517c4
-	ldp	d8, d9, [sp], #16                           #! EA = L0x7fffffc250; Value = 0x0000000000000000; PC = 0x55555517c8
 	#! <- SP = 0x7fffffc260
 	#ret                                            #! PC = 0x55555517cc
 	ldr	q0, [sp, #144]                              #! EA = L0x7fffffc2f0; Value = 0x0000000000000000; PC = 0x555555158c
@@ -24080,6 +24051,8 @@
 	#b.ne	0x5555550fb0 <_ZN6xpower9main_lay110bwd_insertEPA2_A9_A8_sPs+384>  // b.any#! PC = 0x5555551290
 	#b	0x5555550e58 <_ZN6xpower9main_lay110bwd_insertEPA2_A9_A8_sPs+40>#! PC = 0x5555551294
 	#b.eq	0x5555551298 <_ZN6xpower9main_lay110bwd_insertEPA2_A9_A8_sPs+1128>  // b.none#! PC = 0x5555550e68
+	ldrh	w0, [x1, #160]                             #! EA = L0x7fffffe640; Value = 0x0000000000000000; PC = 0x5555551298
+	strh	w0, [x1, #3040]                            #! EA = L0x7ffffff180; PC = 0x555555129c
 	#! <- SP = 0x7fffffc380
 	#ret                                            #! PC = 0x55555512a0
 	#! <- SP = 0x7fffffe570

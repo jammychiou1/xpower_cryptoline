@@ -23,3 +23,8 @@
 #! sqrdmulh $1v.4s, $2v.4s, $3v.s\[0\] -> cast uint16 coef_l %$3v[0]; join coef %$3v[1] coef_l;\nsmulj %LO %$2v [coef,coef,coef,coef];\nssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;\nvpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;\nadd %$1v %LO11 %LO01
 #! sqrdmulh $1v.4s, $2v.4s, $3v.s\[1\] -> cast uint16 coef_l %$3v[2]; join coef %$3v[3] coef_l;\nsmulj %LO %$2v [coef,coef,coef,coef];\nssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;\nvpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;\nadd %$1v %LO11 %LO01
 
+# mov %v16 [$5ea[+0],$5ea[+2],$5ea[+4],$5ea[+6],$5ea[+8],$5ea[+10],$5ea[+12],$5ea[+14]]
+# mov %v17 [$5ea[+16],$5ea[+18],$5ea[+20],$5ea[+22],$5ea[+24],$5ea[+26],$5ea[+28],$5ea[+30]]
+# mov %v18 [$5ea[+32],$5ea[+34],$5ea[+36],$5ea[+38],$5ea[+40],$5ea[+42],$5ea[+44],$5ea[+46]]
+# mov %v19 [$5ea[+48],$5ea[+50],$5ea[+52],$5ea[+54],$5ea[+56],$5ea[+58],$5ea[+60],$5ea[+62]]
+
