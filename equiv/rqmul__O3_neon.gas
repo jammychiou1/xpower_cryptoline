@@ -30,11 +30,17 @@
 #! asr w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nsplit w$1c dc w$2c $3c;\nvpc x$1c@sint64 w$1c
 #! mov w$1c, $2c // -> mov w$1c $2c@uint32; vpc x$1c@sint64 w$1c
 
+#! smull x$1c, w$2c, w$3c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c;\nmulj x$1c w$2c w$3c
+#! smaddl x$1c, w$2c, w$3c, x$4c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c;\nmulj tmp w$2c w$3c; adds dc x$1c x$4c tmp
+
 # load/store
 
 #! ldr q$1c, $2ea -> mov %v$1c [$2ea[+0],$2ea[+2],$2ea[+4],$2ea[+6],$2ea[+8],$2ea[+10],$2ea[+12],$2ea[+14]]
-#! ld1 {v$1c.8h, v$2c.8h}, $3ea -> mov %v$1c [$3ea[+0],$3ea[+2],$3ea[+4],$3ea[+6],$3ea[+8],$3ea[+10],$3ea[+12],$3ea[+14]];\nmov %v$2c [$3ea[+16],$3ea[+18],$3ea[+20],$3ea[+22],$3ea[+24],$3ea[+26],$3ea[+28],$3ea[+30]]
+#! ldp q$1c, q$2c, $3ea -> mov %v$1c [$3ea[+0],$3ea[+2],$3ea[+4],$3ea[+6],$3ea[+8],$3ea[+10],$3ea[+12],$3ea[+14]];\nmov %v$2c [$3ea[+16],$3ea[+18],$3ea[+20],$3ea[+22],$3ea[+24],$3ea[+26],$3ea[+28],$3ea[+30]]
 #! str q$1c, $2ea -> mov [$2ea[+0],$2ea[+2],$2ea[+4],$2ea[+6],$2ea[+8],$2ea[+10],$2ea[+12],$2ea[+14]] %v$1c
+#! stp q$1c, q$2c, $3ea -> mov [$3ea[+0],$3ea[+2],$3ea[+4],$3ea[+6],$3ea[+8],$3ea[+10],$3ea[+12],$3ea[+14]] %v$1c;\nmov [$3ea[+16],$3ea[+18],$3ea[+20],$3ea[+22],$3ea[+24],$3ea[+26],$3ea[+28],$3ea[+30]] %v$2c\n
+
+#! ld1 {v$1c.8h, v$2c.8h}, $3ea -> mov %v$1c [$3ea[+0],$3ea[+2],$3ea[+4],$3ea[+6],$3ea[+8],$3ea[+10],$3ea[+12],$3ea[+14]];\nmov %v$2c [$3ea[+16],$3ea[+18],$3ea[+20],$3ea[+22],$3ea[+24],$3ea[+26],$3ea[+28],$3ea[+30]]
 #! st1 {v$1c.8h, v$2c.8h}, $3ea -> mov [$3ea[+0],$3ea[+2],$3ea[+4],$3ea[+6],$3ea[+8],$3ea[+10],$3ea[+12],$3ea[+14]] %v$1c;\nmov [$3ea[+16],$3ea[+18],$3ea[+20],$3ea[+22],$3ea[+24],$3ea[+26],$3ea[+28],$3ea[+30]] %v$2c\n
 
 #! ld1 {v16.8h-v19.8h}, $1ea -> mov %v16 [$1ea[+0],$1ea[+2],$1ea[+4],$1ea[+6],$1ea[+8],$1ea[+10],$1ea[+12],$1ea[+14]];\nmov %v17 [$1ea[+16],$1ea[+18],$1ea[+20],$1ea[+22],$1ea[+24],$1ea[+26],$1ea[+28],$1ea[+30]];\nmov %v18 [$1ea[+32],$1ea[+34],$1ea[+36],$1ea[+38],$1ea[+40],$1ea[+42],$1ea[+44],$1ea[+46]];\nmov %v19 [$1ea[+48],$1ea[+50],$1ea[+52],$1ea[+54],$1ea[+56],$1ea[+58],$1ea[+60],$1ea[+62]]
