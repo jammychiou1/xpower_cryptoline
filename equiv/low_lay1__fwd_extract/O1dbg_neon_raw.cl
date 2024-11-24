@@ -106,7 +106,7 @@ cast %v16@sint16[8] %long;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v2 %mul;
 cast %mls@int16[8] %mls; subc %dc %v16 %v16 %mls;
 (* neg	v2.8h, v3.8h                                #! PC = 0x5555552008 *)
-broadcast %zero 8 [0@sint16]; sub %v2 %zero %v3;
+broadcast %zero 8 [0@sint16]; subs %dc %v2 %zero %v3;
 (* sshr	v7.8h, v2.8h, #12                          #! PC = 0x555555200c *)
 split %v7 %dc %v2 12;
 (* cmlt	v21.8h, v2.8h, #0                          #! PC = 0x5555552010 *)
@@ -306,7 +306,7 @@ cast %v16@sint16[8] %long;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v2 %mul;
 cast %mls@int16[8] %mls; subc %dc %v16 %v16 %mls;
 (* neg	v2.8h, v3.8h                                #! PC = 0x5555552008 *)
-broadcast %zero 8 [0@sint16]; sub %v2 %zero %v3;
+broadcast %zero 8 [0@sint16]; subs %dc %v2 %zero %v3;
 (* sshr	v7.8h, v2.8h, #12                          #! PC = 0x555555200c *)
 split %v7 %dc %v2 12;
 (* cmlt	v21.8h, v2.8h, #0                          #! PC = 0x5555552010 *)

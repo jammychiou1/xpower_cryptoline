@@ -53,7 +53,7 @@ subc %dc %v4 %v4 %v7;
 (* mul	v13.8h, v18.8h, v1.h[3]                     #! PC = 0x5555550c88 *)
 broadcast %mul 8 [%v1[3]]; mull %dc %v13 %v18 %mul; cast %v13@int16[8] %v13;
 (* neg	v5.8h, v9.8h                                #! PC = 0x5555550c8c *)
-broadcast %zero 8 [0@sint16]; sub %v5 %zero %v9;
+broadcast %zero 8 [0@sint16]; subs %dc %v5 %zero %v9;
 (* sub	v8.8h, v13.8h, v2.8h                        #! PC = 0x5555550c90 *)
 subc %dc %v8 %v13 %v2;
 (* sshr	v11.8h, v4.8h, #12                         #! PC = 0x5555550c94 *)
@@ -347,7 +347,7 @@ cast %v6@sint16[8] %long;
 (* str	q28, [x0, #1728]                            #! EA = L0x7fffffca80; PC = 0x5555550e34 *)
 mov [L0x7fffffca80,L0x7fffffca82,L0x7fffffca84,L0x7fffffca86,L0x7fffffca88,L0x7fffffca8a,L0x7fffffca8c,L0x7fffffca8e] %v28;
 (* neg	v3.8h, v10.8h                               #! PC = 0x5555550e38 *)
-broadcast %zero 8 [0@sint16]; sub %v3 %zero %v10;
+broadcast %zero 8 [0@sint16]; subs %dc %v3 %zero %v10;
 (* str	q30, [x0, #2304]                            #! EA = L0x7fffffccc0; PC = 0x5555550e3c *)
 mov [L0x7fffffccc0,L0x7fffffccc2,L0x7fffffccc4,L0x7fffffccc6,L0x7fffffccc8,L0x7fffffccca,L0x7fffffcccc,L0x7fffffccce] %v30;
 (* sub	v6.8h, v6.8h, v11.8h                        #! PC = 0x5555550e40 *)
@@ -705,7 +705,7 @@ subc %dc %v4 %v4 %v7;
 (* mul	v13.8h, v18.8h, v1.h[3]                     #! PC = 0x5555550c88 *)
 broadcast %mul 8 [%v1[3]]; mull %dc %v13 %v18 %mul; cast %v13@int16[8] %v13;
 (* neg	v5.8h, v9.8h                                #! PC = 0x5555550c8c *)
-broadcast %zero 8 [0@sint16]; sub %v5 %zero %v9;
+broadcast %zero 8 [0@sint16]; subs %dc %v5 %zero %v9;
 (* sub	v8.8h, v13.8h, v2.8h                        #! PC = 0x5555550c90 *)
 subc %dc %v8 %v13 %v2;
 (* sshr	v11.8h, v4.8h, #12                         #! PC = 0x5555550c94 *)
@@ -972,7 +972,7 @@ cast %mls@int16[8] %mls; subc %dc %v14 %v14 %mls;
 (* #cbz	w10, 0x5555550e0c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1644>#! PC = 0x5555550e04 *)
 #cbz	w10, 0x5555550e0c <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1644>#! 0x5555550e04 = 0x5555550e04;
 (* neg	v14.8h, v14.8h                              #! PC = 0x5555550e08 *)
-broadcast %zero 8 [0@sint16]; sub %v14 %zero %v14;
+broadcast %zero 8 [0@sint16]; subs %dc %v14 %zero %v14;
 (* add	v31.8h, v27.8h, v25.8h                      #! PC = 0x5555550e0c *)
 adds %dc %v31 %v27 %v25;
 (* str	q6, [x0]                                    #! EA = L0x7fffffc3d0; PC = 0x5555550e10 *)
@@ -1001,7 +1001,7 @@ cast %v6@sint16[8] %long;
 (* str	q28, [x0, #1728]                            #! EA = L0x7fffffca90; PC = 0x5555550e34 *)
 mov [L0x7fffffca90,L0x7fffffca92,L0x7fffffca94,L0x7fffffca96,L0x7fffffca98,L0x7fffffca9a,L0x7fffffca9c,L0x7fffffca9e] %v28;
 (* neg	v3.8h, v10.8h                               #! PC = 0x5555550e38 *)
-broadcast %zero 8 [0@sint16]; sub %v3 %zero %v10;
+broadcast %zero 8 [0@sint16]; subs %dc %v3 %zero %v10;
 (* str	q30, [x0, #2304]                            #! EA = L0x7fffffccd0; PC = 0x5555550e3c *)
 mov [L0x7fffffccd0,L0x7fffffccd2,L0x7fffffccd4,L0x7fffffccd6,L0x7fffffccd8,L0x7fffffccda,L0x7fffffccdc,L0x7fffffccde] %v30;
 (* sub	v6.8h, v6.8h, v11.8h                        #! PC = 0x5555550e40 *)
@@ -1289,7 +1289,7 @@ cast %mls@int16[8] %mls; subc %dc %v2 %v2 %mls;
 (* #cbz	w10, 0x5555550fdc <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+2108>#! PC = 0x5555550fd4 *)
 #cbz	w10, 0x5555550fdc <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+2108>#! 0x5555550fd4 = 0x5555550fd4;
 (* neg	v2.8h, v2.8h                                #! PC = 0x5555550fd8 *)
-broadcast %zero 8 [0@sint16]; sub %v2 %zero %v2;
+broadcast %zero 8 [0@sint16]; subs %dc %v2 %zero %v2;
 (* str	q10, [x0, #128]                             #! EA = L0x7fffffc460; PC = 0x5555550fec *)
 mov [L0x7fffffc460,L0x7fffffc462,L0x7fffffc464,L0x7fffffc466,L0x7fffffc468,L0x7fffffc46a,L0x7fffffc46c,L0x7fffffc46e] %v10;
 (* str	q6, [x0, #416]                              #! EA = L0x7fffffc580; PC = 0x5555550ff0 *)
@@ -1361,7 +1361,7 @@ subc %dc %v4 %v4 %v7;
 (* mul	v13.8h, v18.8h, v1.h[3]                     #! PC = 0x5555550c88 *)
 broadcast %mul 8 [%v1[3]]; mull %dc %v13 %v18 %mul; cast %v13@int16[8] %v13;
 (* neg	v5.8h, v9.8h                                #! PC = 0x5555550c8c *)
-broadcast %zero 8 [0@sint16]; sub %v5 %zero %v9;
+broadcast %zero 8 [0@sint16]; subs %dc %v5 %zero %v9;
 (* sub	v8.8h, v13.8h, v2.8h                        #! PC = 0x5555550c90 *)
 subc %dc %v8 %v13 %v2;
 (* sshr	v11.8h, v4.8h, #12                         #! PC = 0x5555550c94 *)
@@ -1655,7 +1655,7 @@ cast %v6@sint16[8] %long;
 (* str	q28, [x0, #1728]                            #! EA = L0x7fffffcaa0; PC = 0x5555550e34 *)
 mov [L0x7fffffcaa0,L0x7fffffcaa2,L0x7fffffcaa4,L0x7fffffcaa6,L0x7fffffcaa8,L0x7fffffcaaa,L0x7fffffcaac,L0x7fffffcaae] %v28;
 (* neg	v3.8h, v10.8h                               #! PC = 0x5555550e38 *)
-broadcast %zero 8 [0@sint16]; sub %v3 %zero %v10;
+broadcast %zero 8 [0@sint16]; subs %dc %v3 %zero %v10;
 (* str	q30, [x0, #2304]                            #! EA = L0x7fffffcce0; PC = 0x5555550e3c *)
 mov [L0x7fffffcce0,L0x7fffffcce2,L0x7fffffcce4,L0x7fffffcce6,L0x7fffffcce8,L0x7fffffccea,L0x7fffffccec,L0x7fffffccee] %v30;
 (* sub	v6.8h, v6.8h, v11.8h                        #! PC = 0x5555550e40 *)
@@ -1999,7 +1999,7 @@ broadcast %mul 8 [%v1[0]]; mull %dc %v4 %v18 %mul; cast %v4@int16[8] %v4;
 (* sub	v2.8h, v2.8h, v18.8h                        #! PC = 0x55555508ac *)
 subc %dc %v2 %v2 %v18;
 (* neg	v3.8h, v6.8h                                #! PC = 0x55555508b0 *)
-broadcast %zero 8 [0@sint16]; sub %v3 %zero %v6;
+broadcast %zero 8 [0@sint16]; subs %dc %v3 %zero %v6;
 (* mls	v4.8h, v9.8h, v0.h[0]                       #! PC = 0x55555508b4 *)
 broadcast %mul 8 [%v0[0]]; mull %dc %mls %v9 %mul;
 cast %mls@int16[8] %mls; subc %dc %v4 %v4 %mls;
@@ -2253,7 +2253,7 @@ cast %mls@int16[8] %mls; subc %dc %v2 %v2 %mls;
 (* #cbz	w10, 0x5555550a18 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+632>#! PC = 0x5555550a10 *)
 #cbz	w10, 0x5555550a18 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+632>#! 0x5555550a10 = 0x5555550a10;
 (* neg	v2.8h, v2.8h                                #! PC = 0x5555550a14 *)
-broadcast %zero 8 [0@sint16]; sub %v2 %zero %v2;
+broadcast %zero 8 [0@sint16]; subs %dc %v2 %zero %v2;
 (* add	v17.8h, v23.8h, v21.8h                      #! PC = 0x5555550a18 *)
 adds %dc %v17 %v23 %v21;
 (* str	q3, [x0]                                    #! EA = L0x7fffffc3f0; PC = 0x5555550a1c *)
@@ -2273,7 +2273,7 @@ cast %v3@sint16[8] %long;
 (* str	q2, [x0, #1440]                             #! EA = L0x7fffffc990; PC = 0x5555550a34 *)
 mov [L0x7fffffc990,L0x7fffffc992,L0x7fffffc994,L0x7fffffc996,L0x7fffffc998,L0x7fffffc99a,L0x7fffffc99c,L0x7fffffc99e] %v2;
 (* neg	v30.8h, v17.8h                              #! PC = 0x5555550a38 *)
-broadcast %zero 8 [0@sint16]; sub %v30 %zero %v17;
+broadcast %zero 8 [0@sint16]; subs %dc %v30 %zero %v17;
 (* str	q7, [x0, #288]                              #! EA = L0x7fffffc510; PC = 0x5555550a3c *)
 mov [L0x7fffffc510,L0x7fffffc512,L0x7fffffc514,L0x7fffffc516,L0x7fffffc518,L0x7fffffc51a,L0x7fffffc51c,L0x7fffffc51e] %v7;
 (* sqrdmulh	v7.8h, v18.8h, v1.h[4]                 #! PC = 0x5555550a40 *)
@@ -2552,7 +2552,7 @@ cast %mls@int16[8] %mls; subc %dc %v2 %v2 %mls;
 (* #cbz	w10, 0x5555550bcc <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1068>#! PC = 0x5555550bc4 *)
 #cbz	w10, 0x5555550bcc <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1068>#! 0x5555550bc4 = 0x5555550bc4;
 (* neg	v2.8h, v2.8h                                #! PC = 0x5555550bc8 *)
-broadcast %zero 8 [0@sint16]; sub %v2 %zero %v2;
+broadcast %zero 8 [0@sint16]; subs %dc %v2 %zero %v2;
 (* str	q7, [x0, #144]                              #! EA = L0x7fffffc480; PC = 0x5555550bd0 *)
 mov [L0x7fffffc480,L0x7fffffc482,L0x7fffffc484,L0x7fffffc486,L0x7fffffc488,L0x7fffffc48a,L0x7fffffc48c,L0x7fffffc48e] %v7;
 (* str	q5, [x0, #432]                              #! EA = L0x7fffffc5a0; PC = 0x5555550bd8 *)
@@ -2610,7 +2610,7 @@ broadcast %mul 8 [%v1[0]]; mull %dc %v4 %v18 %mul; cast %v4@int16[8] %v4;
 (* sub	v2.8h, v2.8h, v18.8h                        #! PC = 0x55555508ac *)
 subc %dc %v2 %v2 %v18;
 (* neg	v3.8h, v6.8h                                #! PC = 0x55555508b0 *)
-broadcast %zero 8 [0@sint16]; sub %v3 %zero %v6;
+broadcast %zero 8 [0@sint16]; subs %dc %v3 %zero %v6;
 (* mls	v4.8h, v9.8h, v0.h[0]                       #! PC = 0x55555508b4 *)
 broadcast %mul 8 [%v0[0]]; mull %dc %mls %v9 %mul;
 cast %mls@int16[8] %mls; subc %dc %v4 %v4 %mls;
@@ -2882,7 +2882,7 @@ cast %v3@sint16[8] %long;
 (* str	q2, [x0, #1440]                             #! EA = L0x7fffffc9a0; PC = 0x5555550a34 *)
 mov [L0x7fffffc9a0,L0x7fffffc9a2,L0x7fffffc9a4,L0x7fffffc9a6,L0x7fffffc9a8,L0x7fffffc9aa,L0x7fffffc9ac,L0x7fffffc9ae] %v2;
 (* neg	v30.8h, v17.8h                              #! PC = 0x5555550a38 *)
-broadcast %zero 8 [0@sint16]; sub %v30 %zero %v17;
+broadcast %zero 8 [0@sint16]; subs %dc %v30 %zero %v17;
 (* str	q7, [x0, #288]                              #! EA = L0x7fffffc520; PC = 0x5555550a3c *)
 mov [L0x7fffffc520,L0x7fffffc522,L0x7fffffc524,L0x7fffffc526,L0x7fffffc528,L0x7fffffc52a,L0x7fffffc52c,L0x7fffffc52e] %v7;
 (* sqrdmulh	v7.8h, v18.8h, v1.h[4]                 #! PC = 0x5555550a40 *)
@@ -3217,7 +3217,7 @@ broadcast %mul 8 [%v1[0]]; mull %dc %v4 %v18 %mul; cast %v4@int16[8] %v4;
 (* sub	v2.8h, v2.8h, v18.8h                        #! PC = 0x55555508ac *)
 subc %dc %v2 %v2 %v18;
 (* neg	v3.8h, v6.8h                                #! PC = 0x55555508b0 *)
-broadcast %zero 8 [0@sint16]; sub %v3 %zero %v6;
+broadcast %zero 8 [0@sint16]; subs %dc %v3 %zero %v6;
 (* mls	v4.8h, v9.8h, v0.h[0]                       #! PC = 0x55555508b4 *)
 broadcast %mul 8 [%v0[0]]; mull %dc %mls %v9 %mul;
 cast %mls@int16[8] %mls; subc %dc %v4 %v4 %mls;
@@ -3471,7 +3471,7 @@ cast %mls@int16[8] %mls; subc %dc %v2 %v2 %mls;
 (* #cbz	w10, 0x5555550a18 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+632>#! PC = 0x5555550a10 *)
 #cbz	w10, 0x5555550a18 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+632>#! 0x5555550a10 = 0x5555550a10;
 (* neg	v2.8h, v2.8h                                #! PC = 0x5555550a14 *)
-broadcast %zero 8 [0@sint16]; sub %v2 %zero %v2;
+broadcast %zero 8 [0@sint16]; subs %dc %v2 %zero %v2;
 (* add	v17.8h, v23.8h, v21.8h                      #! PC = 0x5555550a18 *)
 adds %dc %v17 %v23 %v21;
 (* str	q3, [x0]                                    #! EA = L0x7fffffc410; PC = 0x5555550a1c *)
@@ -3491,7 +3491,7 @@ cast %v3@sint16[8] %long;
 (* str	q2, [x0, #1440]                             #! EA = L0x7fffffc9b0; PC = 0x5555550a34 *)
 mov [L0x7fffffc9b0,L0x7fffffc9b2,L0x7fffffc9b4,L0x7fffffc9b6,L0x7fffffc9b8,L0x7fffffc9ba,L0x7fffffc9bc,L0x7fffffc9be] %v2;
 (* neg	v30.8h, v17.8h                              #! PC = 0x5555550a38 *)
-broadcast %zero 8 [0@sint16]; sub %v30 %zero %v17;
+broadcast %zero 8 [0@sint16]; subs %dc %v30 %zero %v17;
 (* str	q7, [x0, #288]                              #! EA = L0x7fffffc530; PC = 0x5555550a3c *)
 mov [L0x7fffffc530,L0x7fffffc532,L0x7fffffc534,L0x7fffffc536,L0x7fffffc538,L0x7fffffc53a,L0x7fffffc53c,L0x7fffffc53e] %v7;
 (* sqrdmulh	v7.8h, v18.8h, v1.h[4]                 #! PC = 0x5555550a40 *)
@@ -3770,7 +3770,7 @@ cast %mls@int16[8] %mls; subc %dc %v2 %v2 %mls;
 (* #cbz	w10, 0x5555550bcc <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1068>#! PC = 0x5555550bc4 *)
 #cbz	w10, 0x5555550bcc <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1068>#! 0x5555550bc4 = 0x5555550bc4;
 (* neg	v2.8h, v2.8h                                #! PC = 0x5555550bc8 *)
-broadcast %zero 8 [0@sint16]; sub %v2 %zero %v2;
+broadcast %zero 8 [0@sint16]; subs %dc %v2 %zero %v2;
 (* str	q7, [x0, #144]                              #! EA = L0x7fffffc4a0; PC = 0x5555550bd0 *)
 mov [L0x7fffffc4a0,L0x7fffffc4a2,L0x7fffffc4a4,L0x7fffffc4a6,L0x7fffffc4a8,L0x7fffffc4aa,L0x7fffffc4ac,L0x7fffffc4ae] %v7;
 (* str	q5, [x0, #432]                              #! EA = L0x7fffffc5c0; PC = 0x5555550bd8 *)
@@ -3828,7 +3828,7 @@ broadcast %mul 8 [%v1[0]]; mull %dc %v4 %v18 %mul; cast %v4@int16[8] %v4;
 (* sub	v2.8h, v2.8h, v18.8h                        #! PC = 0x55555508ac *)
 subc %dc %v2 %v2 %v18;
 (* neg	v3.8h, v6.8h                                #! PC = 0x55555508b0 *)
-broadcast %zero 8 [0@sint16]; sub %v3 %zero %v6;
+broadcast %zero 8 [0@sint16]; subs %dc %v3 %zero %v6;
 (* mls	v4.8h, v9.8h, v0.h[0]                       #! PC = 0x55555508b4 *)
 broadcast %mul 8 [%v0[0]]; mull %dc %mls %v9 %mul;
 cast %mls@int16[8] %mls; subc %dc %v4 %v4 %mls;
@@ -4100,7 +4100,7 @@ cast %v3@sint16[8] %long;
 (* str	q2, [x0, #1440]                             #! EA = L0x7fffffc9c0; PC = 0x5555550a34 *)
 mov [L0x7fffffc9c0,L0x7fffffc9c2,L0x7fffffc9c4,L0x7fffffc9c6,L0x7fffffc9c8,L0x7fffffc9ca,L0x7fffffc9cc,L0x7fffffc9ce] %v2;
 (* neg	v30.8h, v17.8h                              #! PC = 0x5555550a38 *)
-broadcast %zero 8 [0@sint16]; sub %v30 %zero %v17;
+broadcast %zero 8 [0@sint16]; subs %dc %v30 %zero %v17;
 (* str	q7, [x0, #288]                              #! EA = L0x7fffffc540; PC = 0x5555550a3c *)
 mov [L0x7fffffc540,L0x7fffffc542,L0x7fffffc544,L0x7fffffc546,L0x7fffffc548,L0x7fffffc54a,L0x7fffffc54c,L0x7fffffc54e] %v7;
 (* sqrdmulh	v7.8h, v18.8h, v1.h[4]                 #! PC = 0x5555550a40 *)
@@ -4435,7 +4435,7 @@ broadcast %mul 8 [%v1[0]]; mull %dc %v4 %v18 %mul; cast %v4@int16[8] %v4;
 (* sub	v2.8h, v2.8h, v18.8h                        #! PC = 0x55555508ac *)
 subc %dc %v2 %v2 %v18;
 (* neg	v3.8h, v6.8h                                #! PC = 0x55555508b0 *)
-broadcast %zero 8 [0@sint16]; sub %v3 %zero %v6;
+broadcast %zero 8 [0@sint16]; subs %dc %v3 %zero %v6;
 (* mls	v4.8h, v9.8h, v0.h[0]                       #! PC = 0x55555508b4 *)
 broadcast %mul 8 [%v0[0]]; mull %dc %mls %v9 %mul;
 cast %mls@int16[8] %mls; subc %dc %v4 %v4 %mls;
@@ -4689,7 +4689,7 @@ cast %mls@int16[8] %mls; subc %dc %v2 %v2 %mls;
 (* #cbz	w10, 0x5555550a18 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+632>#! PC = 0x5555550a10 *)
 #cbz	w10, 0x5555550a18 <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+632>#! 0x5555550a10 = 0x5555550a10;
 (* neg	v2.8h, v2.8h                                #! PC = 0x5555550a14 *)
-broadcast %zero 8 [0@sint16]; sub %v2 %zero %v2;
+broadcast %zero 8 [0@sint16]; subs %dc %v2 %zero %v2;
 (* add	v17.8h, v23.8h, v21.8h                      #! PC = 0x5555550a18 *)
 adds %dc %v17 %v23 %v21;
 (* str	q3, [x0]                                    #! EA = L0x7fffffc430; PC = 0x5555550a1c *)
@@ -4709,7 +4709,7 @@ cast %v3@sint16[8] %long;
 (* str	q2, [x0, #1440]                             #! EA = L0x7fffffc9d0; PC = 0x5555550a34 *)
 mov [L0x7fffffc9d0,L0x7fffffc9d2,L0x7fffffc9d4,L0x7fffffc9d6,L0x7fffffc9d8,L0x7fffffc9da,L0x7fffffc9dc,L0x7fffffc9de] %v2;
 (* neg	v30.8h, v17.8h                              #! PC = 0x5555550a38 *)
-broadcast %zero 8 [0@sint16]; sub %v30 %zero %v17;
+broadcast %zero 8 [0@sint16]; subs %dc %v30 %zero %v17;
 (* str	q7, [x0, #288]                              #! EA = L0x7fffffc550; PC = 0x5555550a3c *)
 mov [L0x7fffffc550,L0x7fffffc552,L0x7fffffc554,L0x7fffffc556,L0x7fffffc558,L0x7fffffc55a,L0x7fffffc55c,L0x7fffffc55e] %v7;
 (* sqrdmulh	v7.8h, v18.8h, v1.h[4]                 #! PC = 0x5555550a40 *)
@@ -4988,7 +4988,7 @@ cast %mls@int16[8] %mls; subc %dc %v2 %v2 %mls;
 (* #cbz	w10, 0x5555550bcc <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1068>#! PC = 0x5555550bc4 *)
 #cbz	w10, 0x5555550bcc <_ZN6xpower9main_lay111fwd_extractEPA2_A9_A8_sPKs+1068>#! 0x5555550bc4 = 0x5555550bc4;
 (* neg	v2.8h, v2.8h                                #! PC = 0x5555550bc8 *)
-broadcast %zero 8 [0@sint16]; sub %v2 %zero %v2;
+broadcast %zero 8 [0@sint16]; subs %dc %v2 %zero %v2;
 (* str	q7, [x0, #144]                              #! EA = L0x7fffffc4c0; PC = 0x5555550bd0 *)
 mov [L0x7fffffc4c0,L0x7fffffc4c2,L0x7fffffc4c4,L0x7fffffc4c6,L0x7fffffc4c8,L0x7fffffc4ca,L0x7fffffc4cc,L0x7fffffc4ce] %v7;
 (* str	q5, [x0, #432]                              #! EA = L0x7fffffc5e0; PC = 0x5555550bd8 *)
@@ -5046,7 +5046,7 @@ broadcast %mul 8 [%v1[0]]; mull %dc %v4 %v18 %mul; cast %v4@int16[8] %v4;
 (* sub	v2.8h, v2.8h, v18.8h                        #! PC = 0x55555508ac *)
 subc %dc %v2 %v2 %v18;
 (* neg	v3.8h, v6.8h                                #! PC = 0x55555508b0 *)
-broadcast %zero 8 [0@sint16]; sub %v3 %zero %v6;
+broadcast %zero 8 [0@sint16]; subs %dc %v3 %zero %v6;
 (* mls	v4.8h, v9.8h, v0.h[0]                       #! PC = 0x55555508b4 *)
 broadcast %mul 8 [%v0[0]]; mull %dc %mls %v9 %mul;
 cast %mls@int16[8] %mls; subc %dc %v4 %v4 %mls;
@@ -5318,7 +5318,7 @@ cast %v3@sint16[8] %long;
 (* str	q2, [x0, #1440]                             #! EA = L0x7fffffc9e0; PC = 0x5555550a34 *)
 mov [L0x7fffffc9e0,L0x7fffffc9e2,L0x7fffffc9e4,L0x7fffffc9e6,L0x7fffffc9e8,L0x7fffffc9ea,L0x7fffffc9ec,L0x7fffffc9ee] %v2;
 (* neg	v30.8h, v17.8h                              #! PC = 0x5555550a38 *)
-broadcast %zero 8 [0@sint16]; sub %v30 %zero %v17;
+broadcast %zero 8 [0@sint16]; subs %dc %v30 %zero %v17;
 (* str	q7, [x0, #288]                              #! EA = L0x7fffffc560; PC = 0x5555550a3c *)
 mov [L0x7fffffc560,L0x7fffffc562,L0x7fffffc564,L0x7fffffc566,L0x7fffffc568,L0x7fffffc56a,L0x7fffffc56c,L0x7fffffc56e] %v7;
 (* sqrdmulh	v7.8h, v18.8h, v1.h[4]                 #! PC = 0x5555550a40 *)

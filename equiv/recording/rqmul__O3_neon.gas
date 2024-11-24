@@ -78,9 +78,9 @@
 #! sshr v$1c.8h, v$2c.8h, $3c -> split %v$1c %dc %v$2c $3c
 #! srshr v$1c.8h, v$2c.8h, $3c -> split %HI %LO %v$2c $3c; split %LO1 %dc %LO ($3c-1);\ncast %LO0@sint16[8] %LO1; add %v$1c %HI %LO0
 #! cmlt v$1c.8h, v$2c.8h, #0 -> split %v$1c %dc %v$2c 15
-#! neg v$1c.8h, v$2c.8h -> broadcast %zero 8 [0@sint16]; sub %v$1c %zero %v$2c
+#! neg v$1c.8h, v$2c.8h -> broadcast %zero 8 [0@sint16]; subs %dc %v$1c %zero %v$2c
 
-#! cmgt v$1c.8h, v$2c.8h, v$3c.8h -> sub %cmp %v$3c %v$2c; split %v$1c %dc %cmp 15
+#! cmgt v$1c.8h, v$2c.8h, v$3c.8h -> vpc %v$2c_17@sint17[8] %v$2c; vpc %v$3c_17@sint17[8] %v$3c;\nsub %cmp %v$3c_17 %v$2c_17; split %v$1c_17 %dc %cmp 16; vpc %v$1c@sint16[8] %v$1c_17
 #! and v$1c.16b, v$2c.16b, v$3c.16b -> and %v$1c@sint16[8] %v$2c %v$3c
 
 # data manipulation
