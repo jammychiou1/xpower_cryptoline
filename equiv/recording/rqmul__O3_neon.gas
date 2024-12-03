@@ -74,7 +74,7 @@
 #! sqrdmulh v$1c.4s, v$2c.4s, v$3c.s\[0\] -> cast uint16 coef_l %v$3c[0]; join coef %v$3c[1] coef_l;\nsmulj %LO %v$2c [coef,coef,coef,coef];\nssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;\nvpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;\nadd %v$1c %LO11 %LO01
 #! sqrdmulh v$1c.4s, v$2c.4s, v$3c.s\[1\] -> cast uint16 coef_l %v$3c[2]; join coef %v$3c[3] coef_l;\nsmulj %LO %v$2c [coef,coef,coef,coef];\nssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;\nvpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;\nadd %v$1c %LO11 %LO01
 
-#! shl v$1c.8h, v$2c.8h, $3c -> vpc %long@sint32[8] %v$2c;\nshl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];\ncast %v$1c@sint16[8] %long
+#! shl v$1c.8h, v$2c.8h, $3c -> vpc %long@sint32[8] %v$2c;\nshl %long %long [($3c)@int32, ($3c)@int32, ($3c)@int32, ($3c)@int32, ($3c)@int32, ($3c)@int32, ($3c)@int32, ($3c)@int32];\ncast %v$1c@sint16[8] %long
 #! sshr v$1c.8h, v$2c.8h, $3c -> split %v$1c %dc %v$2c $3c
 #! srshr v$1c.8h, v$2c.8h, $3c -> split %HI %LO %v$2c $3c; split %LO1 %dc %LO ($3c-1);\ncast %LO0@sint16[8] %LO1; add %v$1c %HI %LO0
 #! cmlt v$1c.8h, v$2c.8h, #0 -> split %v$1c %dc %v$2c 15

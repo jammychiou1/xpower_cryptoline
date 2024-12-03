@@ -31,11 +31,11 @@ adds %dc %v30 %v2 %v15;
 adds %dc %v12 %v3 %v23;
 (* shl	v7.8h, v27.8h, #1                           #! PC = 0x55555514bc *)
 vpc %long@sint32[8] %v27;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* shl	v1.8h, v8.8h, #1                            #! PC = 0x55555514c0 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* add	v29.8h, v4.8h, v16.8h                       #! PC = 0x55555514c4 *)
 adds %dc %v29 %v4 %v16;
@@ -47,13 +47,13 @@ subc %dc %v7 %v7 %v30;
 subc %dc %v1 %v1 %v12;
 (* shl	v21.8h, v6.8h, #1                           #! PC = 0x55555514d4 *)
 vpc %long@sint32[8] %v6;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v21@sint16[8] %long;
 (* add	v12.8h, v12.8h, v8.8h                       #! PC = 0x55555514d8 *)
 adds %dc %v12 %v12 %v8;
 (* shl	v31.8h, v9.8h, #1                           #! PC = 0x55555514dc *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v31@sint16[8] %long;
 (* sqdmulh	v8.8h, v1.8h, v11.h[1]                  #! PC = 0x55555514e0 *)
 broadcast %mul 8 [%v11[1]]; smulj %LO %v1 %mul;
@@ -132,7 +132,7 @@ subc %dc %v8 %v8 %v16;
 adds %dc %v28 %v18 %v22;
 (* shl	v13.8h, v26.8h, #1                          #! PC = 0x555555154c *)
 vpc %long@sint32[8] %v26;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v13@sint16[8] %long;
 (* sub	v7.8h, v7.8h, v15.8h                        #! PC = 0x5555551550 *)
 subc %dc %v7 %v7 %v15;
@@ -204,13 +204,13 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v28 %mul;
 cast %mls@int16[8] %mls; subc %dc %v15 %v15 %mls;
 (* shl	v8.8h, v15.8h, #1                           #! PC = 0x55555515bc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v8@sint16[8] %long;
 (* add	v25.8h, v17.8h, v20.8h                      #! PC = 0x55555515c0 *)
 adds %dc %v25 %v17 %v20;
 (* shl	v14.8h, v5.8h, #1                           #! PC = 0x55555515c4 *)
 vpc %long@sint32[8] %v5;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* srshr	v24.8h, v24.8h, #2                        #! PC = 0x55555515c8 *)
 split %HI %LO %v24 2; split %LO1 %dc %LO (2-1);
@@ -261,7 +261,7 @@ cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 subc %dc %v28 %v1 %v7;
 (* shl	v7.8h, v7.8h, #1                            #! PC = 0x555555160c *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* sub	v29.8h, v16.8h, v15.8h                      #! PC = 0x5555551610 *)
 subc %dc %v29 %v16 %v15;
@@ -410,23 +410,23 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v20 %mul;
 cast %mls@int16[8] %mls; subc %dc %v8 %v8 %mls;
 (* shl	v14.8h, v8.8h, #1                           #! PC = 0x55555516e8 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* sub	v13.8h, v13.8h, v18.8h                      #! PC = 0x55555516ec *)
 subc %dc %v13 %v13 %v18;
 (* shl	v17.8h, v9.8h, #1                           #! PC = 0x55555516f0 *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v17@sint16[8] %long;
 (* shl	v18.8h, v12.8h, #1                          #! PC = 0x55555516f4 *)
 vpc %long@sint32[8] %v12;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v18@sint16[8] %long;
 (* mul	v3.8h, v13.8h, v10.h[2]                     #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v10[2]]; mull %dc %v3 %v13 %mul; cast %v3@int16[8] %v3;
 (* shl	v15.8h, v15.8h, #1                          #! PC = 0x55555516fc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v15@sint16[8] %long;
 (* sqrdmulh	v13.8h, v13.8h, v10.h[6]               #! PC = 0x5555551700 *)
 broadcast %mul 8 [%v10[6]]; smulj %LO %v13 %mul;
@@ -477,7 +477,7 @@ mov %v7 %v19;
 broadcast %mul 8 [%v10[0]]; mull %dc %v4 %v2 %mul; cast %v4@int16[8] %v4;
 (* shl	v1.8h, v1.8h, #1                            #! PC = 0x5555551744 *)
 vpc %long@sint32[8] %v1;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* sqrdmulh	v2.8h, v2.8h, v10.h[4]                 #! PC = 0x5555551748 *)
 broadcast %mul 8 [%v10[4]]; smulj %LO %v2 %mul;
@@ -502,7 +502,7 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v19 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* shl	v12.8h, v7.8h, #1                           #! PC = 0x5555551764 *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v12@sint16[8] %long;
 (* sub	v7.8h, v17.8h, v7.8h                        #! PC = 0x5555551768 *)
 subc %dc %v7 %v17 %v7;
@@ -617,11 +617,11 @@ adds %dc %v30 %v2 %v15;
 adds %dc %v12 %v3 %v23;
 (* shl	v7.8h, v27.8h, #1                           #! PC = 0x55555514bc *)
 vpc %long@sint32[8] %v27;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* shl	v1.8h, v8.8h, #1                            #! PC = 0x55555514c0 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* add	v29.8h, v4.8h, v16.8h                       #! PC = 0x55555514c4 *)
 adds %dc %v29 %v4 %v16;
@@ -633,13 +633,13 @@ subc %dc %v7 %v7 %v30;
 subc %dc %v1 %v1 %v12;
 (* shl	v21.8h, v6.8h, #1                           #! PC = 0x55555514d4 *)
 vpc %long@sint32[8] %v6;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v21@sint16[8] %long;
 (* add	v12.8h, v12.8h, v8.8h                       #! PC = 0x55555514d8 *)
 adds %dc %v12 %v12 %v8;
 (* shl	v31.8h, v9.8h, #1                           #! PC = 0x55555514dc *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v31@sint16[8] %long;
 (* sqdmulh	v8.8h, v1.8h, v11.h[1]                  #! PC = 0x55555514e0 *)
 broadcast %mul 8 [%v11[1]]; smulj %LO %v1 %mul;
@@ -718,7 +718,7 @@ subc %dc %v8 %v8 %v16;
 adds %dc %v28 %v18 %v22;
 (* shl	v13.8h, v26.8h, #1                          #! PC = 0x555555154c *)
 vpc %long@sint32[8] %v26;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v13@sint16[8] %long;
 (* sub	v7.8h, v7.8h, v15.8h                        #! PC = 0x5555551550 *)
 subc %dc %v7 %v7 %v15;
@@ -790,13 +790,13 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v28 %mul;
 cast %mls@int16[8] %mls; subc %dc %v15 %v15 %mls;
 (* shl	v8.8h, v15.8h, #1                           #! PC = 0x55555515bc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v8@sint16[8] %long;
 (* add	v25.8h, v17.8h, v20.8h                      #! PC = 0x55555515c0 *)
 adds %dc %v25 %v17 %v20;
 (* shl	v14.8h, v5.8h, #1                           #! PC = 0x55555515c4 *)
 vpc %long@sint32[8] %v5;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* srshr	v24.8h, v24.8h, #2                        #! PC = 0x55555515c8 *)
 split %HI %LO %v24 2; split %LO1 %dc %LO (2-1);
@@ -847,7 +847,7 @@ cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 subc %dc %v28 %v1 %v7;
 (* shl	v7.8h, v7.8h, #1                            #! PC = 0x555555160c *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* sub	v29.8h, v16.8h, v15.8h                      #! PC = 0x5555551610 *)
 subc %dc %v29 %v16 %v15;
@@ -996,23 +996,23 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v20 %mul;
 cast %mls@int16[8] %mls; subc %dc %v8 %v8 %mls;
 (* shl	v14.8h, v8.8h, #1                           #! PC = 0x55555516e8 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* sub	v13.8h, v13.8h, v18.8h                      #! PC = 0x55555516ec *)
 subc %dc %v13 %v13 %v18;
 (* shl	v17.8h, v9.8h, #1                           #! PC = 0x55555516f0 *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v17@sint16[8] %long;
 (* shl	v18.8h, v12.8h, #1                          #! PC = 0x55555516f4 *)
 vpc %long@sint32[8] %v12;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v18@sint16[8] %long;
 (* mul	v3.8h, v13.8h, v10.h[2]                     #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v10[2]]; mull %dc %v3 %v13 %mul; cast %v3@int16[8] %v3;
 (* shl	v15.8h, v15.8h, #1                          #! PC = 0x55555516fc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v15@sint16[8] %long;
 (* sqrdmulh	v13.8h, v13.8h, v10.h[6]               #! PC = 0x5555551700 *)
 broadcast %mul 8 [%v10[6]]; smulj %LO %v13 %mul;
@@ -1063,7 +1063,7 @@ mov %v7 %v19;
 broadcast %mul 8 [%v10[0]]; mull %dc %v4 %v2 %mul; cast %v4@int16[8] %v4;
 (* shl	v1.8h, v1.8h, #1                            #! PC = 0x5555551744 *)
 vpc %long@sint32[8] %v1;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* sqrdmulh	v2.8h, v2.8h, v10.h[4]                 #! PC = 0x5555551748 *)
 broadcast %mul 8 [%v10[4]]; smulj %LO %v2 %mul;
@@ -1088,7 +1088,7 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v19 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* shl	v12.8h, v7.8h, #1                           #! PC = 0x5555551764 *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v12@sint16[8] %long;
 (* sub	v7.8h, v17.8h, v7.8h                        #! PC = 0x5555551768 *)
 subc %dc %v7 %v17 %v7;
@@ -1203,11 +1203,11 @@ adds %dc %v30 %v2 %v15;
 adds %dc %v12 %v3 %v23;
 (* shl	v7.8h, v27.8h, #1                           #! PC = 0x55555514bc *)
 vpc %long@sint32[8] %v27;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* shl	v1.8h, v8.8h, #1                            #! PC = 0x55555514c0 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* add	v29.8h, v4.8h, v16.8h                       #! PC = 0x55555514c4 *)
 adds %dc %v29 %v4 %v16;
@@ -1219,13 +1219,13 @@ subc %dc %v7 %v7 %v30;
 subc %dc %v1 %v1 %v12;
 (* shl	v21.8h, v6.8h, #1                           #! PC = 0x55555514d4 *)
 vpc %long@sint32[8] %v6;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v21@sint16[8] %long;
 (* add	v12.8h, v12.8h, v8.8h                       #! PC = 0x55555514d8 *)
 adds %dc %v12 %v12 %v8;
 (* shl	v31.8h, v9.8h, #1                           #! PC = 0x55555514dc *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v31@sint16[8] %long;
 (* sqdmulh	v8.8h, v1.8h, v11.h[1]                  #! PC = 0x55555514e0 *)
 broadcast %mul 8 [%v11[1]]; smulj %LO %v1 %mul;
@@ -1304,7 +1304,7 @@ subc %dc %v8 %v8 %v16;
 adds %dc %v28 %v18 %v22;
 (* shl	v13.8h, v26.8h, #1                          #! PC = 0x555555154c *)
 vpc %long@sint32[8] %v26;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v13@sint16[8] %long;
 (* sub	v7.8h, v7.8h, v15.8h                        #! PC = 0x5555551550 *)
 subc %dc %v7 %v7 %v15;
@@ -1376,13 +1376,13 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v28 %mul;
 cast %mls@int16[8] %mls; subc %dc %v15 %v15 %mls;
 (* shl	v8.8h, v15.8h, #1                           #! PC = 0x55555515bc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v8@sint16[8] %long;
 (* add	v25.8h, v17.8h, v20.8h                      #! PC = 0x55555515c0 *)
 adds %dc %v25 %v17 %v20;
 (* shl	v14.8h, v5.8h, #1                           #! PC = 0x55555515c4 *)
 vpc %long@sint32[8] %v5;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* srshr	v24.8h, v24.8h, #2                        #! PC = 0x55555515c8 *)
 split %HI %LO %v24 2; split %LO1 %dc %LO (2-1);
@@ -1433,7 +1433,7 @@ cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 subc %dc %v28 %v1 %v7;
 (* shl	v7.8h, v7.8h, #1                            #! PC = 0x555555160c *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* sub	v29.8h, v16.8h, v15.8h                      #! PC = 0x5555551610 *)
 subc %dc %v29 %v16 %v15;
@@ -1582,23 +1582,23 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v20 %mul;
 cast %mls@int16[8] %mls; subc %dc %v8 %v8 %mls;
 (* shl	v14.8h, v8.8h, #1                           #! PC = 0x55555516e8 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* sub	v13.8h, v13.8h, v18.8h                      #! PC = 0x55555516ec *)
 subc %dc %v13 %v13 %v18;
 (* shl	v17.8h, v9.8h, #1                           #! PC = 0x55555516f0 *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v17@sint16[8] %long;
 (* shl	v18.8h, v12.8h, #1                          #! PC = 0x55555516f4 *)
 vpc %long@sint32[8] %v12;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v18@sint16[8] %long;
 (* mul	v3.8h, v13.8h, v10.h[2]                     #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v10[2]]; mull %dc %v3 %v13 %mul; cast %v3@int16[8] %v3;
 (* shl	v15.8h, v15.8h, #1                          #! PC = 0x55555516fc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v15@sint16[8] %long;
 (* sqrdmulh	v13.8h, v13.8h, v10.h[6]               #! PC = 0x5555551700 *)
 broadcast %mul 8 [%v10[6]]; smulj %LO %v13 %mul;
@@ -1649,7 +1649,7 @@ mov %v7 %v19;
 broadcast %mul 8 [%v10[0]]; mull %dc %v4 %v2 %mul; cast %v4@int16[8] %v4;
 (* shl	v1.8h, v1.8h, #1                            #! PC = 0x5555551744 *)
 vpc %long@sint32[8] %v1;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* sqrdmulh	v2.8h, v2.8h, v10.h[4]                 #! PC = 0x5555551748 *)
 broadcast %mul 8 [%v10[4]]; smulj %LO %v2 %mul;
@@ -1674,7 +1674,7 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v19 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* shl	v12.8h, v7.8h, #1                           #! PC = 0x5555551764 *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v12@sint16[8] %long;
 (* sub	v7.8h, v17.8h, v7.8h                        #! PC = 0x5555551768 *)
 subc %dc %v7 %v17 %v7;
@@ -1789,11 +1789,11 @@ adds %dc %v30 %v2 %v15;
 adds %dc %v12 %v3 %v23;
 (* shl	v7.8h, v27.8h, #1                           #! PC = 0x55555514bc *)
 vpc %long@sint32[8] %v27;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* shl	v1.8h, v8.8h, #1                            #! PC = 0x55555514c0 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* add	v29.8h, v4.8h, v16.8h                       #! PC = 0x55555514c4 *)
 adds %dc %v29 %v4 %v16;
@@ -1805,13 +1805,13 @@ subc %dc %v7 %v7 %v30;
 subc %dc %v1 %v1 %v12;
 (* shl	v21.8h, v6.8h, #1                           #! PC = 0x55555514d4 *)
 vpc %long@sint32[8] %v6;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v21@sint16[8] %long;
 (* add	v12.8h, v12.8h, v8.8h                       #! PC = 0x55555514d8 *)
 adds %dc %v12 %v12 %v8;
 (* shl	v31.8h, v9.8h, #1                           #! PC = 0x55555514dc *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v31@sint16[8] %long;
 (* sqdmulh	v8.8h, v1.8h, v11.h[1]                  #! PC = 0x55555514e0 *)
 broadcast %mul 8 [%v11[1]]; smulj %LO %v1 %mul;
@@ -1890,7 +1890,7 @@ subc %dc %v8 %v8 %v16;
 adds %dc %v28 %v18 %v22;
 (* shl	v13.8h, v26.8h, #1                          #! PC = 0x555555154c *)
 vpc %long@sint32[8] %v26;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v13@sint16[8] %long;
 (* sub	v7.8h, v7.8h, v15.8h                        #! PC = 0x5555551550 *)
 subc %dc %v7 %v7 %v15;
@@ -1962,13 +1962,13 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v28 %mul;
 cast %mls@int16[8] %mls; subc %dc %v15 %v15 %mls;
 (* shl	v8.8h, v15.8h, #1                           #! PC = 0x55555515bc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v8@sint16[8] %long;
 (* add	v25.8h, v17.8h, v20.8h                      #! PC = 0x55555515c0 *)
 adds %dc %v25 %v17 %v20;
 (* shl	v14.8h, v5.8h, #1                           #! PC = 0x55555515c4 *)
 vpc %long@sint32[8] %v5;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* srshr	v24.8h, v24.8h, #2                        #! PC = 0x55555515c8 *)
 split %HI %LO %v24 2; split %LO1 %dc %LO (2-1);
@@ -2019,7 +2019,7 @@ cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 subc %dc %v28 %v1 %v7;
 (* shl	v7.8h, v7.8h, #1                            #! PC = 0x555555160c *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* sub	v29.8h, v16.8h, v15.8h                      #! PC = 0x5555551610 *)
 subc %dc %v29 %v16 %v15;
@@ -2168,23 +2168,23 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v20 %mul;
 cast %mls@int16[8] %mls; subc %dc %v8 %v8 %mls;
 (* shl	v14.8h, v8.8h, #1                           #! PC = 0x55555516e8 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* sub	v13.8h, v13.8h, v18.8h                      #! PC = 0x55555516ec *)
 subc %dc %v13 %v13 %v18;
 (* shl	v17.8h, v9.8h, #1                           #! PC = 0x55555516f0 *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v17@sint16[8] %long;
 (* shl	v18.8h, v12.8h, #1                          #! PC = 0x55555516f4 *)
 vpc %long@sint32[8] %v12;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v18@sint16[8] %long;
 (* mul	v3.8h, v13.8h, v10.h[2]                     #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v10[2]]; mull %dc %v3 %v13 %mul; cast %v3@int16[8] %v3;
 (* shl	v15.8h, v15.8h, #1                          #! PC = 0x55555516fc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v15@sint16[8] %long;
 (* sqrdmulh	v13.8h, v13.8h, v10.h[6]               #! PC = 0x5555551700 *)
 broadcast %mul 8 [%v10[6]]; smulj %LO %v13 %mul;
@@ -2235,7 +2235,7 @@ mov %v7 %v19;
 broadcast %mul 8 [%v10[0]]; mull %dc %v4 %v2 %mul; cast %v4@int16[8] %v4;
 (* shl	v1.8h, v1.8h, #1                            #! PC = 0x5555551744 *)
 vpc %long@sint32[8] %v1;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* sqrdmulh	v2.8h, v2.8h, v10.h[4]                 #! PC = 0x5555551748 *)
 broadcast %mul 8 [%v10[4]]; smulj %LO %v2 %mul;
@@ -2260,7 +2260,7 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v19 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* shl	v12.8h, v7.8h, #1                           #! PC = 0x5555551764 *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v12@sint16[8] %long;
 (* sub	v7.8h, v17.8h, v7.8h                        #! PC = 0x5555551768 *)
 subc %dc %v7 %v17 %v7;
@@ -2375,11 +2375,11 @@ adds %dc %v30 %v2 %v15;
 adds %dc %v12 %v3 %v23;
 (* shl	v7.8h, v27.8h, #1                           #! PC = 0x55555514bc *)
 vpc %long@sint32[8] %v27;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* shl	v1.8h, v8.8h, #1                            #! PC = 0x55555514c0 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* add	v29.8h, v4.8h, v16.8h                       #! PC = 0x55555514c4 *)
 adds %dc %v29 %v4 %v16;
@@ -2391,13 +2391,13 @@ subc %dc %v7 %v7 %v30;
 subc %dc %v1 %v1 %v12;
 (* shl	v21.8h, v6.8h, #1                           #! PC = 0x55555514d4 *)
 vpc %long@sint32[8] %v6;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v21@sint16[8] %long;
 (* add	v12.8h, v12.8h, v8.8h                       #! PC = 0x55555514d8 *)
 adds %dc %v12 %v12 %v8;
 (* shl	v31.8h, v9.8h, #1                           #! PC = 0x55555514dc *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v31@sint16[8] %long;
 (* sqdmulh	v8.8h, v1.8h, v11.h[1]                  #! PC = 0x55555514e0 *)
 broadcast %mul 8 [%v11[1]]; smulj %LO %v1 %mul;
@@ -2476,7 +2476,7 @@ subc %dc %v8 %v8 %v16;
 adds %dc %v28 %v18 %v22;
 (* shl	v13.8h, v26.8h, #1                          #! PC = 0x555555154c *)
 vpc %long@sint32[8] %v26;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v13@sint16[8] %long;
 (* sub	v7.8h, v7.8h, v15.8h                        #! PC = 0x5555551550 *)
 subc %dc %v7 %v7 %v15;
@@ -2548,13 +2548,13 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v28 %mul;
 cast %mls@int16[8] %mls; subc %dc %v15 %v15 %mls;
 (* shl	v8.8h, v15.8h, #1                           #! PC = 0x55555515bc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v8@sint16[8] %long;
 (* add	v25.8h, v17.8h, v20.8h                      #! PC = 0x55555515c0 *)
 adds %dc %v25 %v17 %v20;
 (* shl	v14.8h, v5.8h, #1                           #! PC = 0x55555515c4 *)
 vpc %long@sint32[8] %v5;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* srshr	v24.8h, v24.8h, #2                        #! PC = 0x55555515c8 *)
 split %HI %LO %v24 2; split %LO1 %dc %LO (2-1);
@@ -2605,7 +2605,7 @@ cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 subc %dc %v28 %v1 %v7;
 (* shl	v7.8h, v7.8h, #1                            #! PC = 0x555555160c *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* sub	v29.8h, v16.8h, v15.8h                      #! PC = 0x5555551610 *)
 subc %dc %v29 %v16 %v15;
@@ -2754,23 +2754,23 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v20 %mul;
 cast %mls@int16[8] %mls; subc %dc %v8 %v8 %mls;
 (* shl	v14.8h, v8.8h, #1                           #! PC = 0x55555516e8 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* sub	v13.8h, v13.8h, v18.8h                      #! PC = 0x55555516ec *)
 subc %dc %v13 %v13 %v18;
 (* shl	v17.8h, v9.8h, #1                           #! PC = 0x55555516f0 *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v17@sint16[8] %long;
 (* shl	v18.8h, v12.8h, #1                          #! PC = 0x55555516f4 *)
 vpc %long@sint32[8] %v12;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v18@sint16[8] %long;
 (* mul	v3.8h, v13.8h, v10.h[2]                     #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v10[2]]; mull %dc %v3 %v13 %mul; cast %v3@int16[8] %v3;
 (* shl	v15.8h, v15.8h, #1                          #! PC = 0x55555516fc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v15@sint16[8] %long;
 (* sqrdmulh	v13.8h, v13.8h, v10.h[6]               #! PC = 0x5555551700 *)
 broadcast %mul 8 [%v10[6]]; smulj %LO %v13 %mul;
@@ -2821,7 +2821,7 @@ mov %v7 %v19;
 broadcast %mul 8 [%v10[0]]; mull %dc %v4 %v2 %mul; cast %v4@int16[8] %v4;
 (* shl	v1.8h, v1.8h, #1                            #! PC = 0x5555551744 *)
 vpc %long@sint32[8] %v1;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* sqrdmulh	v2.8h, v2.8h, v10.h[4]                 #! PC = 0x5555551748 *)
 broadcast %mul 8 [%v10[4]]; smulj %LO %v2 %mul;
@@ -2846,7 +2846,7 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v19 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* shl	v12.8h, v7.8h, #1                           #! PC = 0x5555551764 *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v12@sint16[8] %long;
 (* sub	v7.8h, v17.8h, v7.8h                        #! PC = 0x5555551768 *)
 subc %dc %v7 %v17 %v7;
@@ -2961,11 +2961,11 @@ adds %dc %v30 %v2 %v15;
 adds %dc %v12 %v3 %v23;
 (* shl	v7.8h, v27.8h, #1                           #! PC = 0x55555514bc *)
 vpc %long@sint32[8] %v27;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* shl	v1.8h, v8.8h, #1                            #! PC = 0x55555514c0 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* add	v29.8h, v4.8h, v16.8h                       #! PC = 0x55555514c4 *)
 adds %dc %v29 %v4 %v16;
@@ -2977,13 +2977,13 @@ subc %dc %v7 %v7 %v30;
 subc %dc %v1 %v1 %v12;
 (* shl	v21.8h, v6.8h, #1                           #! PC = 0x55555514d4 *)
 vpc %long@sint32[8] %v6;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v21@sint16[8] %long;
 (* add	v12.8h, v12.8h, v8.8h                       #! PC = 0x55555514d8 *)
 adds %dc %v12 %v12 %v8;
 (* shl	v31.8h, v9.8h, #1                           #! PC = 0x55555514dc *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v31@sint16[8] %long;
 (* sqdmulh	v8.8h, v1.8h, v11.h[1]                  #! PC = 0x55555514e0 *)
 broadcast %mul 8 [%v11[1]]; smulj %LO %v1 %mul;
@@ -3062,7 +3062,7 @@ subc %dc %v8 %v8 %v16;
 adds %dc %v28 %v18 %v22;
 (* shl	v13.8h, v26.8h, #1                          #! PC = 0x555555154c *)
 vpc %long@sint32[8] %v26;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v13@sint16[8] %long;
 (* sub	v7.8h, v7.8h, v15.8h                        #! PC = 0x5555551550 *)
 subc %dc %v7 %v7 %v15;
@@ -3134,13 +3134,13 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v28 %mul;
 cast %mls@int16[8] %mls; subc %dc %v15 %v15 %mls;
 (* shl	v8.8h, v15.8h, #1                           #! PC = 0x55555515bc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v8@sint16[8] %long;
 (* add	v25.8h, v17.8h, v20.8h                      #! PC = 0x55555515c0 *)
 adds %dc %v25 %v17 %v20;
 (* shl	v14.8h, v5.8h, #1                           #! PC = 0x55555515c4 *)
 vpc %long@sint32[8] %v5;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* srshr	v24.8h, v24.8h, #2                        #! PC = 0x55555515c8 *)
 split %HI %LO %v24 2; split %LO1 %dc %LO (2-1);
@@ -3191,7 +3191,7 @@ cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 subc %dc %v28 %v1 %v7;
 (* shl	v7.8h, v7.8h, #1                            #! PC = 0x555555160c *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* sub	v29.8h, v16.8h, v15.8h                      #! PC = 0x5555551610 *)
 subc %dc %v29 %v16 %v15;
@@ -3340,23 +3340,23 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v20 %mul;
 cast %mls@int16[8] %mls; subc %dc %v8 %v8 %mls;
 (* shl	v14.8h, v8.8h, #1                           #! PC = 0x55555516e8 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* sub	v13.8h, v13.8h, v18.8h                      #! PC = 0x55555516ec *)
 subc %dc %v13 %v13 %v18;
 (* shl	v17.8h, v9.8h, #1                           #! PC = 0x55555516f0 *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v17@sint16[8] %long;
 (* shl	v18.8h, v12.8h, #1                          #! PC = 0x55555516f4 *)
 vpc %long@sint32[8] %v12;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v18@sint16[8] %long;
 (* mul	v3.8h, v13.8h, v10.h[2]                     #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v10[2]]; mull %dc %v3 %v13 %mul; cast %v3@int16[8] %v3;
 (* shl	v15.8h, v15.8h, #1                          #! PC = 0x55555516fc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v15@sint16[8] %long;
 (* sqrdmulh	v13.8h, v13.8h, v10.h[6]               #! PC = 0x5555551700 *)
 broadcast %mul 8 [%v10[6]]; smulj %LO %v13 %mul;
@@ -3407,7 +3407,7 @@ mov %v7 %v19;
 broadcast %mul 8 [%v10[0]]; mull %dc %v4 %v2 %mul; cast %v4@int16[8] %v4;
 (* shl	v1.8h, v1.8h, #1                            #! PC = 0x5555551744 *)
 vpc %long@sint32[8] %v1;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* sqrdmulh	v2.8h, v2.8h, v10.h[4]                 #! PC = 0x5555551748 *)
 broadcast %mul 8 [%v10[4]]; smulj %LO %v2 %mul;
@@ -3432,7 +3432,7 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v19 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* shl	v12.8h, v7.8h, #1                           #! PC = 0x5555551764 *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v12@sint16[8] %long;
 (* sub	v7.8h, v17.8h, v7.8h                        #! PC = 0x5555551768 *)
 subc %dc %v7 %v17 %v7;
@@ -3547,11 +3547,11 @@ adds %dc %v30 %v2 %v15;
 adds %dc %v12 %v3 %v23;
 (* shl	v7.8h, v27.8h, #1                           #! PC = 0x55555514bc *)
 vpc %long@sint32[8] %v27;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* shl	v1.8h, v8.8h, #1                            #! PC = 0x55555514c0 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* add	v29.8h, v4.8h, v16.8h                       #! PC = 0x55555514c4 *)
 adds %dc %v29 %v4 %v16;
@@ -3563,13 +3563,13 @@ subc %dc %v7 %v7 %v30;
 subc %dc %v1 %v1 %v12;
 (* shl	v21.8h, v6.8h, #1                           #! PC = 0x55555514d4 *)
 vpc %long@sint32[8] %v6;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v21@sint16[8] %long;
 (* add	v12.8h, v12.8h, v8.8h                       #! PC = 0x55555514d8 *)
 adds %dc %v12 %v12 %v8;
 (* shl	v31.8h, v9.8h, #1                           #! PC = 0x55555514dc *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v31@sint16[8] %long;
 (* sqdmulh	v8.8h, v1.8h, v11.h[1]                  #! PC = 0x55555514e0 *)
 broadcast %mul 8 [%v11[1]]; smulj %LO %v1 %mul;
@@ -3648,7 +3648,7 @@ subc %dc %v8 %v8 %v16;
 adds %dc %v28 %v18 %v22;
 (* shl	v13.8h, v26.8h, #1                          #! PC = 0x555555154c *)
 vpc %long@sint32[8] %v26;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v13@sint16[8] %long;
 (* sub	v7.8h, v7.8h, v15.8h                        #! PC = 0x5555551550 *)
 subc %dc %v7 %v7 %v15;
@@ -3720,13 +3720,13 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v28 %mul;
 cast %mls@int16[8] %mls; subc %dc %v15 %v15 %mls;
 (* shl	v8.8h, v15.8h, #1                           #! PC = 0x55555515bc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v8@sint16[8] %long;
 (* add	v25.8h, v17.8h, v20.8h                      #! PC = 0x55555515c0 *)
 adds %dc %v25 %v17 %v20;
 (* shl	v14.8h, v5.8h, #1                           #! PC = 0x55555515c4 *)
 vpc %long@sint32[8] %v5;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* srshr	v24.8h, v24.8h, #2                        #! PC = 0x55555515c8 *)
 split %HI %LO %v24 2; split %LO1 %dc %LO (2-1);
@@ -3777,7 +3777,7 @@ cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 subc %dc %v28 %v1 %v7;
 (* shl	v7.8h, v7.8h, #1                            #! PC = 0x555555160c *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* sub	v29.8h, v16.8h, v15.8h                      #! PC = 0x5555551610 *)
 subc %dc %v29 %v16 %v15;
@@ -3926,23 +3926,23 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v20 %mul;
 cast %mls@int16[8] %mls; subc %dc %v8 %v8 %mls;
 (* shl	v14.8h, v8.8h, #1                           #! PC = 0x55555516e8 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* sub	v13.8h, v13.8h, v18.8h                      #! PC = 0x55555516ec *)
 subc %dc %v13 %v13 %v18;
 (* shl	v17.8h, v9.8h, #1                           #! PC = 0x55555516f0 *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v17@sint16[8] %long;
 (* shl	v18.8h, v12.8h, #1                          #! PC = 0x55555516f4 *)
 vpc %long@sint32[8] %v12;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v18@sint16[8] %long;
 (* mul	v3.8h, v13.8h, v10.h[2]                     #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v10[2]]; mull %dc %v3 %v13 %mul; cast %v3@int16[8] %v3;
 (* shl	v15.8h, v15.8h, #1                          #! PC = 0x55555516fc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v15@sint16[8] %long;
 (* sqrdmulh	v13.8h, v13.8h, v10.h[6]               #! PC = 0x5555551700 *)
 broadcast %mul 8 [%v10[6]]; smulj %LO %v13 %mul;
@@ -3993,7 +3993,7 @@ mov %v7 %v19;
 broadcast %mul 8 [%v10[0]]; mull %dc %v4 %v2 %mul; cast %v4@int16[8] %v4;
 (* shl	v1.8h, v1.8h, #1                            #! PC = 0x5555551744 *)
 vpc %long@sint32[8] %v1;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* sqrdmulh	v2.8h, v2.8h, v10.h[4]                 #! PC = 0x5555551748 *)
 broadcast %mul 8 [%v10[4]]; smulj %LO %v2 %mul;
@@ -4018,7 +4018,7 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v19 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* shl	v12.8h, v7.8h, #1                           #! PC = 0x5555551764 *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v12@sint16[8] %long;
 (* sub	v7.8h, v17.8h, v7.8h                        #! PC = 0x5555551768 *)
 subc %dc %v7 %v17 %v7;
@@ -4133,11 +4133,11 @@ adds %dc %v30 %v2 %v15;
 adds %dc %v12 %v3 %v23;
 (* shl	v7.8h, v27.8h, #1                           #! PC = 0x55555514bc *)
 vpc %long@sint32[8] %v27;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* shl	v1.8h, v8.8h, #1                            #! PC = 0x55555514c0 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* add	v29.8h, v4.8h, v16.8h                       #! PC = 0x55555514c4 *)
 adds %dc %v29 %v4 %v16;
@@ -4149,13 +4149,13 @@ subc %dc %v7 %v7 %v30;
 subc %dc %v1 %v1 %v12;
 (* shl	v21.8h, v6.8h, #1                           #! PC = 0x55555514d4 *)
 vpc %long@sint32[8] %v6;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v21@sint16[8] %long;
 (* add	v12.8h, v12.8h, v8.8h                       #! PC = 0x55555514d8 *)
 adds %dc %v12 %v12 %v8;
 (* shl	v31.8h, v9.8h, #1                           #! PC = 0x55555514dc *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v31@sint16[8] %long;
 (* sqdmulh	v8.8h, v1.8h, v11.h[1]                  #! PC = 0x55555514e0 *)
 broadcast %mul 8 [%v11[1]]; smulj %LO %v1 %mul;
@@ -4234,7 +4234,7 @@ subc %dc %v8 %v8 %v16;
 adds %dc %v28 %v18 %v22;
 (* shl	v13.8h, v26.8h, #1                          #! PC = 0x555555154c *)
 vpc %long@sint32[8] %v26;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v13@sint16[8] %long;
 (* sub	v7.8h, v7.8h, v15.8h                        #! PC = 0x5555551550 *)
 subc %dc %v7 %v7 %v15;
@@ -4306,13 +4306,13 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v28 %mul;
 cast %mls@int16[8] %mls; subc %dc %v15 %v15 %mls;
 (* shl	v8.8h, v15.8h, #1                           #! PC = 0x55555515bc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v8@sint16[8] %long;
 (* add	v25.8h, v17.8h, v20.8h                      #! PC = 0x55555515c0 *)
 adds %dc %v25 %v17 %v20;
 (* shl	v14.8h, v5.8h, #1                           #! PC = 0x55555515c4 *)
 vpc %long@sint32[8] %v5;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* srshr	v24.8h, v24.8h, #2                        #! PC = 0x55555515c8 *)
 split %HI %LO %v24 2; split %LO1 %dc %LO (2-1);
@@ -4363,7 +4363,7 @@ cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 subc %dc %v28 %v1 %v7;
 (* shl	v7.8h, v7.8h, #1                            #! PC = 0x555555160c *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* sub	v29.8h, v16.8h, v15.8h                      #! PC = 0x5555551610 *)
 subc %dc %v29 %v16 %v15;
@@ -4512,23 +4512,23 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v20 %mul;
 cast %mls@int16[8] %mls; subc %dc %v8 %v8 %mls;
 (* shl	v14.8h, v8.8h, #1                           #! PC = 0x55555516e8 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* sub	v13.8h, v13.8h, v18.8h                      #! PC = 0x55555516ec *)
 subc %dc %v13 %v13 %v18;
 (* shl	v17.8h, v9.8h, #1                           #! PC = 0x55555516f0 *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v17@sint16[8] %long;
 (* shl	v18.8h, v12.8h, #1                          #! PC = 0x55555516f4 *)
 vpc %long@sint32[8] %v12;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v18@sint16[8] %long;
 (* mul	v3.8h, v13.8h, v10.h[2]                     #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v10[2]]; mull %dc %v3 %v13 %mul; cast %v3@int16[8] %v3;
 (* shl	v15.8h, v15.8h, #1                          #! PC = 0x55555516fc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v15@sint16[8] %long;
 (* sqrdmulh	v13.8h, v13.8h, v10.h[6]               #! PC = 0x5555551700 *)
 broadcast %mul 8 [%v10[6]]; smulj %LO %v13 %mul;
@@ -4579,7 +4579,7 @@ mov %v7 %v19;
 broadcast %mul 8 [%v10[0]]; mull %dc %v4 %v2 %mul; cast %v4@int16[8] %v4;
 (* shl	v1.8h, v1.8h, #1                            #! PC = 0x5555551744 *)
 vpc %long@sint32[8] %v1;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* sqrdmulh	v2.8h, v2.8h, v10.h[4]                 #! PC = 0x5555551748 *)
 broadcast %mul 8 [%v10[4]]; smulj %LO %v2 %mul;
@@ -4604,7 +4604,7 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v19 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* shl	v12.8h, v7.8h, #1                           #! PC = 0x5555551764 *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v12@sint16[8] %long;
 (* sub	v7.8h, v17.8h, v7.8h                        #! PC = 0x5555551768 *)
 subc %dc %v7 %v17 %v7;
@@ -4719,11 +4719,11 @@ adds %dc %v30 %v2 %v15;
 adds %dc %v12 %v3 %v23;
 (* shl	v7.8h, v27.8h, #1                           #! PC = 0x55555514bc *)
 vpc %long@sint32[8] %v27;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* shl	v1.8h, v8.8h, #1                            #! PC = 0x55555514c0 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* add	v29.8h, v4.8h, v16.8h                       #! PC = 0x55555514c4 *)
 adds %dc %v29 %v4 %v16;
@@ -4735,13 +4735,13 @@ subc %dc %v7 %v7 %v30;
 subc %dc %v1 %v1 %v12;
 (* shl	v21.8h, v6.8h, #1                           #! PC = 0x55555514d4 *)
 vpc %long@sint32[8] %v6;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v21@sint16[8] %long;
 (* add	v12.8h, v12.8h, v8.8h                       #! PC = 0x55555514d8 *)
 adds %dc %v12 %v12 %v8;
 (* shl	v31.8h, v9.8h, #1                           #! PC = 0x55555514dc *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v31@sint16[8] %long;
 (* sqdmulh	v8.8h, v1.8h, v11.h[1]                  #! PC = 0x55555514e0 *)
 broadcast %mul 8 [%v11[1]]; smulj %LO %v1 %mul;
@@ -4820,7 +4820,7 @@ subc %dc %v8 %v8 %v16;
 adds %dc %v28 %v18 %v22;
 (* shl	v13.8h, v26.8h, #1                          #! PC = 0x555555154c *)
 vpc %long@sint32[8] %v26;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v13@sint16[8] %long;
 (* sub	v7.8h, v7.8h, v15.8h                        #! PC = 0x5555551550 *)
 subc %dc %v7 %v7 %v15;
@@ -4892,13 +4892,13 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v28 %mul;
 cast %mls@int16[8] %mls; subc %dc %v15 %v15 %mls;
 (* shl	v8.8h, v15.8h, #1                           #! PC = 0x55555515bc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v8@sint16[8] %long;
 (* add	v25.8h, v17.8h, v20.8h                      #! PC = 0x55555515c0 *)
 adds %dc %v25 %v17 %v20;
 (* shl	v14.8h, v5.8h, #1                           #! PC = 0x55555515c4 *)
 vpc %long@sint32[8] %v5;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* srshr	v24.8h, v24.8h, #2                        #! PC = 0x55555515c8 *)
 split %HI %LO %v24 2; split %LO1 %dc %LO (2-1);
@@ -4949,7 +4949,7 @@ cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 subc %dc %v28 %v1 %v7;
 (* shl	v7.8h, v7.8h, #1                            #! PC = 0x555555160c *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* sub	v29.8h, v16.8h, v15.8h                      #! PC = 0x5555551610 *)
 subc %dc %v29 %v16 %v15;
@@ -5098,23 +5098,23 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v20 %mul;
 cast %mls@int16[8] %mls; subc %dc %v8 %v8 %mls;
 (* shl	v14.8h, v8.8h, #1                           #! PC = 0x55555516e8 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* sub	v13.8h, v13.8h, v18.8h                      #! PC = 0x55555516ec *)
 subc %dc %v13 %v13 %v18;
 (* shl	v17.8h, v9.8h, #1                           #! PC = 0x55555516f0 *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v17@sint16[8] %long;
 (* shl	v18.8h, v12.8h, #1                          #! PC = 0x55555516f4 *)
 vpc %long@sint32[8] %v12;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v18@sint16[8] %long;
 (* mul	v3.8h, v13.8h, v10.h[2]                     #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v10[2]]; mull %dc %v3 %v13 %mul; cast %v3@int16[8] %v3;
 (* shl	v15.8h, v15.8h, #1                          #! PC = 0x55555516fc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v15@sint16[8] %long;
 (* sqrdmulh	v13.8h, v13.8h, v10.h[6]               #! PC = 0x5555551700 *)
 broadcast %mul 8 [%v10[6]]; smulj %LO %v13 %mul;
@@ -5165,7 +5165,7 @@ mov %v7 %v19;
 broadcast %mul 8 [%v10[0]]; mull %dc %v4 %v2 %mul; cast %v4@int16[8] %v4;
 (* shl	v1.8h, v1.8h, #1                            #! PC = 0x5555551744 *)
 vpc %long@sint32[8] %v1;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* sqrdmulh	v2.8h, v2.8h, v10.h[4]                 #! PC = 0x5555551748 *)
 broadcast %mul 8 [%v10[4]]; smulj %LO %v2 %mul;
@@ -5190,7 +5190,7 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v19 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* shl	v12.8h, v7.8h, #1                           #! PC = 0x5555551764 *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v12@sint16[8] %long;
 (* sub	v7.8h, v17.8h, v7.8h                        #! PC = 0x5555551768 *)
 subc %dc %v7 %v17 %v7;
@@ -5305,11 +5305,11 @@ adds %dc %v30 %v2 %v15;
 adds %dc %v12 %v3 %v23;
 (* shl	v7.8h, v27.8h, #1                           #! PC = 0x55555514bc *)
 vpc %long@sint32[8] %v27;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* shl	v1.8h, v8.8h, #1                            #! PC = 0x55555514c0 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* add	v29.8h, v4.8h, v16.8h                       #! PC = 0x55555514c4 *)
 adds %dc %v29 %v4 %v16;
@@ -5321,13 +5321,13 @@ subc %dc %v7 %v7 %v30;
 subc %dc %v1 %v1 %v12;
 (* shl	v21.8h, v6.8h, #1                           #! PC = 0x55555514d4 *)
 vpc %long@sint32[8] %v6;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v21@sint16[8] %long;
 (* add	v12.8h, v12.8h, v8.8h                       #! PC = 0x55555514d8 *)
 adds %dc %v12 %v12 %v8;
 (* shl	v31.8h, v9.8h, #1                           #! PC = 0x55555514dc *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v31@sint16[8] %long;
 (* sqdmulh	v8.8h, v1.8h, v11.h[1]                  #! PC = 0x55555514e0 *)
 broadcast %mul 8 [%v11[1]]; smulj %LO %v1 %mul;
@@ -5406,7 +5406,7 @@ subc %dc %v8 %v8 %v16;
 adds %dc %v28 %v18 %v22;
 (* shl	v13.8h, v26.8h, #1                          #! PC = 0x555555154c *)
 vpc %long@sint32[8] %v26;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v13@sint16[8] %long;
 (* sub	v7.8h, v7.8h, v15.8h                        #! PC = 0x5555551550 *)
 subc %dc %v7 %v7 %v15;
@@ -5478,13 +5478,13 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v28 %mul;
 cast %mls@int16[8] %mls; subc %dc %v15 %v15 %mls;
 (* shl	v8.8h, v15.8h, #1                           #! PC = 0x55555515bc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v8@sint16[8] %long;
 (* add	v25.8h, v17.8h, v20.8h                      #! PC = 0x55555515c0 *)
 adds %dc %v25 %v17 %v20;
 (* shl	v14.8h, v5.8h, #1                           #! PC = 0x55555515c4 *)
 vpc %long@sint32[8] %v5;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* srshr	v24.8h, v24.8h, #2                        #! PC = 0x55555515c8 *)
 split %HI %LO %v24 2; split %LO1 %dc %LO (2-1);
@@ -5535,7 +5535,7 @@ cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 subc %dc %v28 %v1 %v7;
 (* shl	v7.8h, v7.8h, #1                            #! PC = 0x555555160c *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v7@sint16[8] %long;
 (* sub	v29.8h, v16.8h, v15.8h                      #! PC = 0x5555551610 *)
 subc %dc %v29 %v16 %v15;
@@ -5684,23 +5684,23 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v20 %mul;
 cast %mls@int16[8] %mls; subc %dc %v8 %v8 %mls;
 (* shl	v14.8h, v8.8h, #1                           #! PC = 0x55555516e8 *)
 vpc %long@sint32[8] %v8;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v14@sint16[8] %long;
 (* sub	v13.8h, v13.8h, v18.8h                      #! PC = 0x55555516ec *)
 subc %dc %v13 %v13 %v18;
 (* shl	v17.8h, v9.8h, #1                           #! PC = 0x55555516f0 *)
 vpc %long@sint32[8] %v9;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v17@sint16[8] %long;
 (* shl	v18.8h, v12.8h, #1                          #! PC = 0x55555516f4 *)
 vpc %long@sint32[8] %v12;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v18@sint16[8] %long;
 (* mul	v3.8h, v13.8h, v10.h[2]                     #! PC = 0x55555516f8 *)
 broadcast %mul 8 [%v10[2]]; mull %dc %v3 %v13 %mul; cast %v3@int16[8] %v3;
 (* shl	v15.8h, v15.8h, #1                          #! PC = 0x55555516fc *)
 vpc %long@sint32[8] %v15;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v15@sint16[8] %long;
 (* sqrdmulh	v13.8h, v13.8h, v10.h[6]               #! PC = 0x5555551700 *)
 broadcast %mul 8 [%v10[6]]; smulj %LO %v13 %mul;
@@ -5751,7 +5751,7 @@ mov %v7 %v19;
 broadcast %mul 8 [%v10[0]]; mull %dc %v4 %v2 %mul; cast %v4@int16[8] %v4;
 (* shl	v1.8h, v1.8h, #1                            #! PC = 0x5555551744 *)
 vpc %long@sint32[8] %v1;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v1@sint16[8] %long;
 (* sqrdmulh	v2.8h, v2.8h, v10.h[4]                 #! PC = 0x5555551748 *)
 broadcast %mul 8 [%v10[4]]; smulj %LO %v2 %mul;
@@ -5776,7 +5776,7 @@ broadcast %mul 8 [%v11[0]]; mull %dc %mls %v19 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* shl	v12.8h, v7.8h, #1                           #! PC = 0x5555551764 *)
 vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
+shl %long %long [(1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32, (1)@int32];
 cast %v12@sint16[8] %long;
 (* sub	v7.8h, v17.8h, v7.8h                        #! PC = 0x5555551768 *)
 subc %dc %v7 %v17 %v7;
