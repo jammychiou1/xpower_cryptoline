@@ -137,3 +137,14 @@ def setup_const(const_base):
     return annot_utils.mov_array(const_mem, const_imm)
 
 main_basemul_const_table = const_table[23 : 113]
+
+
+Q = 4591
+W9 = -1606
+
+def center_mod(a):
+    a = a % Q
+    return a if a <= (Q - 1) // 2 else a - Q
+
+def center_pow(a, b):
+    return center_mod(pow(a, b, Q))
