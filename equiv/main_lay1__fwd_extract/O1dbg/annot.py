@@ -4,17 +4,234 @@ sys.path.append('.')
 from annot_utils import *
 from consts import setup_const, const_base_O1dbg
 
-def annot_ntt10_no3456(annotator, j, k0):
-    seg0_end = annotator.find_first_line('PC = 0x55555509a8')
-    seg1_end = annotator.find_first_line('PC = 0x55555509c8')
-    seg2_end = annotator.find_first_line('PC = 0x55555509d8')
-    seg3_end = annotator.find_first_line('PC = 0x5555550a18')
-    seg4_end = annotator.find_first_line('PC = 0x5555550a54')
-    seg5_end = annotator.find_first_line('PC = 0x5555550a64')
-
+def annot_ntt10_nof3456(annotator, j, k0):
     output_lines = [
         '',
-        '#### ntt10_no3456',
+        '#### ntt10_nof3456',
+        '',
+    ]
+
+    ### ntt5_nof14
+
+    patterns = ['PC = 0x555555097c', 'PC = 0x5555550994', 'PC = 0x55555509a0', 'PC = 0x55555509b8', 'PC = 0x55555509c4']
+    equations = [f'''\
+[4, 4, 4, 4, 4, 4, 4, 4] * (%fa0_{j}{k0} + %fa2_{j}{k0} + %fa8_{j}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+= %v7\
+''', f'''\
+([4, 4, 4, 4, 4, 4, 4, 4] * %fa0_{j}{k0} - %fa2_{j}{k0} - %fa8_{j}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+= %v1\
+''', f'''\
+[1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fa2_{j}{k0} + %fa8_{j}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+= %v3\
+''', f'''\
+[-818, -818, -818, -818, -818, -818, -818, -818] * (%fa2_{j}{k0} - %fa8_{j}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+= %v3\
+''', f'''\
+[-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fa2_{j}{k0} - %fa8_{j}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+= %v2\
+''']
+
+    last_seg_end = 0
+    for pattern, equation in zip(patterns, equations):
+        seg_end = annotator.find_first_line(pattern)
+        output_lines += [
+            *annotator.lines[last_seg_end : seg_end],
+            '',
+            *algebra_midcondition(equation.split('\n'), f'algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}]'),
+            '',
+        ]
+        last_seg_end = seg_end
+
+    cut_proposition = f'''\
+    %v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fa0_{j}{k0} +
+        %fa2_{j}{k0} +
+        %fa8_{j}{k0}
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+
+    %v18 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fa0_{j}{k0} +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fa2_{j}{k0} +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fa8_{j}{k0}
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+
+    %v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fa0_{j}{k0} +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fa2_{j}{k0} +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fa8_{j}{k0}
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+
+    %v6  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fa0_{j}{k0} +
+        [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fa2_{j}{k0} +
+        [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fa8_{j}{k0}
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+
+    %v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
+        %fa0_{j}{k0} +
+        [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fa2_{j}{k0} +
+        [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fa8_{j}{k0}
+    )
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )
+  &&
+    %v7  <=s [2690@16, 2690@16, 2690@16, 2690@16, 2690@16, 2690@16, 2690@16, 2690@16] /\\
+    %v7  >=s [(-2690)@16, (-2690)@16, (-2690)@16, (-2690)@16, (-2690)@16, (-2690)@16, (-2690)@16, (-2690)@16] /\\
+
+    %v18 <=s [8925@16, 8925@16, 8925@16, 8925@16, 8925@16, 8925@16, 8925@16, 8925@16] /\\
+    %v18 >=s [(-8925)@16, (-8925)@16, (-8925)@16, (-8925)@16, (-8925)@16, (-8925)@16, (-8925)@16, (-8925)@16] /\\
+
+    %v20 <=s [10970@16, 10970@16, 10970@16, 10970@16, 10970@16, 10970@16, 10970@16, 10970@16] /\\
+    %v20 >=s [(-10970)@16, (-10970)@16, (-10970)@16, (-10970)@16, (-10970)@16, (-10970)@16, (-10970)@16, (-10970)@16] /\\
+
+    %v6  <=s [10970@16, 10970@16, 10970@16, 10970@16, 10970@16, 10970@16, 10970@16, 10970@16] /\\
+    %v6  >=s [(-10970)@16, (-10970)@16, (-10970)@16, (-10970)@16, (-10970)@16, (-10970)@16, (-10970)@16, (-10970)@16] /\\
+
+    %v5  <=s [8925@16, 8925@16, 8925@16, 8925@16, 8925@16, 8925@16, 8925@16, 8925@16] /\\
+    %v5  >=s [(-8925)@16, (-8925)@16, (-8925)@16, (-8925)@16, (-8925)@16, (-8925)@16, (-8925)@16, (-8925)@16]
+
+    prove with [precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}]];\
+'''
+
+    seg_end = annotator.find_first_line('PC = 0x55555509d8')
+    output_lines += [
+        *annotator.lines[last_seg_end : seg_end],
+        '',
+        annotator.generate_cut(),
+        cut_proposition,
+        '',
+    ]
+
+
+    ### ntt5_nof03
+
+    patterns = ['PC = 0x55555509ec', 'PC = 0x5555550a00', 'PC = 0x5555550a10']
+    equations = [f'''\
+[4, 4, 4, 4, 4, 4, 4, 4] * (%fa1_{j}{k0} + %fa7_{j}{k0} + %fa9_{j}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v2
+= %v21\
+''', f'''\
+-(%fa1_{j}{k0} + %fa7_{j}{k0} + %fa9_{j}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v2
+= %v1\
+''', f'''\
+[1005, 1005, 1005, 1005, 1005, 1005, 1005, 1005] * (%fa1_{j}{k0} - %fa7_{j}{k0} + %fa9_{j}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v2
+= %v3\
+''']
+
+    last_seg_end = seg_end
+    for pattern, equation in zip(patterns, equations):
+        seg_end = annotator.find_first_line(pattern)
+        output_lines += [
+            *annotator.lines[last_seg_end : seg_end],
+            '',
+            *algebra_midcondition(equation.split('\n'), f'algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}]'),
+            '',
+        ]
+        last_seg_end = seg_end
+
+    cut_algebra_proposition = f'''\
+    true\
+'''
+
+    algebra_conj_lines, range_conj_lines = bound_vecreg([2690, 6385, 6475], ['%v21', '%v22', '%v1'])
+
+    seg_end = annotator.find_first_line('PC = 0x5555550a18')
+    output_lines += [
+        *annotator.lines[last_seg_end : seg_end],
+        '',
+        'assert',
+        *add_indent(4, algebra_conj_lines.format()),
+        f'    prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}]]',
+        '    && true;',
+        '',
+        'assume',
+        *add_indent(4, algebra_conj_lines.format()),
+        '  &&',
+        *add_indent(4, range_conj_lines.format(';')),
+        '',
+        annotator.generate_cut(),
+        cut_algebra_proposition,
+        '  &&',
+        *add_indent(4, range_conj_lines.format()),
+        f'    prove with [precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}]];',
+        '',
+    ]
+
+
+    ### nega_part
+
+    adds_line = annotator.find_first_line('PC = 0x5555550a34', offset=1)
+    annotator.lines[adds_line] = annotator.lines[adds_line].replace('add', 'adds %dc').replace(';', '; # PATCH HERE')
+    subc_line = annotator.find_first_line('PC = 0x5555550a40', offset=1)
+    annotator.lines[subc_line] = annotator.lines[subc_line].replace('sub', 'subc %dc').replace(';', '; # PATCH HERE')
+    annotator.last_found_line = seg_end
+
+    patterns = ['PC = 0x5555550a48', 'PC = 0x5555550a54']
+    equations = [f'''\
+[-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * %fa7_{j}{k0}
+- [918, 918, 918, 918, 918, 918, 918, 918] * (%fa1_{j}{k0} - %fa9_{j}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v23
+= %v16\
+''', f'''\
+[-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * %fa7_{j}{k0}
++ [918, 918, 918, 918, 918, 918, 918, 918] * (%fa1_{j}{k0} - %fa9_{j}{k0})
+- [-818, -818, -818, -818, -818, -818, -818, -818] * (%fa1_{j}{k0} + %fa7_{j}{k0} - %fa9_{j}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v2
+= %v3\
+''']
+
+    last_seg_end = seg_end
+    for pattern, equation in zip(patterns, equations):
+        seg_end = annotator.find_first_line(pattern)
+        output_lines += [
+            *annotator.lines[last_seg_end : seg_end],
+            '',
+            *algebra_midcondition(equation.split('\n'), f'algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}]'),
+            '',
+        ]
+        last_seg_end = seg_end
+
+    cut_algebra_proposition = f'''\
+    true\
+'''
+
+    algebra_conj_lines, range_conj_lines = bound_vecreg([4750, 7265], ['%v16', '%v3'])
+
+    output_lines += [
+        'assert',
+        *add_indent(4, algebra_conj_lines.format()),
+        f'    prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}]]',
+        '    && true;',
+        '',
+        'assume',
+        *add_indent(4, algebra_conj_lines.format()),
+        '  &&',
+        *add_indent(4, range_conj_lines.format(';')),
+        '',
+        annotator.generate_cut(),
+        cut_algebra_proposition,
+        '  &&',
+        *add_indent(4, range_conj_lines.format()),
+        f'    prove with [precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}]];',
+        '',
+    ]
+
+    seg_end = annotator.find_first_line('PC = 0x5555550a64')
+    output_lines += [
+        *annotator.lines[last_seg_end : seg_end],
+        '',
+        annotator.generate_cut(),
+        '    true && true;',
         '',
     ]
 
@@ -24,248 +241,12 @@ def annot_ntt10_no3456(annotator, j, k0):
         *[[f'%v{reg} >= {make_vector([-24810] * 8)}'] for reg in reg_idxs]
     ])
 
-    format_dict = {'j': j, 'k0': k0, 'annotator': annotator}
-
-    seg0_template = '''\
-%v7 = [4, 4, 4, 4, 4, 4, 4, 4] * (%fa0_{j}{k0} + %fa2_{j}{k0} + %fa8_{j}{k0})
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v5 = [4, 4, 4, 4, 4, 4, 4, 4] * %fa0_{j}{k0}
-      + [-1006, -1006, -1006, -1006, -1006, -1006, -1006, -1006] * (%fa2_{j}{k0} + %fa8_{j}{k0})
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v1 = [4, 4, 4, 4, 4, 4, 4, 4] * %fa0_{j}{k0}
-      + [1004, 1004, 1004, 1004, 1004, 1004, 1004, 1004] * (%fa2_{j}{k0} + %fa8_{j}{k0})
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v7 <= [2690, 2690, 2690, 2690, 2690, 2690, 2690, 2690] /\\
-%v7 >= [-2690, -2690, -2690, -2690, -2690, -2690, -2690, -2690] /\\
-
-%v5 <= [6470, 6470, 6470, 6470, 6470, 6470, 6470, 6470] /\\
-%v5 >= [-6470, -6470, -6470, -6470, -6470, -6470, -6470, -6470] /\\
-
-%v1 <= [6470, 6470, 6470, 6470, 6470, 6470, 6470, 6470] /\\
-%v1 >= [-6470, -6470, -6470, -6470, -6470, -6470, -6470, -6470] /\\
-
-true
-prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}]]
-&& true;\
-'''
-
-    seg1_template = '''\
-%v2 = [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * (%fa2_{j}{k0} - %fa8_{j}{k0})
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v3 = [-918, -918, -918, -918, -918, -918, -918, -918] * (%fa2_{j}{k0} - %fa8_{j}{k0})
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v2 <= [2550, 2550, 2550, 2550, 2550, 2550, 2550, 2550] /\\
-%v2 >= [-2550, -2550, -2550, -2550, -2550, -2550, -2550, -2550] /\\
-
-%v3 <= [4590, 4590, 4590, 4590, 4590, 4590, 4590, 4590] /\\
-%v3 >= [-4590, -4590, -4590, -4590, -4590, -4590, -4590, -4590] /\\
-
-true
-prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}]]
-&& true;\
-'''
-
-    seg2_template = '''\
-%v7  = [4, 4, 4, 4, 4, 4, 4, 4] * (
-    %fa0_{j}{k0} +
-    %fa2_{j}{k0} +
-    %fa8_{j}{k0}
-)
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v18 = [4, 4, 4, 4, 4, 4, 4, 4] * (
-    %fa0_{j}{k0} +
-    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fa2_{j}{k0} +
-    [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fa8_{j}{k0}
-)
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v20 = [4, 4, 4, 4, 4, 4, 4, 4] * (
-    %fa0_{j}{k0} +
-    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fa2_{j}{k0} +
-    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fa8_{j}{k0}
-)
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v6  = [4, 4, 4, 4, 4, 4, 4, 4] * (
-    %fa0_{j}{k0} +
-    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fa2_{j}{k0} +
-    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fa8_{j}{k0}
-)
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v5  = [4, 4, 4, 4, 4, 4, 4, 4] * (
-    %fa0_{j}{k0} +
-    [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fa2_{j}{k0} +
-    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fa8_{j}{k0}
-)
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v7  <= [2690, 2690, 2690, 2690, 2690, 2690, 2690, 2690] /\\
-%v7  >= [-2690, -2690, -2690, -2690, -2690, -2690, -2690, -2690] /\\
-
-%v18 <= [9020, 9020, 9020, 9020, 9020, 9020, 9020, 9020] /\\
-%v18 >= [-9020, -9020, -9020, -9020, -9020, -9020, -9020, -9020] /\\
-
-%v20 <= [11060, 11060, 11060, 11060, 11060, 11060, 11060, 11060] /\\
-%v20 >= [-11060, -11060, -11060, -11060, -11060, -11060, -11060, -11060] /\\
-
-%v6  <= [11060, 11060, 11060, 11060, 11060, 11060, 11060, 11060] /\\
-%v6  >= [-11060, -11060, -11060, -11060, -11060, -11060, -11060, -11060] /\\
-
-%v5  <= [9020, 9020, 9020, 9020, 9020, 9020, 9020, 9020] /\\
-%v5  >= [-9020, -9020, -9020, -9020, -9020, -9020, -9020, -9020] /\\
-
-true
-prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}, {}, {}]]
-&& true;\
-'''
-
-    seg3_template = '''\
-%v21 = [4, 4, 4, 4, 4, 4, 4, 4] * (%fa1_{j}{k0} + %fa7_{j}{k0} + %fa9_{j}{k0})
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v22 = [1004, 1004, 1004, 1004, 1004, 1004, 1004, 1004] * (%fa1_{j}{k0} + %fa9_{j}{k0})
-       + [-1006, -1006, -1006, -1006, -1006, -1006, -1006, -1006] * %fa7_{j}{k0}
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v1  = [-1006, -1006, -1006, -1006, -1006, -1006, -1006, -1006] * (%fa1_{j}{k0} + %fa9_{j}{k0})
-       + [1004, 1004, 1004, 1004, 1004, 1004, 1004, 1004] * %fa7_{j}{k0}
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v21 <= [2690, 2690, 2690, 2690, 2690, 2690, 2690, 2690] /\\
-%v21 >= [-2690, -2690, -2690, -2690, -2690, -2690, -2690, -2690] /\\
-
-%v22 <= [6390, 6390, 6390, 6390, 6390, 6390, 6390, 6390] /\\
-%v22 >= [-6390, -6390, -6390, -6390, -6390, -6390, -6390, -6390] /\\
-
-%v1  <= [6480, 6480, 6480, 6480, 6480, 6480, 6480, 6480] /\\
-%v1  >= [-6480, -6480, -6480, -6480, -6480, -6480, -6480, -6480] /\\
-
-true
-prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}]]
-&& true;\
-'''
-
-    seg4_template = '''\
-%v16 = [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * %fa7_{j}{k0}
-       - [918, 918, 918, 918, 918, 918, 918, 918] * (%fa1_{j}{k0} - %fa9_{j}{k0})
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v3 = [-1736, -1736, -1736, -1736, -1736, -1736, -1736, -1736] * %fa7_{j}{k0}
-      + [918, 918, 918, 918, 918, 918, 918, 918] * (%fa1_{j}{k0} - %fa9_{j}{k0})
-      - [-818, -818, -818, -818, -818, -818, -818, -818] * (%fa1_{j}{k0} + %fa7_{j}{k0} - %fa9_{j}{k0})
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v16 <= [4750, 4750, 4750, 4750, 4750, 4750, 4750, 4750] /\\
-%v16 >= [-4750, -4750, -4750, -4750, -4750, -4750, -4750, -4750] /\\
-
-%v3 <= [7270, 7270, 7270, 7270, 7270, 7270, 7270, 7270] /\\
-%v3 >= [-7270, -7270, -7270, -7270, -7270, -7270, -7270, -7270] /\\
-
-true
-prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}]]
-&& true;\
-'''
-
-    seg5_template = '''\
-%v21 = [4, 4, 4, 4, 4, 4, 4, 4] * (
-    %fa1_{j}{k0} +
-    %fa7_{j}{k0} +
-    %fa9_{j}{k0}
-) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v17 = [4, 4, 4, 4, 4, 4, 4, 4] * (
-    [-1815, -1815, -1815, -1815, -1815, -1815, -1815, -1815] * %fa1_{j}{k0} -
-    [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fa7_{j}{k0} -
-    [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fa9_{j}{k0}
-) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v1  = [4, 4, 4, 4, 4, 4, 4, 4] * (
-    [-2113, -2113, -2113, -2113, -2113, -2113, -2113, -2113] * %fa1_{j}{k0} -
-    [ 2274,  2274,  2274,  2274,  2274,  2274,  2274,  2274] * %fa7_{j}{k0} +
-    [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fa9_{j}{k0}
-) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v23 = [4, 4, 4, 4, 4, 4, 4, 4] * (
-    [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fa1_{j}{k0} -
-    [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fa7_{j}{k0} -
-    [ 2113,  2113,  2113,  2113,  2113,  2113,  2113,  2113] * %fa9_{j}{k0}
-) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v2  = [4, 4, 4, 4, 4, 4, 4, 4] * (
-    [-2274, -2274, -2274, -2274, -2274, -2274, -2274, -2274] * %fa1_{j}{k0} +
-    [ 1610,  1610,  1610,  1610,  1610,  1610,  1610,  1610] * %fa7_{j}{k0} -
-    [ 1815,  1815,  1815,  1815,  1815,  1815,  1815,  1815] * %fa9_{j}{k0}
-) ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v21 <= [2690, 2690, 2690, 2690, 2690, 2690, 2690, 2690] /\\
-%v21 >= [-2690, -2690, -2690, -2690, -2690, -2690, -2690, -2690] /\\
-
-%v17 <= [11140, 11140, 11140, 11140, 11140, 11140, 11140, 11140] /\\
-%v17 >= [-11140, -11140, -11140, -11140, -11140, -11140, -11140, -11140] /\\
-
-%v1  <= [13750, 13750, 13750, 13750, 13750, 13750, 13750, 13750] /\\
-%v1  >= [-13750, -13750, -13750, -13750, -13750, -13750, -13750, -13750] /\\
-
-%v23 <= [13750, 13750, 13750, 13750, 13750, 13750, 13750, 13750] /\\
-%v23 >= [-13750, -13750, -13750, -13750, -13750, -13750, -13750, -13750] /\\
-
-%v2  <= [11140, 11140, 11140, 11140, 11140, 11140, 11140, 11140] /\\
-%v2  >= [-11140, -11140, -11140, -11140, -11140, -11140, -11140, -11140] /\\
-
-true
-prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}, {annotator.shared_state.k0_iter_prologue_cut_id}, {}, {}]]
-&& true;\
-'''
-
     output_lines += [
-        *annotator.lines[:seg0_end],
-        '',
-        annotator.generate_cut(),
-        *add_indent(4, seg0_template.format(**format_dict).split('\n')),
-        '',
-
-        *annotator.lines[seg0_end : seg1_end],
-        '',
-        annotator.generate_cut(),
-        *add_indent(4, seg1_template.format(**format_dict).split('\n')),
-        '',
-
-        *annotator.lines[seg1_end : seg2_end],
-        '',
-        annotator.generate_cut(),
-        *add_indent(4, seg2_template.format(annotator.shared_state.cut_id - 3, annotator.shared_state.cut_id - 2, **format_dict).split('\n')),
-        '',
-
-        *annotator.lines[seg2_end : seg3_end],
-        '',
-        annotator.generate_cut(),
-        *add_indent(4, seg3_template.format(**format_dict).split('\n')),
-        '',
-
-        *annotator.lines[seg3_end : seg4_end],
-        '',
-        annotator.generate_cut(),
-        *add_indent(4, seg4_template.format(**format_dict).split('\n')),
-        '',
-
-        *annotator.lines[seg4_end : seg5_end],
-        '',
-        annotator.generate_cut(),
-        *add_indent(4, seg5_template.format(annotator.shared_state.cut_id - 3, annotator.shared_state.cut_id - 2, **format_dict).split('\n')),
-        '',
-
-        *annotator.lines[seg5_end:],
+        *annotator.lines[seg_end:],
         '',
         annotator.generate_cut(),
         *add_indent(4, bound_pre.format()),
-        f'    prove with [algebra solver isl, cuts[{annotator.shared_state.cut_id - 5}, {annotator.shared_state.cut_id - 2}]]',
+        f'    prove with [algebra solver isl, cuts[0, {annotator.shared_state.cut_id - 3}, {annotator.shared_state.cut_id - 2}]]',
         '    && true;',
         '',
     ]
@@ -274,7 +255,7 @@ prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_
 
 def annot_jle2_k0_iter(annotator, j, k0):
     load_end = annotator.find_first_line('PC = 0x5555550968')
-    ntt10_no3456_end = annotator.find_first_line('PC = 0x5555550a8c')
+    ntt10_nof3456_end = annotator.find_first_line('PC = 0x5555550a8c')
     twist_his_end = annotator.find_first_line('PC = 0x5555550904')
 
     reg_idxs = [22, 6, 19, 5, 18, 21, 17, 16, 7, 1]
@@ -308,13 +289,13 @@ def annot_jle2_k0_iter(annotator, j, k0):
         '',
     ]
 
-    output_lines += annot_ntt10_no3456(annotator.make_subannotator(load_end, ntt10_no3456_end), j, k0)
+    output_lines += annot_ntt10_nof3456(annotator.make_subannotator(load_end, ntt10_nof3456_end), j, k0)
 
     output_lines += [
         '',
         '#### twist_his',
         '',
-        *annotator.lines[ntt10_no3456_end : twist_his_end],
+        *annotator.lines[ntt10_nof3456_end : twist_his_end],
         '',
         annotator.generate_cut(),
         *add_indent(4, bound_post.format()),
@@ -410,7 +391,7 @@ def annot_jle2_j_iter(annotator, j):
 
     return output_lines
 
-def annot_ntt10_no34567(annotator, j, k0):
+def annot_ntt10_nof34567(annotator, j, k0):
     seg0_end = annotator.find_first_line('PC = 0x5555550bac')
     seg1_end = annotator.find_first_line('PC = 0x5555550bcc')
     seg2_end = annotator.find_first_line('PC = 0x5555550bdc')
@@ -420,7 +401,7 @@ def annot_ntt10_no34567(annotator, j, k0):
 
     output_lines = [
         '',
-        '#### ntt10_no34567',
+        '#### ntt10_nof34567',
         '',
     ]
 
@@ -670,7 +651,7 @@ prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_
 
 def annot_jgt2_k0_iter(annotator, j, k0):
     load_end = annotator.find_first_line('PC = 0x5555550b6c')
-    ntt10_no34567_end = annotator.find_first_line('PC = 0x5555550c6c')
+    ntt10_nof34567_end = annotator.find_first_line('PC = 0x5555550c6c')
     twist_his_end = annotator.find_first_line('PC = 0x5555550b10')
 
     reg_idxs = [24, 5, 20, 1, 19, 23, 17, 16, 7, 3]
@@ -704,13 +685,13 @@ def annot_jgt2_k0_iter(annotator, j, k0):
         '',
     ]
 
-    output_lines += annot_ntt10_no34567(annotator.make_subannotator(load_end, ntt10_no34567_end), j, k0)
+    output_lines += annot_ntt10_nof34567(annotator.make_subannotator(load_end, ntt10_nof34567_end), j, k0)
 
     output_lines += [
         '',
         '#### twist_his',
         '',
-        *annotator.lines[ntt10_no34567_end : twist_his_end],
+        *annotator.lines[ntt10_nof34567_end : twist_his_end],
         '',
         annotator.generate_cut(),
         *add_indent(4, bound_post.format()),

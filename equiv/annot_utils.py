@@ -123,6 +123,28 @@ def bound_array(bound, sint16_array):
 
     return ConjunctionLines(algebra_predicate_conjuncts), ConjunctionLines(range_predicate_conjuncts)
 
+def bound_vecreg(bounds, vecregs, vec_len=8):
+    algebra_predicate_conjuncts = []
+    range_predicate_conjuncts = []
+
+    for vecreg, bound in zip(vecregs, bounds):
+        algebra_upperbound_vec = make_vector([bound for _ in range(vec_len)])
+        range_upperbound_vec = make_vector([RangeExpConstant(bound, SINT16) for _ in range(vec_len)])
+
+        algebra_predicate_conjuncts.append([f'{vecreg} <= {algebra_upperbound_vec}'])
+        range_predicate_conjuncts.append([f'{vecreg} <=s {range_upperbound_vec}'])
+
+        algebra_lowerbound_vec = make_vector([-bound for _ in range(vec_len)])
+        range_lowerbound_vec = make_vector([RangeExpConstant(-bound, SINT16) for _ in range(vec_len)])
+
+        algebra_predicate_conjuncts.append([f'{vecreg} >= {algebra_lowerbound_vec}'])
+        range_predicate_conjuncts.append([f'{vecreg} >=s {range_lowerbound_vec}'])
+
+        algebra_predicate_conjuncts.append([])
+        range_predicate_conjuncts.append([])
+
+    return ConjunctionLines(algebra_predicate_conjuncts[:-1]), ConjunctionLines(range_predicate_conjuncts[:-1])
+
 def equal_array(array1, array2):
     conjuncts = []
     for row1, row2 in zip(array1, array2):
@@ -130,6 +152,25 @@ def equal_array(array1, array2):
         vec2 = make_vector(row2)
         conjuncts.append([f'{vec1} = {vec2}'])
     return ConjunctionLines(conjuncts)
+
+def algebra_midcondition(lines, prove_with=None):
+    output_lines = [
+        'assert',
+        *add_indent(4, lines),
+    ]
+
+    if prove_with is not None:
+        output_lines.append(f'    prove with [{prove_with}]')
+
+    output_lines += [
+        '    && true;',
+        '',
+        'assume',
+        *add_indent(4, lines),
+        '    && true;',
+    ]
+
+    return output_lines
 
 
 class AnnotatorSharedState:
