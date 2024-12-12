@@ -141,6 +141,7 @@ main_basemul_const_table = const_table[23 : 113]
 
 Q = 4591
 W9 = -1606
+W10 = -1610
 
 def center_mod(a):
     a = a % Q
