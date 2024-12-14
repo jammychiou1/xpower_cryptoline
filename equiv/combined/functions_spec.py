@@ -577,7 +577,7 @@ def low_lay1__bwd_insert():
             i = 2
             terms = [f'{center_pow(W10, -i * ii)} * arr{ii}{k0}0' for ii in range(10)]
             lines += [
-                f'full80_out = {" + ".join(terms)}',
+                f'full80_out = 4 * ({" + ".join(terms)})',
                 '( mod [4591] ) /\\',
                 '',
             ]

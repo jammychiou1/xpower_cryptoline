@@ -49,6 +49,9 @@ arr_low_a_mem = memory_array_like(0x7fffffe1c0, arr_low_a)
 arr_low_b_mem = memory_array_like(0x7fffffe300, arr_low_b)
 arr_low_c_mem = memory_array_like(0x7fffffe440, arr_low_c)
 
+def get_arr_low_row(arr, i, k0):
+    return arr[i * 2 + k0]
+
 
 full_mem_base = 0x7fffffe5b0
 
@@ -238,7 +241,6 @@ output_lines += [
     *add_indent(4, Aij_specs),
     '',
     *add_indent(4, [
-        # f'A{i}{j} = 2 * A{i} ( mod [4591, X ** 16 - Y * Z, Y - {center_pow(W10, i)}, Z - {center_pow(W9, j)}]) /\\'
         f'A{i}{j} = 8 * A ( mod [4591, X ** 16 - Y * Z, Y - {center_pow(W10, i)}, Z - {center_pow(W9, j)}]) /\\'
         for i in range(10) for j in range(9)
     ]),
@@ -340,7 +342,6 @@ output_lines += [
     *add_indent(4, Bij_specs),
     '',
     *add_indent(4, [
-        # f'B{i}{j} = 2 * B{i} ( mod [4591, X ** 16 - Y * Z, Y - {center_pow(W10, i)}, Z - {center_pow(W9, j)}]) /\\'
         f'B{i}{j} = 8 * B ( mod [4591, X ** 16 - Y * Z, Y - {center_pow(W10, i)}, Z - {center_pow(W9, j)}]) /\\'
         for i in range(10) for j in range(9)
     ]),
@@ -394,7 +395,6 @@ output_lines += [
     *add_indent(4, Cij_specs),
     '',
     *add_indent(4, [
-        # f'C{i}{j} = A{i}{j} * B{i}{j} ( mod [4591, X ** 16 - Y * Z, Y - {center_pow(W10, i)}, Z - {center_pow(W9, j)}]) /\\'
         f'C{i}{j} = 64 * A * B ( mod [4591, X ** 16 - Y * Z, Y - {center_pow(W10, i)}, Z - {center_pow(W9, j)}]) /\\'
         for i in range(10) for j in range(9)
     ]),
@@ -443,10 +443,6 @@ output_lines += [
     'cut (* 6 *)',
     *add_indent(4, Ci_specs),
     '',
-    # *add_indent(4, [
-    #     f'C{i} = 18 * C{i}{j} ( mod [4591, X ** 16 - Y * Z, Y - {center_pow(W10, i)}, Z - {center_pow(W9, j)}]) /\\'
-    #     for i in range(10) for j in range(9)
-    # ]),
     *add_indent(4, [
         f'C{i} = 1152 * A * B ( mod [4591, X ** 16 - Y * Z, Y - {center_pow(W10, i)}, Z ** 9 - 1]) /\\'
         for i in range(10)
@@ -491,10 +487,6 @@ output_lines += [
     *add_indent(4, [
         *add_to_last_line(C_spec, ' /\\'),
         '',
-        # *[
-        #     f'C = 40 * C{i} ( mod [4591, X ** 16 - Y * Z, Y - {center_pow(W10, i)}, Z ** 9 - 1]) /\\'
-        #     for i in range(10)
-        # ],
         'C = 170 * A * B ( mod [4591, X ** 16 - Y * Z, Y ** 10 - 1, Z ** 9 - 1])',
     ]),
     '  &&',
@@ -503,6 +495,104 @@ output_lines += [
     ]),
     '',
 ]
+
+
+A_low_spec = []
+for row in poly_a_mem[:10]:
+    A_low_spec.append(' '.join([f'{var},' for var in row]))
+A_low_spec[-1] = A_low_spec[-1][:-1]
+A_low_spec = [
+    'A_low = poly X [',
+    *add_indent(4, A_low_spec),
+    ']',
+]
+
+B_low_spec = []
+for row in poly_b_mem[:10]:
+    B_low_spec.append(' '.join([f'{var},' for var in row]))
+B_low_spec[-1] = B_low_spec[-1][:-1]
+B_low_spec = [
+    'B_low = poly X [',
+    *add_indent(4, B_low_spec),
+    ']',
+]
+
+output_lines += [
+    'ghost A_low@sint16, B_low@sint16:',
+    *add_indent(4, [
+        *add_to_last_line(A_low_spec, ' /\\'),
+        '',
+        *B_low_spec,
+        '&& true;',
+    ]),
+    '',
+]
+
+algebra_conj_lines, range_conj_lines = bound_array(2295, poly_a_mem[:10] + poly_b_mem[:10])
+output_lines += [
+    'cut (* 8 *)',
+    *add_indent(4, [
+        *add_to_last_line(A_low_spec, ' /\\'),
+        '',
+        *add_to_last_line(B_low_spec, ' /\\'),
+        '',
+        'A_low = A ( mod [X ** 80] ) /\\ B_low = B ( mod [X ** 80] )',
+        'prove with [cuts[0]]',
+    ]),
+    '  &&',
+    *add_indent(4, [
+        *range_conj_lines.format(),
+        'prove with [cuts[0]];',
+    ]),
+    '',
+]
+
+
+output_lines += [
+    *func_call('low_lay1__fwd_extract', poly_a_mem[:10] + arr_low_a_mem),
+    *func_call('low_lay1__fwd_extract', poly_b_mem[:10] + arr_low_b_mem),
+    *func_call('basemul__low_basemul', arr_low_a_mem + arr_low_b_mem + arr_low_c_mem),
+    *func_call('low_lay1__bwd_insert', arr_low_c_mem + full_high_part_mem + full_low_part_mem + full_high_part_mem),
+]
+
+C_low_part_spec = []
+
+C_low_spec = []
+for row in full_low_part_mem:
+    C_low_spec.append(' '.join([f'{var},' for var in row]))
+C_low_spec[-1] = C_low_spec[-1][:-1]
+C_low_spec = [
+    'C_low = poly X [',
+    *add_indent(4, C_low_spec),
+    ']',
+]
+
+output_lines += [
+    '',
+    'ghost C_low@sint16 :',
+    *add_indent(4, [
+        *C_low_spec,
+        '&& true;',
+    ]),
+    '',
+]
+
+# algebra_conj_lines, range_conj_lines = bound_array(15350, full_low_part_mem)
+output_lines += [
+    'cut (* 9 *)',
+    *add_indent(4, [
+        *add_to_last_line(C_low_spec, ' /\\'),
+        '',
+        'C_low = 170 * A_low * B_low ( mod [4591, X ** 81])',
+    ]),
+    '  &&',
+    *add_indent(4, [
+        # *range_conj_lines.format(';'),
+        'true;',
+    ]),
+    '',
+]
+
 
 # output_lines += [
 #     *func_call('main_lay1__fwd_extract', poly_a_mem + arr_a_mem),
