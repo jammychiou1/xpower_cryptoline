@@ -20,15 +20,15 @@
 #! movk x$1c, $2c, lsl #16 -> spl tmp1 tmp23 x$1c 32; spl tmp2 tmp3 tmp23 16; join tmp23 $2c@uint16 tmp3; join x$1c tmp1 tmp23
 #! asr x$1c, x$2c, $3c -> split x$1c dc x$2c $3c
 
-#! ldrsh w$1c, $2ea -> mov x$1c $2ea; vpc x$1c@sint32 x$1c; cast x$1c@uint32 x$1c; vpc x$1c@sint64 x$1c
-#! add w$1c, w$2c, $3c, lsl $4c -> cast w$2c@sint32 x$2c;\nadd w$1c w$2c ($3c * 2 ** $4c)@sint32;\nvpc x$1c@sint64 w$1c
-#! add w$1c, w$2c, w$3c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c;\nadds dc w$1c w$2c w$3c;\nvpc x$1c@sint64 w$1c
-#! sub w$1c, w$2c, w$3c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c;\nsubc dc w$1c w$2c w$3c;\nvpc x$1c@sint64 w$1c
-#! madd w$1c, w$2c, w$3c, w$4c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c; cast w$4c@sint32 x$4c;\nmull dc tmp w$2c w$3c; cast tmp@sint32 tmp; adds dc w$1c w$4c tmp;\nvpc x$1c@sint64 w$1c
-#! and w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nand w$1c@sint32 w$2c $3c@sint32;\nvpc x$1c@sint64 w$1c
-#! lsl w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nshls dc w$1c w$2c $3c;\nvpc x$1c@sint64 w$1c
-#! asr w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nsplit w$1c dc w$2c $3c;\nvpc x$1c@sint64 w$1c
-#! mov w$1c, $2c // -> mov w$1c $2c@uint32; vpc x$1c@sint64 w$1c
+#! ldrsh w$1c, $2ea -> vpc w$1c@sint32 $2ea;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
+#! add w$1c, w$2c, $3c, lsl $4c -> cast w$2c@sint32 x$2c;\nadd w$1c w$2c ($3c * 2 ** $4c)@sint32;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
+#! add w$1c, w$2c, w$3c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c;\nadds dc w$1c w$2c w$3c;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
+#! sub w$1c, w$2c, w$3c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c;\nsubc dc w$1c w$2c w$3c;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
+#! madd w$1c, w$2c, w$3c, w$4c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c; cast w$4c@sint32 x$4c;\nmull dc tmp w$2c w$3c; cast tmp@sint32 tmp; adds dc w$1c w$4c tmp;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
+#! and w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nand w$1c@sint32 w$2c $3c@sint32;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
+#! lsl w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nshls dc w$1c w$2c $3c;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
+#! asr w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nsplit w$1c dc w$2c $3c;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
+#! mov w$1c, $2c // -> mov w$1c $2c@uint32;cast w$1c@sint32 w$1c;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
 
 #! smull x$1c, w$2c, w$3c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c;\nmulj x$1c w$2c w$3c
 #! smaddl x$1c, w$2c, w$3c, x$4c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c;\nmulj tmp w$2c w$3c; adds dc x$1c x$4c tmp
