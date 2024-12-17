@@ -504,6 +504,7 @@ def basemul__low_basemul():
         lines_i.append('')
         arr_c_spec += lines_i
 
+    # FIXME: range for arr_c
     # algebra_conj_lines, range_conj_lines = bound_array(4585, arr_c)
     output_lines += [
         '{',
@@ -542,15 +543,15 @@ def low_lay1__bwd_insert():
         ') =',
     ]
 
-    # algebra_conj_lines, range_conj_lines = bound_array(8795, arr)
+    # FIXME: range for arr
+    algebra_conj_lines, range_conj_lines = bound_array(15350, full_in)
     output_lines += [
         '{',
         '    true',
         '  &&',
-        # *add_indent(4, [
-        #     *range_conj_lines.format(),
-        # ]),
-        '    true',
+        *add_indent(4, [
+            *range_conj_lines.format(),
+        ]),
         '}',
     ]
 
@@ -587,12 +588,13 @@ def low_lay1__bwd_insert():
     for in_h, out_l, out_h in zip(full_in, full_out[:10], full_out[-10:]):
         full_out_spec += [
             f'{make_vector(out_h)} =',
-            f'    {make_vector(in_h)} +',
+            f'    {make_vector(in_h)} -',
             f'    {make_vector(out_l)} /\\',
             '',
         ]
 
-    # algebra_conj_lines, range_conj_lines = bound_array(15350, full_out)
+    algebra_conj_lines_low, range_conj_lines_low = bound_array(17000, full_out[:11])
+    algebra_conj_lines_high, range_conj_lines_high = bound_array(32350, full_out[11:])
     output_lines += [
         '{',
         *add_indent(4, [
@@ -600,10 +602,11 @@ def low_lay1__bwd_insert():
             'true',
         ]),
         '  &&',
-        # *add_indent(4, [
-        #     *range_conj_lines.format(),
-        # ]),
-        '    true',
+        *add_indent(4, [
+            *range_conj_lines_low.format(' /\\'),
+            '',
+            *range_conj_lines_high.format(),
+        ]),
         '}',
     ]
 

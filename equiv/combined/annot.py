@@ -457,6 +457,7 @@ def annot_lowmul(annotator):
     arr_low_a_mem = annotator.shared_state.arr_low_a_mem
     arr_low_b_mem = annotator.shared_state.arr_low_b_mem
     arr_low_c_mem = annotator.shared_state.arr_low_c_mem
+    full_mem = annotator.shared_state.full_mem
     full_low_part_mem = annotator.shared_state.full_low_part_mem
     full_high_part_mem = annotator.shared_state.full_high_part_mem
 
@@ -498,45 +499,106 @@ def annot_lowmul(annotator):
         '',
         *func_call('low_lay1__bwd_insert', arr_low_c_mem + full_high_part_mem + full_low_part_mem + full_high_part_mem),
         '',
-        *annotator.lines[low_lay1__bwd_insert__end:],
+    ]
+
+    seg0_end = annotator.find_first_line('PC = 0x55555528f0')
+    seg1_end = annotator.find_first_line('PC = 0x5555552904')
+    seg2_end = annotator.find_first_line('PC = 0x5555552910')
+
+    output_lines += [
         '',
+        *annotator.lines[low_lay1__bwd_insert__end : seg0_end],
+        '''
+ghost long@sint64 : long = x0 && long = x0;
+
+assert
+    true &&
+    long = (sext L0x5555570c40 48) * (sext L0x55555706e0 48) + (sext L0x5555570640 48) * (sext L0x5555570ce0 48) /\\
+    long <=s 10534050@64 /\\ long >=s (-10534050)@64
+    prove with [cuts[0]];
+
+assume
+    long = L0x5555570c40 * L0x55555706e0 + L0x5555570640 * L0x5555570ce0 /\\
+    long <= 10534050 /\\ long >= -10534050
+  &&
+    long = (sext L0x5555570c40 48) * (sext L0x55555706e0 48) + (sext L0x5555570640 48) * (sext L0x5555570ce0 48) /\\
+    long <=s 10534050@64 /\\ long >=s (-10534050)@64;
+
+ghost C1520_old@sint16 : C1520_old = L0x7ffffff190 && C1520_old = L0x7ffffff190;
+''',
+        *annotator.lines[seg0_end : seg1_end],
+        '''
+assert true && x3 = 935519@64;
+assume x3 = 935519 && x3 = 935519@64;
+''',
+        *annotator.lines[seg1_end : seg2_end],
+        '''
+assert true && w2 = (-4591)@32;
+assume w2 = -4591 && w2 = (-4591)@32;
+
+ghost short@sint32 : short = w0 && short = w0;
+
+assert short = L0x7fffffe650 + 170 * long - 4591 * x3 prove with [algebra solver isl] && true;
+assume short = L0x7fffffe650 + 170 * long - 4591 * x3 && true;
+
+assert short <= 2500 /\\ short >= -2500 prove with [algebra solver isl] && true;
+assume short <= 2500 /\\ short >= -2500 && short <=s 2500@32 /\\ short >=s (-2500)@32;
+''',
+        *annotator.lines[seg2_end:],
+        '''
+assert
+    true &&
+    (sext L0x7fffffe650 16) = short /\\ (sext L0x7ffffff190 16) = (sext C1520_old 16) - short
+    prove with [cuts[7]];
+
+assume
+    L0x7fffffe650 = short /\\ L0x7ffffff190 = C1520_old - short
+  &&
+    (sext L0x7fffffe650 16) = short /\\ (sext L0x7ffffff190 16) = (sext C1520_old 16) - short;
+''',
     ]
 
 
-    C_low_part_spec = []
-
-    C_low_spec = []
-    for row in full_low_part_mem:
-        C_low_spec.append(' '.join([f'{var},' for var in row]))
-    C_low_spec[-1] = C_low_spec[-1][:-1]
-    C_low_spec = [
-        'C_low = poly X [',
-        *add_indent(4, C_low_spec),
+    C_full_spec = []
+    for row in full_mem:
+        C_full_spec.append(' '.join([f'{var},' for var in row]))
+    C_full_spec[-1] = C_full_spec[-1][:-1]
+    C_full_spec = [
+        'C_full = poly X [',
+        *add_indent(4, C_full_spec),
         ']',
     ]
 
     output_lines += [
         '',
-        'ghost C_low@sint16 :',
+        'ghost C_full@sint16 :',
         *add_indent(4, [
-            *C_low_spec,
+            *C_full_spec,
             '&& true;',
         ]),
         '',
     ]
 
-    # algebra_conj_lines, range_conj_lines = bound_array(15350, full_low_part_mem)
+    algebra_conj_lines_lt760, range_conj_lines_lt760 = bound_array(17000, full_mem[:95])
+    algebra_conj_lines_ge760, range_conj_lines_ge760 = bound_array(32350, full_mem[95:])
     output_lines += [
         annotator.generate_cut(),
         *add_indent(4, [
-            *add_to_last_line(C_low_spec, ' /\\'),
+            *add_to_last_line(C_full_spec, ' /\\'),
             '',
-            'C_low = 170 * A_low * B_low ( mod [4591, X ** 81])',
+            'C_full = 170 * A * B ( mod [4591, X ** 81] )',
+            'prove with [cuts[0]],',
+            '',
+            'C_full = 170 * A * B ( mod [4591, X ** 1440 - 1] )',
+            'prove with [cuts[7, 8]]',
         ]),
         '  &&',
         *add_indent(4, [
-            # *range_conj_lines.format(';'),
-            'true;',
+            *range_conj_lines_lt760.format(' /\\'),
+            '',
+            *range_conj_lines_ge760.format(),
+            '',
+            'prove with [cuts[7]];',
         ]),
         '',
     ]
@@ -583,6 +645,7 @@ def annot(annotator):
     annotator.shared_state.arr_low_a_mem = arr_low_a_mem
     annotator.shared_state.arr_low_b_mem = arr_low_b_mem
     annotator.shared_state.arr_low_c_mem = arr_low_c_mem
+    annotator.shared_state.full_mem = full_mem
     annotator.shared_state.full_main_part_mem = full_main_part_mem
     annotator.shared_state.full_low_part_mem = full_low_part_mem
     annotator.shared_state.full_high_part_mem = full_high_part_mem
@@ -630,7 +693,6 @@ def annot(annotator):
     crt_consts_mem = memory_array_like(0x55555532e0, crt_consts)
 
     output_lines += [
-        # *setup_const(const_base_O1dbg),
         *mov_array(crt_consts_mem, crt_consts),
         '',
         *mov_array(poly_a_mem, poly_a),
@@ -701,7 +763,23 @@ def annot(annotator):
 
     output_lines += annot_mainmul(annotator.make_subannotator(mainmul_begin, mainmul_end))
 
+    # R.<y,z,x> = PolynomialRing(GF(4591), 3, order='degrevlex(2),degrevlex(1)')
+    # I = R * [x ^ 16 - y * z, y ^ 10 - 1, z ^ 9 - 1]
+    # I.groebner_basis()
 
+    output_lines += [
+        'assert',
+        '    C = 170 * A * B ( mod [4591, Y - X ** 1296, Z - X ** 160, X ** 1440 - 1] )',
+        '    && true;',
+        '',
+        'assume',
+        '    C = 170 * A * B ( mod [4591, X ** 1440 - 1] )',
+        '    && true;',
+        '',
+    ]
+
+
+    # TODO: A_low, B_low is unused. Remove later.
     A_low_spec = []
     for row in poly_a_mem[:10]:
         A_low_spec.append(' '.join([f'{var},' for var in row]))
@@ -741,8 +819,7 @@ def annot(annotator):
             '',
             *add_to_last_line(B_low_spec, ' /\\'),
             '',
-            'A_low = A ( mod [X ** 80] ) /\\ B_low = B ( mod [X ** 80] )',
-            'prove with [cuts[0]]',
+            'C = 170 * A * B ( mod [4591, X ** 1440 - 1] )',
         ]),
         '  &&',
         *add_indent(4, [
@@ -765,26 +842,11 @@ def annot(annotator):
     output_lines += annot_lowmul(annotator.make_subannotator(lowmul_begin, lowmul_end))
 
 
-    # output_lines += [
-    #     *annotator.lines[lowmul_end:],
-    #     '',
-    # ]
+    output_lines += [
+        *annotator.lines[lowmul_end:],
+        '',
+    ]
 
-
-    # output_lines += [
-    #     *func_call('main_lay1__fwd_extract', poly_a_mem + arr_a_mem),
-    #     *func_call('main_lay2__fwd_inplace', arr_a_mem + arr_a_mem),
-    #     *func_call('main_lay1__fwd_extract', poly_b_mem + arr_b_mem),
-    #     *func_call('main_lay2__fwd_inplace', arr_b_mem + arr_b_mem),
-    #     *func_call('basemul__main_basemul', arr_a_mem + arr_b_mem + arr_c_mem),
-    #     *func_call('main_lay2__bwd_inplace', arr_c_mem + arr_c_mem),
-    #     *func_call('main_lay1__bwd_insert', arr_c_mem + full_main_part_mem),
-    # 
-    #     *func_call('low_lay1__fwd_extract', poly_a_mem[:10] + arr_low_a_mem),
-    #     *func_call('low_lay1__fwd_extract', poly_b_mem[:10] + arr_low_b_mem),
-    #     *func_call('basemul__low_basemul', arr_low_a_mem + arr_low_b_mem + arr_low_c_mem),
-    #     *func_call('low_lay1__bwd_insert', arr_low_c_mem + full_high_part_mem + full_low_part_mem + full_high_part_mem),
-    # ]
     return output_lines
 
 annotator = AnnotatorState('./combined/rqmul__O3_neon_raw.cl', )
