@@ -28,6 +28,7 @@
 #! and w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nand w$1c@sint32 w$2c $3c@sint32;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
 #! lsl w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nshls dc w$1c w$2c $3c;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
 #! asr w$1c, w$2c, $3c -> cast w$2c@sint32 x$2c;\nsplit w$1c dc w$2c $3c;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
+# TODO: space before `cast w$1c`
 #! mov w$1c, $2c // -> mov w$1c $2c@uint32;cast w$1c@sint32 w$1c;\ncast x$1c@uint32 w$1c; vpc x$1c@sint64 x$1c
 
 #! smull x$1c, w$2c, w$3c -> cast w$2c@sint32 x$2c; cast w$3c@sint32 x$3c;\nmulj x$1c w$2c w$3c

@@ -632,8 +632,44 @@ def annot_crt(annotator):
         '',
     ]
 
+    insert_location = annotator.find_first_line('PC = 0x5555552984')
+
     output_lines += [
-        *annotator.lines,
+        *annotator.lines[:insert_location],
+        '',
+        'assert true && w6 = (-4591)@32;',
+        'assume w6 = -4591 && w6 = (-4591)@32;',
+        '',
+        *annotator.lines[insert_location:],
+        '',
+    ]
+
+    post_crt_array_lines = []
+    for row in full_mem[:95] + [[full_mem[95][0]]]:
+        post_crt_array_lines.append(' '.join([f'{var},' for var in row]))
+    post_crt_array_lines[-1] = post_crt_array_lines[-1][:-1]
+    # post_crt_array_lines = [
+    #     'C_full = poly X [',
+    #     *add_indent(4, C_full_spec),
+    #     ']',
+    # ]
+
+    mod_array_lines = [' '.join(['4591,'] * min(761 - i0, 8)) for i0 in range(0, 761, 8)]
+    mod_array_lines[-1] = mod_array_lines[-1][:-1]
+
+    output_lines += [
+        annotator.generate_cut(),
+        *add_indent(4, [
+            '[',
+            *add_indent(4, post_crt_array_lines),
+            '] = [%full_pre_crt[0] + %full_pre_crt[761]] ++ (%full_pre_crt[1 : 760] + %full_pre_crt[761 : 1520] + %full_pre_crt[762 : 1521]) ++ [%full_pre_crt[760] + %full_pre_crt[1520]]',
+            '( mod [',
+            *add_indent(4, mod_array_lines),
+            '] )',
+            'prove with [algebra solver isl]'
+            '&& true;',
+        ]),
+        '',
     ]
 
     return output_lines
@@ -896,13 +932,36 @@ def annot(annotator):
 
     output_lines += annot_lowmul(annotator.make_subannotator(lowmul_begin, lowmul_end))
 
+    algebra_conj_lines_lt760, range_conj_lines_lt760 = bound_array(17000, full_mem[:95])
+    algebra_conj_lines_ge760, range_conj_lines_ge760 = bound_array(32350, full_mem[95:])
 
     output_lines += [
+        'assert',
+        *add_indent(4, [
+            'true &&',
+            *range_conj_lines_lt760.format(' /\\'),
+            '',
+            *range_conj_lines_ge760.format(';'),
+        ]),
+        '',
+        'assume',
+        *add_indent(4, [
+            *algebra_conj_lines_lt760.format(' /\\'),
+            '',
+            *algebra_conj_lines_ge760.format(),
+            '&& true;',
+        ]),
+        '',
         'assert C_full = 170 * A * B ( mod [4591, X ** 1521 - X ** 81] ) && true;',
         'assume C_full = 170 * A * B ( mod [4591] ) && true;',
         '',
         annotator.generate_cut(),
         *add_indent(4, [
+            *algebra_conj_lines_lt760.format(' /\\'),
+            '',
+            *algebra_conj_lines_ge760.format(),
+            'prove with [algebra solver isl],',
+            '',
             'C_full = 170 * A * B ( mod [4591] )',
         ]),
         '  &&',
