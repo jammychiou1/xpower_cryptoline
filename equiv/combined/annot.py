@@ -605,6 +605,49 @@ assume
 
     return output_lines
 
+def annot_crt(annotator):
+    full_mem = annotator.shared_state.full_mem
+
+    output_lines = [
+        '',
+        '## crt',
+        '',
+    ]
+
+    full_pre_crt_spec = []
+    for row in full_mem:
+        full_pre_crt_spec.append(' '.join([f'{var},' for var in row]))
+    full_pre_crt_spec[-1] = full_pre_crt_spec[-1][:-1]
+    full_pre_crt_spec = [
+        '%full_pre_crt = [',
+        *add_indent(4, full_pre_crt_spec),
+        ']',
+    ]
+
+    output_lines += [
+        'ghost %full_pre_crt@sint16[1521] :',
+        *add_indent(4, full_pre_crt_spec),
+        '  &&',
+        *add_indent(4, add_to_last_line(full_pre_crt_spec, ';')),
+        '',
+    ]
+
+    output_lines += [
+        *annotator.lines,
+    ]
+
+    return output_lines
+
+def annot_scale_freeze(annotator):
+    output_lines = [
+        '',
+        '## scale_freeze',
+        '',
+        *annotator.lines,
+        '',
+    ]
+
+    return output_lines
 
 def annot(annotator):
     poly_a = [[Variable(f'poly{i + j}_a', SINT16) for j in range(8)] for i in range(0, 768, 8)]
@@ -689,11 +732,19 @@ def annot(annotator):
         '',
     ]
 
-    crt_consts = [[InstructionImmediate(val, SINT16) for val in [4591, 7, 0, 0, 0, 0, 0, 0]]]
-    crt_consts_mem = memory_array_like(0x55555532e0, crt_consts)
+    postprocess_consts = [
+        [4591, 7, 0, 0, 0, 0, 0, 0],
+        [-27, -193, 0, 0, 0, 0, 0, 0],
+        [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591],
+        [2295, 2295, 2295, 2295, 2295, 2295, 2295, 2295],
+        [-2295, -2295, -2295, -2295, -2295, -2295, -2295, -2295],
+    ]
+    postprocess_consts_imm = [[InstructionImmediate(val, SINT16) for val in row] for row in postprocess_consts]
+    postprocess_consts_mem = memory_array_like(0x55555532e0, postprocess_consts)
+    postprocess_consts_range = [[RangeExpConstant(val, SINT16) for val in row] for row in postprocess_consts]
 
     output_lines += [
-        *mov_array(crt_consts_mem, crt_consts),
+        *mov_array(postprocess_consts_mem, postprocess_consts_imm),
         '',
         *mov_array(poly_a_mem, poly_a),
         '',
@@ -739,11 +790,15 @@ def annot(annotator):
         *add_indent(4, [
             *add_to_last_line(A_spec, ' /\\'),
             '',
-            *B_spec,
+            *add_to_last_line(B_spec, ' /\\'),
+            '',
+            *equal_array(postprocess_consts_mem, postprocess_consts).format(),
         ]),
         '  &&',
         *add_indent(4, [
-            *range_conj_lines.format(';'),
+            *range_conj_lines.format(' /\\'),
+            '',
+            *equal_array(postprocess_consts_mem, postprocess_consts_range).format(';'),
         ]),
         '',
     ]
@@ -843,9 +898,38 @@ def annot(annotator):
 
 
     output_lines += [
-        *annotator.lines[lowmul_end:],
+        'assert C_full = 170 * A * B ( mod [4591, X ** 1521 - X ** 81] ) && true;',
+        'assume C_full = 170 * A * B ( mod [4591] ) && true;',
+        '',
+        annotator.generate_cut(),
+        *add_indent(4, [
+            'C_full = 170 * A * B ( mod [4591] )',
+        ]),
+        '  &&',
+        *add_indent(4, [
+            'true;'
+        ]),
         '',
     ]
+
+    crt_begin = annotator.find_first_line('PC = 0x5555552ae0', offset=2)
+    crt_end = annotator.find_first_line('PC = 0x55555529c8', offset=2)
+    scale_freeze_begin = annotator.find_first_line('PC = 0x5555552ae8', offset=2)
+    scale_freeze_end = annotator.find_first_line('PC = 0x5555552a98', offset=2)
+
+    output_lines += [
+        *annotator.lines[lowmul_end : crt_begin],
+        '',
+        *annot_crt(annotator.make_subannotator(crt_begin, crt_end)),
+        '',
+        *annotator.lines[crt_end : scale_freeze_begin],
+        '',
+        *annot_scale_freeze(annotator.make_subannotator(scale_freeze_begin, scale_freeze_end)),
+        '',
+        *annotator.lines[scale_freeze_end:],
+        '',
+    ]
+
 
     return output_lines
 
