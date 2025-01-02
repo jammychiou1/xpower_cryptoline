@@ -614,21 +614,21 @@ def annot_crt(annotator):
         '',
     ]
 
-    full_pre_crt_spec = []
+    pre_crt_array_lines = []
     for row in full_mem:
-        full_pre_crt_spec.append(' '.join([f'{var},' for var in row]))
-    full_pre_crt_spec[-1] = full_pre_crt_spec[-1][:-1]
-    full_pre_crt_spec = [
+        pre_crt_array_lines.append(' '.join([f'{var},' for var in row]))
+    pre_crt_array_lines[-1] = pre_crt_array_lines[-1][:-1]
+    pre_crt_spec = [
         '%full_pre_crt = [',
-        *add_indent(4, full_pre_crt_spec),
+        *add_indent(4, pre_crt_array_lines),
         ']',
     ]
 
     output_lines += [
         'ghost %full_pre_crt@sint16[1521] :',
-        *add_indent(4, full_pre_crt_spec),
+        *add_indent(4, pre_crt_spec),
         '  &&',
-        *add_indent(4, add_to_last_line(full_pre_crt_spec, ';')),
+        *add_indent(4, add_to_last_line(pre_crt_spec, ';')),
         '',
     ]
 
@@ -648,26 +648,61 @@ def annot_crt(annotator):
     for row in full_mem[:95] + [[full_mem[95][0]]]:
         post_crt_array_lines.append(' '.join([f'{var},' for var in row]))
     post_crt_array_lines[-1] = post_crt_array_lines[-1][:-1]
-    # post_crt_array_lines = [
-    #     'C_full = poly X [',
-    #     *add_indent(4, C_full_spec),
-    #     ']',
-    # ]
+    post_crt_spec = [
+        '%full_post_crt = [',
+        *add_indent(4, post_crt_array_lines),
+        ']',
+    ]
+
+    output_lines += [
+        'ghost %full_post_crt@sint16[761] :',
+        *add_indent(4, post_crt_spec),
+        '  &&',
+        *add_indent(4, add_to_last_line(post_crt_spec, ';')),
+        '',
+    ]
 
     mod_array_lines = [' '.join(['4591,'] * min(761 - i0, 8)) for i0 in range(0, 761, 8)]
     mod_array_lines[-1] = mod_array_lines[-1][:-1]
 
+
+    pre_crt_elem_lines = [[f'%full_pre_crt[{i + j}],' for j in range(8) if i + j < 1521] for i in range(0, 1521, 8)]
+    pre_crt_elem_lines = [' '.join(row) for row in pre_crt_elem_lines]
+    pre_crt_elem_lines[-1] = pre_crt_elem_lines[-1][:-1]
+    post_crt_elem_lines = [[f'%full_post_crt[{i + j}],' for j in range(8) if i + j < 761] for i in range(0, 761, 8)]
+    post_crt_elem_lines = [' '.join(row) for row in post_crt_elem_lines]
+    post_crt_elem_lines[-1] = post_crt_elem_lines[-1][:-1]
+
     output_lines += [
         annotator.generate_cut(),
         *add_indent(4, [
-            '[',
-            *add_indent(4, post_crt_array_lines),
-            '] = [%full_pre_crt[0] + %full_pre_crt[761]] ++ (%full_pre_crt[1 : 760] + %full_pre_crt[761 : 1520] + %full_pre_crt[762 : 1521]) ++ [%full_pre_crt[760] + %full_pre_crt[1520]]',
+            *add_to_last_line(post_crt_spec, ' /\\'),
+            '',
+            '%full_post_crt = [%full_pre_crt[0] + %full_pre_crt[761]] ++ (%full_pre_crt[1 : 760] + %full_pre_crt[761 : 1520] + %full_pre_crt[762 : 1521]) ++ [%full_pre_crt[760] + %full_pre_crt[1520]]',
             '( mod [',
             *add_indent(4, mod_array_lines),
             '] )',
-            'prove with [algebra solver isl]'
+            'prove with [algebra solver isl],',
+            '',
+            'C_full = poly X [',
+            *add_indent(4, pre_crt_elem_lines),
+            ']',
+            'prove with [cuts[9]]',
             '&& true;',
+        ]),
+        '',
+    ]
+
+    output_lines += [
+        annotator.generate_cut(),
+        *add_indent(4, [
+            '170 * A * B =',
+            'poly X [',
+            *add_indent(4, post_crt_elem_lines),
+            ']',
+            '( mod [4591, X ** 761 - X - 1] )',
+            'prove with [cuts[10]]',
+            '&& true;'
         ]),
         '',
     ]
@@ -966,7 +1001,7 @@ def annot(annotator):
         ]),
         '  &&',
         *add_indent(4, [
-            'true;'
+            'true;',
         ]),
         '',
     ]
