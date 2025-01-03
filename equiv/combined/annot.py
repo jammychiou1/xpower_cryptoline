@@ -710,11 +710,87 @@ def annot_crt(annotator):
     return output_lines
 
 def annot_scale_freeze(annotator):
+    frozen_mem = annotator.shared_state.frozen_mem
+    frozen_input_mem = annotator.shared_state.frozen_input_mem
+
     output_lines = [
         '',
         '## scale_freeze',
         '',
         *annotator.lines,
+        '',
+    ]
+
+    frozen_input_array_lines = []
+    for row in frozen_input_mem:
+        frozen_input_array_lines.append(' '.join([f'{var},' for var in row]))
+    frozen_input_array_lines[-1] = frozen_input_array_lines[-1][:-1]
+
+    frozen_array_lines = []
+    for row in frozen_mem:
+        frozen_array_lines.append(' '.join([f'{var},' for var in row]))
+    frozen_array_lines[-1] = frozen_array_lines[-1][:-1]
+
+    range_coef_array_lines = [' '.join(['(-27)@32,'] * min(761 - i0, 8)) for i0 in range(0, 761, 8)]
+    range_coef_array_lines[-1] = range_coef_array_lines[-1][:-1]
+
+    range_mod_array_lines = [' '.join(['4591@32,'] * min(761 - i0, 8)) for i0 in range(0, 761, 8)]
+    range_mod_array_lines[-1] = range_mod_array_lines[-1][:-1]
+
+    algebra_coef_array_lines = [' '.join(['-27,'] * min(761 - i0, 8)) for i0 in range(0, 761, 8)]
+    algebra_coef_array_lines[-1] = algebra_coef_array_lines[-1][:-1]
+
+    algebra_mod_array_lines = [' '.join(['4591,'] * min(761 - i0, 8)) for i0 in range(0, 761, 8)]
+    algebra_mod_array_lines[-1] = algebra_mod_array_lines[-1][:-1]
+
+    output_lines += [
+        'assert',
+        *add_indent(4, [
+            'true &&',
+            '(sext [',
+            *add_indent(4, frozen_array_lines),
+            '] 16) =',
+            '(sext [',
+            *add_indent(4, frozen_input_array_lines),
+            '] 16) * [',
+            *add_indent(4, range_coef_array_lines),
+            '] ( smod [',
+            *add_indent(4, range_mod_array_lines),
+            '] );',
+        ]),
+        '',
+        'assume',
+        *add_indent(4, [
+            '[',
+            *add_indent(4, frozen_array_lines),
+            '] =',
+            '[',
+            *add_indent(4, frozen_input_array_lines),
+            '] * [',
+            *add_indent(4, algebra_coef_array_lines),
+            '] ( mod [',
+            *add_indent(4, algebra_mod_array_lines),
+            '] )',
+            '&& true;'
+        ]),
+        '',
+    ]
+
+    algebra_conj_lines, range_conj_lines = bound_array(2295, frozen_mem)
+
+    output_lines += [
+        annotator.generate_cut(),
+        *add_indent(4, [
+            'poly X [',
+            *add_indent(4, frozen_array_lines),
+            '] = A * B',
+            '( mod [4591, X ** 761 - X - 1] )',
+            'prove with [cuts[11]]',
+        ]),
+        '  &&',
+        *add_indent(4, [
+            *range_conj_lines.format(';'),
+        ]),
         '',
     ]
 
@@ -751,6 +827,10 @@ def annot(annotator):
     full_high_part = [[Variable(f'full{i + j}', SINT16) for j in range(8)] for i in range(1440, 1520, 8)]
     full_high_part_mem = memory_array_like(full_mem_base + 1440 * 2, full_high_part)
 
+    frozen = [[Variable(f'frozen{i + j}', SINT16) for j in range(8) if i + j < 761] for i in range(0, 761, 8)]
+    frozen_mem = memory_array_like(0x5555570040, frozen)
+    frozen_input_mem = memory_array_like(full_mem_base, frozen)
+
     annotator.shared_state.poly_a_mem = poly_a_mem
     annotator.shared_state.poly_b_mem = poly_b_mem
     annotator.shared_state.arr_a_mem = arr_a_mem
@@ -763,6 +843,8 @@ def annot(annotator):
     annotator.shared_state.full_main_part_mem = full_main_part_mem
     annotator.shared_state.full_low_part_mem = full_low_part_mem
     annotator.shared_state.full_high_part_mem = full_high_part_mem
+    annotator.shared_state.frozen_mem = frozen_mem
+    annotator.shared_state.frozen_input_mem = frozen_input_mem
 
 
     output_lines = annot_function_defs(annotator)
