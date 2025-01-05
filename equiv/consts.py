@@ -136,6 +136,7 @@ def setup_const(const_base):
     const_mem = annot_utils.memory_array_like(const_base, const_imm)
     return annot_utils.mov_array(const_mem, const_imm)
 
+twist_his_const_table = const_table[2 : 20]
 main_basemul_const_table = const_table[23 : 113]
 
 
