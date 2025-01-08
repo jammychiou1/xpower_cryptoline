@@ -21,21 +21,21 @@ mov %v4 [L0x7fffffe2b0,L0x7fffffe2b2,L0x7fffffe2b4,L0x7fffffe2b6,L0x7fffffe2b8,L
 (* ldr	q3, [x0, #288]                              #! EA = L0x7fffffe2d0; Value = 0x0000000000000000; PC = 0x55555520e8 *)
 mov %v3 [L0x7fffffe2d0,L0x7fffffe2d2,L0x7fffffe2d4,L0x7fffffe2d6,L0x7fffffe2d8,L0x7fffffe2da,L0x7fffffe2dc,L0x7fffffe2de];
 (* add	v16.8h, v2.8h, v25.8h                       #! PC = 0x55555520ec *)
-adds %dc %v16 %v2 %v25;
+add %v16 %v2 %v25;
 (* add	v5.8h, v24.8h, v3.8h                        #! PC = 0x55555520f0 *)
-adds %dc %v5 %v24 %v3;
+add %v5 %v24 %v3;
 (* add	v6.8h, v23.8h, v4.8h                        #! PC = 0x55555520f4 *)
-adds %dc %v6 %v23 %v4;
+add %v6 %v23 %v4;
 (* add	v28.8h, v19.8h, v22.8h                      #! PC = 0x55555520f8 *)
-adds %dc %v28 %v19 %v22;
+add %v28 %v19 %v22;
 (* add	v27.8h, v21.8h, v20.8h                      #! PC = 0x55555520fc *)
-adds %dc %v27 %v21 %v20;
+add %v27 %v21 %v20;
 (* add	v7.8h, v5.8h, v27.8h                        #! PC = 0x5555552100 *)
-adds %dc %v7 %v5 %v27;
+add %v7 %v5 %v27;
 (* add	v29.8h, v6.8h, v28.8h                       #! PC = 0x5555552104 *)
-adds %dc %v29 %v6 %v28;
+add %v29 %v6 %v28;
 (* add	v26.8h, v7.8h, v29.8h                       #! PC = 0x5555552108 *)
-adds %dc %v26 %v7 %v29;
+add %v26 %v7 %v29;
 (* ldr	q1, [x2, #1776]                             #! EA = L0x55555526f0; Value = 0x00000007001d11ef; PC = 0x5555552110 *)
 mov %v1 [L0x55555526f0,L0x55555526f2,L0x55555526f4,L0x55555526f6,L0x55555526f8,L0x55555526fa,L0x55555526fc,L0x55555526fe];
 (* sqrdmulh	v18.8h, v26.8h, v1.h[1]                #! PC = 0x5555552114 *)
@@ -49,31 +49,27 @@ ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v0 %LO11 %LO01;
 (* shl	v16.8h, v16.8h, #2                          #! PC = 0x555555211c *)
-vpc %long@sint32[8] %v16;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
-cast %v16@sint16[8] %long;
+shl %v16 %v16 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
 (* add	v30.8h, v18.8h, v0.8h                       #! PC = 0x5555552120 *)
-adds %dc %v30 %v18 %v0;
+add %v30 %v18 %v0;
 (* shl	v17.8h, v26.8h, #2                          #! PC = 0x5555552124 *)
-vpc %long@sint32[8] %v26;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
-cast %v17@sint16[8] %long;
+shl %v17 %v26 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
 (* add	v17.8h, v17.8h, v16.8h                      #! PC = 0x5555552128 *)
-adds %dc %v17 %v17 %v16;
+add %v17 %v17 %v16;
 (* mls	v17.8h, v30.8h, v1.h[0]                     #! PC = 0x555555212c *)
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v30 %mul;
 cast %mls@int16[8] %mls; subc %dc %v17 %v17 %mls;
 (* sshr	v18.8h, v18.8h, #2                         #! PC = 0x5555552130 *)
 split %v18 %dc %v18 2;
 (* sub	v0.8h, v0.8h, v18.8h                        #! PC = 0x5555552134 *)
-subc %dc %v0 %v0 %v18;
+sub %v0 %v0 %v18;
 (* sub	v16.8h, v16.8h, v26.8h                      #! PC = 0x5555552138 *)
-subc %dc %v16 %v16 %v26;
+sub %v16 %v16 %v26;
 (* mls	v16.8h, v0.8h, v1.h[0]                      #! PC = 0x555555213c *)
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v16 %v16 %mls;
 (* sub	v7.8h, v7.8h, v29.8h                        #! PC = 0x5555552140 *)
-subc %dc %v7 %v7 %v29;
+sub %v7 %v7 %v29;
 (* ldr	q0, [x2, #1792]                             #! EA = L0x5555552700; Value = 0xf938fcce039603ed; PC = 0x5555552148 *)
 mov %v0 [L0x5555552700,L0x5555552702,L0x5555552704,L0x5555552706,L0x5555552708,L0x555555270a,L0x555555270c,L0x555555270e];
 (* sqrdmulh	v18.8h, v7.8h, v0.h[4]                 #! PC = 0x555555214c *)
@@ -87,13 +83,13 @@ broadcast %mul 8 [%v0[0]]; mull %dc %v7 %v7 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v18 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* add	v16.8h, v16.8h, v7.8h                       #! PC = 0x5555552158 *)
-adds %dc %v16 %v16 %v7;
+add %v16 %v16 %v7;
 (* sub	v6.8h, v6.8h, v28.8h                        #! PC = 0x555555215c *)
-subc %dc %v6 %v6 %v28;
+sub %v6 %v6 %v28;
 (* sub	v5.8h, v5.8h, v27.8h                        #! PC = 0x5555552160 *)
-subc %dc %v5 %v5 %v27;
+sub %v5 %v5 %v27;
 (* add	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555552164 *)
-adds %dc %v5 %v5 %v6;
+add %v5 %v5 %v6;
 (* sqrdmulh	v7.8h, v5.8h, v0.h[5]                  #! PC = 0x5555552168 *)
 broadcast %mul 8 [%v0[5]]; smulj %LO %v5 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -115,25 +111,25 @@ broadcast %mul 8 [%v0[2]]; mull %dc %v6 %v6 %mul; cast %v6@int16[8] %v6;
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v7 %mul;
 cast %mls@int16[8] %mls; subc %dc %v6 %v6 %mls;
 (* sub	v5.8h, v5.8h, v6.8h                         #! PC = 0x5555552180 *)
-subc %dc %v5 %v5 %v6;
+sub %v5 %v5 %v6;
 (* sub	v18.8h, v16.8h, v5.8h                       #! PC = 0x5555552184 *)
-subc %dc %v18 %v16 %v5;
+sub %v18 %v16 %v5;
 (* sub	v7.8h, v2.8h, v25.8h                        #! PC = 0x5555552188 *)
-subc %dc %v7 %v2 %v25;
+sub %v7 %v2 %v25;
 (* sub	v3.8h, v24.8h, v3.8h                        #! PC = 0x555555218c *)
-subc %dc %v3 %v24 %v3;
+sub %v3 %v24 %v3;
 (* sub	v4.8h, v4.8h, v23.8h                        #! PC = 0x5555552190 *)
-subc %dc %v4 %v4 %v23;
+sub %v4 %v4 %v23;
 (* sub	v19.8h, v19.8h, v22.8h                      #! PC = 0x5555552194 *)
-subc %dc %v19 %v19 %v22;
+sub %v19 %v19 %v22;
 (* sub	v20.8h, v20.8h, v21.8h                      #! PC = 0x5555552198 *)
-subc %dc %v20 %v20 %v21;
+sub %v20 %v20 %v21;
 (* add	v6.8h, v3.8h, v20.8h                        #! PC = 0x555555219c *)
-adds %dc %v6 %v3 %v20;
+add %v6 %v3 %v20;
 (* add	v23.8h, v4.8h, v19.8h                       #! PC = 0x55555521a0 *)
-adds %dc %v23 %v4 %v19;
+add %v23 %v4 %v19;
 (* add	v22.8h, v6.8h, v23.8h                       #! PC = 0x55555521a4 *)
-adds %dc %v22 %v6 %v23;
+add %v22 %v6 %v23;
 (* sqrdmulh	v21.8h, v7.8h, v1.h[1]                 #! PC = 0x55555521a8 *)
 broadcast %mul 8 [%v1[1]]; smulj %LO %v7 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -144,20 +140,18 @@ split %v2 %dc %v22 12;
 (* cmlt	v24.8h, v22.8h, #0                         #! PC = 0x55555521b0 *)
 split %v24 %dc %v22 15;
 (* sub	v2.8h, v2.8h, v24.8h                        #! PC = 0x55555521b4 *)
-subc %dc %v2 %v2 %v24;
+sub %v2 %v2 %v24;
 (* sub	v21.8h, v21.8h, v2.8h                       #! PC = 0x55555521b8 *)
-subc %dc %v21 %v21 %v2;
+sub %v21 %v21 %v2;
 (* shl	v2.8h, v7.8h, #2                            #! PC = 0x55555521bc *)
-vpc %long@sint32[8] %v7;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
-cast %v2@sint16[8] %long;
+shl %v2 %v7 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
 (* sub	v2.8h, v2.8h, v22.8h                        #! PC = 0x55555521c0 *)
-subc %dc %v2 %v2 %v22;
+sub %v2 %v2 %v22;
 (* mls	v2.8h, v21.8h, v1.h[0]                      #! PC = 0x55555521c4 *)
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v21 %mul;
 cast %mls@int16[8] %mls; subc %dc %v2 %v2 %mls;
 (* sub	v6.8h, v6.8h, v23.8h                        #! PC = 0x55555521c8 *)
-subc %dc %v6 %v6 %v23;
+sub %v6 %v6 %v23;
 (* sqrdmulh	v7.8h, v6.8h, v0.h[4]                  #! PC = 0x55555521cc *)
 broadcast %mul 8 [%v0[4]]; smulj %LO %v6 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -169,15 +163,15 @@ broadcast %mul 8 [%v0[0]]; mull %dc %v6 %v6 %mul; cast %v6@int16[8] %v6;
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v7 %mul;
 cast %mls@int16[8] %mls; subc %dc %v6 %v6 %mls;
 (* sub	v21.8h, v2.8h, v6.8h                        #! PC = 0x55555521d8 *)
-subc %dc %v21 %v2 %v6;
+sub %v21 %v2 %v6;
 (* sub	v3.8h, v3.8h, v20.8h                        #! PC = 0x55555521dc *)
-subc %dc %v3 %v3 %v20;
+sub %v3 %v3 %v20;
 (* sub	v4.8h, v4.8h, v19.8h                        #! PC = 0x55555521e0 *)
-subc %dc %v4 %v4 %v19;
+sub %v4 %v4 %v19;
 (* add	v7.8h, v3.8h, v4.8h                         #! PC = 0x55555521e4 *)
-adds %dc %v7 %v3 %v4;
+add %v7 %v3 %v4;
 (* sub	v3.8h, v4.8h, v3.8h                         #! PC = 0x55555521e8 *)
-subc %dc %v3 %v4 %v3;
+sub %v3 %v4 %v3;
 (* sqrdmulh	v19.8h, v7.8h, v0.h[5]                 #! PC = 0x55555521ec *)
 broadcast %mul 8 [%v0[5]]; smulj %LO %v7 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -209,17 +203,17 @@ broadcast %mul 8 [%v0[3]]; mull %dc %v3 %v3 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v19 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* sub	v3.8h, v3.8h, v4.8h                         #! PC = 0x5555552210 *)
-subc %dc %v3 %v3 %v4;
+sub %v3 %v3 %v4;
 (* add	v2.8h, v2.8h, v6.8h                         #! PC = 0x5555552214 *)
-adds %dc %v2 %v2 %v6;
+add %v2 %v2 %v6;
 (* sub	v7.8h, v7.8h, v4.8h                         #! PC = 0x5555552218 *)
-subc %dc %v7 %v7 %v4;
+sub %v7 %v7 %v4;
 (* add	v2.8h, v2.8h, v7.8h                         #! PC = 0x555555221c *)
-adds %dc %v2 %v2 %v7;
+add %v2 %v2 %v7;
 (* add	v22.8h, v21.8h, v3.8h                       #! PC = 0x5555552220 *)
-adds %dc %v22 %v21 %v3;
+add %v22 %v21 %v3;
 (* sub	v3.8h, v21.8h, v3.8h                        #! PC = 0x5555552224 *)
-subc %dc %v3 %v21 %v3;
+sub %v3 %v21 %v3;
 (* ldr	q20, [x1, #2880]                            #! EA = L0x7ffffff0e0; Value = 0x0000000000000000; PC = 0x5555552228 *)
 mov %v20 [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee];
 (* ldr	q19, [x1, #2912]                            #! EA = L0x7ffffff100; Value = 0x0000000000000000; PC = 0x555555222c *)
@@ -241,27 +235,27 @@ mov [L0x7fffffe600,L0x7fffffe602,L0x7fffffe604,L0x7fffffe606,L0x7fffffe608,L0x7f
 (* str	q3, [x1, #128]                              #! EA = L0x7fffffe620; PC = 0x555555224c *)
 mov [L0x7fffffe620,L0x7fffffe622,L0x7fffffe624,L0x7fffffe626,L0x7fffffe628,L0x7fffffe62a,L0x7fffffe62c,L0x7fffffe62e] %v3;
 (* sub	v2.8h, v20.8h, v2.8h                        #! PC = 0x5555552250 *)
-subc %dc %v2 %v20 %v2;
+sub %v2 %v20 %v2;
 (* str	q2, [x1, #2880]                             #! EA = L0x7ffffff0e0; PC = 0x5555552254 *)
 mov [L0x7ffffff0e0,L0x7ffffff0e2,L0x7ffffff0e4,L0x7ffffff0e6,L0x7ffffff0e8,L0x7ffffff0ea,L0x7ffffff0ec,L0x7ffffff0ee] %v2;
 (* sub	v2.8h, v19.8h, v18.8h                       #! PC = 0x5555552258 *)
-subc %dc %v2 %v19 %v18;
+sub %v2 %v19 %v18;
 (* str	q2, [x1, #2912]                             #! EA = L0x7ffffff100; PC = 0x555555225c *)
 mov [L0x7ffffff100,L0x7ffffff102,L0x7ffffff104,L0x7ffffff106,L0x7ffffff108,L0x7ffffff10a,L0x7ffffff10c,L0x7ffffff10e] %v2;
 (* sub	v2.8h, v7.8h, v22.8h                        #! PC = 0x5555552260 *)
-subc %dc %v2 %v7 %v22;
+sub %v2 %v7 %v22;
 (* str	q2, [x1, #2944]                             #! EA = L0x7ffffff120; PC = 0x5555552264 *)
 mov [L0x7ffffff120,L0x7ffffff122,L0x7ffffff124,L0x7ffffff126,L0x7ffffff128,L0x7ffffff12a,L0x7ffffff12c,L0x7ffffff12e] %v2;
 (* sub	v2.8h, v6.8h, v17.8h                        #! PC = 0x5555552268 *)
-subc %dc %v2 %v6 %v17;
+sub %v2 %v6 %v17;
 (* str	q2, [x1, #2976]                             #! EA = L0x7ffffff140; PC = 0x555555226c *)
 mov [L0x7ffffff140,L0x7ffffff142,L0x7ffffff144,L0x7ffffff146,L0x7ffffff148,L0x7ffffff14a,L0x7ffffff14c,L0x7ffffff14e] %v2;
 (* sub	v2.8h, v4.8h, v3.8h                         #! PC = 0x5555552270 *)
-subc %dc %v2 %v4 %v3;
+sub %v2 %v4 %v3;
 (* str	q2, [x1, #3008]                             #! EA = L0x7ffffff160; PC = 0x5555552274 *)
 mov [L0x7ffffff160,L0x7ffffff162,L0x7ffffff164,L0x7ffffff166,L0x7ffffff168,L0x7ffffff16a,L0x7ffffff16c,L0x7ffffff16e] %v2;
 (* add	v16.8h, v16.8h, v5.8h                       #! PC = 0x5555552278 *)
-adds %dc %v16 %v16 %v5;
+add %v16 %v16 %v5;
 (* str	h16, [x1, #160]                             #! EA = L0x7fffffe640; PC = 0x555555227c *)
 mov L0x7fffffe640 %v16[0];
 (* ldr	q3, [x0, #16]                               #! EA = L0x7fffffe1c0; Value = 0x0000000000000000; PC = 0x5555552280 *)
@@ -285,21 +279,21 @@ mov %v5 [L0x7fffffe2c0,L0x7fffffe2c2,L0x7fffffe2c4,L0x7fffffe2c6,L0x7fffffe2c8,L
 (* ldr	q23, [x0, #304]                             #! EA = L0x7fffffe2e0; Value = 0x0000000000000000; PC = 0x55555522a4 *)
 mov %v23 [L0x7fffffe2e0,L0x7fffffe2e2,L0x7fffffe2e4,L0x7fffffe2e6,L0x7fffffe2e8,L0x7fffffe2ea,L0x7fffffe2ec,L0x7fffffe2ee];
 (* add	v4.8h, v3.8h, v24.8h                        #! PC = 0x55555522a8 *)
-adds %dc %v4 %v3 %v24;
+add %v4 %v3 %v24;
 (* add	v6.8h, v2.8h, v23.8h                        #! PC = 0x55555522ac *)
-adds %dc %v6 %v2 %v23;
+add %v6 %v2 %v23;
 (* add	v7.8h, v22.8h, v5.8h                        #! PC = 0x55555522b0 *)
-adds %dc %v7 %v22 %v5;
+add %v7 %v22 %v5;
 (* add	v29.8h, v18.8h, v21.8h                      #! PC = 0x55555522b4 *)
-adds %dc %v29 %v18 %v21;
+add %v29 %v18 %v21;
 (* add	v28.8h, v20.8h, v19.8h                      #! PC = 0x55555522b8 *)
-adds %dc %v28 %v20 %v19;
+add %v28 %v20 %v19;
 (* add	v17.8h, v6.8h, v28.8h                       #! PC = 0x55555522bc *)
-adds %dc %v17 %v6 %v28;
+add %v17 %v6 %v28;
 (* add	v30.8h, v7.8h, v29.8h                       #! PC = 0x55555522c0 *)
-adds %dc %v30 %v7 %v29;
+add %v30 %v7 %v29;
 (* add	v27.8h, v17.8h, v30.8h                      #! PC = 0x55555522c4 *)
-adds %dc %v27 %v17 %v30;
+add %v27 %v17 %v30;
 (* sqrdmulh	v26.8h, v27.8h, v1.h[1]                #! PC = 0x55555522c8 *)
 broadcast %mul 8 [%v1[1]]; smulj %LO %v27 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -311,31 +305,27 @@ ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
 vpc %LO01@sint16[8] %LO00; vpc %LO11@sint16[8] %LO1;
 add %v25 %LO11 %LO01;
 (* shl	v4.8h, v4.8h, #2                            #! PC = 0x55555522d0 *)
-vpc %long@sint32[8] %v4;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
-cast %v4@sint16[8] %long;
+shl %v4 %v4 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
 (* add	v31.8h, v26.8h, v25.8h                      #! PC = 0x55555522d4 *)
-adds %dc %v31 %v26 %v25;
+add %v31 %v26 %v25;
 (* shl	v16.8h, v27.8h, #2                          #! PC = 0x55555522d8 *)
-vpc %long@sint32[8] %v27;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
-cast %v16@sint16[8] %long;
+shl %v16 %v27 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
 (* add	v16.8h, v16.8h, v4.8h                       #! PC = 0x55555522dc *)
-adds %dc %v16 %v16 %v4;
+add %v16 %v16 %v4;
 (* mls	v16.8h, v31.8h, v1.h[0]                     #! PC = 0x55555522e0 *)
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v31 %mul;
 cast %mls@int16[8] %mls; subc %dc %v16 %v16 %mls;
 (* sshr	v26.8h, v26.8h, #2                         #! PC = 0x55555522e4 *)
 split %v26 %dc %v26 2;
 (* sub	v25.8h, v25.8h, v26.8h                      #! PC = 0x55555522e8 *)
-subc %dc %v25 %v25 %v26;
+sub %v25 %v25 %v26;
 (* sub	v4.8h, v4.8h, v27.8h                        #! PC = 0x55555522ec *)
-subc %dc %v4 %v4 %v27;
+sub %v4 %v4 %v27;
 (* mls	v4.8h, v25.8h, v1.h[0]                      #! PC = 0x55555522f0 *)
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v25 %mul;
 cast %mls@int16[8] %mls; subc %dc %v4 %v4 %mls;
 (* sub	v17.8h, v17.8h, v30.8h                      #! PC = 0x55555522f4 *)
-subc %dc %v17 %v17 %v30;
+sub %v17 %v17 %v30;
 (* sqrdmulh	v25.8h, v17.8h, v0.h[4]                #! PC = 0x55555522f8 *)
 broadcast %mul 8 [%v0[4]]; smulj %LO %v17 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -347,11 +337,11 @@ broadcast %mul 8 [%v0[0]]; mull %dc %v17 %v17 %mul; cast %v17@int16[8] %v17;
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v25 %mul;
 cast %mls@int16[8] %mls; subc %dc %v17 %v17 %mls;
 (* sub	v7.8h, v7.8h, v29.8h                        #! PC = 0x5555552304 *)
-subc %dc %v7 %v7 %v29;
+sub %v7 %v7 %v29;
 (* sub	v6.8h, v6.8h, v28.8h                        #! PC = 0x5555552308 *)
-subc %dc %v6 %v6 %v28;
+sub %v6 %v6 %v28;
 (* add	v6.8h, v6.8h, v7.8h                         #! PC = 0x555555230c *)
-adds %dc %v6 %v6 %v7;
+add %v6 %v6 %v7;
 (* sqrdmulh	v25.8h, v6.8h, v0.h[5]                 #! PC = 0x5555552310 *)
 broadcast %mul 8 [%v0[5]]; smulj %LO %v6 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -373,27 +363,27 @@ broadcast %mul 8 [%v0[2]]; mull %dc %v7 %v7 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v25 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* add	v4.8h, v4.8h, v17.8h                        #! PC = 0x5555552328 *)
-adds %dc %v4 %v4 %v17;
+add %v4 %v4 %v17;
 (* sub	v6.8h, v6.8h, v7.8h                         #! PC = 0x555555232c *)
-subc %dc %v6 %v6 %v7;
+sub %v6 %v6 %v7;
 (* sub	v7.8h, v4.8h, v6.8h                         #! PC = 0x5555552330 *)
-subc %dc %v7 %v4 %v6;
+sub %v7 %v4 %v6;
 (* sub	v4.8h, v3.8h, v24.8h                        #! PC = 0x5555552334 *)
-subc %dc %v4 %v3 %v24;
+sub %v4 %v3 %v24;
 (* sub	v2.8h, v2.8h, v23.8h                        #! PC = 0x5555552338 *)
-subc %dc %v2 %v2 %v23;
+sub %v2 %v2 %v23;
 (* sub	v5.8h, v5.8h, v22.8h                        #! PC = 0x555555233c *)
-subc %dc %v5 %v5 %v22;
+sub %v5 %v5 %v22;
 (* sub	v18.8h, v18.8h, v21.8h                      #! PC = 0x5555552340 *)
-subc %dc %v18 %v18 %v21;
+sub %v18 %v18 %v21;
 (* sub	v19.8h, v19.8h, v20.8h                      #! PC = 0x5555552344 *)
-subc %dc %v19 %v19 %v20;
+sub %v19 %v19 %v20;
 (* add	v6.8h, v2.8h, v19.8h                        #! PC = 0x5555552348 *)
-adds %dc %v6 %v2 %v19;
+add %v6 %v2 %v19;
 (* add	v21.8h, v5.8h, v18.8h                       #! PC = 0x555555234c *)
-adds %dc %v21 %v5 %v18;
+add %v21 %v5 %v18;
 (* add	v20.8h, v6.8h, v21.8h                       #! PC = 0x5555552350 *)
-adds %dc %v20 %v6 %v21;
+add %v20 %v6 %v21;
 (* sqrdmulh	v17.8h, v4.8h, v1.h[1]                 #! PC = 0x5555552354 *)
 broadcast %mul 8 [%v1[1]]; smulj %LO %v4 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -404,20 +394,18 @@ split %v3 %dc %v20 12;
 (* cmlt	v22.8h, v20.8h, #0                         #! PC = 0x555555235c *)
 split %v22 %dc %v20 15;
 (* sub	v3.8h, v3.8h, v22.8h                        #! PC = 0x5555552360 *)
-subc %dc %v3 %v3 %v22;
+sub %v3 %v3 %v22;
 (* sub	v17.8h, v17.8h, v3.8h                       #! PC = 0x5555552364 *)
-subc %dc %v17 %v17 %v3;
+sub %v17 %v17 %v3;
 (* shl	v3.8h, v4.8h, #2                            #! PC = 0x5555552368 *)
-vpc %long@sint32[8] %v4;
-shl %long %long [(2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32, (2)@int32];
-cast %v3@sint16[8] %long;
+shl %v3 %v4 [(2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16, (2)@int16];
 (* sub	v3.8h, v3.8h, v20.8h                        #! PC = 0x555555236c *)
-subc %dc %v3 %v3 %v20;
+sub %v3 %v3 %v20;
 (* mls	v3.8h, v17.8h, v1.h[0]                      #! PC = 0x5555552370 *)
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v17 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* sub	v6.8h, v6.8h, v21.8h                        #! PC = 0x5555552374 *)
-subc %dc %v6 %v6 %v21;
+sub %v6 %v6 %v21;
 (* sqrdmulh	v4.8h, v6.8h, v0.h[4]                  #! PC = 0x5555552378 *)
 broadcast %mul 8 [%v0[4]]; smulj %LO %v6 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -429,15 +417,15 @@ broadcast %mul 8 [%v0[0]]; mull %dc %v6 %v6 %mul; cast %v6@int16[8] %v6;
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v4 %mul;
 cast %mls@int16[8] %mls; subc %dc %v6 %v6 %mls;
 (* sub	v17.8h, v3.8h, v6.8h                        #! PC = 0x5555552384 *)
-subc %dc %v17 %v3 %v6;
+sub %v17 %v3 %v6;
 (* sub	v2.8h, v2.8h, v19.8h                        #! PC = 0x5555552388 *)
-subc %dc %v2 %v2 %v19;
+sub %v2 %v2 %v19;
 (* sub	v4.8h, v5.8h, v18.8h                        #! PC = 0x555555238c *)
-subc %dc %v4 %v5 %v18;
+sub %v4 %v5 %v18;
 (* add	v5.8h, v2.8h, v4.8h                         #! PC = 0x5555552390 *)
-adds %dc %v5 %v2 %v4;
+add %v5 %v2 %v4;
 (* sub	v2.8h, v4.8h, v2.8h                         #! PC = 0x5555552394 *)
-subc %dc %v2 %v4 %v2;
+sub %v2 %v4 %v2;
 (* sqrdmulh	v18.8h, v5.8h, v0.h[5]                 #! PC = 0x5555552398 *)
 broadcast %mul 8 [%v0[5]]; smulj %LO %v5 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -469,17 +457,17 @@ broadcast %mul 8 [%v0[3]]; mull %dc %v0 %v2 %mul; cast %v0@int16[8] %v0;
 broadcast %mul 8 [%v1[0]]; mull %dc %mls %v18 %mul;
 cast %mls@int16[8] %mls; subc %dc %v0 %v0 %mls;
 (* sub	v0.8h, v0.8h, v4.8h                         #! PC = 0x55555523bc *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* add	v3.8h, v3.8h, v6.8h                         #! PC = 0x55555523c0 *)
-adds %dc %v3 %v3 %v6;
+add %v3 %v3 %v6;
 (* sub	v5.8h, v5.8h, v4.8h                         #! PC = 0x55555523c4 *)
-subc %dc %v5 %v5 %v4;
+sub %v5 %v5 %v4;
 (* add	v3.8h, v3.8h, v5.8h                         #! PC = 0x55555523c8 *)
-adds %dc %v3 %v3 %v5;
+add %v3 %v3 %v5;
 (* add	v18.8h, v17.8h, v0.8h                       #! PC = 0x55555523cc *)
-adds %dc %v18 %v17 %v0;
+add %v18 %v17 %v0;
 (* sub	v0.8h, v17.8h, v0.8h                        #! PC = 0x55555523d0 *)
-subc %dc %v0 %v17 %v0;
+sub %v0 %v17 %v0;
 (* ldr	q6, [x1, #2896]                             #! EA = L0x7ffffff0f0; Value = 0x0000000000000000; PC = 0x55555523d4 *)
 mov %v6 [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe];
 (* ldr	q5, [x1, #2928]                             #! EA = L0x7ffffff110; Value = 0x0000000000000000; PC = 0x55555523d8 *)
@@ -501,26 +489,27 @@ mov [L0x7fffffe610,L0x7fffffe612,L0x7fffffe614,L0x7fffffe616,L0x7fffffe618,L0x7f
 (* str	q0, [x1, #144]                              #! EA = L0x7fffffe630; PC = 0x55555523f8 *)
 mov [L0x7fffffe630,L0x7fffffe632,L0x7fffffe634,L0x7fffffe636,L0x7fffffe638,L0x7fffffe63a,L0x7fffffe63c,L0x7fffffe63e] %v0;
 (* sub	v3.8h, v6.8h, v3.8h                         #! PC = 0x55555523fc *)
-subc %dc %v3 %v6 %v3;
+sub %v3 %v6 %v3;
 (* str	q3, [x1, #2896]                             #! EA = L0x7ffffff0f0; PC = 0x5555552400 *)
 mov [L0x7ffffff0f0,L0x7ffffff0f2,L0x7ffffff0f4,L0x7ffffff0f6,L0x7ffffff0f8,L0x7ffffff0fa,L0x7ffffff0fc,L0x7ffffff0fe] %v3;
 (* sub	v3.8h, v5.8h, v7.8h                         #! PC = 0x5555552404 *)
-subc %dc %v3 %v5 %v7;
+sub %v3 %v5 %v7;
 (* str	q3, [x1, #2928]                             #! EA = L0x7ffffff110; PC = 0x5555552408 *)
 mov [L0x7ffffff110,L0x7ffffff112,L0x7ffffff114,L0x7ffffff116,L0x7ffffff118,L0x7ffffff11a,L0x7ffffff11c,L0x7ffffff11e] %v3;
 (* sub	v3.8h, v4.8h, v18.8h                        #! PC = 0x555555240c *)
-subc %dc %v3 %v4 %v18;
+sub %v3 %v4 %v18;
 (* str	q3, [x1, #2960]                             #! EA = L0x7ffffff130; PC = 0x5555552410 *)
 mov [L0x7ffffff130,L0x7ffffff132,L0x7ffffff134,L0x7ffffff136,L0x7ffffff138,L0x7ffffff13a,L0x7ffffff13c,L0x7ffffff13e] %v3;
 (* sub	v2.8h, v2.8h, v16.8h                        #! PC = 0x5555552414 *)
-subc %dc %v2 %v2 %v16;
+sub %v2 %v2 %v16;
 (* str	q2, [x1, #2992]                             #! EA = L0x7ffffff150; PC = 0x5555552418 *)
 mov [L0x7ffffff150,L0x7ffffff152,L0x7ffffff154,L0x7ffffff156,L0x7ffffff158,L0x7ffffff15a,L0x7ffffff15c,L0x7ffffff15e] %v2;
 (* sub	v0.8h, v1.8h, v0.8h                         #! PC = 0x555555241c *)
-subc %dc %v0 %v1 %v0;
+sub %v0 %v1 %v0;
 (* str	q0, [x1, #3024]                             #! EA = L0x7ffffff170; PC = 0x5555552420 *)
 mov [L0x7ffffff170,L0x7ffffff172,L0x7ffffff174,L0x7ffffff176,L0x7ffffff178,L0x7ffffff17a,L0x7ffffff17c,L0x7ffffff17e] %v0;
 (* #! <- SP = 0x7fffffe170 *)
 #! 0x7fffffe170 = 0x7fffffe170;
 (* #ret                                            #! PC = 0x5555552424 *)
 #ret                                            #! 0x5555552424 = 0x5555552424;
+

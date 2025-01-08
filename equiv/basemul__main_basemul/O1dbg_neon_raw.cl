@@ -39,13 +39,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -67,7 +67,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -253,13 +253,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -281,7 +281,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -467,13 +467,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -495,7 +495,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -681,13 +681,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -709,7 +709,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -895,13 +895,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -923,7 +923,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -1109,13 +1109,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -1137,7 +1137,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -1323,13 +1323,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -1351,7 +1351,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -1537,13 +1537,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -1565,7 +1565,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -1751,13 +1751,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -1779,7 +1779,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -1971,7 +1971,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -2019,9 +2019,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -2073,7 +2073,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -2201,7 +2201,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -2249,9 +2249,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -2303,7 +2303,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -2431,7 +2431,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -2479,9 +2479,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -2533,7 +2533,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -2661,7 +2661,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -2709,9 +2709,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -2763,7 +2763,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -2891,7 +2891,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -2939,9 +2939,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -2993,7 +2993,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -3121,7 +3121,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -3169,9 +3169,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -3223,7 +3223,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -3351,7 +3351,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -3399,9 +3399,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -3453,7 +3453,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -3581,7 +3581,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -3629,9 +3629,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -3683,7 +3683,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -3811,7 +3811,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -3859,9 +3859,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -3913,7 +3913,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -4043,13 +4043,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -4071,7 +4071,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -4257,13 +4257,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -4285,7 +4285,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -4471,13 +4471,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -4499,7 +4499,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -4685,13 +4685,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -4713,7 +4713,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -4899,13 +4899,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -4927,7 +4927,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -5113,13 +5113,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -5141,7 +5141,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -5327,13 +5327,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -5355,7 +5355,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -5541,13 +5541,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -5569,7 +5569,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -5755,13 +5755,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -5783,7 +5783,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -5975,7 +5975,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -6023,9 +6023,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -6077,7 +6077,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -6205,7 +6205,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -6253,9 +6253,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -6307,7 +6307,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -6435,7 +6435,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -6483,9 +6483,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -6537,7 +6537,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -6665,7 +6665,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -6713,9 +6713,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -6767,7 +6767,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -6895,7 +6895,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -6943,9 +6943,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -6997,7 +6997,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -7125,7 +7125,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -7173,9 +7173,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -7227,7 +7227,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -7355,7 +7355,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -7403,9 +7403,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -7457,7 +7457,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -7585,7 +7585,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -7633,9 +7633,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -7687,7 +7687,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -7815,7 +7815,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -7863,9 +7863,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -7917,7 +7917,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -8047,13 +8047,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -8075,7 +8075,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -8261,13 +8261,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -8289,7 +8289,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -8475,13 +8475,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -8503,7 +8503,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -8689,13 +8689,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -8717,7 +8717,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -8903,13 +8903,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -8931,7 +8931,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -9117,13 +9117,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -9145,7 +9145,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -9331,13 +9331,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -9359,7 +9359,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -9545,13 +9545,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -9573,7 +9573,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -9759,13 +9759,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -9787,7 +9787,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -9979,7 +9979,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -10027,9 +10027,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -10081,7 +10081,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -10209,7 +10209,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -10257,9 +10257,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -10311,7 +10311,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -10439,7 +10439,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -10487,9 +10487,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -10541,7 +10541,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -10669,7 +10669,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -10717,9 +10717,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -10771,7 +10771,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -10899,7 +10899,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -10947,9 +10947,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -11001,7 +11001,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -11129,7 +11129,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -11177,9 +11177,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -11231,7 +11231,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -11359,7 +11359,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -11407,9 +11407,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -11461,7 +11461,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -11589,7 +11589,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -11637,9 +11637,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -11691,7 +11691,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -11819,7 +11819,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -11867,9 +11867,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -11921,7 +11921,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -12051,13 +12051,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -12079,7 +12079,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -12265,13 +12265,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -12293,7 +12293,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -12479,13 +12479,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -12507,7 +12507,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -12693,13 +12693,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -12721,7 +12721,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -12907,13 +12907,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -12935,7 +12935,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -13121,13 +13121,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -13149,7 +13149,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -13335,13 +13335,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -13363,7 +13363,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -13549,13 +13549,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -13577,7 +13577,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -13763,13 +13763,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -13791,7 +13791,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -13983,7 +13983,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -14031,9 +14031,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -14085,7 +14085,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -14213,7 +14213,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -14261,9 +14261,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -14315,7 +14315,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -14443,7 +14443,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -14491,9 +14491,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -14545,7 +14545,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -14673,7 +14673,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -14721,9 +14721,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -14775,7 +14775,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -14903,7 +14903,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -14951,9 +14951,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -15005,7 +15005,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -15133,7 +15133,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -15181,9 +15181,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -15235,7 +15235,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -15363,7 +15363,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -15411,9 +15411,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -15465,7 +15465,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -15593,7 +15593,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -15641,9 +15641,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -15695,7 +15695,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -15823,7 +15823,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -15871,9 +15871,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -15925,7 +15925,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -16055,13 +16055,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -16083,7 +16083,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -16269,13 +16269,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -16297,7 +16297,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -16483,13 +16483,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -16511,7 +16511,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -16697,13 +16697,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -16725,7 +16725,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -16911,13 +16911,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -16939,7 +16939,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -17125,13 +17125,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -17153,7 +17153,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -17339,13 +17339,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -17367,7 +17367,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -17553,13 +17553,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -17581,7 +17581,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -17767,13 +17767,13 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v18 %v18 %mul; cast %v18@int16[8] %v18;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v18 %v18 %mls;
 (* add	v2.8h, v4.8h, v1.8h                         #! PC = 0x55555519b4 *)
-adds %dc %v2 %v4 %v1;
+add %v2 %v4 %v1;
 (* sub	v1.8h, v4.8h, v1.8h                         #! PC = 0x55555519b8 *)
-subc %dc %v1 %v4 %v1;
+sub %v1 %v4 %v1;
 (* add	v8.8h, v17.8h, v18.8h                       #! PC = 0x55555519bc *)
-adds %dc %v8 %v17 %v18;
+add %v8 %v17 %v18;
 (* sub	v18.8h, v17.8h, v18.8h                      #! PC = 0x55555519c0 *)
-subc %dc %v18 %v17 %v18;
+sub %v18 %v17 %v18;
 (* sqrdmulh	v0.8h, v8.8h, v6.h[6]                  #! PC = 0x55555519c4 *)
 broadcast %mul 8 [%v6[6]]; smulj %LO %v8 %mul;
 ssplit %LO1 %LO0 %LO 15; usplit %LO00 %dc %LO0 14;
@@ -17795,7 +17795,7 @@ broadcast %mul 8 [%v6[7]]; mull %dc %v7 %v18 %mul; cast %v7@int16[8] %v7;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v7 %v7 %mls;
 (* neg	v7.8h, v7.8h                                #! PC = 0x55555519dc *)
-broadcast %zero 8 [0@sint16]; subs %dc %v7 %zero %v7;
+broadcast %zero 8 [0@sint16]; sub %v7 %zero %v7;
 (* smull	v0.4s, v8.4h, v2.h[0]                     #! PC = 0x55555519e0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v8[0],%v8[1],%v8[2],%v8[3]] %mull;
 (* smull2	v4.4s, v8.8h, v2.h[0]                    #! PC = 0x55555519e4 *)
@@ -17987,7 +17987,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -18035,9 +18035,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -18089,7 +18089,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -18217,7 +18217,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -18265,9 +18265,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -18319,7 +18319,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -18447,7 +18447,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -18495,9 +18495,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -18549,7 +18549,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -18677,7 +18677,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -18725,9 +18725,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -18779,7 +18779,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -18907,7 +18907,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -18955,9 +18955,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -19009,7 +19009,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -19137,7 +19137,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -19185,9 +19185,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -19239,7 +19239,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -19367,7 +19367,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -19415,9 +19415,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -19469,7 +19469,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -19597,7 +19597,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -19645,9 +19645,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -19699,7 +19699,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -19827,7 +19827,7 @@ broadcast %mul 8 [%v8[7]]; mull %dc %v3 %v18 %mul; cast %v3@int16[8] %v3;
 broadcast %mul 8 [%v5[0]]; mull %dc %mls %v0 %mul;
 cast %mls@int16[8] %mls; subc %dc %v3 %v3 %mls;
 (* add	v6.8h, v4.8h, v1.8h                         #! PC = 0x5555551818 *)
-adds %dc %v6 %v4 %v1;
+add %v6 %v4 %v1;
 (* smull	v0.4s, v17.4h, v6.h[0]                    #! PC = 0x555555181c *)
 broadcast %mull 4 [%v6[0]]; smulj %v0 [%v17[0],%v17[1],%v17[2],%v17[3]] %mull;
 (* smull2	v2.4s, v17.8h, v6.h[0]                   #! PC = 0x5555551820 *)
@@ -19875,9 +19875,9 @@ broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[0],%v16[1],%v16[2],%v16[3]] %mull;
 (* smlal2	v2.4s, v16.8h, v6.h[7]                   #! PC = 0x5555551874 *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v16[4],%v16[5],%v16[6],%v16[7]] %mull; adds %dc %v2 %v2 %mlal;
 (* sub	v6.8h, v7.8h, v3.8h                         #! PC = 0x5555551878 *)
-subc %dc %v6 %v7 %v3;
+sub %v6 %v7 %v3;
 (* sub	v3.8h, v3.8h, v17.8h                        #! PC = 0x555555187c *)
-subc %dc %v3 %v3 %v17;
+sub %v3 %v3 %v17;
 (* mov	v16.16b, v0.16b                             #! PC = 0x5555551880 *)
 mov %v16 %v0;
 (* smlal	v16.4s, v3.4h, v1.h[0]                    #! PC = 0x5555551884 *)
@@ -19929,7 +19929,7 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[0],%v6[1],%v6[2],%v6[3]] %mull; add
 (* smlal2	v7.4s, v6.8h, v1.h[7]                    #! PC = 0x55555518e0 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v6[4],%v6[5],%v6[6],%v6[7]] %mull; adds %dc %v7 %v7 %mlal;
 (* sub	v1.8h, v17.8h, v18.8h                       #! PC = 0x55555518e4 *)
-subc %dc %v1 %v17 %v18;
+sub %v1 %v17 %v18;
 (* smlsl	v0.4s, v1.4h, v4.h[0]                     #! PC = 0x55555518e8 *)
 broadcast %mull 4 [%v4[0]]; smulj %mlsl [%v1[0],%v1[1],%v1[2],%v1[3]] %mull; subc %dc %v0 %v0 %mlsl;
 (* smlsl2	v2.4s, v1.8h, v4.h[0]                    #! PC = 0x55555518ec *)
@@ -20028,3 +20028,4 @@ mov [L0x7fffffcee0,L0x7fffffcee2,L0x7fffffcee4,L0x7fffffcee6,L0x7fffffcee8,L0x7f
 #! 0x7fffffc380 = 0x7fffffc380;
 (* #ret                                            #! PC = 0x5555551b1c *)
 #ret                                            #! 0x5555551b1c = 0x5555551b1c;
+
