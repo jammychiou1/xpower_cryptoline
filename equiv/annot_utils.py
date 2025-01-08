@@ -73,6 +73,9 @@ class ConjunctionLines:
 def add_indent(width, lines):
     return ['' if line == '' else ' ' * width + line for line in lines]
 
+def add_to_last_line(lines, suffix):
+    return lines[:-1] + [lines[-1] + suffix]
+
 
 SINT16 = IntType(True, 16)
 
@@ -123,19 +126,19 @@ def bound_array(bound, sint16_array):
 
     return ConjunctionLines(algebra_predicate_conjuncts), ConjunctionLines(range_predicate_conjuncts)
 
-def bound_vecreg(bounds, vecregs, vec_len=8):
+def bound_vecreg(bounds, vecregs, vec_len=8, int_type=SINT16):
     algebra_predicate_conjuncts = []
     range_predicate_conjuncts = []
 
     for vecreg, bound in zip(vecregs, bounds):
         algebra_upperbound_vec = make_vector([bound for _ in range(vec_len)])
-        range_upperbound_vec = make_vector([RangeExpConstant(bound, SINT16) for _ in range(vec_len)])
+        range_upperbound_vec = make_vector([RangeExpConstant(bound, int_type) for _ in range(vec_len)])
 
         algebra_predicate_conjuncts.append([f'{vecreg} <= {algebra_upperbound_vec}'])
         range_predicate_conjuncts.append([f'{vecreg} <=s {range_upperbound_vec}'])
 
         algebra_lowerbound_vec = make_vector([-bound for _ in range(vec_len)])
-        range_lowerbound_vec = make_vector([RangeExpConstant(-bound, SINT16) for _ in range(vec_len)])
+        range_lowerbound_vec = make_vector([RangeExpConstant(-bound, int_type) for _ in range(vec_len)])
 
         algebra_predicate_conjuncts.append([f'{vecreg} >= {algebra_lowerbound_vec}'])
         range_predicate_conjuncts.append([f'{vecreg} >=s {range_lowerbound_vec}'])

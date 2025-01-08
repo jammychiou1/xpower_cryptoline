@@ -138,6 +138,7 @@ def setup_const(const_base):
 
 twist_his_const_table = const_table[2 : 20]
 main_basemul_const_table = const_table[23 : 113]
+low_basemul_const_table = const_table[113 : 123]
 
 
 Q = 4591

@@ -11,9 +11,6 @@ def get_arr_row(arr, i, j, k0):
 def get_arr_low_row(arr, i, k0):
     return arr[i * 2 + k0]
 
-def add_to_last_line(lines, suffix):
-    return lines[:-1] + [lines[-1] + suffix]
-
 def annot_function_defs(annotator):
     output_lines = [
         *main_lay1__fwd_extract(),
