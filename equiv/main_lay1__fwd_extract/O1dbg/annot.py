@@ -1272,8 +1272,8 @@ def annot_jgt2_j_iter(annotator, j):
 
 def annot(annotator):
     poly = [[Variable(f'poly{i + j}', SINT16) for j in range(8)] for i in range(0, 768, 8)]
-    poly_mem = memory_array_like(0x5555570c38, poly)
     arr = [[Variable(f'arr{i}{k0}{j}{k}', SINT16) for k in range(8)] for i in range(10) for k0 in range(2) for j in range(9)]
+    poly_mem = memory_array_like(0x5555570c38, poly)
     arr_mem = memory_array_like(0x7fffffda30, arr)
     annotator.shared_state.poly = poly
     annotator.shared_state.poly_mem = poly_mem
@@ -1361,9 +1361,48 @@ def annot(annotator):
         '',
         *annotator.lines[j_loop_end:],
         '',
-        annotator.generate_cut(),
-        '    true && true;',
+        '# output',
         '',
+        *mov_array(arr, arr_mem),
+        '',
+    ]
+
+    arr_spec = []
+    for j in range(9):
+        for k0 in range(2):
+            fa_idxs = [(81 * i + 10 * j) % 90 * 2 + k0 for i in range(10)]
+            fa_vecs = [poly[fa_idx] if fa_idx < 96 else None for fa_idx in fa_idxs]
+
+            lines = []
+            for i in range(10):
+                lines_i = []
+                lines_i.append(f'{make_vector(arr[(i * 2 + k0) * 9 + j])} = {make_vector([4] * 8)} * (')
+                for ii in range(10):
+                    if fa_vecs[ii] is not None:
+                        lines_i.append(f'    {make_vector([center_pow(W10, i * ii)] * 8)} * {make_vector(fa_vecs[ii])} +')
+                lines_i[-1] = lines_i[-1][:-2]
+                lines_i.append(f') ( mod {make_vector([4591] * 8)}) /\\')
+                lines_i.append('')
+                lines += lines_i
+
+            arr_spec += lines
+
+    algebra_conj_lines, range_conj_lines = bound_array(3875, arr)
+    output_lines += [
+        '{',
+        *add_indent(4, [
+            *arr_spec,
+            'true',
+            '',
+            'prove with [all cuts]',
+        ]),
+        '  &&',
+        *add_indent(4, [
+            *range_conj_lines.format(),
+            '',
+            'prove with [all cuts]',
+        ]),
+        '}',
     ]
 
     return output_lines
