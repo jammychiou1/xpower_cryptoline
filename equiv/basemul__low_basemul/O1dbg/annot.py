@@ -838,8 +838,6 @@ def annot(annotator):
         lines_i.append('')
         arr_c_spec += lines_i
 
-    # FIXME: range for arr_c
-    # algebra_conj_lines, range_conj_lines = bound_array(4585, arr_c)
     algebra_conj_lines, range_conj_lines = bound_vecreg([val for row in range_table for val in row],
                                                         [make_vector(row) for row in arr_c])
     output_lines += [
