@@ -5,9 +5,61 @@ from annot_utils import *
 from consts import setup_const, const_base_O1dbg, main_basemul_const_table, center_pow, W9
 
 def annot_ntt9_2x(annotator, i, k0):
-    seg0_end = annotator.find_first_line('PC = 0x55555516d0')
+    output_lines = [
+        '',
+        '#### ntt9_2x',
+        '',
+    ]
 
-    seg0_template = '''\
+    adds_line = annotator.find_first_line('PC = 0x555555166c', offset=1)
+    annotator.lines[adds_line] = annotator.lines[adds_line].replace('add', 'adds %dc').replace(';', '; # PATCH HERE')
+    subc_line = annotator.find_first_line('PC = 0x5555551678', offset=1)
+    annotator.lines[subc_line] = annotator.lines[subc_line].replace('sub', 'subc %dc').replace(';', '; # PATCH HERE')
+    annotator.last_found_line = 0
+
+    patterns = ['PC = 0x555555163c', 'PC = 0x5555551678', 'PC = 0x5555551680', 'PC = 0x55555516a0', 'PC = 0x55555516c8']
+    equations = [f'''\
+[2, 2, 2, 2, 2, 2, 2, 2] * (%fa0_{i}{k0} + %fa3_{i}{k0} + %fa6_{i}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v4
+= %v17\
+''', f'''\
+[2, 2, 2, 2, 2, 2, 2, 2] * %fa0_{i}{k0} - %fa3_{i}{k0} - %fa6_{i}{k0}
++ [-621, -621, -621, -621, -621, -621, -621, -621] * (%fa3_{i}{k0} - %fa6_{i}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+= %v16\
+''', f'''\
+[2, 2, 2, 2, 2, 2, 2, 2] * %fa0_{i}{k0} - %fa3_{i}{k0} - %fa6_{i}{k0}
+- [-621, -621, -621, -621, -621, -621, -621, -621] * (%fa3_{i}{k0} - %fa6_{i}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v6
+= %v0\
+''', f'''\
+[-621, -621, -621, -621, -621, -621, -621, -621] * (%fa7_{i}{k0} - %fa4_{i}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+= %v4\
+''', f'''\
+[-621, -621, -621, -621, -621, -621, -621, -621] * (%fa2_{i}{k0} - %fa5_{i}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+= %v2\
+''']
+
+    last_seg_end = 0
+    for pattern, equation in zip(patterns, equations):
+        seg_end = annotator.find_first_line(pattern)
+        output_lines += [
+            *annotator.lines[last_seg_end : seg_end],
+            '',
+            *algebra_midcondition(equation.split('\n'), f'algebra solver isl, precondition, cuts[0, {annotator.shared_state.k0_iter_load_cut_id}]'),
+            '',
+        ]
+        last_seg_end = seg_end
+
+    seg0_end = annotator.find_first_line('PC = 0x55555516d0')
+    output_lines += [
+        *annotator.lines[last_seg_end : seg0_end],
+        '',
+    ]
+
+    cut_algebra_proposition = f'''\
 %v17 = [2, 2, 2, 2, 2, 2, 2, 2] * (
     %fa0_{i}{k0} +
     %fa3_{i}{k0} +
@@ -69,81 +121,207 @@ def annot_ntt9_2x(annotator, i, k0):
     [ 310,  310,  310,  310,  310,  310,  310,  310] * %fa2_{i}{k0} +
     [-311, -311, -311, -311, -311, -311, -311, -311] * %fa5_{i}{k0}
 )
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v17 <= [2295, 2295, 2295, 2295, 2295, 2295, 2295, 2295] /\\
-%v17 >= [-2295, -2295, -2295, -2295, -2295, -2295, -2295, -2295] /\\
-
-%v16 <= [3555, 3555, 3555, 3555, 3555, 3555, 3555, 3555] /\\
-%v16 >= [-3555, -3555, -3555, -3555, -3555, -3555, -3555, -3555] /\\
-
-%v0  <= [3555, 3555, 3555, 3555, 3555, 3555, 3555, 3555] /\\
-%v0  >= [-3555, -3555, -3555, -3555, -3555, -3555, -3555, -3555] /\\
-
-%v6  <= [11625, 11625, 11625, 11625, 11625, 11625, 11625, 11625] /\\
-%v6  >= [-11625, -11625, -11625, -11625, -11625, -11625, -11625, -11625] /\\
-
-%v3  <= [17730, 17730, 17730, 17730, 17730, 17730, 17730, 17730] /\\
-%v3  >= [-17730, -17730, -17730, -17730, -17730, -17730, -17730, -17730] /\\
-
-%v7  <= [17730, 17730, 17730, 17730, 17730, 17730, 17730, 17730] /\\
-%v7  >= [-17730, -17730, -17730, -17730, -17730, -17730, -17730, -17730] /\\
-
-%v19 <= [11625, 11625, 11625, 11625, 11625, 11625, 11625, 11625] /\\
-%v19 >= [-11625, -11625, -11625, -11625, -11625, -11625, -11625, -11625] /\\
-
-%v1  <= [17730, 17730, 17730, 17730, 17730, 17730, 17730, 17730] /\\
-%v1  >= [-17730, -17730, -17730, -17730, -17730, -17730, -17730, -17730] /\\
-
-%v2  <= [17730, 17730, 17730, 17730, 17730, 17730, 17730, 17730] /\\
-%v2  >= [-17730, -17730, -17730, -17730, -17730, -17730, -17730, -17730] /\\
-
-true
-prove with [precondition, cuts[0, {annotator.shared_state.k0_iter_load_cut_id}], algebra solver isl]
-&& true;\
+( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] )\
 '''
 
-    algebra_predicate_lines = []
-    for j in range(9):
-        terms = []
-        for jj in range(9):
-            coef = center_pow(W9, j * jj % 9)
-            terms.append(f'{make_vector([coef] * 8)} * %fa{jj}_{i}{k0}')
-            if jj < 8: terms[-1] += ' +'
+    algebra_conj_lines, range_conj_lines = bound_vecreg([2295, 3555, 3555, 11625, 17730, 17730, 11625, 17730, 17730],
+                                                        ['%v17', '%v16', '%v0', '%v6', '%v3', '%v7', '%v19', '%v1', '%v2'])
 
-        algebra_predicate_lines += [
-            f'{make_vector(memory_vec(0x7fffffc2f0 + 16 * j))} =',
-            '[2, 2, 2, 2, 2, 2, 2, 2] * (',
-            *add_indent(4, terms),
-            ')',
-            '( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\',
+    output_lines += [
+        'assert',
+        *add_indent(4, [
+            *algebra_conj_lines.format(),
             '',
-        ]
-
-    output_lines = [
+            f'prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.k0_iter_load_cut_id}]]',
+            '&& true;',
+        ]),
         '',
-        '#### ntt9_2x',
-        '',
-        *annotator.lines[:seg0_end],
-        '',
-        annotator.generate_cut(),
-        *add_indent(4, seg0_template.format(i=i, k0=k0, annotator=annotator).split('\n')),
-        '',
-        *annotator.lines[seg0_end:],
+        'assume',
+        *add_indent(4, algebra_conj_lines.format()),
+        '  &&',
+        *add_indent(4, range_conj_lines.format(';')),
         '',
         annotator.generate_cut(),
         *add_indent(4, [
-            *algebra_predicate_lines,
-            'true',
-            f'prove with [algebra solver isl, cuts[{annotator.shared_state.cut_id - 2}]]',
-            '&& true;',
+            *algebra_conj_lines.format(),
+            '',
+            'prove with [algebra solver isl],',
+            '',
+            *cut_algebra_proposition.split('\n'),
         ]),
+        '  &&',
+        *add_indent(4, [
+            *range_conj_lines.format(),
+            '',
+            f'prove with [precondition, cuts[0, {annotator.shared_state.k0_iter_load_cut_id}]];',
+        ]),
+        '',
+    ]
+
+
+    fb_ghost_spec = ConjunctionLines([
+        [f'%fb{j}_{i}{k0} = %v{reg_idx}' for j, reg_idx in enumerate([17, 16, 0, 6, 3, 7, 19, 1, 2])],
+    ])
+    fb_ghost_declaration = [
+        'ghost {} :'.format(', '.join([f'%fb{j}_{i}{k0}@sint16[8]' for j in range(9)])),
+        *add_indent(4, fb_ghost_spec.format()),
+        '  &&',
+        *add_indent(4, fb_ghost_spec.format(';'))
+    ]
+
+    output_lines += [
+        *fb_ghost_declaration,
+        '',
+    ]
+
+    patterns = ['PC = 0x55555516e4', 'PC = 0x5555551700']
+    equations = [f'''\
+%fb3_{i}{k0} + %fb6_{i}{k0}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+= %v4\
+''', f'''\
+[-621, -621, -621, -621, -621, -621, -621, -621] * (%fb3_{i}{k0} - %fb6_{i}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v4
+= %v6\
+''']
+
+    last_seg_end = seg0_end
+    for pattern, equation in zip(patterns, equations):
+        seg_end = annotator.find_first_line(pattern)
+        output_lines += [
+            *annotator.lines[last_seg_end : seg_end],
+            '',
+            *algebra_midcondition(equation.split('\n'), f'algebra solver isl, cuts[{annotator.shared_state.cut_id - 1}]'),
+            '',
+        ]
+        last_seg_end = seg_end
+
+
+    patterns = ['PC = 0x555555171c', 'PC = 0x5555551728']
+    equations = [f'''\
+[1891, 1891, 1891, 1891, 1891, 1891, 1891, 1891] * %fb7_{i}{k0}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v4
+= %v1\
+''', f'''\
+[-803, -803, -803, -803, -803, -803, -803, -803] * %fb5_{i}{k0}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v4
+= %v5\
+''']
+
+    for pattern, equation in zip(patterns, equations):
+        seg_end = annotator.find_first_line(pattern)
+        output_lines += [
+            *annotator.lines[last_seg_end : seg_end],
+            '',
+            *algebra_midcondition(equation.split('\n'), f'algebra solver isl, cuts[{annotator.shared_state.cut_id - 1}]'),
+            '',
+        ]
+        last_seg_end = seg_end
+
+    fc75_ghost_spec = ConjunctionLines([
+        [f'%fc{j}_{i}{k0} = %v{reg_idx}' for j, reg_idx in zip([7, 5], [1, 5])],
+    ])
+    fc75_ghost_declaration = [
+        'ghost {} :'.format(', '.join([f'%fc{j}_{i}{k0}@sint16[8]' for j in [7, 5]])),
+        *add_indent(4, fc75_ghost_spec.format()),
+        '  &&',
+        *add_indent(4, fc75_ghost_spec.format(';'))
+    ]
+    output_lines += [
+        *fc75_ghost_declaration,
+        '',
+    ]
+
+    patterns = ['PC = 0x555555173c', 'PC = 0x5555551758']
+    equations = [f'''\
+%fc7_{i}{k0} + %fc5_{i}{k0}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+= %v4\
+''', f'''\
+[-621, -621, -621, -621, -621, -621, -621, -621] * (%fc7_{i}{k0} - %fc5_{i}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v5
+= %v1\
+''']
+
+    for pattern, equation in zip(patterns, equations):
+        seg_end = annotator.find_first_line(pattern)
+        output_lines += [
+            *annotator.lines[last_seg_end : seg_end],
+            '',
+            *algebra_midcondition(equation.split('\n'), f'algebra solver isl, cuts[{annotator.shared_state.cut_id - 1}]'),
+            '',
+        ]
+        last_seg_end = seg_end
+
+
+    patterns = ['PC = 0x5555551774', 'PC = 0x5555551780']
+    equations = [f'''\
+[1891, 1891, 1891, 1891, 1891, 1891, 1891, 1891] * %fb4_{i}{k0}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v1
+= %v3\
+''', f'''\
+[-803, -803, -803, -803, -803, -803, -803, -803] * %fb8_{i}{k0}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v4
+= %v1\
+''']
+
+    for pattern, equation in zip(patterns, equations):
+        seg_end = annotator.find_first_line(pattern)
+        output_lines += [
+            *annotator.lines[last_seg_end : seg_end],
+            '',
+            *algebra_midcondition(equation.split('\n'), f'algebra solver isl, cuts[{annotator.shared_state.cut_id - 1}]'),
+            '',
+        ]
+        last_seg_end = seg_end
+
+    fc48_ghost_spec = ConjunctionLines([
+        [f'%fc{j}_{i}{k0} = %v{reg_idx}' for j, reg_idx in zip([4, 8], [3, 1])],
+    ])
+    fc48_ghost_declaration = [
+        'ghost {} :'.format(', '.join([f'%fc{j}_{i}{k0}@sint16[8]' for j in [4, 8]])),
+        *add_indent(4, fc48_ghost_spec.format()),
+        '  &&',
+        *add_indent(4, fc48_ghost_spec.format(';'))
+    ]
+    output_lines += [
+        *fc48_ghost_declaration,
+        '',
+    ]
+
+    patterns = ['PC = 0x5555551798', 'PC = 0x55555517b8']
+    equations = [f'''\
+%fc4_{i}{k0} + %fc8_{i}{k0}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v4
+= %v1\
+''', f'''\
+[-621, -621, -621, -621, -621, -621, -621, -621] * (%fc4_{i}{k0} - %fc8_{i}{k0})
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v2
+= %v1\
+''']
+
+    for pattern, equation in zip(patterns, equations):
+        seg_end = annotator.find_first_line(pattern)
+        output_lines += [
+            *annotator.lines[last_seg_end : seg_end],
+            '',
+            *algebra_midcondition(equation.split('\n'), f'algebra solver isl, cuts[{annotator.shared_state.cut_id - 1}]'),
+            '',
+        ]
+        last_seg_end = seg_end
+
+
+    output_lines += [
+        *annotator.lines[last_seg_end:],
         '',
     ]
 
     return output_lines
 
 def annot_k0_iter(annotator, i, k0):
+    arr_in = annotator.shared_state.arr_in
+    arr_mem = annotator.shared_state.arr_mem
+
     ntt9_2x_begin = annotator.find_first_line('PC = 0x5555551608', offset=-2)
     ntt9_2x_end = annotator.find_first_line('PC = 0x55555517cc', offset=2)
 
@@ -164,7 +342,7 @@ def annot_k0_iter(annotator, i, k0):
         *add_indent(4, fa_ghost_spec.format(';'))
     ]
     fa_ghost_property = ConjunctionLines([
-        [f'%fa{j}_{i}{k0} = {make_vector(annotator.shared_state.arr[j + 9 * (k0 + 2 * i)])}'] for j in range(9)
+        [f'%fa{j}_{i}{k0} = {make_vector(arr_in[j + 9 * (k0 + 2 * i)])}'] for j in range(9)
     ])
 
     annotator.shared_state.k0_iter_load_cut_id = annotator.shared_state.cut_id
@@ -195,6 +373,50 @@ def annot_k0_iter(annotator, i, k0):
         '',
     ]
 
+    arr_i_k0_spec = []
+    for j in range(9):
+        arr_i_k0_j_spec = []
+        arr_i_k0_j_spec.append(f'{make_vector(arr_mem[(i * 2 + k0) * 9 + j])} = {make_vector([2] * 8)} * (')
+        for jj in range(9):
+            arr_i_k0_j_spec.append(f'    {make_vector([center_pow(W9, j * jj)] * 8)} * {make_vector(arr_in[(i * 2 + k0) * 9 + jj])} +')
+        arr_i_k0_j_spec[-1] = arr_i_k0_j_spec[-1][:-2]
+        arr_i_k0_j_spec.append(f') ( mod {make_vector([4591] * 8)}) /\\')
+        arr_i_k0_j_spec.append('')
+        arr_i_k0_spec += arr_i_k0_j_spec
+
+    algebra_conj_lines, range_conj_lines = bound_array(8420, [arr_mem[(i * 2 + k0) * 9 + j] for j in range(9)])
+
+    output_lines += [
+        'assert',
+        *add_indent(4, [
+            *algebra_conj_lines.format(),
+            'prove with [algebra solver isl]',
+            '&& true;',
+        ]),
+        '',
+        'assume',
+        *add_indent(4, [
+            'true &&',
+            *range_conj_lines.format(';'),
+        ]),
+        '',
+    ]
+
+    output_lines += [
+        annotator.generate_cut(),
+        *add_indent(4, [
+            *arr_i_k0_spec,
+            'true',
+            f'prove with [cuts[0, {annotator.shared_state.k0_iter_load_cut_id}, {annotator.shared_state.cut_id - 2}]]',
+        ]),
+        '  &&',
+        *add_indent(4, [
+            *range_conj_lines.format(),
+            f'prove with [cuts[{annotator.shared_state.cut_id - 2}]];',
+        ]),
+        '',
+    ]
+
     return output_lines
 
 def annot_i_iter(annotator, i):
@@ -222,8 +444,13 @@ def annot_i_iter(annotator, i):
 
 def annot(annotator):
     arr = [[Variable(f'arr{i}{k0}{j}{k}', SINT16) for k in range(8)] for i in range(10) for k0 in range(2) for j in range(9)]
+    arr_in = [[Variable(f'arr{i}{k0}{j}{k}_in', SINT16) for k in range(8)] for i in range(10) for k0 in range(2) for j in range(9)]
+    arr_out = [[Variable(f'arr{i}{k0}{j}{k}_out', SINT16) for k in range(8)] for i in range(10) for k0 in range(2) for j in range(9)]
     arr_mem = memory_array_like(0x7fffffda30, arr)
     annotator.shared_state.arr = arr
+    annotator.shared_state.arr_in = arr_in
+    annotator.shared_state.arr_out = arr_out
+    annotator.shared_state.arr_mem = arr_mem
 
     i_loop_begin = annotator.find_first_line('PC = 0x55555512f0')
     i_loop_end = annotator.find_first_line('PC = 0x5555551450', offset=-2)
@@ -242,7 +469,7 @@ def annot(annotator):
         'proc main(',
         *add_indent(4, [
             '# input',
-            *Parameters(arr).format(','),
+            *Parameters(arr_in).format(','),
             '',
             '# ghost',
             'sint16 W9',
@@ -250,7 +477,7 @@ def annot(annotator):
         ') =',
     ]
 
-    algebra_predicate_conj_lines, range_predicate_conj_lines = bound_array(3875, arr)
+    algebra_predicate_conj_lines, range_predicate_conj_lines = bound_array(3875, arr_in)
     output_lines += [
         '{',
         *add_indent(4, [
@@ -270,11 +497,11 @@ def annot(annotator):
         '',
         *setup_const(const_base_O1dbg),
         '',
-        *mov_array(arr_mem, arr),
+        *mov_array(arr_mem, arr_in),
         '',
     ]
 
-    arr_mem_spec = equal_array(arr_mem, arr)
+    arr_mem_spec = equal_array(arr_mem, arr_in)
     output_lines += [
         '',
         '# prologue',
@@ -304,9 +531,42 @@ def annot(annotator):
         '',
         *annotator.lines[i_loop_end:],
         '',
-        annotator.generate_cut(),
-        '    true && true;',
+        '# output',
         '',
+        *mov_array(arr_out, arr_mem),
+        '',
+    ]
+
+    arr_out_spec = []
+    for i in range(10):
+        for k0 in range(2):
+            lines = []
+            for j in range(9):
+                lines_j = []
+                lines_j.append(f'{make_vector(arr_out[(i * 2 + k0) * 9 + j])} = {make_vector([2] * 8)} * (')
+                for jj in range(9):
+                    lines_j.append(f'    {make_vector([center_pow(W9, j * jj)] * 8)} * {make_vector(arr_in[(i * 2 + k0) * 9 + jj])} +')
+                lines_j[-1] = lines_j[-1][:-2]
+                lines_j.append(f') ( mod {make_vector([4591] * 8)}) /\\')
+                lines_j.append('')
+                lines += lines_j
+
+            arr_out_spec += lines
+
+    algebra_conj_lines, range_conj_lines = bound_array(8420, arr_out)
+    output_lines += [
+        '{',
+        *add_indent(4, [
+            *arr_out_spec,
+            'true',
+            'prove with [all cuts]',
+        ]),
+        '  &&',
+        *add_indent(4, [
+            *range_conj_lines.format(),
+            'prove with [all cuts]',
+        ]),
+        '}',
     ]
 
     return output_lines
