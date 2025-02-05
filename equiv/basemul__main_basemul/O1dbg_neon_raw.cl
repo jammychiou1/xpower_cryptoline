@@ -163,13 +163,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -377,13 +377,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -591,13 +591,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -805,13 +805,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -1019,13 +1019,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -1233,13 +1233,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -1447,13 +1447,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -1661,13 +1661,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -1875,13 +1875,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -4167,13 +4167,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -4381,13 +4381,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -4595,13 +4595,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -4809,13 +4809,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -5023,13 +5023,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -5237,13 +5237,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -5451,13 +5451,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -5665,13 +5665,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -5879,13 +5879,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -8171,13 +8171,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -8385,13 +8385,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -8599,13 +8599,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -8813,13 +8813,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -9027,13 +9027,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -9241,13 +9241,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -9455,13 +9455,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -9669,13 +9669,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -9883,13 +9883,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -12175,13 +12175,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -12389,13 +12389,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -12603,13 +12603,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -12817,13 +12817,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -13031,13 +13031,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -13245,13 +13245,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -13459,13 +13459,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -13673,13 +13673,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -13887,13 +13887,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -16179,13 +16179,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -16393,13 +16393,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -16607,13 +16607,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -16821,13 +16821,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -17035,13 +17035,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -17249,13 +17249,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -17463,13 +17463,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -17677,13 +17677,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];
@@ -17891,13 +17891,13 @@ broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; add
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
-adds %dc %v2 %v4 %v0;
+add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
-adds %dc %v7 %v3 %v8;
+add %v7 %v3 %v8;
 (* sub	v0.4s, v0.4s, v4.4s                         #! PC = 0x5555551aa4 *)
-subc %dc %v0 %v0 %v4;
+sub %v0 %v0 %v4;
 (* sub	v4.4s, v8.4s, v3.4s                         #! PC = 0x5555551aa8 *)
-subc %dc %v4 %v8 %v3;
+sub %v4 %v8 %v3;
 (* sqrdmulh	v1.4s, v2.4s, v6.s[0]                  #! PC = 0x5555551aac *)
 cast uint16 coef_l %v6[0]; join coef %v6[1] coef_l;
 smulj %LO %v2 [coef,coef,coef,coef];

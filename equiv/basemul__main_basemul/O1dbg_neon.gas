@@ -63,8 +63,8 @@
 #! smlsl v$1c.4s, v$2c.4h, v$3c.h\[$4c\] -> broadcast %mull 4 [%v$3c[$4c]]; smulj %mlsl [%v$2c[0],%v$2c[1],%v$2c[2],%v$2c[3]] %mull; subc %dc %v$1c %v$1c %mlsl
 #! smlsl2 v$1c.4s, v$2c.8h, v$3c.h\[$4c\] -> broadcast %mull 4 [%v$3c[$4c]]; smulj %mlsl [%v$2c[4],%v$2c[5],%v$2c[6],%v$2c[7]] %mull; subc %dc %v$1c %v$1c %mlsl
 
-#! add v$1c.4s, v$2c.4s, v$3c.4s -> adds %dc %v$1c %v$2c %v$3c
-#! sub v$1c.4s, v$2c.4s, v$3c.4s -> subc %dc %v$1c %v$2c %v$3c
+#! add v$1c.4s, v$2c.4s, v$3c.4s -> add %v$1c %v$2c %v$3c
+#! sub v$1c.4s, v$2c.4s, v$3c.4s -> sub %v$1c %v$2c %v$3c
 #! sqrdmulh v$1c.4s, v$2c.4s, v$3c.s\[0\] -> cast uint16 coef_l %v$3c[0]; join coef %v$3c[1] coef_l;\nsmulj %LO %v$2c [coef,coef,coef,coef];\nssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;\nvpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;\nadd %v$1c %LO11 %LO01
 #! sqrdmulh v$1c.4s, v$2c.4s, v$3c.s\[1\] -> cast uint16 coef_l %v$3c[2]; join coef %v$3c[3] coef_l;\nsmulj %LO %v$2c [coef,coef,coef,coef];\nssplit %LO1 %LO0 %LO 31; usplit %LO00 %dc %LO0 30;\nvpc %LO01@sint32[4] %LO00; vpc %LO11@sint32[4] %LO1;\nadd %v$1c %LO11 %LO01
 

@@ -707,7 +707,9 @@ cut (* 2 *)
     %gd1_0 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
 
     prove with [algebra solver isl, precondition, cuts[0, 1]]
-    && true;
+  &&
+    true
+    prove with [precondition, cuts[0, 1]];
 
 (* smull	v0.4s, v7.4h, v2.h[0]                     #! PC = 0x5555551db0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v7[0],%v7[1],%v7[2],%v7[3]] %mull;
@@ -1353,7 +1355,9 @@ cut (* 6 *)
     %fe1_1 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
 
     prove with [algebra solver isl, precondition, cuts[0, 5]]
-    && true;
+  &&
+    true
+    prove with [precondition, cuts[0, 5]];
 
 assert
     %v4 <= [4096, 4096, 4096, 4096, 4096, 4096, 4096, 4096] /\
@@ -2137,7 +2141,9 @@ cut (* 10 *)
     %gd1_2 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
 
     prove with [algebra solver isl, precondition, cuts[0, 9]]
-    && true;
+  &&
+    true
+    prove with [precondition, cuts[0, 9]];
 
 (* smull	v0.4s, v7.4h, v2.h[0]                     #! PC = 0x5555551db0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v7[0],%v7[1],%v7[2],%v7[3]] %mull;
@@ -2783,7 +2789,9 @@ cut (* 14 *)
     %fe1_3 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
 
     prove with [algebra solver isl, precondition, cuts[0, 13]]
-    && true;
+  &&
+    true
+    prove with [precondition, cuts[0, 13]];
 
 assert
     %v4 <= [4096, 4096, 4096, 4096, 4096, 4096, 4096, 4096] /\
@@ -3567,7 +3575,9 @@ cut (* 18 *)
     %gd1_4 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
 
     prove with [algebra solver isl, precondition, cuts[0, 17]]
-    && true;
+  &&
+    true
+    prove with [precondition, cuts[0, 17]];
 
 (* smull	v0.4s, v7.4h, v2.h[0]                     #! PC = 0x5555551db0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v7[0],%v7[1],%v7[2],%v7[3]] %mull;
@@ -4213,7 +4223,9 @@ cut (* 22 *)
     %fe1_5 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
 
     prove with [algebra solver isl, precondition, cuts[0, 21]]
-    && true;
+  &&
+    true
+    prove with [precondition, cuts[0, 21]];
 
 assert
     %v4 <= [4096, 4096, 4096, 4096, 4096, 4096, 4096, 4096] /\
@@ -4997,7 +5009,9 @@ cut (* 26 *)
     %gd1_6 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
 
     prove with [algebra solver isl, precondition, cuts[0, 25]]
-    && true;
+  &&
+    true
+    prove with [precondition, cuts[0, 25]];
 
 (* smull	v0.4s, v7.4h, v2.h[0]                     #! PC = 0x5555551db0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v7[0],%v7[1],%v7[2],%v7[3]] %mull;
@@ -5643,7 +5657,9 @@ cut (* 30 *)
     %fe1_7 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
 
     prove with [algebra solver isl, precondition, cuts[0, 29]]
-    && true;
+  &&
+    true
+    prove with [precondition, cuts[0, 29]];
 
 assert
     %v4 <= [4096, 4096, 4096, 4096, 4096, 4096, 4096, 4096] /\
@@ -6427,7 +6443,9 @@ cut (* 34 *)
     %gd1_8 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
 
     prove with [algebra solver isl, precondition, cuts[0, 33]]
-    && true;
+  &&
+    true
+    prove with [precondition, cuts[0, 33]];
 
 (* smull	v0.4s, v7.4h, v2.h[0]                     #! PC = 0x5555551db0 *)
 broadcast %mull 4 [%v2[0]]; smulj %v0 [%v7[0],%v7[1],%v7[2],%v7[3]] %mull;
@@ -7073,7 +7091,9 @@ cut (* 38 *)
     %fe1_9 >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000]
 
     prove with [algebra solver isl, precondition, cuts[0, 37]]
-    && true;
+  &&
+    true
+    prove with [precondition, cuts[0, 37]];
 
 assert
     %v4 <= [4096, 4096, 4096, 4096, 4096, 4096, 4096, 4096] /\

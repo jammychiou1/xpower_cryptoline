@@ -134,10 +134,15 @@ ghost %gd0_{i}@sint16[8], %gd1_{i}@sint16[8] :
             *algebra_conj_lines.format(),
             '',
             f'prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.i_iter_prologue_cut_id}]]',
-            '&& true;'
+        ]),
+        '  &&',
+        *add_indent(4, [
+            'true',
+            f'prove with [precondition, cuts[0, {annotator.shared_state.i_iter_prologue_cut_id}]];',
         ]),
         '',
     ]
+
 
     conv_begin = seg_end
     conv_end = annotator.find_first_line('PC = 0x5555551e68')
@@ -396,10 +401,15 @@ ghost %fe0_{i}@sint16[8], %fe1_{i}@sint16[8] :
             *algebra_conj_lines.format(),
             '',
             f'prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.i_iter_prologue_cut_id}]]',
-            '&& true;'
+        ]),
+        '  &&',
+        *add_indent(4, [
+            'true',
+            f'prove with [precondition, cuts[0, {annotator.shared_state.i_iter_prologue_cut_id}]];',
         ]),
         '',
     ]
+
 
     conv_begin = seg_end
     conv_end = annotator.find_first_line('PC = 0x5555551cd0')

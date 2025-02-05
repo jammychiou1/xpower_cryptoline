@@ -2,65 +2,131 @@ import sys
 sys.path.append('.')
 
 from annot_utils import *
-from consts import setup_const, const_base_O1dbg, main_basemul_const_table
+from consts import setup_const, const_base_O1dbg, main_basemul_const_table, center_pow, center_mod, W10, W9
 
 def combine_const(lo, hi):
     if lo < 0: lo += 65536
     return hi * 65536 + lo
 
 def annot_radix2(annotator, i, j):
-    seg0_end = annotator.find_first_line('PC = 0x55555519e0')
-    seg1_end = annotator.find_first_line('PC = 0x5555551a9c')
+    output_lines = [
+        '',
+        '#### radix2',
+        '',
+    ]
 
-    seg0_template = '''\
-ghost %fc0_{i}{j}@sint16[8], %fc1_{i}{j}@sint16[8], %fd0_{i}{j}@sint16[8], %fd1_{i}{j}@sint16[8], %gd0_{i}{j}@sint16[8], %gd1_{i}{j}@sint16[8] :
-    %fc0_{i}{j} = %v2 /\\ %fc1_{i}{j} = %v1 /\\ %fd0_{i}{j} = %v8 /\\ %fd1_{i}{j} = %v18 /\\ %gd0_{i}{j} = %v3 /\\ %gd1_{i}{j} = %v7
+    coefs = main_basemul_const_table[9 * i + j]
+
+    patterns = ['PC = 0x55555519a8', 'PC = 0x55555519b4']
+    equations = [f'''\
+{make_vector([coefs[7]] * 8)} * %fa1_{i}{j}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+= %v1\
+''', f'''\
+{make_vector([coefs[7]] * 8)} * %fb1_{i}{j}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+= %v18\
+''']
+
+    last_seg_end = 0
+    for pattern, equation in zip(patterns, equations):
+        seg_end = annotator.find_first_line(pattern)
+        output_lines += [
+            *annotator.lines[last_seg_end : seg_end],
+            '',
+            *algebra_midcondition(equation.split('\n'), f'algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}]'),
+            '',
+        ]
+        last_seg_end = seg_end
+
+    seg_end = annotator.find_first_line('PC = 0x55555519c4')
+    output_lines += [
+        *annotator.lines[last_seg_end : seg_end],
+        '',
+        f'''\
+ghost %fc0_{i}{j}@sint16[8], %fc1_{i}{j}@sint16[8], %fd0_{i}{j}@sint16[8], %fd1_{i}{j}@sint16[8] :
+    %fc0_{i}{j} = %v2 /\\ %fc1_{i}{j} = %v1 /\\ %fd0_{i}{j} = %v8 /\\ %fd1_{i}{j} = %v18
   &&
-    %fc0_{i}{j} = %v2 /\\ %fc1_{i}{j} = %v1 /\\ %fd0_{i}{j} = %v8 /\\ %fd1_{i}{j} = %v18 /\\ %gd0_{i}{j} = %v3 /\\ %gd1_{i}{j} = %v7;
+    %fc0_{i}{j} = %v2 /\\ %fc1_{i}{j} = %v1 /\\ %fd0_{i}{j} = %v8 /\\ %fd1_{i}{j} = %v18;\
+''',
+        '',
+    ]
 
-{cut_header}
-    %fc0_{i}{j} = %v2 /\\ %fc1_{i}{j} = %v1 /\\ %fd0_{i}{j} = %v8 /\\ %fd1_{i}{j} = %v18 /\\ %gd0_{i}{j} = %v3 /\\ %gd1_{i}{j} = %v7 /\\
+    patterns = ['PC = 0x55555519d0', 'PC = 0x55555519dc']
+    equations = [f'''\
+{make_vector([coefs[7]] * 8)} * %fd0_{i}{j}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+= %v3\
+''', f'''\
+{make_vector([coefs[7]] * 8)} * %fd1_{i}{j}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+= %v7\
+''']
 
-    %fc0_{i}{j} = %fa0_{i}{j} + {twist_vec} * %fa1_{i}{j}
+    last_seg_end = seg_end
+    for pattern, equation in zip(patterns, equations):
+        seg_end = annotator.find_first_line(pattern)
+        output_lines += [
+            *annotator.lines[last_seg_end : seg_end],
+            '',
+            *algebra_midcondition(equation.split('\n'), f'algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}]'),
+            '',
+        ]
+        last_seg_end = seg_end
+
+    seg_end = annotator.find_first_line('PC = 0x55555519e0')
+
+    algebra_conj_lines, range_conj_lines = bound_vecreg([11420, 11420, 11420, 11420, 3500, 3500],
+                                                        [f'%fc0_{i}{j}', f'%fc1_{i}{j}',
+                                                         f'%fd0_{i}{j}', f'%fd1_{i}{j}',
+                                                         f'%gd0_{i}{j}', f'%gd1_{i}{j}'])
+
+    cut_algebra_proposition = f'''\
+%fc0_{i}{j} = %v2 /\\ %fc1_{i}{j} = %v1 /\\ %fd0_{i}{j} = %v8 /\\ %fd1_{i}{j} = %v18 /\\ %gd0_{i}{j} = %v3 /\\ %gd1_{i}{j} = %v7 /\\
+
+%fc0_{i}{j} = %fa0_{i}{j} + {make_vector([coefs[7]] * 8)} * %fa1_{i}{j}
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+%fc1_{i}{j} = %fa0_{i}{j} - {make_vector([coefs[7]] * 8)} * %fa1_{i}{j}
     ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
 
-    %fc1_{i}{j} = %fa0_{i}{j} - {twist_vec} * %fa1_{i}{j}
+%fd0_{i}{j} = %fb0_{i}{j} + {make_vector([coefs[7]] * 8)} * %fb1_{i}{j}
+    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+%fd1_{i}{j} = %fb0_{i}{j} - {make_vector([coefs[7]] * 8)} * %fb1_{i}{j}
     ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
 
-    %fd0_{i}{j} = %fb0_{i}{j} + {twist_vec} * %fb1_{i}{j}
-    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-    %fd1_{i}{j} = %fb0_{i}{j} - {twist_vec} * %fb1_{i}{j}
-    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-    %gd0_{i}{j} = {twist_vec} * %fd0_{i}{j}
-    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-    %gd1_{i}{j} = -{twist_vec} * %fd1_{i}{j}
-    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-    %fc0_{i}{j} <= [11420, 11420, 11420, 11420, 11420, 11420, 11420, 11420] /\\
-    %fc0_{i}{j} >= [-11420, -11420, -11420, -11420, -11420, -11420, -11420, -11420] /\\
-
-    %fc1_{i}{j} <= [11420, 11420, 11420, 11420, 11420, 11420, 11420, 11420] /\\
-    %fc1_{i}{j} >= [-11420, -11420, -11420, -11420, -11420, -11420, -11420, -11420] /\\
-
-    %fd0_{i}{j} <= [11420, 11420, 11420, 11420, 11420, 11420, 11420, 11420] /\\
-    %fd0_{i}{j} >= [-11420, -11420, -11420, -11420, -11420, -11420, -11420, -11420] /\\
-
-    %fd1_{i}{j} <= [11420, 11420, 11420, 11420, 11420, 11420, 11420, 11420] /\\
-    %fd1_{i}{j} >= [-11420, -11420, -11420, -11420, -11420, -11420, -11420, -11420] /\\
-
-    %gd0_{i}{j} <= [3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500] /\\
-    %gd0_{i}{j} >= [-3500, -3500, -3500, -3500, -3500, -3500, -3500, -3500] /\\
-
-    %gd1_{i}{j} <= [3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500] /\\
-    %gd1_{i}{j} >= [-3500, -3500, -3500, -3500, -3500, -3500, -3500, -3500] /\\
-
-    true
-    prove with [algebra solver isl, precondition, cuts[0]]
-    && true;\
+%gd0_{i}{j} =  {make_vector([coefs[7]] * 8)} * %fd0_{i}{j} ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+%gd1_{i}{j} = -{make_vector([coefs[7]] * 8)} * %fd1_{i}{j} ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ),\
 '''
+
+    output_lines += [
+        *annotator.lines[last_seg_end : seg_end],
+        '',
+        f'''\
+ghost %gd0_{i}{j}@sint16[8], %gd1_{i}{j}@sint16[8] :
+    %gd0_{i}{j} = %v3 /\\ %gd1_{i}{j} = %v7
+  &&
+    %gd0_{i}{j} = %v3 /\\ %gd1_{i}{j} = %v7;\
+''',
+        '',
+        annotator.generate_cut(),
+        *add_indent(4, [
+            *cut_algebra_proposition.split('\n'),
+            '',
+            *algebra_conj_lines.format(),
+            '',
+            f'prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}]]',
+        ]),
+        '  &&',
+        *add_indent(4, [
+            'true',
+            f'prove with [precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}]];',
+        ]),
+        '',
+    ]
+
+
+    conv_begin = seg_end
+    conv_end = annotator.find_first_line('PC = 0x5555551a9c')
 
     conv0_formula = []
     conv1_formula = []
@@ -90,170 +156,220 @@ ghost %fc0_{i}{j}@sint16[8], %fc1_{i}{j}@sint16[8], %fd0_{i}{j}@sint16[8], %fd1_
         f'%conv1_{i}{j} = [',
         *add_indent(4, conv1_formula),
         ']',
-        '&& true;',
     ]
 
-    conv_definition = [
+    algebra_conj_lines, range_conj_lines = bound_vecreg([11420 * 11420 * 8] * 2, [f'%conv0_{i}{j}', f'%conv1_{i}{j}'])
+
+    output_lines += [
+        *annotator.lines[conv_begin : conv_end],
+        '',
         f'ghost %conv0_{i}{j}@sint32[8], %conv1_{i}{j}@sint32[8] :',
-        *add_indent(4, conv_definition),
-    ]
-
-    conv_range_property_template = '''\
-assert
-    %conv0_{i}{j} <= [1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200] /\\
-    %conv0_{i}{j} >= [-1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200] /\\
-    %conv1_{i}{j} <= [1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200] /\\
-    %conv1_{i}{j} >= [-1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200]
-    prove with [algebra solver smt: z3]
-    && true;
-
-assume
-    %conv0_{i}{j} <= [1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200] /\\
-    %conv0_{i}{j} >= [-1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200] /\\
-    %conv1_{i}{j} <= [1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200] /\\
-    %conv1_{i}{j} >= [-1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200]
-    && true;\
-'''
-
-    conv_body_cut_template = '''\
-%conv0_{i}{j} <= [1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200] /\\
-%conv0_{i}{j} >= [-1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200] /\\
-%conv1_{i}{j} <= [1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200] /\\
-%conv1_{i}{j} >= [-1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200]
-
-prove with [algebra solver isl]
-&& true;\
-'''
-    equality_cut_template = '''\
-%v0 ++ %v8 = %conv0_{i}{j} /\\
-%v4 ++ %v3 = %conv1_{i}{j} /\\
-
-%v0 ++ %v8 <= [1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200] /\\
-%v0 ++ %v8 >= [-1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200] /\\
-%v4 ++ %v3 <= [1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200, 1043331200] /\\
-%v4 ++ %v3 >= [-1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200, -1043331200]
-
-prove with [algebra solver isl, cuts[{}]]
-&& true;\
-'''
-
-    combined0_location0 = annotator.find_first_line('PC = 0x5555551aac', seg1_end, offset=2)
-    combined0_location1 = annotator.find_first_line('PC = 0x5555551ab0', offset=2)
-    combined1_location0 = annotator.find_first_line('PC = 0x5555551ac4', offset=2)
-    combined1_location1 = annotator.find_first_line('PC = 0x5555551ac8', offset=2)
-    combined0 = combine_const(main_basemul_const_table[9 * i + j][0], main_basemul_const_table[9 * i + j][1])
-    combined1 = combine_const(main_basemul_const_table[9 * i + j][2], main_basemul_const_table[9 * i + j][3])
-
-    postprocess = [
-        *annotator.lines[seg1_end : combined0_location0],
-        f'assert coef = {combined0} prove with [algebra solver isl] && true;',
-        f'assume coef = {combined0} && true;',
-        *annotator.lines[combined0_location0 : combined0_location1],
-        f'assert coef = {combined0} prove with [algebra solver isl] && true;',
-        f'assume coef = {combined0} && true;',
-        *annotator.lines[combined0_location1 : combined1_location0],
-        f'assert coef = {combined1} prove with [algebra solver isl] && true;',
-        f'assume coef = {combined1} && true;',
-        *annotator.lines[combined1_location0 : combined1_location1],
-        f'assert coef = {combined1} prove with [algebra solver isl] && true;',
-        f'assume coef = {combined1} && true;',
-        *annotator.lines[combined1_location1:],
-    ]
-
-    postprocess_cut_template = '''\
-%v2 = {coef0} * (%conv0_{i}{j} + %conv1_{i}{j})
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-%v0 = {coef1} * (%conv0_{i}{j} - %conv1_{i}{j})
-( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
-
-%v2 <= [4585, 4585, 4585, 4585, 4585, 4585, 4585, 4585] /\\
-%v2 >= [-4585, -4585, -4585, -4585, -4585, -4585, -4585, -4585] /\\
-%v0 <= [4585, 4585, 4585, 4585, 4585, 4585, 4585, 4585] /\\
-%v0 >= [-4585, -4585, -4585, -4585, -4585, -4585, -4585, -4585]
-
-prove with [algebra solver isl]
-&& true;\
-'''
-
-    return [
-        '',
-        '#### radix2',
-        '',
-        *annotator.lines[:seg0_end],
-        '',
-        *seg0_template.format(i=i, j=j, cut_header=annotator.generate_cut(), twist_vec=make_vector([main_basemul_const_table[9 * i + j][7]] * 8)).split('\n'),
-        '',
-        *conv_definition,
-        '',
-        *conv_range_property_template.format(i=i, j=j).split('\n'),
-        '',
-        *annotator.lines[seg0_end : seg1_end],
-        '',
-        annotator.generate_cut(),
         *add_indent(4, [
-            f'%v0 ++ %v8 = %conv0_{i}{j} ( mod [4294967296, 4294967296, 4294967296, 4294967296, 4294967296, 4294967296, 4294967296, 4294967296] ) /\\',
-            f'%v4 ++ %v3 = %conv1_{i}{j} ( mod [4294967296, 4294967296, 4294967296, 4294967296, 4294967296, 4294967296, 4294967296, 4294967296] ) /\\',
-            f'%conv0_{i}{j} = [',
-            *add_indent(4, conv0_formula),
-            '] /\\',
-            f'%conv1_{i}{j} = [',
-            *add_indent(4, conv1_formula),
-            '],',
+            *conv_definition,
+            '&& true;',
+        ]),
+        '',
+        *algebra_midcondition([f'%v0 ++ %v8 = %conv0_{i}{j} ( mod {make_vector([2 ** 32] * 8)} ) /\\',
+                               f'%v4 ++ %v3 = %conv1_{i}{j} ( mod {make_vector([2 ** 32] * 8)} )']),
+        '',
+        *algebra_midcondition(algebra_conj_lines.format(), 'algebra solver smt: z3'),
+        '',
+        *algebra_midcondition([f'%v0 ++ %v8 = %conv0_{i}{j} /\\ %v4 ++ %v3 = %conv1_{i}{j}'], 'algebra solver isl'),
+        '',
+    ]
+
+    algebra_conj_lines, range_conj_lines = bound_vecreg([11420 * 11420 * 8] * 4, ['%v0', '%v8', '%v4', '%v3'], 4, IntType(True, 32))
+
+    output_lines += [
+        'assert',
+        *add_indent(4, [
+            *algebra_conj_lines.format(),
             '',
-            *conv_body_cut_template.format(i=i, j=j).split('\n'),
+            'prove with [algebra solver isl]',
+            '&& true;',
+        ]),
+        '',
+        'assume',
+        *add_indent(4, [
+            *algebra_conj_lines.format(),
+        ]),
+        '  &&',
+        *add_indent(4, [
+            *range_conj_lines.format(';'),
         ]),
         '',
         annotator.generate_cut(),
-        *add_indent(4, equality_cut_template.format(annotator.shared_state.cut_id - 2, i=i, j=j).split('\n')),
-        '',
-        *postprocess,
-        '',
-        annotator.generate_cut(),
-        *add_indent(4, postprocess_cut_template.format(i=i, j=j, coef0=make_vector([main_basemul_const_table[9 * i + j][4]] * 8), coef1=make_vector([main_basemul_const_table[9 * i + j][5]] * 8)).split('\n')),
+        *add_indent(4, [
+            *add_to_last_line(conv_definition, ' /\\'),
+            '',
+            f'%v0 ++ %v8 = %conv0_{i}{j} /\\ %v4 ++ %v3 = %conv1_{i}{j},',
+            '',
+            *algebra_conj_lines.format(),
+            '',
+            'prove with [algebra solver isl]',
+        ]),
+        '  &&',
+        *add_indent(4, [
+            *range_conj_lines.format(';'),
+        ]),
         '',
     ]
 
-def annot_karatsuba(annotator, i, j):
-    seg0_end = annotator.find_first_line('PC = 0x5555551818')
-    seg1_end = annotator.find_first_line('PC = 0x5555551948')
 
-    seg0_template = '''\
-ghost %gb0_{i}{j}@sint16[8], %gb1_{i}{j}@sint16[8] :
-    %gb0_{i}{j} = %v7 /\\ %gb1_{i}{j} = %v3
+    for combined, patterns_row in zip([combine_const(coefs[0], coefs[1]),
+                                       combine_const(coefs[2], coefs[3])],
+                                      [['PC = 0x5555551aac', 'PC = 0x5555551ab0'],
+                                       ['PC = 0x5555551ac4', 'PC = 0x5555551ac8']]):
+        for pattern in patterns_row:
+            location = annotator.find_first_line(pattern, offset=2)
+            annotator.lines[location] += '\n'.join([
+                '',
+                f'assert coef = {combined} prove with [algebra solver isl] && true;',
+                f'assume coef = {combined} && true;',
+            ])
+
+    seg0_end = annotator.find_first_line('PC = 0x5555551aac', conv_end)
+    seg1_end = annotator.find_first_line('PC = 0x5555551ab4')
+    seg2_end = annotator.find_first_line('PC = 0x5555551ac4')
+    seg3_end = annotator.find_first_line('PC = 0x5555551acc')
+    seg4_end = annotator.find_first_line('PC = 0x5555551adc')
+
+    output_lines += [
+        *annotator.lines[conv_end : seg0_end],
+        '',
+        f'''\
+ghost %h0_{i}{j}@sint32[8], %h1_{i}{j}@sint32[8] :
+    %h0_{i}{j} = %v2 ++ %v7 /\\ %h1_{i}{j} = %v0 ++ %v4
   &&
-    %gb0_{i}{j} = %v7 /\\ %gb1_{i}{j} = %v3;
+    %h0_{i}{j} = %v2 ++ %v7 /\\ %h1_{i}{j} = %v0 ++ %v4;\
+''',
+        '',
+        *annotator.lines[seg0_end : seg1_end],
+        '',
+        f'ghost %e0_{i}{j}@sint32[8] : %e0_{i}{j} = %v1 ++ %v3 && %e0_{i}{j} = %v1 ++ %v3;',
+        '',
+        *annotator.lines[seg1_end : seg2_end],
+        '',
+        *algebra_midcondition([f'{make_vector([coefs[4]] * 8)} * %h0_{i}{j}',
+                               f'- {make_vector([4591] * 8)} * %e0_{i}{j}',
+                               f'= %v2'],
+                              f'algebra solver isl'),
+        '',
+        *annotator.lines[seg2_end : seg3_end],
+        '',
+        f'ghost %e1_{i}{j}@sint32[8] : %e1_{i}{j} = %v1 ++ %v3 && %e1_{i}{j} = %v1 ++ %v3;',
+        '',
+        *annotator.lines[seg3_end : seg4_end],
+        '',
+        *algebra_midcondition([f'{make_vector([coefs[5]] * 8)} * %h1_{i}{j}',
+                               f'- {make_vector([4591] * 8)} * %e1_{i}{j}',
+                               f'= %v0'],
+                              f'algebra solver isl'),
+        '',
+        *annotator.lines[seg4_end:],
+        '',
+    ]
 
-{cut_header}
-    %fa0_{i}{j} = %v4 /\\ %fa1_{i}{j} = %v1 /\\ %fb0_{i}{j} = %v17 /\\ %fb1_{i}{j} = %v18 /\\ %gb0_{i}{j} = %v7 /\\ %gb1_{i}{j} = %v3 /\\
+    return output_lines
 
-    %fa0_{i}{j} <= [8420, 8420, 8420, 8420, 8420, 8420, 8420, 8420] /\\
-    %fa0_{i}{j} >= [-8420, -8420, -8420, -8420, -8420, -8420, -8420, -8420] /\\
+def annot_karatsuba(annotator, i, j):
+    output_lines = [
+        '',
+        '#### karatsuba',
+        '',
+    ]
 
-    %fa1_{i}{j} <= [8420, 8420, 8420, 8420, 8420, 8420, 8420, 8420] /\\
-    %fa1_{i}{j} >= [-8420, -8420, -8420, -8420, -8420, -8420, -8420, -8420] /\\
+    coefs = main_basemul_const_table[9 * i + j]
 
-    %fb0_{i}{j} <= [8420, 8420, 8420, 8420, 8420, 8420, 8420, 8420] /\\
-    %fb0_{i}{j} >= [-8420, -8420, -8420, -8420, -8420, -8420, -8420, -8420] /\\
+    patterns = ['PC = 0x555555180c', 'PC = 0x5555551818']
+    equations = [f'''\
+{make_vector([coefs[7]] * 8)} * %fb0_{i}{j}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+= %v7\
+''', f'''\
+{make_vector([coefs[7]] * 8)} * %fb1_{i}{j}
+- [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] * %v0
+= %v3\
+''']
 
-    %fb1_{i}{j} <= [8420, 8420, 8420, 8420, 8420, 8420, 8420, 8420] /\\
-    %fb1_{i}{j} >= [-8420, -8420, -8420, -8420, -8420, -8420, -8420, -8420] /\\
+    last_seg_end = 0
+    for pattern, equation in zip(patterns, equations):
+        seg_end = annotator.find_first_line(pattern)
+        output_lines += [
+            *annotator.lines[last_seg_end : seg_end],
+            '',
+            *algebra_midcondition(equation.split('\n'), f'algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}]'),
+            '',
+        ]
+        last_seg_end = seg_end
 
-    %gb0_{i}{j} <= [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000] /\\
-    %gb0_{i}{j} >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000] /\\
+    output_lines += [
+        f'''\
+ghost %fc0_{i}{j}@sint16[8], %fc1_{i}{j}@sint16[8] :
+    %fc0_{i}{j} = %v7 /\\ %fc1_{i}{j} = %v3
+  &&
+    %fc0_{i}{j} = %v7 /\\ %fc1_{i}{j} = %v3;\
+''',
+        '',
+    ]
 
-    %gb1_{i}{j} <= [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000] /\\
-    %gb1_{i}{j} >= [-3000, -3000, -3000, -3000, -3000, -3000, -3000, -3000] /\\
+    algebra_conj_lines, range_conj_lines = bound_vecreg([8420, 8420, 8420, 8420, 3000, 3000],
+                                                        [f'%fa0_{i}{j}', f'%fa1_{i}{j}',
+                                                         f'%fb0_{i}{j}', f'%fb1_{i}{j}',
+                                                         f'%fc0_{i}{j}', f'%fc1_{i}{j}'])
 
-    %gb0_{i}{j} = {twist_vec} * %fb0_{i}{j}
-    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+    cut_algebra_proposition = f'''\
+%fa0_{i}{j} = %v4 /\\ %fa1_{i}{j} = %v1 /\\ %fb0_{i}{j} = %v17 /\\ %fb1_{i}{j} = %v18 /\\
+%fc0_{i}{j} = %v7 /\\ %fc1_{i}{j} = %v3 /\\
 
-    %gb1_{i}{j} = {twist_vec} * %fb1_{i}{j}
-    ( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
+%fc0_{i}{j} = {make_vector([coefs[7]] * 8)} * %fb0_{i}{j}
+( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ) /\\
 
-    true
-    prove with [algebra solver isl, precondition, cuts[0]]
-    && true;\
+%fc1_{i}{j} = {make_vector([coefs[7]] * 8)} * %fb1_{i}{j}
+( mod [4591, 4591, 4591, 4591, 4591, 4591, 4591, 4591] ),\
 '''
+
+    output_lines += [
+        annotator.generate_cut(),
+        *add_indent(4, [
+            *cut_algebra_proposition.split('\n'),
+            '',
+            *algebra_conj_lines.format(),
+            '',
+            f'prove with [algebra solver isl, precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}]]',
+        ]),
+        '  &&',
+        *add_indent(4, [
+            'true',
+            f'prove with [precondition, cuts[0, {annotator.shared_state.j_iter_prologue_cut_id}]];',
+        ]),
+        '',
+    ]
+
+
+    conv_begin = seg_end
+    conv_end = annotator.find_first_line('PC = 0x5555551948')
+
+    algebra_conj_lines, range_conj_lines = bound_vecreg([8420, 8420, 8420, 8420, 3000, 3000],
+                                                        [f'%v4', f'%v1', f'%v17', f'%v18', f'%v7', f'%v3'])
+    output_lines += [
+        'assert',
+        *add_indent(4, [
+            *algebra_conj_lines.format(),
+            '',
+            f'prove with [algebra solver isl, cuts[{annotator.shared_state.cut_id - 1}]]',
+            '&& true;',
+        ]),
+        '',
+        'assume',
+        *add_indent(4, [
+            'true &&',
+            *range_conj_lines.format(';'),
+        ]),
+        '',
+        *annotator.lines[conv_begin : conv_end],
+        '',
+    ]
 
     conv0_formula = []
     conv1_formula = []
@@ -262,7 +378,7 @@ ghost %gb0_{i}{j}@sint16[8], %gb1_{i}{j}@sint16[8] :
         conv1_terms = []
         for kk in range(8):
             if k - kk < 0:
-                conv0_terms.append(f'%fa0_{i}{j}[{kk}] * %gb1_{i}{j}[{k - kk + 8}]')
+                conv0_terms.append(f'%fa0_{i}{j}[{kk}] * %fc1_{i}{j}[{k - kk + 8}]')
                 conv1_terms.append(f'%fa0_{i}{j}[{kk}] * %fb0_{i}{j}[{k - kk + 8}]')
             else:
                 conv0_terms.append(f'%fa0_{i}{j}[{kk}] * %fb0_{i}{j}[{k - kk}]')
@@ -278,10 +394,10 @@ ghost %gb0_{i}{j}@sint16[8], %gb1_{i}{j}@sint16[8] :
         conv1_terms = []
         for kk in range(8):
             if k - kk < 0:
-                conv0_terms.append(f'%fa1_{i}{j}[{kk}] * %gb0_{i}{j}[{k - kk + 8}]')
-                conv1_terms.append(f'%fa1_{i}{j}[{kk}] * %gb1_{i}{j}[{k - kk + 8}]')
+                conv0_terms.append(f'%fa1_{i}{j}[{kk}] * %fc0_{i}{j}[{k - kk + 8}]')
+                conv1_terms.append(f'%fa1_{i}{j}[{kk}] * %fc1_{i}{j}[{k - kk + 8}]')
             else:
-                conv0_terms.append(f'%fa1_{i}{j}[{kk}] * %gb1_{i}{j}[{k - kk}]')
+                conv0_terms.append(f'%fa1_{i}{j}[{kk}] * %fc1_{i}{j}[{k - kk}]')
                 conv1_terms.append(f'%fa1_{i}{j}[{kk}] * %fb0_{i}{j}[{k - kk}]')
         conv0_line = ' + '.join(conv0_terms)
         conv1_line = ' + '.join(conv1_terms)
@@ -298,82 +414,102 @@ ghost %gb0_{i}{j}@sint16[8], %gb1_{i}{j}@sint16[8] :
         f'%conv1_{i}{j} = [',
         *add_indent(4, conv1_formula),
         ']',
-        '&& true;',
     ]
 
-    conv_definition = [
+    algebra_conj_lines, range_conj_lines = bound_vecreg([8420 * 8420 * 16] * 2, [f'%conv0_{i}{j}', f'%conv1_{i}{j}'])
+
+    output_lines += [
         f'ghost %conv0_{i}{j}@sint32[8], %conv1_{i}{j}@sint32[8] :',
-        *add_indent(4, conv_definition),
+        *add_indent(4, [
+            *conv_definition,
+            '&& true;',
+        ]),
+        '',
+        *algebra_midcondition([f'%v16 ++ %v7 = %conv0_{i}{j} ( mod {make_vector([2 ** 32] * 8)} ) /\\',
+                               f'%v0 ++ %v1 = %conv1_{i}{j} ( mod {make_vector([2 ** 32] * 8)} )']),
+        '',
+        *algebra_midcondition(algebra_conj_lines.format(), 'algebra solver smt: z3'),
+        '',
+        *algebra_midcondition([f'%v16 ++ %v7 = %conv0_{i}{j} /\\ %v0 ++ %v1 = %conv1_{i}{j}'], 'algebra solver isl'),
+        '',
     ]
 
-    conv_range_property_template = '''\
-assert
-    %conv0_{i}{j} <= [1134342400, 1134342400, 1134342400, 1134342400, 1134342400, 1134342400, 1134342400, 1134342400] /\\
-    %conv0_{i}{j} >= [-1134342400, -1134342400, -1134342400, -1134342400, -1134342400, -1134342400, -1134342400, -1134342400] /\\
-    %conv1_{i}{j} <= [1134342400, 1134342400, 1134342400, 1134342400, 1134342400, 1134342400, 1134342400, 1134342400] /\\
-    %conv1_{i}{j} >= [-1134342400, -1134342400, -1134342400, -1134342400, -1134342400, -1134342400, -1134342400, -1134342400]
-    prove with [algebra solver smt: z3]
-    && true;
-'''
+    algebra_conj_lines, range_conj_lines = bound_vecreg([8420 * 8420 * 16] * 4, ['%v16', '%v7', '%v0', '%v1'], 4, IntType(True, 32))
 
-    conv_algebraic_property_template = '''\
-assert
-    %v16 ++ %v7 = %conv0_{i}{j} ( mod [4294967296, 4294967296, 4294967296, 4294967296, 4294967296, 4294967296, 4294967296, 4294967296] ) /\\
-    %v0 ++ %v1 = %conv1_{i}{j} ( mod [4294967296, 4294967296, 4294967296, 4294967296, 4294967296, 4294967296, 4294967296, 4294967296] )
-    && true;
-
-assume
-    %v16 ++ %v7 = %conv0_{i}{j} /\\ %v0 ++ %v1 = %conv1_{i}{j}
-    && true;\
-'''
-
-    location0 = annotator.find_first_line('PC = 0x555555181c', seg0_end)
-    location1 = annotator.find_first_line('PC = 0x5555551880')
-    location2 = annotator.find_first_line('PC = 0x55555518e8')
-    conv_body = [
-        *annotator.lines[seg0_end : location0],
+    output_lines += [
+        'assert',
+        *add_indent(4, [
+            *algebra_conj_lines.format(),
+            '',
+            'prove with [algebra solver isl]',
+            '&& true;',
+        ]),
         '',
-        f'assert %v6 = %fa0_{i}{j} + %fa1_{i}{j} prove with [algebra solver isl] && true;',
-        f'assume %v6 = %fa0_{i}{j} + %fa1_{i}{j} && true;',
-        '',
-        *annotator.lines[location0 : location1],
-        '',
-        f'assert %v6 = %gb0_{i}{j} - %gb1_{i}{j} /\\ %v3 = %gb1_{i}{j} - %fb0_{i}{j} prove with [algebra solver isl] && true;',
-        f'assume %v6 = %gb0_{i}{j} - %gb1_{i}{j} /\\ %v3 = %gb1_{i}{j} - %fb0_{i}{j} && true;',
-        '',
-        *annotator.lines[location1 : location2],
-        '',
-        f'assert %v1 = %fb0_{i}{j} - %fb1_{i}{j} prove with [algebra solver isl] && true;',
-        f'assume %v1 = %fb0_{i}{j} - %fb1_{i}{j} && true;',
-        '',
-        *annotator.lines[location2 : seg1_end],
-    ]
-
-    return [
-        '',
-        '#### karatsuba',
-        '',
-        *annotator.lines[:seg0_end],
-        '',
-        *seg0_template.format(i=i, j=j, cut_header=annotator.generate_cut(), twist_vec=[main_basemul_const_table[9 * i + j][7]] * 8).split('\n'),
-        '',
-        *conv_definition,
-        '',
-        *conv_range_property_template.format(i=i, j=j).split('\n'),
-        '',
-        *conv_body,
-        '',
-        *conv_algebraic_property_template.format(i=i, j=j).split('\n'),
+        'assume',
+        *add_indent(4, [
+            *algebra_conj_lines.format(),
+        ]),
+        '  &&',
+        *add_indent(4, [
+            *range_conj_lines.format(';'),
+        ]),
         '',
         annotator.generate_cut(),
-        '    true && true;',
-        '',
-        *annotator.lines[seg1_end:],
-        '',
-        annotator.generate_cut(),
-        '    true && true;',
+        *add_indent(4, [
+            *add_to_last_line(conv_definition, ' /\\'),
+            '',
+            f'%v16 ++ %v7 = %conv0_{i}{j} /\\ %v0 ++ %v1 = %conv1_{i}{j},',
+            '',
+            *algebra_conj_lines.format(),
+            '',
+            'prove with [algebra solver isl]',
+        ]),
+        '  &&',
+        *add_indent(4, [
+            *range_conj_lines.format(';'),
+        ]),
         '',
     ]
+
+
+    combined = combine_const(coefs[0], coefs[1])
+    for pattern in ['PC = 0x5555551948', 'PC = 0x555555194c',
+                    'PC = 0x555555195c', 'PC = 0x5555551960']:
+        location = annotator.find_first_line(pattern, offset=2)
+        annotator.lines[location] += '\n'.join([
+            '',
+            f'assert coef = {combined} prove with [algebra solver isl] && true;',
+            f'assume coef = {combined} && true;',
+        ])
+
+    seg0_end = annotator.find_first_line('PC = 0x5555551950', conv_end)
+    seg1_end = annotator.find_first_line('PC = 0x555555195c')
+    seg2_end = annotator.find_first_line('PC = 0x5555551964')
+
+    output_lines += [
+        *annotator.lines[conv_end : seg0_end],
+        '',
+        f'ghost %e0_{i}{j}@sint32[8] : %e0_{i}{j} = %v3 ++ %v2 && %e0_{i}{j} = %v3 ++ %v2;',
+        '',
+        *annotator.lines[seg0_end : seg1_end],
+        '',
+        *algebra_midcondition([f'%conv0_{i}{j} - {make_vector([4591] * 8)} * %e0_{i}{j}',
+                               f'= %v2'],
+                              f'algebra solver isl'),
+        '',
+        *annotator.lines[seg1_end : seg2_end],
+        '',
+        f'ghost %e1_{i}{j}@sint32[8] : %e1_{i}{j} = %v3 ++ %v8 && %e1_{i}{j} = %v3 ++ %v8;',
+        '',
+        *annotator.lines[seg2_end:],
+        '',
+        *algebra_midcondition([f'%conv1_{i}{j} - {make_vector([4591] * 8)} * %e1_{i}{j}',
+                               f'= %v0'],
+                              f'algebra solver isl'),
+        '',
+    ]
+
+    return output_lines
 
 def annot_j_iter(annotator, i, j):
     load_end = annotator.find_first_line('PC = 0x5555551994', offset=2)
@@ -401,6 +537,10 @@ def annot_j_iter(annotator, i, j):
         '  &&',
         *add_indent(4, fa_fb_ghost_spec.format(';')),
         '',
+    ]
+
+    annotator.shared_state.j_iter_prologue_cut_id = annotator.shared_state.cut_id
+    output_lines += [
         annotator.generate_cut(),
         *add_indent(4, fa_fb_ghost_property.format()),
         '    prove with [cuts[0]]',
@@ -423,8 +563,69 @@ def annot_j_iter(annotator, i, j):
         '',
         *annotator.lines[mult_end:],
         '',
+    ]
+
+    def varname(i, j, k, suffix):
+        return f'arr{i}{k // 8}{j}{k % 8}{suffix}'
+
+    coef = center_mod(center_pow(W10, i) * center_pow(W9, j))
+    arr_c_ij_spec = []
+    for k in range(16):
+        terms = []
+        for ka in range(16):
+            wrap = ka > k
+            kb = (k - ka) % 16
+            if not wrap:
+                terms.append(f'{varname(i, j, ka, "_a")} * {varname(i, j, kb, "_b")}')
+            else:
+                terms.append(f'{coef} * {varname(i, j, ka, "_a")} * {varname(i, j, kb, "_b")}')
+
+        arr_c_ij_spec.append(' + '.join(terms))
+        if k < 15:
+            arr_c_ij_spec[-1] += ','
+
+    arr_c_ij_spec = [
+        f'%v2 ++ %v0 = [',
+        *add_indent(4, arr_c_ij_spec),
+        f'] ( mod {make_vector([4591] * 16)} )',
+    ]
+
+    algebra_conj_lines, range_conj_lines = bound_vecreg([4585, 4585], ['%v2', '%v0'])
+
+    arr_mem_c = annotator.shared_state.arr_mem_c
+    cut_id = annotator.shared_state.cut_id
+    output_lines += [
+        'assert',
+        *add_indent(4, [
+            *algebra_conj_lines.format(),
+            '',
+            'prove with [algebra solver isl]',
+            '&& true;',
+        ]),
+        '',
+        'assume',
+        *add_indent(4, [
+            'true &&',
+            '',
+            *range_conj_lines.format(';'),
+        ]),
+        '',
         annotator.generate_cut(),
-        '    true && true;',
+        *add_indent(4, [
+            f'{make_vector(arr_mem_c[9 * (2 * i) + j])} = %v2 /\\',
+            f'{make_vector(arr_mem_c[9 * (2 * i + 1) + j])} = %v0 /\\',
+            '',
+            *arr_c_ij_spec,
+            '',
+            f'prove with [cuts[0, {cut_id - 3}, {cut_id - 2}, {cut_id - 1}]]',
+        ]),
+        '  &&',
+        *add_indent(4, [
+            f'{make_vector(arr_mem_c[9 * (2 * i) + j])} = %v2 /\\',
+            f'{make_vector(arr_mem_c[9 * (2 * i + 1) + j])} = %v0 /\\',
+            '',
+            *range_conj_lines.format(';'),
+        ]),
         '',
     ]
 
@@ -473,9 +674,12 @@ def annot_i_iter(annotator, i):
 def annot(annotator):
     arr_a = [[Variable(f'arr{i}{k0}{j}{k}_a', SINT16) for k in range(8)] for i in range(10) for k0 in range(2) for j in range(9)]
     arr_b = [[Variable(f'arr{i}{k0}{j}{k}_b', SINT16) for k in range(8)] for i in range(10) for k0 in range(2) for j in range(9)]
+    arr_c = [[Variable(f'arr{i}{k0}{j}{k}_c', SINT16) for k in range(8)] for i in range(10) for k0 in range(2) for j in range(9)]
     arr_mem_a = memory_array_like(0x7fffffda30, arr_a)
     arr_mem_b = memory_array_like(0x7fffffcef0, arr_b)
+    arr_mem_c = memory_array_like(0x7fffffc3b0, arr_c)
     annotator.shared_state.arr_joined = [arr_a, arr_b]
+    annotator.shared_state.arr_mem_c = arr_mem_c
 
     i_loop_begin = annotator.find_first_line('PC = 0x55555517f4', offset=2)
     i_loop_end = annotator.find_first_line('PC = 0x5555551b1c', offset=-2)
@@ -566,6 +770,54 @@ def annot(annotator):
         annotator.generate_cut(),
         '    true && true;',
         '',
+        '# output',
+        '',
+        *mov_array(arr_c, arr_mem_c),
+        '',
+    ]
+
+    def varname(i, j, k, suffix):
+        return f'arr{i}{k // 8}{j}{k % 8}{suffix}'
+
+    arr_c_spec = []
+    for i in range(10):
+        for j in range(9):
+            coef = center_mod(center_pow(W10, i) * center_pow(W9, j))
+            lines_ij = []
+            lines_ij.append(f'{make_vector([varname(i, j, k, "_c") for k in range(16)])} = [')
+
+            for k in range(16):
+                terms = []
+                for ka in range(16):
+                    wrap = ka > k
+                    kb = (k - ka) % 16
+                    if not wrap:
+                        terms.append(f'{varname(i, j, ka, "_a")} * {varname(i, j, kb, "_b")}')
+                    else:
+                        terms.append(f'{coef} * {varname(i, j, ka, "_a")} * {varname(i, j, kb, "_b")}')
+
+                lines_ij.append('    ' + ' + '.join(terms))
+                if k < 15:
+                    lines_ij[-1] += ','
+
+            lines_ij.append(f'] ( mod {make_vector([4591] * 16)}) /\\')
+            lines_ij.append('')
+            arr_c_spec += lines_ij
+
+    algebra_conj_lines, range_conj_lines = bound_array(4585, arr_c)
+    output_lines += [
+        '{',
+        *add_indent(4, [
+            *arr_c_spec,
+            'true',
+            'prove with [all cuts]',
+        ]),
+        '  &&',
+        *add_indent(4, [
+            *range_conj_lines.format(),
+            'prove with [all cuts]',
+        ]),
+        '}',
     ]
 
     return output_lines
