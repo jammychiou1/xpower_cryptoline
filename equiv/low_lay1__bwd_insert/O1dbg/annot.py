@@ -342,9 +342,10 @@ def annot(annotator):
         *[[Variable(f'full{i + j}_out', SINT16) for j in range(8)] for i in range(1440, 1520, 8)],
     ]
     arr_mem = memory_array_like(0x7fffffe1b0, arr)
-    full_in_mem = memory_array_like(0x7fffffe5a0 + 1440 * 2, full_in)
-    full_out_low_mem = memory_array_like(0x7fffffe5a0, full_out[:11])
-    full_out_high_mem = memory_array_like(0x7fffffe5a0 + 1440 * 2, full_out[11:])
+    full_base = 0x7fffffe5a0
+    full_in_mem = memory_array_like(full_base + 1440 * 2, full_in)
+    full_out_low_mem = memory_array_like(full_base, full_out[:11])
+    full_out_high_mem = memory_array_like(full_base + 1440 * 2, full_out[11:])
     annotator.shared_state.arr = arr
     annotator.shared_state.arr_mem = arr_mem
     annotator.shared_state.full_in = full_in
