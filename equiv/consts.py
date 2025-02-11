@@ -131,6 +131,7 @@ const_table = [
 ]
 
 const_base_O1dbg = 0x55555526f0
+const_base_O3 = 0x5555552b30
 def setup_const(const_base):
     const_imm = [[annot_utils.InstructionImmediate(val, annot_utils.SINT16) for val in row] for row in const_table]
     const_mem = annot_utils.memory_array_like(const_base, const_imm)
