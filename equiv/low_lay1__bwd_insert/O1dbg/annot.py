@@ -361,7 +361,7 @@ def annot(annotator):
         ') =',
     ]
 
-    algebra_predicate_conj_lines, range_predicate_conj_lines = bound_array(15350, full_in)
+    algebra_full_in_conj_lines, range_full_in_conj_lines = bound_array(15350, full_in)
     algebra_arr_conj_lines, range_arr_conj_lines = bound_vecreg([val for row in range_table for val in row],
                                                                 [make_vector(row) for row in arr])
     output_lines += [
@@ -369,13 +369,13 @@ def annot(annotator):
         *add_indent(4, [
             *algebra_arr_conj_lines.format(' /\\'),
             '',
-            *algebra_predicate_conj_lines.format()
+            *algebra_full_in_conj_lines.format()
         ]),
         '  &&',
         *add_indent(4, [
             *range_arr_conj_lines.format(' /\\'),
             '',
-            *range_predicate_conj_lines.format(),
+            *range_full_in_conj_lines.format(),
         ]),
         '}',
     ]

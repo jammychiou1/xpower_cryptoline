@@ -442,6 +442,19 @@ def low_lay1__fwd_extract():
 
     return output_lines
 
+low_basemul_output_ranges = [
+    [3700, 3700],
+    [2750, 2750],
+    [3550, 3450],
+    [2300, 2300],
+    [3100, 3550],
+    [2650, 2650],
+    [3450, 4580],
+    [2700, 2700],
+    [4580, 3100],
+    [2650, 2650],
+]
+
 def basemul__low_basemul():
     arr_a = [[Variable(f'arr{i}{k0}{k}_a', SINT16) for k in range(8)] for i in range(10) for k0 in range(2)]
     arr_b = [[Variable(f'arr{i}{k0}{k}_b', SINT16) for k in range(8)] for i in range(10) for k0 in range(2)]
@@ -504,8 +517,8 @@ def basemul__low_basemul():
         lines_i.append('')
         arr_c_spec += lines_i
 
-    # FIXME: range for arr_c
-    # algebra_conj_lines, range_conj_lines = bound_array(4585, arr_c)
+    algebra_conj_lines, range_conj_lines = bound_vecreg([val for row in low_basemul_output_ranges for val in row],
+                                                        [make_vector(row) for row in arr_c])
     output_lines += [
         '{',
         *add_indent(4, [
@@ -513,10 +526,9 @@ def basemul__low_basemul():
             'true',
         ]),
         '  &&',
-        # *add_indent(4, [
-        #     *range_conj_lines.format(),
-        # ]),
-        '    true',
+        *add_indent(4, [
+            *range_conj_lines.format(),
+        ]),
         '}',
     ]
 
@@ -543,14 +555,17 @@ def low_lay1__bwd_insert():
         ') =',
     ]
 
-    # FIXME: range for arr
-    algebra_conj_lines, range_conj_lines = bound_array(15350, full_in)
+    algebra_full_in_conj_lines, range_full_in_conj_lines = bound_array(15350, full_in)
+    algebra_arr_conj_lines, range_arr_conj_lines = bound_vecreg([val for row in low_basemul_output_ranges for val in row],
+                                                                [make_vector(row) for row in arr])
     output_lines += [
         '{',
         '    true',
         '  &&',
         *add_indent(4, [
-            *range_conj_lines.format(),
+            *range_arr_conj_lines.format(' /\\'),
+            '',
+            *range_full_in_conj_lines.format(),
         ]),
         '}',
     ]
