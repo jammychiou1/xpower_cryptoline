@@ -9,10 +9,29 @@ proc main(
     sint16 poly48, sint16 poly49, sint16 poly50, sint16 poly51, sint16 poly52, sint16 poly53, sint16 poly54, sint16 poly55,
     sint16 poly56, sint16 poly57, sint16 poly58, sint16 poly59, sint16 poly60, sint16 poly61, sint16 poly62, sint16 poly63,
     sint16 poly64, sint16 poly65, sint16 poly66, sint16 poly67, sint16 poly68, sint16 poly69, sint16 poly70, sint16 poly71,
-    sint16 poly72, sint16 poly73, sint16 poly74, sint16 poly75, sint16 poly76, sint16 poly77, sint16 poly78, sint16 poly79,
+    sint16 poly72, sint16 poly73, sint16 poly74, sint16 poly75, sint16 poly76, sint16 poly77, sint16 poly78, sint16 poly79;
 
-    # ghost
-    sint16 Q, sint16 W10
+    # output
+    sint16 arr000, sint16 arr001, sint16 arr002, sint16 arr003, sint16 arr004, sint16 arr005, sint16 arr006, sint16 arr007,
+    sint16 arr010, sint16 arr011, sint16 arr012, sint16 arr013, sint16 arr014, sint16 arr015, sint16 arr016, sint16 arr017,
+    sint16 arr100, sint16 arr101, sint16 arr102, sint16 arr103, sint16 arr104, sint16 arr105, sint16 arr106, sint16 arr107,
+    sint16 arr110, sint16 arr111, sint16 arr112, sint16 arr113, sint16 arr114, sint16 arr115, sint16 arr116, sint16 arr117,
+    sint16 arr200, sint16 arr201, sint16 arr202, sint16 arr203, sint16 arr204, sint16 arr205, sint16 arr206, sint16 arr207,
+    sint16 arr210, sint16 arr211, sint16 arr212, sint16 arr213, sint16 arr214, sint16 arr215, sint16 arr216, sint16 arr217,
+    sint16 arr300, sint16 arr301, sint16 arr302, sint16 arr303, sint16 arr304, sint16 arr305, sint16 arr306, sint16 arr307,
+    sint16 arr310, sint16 arr311, sint16 arr312, sint16 arr313, sint16 arr314, sint16 arr315, sint16 arr316, sint16 arr317,
+    sint16 arr400, sint16 arr401, sint16 arr402, sint16 arr403, sint16 arr404, sint16 arr405, sint16 arr406, sint16 arr407,
+    sint16 arr410, sint16 arr411, sint16 arr412, sint16 arr413, sint16 arr414, sint16 arr415, sint16 arr416, sint16 arr417,
+    sint16 arr500, sint16 arr501, sint16 arr502, sint16 arr503, sint16 arr504, sint16 arr505, sint16 arr506, sint16 arr507,
+    sint16 arr510, sint16 arr511, sint16 arr512, sint16 arr513, sint16 arr514, sint16 arr515, sint16 arr516, sint16 arr517,
+    sint16 arr600, sint16 arr601, sint16 arr602, sint16 arr603, sint16 arr604, sint16 arr605, sint16 arr606, sint16 arr607,
+    sint16 arr610, sint16 arr611, sint16 arr612, sint16 arr613, sint16 arr614, sint16 arr615, sint16 arr616, sint16 arr617,
+    sint16 arr700, sint16 arr701, sint16 arr702, sint16 arr703, sint16 arr704, sint16 arr705, sint16 arr706, sint16 arr707,
+    sint16 arr710, sint16 arr711, sint16 arr712, sint16 arr713, sint16 arr714, sint16 arr715, sint16 arr716, sint16 arr717,
+    sint16 arr800, sint16 arr801, sint16 arr802, sint16 arr803, sint16 arr804, sint16 arr805, sint16 arr806, sint16 arr807,
+    sint16 arr810, sint16 arr811, sint16 arr812, sint16 arr813, sint16 arr814, sint16 arr815, sint16 arr816, sint16 arr817,
+    sint16 arr900, sint16 arr901, sint16 arr902, sint16 arr903, sint16 arr904, sint16 arr905, sint16 arr906, sint16 arr907,
+    sint16 arr910, sint16 arr911, sint16 arr912, sint16 arr913, sint16 arr914, sint16 arr915, sint16 arr916, sint16 arr917
 ) =
 {
     [poly0, poly1, poly2, poly3, poly4, poly5, poly6, poly7] <= [2295, 2295, 2295, 2295, 2295, 2295, 2295, 2295] /\

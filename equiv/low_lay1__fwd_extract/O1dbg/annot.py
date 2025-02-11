@@ -206,10 +206,10 @@ def annot(annotator):
         'proc main(',
         *add_indent(4, [
             '# input',
-            *Parameters(poly).format(','),
+            *Parameters(poly).format(';'),
             '',
-            '# ghost',
-            'sint16 Q, sint16 W10',
+            '# output',
+            *Parameters(arr).format(),
         ]),
         ') =',
     ]
