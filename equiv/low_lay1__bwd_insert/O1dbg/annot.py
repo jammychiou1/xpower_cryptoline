@@ -313,9 +313,6 @@ def annot_k0_iter(annotator, k0=0):
         '',
         annotator.generate_cut(),
         *add_indent(4, [
-            # *algebra_conj_lines_low.format(),
-            # 'prove with [algebra solver isl, precondition, cuts[0]],',
-            # '',
             *full_out_low_k0_spec,
             *full_out_high_k0_spec,
             'true',
@@ -356,10 +353,10 @@ def annot(annotator):
         'proc main(',
         *add_indent(4, [
             '# input',
-            *Parameters(arr + full_in).format(','),
+            *Parameters(arr + full_in).format(';'),
             '',
-            '# ghost',
-            'sint16 Q, sint16 W10',
+            '# output',
+            *Parameters(full_out).format(),
         ]),
         ') =',
     ]

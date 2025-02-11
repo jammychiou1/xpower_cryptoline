@@ -29,10 +29,30 @@ proc main(
     sint16 full1488_in, sint16 full1489_in, sint16 full1490_in, sint16 full1491_in, sint16 full1492_in, sint16 full1493_in, sint16 full1494_in, sint16 full1495_in,
     sint16 full1496_in, sint16 full1497_in, sint16 full1498_in, sint16 full1499_in, sint16 full1500_in, sint16 full1501_in, sint16 full1502_in, sint16 full1503_in,
     sint16 full1504_in, sint16 full1505_in, sint16 full1506_in, sint16 full1507_in, sint16 full1508_in, sint16 full1509_in, sint16 full1510_in, sint16 full1511_in,
-    sint16 full1512_in, sint16 full1513_in, sint16 full1514_in, sint16 full1515_in, sint16 full1516_in, sint16 full1517_in, sint16 full1518_in, sint16 full1519_in,
+    sint16 full1512_in, sint16 full1513_in, sint16 full1514_in, sint16 full1515_in, sint16 full1516_in, sint16 full1517_in, sint16 full1518_in, sint16 full1519_in;
 
-    # ghost
-    sint16 Q, sint16 W10
+    # output
+    sint16 full0_out, sint16 full1_out, sint16 full2_out, sint16 full3_out, sint16 full4_out, sint16 full5_out, sint16 full6_out, sint16 full7_out,
+    sint16 full8_out, sint16 full9_out, sint16 full10_out, sint16 full11_out, sint16 full12_out, sint16 full13_out, sint16 full14_out, sint16 full15_out,
+    sint16 full16_out, sint16 full17_out, sint16 full18_out, sint16 full19_out, sint16 full20_out, sint16 full21_out, sint16 full22_out, sint16 full23_out,
+    sint16 full24_out, sint16 full25_out, sint16 full26_out, sint16 full27_out, sint16 full28_out, sint16 full29_out, sint16 full30_out, sint16 full31_out,
+    sint16 full32_out, sint16 full33_out, sint16 full34_out, sint16 full35_out, sint16 full36_out, sint16 full37_out, sint16 full38_out, sint16 full39_out,
+    sint16 full40_out, sint16 full41_out, sint16 full42_out, sint16 full43_out, sint16 full44_out, sint16 full45_out, sint16 full46_out, sint16 full47_out,
+    sint16 full48_out, sint16 full49_out, sint16 full50_out, sint16 full51_out, sint16 full52_out, sint16 full53_out, sint16 full54_out, sint16 full55_out,
+    sint16 full56_out, sint16 full57_out, sint16 full58_out, sint16 full59_out, sint16 full60_out, sint16 full61_out, sint16 full62_out, sint16 full63_out,
+    sint16 full64_out, sint16 full65_out, sint16 full66_out, sint16 full67_out, sint16 full68_out, sint16 full69_out, sint16 full70_out, sint16 full71_out,
+    sint16 full72_out, sint16 full73_out, sint16 full74_out, sint16 full75_out, sint16 full76_out, sint16 full77_out, sint16 full78_out, sint16 full79_out,
+    sint16 full80_out,
+    sint16 full1440_out, sint16 full1441_out, sint16 full1442_out, sint16 full1443_out, sint16 full1444_out, sint16 full1445_out, sint16 full1446_out, sint16 full1447_out,
+    sint16 full1448_out, sint16 full1449_out, sint16 full1450_out, sint16 full1451_out, sint16 full1452_out, sint16 full1453_out, sint16 full1454_out, sint16 full1455_out,
+    sint16 full1456_out, sint16 full1457_out, sint16 full1458_out, sint16 full1459_out, sint16 full1460_out, sint16 full1461_out, sint16 full1462_out, sint16 full1463_out,
+    sint16 full1464_out, sint16 full1465_out, sint16 full1466_out, sint16 full1467_out, sint16 full1468_out, sint16 full1469_out, sint16 full1470_out, sint16 full1471_out,
+    sint16 full1472_out, sint16 full1473_out, sint16 full1474_out, sint16 full1475_out, sint16 full1476_out, sint16 full1477_out, sint16 full1478_out, sint16 full1479_out,
+    sint16 full1480_out, sint16 full1481_out, sint16 full1482_out, sint16 full1483_out, sint16 full1484_out, sint16 full1485_out, sint16 full1486_out, sint16 full1487_out,
+    sint16 full1488_out, sint16 full1489_out, sint16 full1490_out, sint16 full1491_out, sint16 full1492_out, sint16 full1493_out, sint16 full1494_out, sint16 full1495_out,
+    sint16 full1496_out, sint16 full1497_out, sint16 full1498_out, sint16 full1499_out, sint16 full1500_out, sint16 full1501_out, sint16 full1502_out, sint16 full1503_out,
+    sint16 full1504_out, sint16 full1505_out, sint16 full1506_out, sint16 full1507_out, sint16 full1508_out, sint16 full1509_out, sint16 full1510_out, sint16 full1511_out,
+    sint16 full1512_out, sint16 full1513_out, sint16 full1514_out, sint16 full1515_out, sint16 full1516_out, sint16 full1517_out, sint16 full1518_out, sint16 full1519_out
 ) =
 {
     [arr000, arr001, arr002, arr003, arr004, arr005, arr006, arr007] <= [3700, 3700, 3700, 3700, 3700, 3700, 3700, 3700] /\
