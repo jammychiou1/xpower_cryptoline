@@ -745,12 +745,10 @@ def annot(annotator):
         'proc main(',
         *add_indent(4, [
             '# input',
-            *Parameters(arr_a).format(','),
+            *Parameters(arr_a + arr_b).format(';'),
             '',
-            *Parameters(arr_b).format(','),
-            '',
-            '# ghost',
-            'sint16 W10, sint16 W9',
+            '# output',
+            *Parameters(arr_c).format(),
         ]),
         ') =',
     ]
@@ -759,7 +757,6 @@ def annot(annotator):
     output_lines += [
         '{',
         *add_indent(4, [
-            'W10 = -1610 /\\ W9 = -1606 /\\',
             *algebra_predicate_conj_lines.format(),
         ]),
         '  &&',

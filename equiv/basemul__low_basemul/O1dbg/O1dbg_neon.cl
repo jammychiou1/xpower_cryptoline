@@ -20,7 +20,6 @@ proc main(
     sint16 arr810_a, sint16 arr811_a, sint16 arr812_a, sint16 arr813_a, sint16 arr814_a, sint16 arr815_a, sint16 arr816_a, sint16 arr817_a,
     sint16 arr900_a, sint16 arr901_a, sint16 arr902_a, sint16 arr903_a, sint16 arr904_a, sint16 arr905_a, sint16 arr906_a, sint16 arr907_a,
     sint16 arr910_a, sint16 arr911_a, sint16 arr912_a, sint16 arr913_a, sint16 arr914_a, sint16 arr915_a, sint16 arr916_a, sint16 arr917_a,
-
     sint16 arr000_b, sint16 arr001_b, sint16 arr002_b, sint16 arr003_b, sint16 arr004_b, sint16 arr005_b, sint16 arr006_b, sint16 arr007_b,
     sint16 arr010_b, sint16 arr011_b, sint16 arr012_b, sint16 arr013_b, sint16 arr014_b, sint16 arr015_b, sint16 arr016_b, sint16 arr017_b,
     sint16 arr100_b, sint16 arr101_b, sint16 arr102_b, sint16 arr103_b, sint16 arr104_b, sint16 arr105_b, sint16 arr106_b, sint16 arr107_b,
@@ -40,13 +39,31 @@ proc main(
     sint16 arr800_b, sint16 arr801_b, sint16 arr802_b, sint16 arr803_b, sint16 arr804_b, sint16 arr805_b, sint16 arr806_b, sint16 arr807_b,
     sint16 arr810_b, sint16 arr811_b, sint16 arr812_b, sint16 arr813_b, sint16 arr814_b, sint16 arr815_b, sint16 arr816_b, sint16 arr817_b,
     sint16 arr900_b, sint16 arr901_b, sint16 arr902_b, sint16 arr903_b, sint16 arr904_b, sint16 arr905_b, sint16 arr906_b, sint16 arr907_b,
-    sint16 arr910_b, sint16 arr911_b, sint16 arr912_b, sint16 arr913_b, sint16 arr914_b, sint16 arr915_b, sint16 arr916_b, sint16 arr917_b,
+    sint16 arr910_b, sint16 arr911_b, sint16 arr912_b, sint16 arr913_b, sint16 arr914_b, sint16 arr915_b, sint16 arr916_b, sint16 arr917_b;
 
-    # ghost
-    sint16 W10, sint16 W9
+    # output
+    sint16 arr000_c, sint16 arr001_c, sint16 arr002_c, sint16 arr003_c, sint16 arr004_c, sint16 arr005_c, sint16 arr006_c, sint16 arr007_c,
+    sint16 arr010_c, sint16 arr011_c, sint16 arr012_c, sint16 arr013_c, sint16 arr014_c, sint16 arr015_c, sint16 arr016_c, sint16 arr017_c,
+    sint16 arr100_c, sint16 arr101_c, sint16 arr102_c, sint16 arr103_c, sint16 arr104_c, sint16 arr105_c, sint16 arr106_c, sint16 arr107_c,
+    sint16 arr110_c, sint16 arr111_c, sint16 arr112_c, sint16 arr113_c, sint16 arr114_c, sint16 arr115_c, sint16 arr116_c, sint16 arr117_c,
+    sint16 arr200_c, sint16 arr201_c, sint16 arr202_c, sint16 arr203_c, sint16 arr204_c, sint16 arr205_c, sint16 arr206_c, sint16 arr207_c,
+    sint16 arr210_c, sint16 arr211_c, sint16 arr212_c, sint16 arr213_c, sint16 arr214_c, sint16 arr215_c, sint16 arr216_c, sint16 arr217_c,
+    sint16 arr300_c, sint16 arr301_c, sint16 arr302_c, sint16 arr303_c, sint16 arr304_c, sint16 arr305_c, sint16 arr306_c, sint16 arr307_c,
+    sint16 arr310_c, sint16 arr311_c, sint16 arr312_c, sint16 arr313_c, sint16 arr314_c, sint16 arr315_c, sint16 arr316_c, sint16 arr317_c,
+    sint16 arr400_c, sint16 arr401_c, sint16 arr402_c, sint16 arr403_c, sint16 arr404_c, sint16 arr405_c, sint16 arr406_c, sint16 arr407_c,
+    sint16 arr410_c, sint16 arr411_c, sint16 arr412_c, sint16 arr413_c, sint16 arr414_c, sint16 arr415_c, sint16 arr416_c, sint16 arr417_c,
+    sint16 arr500_c, sint16 arr501_c, sint16 arr502_c, sint16 arr503_c, sint16 arr504_c, sint16 arr505_c, sint16 arr506_c, sint16 arr507_c,
+    sint16 arr510_c, sint16 arr511_c, sint16 arr512_c, sint16 arr513_c, sint16 arr514_c, sint16 arr515_c, sint16 arr516_c, sint16 arr517_c,
+    sint16 arr600_c, sint16 arr601_c, sint16 arr602_c, sint16 arr603_c, sint16 arr604_c, sint16 arr605_c, sint16 arr606_c, sint16 arr607_c,
+    sint16 arr610_c, sint16 arr611_c, sint16 arr612_c, sint16 arr613_c, sint16 arr614_c, sint16 arr615_c, sint16 arr616_c, sint16 arr617_c,
+    sint16 arr700_c, sint16 arr701_c, sint16 arr702_c, sint16 arr703_c, sint16 arr704_c, sint16 arr705_c, sint16 arr706_c, sint16 arr707_c,
+    sint16 arr710_c, sint16 arr711_c, sint16 arr712_c, sint16 arr713_c, sint16 arr714_c, sint16 arr715_c, sint16 arr716_c, sint16 arr717_c,
+    sint16 arr800_c, sint16 arr801_c, sint16 arr802_c, sint16 arr803_c, sint16 arr804_c, sint16 arr805_c, sint16 arr806_c, sint16 arr807_c,
+    sint16 arr810_c, sint16 arr811_c, sint16 arr812_c, sint16 arr813_c, sint16 arr814_c, sint16 arr815_c, sint16 arr816_c, sint16 arr817_c,
+    sint16 arr900_c, sint16 arr901_c, sint16 arr902_c, sint16 arr903_c, sint16 arr904_c, sint16 arr905_c, sint16 arr906_c, sint16 arr907_c,
+    sint16 arr910_c, sint16 arr911_c, sint16 arr912_c, sint16 arr913_c, sint16 arr914_c, sint16 arr915_c, sint16 arr916_c, sint16 arr917_c
 ) =
 {
-    W10 = -1610 /\ W9 = -1606 /\
     [arr000_a, arr001_a, arr002_a, arr003_a, arr004_a, arr005_a, arr006_a, arr007_a] <= [21565, 21565, 21565, 21565, 21565, 21565, 21565, 21565] /\
     [arr010_a, arr011_a, arr012_a, arr013_a, arr014_a, arr015_a, arr016_a, arr017_a] <= [21565, 21565, 21565, 21565, 21565, 21565, 21565, 21565] /\
     [arr100_a, arr101_a, arr102_a, arr103_a, arr104_a, arr105_a, arr106_a, arr107_a] <= [21565, 21565, 21565, 21565, 21565, 21565, 21565, 21565] /\

@@ -1,251 +1,116 @@
-def format_imm(val):
-    s = str(val)
-    if val < 0:
-        s = f'({s})'
-    s += '@sint16'
-    return s
+import sys
+sys.path.append('.')
 
-def format_const(val):
-    s = str(val)
-    if val < 0:
-        s = f'({s})'
-    s += '@16'
-    return s
+from annot_utils import *
+from consts import setup_const, const_base_O3, center_pow, center_mod, W10, W9
 
-def format_arr(arr):
-    inner = ', '.join(arr)
-    return f'[{inner}]'
+def annot(annotator):
+    arr_a = [[Variable(f'arr{i}{k0}{j}{k}_a', SINT16) for k in range(8)] for i in range(10) for k0 in range(2) for j in range(9)]
+    arr_b = [[Variable(f'arr{i}{k0}{j}{k}_b', SINT16) for k in range(8)] for i in range(10) for k0 in range(2) for j in range(9)]
+    arr_c = [[Variable(f'arr{i}{k0}{j}{k}_c', SINT16) for k in range(8)] for i in range(10) for k0 in range(2) for j in range(9)]
+    arr_mem_a = memory_array_like(0x7fffffc3c0, arr_a)
+    arr_mem_b = memory_array_like(0x7fffffcf00, arr_b)
+    arr_mem_c = memory_array_like(0x7fffffda40, arr_c)
+    annotator.shared_state.arr_joined = [arr_a, arr_b]
+    annotator.shared_state.arr_mem_c = arr_mem_c
 
-def format_coefs(coefs):
-    return format_arr([str(c) for c in coefs])
+    output_lines = [
+        'proc main(',
+        *add_indent(4, [
+            '# input',
+            *Parameters(arr_a + arr_b).format(';'),
+            '',
+            '# output',
+            *Parameters(arr_c).format(),
+        ]),
+        ') =',
+    ]
 
-def format_poly(base, cnt, suff=''):
-    arr = '['
-    for i in range(cnt):
-        if i != cnt - 1:
-            s = f'poly{base + i}{suff},'
-            s = f'{s:9}'
-        else:
-            s = f'poly{base + i}{suff}'
-            s = f'{s:7}'
-        arr += s
-    arr += ']'
-    return arr
+    algebra_predicate_conj_lines, range_predicate_conj_lines = bound_array(8420, arr_a + arr_b)
+    output_lines += [
+        '{',
+        *add_indent(4, [
+            *algebra_predicate_conj_lines.format(),
+        ]),
+        '  &&',
+        *add_indent(4, [
+            *range_predicate_conj_lines.format(),
+        ]),
+        '}',
+    ]
 
-def format_movconsts(base, cnt):
-    arr = '['
-    for i in range(cnt):
-        if i != cnt - 1:
-            s = f'const{base + i},'
-            s = f'{s:9}'
-        else:
-            s = f'const{base + i}'
-            s = f'{s:7}'
-        arr += s
-    arr += ']'
-    return arr
+    output_lines += [
+        '',
+        '# setup',
+        '',
+        *setup_const(const_base_O3),
+        '',
+        *mov_array(arr_mem_a, arr_a),
+        '',
+        *mov_array(arr_mem_b, arr_b),
+        '',
+    ]
 
-def memory_loc(addr):
-    return f'L{hex(addr)}'
+    output_lines += [
+        *annotator.lines,
+    ]
 
-def memory_arr(base, len, size):
-    return format_arr([memory_loc(base + size * i) for i in range(len)])
+    output_lines += [
+        '',
+        '# output',
+        '',
+        *mov_array(arr_c, arr_mem_c),
+        '',
+    ]
 
-const_table = [
-      4591,     29,      7,      0,      0,      0,      0,      0,
-      1005,    918,   -818,  -1736,   7173,   6552,  -5838, -12391,
-     -2274, -16231,   1610,  11491,  -2113, -15081,  -1815, -12954,
-     -2274, -16231,   1610,  11491,  -2113, -15081,  -1815, -12954,
-      2113,  15081,  -2274, -16231,   1815,  12954,   1610,  11491,
-     -2113, -15081,   2274,  16231,  -1815, -12954,  -1610, -11491,
-         1,      7,      1,      7,      1,      7,      1,      7,
-         1,      7,      1,      7,      1,      7,      1,      7,
-     -1610, -11491,  -1815, -12954,   2274,  16231,  -2113, -15081,
-      1610,  11491,   1815,  12954,  -2274, -16231,   2113,  15081,
-     -1815, -12954,  -2113, -15081,   1610,  11491,  -2274, -16231,
-     -1815, -12954,  -2113, -15081,   1610,  11491,  -2274, -16231,
-      2274,  16231,   1610,  11491,   2113,  15081,  -1815, -12954,
-     -2274, -16231,  -1610, -11491,  -2113, -15081,   1815,  12954,
-     -2113, -15081,  -2274, -16231,  -1815, -12954,   1610,  11491,
-     -2113, -15081,  -2274, -16231,  -1815, -12954,   1610,  11491,
-        -1,     -7,      1,      7,     -1,     -7,      1,      7,
-         1,      7,     -1,     -7,      1,      7,     -1,     -7,
-      1610,  11491,  -1815, -12954,  -2274, -16231,  -2113, -15081,
-      1610,  11491,  -1815, -12954,  -2274, -16231,  -2113, -15081,
-      4591,  29235,      0,      0,      0,      0,      0,      0,
-      -621,   1891,   -803,      0,  -4432,  13497,  -5731, -17729,
-      4591,      0,      0,      0,      0,      0,      0,      0,
-    -28264, -16381, -28264, -16381,  -2295,  -2295,      7,      1,
-    -28264, -16381,    557,  12983,  -2295,   1819,  12241,   1715,
-    -28264, -16381,  -6267,  13496,  -2295,   1891, -11463,  -1606,
-    -28264, -16381,   8365,  15274,  -2295,   2140,   2213,    310,
-    -28264, -16381,  23468,  -7252,  -2295,  -1016,  -6467,   -906,
-    -28264, -16381, -17144,  -3234,  -2295,   -453, -14503,  -2032,
-    -28264, -16381,  19899,   1106,  -2295,    155,  -2220,   -311,
-    -28264, -16381, -24025,  -5732,  -2295,   -803,  -5774,   -809,
-    -28264, -16381,  23411, -10264,  -2295,  -1438,  -6802,   -953,
-      9007,      7,      0,      0,      0,      0, -11491,  -1610,
-      9007,      7,      0,      0,      0,      0,   6616,    927,
-      9007,      7,      0,      0,      0,      0,  -9122,  -1278,
-      9007,      7,      0,      0,      0,      0,   2077,    291,
-      9007,      7,      0,      0,      0,      0,   6681,    936,
-      9007,      7,      0,      0,      0,      0, -13982,  -1959,
-      9007,      7,      0,      0,      0,      0,   9414,   1319,
-      9007,      7,      0,      0,      0,      0, -13297,  -1863,
-      9007,      7,      0,      0,      0,      0,  -9664,  -1354,
-    -28264, -16381,  19114,   8843,  -2295,   1239,  11491,   1610,
-    -28264, -16381,   3297,  -6281,  -2295,   -880,  13982,   1959,
-    -28264, -16381,   3212, -10799,  -2295,  -1513,  -6616,   -927,
-    -28264, -16381,  19300,   2248,  -2295,    315,  -9414,  -1319,
-    -28264, -16381,  23054, -12705,  -2295,  -1780,   9122,   1278,
-    -28264, -16381, -15845,  16137,  -2295,   2261,  13297,   1863,
-    -28264, -16381,  27122, -11092,  -2295,  -1554,  -2077,   -291,
-    -28264, -16381, -26351, -13783,  -2295,  -1931,   9664,   1354,
-    -28264, -16381,  12633,  -5339,  -2295,   -748,  -6681,   -936,
-      9007,      7,      0,      0,      0,      0,  16231,   2274,
-      9007,      7,      0,      0,      0,      0, -15695,  -2199,
-      9007,      7,      0,      0,      0,      0,   7958,   1115,
-      9007,      7,      0,      0,      0,      0,  -1427,   -200,
-      9007,      7,      0,      0,      0,      0,  -1213,   -170,
-      9007,      7,      0,      0,      0,      0,  15353,   2151,
-      9007,      7,      0,      0,      0,      0, -14803,  -2074,
-      9007,      7,      0,      0,      0,      0, -15859,  -2222,
-      9007,      7,      0,      0,      0,      0,   9457,   1325,
-    -28264, -16381, -17858,  -8116,  -2295,  -1137, -12954,  -1815,
-    -28264, -16381, -20799,    606,  -2295,     85,   -193,    -27,
-    -28264, -16381,  29106,  11655,  -2295,   1633,  -2819,   -395,
-    -28264, -16381, -16759,    713,  -2295,    100,  14582,   2043,
-    -28264, -16381, -19728,   7929,  -2295,   1111,   5796,    812,
-    -28264, -16381,  -8151,  12404,  -2295,   1738,  10756,   1507,
-    -28264, -16381, -30919,   7401,  -2295,   1037,  -1627,   -228,
-    -28264, -16381, -25010,  -8537,  -2295,  -1196,  -5603,   -785,
-    -28264, -16381, -20956,   8707,  -2295,   1220,  -7937,  -1112,
-      9007,      7,      0,      0,      0,      0,     -7,     -1,
-      9007,      7,      0,      0,      0,      0,  11463,   1606,
-      9007,      7,      0,      0,      0,      0,   6467,    906,
-      9007,      7,      0,      0,      0,      0,   2220,    311,
-      9007,      7,      0,      0,      0,      0,   6802,    953,
-      9007,      7,      0,      0,      0,      0, -12241,  -1715,
-      9007,      7,      0,      0,      0,      0,  -2213,   -310,
-      9007,      7,      0,      0,      0,      0,  14503,   2032,
-      9007,      7,      0,      0,      0,      0,   5774,    809,
-    -28264, -16381, -15031,   9906,  -2295,   1388, -16231,  -2274,
-    -28264, -16381, -27408,  -3969,  -2295,   -556, -15353,  -2151,
-    -28264, -16381, -29249,  13582,  -2295,   1903,  15695,   2199,
-    -28264, -16381,  21726,   -814,  -2295,   -114,  14803,   2074,
-    -28264, -16381,   4140, -11006,  -2295,  -1542,  -7958,  -1115,
-    -28264, -16381, -12990,   2897,  -2295,    406,  15859,   2222,
-    -28264, -16381,  -6695,  -9094,  -2295,  -1274,   1427,    200,
-    -28264, -16381,  23268,  14974,  -2295,   2098,  -9457,  -1325,
-    -28264, -16381, -23297,  16287,  -2295,   2282,   1213,    170,
-      9007,      7,      0,      0,      0,      0,  12954,   1815,
-      9007,      7,      0,      0,      0,      0,   2819,    395,
-      9007,      7,      0,      0,      0,      0,  -5796,   -812,
-      9007,      7,      0,      0,      0,      0,   1627,    228,
-      9007,      7,      0,      0,      0,      0,   7937,   1112,
-      9007,      7,      0,      0,      0,      0,    193,     27,
-      9007,      7,      0,      0,      0,      0, -14582,  -2043,
-      9007,      7,      0,      0,      0,      0, -10756,  -1507,
-      9007,      7,      0,      0,      0,      0,   5603,    785,
-    -28264, -16381, -23496,   5745,  -2295,    805, -15081,  -2113,
-    -28264, -16381, -21184,  -3341,  -2295,   -468, -10678,  -1496,
-    -28264, -16381,   3198,   4832,  -2295,    677,   5203,    729,
-    -28264, -16381, -32632,  15345,  -2295,   2150,  10585,   1483,
-    -28264, -16381, -30934,  -9736,  -2295,  -1364,   -492,    -69,
-    -28264, -16381, -11406,   4560,  -2295,    639,   7359,   1031,
-    -28264, -16381,  -9407,  11676,  -2295,   1636,   4497,    630,
-    -28264, -16381, -13418,  13075,  -2295,   1832,  11170,   1565,
-    -28264, -16381,   8208,  -9393,  -2295,  -1316, -12562,  -1760,
-      9007,      7,      0,      0,      0,      0,  15081,   2113,
-      9007,      7,      0,      0,      0,      0,  -5203,   -729,
-      9007,      7,      0,      0,      0,      0,    492,     69,
-      9007,      7,      0,      0,      0,      0,  -4497,   -630,
-      9007,      7,      0,      0,      0,      0,  12562,   1760,
-      9007,      7,      0,      0,      0,      0,  10678,   1496,
-      9007,      7,      0,      0,      0,      0, -10585,  -1483,
-      9007,      7,      0,      0,      0,      0,  -7359,  -1031,
-      9007,      7,      0,      0,      0,      0, -11170,  -1565,
-         1,      7,   -478,  -3412,   -478,  -3412,   4591,  15631,
-     -1610, -11491,   1175,   8386,      0,      0,   4591,  15631,
-      1610,  11491,   -129,   -921,   1708,  12191,   4591,  15631,
-      2274,  16231,   2190,  15631,      0,      0,   4591,  15631,
-     -1815, -12954,     -6,    -43,   -129,   -921,   4591,  15631,
-        -1,     -7,    956,   6823,      0,      0,   4591,  15631,
-     -2274, -16231,   1708,  12191,  -1095,  -7815,   4591,  15631,
-      1815,  12954,    258,   1841,      0,      0,   4591,  15631,
-     -2113, -15081,  -1095,  -7815,     -6,    -43,   4591,  15631,
-      2113,  15081,     12,     86,      0,      0,   4591,  15631,
-      4591,      7,      0,      0,      0,      0,      0,      0,
-       -27,   -193,      0,      0,      0,      0,      0,      0,
-      4591,   4591,   4591,   4591,   4591,   4591,   4591,   4591,
-      2295,   2295,   2295,   2295,   2295,   2295,   2295,   2295,
-     -2295,  -2295,  -2295,  -2295,  -2295,  -2295,  -2295,  -2295,
-]
+    def varname(i, j, k, suffix):
+        return f'arr{i}{k // 8}{j}{k % 8}{suffix}'
 
-def annot(lines, consts, arr_a_base, arr_b_base, arr_c_base):
-    print('proc main(')
-    print('    # input')
+    arr_c_spec = []
     for i in range(10):
-        for k0 in range(2):
-            for j in range(9):
-                arr = [f'sint16 arr{i}{k0}{j}{k}_a,' for k in range(8)]
-                print(f'    {" ".join(arr)}')
-    print()
-    for i in range(10):
-        for k0 in range(2):
-            for j in range(9):
-                arr = [f'sint16 arr{i}{k0}{j}{k}_b,' for k in range(8)]
-                print(f'    {" ".join(arr)}')
-    print()
-    print('    # ghost')
-    print('    sint16 Q;')
-    print()
-    print('    # output')
-    for i in range(10):
-        for k0 in range(2):
-            for j in range(9):
-                arr = [f'sint16 arr{i}{k0}{j}{k}_c,' for k in range(8)]
-                print(f'    {" ".join(arr)}')
-    print('    sint16 void')
-    print(') =')
-    print('{ true && true }')
+        for j in range(9):
+            coef = center_mod(center_pow(W10, i) * center_pow(W9, j))
+            lines_ij = []
+            lines_ij.append(f'{make_vector([varname(i, j, k, "_c") for k in range(16)])} = [')
 
-    print()
-    print('# inputs')
-    print()
+            for k in range(16):
+                terms = []
+                for ka in range(16):
+                    wrap = ka > k
+                    kb = (k - ka) % 16
+                    if not wrap:
+                        terms.append(f'{varname(i, j, ka, "_a")} * {varname(i, j, kb, "_b")}')
+                    else:
+                        terms.append(f'{coef} * {varname(i, j, ka, "_a")} * {varname(i, j, kb, "_b")}')
 
-    for i in range(10):
-        for k0 in range(2):
-            for j in range(9):
-                arr = [f'arr{i}{k0}{j}{k}_a' for k in range(8)]
-                print(f'mov {memory_arr(arr_a_base + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} {format_arr(arr)};')
-    print()
-    for i in range(10):
-        for k0 in range(2):
-            for j in range(9):
-                arr = [f'arr{i}{k0}{j}{k}_b' for k in range(8)]
-                print(f'mov {memory_arr(arr_b_base + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)} {format_arr(arr)};')
-    print()
-    for i in range(0, 1024, 16):
-        rhs = [format_imm(c) for c in const_table[i : i + 16]]
-        print(f'mov {memory_arr(consts + 2 * i, 16, 2)} {format_arr(rhs)};')
-    print()
+                lines_ij.append('    ' + ' + '.join(terms))
+                if k < 15:
+                    lines_ij[-1] += ','
 
-    print(''.join(lines))
+            lines_ij.append(f'] ( mod {make_vector([4591] * 16)}) /\\')
+            lines_ij.append('')
+            arr_c_spec += lines_ij
 
-    for i in range(10):
-        for k0 in range(2):
-            for j in range(9):
-                arr = [f'arr{i}{k0}{j}{k}_c' for k in range(8)]
-                print(f'mov {format_arr(arr)} {memory_arr(arr_c_base + 16 * (j + 9 * (k0 + 2 * i)), 8, 2)};')
-    print(f'mov void 0@sint16;')
+    algebra_conj_lines, range_conj_lines = bound_array(4585, arr_c)
+    output_lines += [
+        '{',
+        *add_indent(4, [
+            *arr_c_spec,
+            'true',
+            'prove with [all cuts]',
+        ]),
+        '  &&',
+        *add_indent(4, [
+            *range_conj_lines.format(),
+            'prove with [all cuts]',
+        ]),
+        '}',
+    ]
 
-    print('{ true && true }')
+    return output_lines
 
-with open('./O1dbg_neon_raw.cl', 'r') as f:
-    lines = f.readlines()
-    annot(lines, 0x55555526f0, 0x7fffffcef0, 0x7fffffda30, 0x7fffffc3b0)
-
-# with open('./O3_neon_raw.cl', 'r') as f:
-#     lines = f.readlines()
-#     annot(lines, 0x5555552b30, 0x7fffffcf00, 0x7fffffc3c0, 0x7fffffda40)
+annotator = AnnotatorState('./basemul__main_basemul/O3_neon_raw.cl', )
+output_lines = annot(annotator)
+with open('./basemul__main_basemul/cec/O3_neon.cl', 'w') as f:
+    for line in output_lines:
+        print(line, file=f)
