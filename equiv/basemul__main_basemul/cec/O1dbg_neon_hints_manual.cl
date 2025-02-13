@@ -2879,6 +2879,10 @@ mov %v7 [%v7[1],%v7[2],%v7[3],%v7[4],%v7[5],%v7[6],%v7[7],%v18[0]];
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[0],%v7[1],%v7[2],%v7[3]] %mull; adds %dc %v4 %v4 %mlal;
 (* smlal2	v3.4s, v7.8h, v1.h[7]                    #! PC = 0x5555551a98 *)
 broadcast %mull 4 [%v1[7]]; smulj %mlal [%v7[4],%v7[5],%v7[6],%v7[7]] %mull; adds %dc %v3 %v3 %mlal;
+
+# 4 0 3 8
+# 0 8 4 3
+
 (* add	v2.4s, v4.4s, v0.4s                         #! PC = 0x5555551a9c *)
 add %v2 %v4 %v0;
 (* add	v7.4s, v3.4s, v8.4s                         #! PC = 0x5555551aa0 *)
@@ -4876,6 +4880,9 @@ broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[0],%v3[1],%v3[2],%v3[3]] %mull; sub
 mov %v1 %v2;
 (* smlsl2	v1.4s, v3.8h, v4.h[7]                    #! PC = 0x5555551944 *)
 broadcast %mull 4 [%v4[7]]; smulj %mlsl [%v3[4],%v3[5],%v3[6],%v3[7]] %mull; subc %dc %v1 %v1 %mlsl;
+
+# 16 7 0 1
+
 (* sqrdmulh	v3.4s, v16.4s, v8.s[0]                 #! PC = 0x5555551948 *)
 cast uint16 coef_l %v8[0]; join coef %v8[1] coef_l;
 smulj %LO %v16 [coef,coef,coef,coef];

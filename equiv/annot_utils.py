@@ -78,6 +78,7 @@ def add_to_last_line(lines, suffix):
 
 
 SINT16 = IntType(True, 16)
+SINT32 = IntType(True, 32)
 
 def memory_array_like(base, sint16_array):
     arr = []

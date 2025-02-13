@@ -6,35 +6,53 @@ from consts import setup_const, const_base_O1dbg, const_base_O3, center_pow, cen
 
 def annot_hints(annotator, isO1dbg):
     output_lines = []
-    last_loc = 0
+    last_end = 0
 
     for i in range(10):
         for j in range(9):
             if i % 2 == 0:
-                new_loc = annotator.find_first_line('PC = 0x55555519dc' if isO1dbg else 'PC = 0x5555551c4c', offset=2)
+                new_loc0 = annotator.find_first_line('PC = 0x55555519dc' if isO1dbg else 'PC = 0x5555551c4c', offset=2)
+                new_loc1 = annotator.find_first_line('PC = 0x5555551a98' if isO1dbg else 'PC = 0x5555551d14', offset=2)
                 r0, r1 = [2, 1] if isO1dbg else [4, 8]
+                c00, c01, c10, c11 = [0, 8, 4, 3] if isO1dbg else [1, 2, 6, 0]
                 output_lines += [
-                    *annotator.lines[last_loc : new_loc],
+                    *annotator.lines[last_end : new_loc0],
                     '',
                     f'mov {make_vector([f"fc0_{i}{j}_{k}" for k in range(8)])} %v{r0};',
                     f'mov {make_vector([f"fc1_{i}{j}_{k}" for k in range(8)])} %v{r1};',
                     '',
+                    *annotator.lines[new_loc0 : new_loc1],
+                    # '',
+                    # f'mov {make_vector([f"conv0_{i}{j}_{k}" for k in range(0, 4)])} %v{c00};',
+                    # f'mov {make_vector([f"conv0_{i}{j}_{k}" for k in range(4, 8)])} %v{c01};',
+                    # f'mov {make_vector([f"conv1_{i}{j}_{k}" for k in range(0, 4)])} %v{c10};',
+                    # f'mov {make_vector([f"conv1_{i}{j}_{k}" for k in range(4, 8)])} %v{c11};',
+                    # '',
                 ]
             else:
-                new_loc = annotator.find_first_line('PC = 0x5555551818' if isO1dbg else 'PC = 0x5555551d90', offset=2)
+                new_loc0 = annotator.find_first_line('PC = 0x5555551818' if isO1dbg else 'PC = 0x5555551d90', offset=2)
+                new_loc1 = annotator.find_first_line('PC = 0x5555551944' if isO1dbg else 'PC = 0x5555551edc', offset=2)
                 r0, r1, rs = [4, 1, 6] if isO1dbg else [5, 6, 7]
+                c00, c01, c10, c11 = [16, 7, 0, 1] if isO1dbg else [7, 17, 0, 1]
                 output_lines += [
-                    *annotator.lines[last_loc : new_loc],
+                    *annotator.lines[last_end : new_loc0],
                     '',
                     f'mov {make_vector([f"fa0_{i}{j}_{k}" for k in range(8)])} %v{r0};',
                     f'mov {make_vector([f"fa1_{i}{j}_{k}" for k in range(8)])} %v{r1};',
                     f'mov {make_vector([f"fas_{i}{j}_{k}" for k in range(8)])} %v{rs};',
                     '',
+                    *annotator.lines[new_loc0 : new_loc1],
+                    '',
+                    f'mov {make_vector([f"conv0_{i}{j}_{k}" for k in range(0, 4)])} %v{c00};',
+                    f'mov {make_vector([f"conv0_{i}{j}_{k}" for k in range(4, 8)])} %v{c01};',
+                    f'mov {make_vector([f"conv1_{i}{j}_{k}" for k in range(0, 4)])} %v{c10};',
+                    f'mov {make_vector([f"conv1_{i}{j}_{k}" for k in range(4, 8)])} %v{c11};',
+                    '',
                 ]
-            last_loc = new_loc
+            last_end = new_loc1
 
     output_lines += [
-        *annotator.lines[last_loc:]
+        *annotator.lines[last_end:]
     ]
     return output_lines
 
@@ -48,13 +66,16 @@ def annot(annotator, isO1dbg):
     annotator.shared_state.arr_joined = [arr_a, arr_b]
     annotator.shared_state.arr_mem_c = arr_mem_c
 
-    def hints_row(i, j):
+    def hints_rows(i, j):
         if i % 2 == 0:
-            return [[Variable(f'fc{suffix}_{i}{j}_{k}', SINT16) for k in range(8)] for suffix in '01']
+            rows = [[Variable(f'fc{suffix}_{i}{j}_{k}', SINT16) for k in range(8)] for suffix in '01']
         else:
-            return [[Variable(f'fa{suffix}_{i}{j}_{k}', SINT16) for k in range(8)] for suffix in '01s']
+            rows = [[Variable(f'fa{suffix}_{i}{j}_{k}', SINT16) for k in range(8)] for suffix in '01s']
 
-    hints = [row for i in range(10) for j in range(9) for row in hints_row(i, j)]
+            rows += [[Variable(f'conv{suffix}_{i}{j}_{k}', SINT32) for k in range(8)] for suffix in '01']
+        return rows
+
+    hints = [row for i in range(10) for j in range(9) for row in hints_rows(i, j)]
 
     output_lines = [
         'proc main(',

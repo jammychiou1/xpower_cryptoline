@@ -565,30 +565,48 @@ proc main(
     sint16 fa0_10_0, sint16 fa0_10_1, sint16 fa0_10_2, sint16 fa0_10_3, sint16 fa0_10_4, sint16 fa0_10_5, sint16 fa0_10_6, sint16 fa0_10_7,
     sint16 fa1_10_0, sint16 fa1_10_1, sint16 fa1_10_2, sint16 fa1_10_3, sint16 fa1_10_4, sint16 fa1_10_5, sint16 fa1_10_6, sint16 fa1_10_7,
     sint16 fas_10_0, sint16 fas_10_1, sint16 fas_10_2, sint16 fas_10_3, sint16 fas_10_4, sint16 fas_10_5, sint16 fas_10_6, sint16 fas_10_7,
+    sint32 conv0_10_0, sint32 conv0_10_1, sint32 conv0_10_2, sint32 conv0_10_3, sint32 conv0_10_4, sint32 conv0_10_5, sint32 conv0_10_6, sint32 conv0_10_7,
+    sint32 conv1_10_0, sint32 conv1_10_1, sint32 conv1_10_2, sint32 conv1_10_3, sint32 conv1_10_4, sint32 conv1_10_5, sint32 conv1_10_6, sint32 conv1_10_7,
     sint16 fa0_11_0, sint16 fa0_11_1, sint16 fa0_11_2, sint16 fa0_11_3, sint16 fa0_11_4, sint16 fa0_11_5, sint16 fa0_11_6, sint16 fa0_11_7,
     sint16 fa1_11_0, sint16 fa1_11_1, sint16 fa1_11_2, sint16 fa1_11_3, sint16 fa1_11_4, sint16 fa1_11_5, sint16 fa1_11_6, sint16 fa1_11_7,
     sint16 fas_11_0, sint16 fas_11_1, sint16 fas_11_2, sint16 fas_11_3, sint16 fas_11_4, sint16 fas_11_5, sint16 fas_11_6, sint16 fas_11_7,
+    sint32 conv0_11_0, sint32 conv0_11_1, sint32 conv0_11_2, sint32 conv0_11_3, sint32 conv0_11_4, sint32 conv0_11_5, sint32 conv0_11_6, sint32 conv0_11_7,
+    sint32 conv1_11_0, sint32 conv1_11_1, sint32 conv1_11_2, sint32 conv1_11_3, sint32 conv1_11_4, sint32 conv1_11_5, sint32 conv1_11_6, sint32 conv1_11_7,
     sint16 fa0_12_0, sint16 fa0_12_1, sint16 fa0_12_2, sint16 fa0_12_3, sint16 fa0_12_4, sint16 fa0_12_5, sint16 fa0_12_6, sint16 fa0_12_7,
     sint16 fa1_12_0, sint16 fa1_12_1, sint16 fa1_12_2, sint16 fa1_12_3, sint16 fa1_12_4, sint16 fa1_12_5, sint16 fa1_12_6, sint16 fa1_12_7,
     sint16 fas_12_0, sint16 fas_12_1, sint16 fas_12_2, sint16 fas_12_3, sint16 fas_12_4, sint16 fas_12_5, sint16 fas_12_6, sint16 fas_12_7,
+    sint32 conv0_12_0, sint32 conv0_12_1, sint32 conv0_12_2, sint32 conv0_12_3, sint32 conv0_12_4, sint32 conv0_12_5, sint32 conv0_12_6, sint32 conv0_12_7,
+    sint32 conv1_12_0, sint32 conv1_12_1, sint32 conv1_12_2, sint32 conv1_12_3, sint32 conv1_12_4, sint32 conv1_12_5, sint32 conv1_12_6, sint32 conv1_12_7,
     sint16 fa0_13_0, sint16 fa0_13_1, sint16 fa0_13_2, sint16 fa0_13_3, sint16 fa0_13_4, sint16 fa0_13_5, sint16 fa0_13_6, sint16 fa0_13_7,
     sint16 fa1_13_0, sint16 fa1_13_1, sint16 fa1_13_2, sint16 fa1_13_3, sint16 fa1_13_4, sint16 fa1_13_5, sint16 fa1_13_6, sint16 fa1_13_7,
     sint16 fas_13_0, sint16 fas_13_1, sint16 fas_13_2, sint16 fas_13_3, sint16 fas_13_4, sint16 fas_13_5, sint16 fas_13_6, sint16 fas_13_7,
+    sint32 conv0_13_0, sint32 conv0_13_1, sint32 conv0_13_2, sint32 conv0_13_3, sint32 conv0_13_4, sint32 conv0_13_5, sint32 conv0_13_6, sint32 conv0_13_7,
+    sint32 conv1_13_0, sint32 conv1_13_1, sint32 conv1_13_2, sint32 conv1_13_3, sint32 conv1_13_4, sint32 conv1_13_5, sint32 conv1_13_6, sint32 conv1_13_7,
     sint16 fa0_14_0, sint16 fa0_14_1, sint16 fa0_14_2, sint16 fa0_14_3, sint16 fa0_14_4, sint16 fa0_14_5, sint16 fa0_14_6, sint16 fa0_14_7,
     sint16 fa1_14_0, sint16 fa1_14_1, sint16 fa1_14_2, sint16 fa1_14_3, sint16 fa1_14_4, sint16 fa1_14_5, sint16 fa1_14_6, sint16 fa1_14_7,
     sint16 fas_14_0, sint16 fas_14_1, sint16 fas_14_2, sint16 fas_14_3, sint16 fas_14_4, sint16 fas_14_5, sint16 fas_14_6, sint16 fas_14_7,
+    sint32 conv0_14_0, sint32 conv0_14_1, sint32 conv0_14_2, sint32 conv0_14_3, sint32 conv0_14_4, sint32 conv0_14_5, sint32 conv0_14_6, sint32 conv0_14_7,
+    sint32 conv1_14_0, sint32 conv1_14_1, sint32 conv1_14_2, sint32 conv1_14_3, sint32 conv1_14_4, sint32 conv1_14_5, sint32 conv1_14_6, sint32 conv1_14_7,
     sint16 fa0_15_0, sint16 fa0_15_1, sint16 fa0_15_2, sint16 fa0_15_3, sint16 fa0_15_4, sint16 fa0_15_5, sint16 fa0_15_6, sint16 fa0_15_7,
     sint16 fa1_15_0, sint16 fa1_15_1, sint16 fa1_15_2, sint16 fa1_15_3, sint16 fa1_15_4, sint16 fa1_15_5, sint16 fa1_15_6, sint16 fa1_15_7,
     sint16 fas_15_0, sint16 fas_15_1, sint16 fas_15_2, sint16 fas_15_3, sint16 fas_15_4, sint16 fas_15_5, sint16 fas_15_6, sint16 fas_15_7,
+    sint32 conv0_15_0, sint32 conv0_15_1, sint32 conv0_15_2, sint32 conv0_15_3, sint32 conv0_15_4, sint32 conv0_15_5, sint32 conv0_15_6, sint32 conv0_15_7,
+    sint32 conv1_15_0, sint32 conv1_15_1, sint32 conv1_15_2, sint32 conv1_15_3, sint32 conv1_15_4, sint32 conv1_15_5, sint32 conv1_15_6, sint32 conv1_15_7,
     sint16 fa0_16_0, sint16 fa0_16_1, sint16 fa0_16_2, sint16 fa0_16_3, sint16 fa0_16_4, sint16 fa0_16_5, sint16 fa0_16_6, sint16 fa0_16_7,
     sint16 fa1_16_0, sint16 fa1_16_1, sint16 fa1_16_2, sint16 fa1_16_3, sint16 fa1_16_4, sint16 fa1_16_5, sint16 fa1_16_6, sint16 fa1_16_7,
     sint16 fas_16_0, sint16 fas_16_1, sint16 fas_16_2, sint16 fas_16_3, sint16 fas_16_4, sint16 fas_16_5, sint16 fas_16_6, sint16 fas_16_7,
+    sint32 conv0_16_0, sint32 conv0_16_1, sint32 conv0_16_2, sint32 conv0_16_3, sint32 conv0_16_4, sint32 conv0_16_5, sint32 conv0_16_6, sint32 conv0_16_7,
+    sint32 conv1_16_0, sint32 conv1_16_1, sint32 conv1_16_2, sint32 conv1_16_3, sint32 conv1_16_4, sint32 conv1_16_5, sint32 conv1_16_6, sint32 conv1_16_7,
     sint16 fa0_17_0, sint16 fa0_17_1, sint16 fa0_17_2, sint16 fa0_17_3, sint16 fa0_17_4, sint16 fa0_17_5, sint16 fa0_17_6, sint16 fa0_17_7,
     sint16 fa1_17_0, sint16 fa1_17_1, sint16 fa1_17_2, sint16 fa1_17_3, sint16 fa1_17_4, sint16 fa1_17_5, sint16 fa1_17_6, sint16 fa1_17_7,
     sint16 fas_17_0, sint16 fas_17_1, sint16 fas_17_2, sint16 fas_17_3, sint16 fas_17_4, sint16 fas_17_5, sint16 fas_17_6, sint16 fas_17_7,
+    sint32 conv0_17_0, sint32 conv0_17_1, sint32 conv0_17_2, sint32 conv0_17_3, sint32 conv0_17_4, sint32 conv0_17_5, sint32 conv0_17_6, sint32 conv0_17_7,
+    sint32 conv1_17_0, sint32 conv1_17_1, sint32 conv1_17_2, sint32 conv1_17_3, sint32 conv1_17_4, sint32 conv1_17_5, sint32 conv1_17_6, sint32 conv1_17_7,
     sint16 fa0_18_0, sint16 fa0_18_1, sint16 fa0_18_2, sint16 fa0_18_3, sint16 fa0_18_4, sint16 fa0_18_5, sint16 fa0_18_6, sint16 fa0_18_7,
     sint16 fa1_18_0, sint16 fa1_18_1, sint16 fa1_18_2, sint16 fa1_18_3, sint16 fa1_18_4, sint16 fa1_18_5, sint16 fa1_18_6, sint16 fa1_18_7,
     sint16 fas_18_0, sint16 fas_18_1, sint16 fas_18_2, sint16 fas_18_3, sint16 fas_18_4, sint16 fas_18_5, sint16 fas_18_6, sint16 fas_18_7,
+    sint32 conv0_18_0, sint32 conv0_18_1, sint32 conv0_18_2, sint32 conv0_18_3, sint32 conv0_18_4, sint32 conv0_18_5, sint32 conv0_18_6, sint32 conv0_18_7,
+    sint32 conv1_18_0, sint32 conv1_18_1, sint32 conv1_18_2, sint32 conv1_18_3, sint32 conv1_18_4, sint32 conv1_18_5, sint32 conv1_18_6, sint32 conv1_18_7,
     sint16 fc0_20_0, sint16 fc0_20_1, sint16 fc0_20_2, sint16 fc0_20_3, sint16 fc0_20_4, sint16 fc0_20_5, sint16 fc0_20_6, sint16 fc0_20_7,
     sint16 fc1_20_0, sint16 fc1_20_1, sint16 fc1_20_2, sint16 fc1_20_3, sint16 fc1_20_4, sint16 fc1_20_5, sint16 fc1_20_6, sint16 fc1_20_7,
     sint16 fc0_21_0, sint16 fc0_21_1, sint16 fc0_21_2, sint16 fc0_21_3, sint16 fc0_21_4, sint16 fc0_21_5, sint16 fc0_21_6, sint16 fc0_21_7,
@@ -610,30 +628,48 @@ proc main(
     sint16 fa0_30_0, sint16 fa0_30_1, sint16 fa0_30_2, sint16 fa0_30_3, sint16 fa0_30_4, sint16 fa0_30_5, sint16 fa0_30_6, sint16 fa0_30_7,
     sint16 fa1_30_0, sint16 fa1_30_1, sint16 fa1_30_2, sint16 fa1_30_3, sint16 fa1_30_4, sint16 fa1_30_5, sint16 fa1_30_6, sint16 fa1_30_7,
     sint16 fas_30_0, sint16 fas_30_1, sint16 fas_30_2, sint16 fas_30_3, sint16 fas_30_4, sint16 fas_30_5, sint16 fas_30_6, sint16 fas_30_7,
+    sint32 conv0_30_0, sint32 conv0_30_1, sint32 conv0_30_2, sint32 conv0_30_3, sint32 conv0_30_4, sint32 conv0_30_5, sint32 conv0_30_6, sint32 conv0_30_7,
+    sint32 conv1_30_0, sint32 conv1_30_1, sint32 conv1_30_2, sint32 conv1_30_3, sint32 conv1_30_4, sint32 conv1_30_5, sint32 conv1_30_6, sint32 conv1_30_7,
     sint16 fa0_31_0, sint16 fa0_31_1, sint16 fa0_31_2, sint16 fa0_31_3, sint16 fa0_31_4, sint16 fa0_31_5, sint16 fa0_31_6, sint16 fa0_31_7,
     sint16 fa1_31_0, sint16 fa1_31_1, sint16 fa1_31_2, sint16 fa1_31_3, sint16 fa1_31_4, sint16 fa1_31_5, sint16 fa1_31_6, sint16 fa1_31_7,
     sint16 fas_31_0, sint16 fas_31_1, sint16 fas_31_2, sint16 fas_31_3, sint16 fas_31_4, sint16 fas_31_5, sint16 fas_31_6, sint16 fas_31_7,
+    sint32 conv0_31_0, sint32 conv0_31_1, sint32 conv0_31_2, sint32 conv0_31_3, sint32 conv0_31_4, sint32 conv0_31_5, sint32 conv0_31_6, sint32 conv0_31_7,
+    sint32 conv1_31_0, sint32 conv1_31_1, sint32 conv1_31_2, sint32 conv1_31_3, sint32 conv1_31_4, sint32 conv1_31_5, sint32 conv1_31_6, sint32 conv1_31_7,
     sint16 fa0_32_0, sint16 fa0_32_1, sint16 fa0_32_2, sint16 fa0_32_3, sint16 fa0_32_4, sint16 fa0_32_5, sint16 fa0_32_6, sint16 fa0_32_7,
     sint16 fa1_32_0, sint16 fa1_32_1, sint16 fa1_32_2, sint16 fa1_32_3, sint16 fa1_32_4, sint16 fa1_32_5, sint16 fa1_32_6, sint16 fa1_32_7,
     sint16 fas_32_0, sint16 fas_32_1, sint16 fas_32_2, sint16 fas_32_3, sint16 fas_32_4, sint16 fas_32_5, sint16 fas_32_6, sint16 fas_32_7,
+    sint32 conv0_32_0, sint32 conv0_32_1, sint32 conv0_32_2, sint32 conv0_32_3, sint32 conv0_32_4, sint32 conv0_32_5, sint32 conv0_32_6, sint32 conv0_32_7,
+    sint32 conv1_32_0, sint32 conv1_32_1, sint32 conv1_32_2, sint32 conv1_32_3, sint32 conv1_32_4, sint32 conv1_32_5, sint32 conv1_32_6, sint32 conv1_32_7,
     sint16 fa0_33_0, sint16 fa0_33_1, sint16 fa0_33_2, sint16 fa0_33_3, sint16 fa0_33_4, sint16 fa0_33_5, sint16 fa0_33_6, sint16 fa0_33_7,
     sint16 fa1_33_0, sint16 fa1_33_1, sint16 fa1_33_2, sint16 fa1_33_3, sint16 fa1_33_4, sint16 fa1_33_5, sint16 fa1_33_6, sint16 fa1_33_7,
     sint16 fas_33_0, sint16 fas_33_1, sint16 fas_33_2, sint16 fas_33_3, sint16 fas_33_4, sint16 fas_33_5, sint16 fas_33_6, sint16 fas_33_7,
+    sint32 conv0_33_0, sint32 conv0_33_1, sint32 conv0_33_2, sint32 conv0_33_3, sint32 conv0_33_4, sint32 conv0_33_5, sint32 conv0_33_6, sint32 conv0_33_7,
+    sint32 conv1_33_0, sint32 conv1_33_1, sint32 conv1_33_2, sint32 conv1_33_3, sint32 conv1_33_4, sint32 conv1_33_5, sint32 conv1_33_6, sint32 conv1_33_7,
     sint16 fa0_34_0, sint16 fa0_34_1, sint16 fa0_34_2, sint16 fa0_34_3, sint16 fa0_34_4, sint16 fa0_34_5, sint16 fa0_34_6, sint16 fa0_34_7,
     sint16 fa1_34_0, sint16 fa1_34_1, sint16 fa1_34_2, sint16 fa1_34_3, sint16 fa1_34_4, sint16 fa1_34_5, sint16 fa1_34_6, sint16 fa1_34_7,
     sint16 fas_34_0, sint16 fas_34_1, sint16 fas_34_2, sint16 fas_34_3, sint16 fas_34_4, sint16 fas_34_5, sint16 fas_34_6, sint16 fas_34_7,
+    sint32 conv0_34_0, sint32 conv0_34_1, sint32 conv0_34_2, sint32 conv0_34_3, sint32 conv0_34_4, sint32 conv0_34_5, sint32 conv0_34_6, sint32 conv0_34_7,
+    sint32 conv1_34_0, sint32 conv1_34_1, sint32 conv1_34_2, sint32 conv1_34_3, sint32 conv1_34_4, sint32 conv1_34_5, sint32 conv1_34_6, sint32 conv1_34_7,
     sint16 fa0_35_0, sint16 fa0_35_1, sint16 fa0_35_2, sint16 fa0_35_3, sint16 fa0_35_4, sint16 fa0_35_5, sint16 fa0_35_6, sint16 fa0_35_7,
     sint16 fa1_35_0, sint16 fa1_35_1, sint16 fa1_35_2, sint16 fa1_35_3, sint16 fa1_35_4, sint16 fa1_35_5, sint16 fa1_35_6, sint16 fa1_35_7,
     sint16 fas_35_0, sint16 fas_35_1, sint16 fas_35_2, sint16 fas_35_3, sint16 fas_35_4, sint16 fas_35_5, sint16 fas_35_6, sint16 fas_35_7,
+    sint32 conv0_35_0, sint32 conv0_35_1, sint32 conv0_35_2, sint32 conv0_35_3, sint32 conv0_35_4, sint32 conv0_35_5, sint32 conv0_35_6, sint32 conv0_35_7,
+    sint32 conv1_35_0, sint32 conv1_35_1, sint32 conv1_35_2, sint32 conv1_35_3, sint32 conv1_35_4, sint32 conv1_35_5, sint32 conv1_35_6, sint32 conv1_35_7,
     sint16 fa0_36_0, sint16 fa0_36_1, sint16 fa0_36_2, sint16 fa0_36_3, sint16 fa0_36_4, sint16 fa0_36_5, sint16 fa0_36_6, sint16 fa0_36_7,
     sint16 fa1_36_0, sint16 fa1_36_1, sint16 fa1_36_2, sint16 fa1_36_3, sint16 fa1_36_4, sint16 fa1_36_5, sint16 fa1_36_6, sint16 fa1_36_7,
     sint16 fas_36_0, sint16 fas_36_1, sint16 fas_36_2, sint16 fas_36_3, sint16 fas_36_4, sint16 fas_36_5, sint16 fas_36_6, sint16 fas_36_7,
+    sint32 conv0_36_0, sint32 conv0_36_1, sint32 conv0_36_2, sint32 conv0_36_3, sint32 conv0_36_4, sint32 conv0_36_5, sint32 conv0_36_6, sint32 conv0_36_7,
+    sint32 conv1_36_0, sint32 conv1_36_1, sint32 conv1_36_2, sint32 conv1_36_3, sint32 conv1_36_4, sint32 conv1_36_5, sint32 conv1_36_6, sint32 conv1_36_7,
     sint16 fa0_37_0, sint16 fa0_37_1, sint16 fa0_37_2, sint16 fa0_37_3, sint16 fa0_37_4, sint16 fa0_37_5, sint16 fa0_37_6, sint16 fa0_37_7,
     sint16 fa1_37_0, sint16 fa1_37_1, sint16 fa1_37_2, sint16 fa1_37_3, sint16 fa1_37_4, sint16 fa1_37_5, sint16 fa1_37_6, sint16 fa1_37_7,
     sint16 fas_37_0, sint16 fas_37_1, sint16 fas_37_2, sint16 fas_37_3, sint16 fas_37_4, sint16 fas_37_5, sint16 fas_37_6, sint16 fas_37_7,
+    sint32 conv0_37_0, sint32 conv0_37_1, sint32 conv0_37_2, sint32 conv0_37_3, sint32 conv0_37_4, sint32 conv0_37_5, sint32 conv0_37_6, sint32 conv0_37_7,
+    sint32 conv1_37_0, sint32 conv1_37_1, sint32 conv1_37_2, sint32 conv1_37_3, sint32 conv1_37_4, sint32 conv1_37_5, sint32 conv1_37_6, sint32 conv1_37_7,
     sint16 fa0_38_0, sint16 fa0_38_1, sint16 fa0_38_2, sint16 fa0_38_3, sint16 fa0_38_4, sint16 fa0_38_5, sint16 fa0_38_6, sint16 fa0_38_7,
     sint16 fa1_38_0, sint16 fa1_38_1, sint16 fa1_38_2, sint16 fa1_38_3, sint16 fa1_38_4, sint16 fa1_38_5, sint16 fa1_38_6, sint16 fa1_38_7,
     sint16 fas_38_0, sint16 fas_38_1, sint16 fas_38_2, sint16 fas_38_3, sint16 fas_38_4, sint16 fas_38_5, sint16 fas_38_6, sint16 fas_38_7,
+    sint32 conv0_38_0, sint32 conv0_38_1, sint32 conv0_38_2, sint32 conv0_38_3, sint32 conv0_38_4, sint32 conv0_38_5, sint32 conv0_38_6, sint32 conv0_38_7,
+    sint32 conv1_38_0, sint32 conv1_38_1, sint32 conv1_38_2, sint32 conv1_38_3, sint32 conv1_38_4, sint32 conv1_38_5, sint32 conv1_38_6, sint32 conv1_38_7,
     sint16 fc0_40_0, sint16 fc0_40_1, sint16 fc0_40_2, sint16 fc0_40_3, sint16 fc0_40_4, sint16 fc0_40_5, sint16 fc0_40_6, sint16 fc0_40_7,
     sint16 fc1_40_0, sint16 fc1_40_1, sint16 fc1_40_2, sint16 fc1_40_3, sint16 fc1_40_4, sint16 fc1_40_5, sint16 fc1_40_6, sint16 fc1_40_7,
     sint16 fc0_41_0, sint16 fc0_41_1, sint16 fc0_41_2, sint16 fc0_41_3, sint16 fc0_41_4, sint16 fc0_41_5, sint16 fc0_41_6, sint16 fc0_41_7,
@@ -655,30 +691,48 @@ proc main(
     sint16 fa0_50_0, sint16 fa0_50_1, sint16 fa0_50_2, sint16 fa0_50_3, sint16 fa0_50_4, sint16 fa0_50_5, sint16 fa0_50_6, sint16 fa0_50_7,
     sint16 fa1_50_0, sint16 fa1_50_1, sint16 fa1_50_2, sint16 fa1_50_3, sint16 fa1_50_4, sint16 fa1_50_5, sint16 fa1_50_6, sint16 fa1_50_7,
     sint16 fas_50_0, sint16 fas_50_1, sint16 fas_50_2, sint16 fas_50_3, sint16 fas_50_4, sint16 fas_50_5, sint16 fas_50_6, sint16 fas_50_7,
+    sint32 conv0_50_0, sint32 conv0_50_1, sint32 conv0_50_2, sint32 conv0_50_3, sint32 conv0_50_4, sint32 conv0_50_5, sint32 conv0_50_6, sint32 conv0_50_7,
+    sint32 conv1_50_0, sint32 conv1_50_1, sint32 conv1_50_2, sint32 conv1_50_3, sint32 conv1_50_4, sint32 conv1_50_5, sint32 conv1_50_6, sint32 conv1_50_7,
     sint16 fa0_51_0, sint16 fa0_51_1, sint16 fa0_51_2, sint16 fa0_51_3, sint16 fa0_51_4, sint16 fa0_51_5, sint16 fa0_51_6, sint16 fa0_51_7,
     sint16 fa1_51_0, sint16 fa1_51_1, sint16 fa1_51_2, sint16 fa1_51_3, sint16 fa1_51_4, sint16 fa1_51_5, sint16 fa1_51_6, sint16 fa1_51_7,
     sint16 fas_51_0, sint16 fas_51_1, sint16 fas_51_2, sint16 fas_51_3, sint16 fas_51_4, sint16 fas_51_5, sint16 fas_51_6, sint16 fas_51_7,
+    sint32 conv0_51_0, sint32 conv0_51_1, sint32 conv0_51_2, sint32 conv0_51_3, sint32 conv0_51_4, sint32 conv0_51_5, sint32 conv0_51_6, sint32 conv0_51_7,
+    sint32 conv1_51_0, sint32 conv1_51_1, sint32 conv1_51_2, sint32 conv1_51_3, sint32 conv1_51_4, sint32 conv1_51_5, sint32 conv1_51_6, sint32 conv1_51_7,
     sint16 fa0_52_0, sint16 fa0_52_1, sint16 fa0_52_2, sint16 fa0_52_3, sint16 fa0_52_4, sint16 fa0_52_5, sint16 fa0_52_6, sint16 fa0_52_7,
     sint16 fa1_52_0, sint16 fa1_52_1, sint16 fa1_52_2, sint16 fa1_52_3, sint16 fa1_52_4, sint16 fa1_52_5, sint16 fa1_52_6, sint16 fa1_52_7,
     sint16 fas_52_0, sint16 fas_52_1, sint16 fas_52_2, sint16 fas_52_3, sint16 fas_52_4, sint16 fas_52_5, sint16 fas_52_6, sint16 fas_52_7,
+    sint32 conv0_52_0, sint32 conv0_52_1, sint32 conv0_52_2, sint32 conv0_52_3, sint32 conv0_52_4, sint32 conv0_52_5, sint32 conv0_52_6, sint32 conv0_52_7,
+    sint32 conv1_52_0, sint32 conv1_52_1, sint32 conv1_52_2, sint32 conv1_52_3, sint32 conv1_52_4, sint32 conv1_52_5, sint32 conv1_52_6, sint32 conv1_52_7,
     sint16 fa0_53_0, sint16 fa0_53_1, sint16 fa0_53_2, sint16 fa0_53_3, sint16 fa0_53_4, sint16 fa0_53_5, sint16 fa0_53_6, sint16 fa0_53_7,
     sint16 fa1_53_0, sint16 fa1_53_1, sint16 fa1_53_2, sint16 fa1_53_3, sint16 fa1_53_4, sint16 fa1_53_5, sint16 fa1_53_6, sint16 fa1_53_7,
     sint16 fas_53_0, sint16 fas_53_1, sint16 fas_53_2, sint16 fas_53_3, sint16 fas_53_4, sint16 fas_53_5, sint16 fas_53_6, sint16 fas_53_7,
+    sint32 conv0_53_0, sint32 conv0_53_1, sint32 conv0_53_2, sint32 conv0_53_3, sint32 conv0_53_4, sint32 conv0_53_5, sint32 conv0_53_6, sint32 conv0_53_7,
+    sint32 conv1_53_0, sint32 conv1_53_1, sint32 conv1_53_2, sint32 conv1_53_3, sint32 conv1_53_4, sint32 conv1_53_5, sint32 conv1_53_6, sint32 conv1_53_7,
     sint16 fa0_54_0, sint16 fa0_54_1, sint16 fa0_54_2, sint16 fa0_54_3, sint16 fa0_54_4, sint16 fa0_54_5, sint16 fa0_54_6, sint16 fa0_54_7,
     sint16 fa1_54_0, sint16 fa1_54_1, sint16 fa1_54_2, sint16 fa1_54_3, sint16 fa1_54_4, sint16 fa1_54_5, sint16 fa1_54_6, sint16 fa1_54_7,
     sint16 fas_54_0, sint16 fas_54_1, sint16 fas_54_2, sint16 fas_54_3, sint16 fas_54_4, sint16 fas_54_5, sint16 fas_54_6, sint16 fas_54_7,
+    sint32 conv0_54_0, sint32 conv0_54_1, sint32 conv0_54_2, sint32 conv0_54_3, sint32 conv0_54_4, sint32 conv0_54_5, sint32 conv0_54_6, sint32 conv0_54_7,
+    sint32 conv1_54_0, sint32 conv1_54_1, sint32 conv1_54_2, sint32 conv1_54_3, sint32 conv1_54_4, sint32 conv1_54_5, sint32 conv1_54_6, sint32 conv1_54_7,
     sint16 fa0_55_0, sint16 fa0_55_1, sint16 fa0_55_2, sint16 fa0_55_3, sint16 fa0_55_4, sint16 fa0_55_5, sint16 fa0_55_6, sint16 fa0_55_7,
     sint16 fa1_55_0, sint16 fa1_55_1, sint16 fa1_55_2, sint16 fa1_55_3, sint16 fa1_55_4, sint16 fa1_55_5, sint16 fa1_55_6, sint16 fa1_55_7,
     sint16 fas_55_0, sint16 fas_55_1, sint16 fas_55_2, sint16 fas_55_3, sint16 fas_55_4, sint16 fas_55_5, sint16 fas_55_6, sint16 fas_55_7,
+    sint32 conv0_55_0, sint32 conv0_55_1, sint32 conv0_55_2, sint32 conv0_55_3, sint32 conv0_55_4, sint32 conv0_55_5, sint32 conv0_55_6, sint32 conv0_55_7,
+    sint32 conv1_55_0, sint32 conv1_55_1, sint32 conv1_55_2, sint32 conv1_55_3, sint32 conv1_55_4, sint32 conv1_55_5, sint32 conv1_55_6, sint32 conv1_55_7,
     sint16 fa0_56_0, sint16 fa0_56_1, sint16 fa0_56_2, sint16 fa0_56_3, sint16 fa0_56_4, sint16 fa0_56_5, sint16 fa0_56_6, sint16 fa0_56_7,
     sint16 fa1_56_0, sint16 fa1_56_1, sint16 fa1_56_2, sint16 fa1_56_3, sint16 fa1_56_4, sint16 fa1_56_5, sint16 fa1_56_6, sint16 fa1_56_7,
     sint16 fas_56_0, sint16 fas_56_1, sint16 fas_56_2, sint16 fas_56_3, sint16 fas_56_4, sint16 fas_56_5, sint16 fas_56_6, sint16 fas_56_7,
+    sint32 conv0_56_0, sint32 conv0_56_1, sint32 conv0_56_2, sint32 conv0_56_3, sint32 conv0_56_4, sint32 conv0_56_5, sint32 conv0_56_6, sint32 conv0_56_7,
+    sint32 conv1_56_0, sint32 conv1_56_1, sint32 conv1_56_2, sint32 conv1_56_3, sint32 conv1_56_4, sint32 conv1_56_5, sint32 conv1_56_6, sint32 conv1_56_7,
     sint16 fa0_57_0, sint16 fa0_57_1, sint16 fa0_57_2, sint16 fa0_57_3, sint16 fa0_57_4, sint16 fa0_57_5, sint16 fa0_57_6, sint16 fa0_57_7,
     sint16 fa1_57_0, sint16 fa1_57_1, sint16 fa1_57_2, sint16 fa1_57_3, sint16 fa1_57_4, sint16 fa1_57_5, sint16 fa1_57_6, sint16 fa1_57_7,
     sint16 fas_57_0, sint16 fas_57_1, sint16 fas_57_2, sint16 fas_57_3, sint16 fas_57_4, sint16 fas_57_5, sint16 fas_57_6, sint16 fas_57_7,
+    sint32 conv0_57_0, sint32 conv0_57_1, sint32 conv0_57_2, sint32 conv0_57_3, sint32 conv0_57_4, sint32 conv0_57_5, sint32 conv0_57_6, sint32 conv0_57_7,
+    sint32 conv1_57_0, sint32 conv1_57_1, sint32 conv1_57_2, sint32 conv1_57_3, sint32 conv1_57_4, sint32 conv1_57_5, sint32 conv1_57_6, sint32 conv1_57_7,
     sint16 fa0_58_0, sint16 fa0_58_1, sint16 fa0_58_2, sint16 fa0_58_3, sint16 fa0_58_4, sint16 fa0_58_5, sint16 fa0_58_6, sint16 fa0_58_7,
     sint16 fa1_58_0, sint16 fa1_58_1, sint16 fa1_58_2, sint16 fa1_58_3, sint16 fa1_58_4, sint16 fa1_58_5, sint16 fa1_58_6, sint16 fa1_58_7,
     sint16 fas_58_0, sint16 fas_58_1, sint16 fas_58_2, sint16 fas_58_3, sint16 fas_58_4, sint16 fas_58_5, sint16 fas_58_6, sint16 fas_58_7,
+    sint32 conv0_58_0, sint32 conv0_58_1, sint32 conv0_58_2, sint32 conv0_58_3, sint32 conv0_58_4, sint32 conv0_58_5, sint32 conv0_58_6, sint32 conv0_58_7,
+    sint32 conv1_58_0, sint32 conv1_58_1, sint32 conv1_58_2, sint32 conv1_58_3, sint32 conv1_58_4, sint32 conv1_58_5, sint32 conv1_58_6, sint32 conv1_58_7,
     sint16 fc0_60_0, sint16 fc0_60_1, sint16 fc0_60_2, sint16 fc0_60_3, sint16 fc0_60_4, sint16 fc0_60_5, sint16 fc0_60_6, sint16 fc0_60_7,
     sint16 fc1_60_0, sint16 fc1_60_1, sint16 fc1_60_2, sint16 fc1_60_3, sint16 fc1_60_4, sint16 fc1_60_5, sint16 fc1_60_6, sint16 fc1_60_7,
     sint16 fc0_61_0, sint16 fc0_61_1, sint16 fc0_61_2, sint16 fc0_61_3, sint16 fc0_61_4, sint16 fc0_61_5, sint16 fc0_61_6, sint16 fc0_61_7,
@@ -700,30 +754,48 @@ proc main(
     sint16 fa0_70_0, sint16 fa0_70_1, sint16 fa0_70_2, sint16 fa0_70_3, sint16 fa0_70_4, sint16 fa0_70_5, sint16 fa0_70_6, sint16 fa0_70_7,
     sint16 fa1_70_0, sint16 fa1_70_1, sint16 fa1_70_2, sint16 fa1_70_3, sint16 fa1_70_4, sint16 fa1_70_5, sint16 fa1_70_6, sint16 fa1_70_7,
     sint16 fas_70_0, sint16 fas_70_1, sint16 fas_70_2, sint16 fas_70_3, sint16 fas_70_4, sint16 fas_70_5, sint16 fas_70_6, sint16 fas_70_7,
+    sint32 conv0_70_0, sint32 conv0_70_1, sint32 conv0_70_2, sint32 conv0_70_3, sint32 conv0_70_4, sint32 conv0_70_5, sint32 conv0_70_6, sint32 conv0_70_7,
+    sint32 conv1_70_0, sint32 conv1_70_1, sint32 conv1_70_2, sint32 conv1_70_3, sint32 conv1_70_4, sint32 conv1_70_5, sint32 conv1_70_6, sint32 conv1_70_7,
     sint16 fa0_71_0, sint16 fa0_71_1, sint16 fa0_71_2, sint16 fa0_71_3, sint16 fa0_71_4, sint16 fa0_71_5, sint16 fa0_71_6, sint16 fa0_71_7,
     sint16 fa1_71_0, sint16 fa1_71_1, sint16 fa1_71_2, sint16 fa1_71_3, sint16 fa1_71_4, sint16 fa1_71_5, sint16 fa1_71_6, sint16 fa1_71_7,
     sint16 fas_71_0, sint16 fas_71_1, sint16 fas_71_2, sint16 fas_71_3, sint16 fas_71_4, sint16 fas_71_5, sint16 fas_71_6, sint16 fas_71_7,
+    sint32 conv0_71_0, sint32 conv0_71_1, sint32 conv0_71_2, sint32 conv0_71_3, sint32 conv0_71_4, sint32 conv0_71_5, sint32 conv0_71_6, sint32 conv0_71_7,
+    sint32 conv1_71_0, sint32 conv1_71_1, sint32 conv1_71_2, sint32 conv1_71_3, sint32 conv1_71_4, sint32 conv1_71_5, sint32 conv1_71_6, sint32 conv1_71_7,
     sint16 fa0_72_0, sint16 fa0_72_1, sint16 fa0_72_2, sint16 fa0_72_3, sint16 fa0_72_4, sint16 fa0_72_5, sint16 fa0_72_6, sint16 fa0_72_7,
     sint16 fa1_72_0, sint16 fa1_72_1, sint16 fa1_72_2, sint16 fa1_72_3, sint16 fa1_72_4, sint16 fa1_72_5, sint16 fa1_72_6, sint16 fa1_72_7,
     sint16 fas_72_0, sint16 fas_72_1, sint16 fas_72_2, sint16 fas_72_3, sint16 fas_72_4, sint16 fas_72_5, sint16 fas_72_6, sint16 fas_72_7,
+    sint32 conv0_72_0, sint32 conv0_72_1, sint32 conv0_72_2, sint32 conv0_72_3, sint32 conv0_72_4, sint32 conv0_72_5, sint32 conv0_72_6, sint32 conv0_72_7,
+    sint32 conv1_72_0, sint32 conv1_72_1, sint32 conv1_72_2, sint32 conv1_72_3, sint32 conv1_72_4, sint32 conv1_72_5, sint32 conv1_72_6, sint32 conv1_72_7,
     sint16 fa0_73_0, sint16 fa0_73_1, sint16 fa0_73_2, sint16 fa0_73_3, sint16 fa0_73_4, sint16 fa0_73_5, sint16 fa0_73_6, sint16 fa0_73_7,
     sint16 fa1_73_0, sint16 fa1_73_1, sint16 fa1_73_2, sint16 fa1_73_3, sint16 fa1_73_4, sint16 fa1_73_5, sint16 fa1_73_6, sint16 fa1_73_7,
     sint16 fas_73_0, sint16 fas_73_1, sint16 fas_73_2, sint16 fas_73_3, sint16 fas_73_4, sint16 fas_73_5, sint16 fas_73_6, sint16 fas_73_7,
+    sint32 conv0_73_0, sint32 conv0_73_1, sint32 conv0_73_2, sint32 conv0_73_3, sint32 conv0_73_4, sint32 conv0_73_5, sint32 conv0_73_6, sint32 conv0_73_7,
+    sint32 conv1_73_0, sint32 conv1_73_1, sint32 conv1_73_2, sint32 conv1_73_3, sint32 conv1_73_4, sint32 conv1_73_5, sint32 conv1_73_6, sint32 conv1_73_7,
     sint16 fa0_74_0, sint16 fa0_74_1, sint16 fa0_74_2, sint16 fa0_74_3, sint16 fa0_74_4, sint16 fa0_74_5, sint16 fa0_74_6, sint16 fa0_74_7,
     sint16 fa1_74_0, sint16 fa1_74_1, sint16 fa1_74_2, sint16 fa1_74_3, sint16 fa1_74_4, sint16 fa1_74_5, sint16 fa1_74_6, sint16 fa1_74_7,
     sint16 fas_74_0, sint16 fas_74_1, sint16 fas_74_2, sint16 fas_74_3, sint16 fas_74_4, sint16 fas_74_5, sint16 fas_74_6, sint16 fas_74_7,
+    sint32 conv0_74_0, sint32 conv0_74_1, sint32 conv0_74_2, sint32 conv0_74_3, sint32 conv0_74_4, sint32 conv0_74_5, sint32 conv0_74_6, sint32 conv0_74_7,
+    sint32 conv1_74_0, sint32 conv1_74_1, sint32 conv1_74_2, sint32 conv1_74_3, sint32 conv1_74_4, sint32 conv1_74_5, sint32 conv1_74_6, sint32 conv1_74_7,
     sint16 fa0_75_0, sint16 fa0_75_1, sint16 fa0_75_2, sint16 fa0_75_3, sint16 fa0_75_4, sint16 fa0_75_5, sint16 fa0_75_6, sint16 fa0_75_7,
     sint16 fa1_75_0, sint16 fa1_75_1, sint16 fa1_75_2, sint16 fa1_75_3, sint16 fa1_75_4, sint16 fa1_75_5, sint16 fa1_75_6, sint16 fa1_75_7,
     sint16 fas_75_0, sint16 fas_75_1, sint16 fas_75_2, sint16 fas_75_3, sint16 fas_75_4, sint16 fas_75_5, sint16 fas_75_6, sint16 fas_75_7,
+    sint32 conv0_75_0, sint32 conv0_75_1, sint32 conv0_75_2, sint32 conv0_75_3, sint32 conv0_75_4, sint32 conv0_75_5, sint32 conv0_75_6, sint32 conv0_75_7,
+    sint32 conv1_75_0, sint32 conv1_75_1, sint32 conv1_75_2, sint32 conv1_75_3, sint32 conv1_75_4, sint32 conv1_75_5, sint32 conv1_75_6, sint32 conv1_75_7,
     sint16 fa0_76_0, sint16 fa0_76_1, sint16 fa0_76_2, sint16 fa0_76_3, sint16 fa0_76_4, sint16 fa0_76_5, sint16 fa0_76_6, sint16 fa0_76_7,
     sint16 fa1_76_0, sint16 fa1_76_1, sint16 fa1_76_2, sint16 fa1_76_3, sint16 fa1_76_4, sint16 fa1_76_5, sint16 fa1_76_6, sint16 fa1_76_7,
     sint16 fas_76_0, sint16 fas_76_1, sint16 fas_76_2, sint16 fas_76_3, sint16 fas_76_4, sint16 fas_76_5, sint16 fas_76_6, sint16 fas_76_7,
+    sint32 conv0_76_0, sint32 conv0_76_1, sint32 conv0_76_2, sint32 conv0_76_3, sint32 conv0_76_4, sint32 conv0_76_5, sint32 conv0_76_6, sint32 conv0_76_7,
+    sint32 conv1_76_0, sint32 conv1_76_1, sint32 conv1_76_2, sint32 conv1_76_3, sint32 conv1_76_4, sint32 conv1_76_5, sint32 conv1_76_6, sint32 conv1_76_7,
     sint16 fa0_77_0, sint16 fa0_77_1, sint16 fa0_77_2, sint16 fa0_77_3, sint16 fa0_77_4, sint16 fa0_77_5, sint16 fa0_77_6, sint16 fa0_77_7,
     sint16 fa1_77_0, sint16 fa1_77_1, sint16 fa1_77_2, sint16 fa1_77_3, sint16 fa1_77_4, sint16 fa1_77_5, sint16 fa1_77_6, sint16 fa1_77_7,
     sint16 fas_77_0, sint16 fas_77_1, sint16 fas_77_2, sint16 fas_77_3, sint16 fas_77_4, sint16 fas_77_5, sint16 fas_77_6, sint16 fas_77_7,
+    sint32 conv0_77_0, sint32 conv0_77_1, sint32 conv0_77_2, sint32 conv0_77_3, sint32 conv0_77_4, sint32 conv0_77_5, sint32 conv0_77_6, sint32 conv0_77_7,
+    sint32 conv1_77_0, sint32 conv1_77_1, sint32 conv1_77_2, sint32 conv1_77_3, sint32 conv1_77_4, sint32 conv1_77_5, sint32 conv1_77_6, sint32 conv1_77_7,
     sint16 fa0_78_0, sint16 fa0_78_1, sint16 fa0_78_2, sint16 fa0_78_3, sint16 fa0_78_4, sint16 fa0_78_5, sint16 fa0_78_6, sint16 fa0_78_7,
     sint16 fa1_78_0, sint16 fa1_78_1, sint16 fa1_78_2, sint16 fa1_78_3, sint16 fa1_78_4, sint16 fa1_78_5, sint16 fa1_78_6, sint16 fa1_78_7,
     sint16 fas_78_0, sint16 fas_78_1, sint16 fas_78_2, sint16 fas_78_3, sint16 fas_78_4, sint16 fas_78_5, sint16 fas_78_6, sint16 fas_78_7,
+    sint32 conv0_78_0, sint32 conv0_78_1, sint32 conv0_78_2, sint32 conv0_78_3, sint32 conv0_78_4, sint32 conv0_78_5, sint32 conv0_78_6, sint32 conv0_78_7,
+    sint32 conv1_78_0, sint32 conv1_78_1, sint32 conv1_78_2, sint32 conv1_78_3, sint32 conv1_78_4, sint32 conv1_78_5, sint32 conv1_78_6, sint32 conv1_78_7,
     sint16 fc0_80_0, sint16 fc0_80_1, sint16 fc0_80_2, sint16 fc0_80_3, sint16 fc0_80_4, sint16 fc0_80_5, sint16 fc0_80_6, sint16 fc0_80_7,
     sint16 fc1_80_0, sint16 fc1_80_1, sint16 fc1_80_2, sint16 fc1_80_3, sint16 fc1_80_4, sint16 fc1_80_5, sint16 fc1_80_6, sint16 fc1_80_7,
     sint16 fc0_81_0, sint16 fc0_81_1, sint16 fc0_81_2, sint16 fc0_81_3, sint16 fc0_81_4, sint16 fc0_81_5, sint16 fc0_81_6, sint16 fc0_81_7,
@@ -745,30 +817,48 @@ proc main(
     sint16 fa0_90_0, sint16 fa0_90_1, sint16 fa0_90_2, sint16 fa0_90_3, sint16 fa0_90_4, sint16 fa0_90_5, sint16 fa0_90_6, sint16 fa0_90_7,
     sint16 fa1_90_0, sint16 fa1_90_1, sint16 fa1_90_2, sint16 fa1_90_3, sint16 fa1_90_4, sint16 fa1_90_5, sint16 fa1_90_6, sint16 fa1_90_7,
     sint16 fas_90_0, sint16 fas_90_1, sint16 fas_90_2, sint16 fas_90_3, sint16 fas_90_4, sint16 fas_90_5, sint16 fas_90_6, sint16 fas_90_7,
+    sint32 conv0_90_0, sint32 conv0_90_1, sint32 conv0_90_2, sint32 conv0_90_3, sint32 conv0_90_4, sint32 conv0_90_5, sint32 conv0_90_6, sint32 conv0_90_7,
+    sint32 conv1_90_0, sint32 conv1_90_1, sint32 conv1_90_2, sint32 conv1_90_3, sint32 conv1_90_4, sint32 conv1_90_5, sint32 conv1_90_6, sint32 conv1_90_7,
     sint16 fa0_91_0, sint16 fa0_91_1, sint16 fa0_91_2, sint16 fa0_91_3, sint16 fa0_91_4, sint16 fa0_91_5, sint16 fa0_91_6, sint16 fa0_91_7,
     sint16 fa1_91_0, sint16 fa1_91_1, sint16 fa1_91_2, sint16 fa1_91_3, sint16 fa1_91_4, sint16 fa1_91_5, sint16 fa1_91_6, sint16 fa1_91_7,
     sint16 fas_91_0, sint16 fas_91_1, sint16 fas_91_2, sint16 fas_91_3, sint16 fas_91_4, sint16 fas_91_5, sint16 fas_91_6, sint16 fas_91_7,
+    sint32 conv0_91_0, sint32 conv0_91_1, sint32 conv0_91_2, sint32 conv0_91_3, sint32 conv0_91_4, sint32 conv0_91_5, sint32 conv0_91_6, sint32 conv0_91_7,
+    sint32 conv1_91_0, sint32 conv1_91_1, sint32 conv1_91_2, sint32 conv1_91_3, sint32 conv1_91_4, sint32 conv1_91_5, sint32 conv1_91_6, sint32 conv1_91_7,
     sint16 fa0_92_0, sint16 fa0_92_1, sint16 fa0_92_2, sint16 fa0_92_3, sint16 fa0_92_4, sint16 fa0_92_5, sint16 fa0_92_6, sint16 fa0_92_7,
     sint16 fa1_92_0, sint16 fa1_92_1, sint16 fa1_92_2, sint16 fa1_92_3, sint16 fa1_92_4, sint16 fa1_92_5, sint16 fa1_92_6, sint16 fa1_92_7,
     sint16 fas_92_0, sint16 fas_92_1, sint16 fas_92_2, sint16 fas_92_3, sint16 fas_92_4, sint16 fas_92_5, sint16 fas_92_6, sint16 fas_92_7,
+    sint32 conv0_92_0, sint32 conv0_92_1, sint32 conv0_92_2, sint32 conv0_92_3, sint32 conv0_92_4, sint32 conv0_92_5, sint32 conv0_92_6, sint32 conv0_92_7,
+    sint32 conv1_92_0, sint32 conv1_92_1, sint32 conv1_92_2, sint32 conv1_92_3, sint32 conv1_92_4, sint32 conv1_92_5, sint32 conv1_92_6, sint32 conv1_92_7,
     sint16 fa0_93_0, sint16 fa0_93_1, sint16 fa0_93_2, sint16 fa0_93_3, sint16 fa0_93_4, sint16 fa0_93_5, sint16 fa0_93_6, sint16 fa0_93_7,
     sint16 fa1_93_0, sint16 fa1_93_1, sint16 fa1_93_2, sint16 fa1_93_3, sint16 fa1_93_4, sint16 fa1_93_5, sint16 fa1_93_6, sint16 fa1_93_7,
     sint16 fas_93_0, sint16 fas_93_1, sint16 fas_93_2, sint16 fas_93_3, sint16 fas_93_4, sint16 fas_93_5, sint16 fas_93_6, sint16 fas_93_7,
+    sint32 conv0_93_0, sint32 conv0_93_1, sint32 conv0_93_2, sint32 conv0_93_3, sint32 conv0_93_4, sint32 conv0_93_5, sint32 conv0_93_6, sint32 conv0_93_7,
+    sint32 conv1_93_0, sint32 conv1_93_1, sint32 conv1_93_2, sint32 conv1_93_3, sint32 conv1_93_4, sint32 conv1_93_5, sint32 conv1_93_6, sint32 conv1_93_7,
     sint16 fa0_94_0, sint16 fa0_94_1, sint16 fa0_94_2, sint16 fa0_94_3, sint16 fa0_94_4, sint16 fa0_94_5, sint16 fa0_94_6, sint16 fa0_94_7,
     sint16 fa1_94_0, sint16 fa1_94_1, sint16 fa1_94_2, sint16 fa1_94_3, sint16 fa1_94_4, sint16 fa1_94_5, sint16 fa1_94_6, sint16 fa1_94_7,
     sint16 fas_94_0, sint16 fas_94_1, sint16 fas_94_2, sint16 fas_94_3, sint16 fas_94_4, sint16 fas_94_5, sint16 fas_94_6, sint16 fas_94_7,
+    sint32 conv0_94_0, sint32 conv0_94_1, sint32 conv0_94_2, sint32 conv0_94_3, sint32 conv0_94_4, sint32 conv0_94_5, sint32 conv0_94_6, sint32 conv0_94_7,
+    sint32 conv1_94_0, sint32 conv1_94_1, sint32 conv1_94_2, sint32 conv1_94_3, sint32 conv1_94_4, sint32 conv1_94_5, sint32 conv1_94_6, sint32 conv1_94_7,
     sint16 fa0_95_0, sint16 fa0_95_1, sint16 fa0_95_2, sint16 fa0_95_3, sint16 fa0_95_4, sint16 fa0_95_5, sint16 fa0_95_6, sint16 fa0_95_7,
     sint16 fa1_95_0, sint16 fa1_95_1, sint16 fa1_95_2, sint16 fa1_95_3, sint16 fa1_95_4, sint16 fa1_95_5, sint16 fa1_95_6, sint16 fa1_95_7,
     sint16 fas_95_0, sint16 fas_95_1, sint16 fas_95_2, sint16 fas_95_3, sint16 fas_95_4, sint16 fas_95_5, sint16 fas_95_6, sint16 fas_95_7,
+    sint32 conv0_95_0, sint32 conv0_95_1, sint32 conv0_95_2, sint32 conv0_95_3, sint32 conv0_95_4, sint32 conv0_95_5, sint32 conv0_95_6, sint32 conv0_95_7,
+    sint32 conv1_95_0, sint32 conv1_95_1, sint32 conv1_95_2, sint32 conv1_95_3, sint32 conv1_95_4, sint32 conv1_95_5, sint32 conv1_95_6, sint32 conv1_95_7,
     sint16 fa0_96_0, sint16 fa0_96_1, sint16 fa0_96_2, sint16 fa0_96_3, sint16 fa0_96_4, sint16 fa0_96_5, sint16 fa0_96_6, sint16 fa0_96_7,
     sint16 fa1_96_0, sint16 fa1_96_1, sint16 fa1_96_2, sint16 fa1_96_3, sint16 fa1_96_4, sint16 fa1_96_5, sint16 fa1_96_6, sint16 fa1_96_7,
     sint16 fas_96_0, sint16 fas_96_1, sint16 fas_96_2, sint16 fas_96_3, sint16 fas_96_4, sint16 fas_96_5, sint16 fas_96_6, sint16 fas_96_7,
+    sint32 conv0_96_0, sint32 conv0_96_1, sint32 conv0_96_2, sint32 conv0_96_3, sint32 conv0_96_4, sint32 conv0_96_5, sint32 conv0_96_6, sint32 conv0_96_7,
+    sint32 conv1_96_0, sint32 conv1_96_1, sint32 conv1_96_2, sint32 conv1_96_3, sint32 conv1_96_4, sint32 conv1_96_5, sint32 conv1_96_6, sint32 conv1_96_7,
     sint16 fa0_97_0, sint16 fa0_97_1, sint16 fa0_97_2, sint16 fa0_97_3, sint16 fa0_97_4, sint16 fa0_97_5, sint16 fa0_97_6, sint16 fa0_97_7,
     sint16 fa1_97_0, sint16 fa1_97_1, sint16 fa1_97_2, sint16 fa1_97_3, sint16 fa1_97_4, sint16 fa1_97_5, sint16 fa1_97_6, sint16 fa1_97_7,
     sint16 fas_97_0, sint16 fas_97_1, sint16 fas_97_2, sint16 fas_97_3, sint16 fas_97_4, sint16 fas_97_5, sint16 fas_97_6, sint16 fas_97_7,
+    sint32 conv0_97_0, sint32 conv0_97_1, sint32 conv0_97_2, sint32 conv0_97_3, sint32 conv0_97_4, sint32 conv0_97_5, sint32 conv0_97_6, sint32 conv0_97_7,
+    sint32 conv1_97_0, sint32 conv1_97_1, sint32 conv1_97_2, sint32 conv1_97_3, sint32 conv1_97_4, sint32 conv1_97_5, sint32 conv1_97_6, sint32 conv1_97_7,
     sint16 fa0_98_0, sint16 fa0_98_1, sint16 fa0_98_2, sint16 fa0_98_3, sint16 fa0_98_4, sint16 fa0_98_5, sint16 fa0_98_6, sint16 fa0_98_7,
     sint16 fa1_98_0, sint16 fa1_98_1, sint16 fa1_98_2, sint16 fa1_98_3, sint16 fa1_98_4, sint16 fa1_98_5, sint16 fa1_98_6, sint16 fa1_98_7,
-    sint16 fas_98_0, sint16 fas_98_1, sint16 fas_98_2, sint16 fas_98_3, sint16 fas_98_4, sint16 fas_98_5, sint16 fas_98_6, sint16 fas_98_7
+    sint16 fas_98_0, sint16 fas_98_1, sint16 fas_98_2, sint16 fas_98_3, sint16 fas_98_4, sint16 fas_98_5, sint16 fas_98_6, sint16 fas_98_7,
+    sint32 conv0_98_0, sint32 conv0_98_1, sint32 conv0_98_2, sint32 conv0_98_3, sint32 conv0_98_4, sint32 conv0_98_5, sint32 conv0_98_6, sint32 conv0_98_7,
+    sint32 conv1_98_0, sint32 conv1_98_1, sint32 conv1_98_2, sint32 conv1_98_3, sint32 conv1_98_4, sint32 conv1_98_5, sint32 conv1_98_6, sint32 conv1_98_7
 ) =
 {
     [arr0000_a, arr0001_a, arr0002_a, arr0003_a, arr0004_a, arr0005_a, arr0006_a, arr0007_a] <= [8420, 8420, 8420, 8420, 8420, 8420, 8420, 8420] /\
@@ -4850,6 +4940,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_10_0, conv0_10_1, conv0_10_2, conv0_10_3] %v7;
+mov [conv0_10_4, conv0_10_5, conv0_10_6, conv0_10_7] %v17;
+mov [conv1_10_0, conv1_10_1, conv1_10_2, conv1_10_3] %v0;
+mov [conv1_10_4, conv1_10_5, conv1_10_6, conv1_10_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -5087,6 +5183,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_11_0, conv0_11_1, conv0_11_2, conv0_11_3] %v7;
+mov [conv0_11_4, conv0_11_5, conv0_11_6, conv0_11_7] %v17;
+mov [conv1_11_0, conv1_11_1, conv1_11_2, conv1_11_3] %v0;
+mov [conv1_11_4, conv1_11_5, conv1_11_6, conv1_11_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -5324,6 +5426,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_12_0, conv0_12_1, conv0_12_2, conv0_12_3] %v7;
+mov [conv0_12_4, conv0_12_5, conv0_12_6, conv0_12_7] %v17;
+mov [conv1_12_0, conv1_12_1, conv1_12_2, conv1_12_3] %v0;
+mov [conv1_12_4, conv1_12_5, conv1_12_6, conv1_12_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -5561,6 +5669,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_13_0, conv0_13_1, conv0_13_2, conv0_13_3] %v7;
+mov [conv0_13_4, conv0_13_5, conv0_13_6, conv0_13_7] %v17;
+mov [conv1_13_0, conv1_13_1, conv1_13_2, conv1_13_3] %v0;
+mov [conv1_13_4, conv1_13_5, conv1_13_6, conv1_13_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -5798,6 +5912,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_14_0, conv0_14_1, conv0_14_2, conv0_14_3] %v7;
+mov [conv0_14_4, conv0_14_5, conv0_14_6, conv0_14_7] %v17;
+mov [conv1_14_0, conv1_14_1, conv1_14_2, conv1_14_3] %v0;
+mov [conv1_14_4, conv1_14_5, conv1_14_6, conv1_14_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -6035,6 +6155,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_15_0, conv0_15_1, conv0_15_2, conv0_15_3] %v7;
+mov [conv0_15_4, conv0_15_5, conv0_15_6, conv0_15_7] %v17;
+mov [conv1_15_0, conv1_15_1, conv1_15_2, conv1_15_3] %v0;
+mov [conv1_15_4, conv1_15_5, conv1_15_6, conv1_15_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -6272,6 +6398,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_16_0, conv0_16_1, conv0_16_2, conv0_16_3] %v7;
+mov [conv0_16_4, conv0_16_5, conv0_16_6, conv0_16_7] %v17;
+mov [conv1_16_0, conv1_16_1, conv1_16_2, conv1_16_3] %v0;
+mov [conv1_16_4, conv1_16_5, conv1_16_6, conv1_16_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -6509,6 +6641,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_17_0, conv0_17_1, conv0_17_2, conv0_17_3] %v7;
+mov [conv0_17_4, conv0_17_5, conv0_17_6, conv0_17_7] %v17;
+mov [conv1_17_0, conv1_17_1, conv1_17_2, conv1_17_3] %v0;
+mov [conv1_17_4, conv1_17_5, conv1_17_6, conv1_17_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -6746,6 +6884,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_18_0, conv0_18_1, conv0_18_2, conv0_18_3] %v7;
+mov [conv0_18_4, conv0_18_5, conv0_18_6, conv0_18_7] %v17;
+mov [conv1_18_0, conv1_18_1, conv1_18_2, conv1_18_3] %v0;
+mov [conv1_18_4, conv1_18_5, conv1_18_6, conv1_18_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -8931,6 +9075,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_30_0, conv0_30_1, conv0_30_2, conv0_30_3] %v7;
+mov [conv0_30_4, conv0_30_5, conv0_30_6, conv0_30_7] %v17;
+mov [conv1_30_0, conv1_30_1, conv1_30_2, conv1_30_3] %v0;
+mov [conv1_30_4, conv1_30_5, conv1_30_6, conv1_30_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -9168,6 +9318,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_31_0, conv0_31_1, conv0_31_2, conv0_31_3] %v7;
+mov [conv0_31_4, conv0_31_5, conv0_31_6, conv0_31_7] %v17;
+mov [conv1_31_0, conv1_31_1, conv1_31_2, conv1_31_3] %v0;
+mov [conv1_31_4, conv1_31_5, conv1_31_6, conv1_31_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -9405,6 +9561,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_32_0, conv0_32_1, conv0_32_2, conv0_32_3] %v7;
+mov [conv0_32_4, conv0_32_5, conv0_32_6, conv0_32_7] %v17;
+mov [conv1_32_0, conv1_32_1, conv1_32_2, conv1_32_3] %v0;
+mov [conv1_32_4, conv1_32_5, conv1_32_6, conv1_32_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -9642,6 +9804,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_33_0, conv0_33_1, conv0_33_2, conv0_33_3] %v7;
+mov [conv0_33_4, conv0_33_5, conv0_33_6, conv0_33_7] %v17;
+mov [conv1_33_0, conv1_33_1, conv1_33_2, conv1_33_3] %v0;
+mov [conv1_33_4, conv1_33_5, conv1_33_6, conv1_33_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -9879,6 +10047,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_34_0, conv0_34_1, conv0_34_2, conv0_34_3] %v7;
+mov [conv0_34_4, conv0_34_5, conv0_34_6, conv0_34_7] %v17;
+mov [conv1_34_0, conv1_34_1, conv1_34_2, conv1_34_3] %v0;
+mov [conv1_34_4, conv1_34_5, conv1_34_6, conv1_34_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -10116,6 +10290,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_35_0, conv0_35_1, conv0_35_2, conv0_35_3] %v7;
+mov [conv0_35_4, conv0_35_5, conv0_35_6, conv0_35_7] %v17;
+mov [conv1_35_0, conv1_35_1, conv1_35_2, conv1_35_3] %v0;
+mov [conv1_35_4, conv1_35_5, conv1_35_6, conv1_35_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -10353,6 +10533,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_36_0, conv0_36_1, conv0_36_2, conv0_36_3] %v7;
+mov [conv0_36_4, conv0_36_5, conv0_36_6, conv0_36_7] %v17;
+mov [conv1_36_0, conv1_36_1, conv1_36_2, conv1_36_3] %v0;
+mov [conv1_36_4, conv1_36_5, conv1_36_6, conv1_36_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -10590,6 +10776,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_37_0, conv0_37_1, conv0_37_2, conv0_37_3] %v7;
+mov [conv0_37_4, conv0_37_5, conv0_37_6, conv0_37_7] %v17;
+mov [conv1_37_0, conv1_37_1, conv1_37_2, conv1_37_3] %v0;
+mov [conv1_37_4, conv1_37_5, conv1_37_6, conv1_37_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -10827,6 +11019,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_38_0, conv0_38_1, conv0_38_2, conv0_38_3] %v7;
+mov [conv0_38_4, conv0_38_5, conv0_38_6, conv0_38_7] %v17;
+mov [conv1_38_0, conv1_38_1, conv1_38_2, conv1_38_3] %v0;
+mov [conv1_38_4, conv1_38_5, conv1_38_6, conv1_38_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -13012,6 +13210,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_50_0, conv0_50_1, conv0_50_2, conv0_50_3] %v7;
+mov [conv0_50_4, conv0_50_5, conv0_50_6, conv0_50_7] %v17;
+mov [conv1_50_0, conv1_50_1, conv1_50_2, conv1_50_3] %v0;
+mov [conv1_50_4, conv1_50_5, conv1_50_6, conv1_50_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -13249,6 +13453,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_51_0, conv0_51_1, conv0_51_2, conv0_51_3] %v7;
+mov [conv0_51_4, conv0_51_5, conv0_51_6, conv0_51_7] %v17;
+mov [conv1_51_0, conv1_51_1, conv1_51_2, conv1_51_3] %v0;
+mov [conv1_51_4, conv1_51_5, conv1_51_6, conv1_51_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -13486,6 +13696,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_52_0, conv0_52_1, conv0_52_2, conv0_52_3] %v7;
+mov [conv0_52_4, conv0_52_5, conv0_52_6, conv0_52_7] %v17;
+mov [conv1_52_0, conv1_52_1, conv1_52_2, conv1_52_3] %v0;
+mov [conv1_52_4, conv1_52_5, conv1_52_6, conv1_52_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -13723,6 +13939,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_53_0, conv0_53_1, conv0_53_2, conv0_53_3] %v7;
+mov [conv0_53_4, conv0_53_5, conv0_53_6, conv0_53_7] %v17;
+mov [conv1_53_0, conv1_53_1, conv1_53_2, conv1_53_3] %v0;
+mov [conv1_53_4, conv1_53_5, conv1_53_6, conv1_53_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -13960,6 +14182,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_54_0, conv0_54_1, conv0_54_2, conv0_54_3] %v7;
+mov [conv0_54_4, conv0_54_5, conv0_54_6, conv0_54_7] %v17;
+mov [conv1_54_0, conv1_54_1, conv1_54_2, conv1_54_3] %v0;
+mov [conv1_54_4, conv1_54_5, conv1_54_6, conv1_54_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -14197,6 +14425,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_55_0, conv0_55_1, conv0_55_2, conv0_55_3] %v7;
+mov [conv0_55_4, conv0_55_5, conv0_55_6, conv0_55_7] %v17;
+mov [conv1_55_0, conv1_55_1, conv1_55_2, conv1_55_3] %v0;
+mov [conv1_55_4, conv1_55_5, conv1_55_6, conv1_55_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -14434,6 +14668,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_56_0, conv0_56_1, conv0_56_2, conv0_56_3] %v7;
+mov [conv0_56_4, conv0_56_5, conv0_56_6, conv0_56_7] %v17;
+mov [conv1_56_0, conv1_56_1, conv1_56_2, conv1_56_3] %v0;
+mov [conv1_56_4, conv1_56_5, conv1_56_6, conv1_56_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -14671,6 +14911,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_57_0, conv0_57_1, conv0_57_2, conv0_57_3] %v7;
+mov [conv0_57_4, conv0_57_5, conv0_57_6, conv0_57_7] %v17;
+mov [conv1_57_0, conv1_57_1, conv1_57_2, conv1_57_3] %v0;
+mov [conv1_57_4, conv1_57_5, conv1_57_6, conv1_57_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -14908,6 +15154,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_58_0, conv0_58_1, conv0_58_2, conv0_58_3] %v7;
+mov [conv0_58_4, conv0_58_5, conv0_58_6, conv0_58_7] %v17;
+mov [conv1_58_0, conv1_58_1, conv1_58_2, conv1_58_3] %v0;
+mov [conv1_58_4, conv1_58_5, conv1_58_6, conv1_58_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -17093,6 +17345,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_70_0, conv0_70_1, conv0_70_2, conv0_70_3] %v7;
+mov [conv0_70_4, conv0_70_5, conv0_70_6, conv0_70_7] %v17;
+mov [conv1_70_0, conv1_70_1, conv1_70_2, conv1_70_3] %v0;
+mov [conv1_70_4, conv1_70_5, conv1_70_6, conv1_70_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -17330,6 +17588,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_71_0, conv0_71_1, conv0_71_2, conv0_71_3] %v7;
+mov [conv0_71_4, conv0_71_5, conv0_71_6, conv0_71_7] %v17;
+mov [conv1_71_0, conv1_71_1, conv1_71_2, conv1_71_3] %v0;
+mov [conv1_71_4, conv1_71_5, conv1_71_6, conv1_71_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -17567,6 +17831,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_72_0, conv0_72_1, conv0_72_2, conv0_72_3] %v7;
+mov [conv0_72_4, conv0_72_5, conv0_72_6, conv0_72_7] %v17;
+mov [conv1_72_0, conv1_72_1, conv1_72_2, conv1_72_3] %v0;
+mov [conv1_72_4, conv1_72_5, conv1_72_6, conv1_72_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -17804,6 +18074,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_73_0, conv0_73_1, conv0_73_2, conv0_73_3] %v7;
+mov [conv0_73_4, conv0_73_5, conv0_73_6, conv0_73_7] %v17;
+mov [conv1_73_0, conv1_73_1, conv1_73_2, conv1_73_3] %v0;
+mov [conv1_73_4, conv1_73_5, conv1_73_6, conv1_73_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -18041,6 +18317,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_74_0, conv0_74_1, conv0_74_2, conv0_74_3] %v7;
+mov [conv0_74_4, conv0_74_5, conv0_74_6, conv0_74_7] %v17;
+mov [conv1_74_0, conv1_74_1, conv1_74_2, conv1_74_3] %v0;
+mov [conv1_74_4, conv1_74_5, conv1_74_6, conv1_74_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -18278,6 +18560,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_75_0, conv0_75_1, conv0_75_2, conv0_75_3] %v7;
+mov [conv0_75_4, conv0_75_5, conv0_75_6, conv0_75_7] %v17;
+mov [conv1_75_0, conv1_75_1, conv1_75_2, conv1_75_3] %v0;
+mov [conv1_75_4, conv1_75_5, conv1_75_6, conv1_75_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -18515,6 +18803,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_76_0, conv0_76_1, conv0_76_2, conv0_76_3] %v7;
+mov [conv0_76_4, conv0_76_5, conv0_76_6, conv0_76_7] %v17;
+mov [conv1_76_0, conv1_76_1, conv1_76_2, conv1_76_3] %v0;
+mov [conv1_76_4, conv1_76_5, conv1_76_6, conv1_76_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -18752,6 +19046,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_77_0, conv0_77_1, conv0_77_2, conv0_77_3] %v7;
+mov [conv0_77_4, conv0_77_5, conv0_77_6, conv0_77_7] %v17;
+mov [conv1_77_0, conv1_77_1, conv1_77_2, conv1_77_3] %v0;
+mov [conv1_77_4, conv1_77_5, conv1_77_6, conv1_77_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -18989,6 +19289,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_78_0, conv0_78_1, conv0_78_2, conv0_78_3] %v7;
+mov [conv0_78_4, conv0_78_5, conv0_78_6, conv0_78_7] %v17;
+mov [conv1_78_0, conv1_78_1, conv1_78_2, conv1_78_3] %v0;
+mov [conv1_78_4, conv1_78_5, conv1_78_6, conv1_78_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -21174,6 +21480,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_90_0, conv0_90_1, conv0_90_2, conv0_90_3] %v7;
+mov [conv0_90_4, conv0_90_5, conv0_90_6, conv0_90_7] %v17;
+mov [conv1_90_0, conv1_90_1, conv1_90_2, conv1_90_3] %v0;
+mov [conv1_90_4, conv1_90_5, conv1_90_6, conv1_90_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -21411,6 +21723,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_91_0, conv0_91_1, conv0_91_2, conv0_91_3] %v7;
+mov [conv0_91_4, conv0_91_5, conv0_91_6, conv0_91_7] %v17;
+mov [conv1_91_0, conv1_91_1, conv1_91_2, conv1_91_3] %v0;
+mov [conv1_91_4, conv1_91_5, conv1_91_6, conv1_91_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -21648,6 +21966,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_92_0, conv0_92_1, conv0_92_2, conv0_92_3] %v7;
+mov [conv0_92_4, conv0_92_5, conv0_92_6, conv0_92_7] %v17;
+mov [conv1_92_0, conv1_92_1, conv1_92_2, conv1_92_3] %v0;
+mov [conv1_92_4, conv1_92_5, conv1_92_6, conv1_92_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -21885,6 +22209,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_93_0, conv0_93_1, conv0_93_2, conv0_93_3] %v7;
+mov [conv0_93_4, conv0_93_5, conv0_93_6, conv0_93_7] %v17;
+mov [conv1_93_0, conv1_93_1, conv1_93_2, conv1_93_3] %v0;
+mov [conv1_93_4, conv1_93_5, conv1_93_6, conv1_93_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -22122,6 +22452,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_94_0, conv0_94_1, conv0_94_2, conv0_94_3] %v7;
+mov [conv0_94_4, conv0_94_5, conv0_94_6, conv0_94_7] %v17;
+mov [conv1_94_0, conv1_94_1, conv1_94_2, conv1_94_3] %v0;
+mov [conv1_94_4, conv1_94_5, conv1_94_6, conv1_94_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -22359,6 +22695,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_95_0, conv0_95_1, conv0_95_2, conv0_95_3] %v7;
+mov [conv0_95_4, conv0_95_5, conv0_95_6, conv0_95_7] %v17;
+mov [conv1_95_0, conv1_95_1, conv1_95_2, conv1_95_3] %v0;
+mov [conv1_95_4, conv1_95_5, conv1_95_6, conv1_95_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -22596,6 +22938,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_96_0, conv0_96_1, conv0_96_2, conv0_96_3] %v7;
+mov [conv0_96_4, conv0_96_5, conv0_96_6, conv0_96_7] %v17;
+mov [conv1_96_0, conv1_96_1, conv1_96_2, conv1_96_3] %v0;
+mov [conv1_96_4, conv1_96_5, conv1_96_6, conv1_96_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -22833,6 +23181,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_97_0, conv0_97_1, conv0_97_2, conv0_97_3] %v7;
+mov [conv0_97_4, conv0_97_5, conv0_97_6, conv0_97_7] %v17;
+mov [conv1_97_0, conv1_97_1, conv1_97_2, conv1_97_3] %v0;
+mov [conv1_97_4, conv1_97_5, conv1_97_6, conv1_97_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
@@ -23070,6 +23424,12 @@ broadcast %mull 4 [%v5[7]]; smulj %mlsl [%v16[4],%v16[5],%v16[6],%v16[7]] %mull;
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[0],%v18[1],%v18[2],%v18[3]] %mull; adds %dc %v7 %v7 %mlal;
 (* smlal2	v17.4s, v18.8h, v6.h[7]                  #! PC = 0x5555551edc *)
 broadcast %mull 4 [%v6[7]]; smulj %mlal [%v18[4],%v18[5],%v18[6],%v18[7]] %mull; adds %dc %v17 %v17 %mlal;
+
+mov [conv0_98_0, conv0_98_1, conv0_98_2, conv0_98_3] %v7;
+mov [conv0_98_4, conv0_98_5, conv0_98_6, conv0_98_7] %v17;
+mov [conv1_98_0, conv1_98_1, conv1_98_2, conv1_98_3] %v0;
+mov [conv1_98_4, conv1_98_5, conv1_98_6, conv1_98_7] %v1;
+
 (* sqrdmulh	v6.4s, v7.4s, v4.s[0]                  #! PC = 0x5555551ee0 *)
 cast uint16 coef_l %v4[0]; join coef %v4[1] coef_l;
 smulj %LO %v7 [coef,coef,coef,coef];
