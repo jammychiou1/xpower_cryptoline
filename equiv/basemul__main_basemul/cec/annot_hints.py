@@ -12,23 +12,15 @@ def annot_hints(annotator, isO1dbg):
         for j in range(9):
             if i % 2 == 0:
                 new_loc0 = annotator.find_first_line('PC = 0x55555519dc' if isO1dbg else 'PC = 0x5555551c4c', offset=2)
-                new_loc1 = annotator.find_first_line('PC = 0x5555551a98' if isO1dbg else 'PC = 0x5555551d14', offset=2)
                 r0, r1 = [2, 1] if isO1dbg else [4, 8]
-                c00, c01, c10, c11 = [0, 8, 4, 3] if isO1dbg else [1, 2, 6, 0]
                 output_lines += [
                     *annotator.lines[last_end : new_loc0],
                     '',
                     f'mov {make_vector([f"fc0_{i}{j}_{k}" for k in range(8)])} %v{r0};',
                     f'mov {make_vector([f"fc1_{i}{j}_{k}" for k in range(8)])} %v{r1};',
                     '',
-                    *annotator.lines[new_loc0 : new_loc1],
-                    # '',
-                    # f'mov {make_vector([f"conv0_{i}{j}_{k}" for k in range(0, 4)])} %v{c00};',
-                    # f'mov {make_vector([f"conv0_{i}{j}_{k}" for k in range(4, 8)])} %v{c01};',
-                    # f'mov {make_vector([f"conv1_{i}{j}_{k}" for k in range(0, 4)])} %v{c10};',
-                    # f'mov {make_vector([f"conv1_{i}{j}_{k}" for k in range(4, 8)])} %v{c11};',
-                    # '',
                 ]
+                last_end = new_loc0
             else:
                 new_loc0 = annotator.find_first_line('PC = 0x5555551818' if isO1dbg else 'PC = 0x5555551d90', offset=2)
                 new_loc1 = annotator.find_first_line('PC = 0x5555551944' if isO1dbg else 'PC = 0x5555551edc', offset=2)
@@ -49,7 +41,7 @@ def annot_hints(annotator, isO1dbg):
                     f'mov {make_vector([f"conv1_{i}{j}_{k}" for k in range(4, 8)])} %v{c11};',
                     '',
                 ]
-            last_end = new_loc1
+                last_end = new_loc1
 
     output_lines += [
         *annotator.lines[last_end:]

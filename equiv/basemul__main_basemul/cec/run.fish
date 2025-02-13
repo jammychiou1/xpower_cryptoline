@@ -24,7 +24,6 @@ for i in (seq 0 9)
 		end
 
 		echo $i $j
-		# echo $groups
 		timeout 1800 cv_cec -v -abc (which yosys-abc) O1dbg_neon_hints.cl O3_neon_hints.cl -ov (string join '#' $groups) -jobs 16 || echo '!!! FAILED !!!'
 	end
 end
