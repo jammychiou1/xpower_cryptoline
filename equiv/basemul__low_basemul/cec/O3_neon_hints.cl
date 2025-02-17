@@ -66,6 +66,10 @@ proc main(
     # hints
     sint16 fc0_0_0, sint16 fc0_0_1, sint16 fc0_0_2, sint16 fc0_0_3, sint16 fc0_0_4, sint16 fc0_0_5, sint16 fc0_0_6, sint16 fc0_0_7,
     sint16 fc1_0_0, sint16 fc1_0_1, sint16 fc1_0_2, sint16 fc1_0_3, sint16 fc1_0_4, sint16 fc1_0_5, sint16 fc1_0_6, sint16 fc1_0_7,
+    sint16 fd0_0_0, sint16 fd0_0_1, sint16 fd0_0_2, sint16 fd0_0_3, sint16 fd0_0_4, sint16 fd0_0_5, sint16 fd0_0_6, sint16 fd0_0_7,
+    sint16 fd1_0_0, sint16 fd1_0_1, sint16 fd1_0_2, sint16 fd1_0_3, sint16 fd1_0_4, sint16 fd1_0_5, sint16 fd1_0_6, sint16 fd1_0_7,
+    sint16 gd0_0_0, sint16 gd0_0_1, sint16 gd0_0_2, sint16 gd0_0_3, sint16 gd0_0_4, sint16 gd0_0_5, sint16 gd0_0_6, sint16 gd0_0_7,
+    sint16 gd1_0_0, sint16 gd1_0_1, sint16 gd1_0_2, sint16 gd1_0_3, sint16 gd1_0_4, sint16 gd1_0_5, sint16 gd1_0_6, sint16 gd1_0_7,
     sint32 conv0_0_0, sint32 conv0_0_1, sint32 conv0_0_2, sint32 conv0_0_3, sint32 conv0_0_4, sint32 conv0_0_5, sint32 conv0_0_6, sint32 conv0_0_7,
     sint32 conv1_0_0, sint32 conv1_0_1, sint32 conv1_0_2, sint32 conv1_0_3, sint32 conv1_0_4, sint32 conv1_0_5, sint32 conv1_0_6, sint32 conv1_0_7,
     sint16 fc0_1_0, sint16 fc0_1_1, sint16 fc0_1_2, sint16 fc0_1_3, sint16 fc0_1_4, sint16 fc0_1_5, sint16 fc0_1_6, sint16 fc0_1_7,
@@ -75,6 +79,10 @@ proc main(
     sint32 conv1_1_0, sint32 conv1_1_1, sint32 conv1_1_2, sint32 conv1_1_3, sint32 conv1_1_4, sint32 conv1_1_5, sint32 conv1_1_6, sint32 conv1_1_7,
     sint16 fc0_2_0, sint16 fc0_2_1, sint16 fc0_2_2, sint16 fc0_2_3, sint16 fc0_2_4, sint16 fc0_2_5, sint16 fc0_2_6, sint16 fc0_2_7,
     sint16 fc1_2_0, sint16 fc1_2_1, sint16 fc1_2_2, sint16 fc1_2_3, sint16 fc1_2_4, sint16 fc1_2_5, sint16 fc1_2_6, sint16 fc1_2_7,
+    sint16 fd0_2_0, sint16 fd0_2_1, sint16 fd0_2_2, sint16 fd0_2_3, sint16 fd0_2_4, sint16 fd0_2_5, sint16 fd0_2_6, sint16 fd0_2_7,
+    sint16 fd1_2_0, sint16 fd1_2_1, sint16 fd1_2_2, sint16 fd1_2_3, sint16 fd1_2_4, sint16 fd1_2_5, sint16 fd1_2_6, sint16 fd1_2_7,
+    sint16 gd0_2_0, sint16 gd0_2_1, sint16 gd0_2_2, sint16 gd0_2_3, sint16 gd0_2_4, sint16 gd0_2_5, sint16 gd0_2_6, sint16 gd0_2_7,
+    sint16 gd1_2_0, sint16 gd1_2_1, sint16 gd1_2_2, sint16 gd1_2_3, sint16 gd1_2_4, sint16 gd1_2_5, sint16 gd1_2_6, sint16 gd1_2_7,
     sint32 conv0_2_0, sint32 conv0_2_1, sint32 conv0_2_2, sint32 conv0_2_3, sint32 conv0_2_4, sint32 conv0_2_5, sint32 conv0_2_6, sint32 conv0_2_7,
     sint32 conv1_2_0, sint32 conv1_2_1, sint32 conv1_2_2, sint32 conv1_2_3, sint32 conv1_2_4, sint32 conv1_2_5, sint32 conv1_2_6, sint32 conv1_2_7,
     sint16 fc0_3_0, sint16 fc0_3_1, sint16 fc0_3_2, sint16 fc0_3_3, sint16 fc0_3_4, sint16 fc0_3_5, sint16 fc0_3_6, sint16 fc0_3_7,
@@ -84,6 +92,10 @@ proc main(
     sint32 conv1_3_0, sint32 conv1_3_1, sint32 conv1_3_2, sint32 conv1_3_3, sint32 conv1_3_4, sint32 conv1_3_5, sint32 conv1_3_6, sint32 conv1_3_7,
     sint16 fc0_4_0, sint16 fc0_4_1, sint16 fc0_4_2, sint16 fc0_4_3, sint16 fc0_4_4, sint16 fc0_4_5, sint16 fc0_4_6, sint16 fc0_4_7,
     sint16 fc1_4_0, sint16 fc1_4_1, sint16 fc1_4_2, sint16 fc1_4_3, sint16 fc1_4_4, sint16 fc1_4_5, sint16 fc1_4_6, sint16 fc1_4_7,
+    sint16 fd0_4_0, sint16 fd0_4_1, sint16 fd0_4_2, sint16 fd0_4_3, sint16 fd0_4_4, sint16 fd0_4_5, sint16 fd0_4_6, sint16 fd0_4_7,
+    sint16 fd1_4_0, sint16 fd1_4_1, sint16 fd1_4_2, sint16 fd1_4_3, sint16 fd1_4_4, sint16 fd1_4_5, sint16 fd1_4_6, sint16 fd1_4_7,
+    sint16 gd0_4_0, sint16 gd0_4_1, sint16 gd0_4_2, sint16 gd0_4_3, sint16 gd0_4_4, sint16 gd0_4_5, sint16 gd0_4_6, sint16 gd0_4_7,
+    sint16 gd1_4_0, sint16 gd1_4_1, sint16 gd1_4_2, sint16 gd1_4_3, sint16 gd1_4_4, sint16 gd1_4_5, sint16 gd1_4_6, sint16 gd1_4_7,
     sint32 conv0_4_0, sint32 conv0_4_1, sint32 conv0_4_2, sint32 conv0_4_3, sint32 conv0_4_4, sint32 conv0_4_5, sint32 conv0_4_6, sint32 conv0_4_7,
     sint32 conv1_4_0, sint32 conv1_4_1, sint32 conv1_4_2, sint32 conv1_4_3, sint32 conv1_4_4, sint32 conv1_4_5, sint32 conv1_4_6, sint32 conv1_4_7,
     sint16 fc0_5_0, sint16 fc0_5_1, sint16 fc0_5_2, sint16 fc0_5_3, sint16 fc0_5_4, sint16 fc0_5_5, sint16 fc0_5_6, sint16 fc0_5_7,
@@ -93,6 +105,10 @@ proc main(
     sint32 conv1_5_0, sint32 conv1_5_1, sint32 conv1_5_2, sint32 conv1_5_3, sint32 conv1_5_4, sint32 conv1_5_5, sint32 conv1_5_6, sint32 conv1_5_7,
     sint16 fc0_6_0, sint16 fc0_6_1, sint16 fc0_6_2, sint16 fc0_6_3, sint16 fc0_6_4, sint16 fc0_6_5, sint16 fc0_6_6, sint16 fc0_6_7,
     sint16 fc1_6_0, sint16 fc1_6_1, sint16 fc1_6_2, sint16 fc1_6_3, sint16 fc1_6_4, sint16 fc1_6_5, sint16 fc1_6_6, sint16 fc1_6_7,
+    sint16 fd0_6_0, sint16 fd0_6_1, sint16 fd0_6_2, sint16 fd0_6_3, sint16 fd0_6_4, sint16 fd0_6_5, sint16 fd0_6_6, sint16 fd0_6_7,
+    sint16 fd1_6_0, sint16 fd1_6_1, sint16 fd1_6_2, sint16 fd1_6_3, sint16 fd1_6_4, sint16 fd1_6_5, sint16 fd1_6_6, sint16 fd1_6_7,
+    sint16 gd0_6_0, sint16 gd0_6_1, sint16 gd0_6_2, sint16 gd0_6_3, sint16 gd0_6_4, sint16 gd0_6_5, sint16 gd0_6_6, sint16 gd0_6_7,
+    sint16 gd1_6_0, sint16 gd1_6_1, sint16 gd1_6_2, sint16 gd1_6_3, sint16 gd1_6_4, sint16 gd1_6_5, sint16 gd1_6_6, sint16 gd1_6_7,
     sint32 conv0_6_0, sint32 conv0_6_1, sint32 conv0_6_2, sint32 conv0_6_3, sint32 conv0_6_4, sint32 conv0_6_5, sint32 conv0_6_6, sint32 conv0_6_7,
     sint32 conv1_6_0, sint32 conv1_6_1, sint32 conv1_6_2, sint32 conv1_6_3, sint32 conv1_6_4, sint32 conv1_6_5, sint32 conv1_6_6, sint32 conv1_6_7,
     sint16 fc0_7_0, sint16 fc0_7_1, sint16 fc0_7_2, sint16 fc0_7_3, sint16 fc0_7_4, sint16 fc0_7_5, sint16 fc0_7_6, sint16 fc0_7_7,
@@ -102,6 +118,10 @@ proc main(
     sint32 conv1_7_0, sint32 conv1_7_1, sint32 conv1_7_2, sint32 conv1_7_3, sint32 conv1_7_4, sint32 conv1_7_5, sint32 conv1_7_6, sint32 conv1_7_7,
     sint16 fc0_8_0, sint16 fc0_8_1, sint16 fc0_8_2, sint16 fc0_8_3, sint16 fc0_8_4, sint16 fc0_8_5, sint16 fc0_8_6, sint16 fc0_8_7,
     sint16 fc1_8_0, sint16 fc1_8_1, sint16 fc1_8_2, sint16 fc1_8_3, sint16 fc1_8_4, sint16 fc1_8_5, sint16 fc1_8_6, sint16 fc1_8_7,
+    sint16 fd0_8_0, sint16 fd0_8_1, sint16 fd0_8_2, sint16 fd0_8_3, sint16 fd0_8_4, sint16 fd0_8_5, sint16 fd0_8_6, sint16 fd0_8_7,
+    sint16 fd1_8_0, sint16 fd1_8_1, sint16 fd1_8_2, sint16 fd1_8_3, sint16 fd1_8_4, sint16 fd1_8_5, sint16 fd1_8_6, sint16 fd1_8_7,
+    sint16 gd0_8_0, sint16 gd0_8_1, sint16 gd0_8_2, sint16 gd0_8_3, sint16 gd0_8_4, sint16 gd0_8_5, sint16 gd0_8_6, sint16 gd0_8_7,
+    sint16 gd1_8_0, sint16 gd1_8_1, sint16 gd1_8_2, sint16 gd1_8_3, sint16 gd1_8_4, sint16 gd1_8_5, sint16 gd1_8_6, sint16 gd1_8_7,
     sint32 conv0_8_0, sint32 conv0_8_1, sint32 conv0_8_2, sint32 conv0_8_3, sint32 conv0_8_4, sint32 conv0_8_5, sint32 conv0_8_6, sint32 conv0_8_7,
     sint32 conv1_8_0, sint32 conv1_8_1, sint32 conv1_8_2, sint32 conv1_8_3, sint32 conv1_8_4, sint32 conv1_8_5, sint32 conv1_8_6, sint32 conv1_8_7,
     sint16 fc0_9_0, sint16 fc0_9_1, sint16 fc0_9_2, sint16 fc0_9_3, sint16 fc0_9_4, sint16 fc0_9_5, sint16 fc0_9_6, sint16 fc0_9_7,
@@ -522,6 +542,8 @@ adds %dc %v0 %v0 %v1;
 
 mov [fc0_0_0, fc0_0_1, fc0_0_2, fc0_0_3, fc0_0_4, fc0_0_5, fc0_0_6, fc0_0_7] %v0;
 mov [fc1_0_0, fc1_0_1, fc1_0_2, fc1_0_3, fc1_0_4, fc1_0_5, fc1_0_6, fc1_0_7] %v7;
+mov [fd0_0_0, fd0_0_1, fd0_0_2, fd0_0_3, fd0_0_4, fd0_0_5, fd0_0_6, fd0_0_7] %v5;
+mov [fd1_0_0, fd1_0_1, fd1_0_2, fd1_0_3, fd1_0_4, fd1_0_5, fd1_0_6, fd1_0_7] %v18;
 
 (* smull	v6.4s, v18.4h, v7.h[0]                    #! PC = 0x5555551fdc *)
 broadcast %mull 4 [%v7[0]]; smulj %v6 [%v18[0],%v18[1],%v18[2],%v18[3]] %mull;
@@ -543,6 +565,10 @@ broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; add
 (* mls	v17.8h, v1.8h, v2.h[6]                      #! PC = 0x5555551ff8 *)
 broadcast %mul 8 [%v2[6]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %dc %v17 %v17 %mls;
+
+mov [gd0_0_0, gd0_0_1, gd0_0_2, gd0_0_3, gd0_0_4, gd0_0_5, gd0_0_6, gd0_0_7] %v17;
+mov [gd1_0_0, gd1_0_1, gd1_0_2, gd1_0_3, gd1_0_4, gd1_0_5, gd1_0_6, gd1_0_7] %v16;
+
 (* smlal2	v4.4s, v8.8h, v7.h[1]                    #! PC = 0x5555551ffc *)
 broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
 (* ext	v20.16b, v17.16b, v5.16b, #14               #! PC = 0x5555552000 *)
@@ -1049,6 +1075,8 @@ adds %dc %v0 %v0 %v1;
 
 mov [fc0_2_0, fc0_2_1, fc0_2_2, fc0_2_3, fc0_2_4, fc0_2_5, fc0_2_6, fc0_2_7] %v0;
 mov [fc1_2_0, fc1_2_1, fc1_2_2, fc1_2_3, fc1_2_4, fc1_2_5, fc1_2_6, fc1_2_7] %v7;
+mov [fd0_2_0, fd0_2_1, fd0_2_2, fd0_2_3, fd0_2_4, fd0_2_5, fd0_2_6, fd0_2_7] %v5;
+mov [fd1_2_0, fd1_2_1, fd1_2_2, fd1_2_3, fd1_2_4, fd1_2_5, fd1_2_6, fd1_2_7] %v18;
 
 (* smull	v6.4s, v18.4h, v7.h[0]                    #! PC = 0x5555551fdc *)
 broadcast %mull 4 [%v7[0]]; smulj %v6 [%v18[0],%v18[1],%v18[2],%v18[3]] %mull;
@@ -1070,6 +1098,10 @@ broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; add
 (* mls	v17.8h, v1.8h, v2.h[6]                      #! PC = 0x5555551ff8 *)
 broadcast %mul 8 [%v2[6]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %dc %v17 %v17 %mls;
+
+mov [gd0_2_0, gd0_2_1, gd0_2_2, gd0_2_3, gd0_2_4, gd0_2_5, gd0_2_6, gd0_2_7] %v17;
+mov [gd1_2_0, gd1_2_1, gd1_2_2, gd1_2_3, gd1_2_4, gd1_2_5, gd1_2_6, gd1_2_7] %v16;
+
 (* smlal2	v4.4s, v8.8h, v7.h[1]                    #! PC = 0x5555551ffc *)
 broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
 (* ext	v20.16b, v17.16b, v5.16b, #14               #! PC = 0x5555552000 *)
@@ -1576,6 +1608,8 @@ adds %dc %v0 %v0 %v1;
 
 mov [fc0_4_0, fc0_4_1, fc0_4_2, fc0_4_3, fc0_4_4, fc0_4_5, fc0_4_6, fc0_4_7] %v0;
 mov [fc1_4_0, fc1_4_1, fc1_4_2, fc1_4_3, fc1_4_4, fc1_4_5, fc1_4_6, fc1_4_7] %v7;
+mov [fd0_4_0, fd0_4_1, fd0_4_2, fd0_4_3, fd0_4_4, fd0_4_5, fd0_4_6, fd0_4_7] %v5;
+mov [fd1_4_0, fd1_4_1, fd1_4_2, fd1_4_3, fd1_4_4, fd1_4_5, fd1_4_6, fd1_4_7] %v18;
 
 (* smull	v6.4s, v18.4h, v7.h[0]                    #! PC = 0x5555551fdc *)
 broadcast %mull 4 [%v7[0]]; smulj %v6 [%v18[0],%v18[1],%v18[2],%v18[3]] %mull;
@@ -1597,6 +1631,10 @@ broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; add
 (* mls	v17.8h, v1.8h, v2.h[6]                      #! PC = 0x5555551ff8 *)
 broadcast %mul 8 [%v2[6]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %dc %v17 %v17 %mls;
+
+mov [gd0_4_0, gd0_4_1, gd0_4_2, gd0_4_3, gd0_4_4, gd0_4_5, gd0_4_6, gd0_4_7] %v17;
+mov [gd1_4_0, gd1_4_1, gd1_4_2, gd1_4_3, gd1_4_4, gd1_4_5, gd1_4_6, gd1_4_7] %v16;
+
 (* smlal2	v4.4s, v8.8h, v7.h[1]                    #! PC = 0x5555551ffc *)
 broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
 (* ext	v20.16b, v17.16b, v5.16b, #14               #! PC = 0x5555552000 *)
@@ -2103,6 +2141,8 @@ adds %dc %v0 %v0 %v1;
 
 mov [fc0_6_0, fc0_6_1, fc0_6_2, fc0_6_3, fc0_6_4, fc0_6_5, fc0_6_6, fc0_6_7] %v0;
 mov [fc1_6_0, fc1_6_1, fc1_6_2, fc1_6_3, fc1_6_4, fc1_6_5, fc1_6_6, fc1_6_7] %v7;
+mov [fd0_6_0, fd0_6_1, fd0_6_2, fd0_6_3, fd0_6_4, fd0_6_5, fd0_6_6, fd0_6_7] %v5;
+mov [fd1_6_0, fd1_6_1, fd1_6_2, fd1_6_3, fd1_6_4, fd1_6_5, fd1_6_6, fd1_6_7] %v18;
 
 (* smull	v6.4s, v18.4h, v7.h[0]                    #! PC = 0x5555551fdc *)
 broadcast %mull 4 [%v7[0]]; smulj %v6 [%v18[0],%v18[1],%v18[2],%v18[3]] %mull;
@@ -2124,6 +2164,10 @@ broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; add
 (* mls	v17.8h, v1.8h, v2.h[6]                      #! PC = 0x5555551ff8 *)
 broadcast %mul 8 [%v2[6]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %dc %v17 %v17 %mls;
+
+mov [gd0_6_0, gd0_6_1, gd0_6_2, gd0_6_3, gd0_6_4, gd0_6_5, gd0_6_6, gd0_6_7] %v17;
+mov [gd1_6_0, gd1_6_1, gd1_6_2, gd1_6_3, gd1_6_4, gd1_6_5, gd1_6_6, gd1_6_7] %v16;
+
 (* smlal2	v4.4s, v8.8h, v7.h[1]                    #! PC = 0x5555551ffc *)
 broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
 (* ext	v20.16b, v17.16b, v5.16b, #14               #! PC = 0x5555552000 *)
@@ -2630,6 +2674,8 @@ adds %dc %v0 %v0 %v1;
 
 mov [fc0_8_0, fc0_8_1, fc0_8_2, fc0_8_3, fc0_8_4, fc0_8_5, fc0_8_6, fc0_8_7] %v0;
 mov [fc1_8_0, fc1_8_1, fc1_8_2, fc1_8_3, fc1_8_4, fc1_8_5, fc1_8_6, fc1_8_7] %v7;
+mov [fd0_8_0, fd0_8_1, fd0_8_2, fd0_8_3, fd0_8_4, fd0_8_5, fd0_8_6, fd0_8_7] %v5;
+mov [fd1_8_0, fd1_8_1, fd1_8_2, fd1_8_3, fd1_8_4, fd1_8_5, fd1_8_6, fd1_8_7] %v18;
 
 (* smull	v6.4s, v18.4h, v7.h[0]                    #! PC = 0x5555551fdc *)
 broadcast %mull 4 [%v7[0]]; smulj %v6 [%v18[0],%v18[1],%v18[2],%v18[3]] %mull;
@@ -2651,6 +2697,10 @@ broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; add
 (* mls	v17.8h, v1.8h, v2.h[6]                      #! PC = 0x5555551ff8 *)
 broadcast %mul 8 [%v2[6]]; mull %dc %mls %v1 %mul;
 cast %mls@int16[8] %mls; subc %dc %v17 %v17 %mls;
+
+mov [gd0_8_0, gd0_8_1, gd0_8_2, gd0_8_3, gd0_8_4, gd0_8_5, gd0_8_6, gd0_8_7] %v17;
+mov [gd1_8_0, gd1_8_1, gd1_8_2, gd1_8_3, gd1_8_4, gd1_8_5, gd1_8_6, gd1_8_7] %v16;
+
 (* smlal2	v4.4s, v8.8h, v7.h[1]                    #! PC = 0x5555551ffc *)
 broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
 (* ext	v20.16b, v17.16b, v5.16b, #14               #! PC = 0x5555552000 *)
