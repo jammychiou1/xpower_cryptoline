@@ -1,0 +1,21 @@
+Parsing CryptoLine file:			[OK]		0.1454 seconds
+Checking well-formedness:			[OK]		0.0288 seconds
+Parsing CryptoLine file:			[OK]		0.1425 seconds
+Checking well-formedness:			[OK]		0.0243 seconds
+Equivalence of output group #7:			[OK]		127.0300 seconds
+Equivalence of output group #15:			[OK]		355.8225 seconds
+Equivalence of output group #5:			[OK]		418.0259 seconds
+Equivalence of output group #13:			[OK]		452.5675 seconds
+Equivalence of output group #12:			[OK]		456.1991 seconds
+Equivalence of output group #0:			[OK]		515.9002 seconds
+Equivalence of output group #9:			[OK]		572.9031 seconds
+Equivalence of output group #1:			[OK]		580.9902 seconds
+Equivalence of output group #3:			[OK]		586.6104 seconds
+Equivalence of output group #10:			[OK]		613.3431 seconds
+Equivalence of output group #6:			[OK]		2285.8230 seconds
+Equivalence of output group #8:			[OK]		2904.1575 seconds
+Equivalence of output group #14:			[OK]		3235.5208 seconds
+Equivalence of output group #4:			[OK]		4672.1428 seconds
+Equivalence of output group #11:			[OK]		5310.3988 seconds
+Equivalence of output group #2:			[OK]		11036.8822 seconds
+Final result:					[OK]		11038.3029 seconds
