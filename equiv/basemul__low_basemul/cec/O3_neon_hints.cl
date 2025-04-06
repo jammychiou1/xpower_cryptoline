@@ -70,8 +70,16 @@ proc main(
     sint16 fd1_0_0, sint16 fd1_0_1, sint16 fd1_0_2, sint16 fd1_0_3, sint16 fd1_0_4, sint16 fd1_0_5, sint16 fd1_0_6, sint16 fd1_0_7,
     sint16 gd0_0_0, sint16 gd0_0_1, sint16 gd0_0_2, sint16 gd0_0_3, sint16 gd0_0_4, sint16 gd0_0_5, sint16 gd0_0_6, sint16 gd0_0_7,
     sint16 gd1_0_0, sint16 gd1_0_1, sint16 gd1_0_2, sint16 gd1_0_3, sint16 gd1_0_4, sint16 gd1_0_5, sint16 gd1_0_6, sint16 gd1_0_7,
+    sint16 mid00_0_0, sint16 mid00_0_1, sint16 mid00_0_2, sint16 mid00_0_3, sint16 mid00_0_4, sint16 mid00_0_5, sint16 mid00_0_6, sint16 mid00_0_7,
+    sint16 mid10_0_0, sint16 mid10_0_1, sint16 mid10_0_2, sint16 mid10_0_3, sint16 mid10_0_4, sint16 mid10_0_5, sint16 mid10_0_6, sint16 mid10_0_7,
+    sint16 mid01_0_0, sint16 mid01_0_1, sint16 mid01_0_2, sint16 mid01_0_3, sint16 mid01_0_4, sint16 mid01_0_5, sint16 mid01_0_6, sint16 mid01_0_7,
+    sint16 mid11_0_0, sint16 mid11_0_1, sint16 mid11_0_2, sint16 mid11_0_3, sint16 mid11_0_4, sint16 mid11_0_5, sint16 mid11_0_6, sint16 mid11_0_7,
+    sint16 mid02_0_0, sint16 mid02_0_1, sint16 mid02_0_2, sint16 mid02_0_3, sint16 mid02_0_4, sint16 mid02_0_5, sint16 mid02_0_6, sint16 mid02_0_7,
+    sint16 mid12_0_0, sint16 mid12_0_1, sint16 mid12_0_2, sint16 mid12_0_3, sint16 mid12_0_4, sint16 mid12_0_5, sint16 mid12_0_6, sint16 mid12_0_7,
     sint16 mid03_0_0, sint16 mid03_0_1, sint16 mid03_0_2, sint16 mid03_0_3, sint16 mid03_0_4, sint16 mid03_0_5, sint16 mid03_0_6, sint16 mid03_0_7,
     sint16 mid13_0_0, sint16 mid13_0_1, sint16 mid13_0_2, sint16 mid13_0_3, sint16 mid13_0_4, sint16 mid13_0_5, sint16 mid13_0_6, sint16 mid13_0_7,
+    sint16 mid04_0_0, sint16 mid04_0_1, sint16 mid04_0_2, sint16 mid04_0_3, sint16 mid04_0_4, sint16 mid04_0_5, sint16 mid04_0_6, sint16 mid04_0_7,
+    sint16 mid14_0_0, sint16 mid14_0_1, sint16 mid14_0_2, sint16 mid14_0_3, sint16 mid14_0_4, sint16 mid14_0_5, sint16 mid14_0_6, sint16 mid14_0_7,
     sint16 mid05_0_0, sint16 mid05_0_1, sint16 mid05_0_2, sint16 mid05_0_3, sint16 mid05_0_4, sint16 mid05_0_5, sint16 mid05_0_6, sint16 mid05_0_7,
     sint16 mid15_0_0, sint16 mid15_0_1, sint16 mid15_0_2, sint16 mid15_0_3, sint16 mid15_0_4, sint16 mid15_0_5, sint16 mid15_0_6, sint16 mid15_0_7,
     sint16 mid06_0_0, sint16 mid06_0_1, sint16 mid06_0_2, sint16 mid06_0_3, sint16 mid06_0_4, sint16 mid06_0_5, sint16 mid06_0_6, sint16 mid06_0_7,
@@ -99,8 +107,16 @@ proc main(
     sint16 fd1_2_0, sint16 fd1_2_1, sint16 fd1_2_2, sint16 fd1_2_3, sint16 fd1_2_4, sint16 fd1_2_5, sint16 fd1_2_6, sint16 fd1_2_7,
     sint16 gd0_2_0, sint16 gd0_2_1, sint16 gd0_2_2, sint16 gd0_2_3, sint16 gd0_2_4, sint16 gd0_2_5, sint16 gd0_2_6, sint16 gd0_2_7,
     sint16 gd1_2_0, sint16 gd1_2_1, sint16 gd1_2_2, sint16 gd1_2_3, sint16 gd1_2_4, sint16 gd1_2_5, sint16 gd1_2_6, sint16 gd1_2_7,
+    sint16 mid00_2_0, sint16 mid00_2_1, sint16 mid00_2_2, sint16 mid00_2_3, sint16 mid00_2_4, sint16 mid00_2_5, sint16 mid00_2_6, sint16 mid00_2_7,
+    sint16 mid10_2_0, sint16 mid10_2_1, sint16 mid10_2_2, sint16 mid10_2_3, sint16 mid10_2_4, sint16 mid10_2_5, sint16 mid10_2_6, sint16 mid10_2_7,
+    sint16 mid01_2_0, sint16 mid01_2_1, sint16 mid01_2_2, sint16 mid01_2_3, sint16 mid01_2_4, sint16 mid01_2_5, sint16 mid01_2_6, sint16 mid01_2_7,
+    sint16 mid11_2_0, sint16 mid11_2_1, sint16 mid11_2_2, sint16 mid11_2_3, sint16 mid11_2_4, sint16 mid11_2_5, sint16 mid11_2_6, sint16 mid11_2_7,
+    sint16 mid02_2_0, sint16 mid02_2_1, sint16 mid02_2_2, sint16 mid02_2_3, sint16 mid02_2_4, sint16 mid02_2_5, sint16 mid02_2_6, sint16 mid02_2_7,
+    sint16 mid12_2_0, sint16 mid12_2_1, sint16 mid12_2_2, sint16 mid12_2_3, sint16 mid12_2_4, sint16 mid12_2_5, sint16 mid12_2_6, sint16 mid12_2_7,
     sint16 mid03_2_0, sint16 mid03_2_1, sint16 mid03_2_2, sint16 mid03_2_3, sint16 mid03_2_4, sint16 mid03_2_5, sint16 mid03_2_6, sint16 mid03_2_7,
     sint16 mid13_2_0, sint16 mid13_2_1, sint16 mid13_2_2, sint16 mid13_2_3, sint16 mid13_2_4, sint16 mid13_2_5, sint16 mid13_2_6, sint16 mid13_2_7,
+    sint16 mid04_2_0, sint16 mid04_2_1, sint16 mid04_2_2, sint16 mid04_2_3, sint16 mid04_2_4, sint16 mid04_2_5, sint16 mid04_2_6, sint16 mid04_2_7,
+    sint16 mid14_2_0, sint16 mid14_2_1, sint16 mid14_2_2, sint16 mid14_2_3, sint16 mid14_2_4, sint16 mid14_2_5, sint16 mid14_2_6, sint16 mid14_2_7,
     sint16 mid05_2_0, sint16 mid05_2_1, sint16 mid05_2_2, sint16 mid05_2_3, sint16 mid05_2_4, sint16 mid05_2_5, sint16 mid05_2_6, sint16 mid05_2_7,
     sint16 mid15_2_0, sint16 mid15_2_1, sint16 mid15_2_2, sint16 mid15_2_3, sint16 mid15_2_4, sint16 mid15_2_5, sint16 mid15_2_6, sint16 mid15_2_7,
     sint16 mid06_2_0, sint16 mid06_2_1, sint16 mid06_2_2, sint16 mid06_2_3, sint16 mid06_2_4, sint16 mid06_2_5, sint16 mid06_2_6, sint16 mid06_2_7,
@@ -128,8 +144,16 @@ proc main(
     sint16 fd1_4_0, sint16 fd1_4_1, sint16 fd1_4_2, sint16 fd1_4_3, sint16 fd1_4_4, sint16 fd1_4_5, sint16 fd1_4_6, sint16 fd1_4_7,
     sint16 gd0_4_0, sint16 gd0_4_1, sint16 gd0_4_2, sint16 gd0_4_3, sint16 gd0_4_4, sint16 gd0_4_5, sint16 gd0_4_6, sint16 gd0_4_7,
     sint16 gd1_4_0, sint16 gd1_4_1, sint16 gd1_4_2, sint16 gd1_4_3, sint16 gd1_4_4, sint16 gd1_4_5, sint16 gd1_4_6, sint16 gd1_4_7,
+    sint16 mid00_4_0, sint16 mid00_4_1, sint16 mid00_4_2, sint16 mid00_4_3, sint16 mid00_4_4, sint16 mid00_4_5, sint16 mid00_4_6, sint16 mid00_4_7,
+    sint16 mid10_4_0, sint16 mid10_4_1, sint16 mid10_4_2, sint16 mid10_4_3, sint16 mid10_4_4, sint16 mid10_4_5, sint16 mid10_4_6, sint16 mid10_4_7,
+    sint16 mid01_4_0, sint16 mid01_4_1, sint16 mid01_4_2, sint16 mid01_4_3, sint16 mid01_4_4, sint16 mid01_4_5, sint16 mid01_4_6, sint16 mid01_4_7,
+    sint16 mid11_4_0, sint16 mid11_4_1, sint16 mid11_4_2, sint16 mid11_4_3, sint16 mid11_4_4, sint16 mid11_4_5, sint16 mid11_4_6, sint16 mid11_4_7,
+    sint16 mid02_4_0, sint16 mid02_4_1, sint16 mid02_4_2, sint16 mid02_4_3, sint16 mid02_4_4, sint16 mid02_4_5, sint16 mid02_4_6, sint16 mid02_4_7,
+    sint16 mid12_4_0, sint16 mid12_4_1, sint16 mid12_4_2, sint16 mid12_4_3, sint16 mid12_4_4, sint16 mid12_4_5, sint16 mid12_4_6, sint16 mid12_4_7,
     sint16 mid03_4_0, sint16 mid03_4_1, sint16 mid03_4_2, sint16 mid03_4_3, sint16 mid03_4_4, sint16 mid03_4_5, sint16 mid03_4_6, sint16 mid03_4_7,
     sint16 mid13_4_0, sint16 mid13_4_1, sint16 mid13_4_2, sint16 mid13_4_3, sint16 mid13_4_4, sint16 mid13_4_5, sint16 mid13_4_6, sint16 mid13_4_7,
+    sint16 mid04_4_0, sint16 mid04_4_1, sint16 mid04_4_2, sint16 mid04_4_3, sint16 mid04_4_4, sint16 mid04_4_5, sint16 mid04_4_6, sint16 mid04_4_7,
+    sint16 mid14_4_0, sint16 mid14_4_1, sint16 mid14_4_2, sint16 mid14_4_3, sint16 mid14_4_4, sint16 mid14_4_5, sint16 mid14_4_6, sint16 mid14_4_7,
     sint16 mid05_4_0, sint16 mid05_4_1, sint16 mid05_4_2, sint16 mid05_4_3, sint16 mid05_4_4, sint16 mid05_4_5, sint16 mid05_4_6, sint16 mid05_4_7,
     sint16 mid15_4_0, sint16 mid15_4_1, sint16 mid15_4_2, sint16 mid15_4_3, sint16 mid15_4_4, sint16 mid15_4_5, sint16 mid15_4_6, sint16 mid15_4_7,
     sint16 mid06_4_0, sint16 mid06_4_1, sint16 mid06_4_2, sint16 mid06_4_3, sint16 mid06_4_4, sint16 mid06_4_5, sint16 mid06_4_6, sint16 mid06_4_7,
@@ -157,8 +181,16 @@ proc main(
     sint16 fd1_6_0, sint16 fd1_6_1, sint16 fd1_6_2, sint16 fd1_6_3, sint16 fd1_6_4, sint16 fd1_6_5, sint16 fd1_6_6, sint16 fd1_6_7,
     sint16 gd0_6_0, sint16 gd0_6_1, sint16 gd0_6_2, sint16 gd0_6_3, sint16 gd0_6_4, sint16 gd0_6_5, sint16 gd0_6_6, sint16 gd0_6_7,
     sint16 gd1_6_0, sint16 gd1_6_1, sint16 gd1_6_2, sint16 gd1_6_3, sint16 gd1_6_4, sint16 gd1_6_5, sint16 gd1_6_6, sint16 gd1_6_7,
+    sint16 mid00_6_0, sint16 mid00_6_1, sint16 mid00_6_2, sint16 mid00_6_3, sint16 mid00_6_4, sint16 mid00_6_5, sint16 mid00_6_6, sint16 mid00_6_7,
+    sint16 mid10_6_0, sint16 mid10_6_1, sint16 mid10_6_2, sint16 mid10_6_3, sint16 mid10_6_4, sint16 mid10_6_5, sint16 mid10_6_6, sint16 mid10_6_7,
+    sint16 mid01_6_0, sint16 mid01_6_1, sint16 mid01_6_2, sint16 mid01_6_3, sint16 mid01_6_4, sint16 mid01_6_5, sint16 mid01_6_6, sint16 mid01_6_7,
+    sint16 mid11_6_0, sint16 mid11_6_1, sint16 mid11_6_2, sint16 mid11_6_3, sint16 mid11_6_4, sint16 mid11_6_5, sint16 mid11_6_6, sint16 mid11_6_7,
+    sint16 mid02_6_0, sint16 mid02_6_1, sint16 mid02_6_2, sint16 mid02_6_3, sint16 mid02_6_4, sint16 mid02_6_5, sint16 mid02_6_6, sint16 mid02_6_7,
+    sint16 mid12_6_0, sint16 mid12_6_1, sint16 mid12_6_2, sint16 mid12_6_3, sint16 mid12_6_4, sint16 mid12_6_5, sint16 mid12_6_6, sint16 mid12_6_7,
     sint16 mid03_6_0, sint16 mid03_6_1, sint16 mid03_6_2, sint16 mid03_6_3, sint16 mid03_6_4, sint16 mid03_6_5, sint16 mid03_6_6, sint16 mid03_6_7,
     sint16 mid13_6_0, sint16 mid13_6_1, sint16 mid13_6_2, sint16 mid13_6_3, sint16 mid13_6_4, sint16 mid13_6_5, sint16 mid13_6_6, sint16 mid13_6_7,
+    sint16 mid04_6_0, sint16 mid04_6_1, sint16 mid04_6_2, sint16 mid04_6_3, sint16 mid04_6_4, sint16 mid04_6_5, sint16 mid04_6_6, sint16 mid04_6_7,
+    sint16 mid14_6_0, sint16 mid14_6_1, sint16 mid14_6_2, sint16 mid14_6_3, sint16 mid14_6_4, sint16 mid14_6_5, sint16 mid14_6_6, sint16 mid14_6_7,
     sint16 mid05_6_0, sint16 mid05_6_1, sint16 mid05_6_2, sint16 mid05_6_3, sint16 mid05_6_4, sint16 mid05_6_5, sint16 mid05_6_6, sint16 mid05_6_7,
     sint16 mid15_6_0, sint16 mid15_6_1, sint16 mid15_6_2, sint16 mid15_6_3, sint16 mid15_6_4, sint16 mid15_6_5, sint16 mid15_6_6, sint16 mid15_6_7,
     sint16 mid06_6_0, sint16 mid06_6_1, sint16 mid06_6_2, sint16 mid06_6_3, sint16 mid06_6_4, sint16 mid06_6_5, sint16 mid06_6_6, sint16 mid06_6_7,
@@ -186,8 +218,16 @@ proc main(
     sint16 fd1_8_0, sint16 fd1_8_1, sint16 fd1_8_2, sint16 fd1_8_3, sint16 fd1_8_4, sint16 fd1_8_5, sint16 fd1_8_6, sint16 fd1_8_7,
     sint16 gd0_8_0, sint16 gd0_8_1, sint16 gd0_8_2, sint16 gd0_8_3, sint16 gd0_8_4, sint16 gd0_8_5, sint16 gd0_8_6, sint16 gd0_8_7,
     sint16 gd1_8_0, sint16 gd1_8_1, sint16 gd1_8_2, sint16 gd1_8_3, sint16 gd1_8_4, sint16 gd1_8_5, sint16 gd1_8_6, sint16 gd1_8_7,
+    sint16 mid00_8_0, sint16 mid00_8_1, sint16 mid00_8_2, sint16 mid00_8_3, sint16 mid00_8_4, sint16 mid00_8_5, sint16 mid00_8_6, sint16 mid00_8_7,
+    sint16 mid10_8_0, sint16 mid10_8_1, sint16 mid10_8_2, sint16 mid10_8_3, sint16 mid10_8_4, sint16 mid10_8_5, sint16 mid10_8_6, sint16 mid10_8_7,
+    sint16 mid01_8_0, sint16 mid01_8_1, sint16 mid01_8_2, sint16 mid01_8_3, sint16 mid01_8_4, sint16 mid01_8_5, sint16 mid01_8_6, sint16 mid01_8_7,
+    sint16 mid11_8_0, sint16 mid11_8_1, sint16 mid11_8_2, sint16 mid11_8_3, sint16 mid11_8_4, sint16 mid11_8_5, sint16 mid11_8_6, sint16 mid11_8_7,
+    sint16 mid02_8_0, sint16 mid02_8_1, sint16 mid02_8_2, sint16 mid02_8_3, sint16 mid02_8_4, sint16 mid02_8_5, sint16 mid02_8_6, sint16 mid02_8_7,
+    sint16 mid12_8_0, sint16 mid12_8_1, sint16 mid12_8_2, sint16 mid12_8_3, sint16 mid12_8_4, sint16 mid12_8_5, sint16 mid12_8_6, sint16 mid12_8_7,
     sint16 mid03_8_0, sint16 mid03_8_1, sint16 mid03_8_2, sint16 mid03_8_3, sint16 mid03_8_4, sint16 mid03_8_5, sint16 mid03_8_6, sint16 mid03_8_7,
     sint16 mid13_8_0, sint16 mid13_8_1, sint16 mid13_8_2, sint16 mid13_8_3, sint16 mid13_8_4, sint16 mid13_8_5, sint16 mid13_8_6, sint16 mid13_8_7,
+    sint16 mid04_8_0, sint16 mid04_8_1, sint16 mid04_8_2, sint16 mid04_8_3, sint16 mid04_8_4, sint16 mid04_8_5, sint16 mid04_8_6, sint16 mid04_8_7,
+    sint16 mid14_8_0, sint16 mid14_8_1, sint16 mid14_8_2, sint16 mid14_8_3, sint16 mid14_8_4, sint16 mid14_8_5, sint16 mid14_8_6, sint16 mid14_8_7,
     sint16 mid05_8_0, sint16 mid05_8_1, sint16 mid05_8_2, sint16 mid05_8_3, sint16 mid05_8_4, sint16 mid05_8_5, sint16 mid05_8_6, sint16 mid05_8_7,
     sint16 mid15_8_0, sint16 mid15_8_1, sint16 mid15_8_2, sint16 mid15_8_3, sint16 mid15_8_4, sint16 mid15_8_5, sint16 mid15_8_6, sint16 mid15_8_7,
     sint16 mid06_8_0, sint16 mid06_8_1, sint16 mid06_8_2, sint16 mid06_8_3, sint16 mid06_8_4, sint16 mid06_8_5, sint16 mid06_8_6, sint16 mid06_8_7,
@@ -629,6 +669,10 @@ mov [fd1_0_0, fd1_0_1, fd1_0_2, fd1_0_3, fd1_0_4, fd1_0_5, fd1_0_6, fd1_0_7] %v1
 broadcast %mull 4 [%v7[0]]; smulj %v6 [%v18[0],%v18[1],%v18[2],%v18[3]] %mull;
 (* smull2	v4.4s, v18.8h, v7.h[0]                   #! PC = 0x5555551fe0 *)
 broadcast %mull 4 [%v7[0]]; smulj %v4 [%v18[4],%v18[5],%v18[6],%v18[7]] %mull;
+
+mov [mid10_0_0, mid10_0_1, mid10_0_2, mid10_0_3] %v6;
+mov [mid10_0_4, mid10_0_5, mid10_0_6, mid10_0_7] %v4;
+
 (* ext	v8.16b, v16.16b, v18.16b, #14               #! PC = 0x5555551fe4 *)
 mov %v8 [%v16[7],%v18[0],%v18[1],%v18[2],%v18[3],%v18[4],%v18[5],%v18[6]];
 (* smull2	v3.4s, v5.8h, v0.h[0]                    #! PC = 0x5555551fe8 *)
@@ -651,12 +695,20 @@ mov [gd1_0_0, gd1_0_1, gd1_0_2, gd1_0_3, gd1_0_4, gd1_0_5, gd1_0_6, gd1_0_7] %v1
 
 (* smlal2	v4.4s, v8.8h, v7.h[1]                    #! PC = 0x5555551ffc *)
 broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
+
+mov [mid11_0_0, mid11_0_1, mid11_0_2, mid11_0_3] %v6;
+mov [mid11_0_4, mid11_0_5, mid11_0_6, mid11_0_7] %v4;
+
 (* ext	v20.16b, v17.16b, v5.16b, #14               #! PC = 0x5555552000 *)
 mov %v20 [%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4],%v5[5],%v5[6]];
 (* ext	v8.16b, v16.16b, v18.16b, #12               #! PC = 0x5555552004 *)
 mov %v8 [%v16[6],%v16[7],%v18[0],%v18[1],%v18[2],%v18[3],%v18[4],%v18[5]];
 (* smull	v1.4s, v5.4h, v0.h[0]                     #! PC = 0x5555552008 *)
 broadcast %mull 4 [%v0[0]]; smulj %v1 [%v5[0],%v5[1],%v5[2],%v5[3]] %mull;
+
+mov [mid00_0_0, mid00_0_1, mid00_0_2, mid00_0_3] %v1;
+mov [mid00_0_4, mid00_0_5, mid00_0_6, mid00_0_7] %v3;
+
 (* ext	v19.16b, v17.16b, v5.16b, #12               #! PC = 0x555555200c *)
 mov %v19 [%v17[6],%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4],%v5[5]];
 (* smlal2	v3.4s, v20.8h, v0.h[1]                   #! PC = 0x5555552010 *)
@@ -665,6 +717,10 @@ broadcast %mull 4 [%v0[1]]; smulj %mlal [%v20[4],%v20[5],%v20[6],%v20[7]] %mull;
 broadcast %mull 4 [%v7[2]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* smlal	v1.4s, v20.4h, v0.h[1]                    #! PC = 0x5555552018 *)
 broadcast %mull 4 [%v0[1]]; smulj %mlal [%v20[0],%v20[1],%v20[2],%v20[3]] %mull; adds %dc %v1 %v1 %mlal;
+
+mov [mid01_0_0, mid01_0_1, mid01_0_2, mid01_0_3] %v1;
+mov [mid01_0_4, mid01_0_5, mid01_0_6, mid01_0_7] %v3;
+
 (* smlal2	v4.4s, v8.8h, v7.h[2]                    #! PC = 0x555555201c *)
 broadcast %mull 4 [%v7[2]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
 (* ext	v8.16b, v16.16b, v18.16b, #10               #! PC = 0x5555552020 *)
@@ -675,6 +731,12 @@ mov %v20 [%v17[5],%v17[6],%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4]];
 broadcast %mull 4 [%v0[2]]; smulj %mlal [%v19[0],%v19[1],%v19[2],%v19[3]] %mull; adds %dc %v1 %v1 %mlal;
 (* smlal2	v3.4s, v19.8h, v0.h[2]                   #! PC = 0x555555202c *)
 broadcast %mull 4 [%v0[2]]; smulj %mlal [%v19[4],%v19[5],%v19[6],%v19[7]] %mull; adds %dc %v3 %v3 %mlal;
+
+mov [mid02_0_0, mid02_0_1, mid02_0_2, mid02_0_3] %v1;
+mov [mid02_0_4, mid02_0_5, mid02_0_6, mid02_0_7] %v3;
+mov [mid12_0_0, mid12_0_1, mid12_0_2, mid12_0_3] %v6;
+mov [mid12_0_4, mid12_0_5, mid12_0_6, mid12_0_7] %v4;
+
 (* smlal	v6.4s, v8.4h, v7.h[3]                     #! PC = 0x5555552030 *)
 broadcast %mull 4 [%v7[3]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* smlal2	v4.4s, v8.8h, v7.h[3]                    #! PC = 0x5555552034 *)
@@ -705,6 +767,12 @@ mov %v20 [%v17[3],%v17[4],%v17[5],%v17[6],%v17[7],%v5[0],%v5[1],%v5[2]];
 broadcast %mull 4 [%v0[4]]; smulj %mlal [%v19[0],%v19[1],%v19[2],%v19[3]] %mull; adds %dc %v1 %v1 %mlal;
 (* smlal2	v3.4s, v19.8h, v0.h[4]                   #! PC = 0x555555205c *)
 broadcast %mull 4 [%v0[4]]; smulj %mlal [%v19[4],%v19[5],%v19[6],%v19[7]] %mull; adds %dc %v3 %v3 %mlal;
+
+mov [mid04_0_0, mid04_0_1, mid04_0_2, mid04_0_3] %v1;
+mov [mid04_0_4, mid04_0_5, mid04_0_6, mid04_0_7] %v3;
+mov [mid14_0_0, mid14_0_1, mid14_0_2, mid14_0_3] %v6;
+mov [mid14_0_4, mid14_0_5, mid14_0_6, mid14_0_7] %v4;
+
 (* smlal	v6.4s, v8.4h, v7.h[5]                     #! PC = 0x5555552060 *)
 broadcast %mull 4 [%v7[5]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* ext	v19.16b, v16.16b, v18.16b, #4               #! PC = 0x5555552064 *)
@@ -1212,6 +1280,10 @@ mov [fd1_2_0, fd1_2_1, fd1_2_2, fd1_2_3, fd1_2_4, fd1_2_5, fd1_2_6, fd1_2_7] %v1
 broadcast %mull 4 [%v7[0]]; smulj %v6 [%v18[0],%v18[1],%v18[2],%v18[3]] %mull;
 (* smull2	v4.4s, v18.8h, v7.h[0]                   #! PC = 0x5555551fe0 *)
 broadcast %mull 4 [%v7[0]]; smulj %v4 [%v18[4],%v18[5],%v18[6],%v18[7]] %mull;
+
+mov [mid10_2_0, mid10_2_1, mid10_2_2, mid10_2_3] %v6;
+mov [mid10_2_4, mid10_2_5, mid10_2_6, mid10_2_7] %v4;
+
 (* ext	v8.16b, v16.16b, v18.16b, #14               #! PC = 0x5555551fe4 *)
 mov %v8 [%v16[7],%v18[0],%v18[1],%v18[2],%v18[3],%v18[4],%v18[5],%v18[6]];
 (* smull2	v3.4s, v5.8h, v0.h[0]                    #! PC = 0x5555551fe8 *)
@@ -1234,12 +1306,20 @@ mov [gd1_2_0, gd1_2_1, gd1_2_2, gd1_2_3, gd1_2_4, gd1_2_5, gd1_2_6, gd1_2_7] %v1
 
 (* smlal2	v4.4s, v8.8h, v7.h[1]                    #! PC = 0x5555551ffc *)
 broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
+
+mov [mid11_2_0, mid11_2_1, mid11_2_2, mid11_2_3] %v6;
+mov [mid11_2_4, mid11_2_5, mid11_2_6, mid11_2_7] %v4;
+
 (* ext	v20.16b, v17.16b, v5.16b, #14               #! PC = 0x5555552000 *)
 mov %v20 [%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4],%v5[5],%v5[6]];
 (* ext	v8.16b, v16.16b, v18.16b, #12               #! PC = 0x5555552004 *)
 mov %v8 [%v16[6],%v16[7],%v18[0],%v18[1],%v18[2],%v18[3],%v18[4],%v18[5]];
 (* smull	v1.4s, v5.4h, v0.h[0]                     #! PC = 0x5555552008 *)
 broadcast %mull 4 [%v0[0]]; smulj %v1 [%v5[0],%v5[1],%v5[2],%v5[3]] %mull;
+
+mov [mid00_2_0, mid00_2_1, mid00_2_2, mid00_2_3] %v1;
+mov [mid00_2_4, mid00_2_5, mid00_2_6, mid00_2_7] %v3;
+
 (* ext	v19.16b, v17.16b, v5.16b, #12               #! PC = 0x555555200c *)
 mov %v19 [%v17[6],%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4],%v5[5]];
 (* smlal2	v3.4s, v20.8h, v0.h[1]                   #! PC = 0x5555552010 *)
@@ -1248,6 +1328,10 @@ broadcast %mull 4 [%v0[1]]; smulj %mlal [%v20[4],%v20[5],%v20[6],%v20[7]] %mull;
 broadcast %mull 4 [%v7[2]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* smlal	v1.4s, v20.4h, v0.h[1]                    #! PC = 0x5555552018 *)
 broadcast %mull 4 [%v0[1]]; smulj %mlal [%v20[0],%v20[1],%v20[2],%v20[3]] %mull; adds %dc %v1 %v1 %mlal;
+
+mov [mid01_2_0, mid01_2_1, mid01_2_2, mid01_2_3] %v1;
+mov [mid01_2_4, mid01_2_5, mid01_2_6, mid01_2_7] %v3;
+
 (* smlal2	v4.4s, v8.8h, v7.h[2]                    #! PC = 0x555555201c *)
 broadcast %mull 4 [%v7[2]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
 (* ext	v8.16b, v16.16b, v18.16b, #10               #! PC = 0x5555552020 *)
@@ -1258,6 +1342,12 @@ mov %v20 [%v17[5],%v17[6],%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4]];
 broadcast %mull 4 [%v0[2]]; smulj %mlal [%v19[0],%v19[1],%v19[2],%v19[3]] %mull; adds %dc %v1 %v1 %mlal;
 (* smlal2	v3.4s, v19.8h, v0.h[2]                   #! PC = 0x555555202c *)
 broadcast %mull 4 [%v0[2]]; smulj %mlal [%v19[4],%v19[5],%v19[6],%v19[7]] %mull; adds %dc %v3 %v3 %mlal;
+
+mov [mid02_2_0, mid02_2_1, mid02_2_2, mid02_2_3] %v1;
+mov [mid02_2_4, mid02_2_5, mid02_2_6, mid02_2_7] %v3;
+mov [mid12_2_0, mid12_2_1, mid12_2_2, mid12_2_3] %v6;
+mov [mid12_2_4, mid12_2_5, mid12_2_6, mid12_2_7] %v4;
+
 (* smlal	v6.4s, v8.4h, v7.h[3]                     #! PC = 0x5555552030 *)
 broadcast %mull 4 [%v7[3]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* smlal2	v4.4s, v8.8h, v7.h[3]                    #! PC = 0x5555552034 *)
@@ -1288,6 +1378,12 @@ mov %v20 [%v17[3],%v17[4],%v17[5],%v17[6],%v17[7],%v5[0],%v5[1],%v5[2]];
 broadcast %mull 4 [%v0[4]]; smulj %mlal [%v19[0],%v19[1],%v19[2],%v19[3]] %mull; adds %dc %v1 %v1 %mlal;
 (* smlal2	v3.4s, v19.8h, v0.h[4]                   #! PC = 0x555555205c *)
 broadcast %mull 4 [%v0[4]]; smulj %mlal [%v19[4],%v19[5],%v19[6],%v19[7]] %mull; adds %dc %v3 %v3 %mlal;
+
+mov [mid04_2_0, mid04_2_1, mid04_2_2, mid04_2_3] %v1;
+mov [mid04_2_4, mid04_2_5, mid04_2_6, mid04_2_7] %v3;
+mov [mid14_2_0, mid14_2_1, mid14_2_2, mid14_2_3] %v6;
+mov [mid14_2_4, mid14_2_5, mid14_2_6, mid14_2_7] %v4;
+
 (* smlal	v6.4s, v8.4h, v7.h[5]                     #! PC = 0x5555552060 *)
 broadcast %mull 4 [%v7[5]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* ext	v19.16b, v16.16b, v18.16b, #4               #! PC = 0x5555552064 *)
@@ -1795,6 +1891,10 @@ mov [fd1_4_0, fd1_4_1, fd1_4_2, fd1_4_3, fd1_4_4, fd1_4_5, fd1_4_6, fd1_4_7] %v1
 broadcast %mull 4 [%v7[0]]; smulj %v6 [%v18[0],%v18[1],%v18[2],%v18[3]] %mull;
 (* smull2	v4.4s, v18.8h, v7.h[0]                   #! PC = 0x5555551fe0 *)
 broadcast %mull 4 [%v7[0]]; smulj %v4 [%v18[4],%v18[5],%v18[6],%v18[7]] %mull;
+
+mov [mid10_4_0, mid10_4_1, mid10_4_2, mid10_4_3] %v6;
+mov [mid10_4_4, mid10_4_5, mid10_4_6, mid10_4_7] %v4;
+
 (* ext	v8.16b, v16.16b, v18.16b, #14               #! PC = 0x5555551fe4 *)
 mov %v8 [%v16[7],%v18[0],%v18[1],%v18[2],%v18[3],%v18[4],%v18[5],%v18[6]];
 (* smull2	v3.4s, v5.8h, v0.h[0]                    #! PC = 0x5555551fe8 *)
@@ -1817,12 +1917,20 @@ mov [gd1_4_0, gd1_4_1, gd1_4_2, gd1_4_3, gd1_4_4, gd1_4_5, gd1_4_6, gd1_4_7] %v1
 
 (* smlal2	v4.4s, v8.8h, v7.h[1]                    #! PC = 0x5555551ffc *)
 broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
+
+mov [mid11_4_0, mid11_4_1, mid11_4_2, mid11_4_3] %v6;
+mov [mid11_4_4, mid11_4_5, mid11_4_6, mid11_4_7] %v4;
+
 (* ext	v20.16b, v17.16b, v5.16b, #14               #! PC = 0x5555552000 *)
 mov %v20 [%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4],%v5[5],%v5[6]];
 (* ext	v8.16b, v16.16b, v18.16b, #12               #! PC = 0x5555552004 *)
 mov %v8 [%v16[6],%v16[7],%v18[0],%v18[1],%v18[2],%v18[3],%v18[4],%v18[5]];
 (* smull	v1.4s, v5.4h, v0.h[0]                     #! PC = 0x5555552008 *)
 broadcast %mull 4 [%v0[0]]; smulj %v1 [%v5[0],%v5[1],%v5[2],%v5[3]] %mull;
+
+mov [mid00_4_0, mid00_4_1, mid00_4_2, mid00_4_3] %v1;
+mov [mid00_4_4, mid00_4_5, mid00_4_6, mid00_4_7] %v3;
+
 (* ext	v19.16b, v17.16b, v5.16b, #12               #! PC = 0x555555200c *)
 mov %v19 [%v17[6],%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4],%v5[5]];
 (* smlal2	v3.4s, v20.8h, v0.h[1]                   #! PC = 0x5555552010 *)
@@ -1831,6 +1939,10 @@ broadcast %mull 4 [%v0[1]]; smulj %mlal [%v20[4],%v20[5],%v20[6],%v20[7]] %mull;
 broadcast %mull 4 [%v7[2]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* smlal	v1.4s, v20.4h, v0.h[1]                    #! PC = 0x5555552018 *)
 broadcast %mull 4 [%v0[1]]; smulj %mlal [%v20[0],%v20[1],%v20[2],%v20[3]] %mull; adds %dc %v1 %v1 %mlal;
+
+mov [mid01_4_0, mid01_4_1, mid01_4_2, mid01_4_3] %v1;
+mov [mid01_4_4, mid01_4_5, mid01_4_6, mid01_4_7] %v3;
+
 (* smlal2	v4.4s, v8.8h, v7.h[2]                    #! PC = 0x555555201c *)
 broadcast %mull 4 [%v7[2]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
 (* ext	v8.16b, v16.16b, v18.16b, #10               #! PC = 0x5555552020 *)
@@ -1841,6 +1953,12 @@ mov %v20 [%v17[5],%v17[6],%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4]];
 broadcast %mull 4 [%v0[2]]; smulj %mlal [%v19[0],%v19[1],%v19[2],%v19[3]] %mull; adds %dc %v1 %v1 %mlal;
 (* smlal2	v3.4s, v19.8h, v0.h[2]                   #! PC = 0x555555202c *)
 broadcast %mull 4 [%v0[2]]; smulj %mlal [%v19[4],%v19[5],%v19[6],%v19[7]] %mull; adds %dc %v3 %v3 %mlal;
+
+mov [mid02_4_0, mid02_4_1, mid02_4_2, mid02_4_3] %v1;
+mov [mid02_4_4, mid02_4_5, mid02_4_6, mid02_4_7] %v3;
+mov [mid12_4_0, mid12_4_1, mid12_4_2, mid12_4_3] %v6;
+mov [mid12_4_4, mid12_4_5, mid12_4_6, mid12_4_7] %v4;
+
 (* smlal	v6.4s, v8.4h, v7.h[3]                     #! PC = 0x5555552030 *)
 broadcast %mull 4 [%v7[3]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* smlal2	v4.4s, v8.8h, v7.h[3]                    #! PC = 0x5555552034 *)
@@ -1871,6 +1989,12 @@ mov %v20 [%v17[3],%v17[4],%v17[5],%v17[6],%v17[7],%v5[0],%v5[1],%v5[2]];
 broadcast %mull 4 [%v0[4]]; smulj %mlal [%v19[0],%v19[1],%v19[2],%v19[3]] %mull; adds %dc %v1 %v1 %mlal;
 (* smlal2	v3.4s, v19.8h, v0.h[4]                   #! PC = 0x555555205c *)
 broadcast %mull 4 [%v0[4]]; smulj %mlal [%v19[4],%v19[5],%v19[6],%v19[7]] %mull; adds %dc %v3 %v3 %mlal;
+
+mov [mid04_4_0, mid04_4_1, mid04_4_2, mid04_4_3] %v1;
+mov [mid04_4_4, mid04_4_5, mid04_4_6, mid04_4_7] %v3;
+mov [mid14_4_0, mid14_4_1, mid14_4_2, mid14_4_3] %v6;
+mov [mid14_4_4, mid14_4_5, mid14_4_6, mid14_4_7] %v4;
+
 (* smlal	v6.4s, v8.4h, v7.h[5]                     #! PC = 0x5555552060 *)
 broadcast %mull 4 [%v7[5]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* ext	v19.16b, v16.16b, v18.16b, #4               #! PC = 0x5555552064 *)
@@ -2378,6 +2502,10 @@ mov [fd1_6_0, fd1_6_1, fd1_6_2, fd1_6_3, fd1_6_4, fd1_6_5, fd1_6_6, fd1_6_7] %v1
 broadcast %mull 4 [%v7[0]]; smulj %v6 [%v18[0],%v18[1],%v18[2],%v18[3]] %mull;
 (* smull2	v4.4s, v18.8h, v7.h[0]                   #! PC = 0x5555551fe0 *)
 broadcast %mull 4 [%v7[0]]; smulj %v4 [%v18[4],%v18[5],%v18[6],%v18[7]] %mull;
+
+mov [mid10_6_0, mid10_6_1, mid10_6_2, mid10_6_3] %v6;
+mov [mid10_6_4, mid10_6_5, mid10_6_6, mid10_6_7] %v4;
+
 (* ext	v8.16b, v16.16b, v18.16b, #14               #! PC = 0x5555551fe4 *)
 mov %v8 [%v16[7],%v18[0],%v18[1],%v18[2],%v18[3],%v18[4],%v18[5],%v18[6]];
 (* smull2	v3.4s, v5.8h, v0.h[0]                    #! PC = 0x5555551fe8 *)
@@ -2400,12 +2528,20 @@ mov [gd1_6_0, gd1_6_1, gd1_6_2, gd1_6_3, gd1_6_4, gd1_6_5, gd1_6_6, gd1_6_7] %v1
 
 (* smlal2	v4.4s, v8.8h, v7.h[1]                    #! PC = 0x5555551ffc *)
 broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
+
+mov [mid11_6_0, mid11_6_1, mid11_6_2, mid11_6_3] %v6;
+mov [mid11_6_4, mid11_6_5, mid11_6_6, mid11_6_7] %v4;
+
 (* ext	v20.16b, v17.16b, v5.16b, #14               #! PC = 0x5555552000 *)
 mov %v20 [%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4],%v5[5],%v5[6]];
 (* ext	v8.16b, v16.16b, v18.16b, #12               #! PC = 0x5555552004 *)
 mov %v8 [%v16[6],%v16[7],%v18[0],%v18[1],%v18[2],%v18[3],%v18[4],%v18[5]];
 (* smull	v1.4s, v5.4h, v0.h[0]                     #! PC = 0x5555552008 *)
 broadcast %mull 4 [%v0[0]]; smulj %v1 [%v5[0],%v5[1],%v5[2],%v5[3]] %mull;
+
+mov [mid00_6_0, mid00_6_1, mid00_6_2, mid00_6_3] %v1;
+mov [mid00_6_4, mid00_6_5, mid00_6_6, mid00_6_7] %v3;
+
 (* ext	v19.16b, v17.16b, v5.16b, #12               #! PC = 0x555555200c *)
 mov %v19 [%v17[6],%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4],%v5[5]];
 (* smlal2	v3.4s, v20.8h, v0.h[1]                   #! PC = 0x5555552010 *)
@@ -2414,6 +2550,10 @@ broadcast %mull 4 [%v0[1]]; smulj %mlal [%v20[4],%v20[5],%v20[6],%v20[7]] %mull;
 broadcast %mull 4 [%v7[2]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* smlal	v1.4s, v20.4h, v0.h[1]                    #! PC = 0x5555552018 *)
 broadcast %mull 4 [%v0[1]]; smulj %mlal [%v20[0],%v20[1],%v20[2],%v20[3]] %mull; adds %dc %v1 %v1 %mlal;
+
+mov [mid01_6_0, mid01_6_1, mid01_6_2, mid01_6_3] %v1;
+mov [mid01_6_4, mid01_6_5, mid01_6_6, mid01_6_7] %v3;
+
 (* smlal2	v4.4s, v8.8h, v7.h[2]                    #! PC = 0x555555201c *)
 broadcast %mull 4 [%v7[2]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
 (* ext	v8.16b, v16.16b, v18.16b, #10               #! PC = 0x5555552020 *)
@@ -2424,6 +2564,12 @@ mov %v20 [%v17[5],%v17[6],%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4]];
 broadcast %mull 4 [%v0[2]]; smulj %mlal [%v19[0],%v19[1],%v19[2],%v19[3]] %mull; adds %dc %v1 %v1 %mlal;
 (* smlal2	v3.4s, v19.8h, v0.h[2]                   #! PC = 0x555555202c *)
 broadcast %mull 4 [%v0[2]]; smulj %mlal [%v19[4],%v19[5],%v19[6],%v19[7]] %mull; adds %dc %v3 %v3 %mlal;
+
+mov [mid02_6_0, mid02_6_1, mid02_6_2, mid02_6_3] %v1;
+mov [mid02_6_4, mid02_6_5, mid02_6_6, mid02_6_7] %v3;
+mov [mid12_6_0, mid12_6_1, mid12_6_2, mid12_6_3] %v6;
+mov [mid12_6_4, mid12_6_5, mid12_6_6, mid12_6_7] %v4;
+
 (* smlal	v6.4s, v8.4h, v7.h[3]                     #! PC = 0x5555552030 *)
 broadcast %mull 4 [%v7[3]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* smlal2	v4.4s, v8.8h, v7.h[3]                    #! PC = 0x5555552034 *)
@@ -2454,6 +2600,12 @@ mov %v20 [%v17[3],%v17[4],%v17[5],%v17[6],%v17[7],%v5[0],%v5[1],%v5[2]];
 broadcast %mull 4 [%v0[4]]; smulj %mlal [%v19[0],%v19[1],%v19[2],%v19[3]] %mull; adds %dc %v1 %v1 %mlal;
 (* smlal2	v3.4s, v19.8h, v0.h[4]                   #! PC = 0x555555205c *)
 broadcast %mull 4 [%v0[4]]; smulj %mlal [%v19[4],%v19[5],%v19[6],%v19[7]] %mull; adds %dc %v3 %v3 %mlal;
+
+mov [mid04_6_0, mid04_6_1, mid04_6_2, mid04_6_3] %v1;
+mov [mid04_6_4, mid04_6_5, mid04_6_6, mid04_6_7] %v3;
+mov [mid14_6_0, mid14_6_1, mid14_6_2, mid14_6_3] %v6;
+mov [mid14_6_4, mid14_6_5, mid14_6_6, mid14_6_7] %v4;
+
 (* smlal	v6.4s, v8.4h, v7.h[5]                     #! PC = 0x5555552060 *)
 broadcast %mull 4 [%v7[5]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* ext	v19.16b, v16.16b, v18.16b, #4               #! PC = 0x5555552064 *)
@@ -2961,6 +3113,10 @@ mov [fd1_8_0, fd1_8_1, fd1_8_2, fd1_8_3, fd1_8_4, fd1_8_5, fd1_8_6, fd1_8_7] %v1
 broadcast %mull 4 [%v7[0]]; smulj %v6 [%v18[0],%v18[1],%v18[2],%v18[3]] %mull;
 (* smull2	v4.4s, v18.8h, v7.h[0]                   #! PC = 0x5555551fe0 *)
 broadcast %mull 4 [%v7[0]]; smulj %v4 [%v18[4],%v18[5],%v18[6],%v18[7]] %mull;
+
+mov [mid10_8_0, mid10_8_1, mid10_8_2, mid10_8_3] %v6;
+mov [mid10_8_4, mid10_8_5, mid10_8_6, mid10_8_7] %v4;
+
 (* ext	v8.16b, v16.16b, v18.16b, #14               #! PC = 0x5555551fe4 *)
 mov %v8 [%v16[7],%v18[0],%v18[1],%v18[2],%v18[3],%v18[4],%v18[5],%v18[6]];
 (* smull2	v3.4s, v5.8h, v0.h[0]                    #! PC = 0x5555551fe8 *)
@@ -2983,12 +3139,20 @@ mov [gd1_8_0, gd1_8_1, gd1_8_2, gd1_8_3, gd1_8_4, gd1_8_5, gd1_8_6, gd1_8_7] %v1
 
 (* smlal2	v4.4s, v8.8h, v7.h[1]                    #! PC = 0x5555551ffc *)
 broadcast %mull 4 [%v7[1]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
+
+mov [mid11_8_0, mid11_8_1, mid11_8_2, mid11_8_3] %v6;
+mov [mid11_8_4, mid11_8_5, mid11_8_6, mid11_8_7] %v4;
+
 (* ext	v20.16b, v17.16b, v5.16b, #14               #! PC = 0x5555552000 *)
 mov %v20 [%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4],%v5[5],%v5[6]];
 (* ext	v8.16b, v16.16b, v18.16b, #12               #! PC = 0x5555552004 *)
 mov %v8 [%v16[6],%v16[7],%v18[0],%v18[1],%v18[2],%v18[3],%v18[4],%v18[5]];
 (* smull	v1.4s, v5.4h, v0.h[0]                     #! PC = 0x5555552008 *)
 broadcast %mull 4 [%v0[0]]; smulj %v1 [%v5[0],%v5[1],%v5[2],%v5[3]] %mull;
+
+mov [mid00_8_0, mid00_8_1, mid00_8_2, mid00_8_3] %v1;
+mov [mid00_8_4, mid00_8_5, mid00_8_6, mid00_8_7] %v3;
+
 (* ext	v19.16b, v17.16b, v5.16b, #12               #! PC = 0x555555200c *)
 mov %v19 [%v17[6],%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4],%v5[5]];
 (* smlal2	v3.4s, v20.8h, v0.h[1]                   #! PC = 0x5555552010 *)
@@ -2997,6 +3161,10 @@ broadcast %mull 4 [%v0[1]]; smulj %mlal [%v20[4],%v20[5],%v20[6],%v20[7]] %mull;
 broadcast %mull 4 [%v7[2]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* smlal	v1.4s, v20.4h, v0.h[1]                    #! PC = 0x5555552018 *)
 broadcast %mull 4 [%v0[1]]; smulj %mlal [%v20[0],%v20[1],%v20[2],%v20[3]] %mull; adds %dc %v1 %v1 %mlal;
+
+mov [mid01_8_0, mid01_8_1, mid01_8_2, mid01_8_3] %v1;
+mov [mid01_8_4, mid01_8_5, mid01_8_6, mid01_8_7] %v3;
+
 (* smlal2	v4.4s, v8.8h, v7.h[2]                    #! PC = 0x555555201c *)
 broadcast %mull 4 [%v7[2]]; smulj %mlal [%v8[4],%v8[5],%v8[6],%v8[7]] %mull; adds %dc %v4 %v4 %mlal;
 (* ext	v8.16b, v16.16b, v18.16b, #10               #! PC = 0x5555552020 *)
@@ -3007,6 +3175,12 @@ mov %v20 [%v17[5],%v17[6],%v17[7],%v5[0],%v5[1],%v5[2],%v5[3],%v5[4]];
 broadcast %mull 4 [%v0[2]]; smulj %mlal [%v19[0],%v19[1],%v19[2],%v19[3]] %mull; adds %dc %v1 %v1 %mlal;
 (* smlal2	v3.4s, v19.8h, v0.h[2]                   #! PC = 0x555555202c *)
 broadcast %mull 4 [%v0[2]]; smulj %mlal [%v19[4],%v19[5],%v19[6],%v19[7]] %mull; adds %dc %v3 %v3 %mlal;
+
+mov [mid02_8_0, mid02_8_1, mid02_8_2, mid02_8_3] %v1;
+mov [mid02_8_4, mid02_8_5, mid02_8_6, mid02_8_7] %v3;
+mov [mid12_8_0, mid12_8_1, mid12_8_2, mid12_8_3] %v6;
+mov [mid12_8_4, mid12_8_5, mid12_8_6, mid12_8_7] %v4;
+
 (* smlal	v6.4s, v8.4h, v7.h[3]                     #! PC = 0x5555552030 *)
 broadcast %mull 4 [%v7[3]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* smlal2	v4.4s, v8.8h, v7.h[3]                    #! PC = 0x5555552034 *)
@@ -3037,6 +3211,12 @@ mov %v20 [%v17[3],%v17[4],%v17[5],%v17[6],%v17[7],%v5[0],%v5[1],%v5[2]];
 broadcast %mull 4 [%v0[4]]; smulj %mlal [%v19[0],%v19[1],%v19[2],%v19[3]] %mull; adds %dc %v1 %v1 %mlal;
 (* smlal2	v3.4s, v19.8h, v0.h[4]                   #! PC = 0x555555205c *)
 broadcast %mull 4 [%v0[4]]; smulj %mlal [%v19[4],%v19[5],%v19[6],%v19[7]] %mull; adds %dc %v3 %v3 %mlal;
+
+mov [mid04_8_0, mid04_8_1, mid04_8_2, mid04_8_3] %v1;
+mov [mid04_8_4, mid04_8_5, mid04_8_6, mid04_8_7] %v3;
+mov [mid14_8_0, mid14_8_1, mid14_8_2, mid14_8_3] %v6;
+mov [mid14_8_4, mid14_8_5, mid14_8_6, mid14_8_7] %v4;
+
 (* smlal	v6.4s, v8.4h, v7.h[5]                     #! PC = 0x5555552060 *)
 broadcast %mull 4 [%v7[5]]; smulj %mlal [%v8[0],%v8[1],%v8[2],%v8[3]] %mull; adds %dc %v6 %v6 %mlal;
 (* ext	v19.16b, v16.16b, v18.16b, #4               #! PC = 0x5555552064 *)
