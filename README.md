@@ -56,3 +56,9 @@ output of `cv`.
         `log.txt` for the output log.
     +   For `basemul__low_basemul`, see `record.fish` for the commands and
         `logs/*.txt` for the output log.
+
+## Correctness of end-to-end O3 model, assuming the correctness of the subroutines
+
+`cd` into `combined`. The first line of `log.txt` shows the
+command used to invoke Cryptoline's `cv`. The remaining lines are the recorded
+output of `cv`.
