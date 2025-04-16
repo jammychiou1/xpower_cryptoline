@@ -1,1 +1,0 @@
-cv -python_path $(which python3) -v -isafety -abs_interp -vscuts 0,1 -veacuts 0,1 -vracuts 0,1 -vecuts 0,1 -vrcuts 0,1 -jobs 8 all_neon.cl
