@@ -1106,7 +1106,7 @@ def annot(annotator):
 
     return output_lines
 
-annotator = AnnotatorState('./combined/rqmul__O3_neon_raw.cl', )
+annotator = AnnotatorState('./rqmul__O3_neon_raw.cl')
 output_lines = annot(annotator)
 with open('./combined/rqmul__O3_neon.cl', 'w') as f:
     for line in output_lines:
