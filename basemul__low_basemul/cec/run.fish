@@ -43,10 +43,6 @@ for i in (seq 0 9)
 		end
 	end
 
-	echo $i
-	echo $groups
-	# for some reason O3 before O1 is much faster...
-	# cv_cec -v -abc (which yosys-abc) O1dbg_neon_hints.cl O3_neon_hints.cl -ov (string join '#' $groups) -jobs 16 > all_mids_with_mm_with_arr/{$i}.log &
-	cv_cec -v -abc (which yosys-abc) O3_neon_hints.cl O1dbg_neon_hints.cl -ov (string join '#' $groups) -jobs 16 > all_mids_with_mm_with_arr__O3O1/{$i}.log &
+	cv_cec -v -abc (which yosys-abc) O3_neon_hints.cl O1dbg_neon_hints.cl -ov (string join '#' $groups) -jobs 16 > logs/{$i}.log &
 end
 wait
