@@ -15,10 +15,9 @@ O1dbg_hints_cls := $(addsuffix /cec/O1dbg_neon_hints.cl, $(subdirs_hints))
 O3_hints_cls := $(addsuffix /cec/O3_neon_hints.cl, $(subdirs_hints))
 hints_cls := $(O1dbg_hints_cls) $(O3_hints_cls)
 
-.PHONY: all clean O1dbg_cls O3_cls
+.PHONY: all clean O1dbg_cls O3_cls hints_cls
 
-all:
-	echo $(CRYPTOLINE_DIR)
+all: combined/rqmul__O3_neon.cl O1dbg_cls O3_cls hints_cls
 
 rqmul__O3_neon_raw.cl: recording/rqmul__O3_neon.gas
 	$(CRYPTOLINE_DIR)/scripts/to_zdsl.py --no-main --no-pre --no-post -o $@ $^
